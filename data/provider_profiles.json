@@ -2757,8 +2757,8 @@
     "category": "Blockchain / Web3",
     "description": "Cataloged API provider.",
     "signup_url": "https://moralis.io",
-    "pricing_url": "https://moralis.io",
-    "documentation_url": "https://moralis.io",
+    "pricing_url": "https://moralis.io/pricing/",
+    "documentation_url": "https://docs.moralis.io/",
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
@@ -2766,15 +2766,20 @@
       "amount": "Unverified",
       "expiry": "Unverified"
     },
-    "requires_credit_card": "Unverified",
-    "authentication": "Unverified",
-    "protocols": [],
-    "sdk_languages": [],
-    "commercial_use": "Unverified",
-    "self_hostable": "Unverified",
-    "webhooks": "Unverified",
-    "rate_limit": "Unverified",
-    "free_tier_reset": "Unverified",
+    "requires_credit_card": "Unavailable",
+    "authentication": "API key",
+    "protocols": [
+      "REST API"
+    ],
+    "sdk_languages": [
+      "JavaScript",
+      "Python"
+    ],
+    "commercial_use": "Unavailable",
+    "self_hostable": "Unavailable",
+    "webhooks": true,
+    "rate_limit": "The free plan is limited to 25 requests per second; paid-plan limits are published on the pricing page.",
+    "free_tier_reset": "Unavailable",
     "uses": [
       "blockchain RPC/node access",
       "wallet/transaction data",
@@ -2782,18 +2787,31 @@
       "smart-contract data",
       "on-chain analytics"
     ],
-    "last_verified": null,
-    "verified_by": null,
-    "status": "catalog-only",
-    "verification_status": "provider-homepage-fallback"
+    "last_verified": "2026-09-25",
+    "verified_by": "manual-official-doc-review",
+    "status": "active",
+    "verification_status": "manually-verified",
+    "verification_sources": {
+      "requires_credit_card": "https://moralis.io/pricing/",
+      "authentication": "https://docs.moralis.io/web3-data-api/evm/get-your-api-key",
+      "protocols": "https://docs.moralis.io/web3-data-api/evm/intro",
+      "sdk_languages": "https://docs.moralis.io/web3-data-api/evm/quickstart",
+      "commercial_use": "https://moralis.io/pricing/",
+      "self_hostable": "https://moralis.io/pricing/",
+      "webhooks": "https://docs.moralis.io/streams-api/evm",
+      "rate_limit": "https://moralis.io/pricing/",
+      "free_tier_reset": "https://moralis.io/pricing/",
+      "documentation": "https://docs.moralis.io/",
+      "pricing": "https://moralis.io/pricing/"
+    }
   },
   {
     "name": "QuickNode",
     "category": "Blockchain / Web3",
     "description": "Cataloged API provider.",
     "signup_url": "https://www.quicknode.com",
-    "pricing_url": "https://www.quicknode.com",
-    "documentation_url": "https://www.quicknode.com",
+    "pricing_url": "https://www.quicknode.com/pricing",
+    "documentation_url": "https://www.quicknode.com/docs",
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
@@ -2801,15 +2819,23 @@
       "amount": "Unverified",
       "expiry": "Unverified"
     },
-    "requires_credit_card": "Unverified",
-    "authentication": "Unverified",
-    "protocols": [],
-    "sdk_languages": [],
-    "commercial_use": "Unverified",
-    "self_hostable": "Unverified",
-    "webhooks": "Unverified",
-    "rate_limit": "Unverified",
-    "free_tier_reset": "Unverified",
+    "requires_credit_card": "Unavailable",
+    "authentication": "HTTP authentication using an endpoint URL; API key authentication is supported for authenticated APIs.",
+    "protocols": [
+      "HTTP",
+      "WebSocket"
+    ],
+    "sdk_languages": [
+      "JavaScript",
+      "Python",
+      "Go",
+      "Ruby"
+    ],
+    "commercial_use": "Unavailable",
+    "self_hostable": "Unavailable",
+    "webhooks": true,
+    "rate_limit": "Rate limits vary by plan and are published in the plan details.",
+    "free_tier_reset": "Unavailable",
     "uses": [
       "blockchain RPC/node access",
       "wallet/transaction data",
@@ -2817,18 +2843,31 @@
       "smart-contract data",
       "on-chain analytics"
     ],
-    "last_verified": null,
-    "verified_by": null,
-    "status": "catalog-only",
-    "verification_status": "provider-homepage-fallback"
+    "last_verified": "2026-09-25",
+    "verified_by": "manual-official-doc-review",
+    "status": "active",
+    "verification_status": "manually-verified",
+    "verification_sources": {
+      "requires_credit_card": "https://www.quicknode.com/pricing",
+      "authentication": "https://www.quicknode.com/docs",
+      "protocols": "https://www.quicknode.com/docs/quicknode-guide/quicknode-products/endpoint-types",
+      "sdk_languages": "https://www.quicknode.com/docs",
+      "commercial_use": "https://www.quicknode.com/pricing",
+      "self_hostable": "https://www.quicknode.com/pricing",
+      "webhooks": "https://www.quicknode.com/docs/webhooks",
+      "rate_limit": "https://www.quicknode.com/pricing",
+      "free_tier_reset": "https://www.quicknode.com/pricing",
+      "documentation": "https://www.quicknode.com/docs",
+      "pricing": "https://www.quicknode.com/pricing"
+    }
   },
   {
     "name": "The Graph",
     "category": "Blockchain / Web3",
     "description": "Cataloged API provider.",
     "signup_url": "https://thegraph.com",
-    "pricing_url": "https://thegraph.com",
-    "documentation_url": "https://thegraph.com",
+    "pricing_url": "https://thegraph.com/pricing/",
+    "documentation_url": "https://thegraph.com/docs/en/",
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
@@ -2836,15 +2875,21 @@
       "amount": "Unverified",
       "expiry": "Unverified"
     },
-    "requires_credit_card": "Unverified",
-    "authentication": "Unverified",
-    "protocols": [],
-    "sdk_languages": [],
-    "commercial_use": "Unverified",
-    "self_hostable": "Unverified",
-    "webhooks": "Unverified",
-    "rate_limit": "Unverified",
-    "free_tier_reset": "Unverified",
+    "requires_credit_card": "Unavailable",
+    "authentication": "API key (query key) for the hosted Subgraph gateway.",
+    "protocols": [
+      "GraphQL",
+      "REST"
+    ],
+    "sdk_languages": [
+      "JavaScript",
+      "TypeScript"
+    ],
+    "commercial_use": "The Graph Network is available for production and commercial applications subject to its terms.",
+    "self_hostable": true,
+    "webhooks": false,
+    "rate_limit": "Unavailable",
+    "free_tier_reset": "Unavailable",
     "uses": [
       "blockchain RPC/node access",
       "wallet/transaction data",
@@ -2852,18 +2897,31 @@
       "smart-contract data",
       "on-chain analytics"
     ],
-    "last_verified": null,
-    "verified_by": null,
-    "status": "catalog-only",
-    "verification_status": "provider-homepage-fallback"
+    "last_verified": "2026-09-25",
+    "verified_by": "manual-official-doc-review",
+    "status": "active",
+    "verification_status": "manually-verified",
+    "verification_sources": {
+      "requires_credit_card": "https://thegraph.com/pricing/",
+      "authentication": "https://thegraph.com/docs/en/querying/querying-subgraphs/",
+      "protocols": "https://thegraph.com/docs/en/querying/querying-subgraphs/",
+      "sdk_languages": "https://thegraph.com/docs/en/developing/creating-a-subgraph/",
+      "commercial_use": "https://thegraph.com/docs/en/about/terms/",
+      "self_hostable": "https://thegraph.com/docs/en/developing/overview/",
+      "webhooks": "https://thegraph.com/docs/en/querying/overview/",
+      "rate_limit": "https://thegraph.com/pricing/",
+      "free_tier_reset": "https://thegraph.com/pricing/",
+      "documentation": "https://thegraph.com/docs/en/",
+      "pricing": "https://thegraph.com/pricing/"
+    }
   },
   {
     "name": "Ably (realtime)",
     "category": "Dev Tools / Infra",
     "description": "Cataloged API provider.",
     "signup_url": "https://ably.com/sign-up",
-    "pricing_url": "https://ably.com/sign-up",
-    "documentation_url": "https://ably.com/sign-up",
+    "pricing_url": "https://ably.com/pricing",
+    "documentation_url": "https://ably.com/docs",
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
@@ -2871,15 +2929,31 @@
       "amount": "Unverified",
       "expiry": "Unverified"
     },
-    "requires_credit_card": "Unverified",
-    "authentication": "Unverified",
-    "protocols": [],
-    "sdk_languages": [],
-    "commercial_use": "Unverified",
-    "self_hostable": "Unverified",
-    "webhooks": "Unverified",
-    "rate_limit": "Unverified",
-    "free_tier_reset": "Unverified",
+    "requires_credit_card": "Unavailable",
+    "authentication": "API keys and token authentication (JWT, token requests, and token details).",
+    "protocols": [
+      "WebSocket",
+      "SSE",
+      "HTTP"
+    ],
+    "sdk_languages": [
+      "JavaScript",
+      "iOS",
+      "Android",
+      "Java",
+      ".NET",
+      "Ruby",
+      "Python",
+      "PHP",
+      "Go",
+      "Flutter",
+      "Unity"
+    ],
+    "commercial_use": "Commercial use is permitted under the Ably service terms.",
+    "self_hostable": false,
+    "webhooks": true,
+    "rate_limit": "Limits are documented by feature and plan in Ably's limits documentation.",
+    "free_tier_reset": "Monthly",
     "uses": [
       "API/resource management",
       "deployment/infrastructure control",
@@ -2887,18 +2961,31 @@
       "authentication/integrations",
       "monitoring/automation"
     ],
-    "last_verified": null,
-    "verified_by": null,
-    "status": "catalog-only",
-    "verification_status": "provider-homepage-fallback"
+    "last_verified": "2026-09-25",
+    "verified_by": "manual-official-doc-review",
+    "status": "active",
+    "verification_status": "manually-verified",
+    "verification_sources": {
+      "requires_credit_card": "https://ably.com/pricing",
+      "authentication": "https://ably.com/docs/auth",
+      "protocols": "https://ably.com/docs/protocols",
+      "sdk_languages": "https://ably.com/docs/sdks",
+      "commercial_use": "https://ably.com/terms",
+      "self_hostable": "https://ably.com/docs/platform",
+      "webhooks": "https://ably.com/docs/webhooks",
+      "rate_limit": "https://ably.com/docs/platform/architecture/limits",
+      "free_tier_reset": "https://ably.com/pricing",
+      "documentation": "https://ably.com/docs",
+      "pricing": "https://ably.com/pricing"
+    }
   },
   {
     "name": "Airtable API",
     "category": "Dev Tools / Infra",
     "description": "Cataloged API provider.",
     "signup_url": "https://airtable.com/create/tokens",
-    "pricing_url": "https://airtable.com/create/tokens",
-    "documentation_url": "https://airtable.com/create/tokens",
+    "pricing_url": "https://www.airtable.com/pricing",
+    "documentation_url": "https://airtable.com/developers/web/api/introduction",
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
@@ -2906,15 +2993,20 @@
       "amount": "Unverified",
       "expiry": "Unverified"
     },
-    "requires_credit_card": "Unverified",
-    "authentication": "Unverified",
-    "protocols": [],
-    "sdk_languages": [],
-    "commercial_use": "Unverified",
-    "self_hostable": "Unverified",
-    "webhooks": "Unverified",
-    "rate_limit": "Unverified",
-    "free_tier_reset": "Unverified",
+    "requires_credit_card": "Unavailable",
+    "authentication": "Personal access tokens and OAuth 2.0",
+    "protocols": [
+      "REST"
+    ],
+    "sdk_languages": [
+      "JavaScript",
+      "Node.js"
+    ],
+    "commercial_use": "Unavailable",
+    "self_hostable": false,
+    "webhooks": true,
+    "rate_limit": "The API rate limit is 5 requests per second per base; exceeding it returns 429 and requires waiting.",
+    "free_tier_reset": "Unavailable",
     "uses": [
       "API/resource management",
       "deployment/infrastructure control",
@@ -2922,18 +3014,31 @@
       "authentication/integrations",
       "monitoring/automation"
     ],
-    "last_verified": null,
-    "verified_by": null,
-    "status": "catalog-only",
-    "verification_status": "provider-homepage-fallback"
+    "last_verified": "2026-09-25",
+    "verified_by": "manual-official-doc-review",
+    "status": "active",
+    "verification_status": "manually-verified",
+    "verification_sources": {
+      "requires_credit_card": "https://www.airtable.com/pricing",
+      "authentication": "https://airtable.com/developers/web/api/authentication",
+      "protocols": "https://airtable.com/developers/web/api/introduction",
+      "sdk_languages": "https://airtable.com/developers/web/api/client-libraries",
+      "commercial_use": "https://www.airtable.com/pricing",
+      "self_hostable": "https://airtable.com/developers/web/api/introduction",
+      "webhooks": "https://airtable.com/developers/web/api/webhooks-overview",
+      "rate_limit": "https://airtable.com/developers/web/api/rate-limits",
+      "free_tier_reset": "https://www.airtable.com/pricing",
+      "documentation": "https://airtable.com/developers/web/api/introduction",
+      "pricing": "https://www.airtable.com/pricing"
+    }
   },
   {
     "name": "Algolia Search",
     "category": "Dev Tools / Infra",
     "description": "Cataloged API provider.",
     "signup_url": "https://www.algolia.com/users/sign_up",
-    "pricing_url": "https://www.algolia.com/users/sign_up",
-    "documentation_url": "https://www.algolia.com/users/sign_up",
+    "pricing_url": "https://www.algolia.com/pricing/",
+    "documentation_url": "https://www.algolia.com/doc/",
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
@@ -2941,15 +3046,29 @@
       "amount": "Unverified",
       "expiry": "Unverified"
     },
-    "requires_credit_card": "Unverified",
-    "authentication": "Unverified",
-    "protocols": [],
-    "sdk_languages": [],
-    "commercial_use": "Unverified",
-    "self_hostable": "Unverified",
-    "webhooks": "Unverified",
-    "rate_limit": "Unverified",
-    "free_tier_reset": "Unverified",
+    "requires_credit_card": "A credit card is not required for the Build plan trial; billing details are required to continue on a paid plan.",
+    "authentication": "API keys (including application ID and search-only/admin API keys).",
+    "protocols": [
+      "HTTPS",
+      "REST API"
+    ],
+    "sdk_languages": [
+      "JavaScript",
+      "PHP",
+      "Python",
+      "Ruby",
+      ".NET",
+      "Java",
+      "Go",
+      "Kotlin",
+      "Swift",
+      "C++"
+    ],
+    "commercial_use": "Permitted under Algolia's commercial terms and paid plans.",
+    "self_hostable": "No; Algolia Search is a hosted service. Self-hosting is not published as an offering in the provider documentation.",
+    "webhooks": "Unavailable",
+    "rate_limit": "Rate limits depend on plan and API; Algolia documents limits in its API reference and usage plans.",
+    "free_tier_reset": "Monthly (the free Build plan includes a monthly allowance).",
     "uses": [
       "API/resource management",
       "deployment/infrastructure control",
@@ -2957,18 +3076,31 @@
       "authentication/integrations",
       "monitoring/automation"
     ],
-    "last_verified": null,
-    "verified_by": null,
-    "status": "catalog-only",
-    "verification_status": "provider-homepage-fallback"
+    "last_verified": "2026-09-25",
+    "verified_by": "manual-official-doc-review",
+    "status": "active",
+    "verification_status": "manually-verified",
+    "verification_sources": {
+      "requires_credit_card": "https://www.algolia.com/pricing/",
+      "authentication": "https://www.algolia.com/doc/guides/security/api-keys/",
+      "protocols": "https://www.algolia.com/doc/rest-api/search/",
+      "sdk_languages": "https://www.algolia.com/developers/sdks/",
+      "commercial_use": "https://www.algolia.com/terms/",
+      "self_hostable": "https://www.algolia.com/doc/",
+      "webhooks": "https://www.algolia.com/doc/",
+      "rate_limit": "https://www.algolia.com/doc/guides/scaling/architecture/api-rate-limits/",
+      "free_tier_reset": "https://www.algolia.com/pricing/",
+      "documentation": "https://www.algolia.com/doc/",
+      "pricing": "https://www.algolia.com/pricing/"
+    }
   },
   {
     "name": "Auth0",
     "category": "Dev Tools / Infra",
     "description": "Cataloged API provider.",
     "signup_url": "https://auth0.com/signup",
-    "pricing_url": "https://auth0.com/signup",
-    "documentation_url": "https://auth0.com/signup",
+    "pricing_url": "https://auth0.com/pricing",
+    "documentation_url": "https://auth0.com/docs",
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
@@ -2976,15 +3108,33 @@
       "amount": "Unverified",
       "expiry": "Unverified"
     },
-    "requires_credit_card": "Unverified",
-    "authentication": "Unverified",
-    "protocols": [],
-    "sdk_languages": [],
-    "commercial_use": "Unverified",
-    "self_hostable": "Unverified",
-    "webhooks": "Unverified",
-    "rate_limit": "Unverified",
-    "free_tier_reset": "Unverified",
+    "requires_credit_card": "No credit card is required to start a free Auth0 tenant.",
+    "authentication": "OAuth 2.0, OpenID Connect, SAML, and API keys/tokens for Management API access.",
+    "protocols": [
+      "OAuth 2.0",
+      "OpenID Connect",
+      "SAML",
+      "HTTPS/REST"
+    ],
+    "sdk_languages": [
+      "JavaScript",
+      "Node.js",
+      "React",
+      "Angular",
+      "Java",
+      ".NET",
+      "Python",
+      "PHP",
+      "Ruby",
+      "Go",
+      "iOS",
+      "Android"
+    ],
+    "commercial_use": "Permitted subject to Auth0 Terms of Service and applicable plan terms.",
+    "self_hostable": "No; Auth0 is delivered as a cloud service. (Auth0 Private Cloud is an enterprise deployment option, not customer self-hosting.)",
+    "webhooks": "Auth0 Actions can make outbound HTTP requests; a general inbound webhook feature is not published as a core API capability.",
+    "rate_limit": "Management API rate limits are tenant-plan dependent; Auth0 documents a default 2 requests/second limit for many tenants and endpoint-specific limits.",
+    "free_tier_reset": "Monthly; free tenants have monthly active user allowances under the Free plan.",
     "uses": [
       "API/resource management",
       "deployment/infrastructure control",
@@ -2992,10 +3142,23 @@
       "authentication/integrations",
       "monitoring/automation"
     ],
-    "last_verified": null,
-    "verified_by": null,
-    "status": "catalog-only",
-    "verification_status": "provider-homepage-fallback"
+    "last_verified": "2026-09-25",
+    "verified_by": "manual-official-doc-review",
+    "status": "active",
+    "verification_status": "manually-verified",
+    "verification_sources": {
+      "requires_credit_card": "https://auth0.com/pricing",
+      "authentication": "https://auth0.com/docs/secure/tokens/access-tokens",
+      "protocols": "https://auth0.com/docs/get-started/authentication-and-authorization-flow",
+      "sdk_languages": "https://auth0.com/docs/libraries",
+      "commercial_use": "https://auth0.com/terms",
+      "self_hostable": "https://auth0.com/docs/get-started/architecture",
+      "webhooks": "https://auth0.com/docs/customize/actions/flows-and-triggers",
+      "rate_limit": "https://auth0.com/docs/troubleshoot/customer-support/operational-policies/rate-limit-policy",
+      "free_tier_reset": "https://auth0.com/pricing",
+      "documentation": "https://auth0.com/docs",
+      "pricing": "https://auth0.com/pricing"
+    }
   },
   {
     "name": "AWS (free tier)",
@@ -3003,7 +3166,7 @@
     "description": "Cataloged API provider.",
     "signup_url": "https://aws.amazon.com/free/",
     "pricing_url": "https://aws.amazon.com/free/",
-    "documentation_url": "https://aws.amazon.com/free/",
+    "documentation_url": "https://docs.aws.amazon.com/",
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
@@ -3011,15 +3174,33 @@
       "amount": "Unverified",
       "expiry": "Unverified"
     },
-    "requires_credit_card": "Unverified",
-    "authentication": "Unverified",
-    "protocols": [],
-    "sdk_languages": [],
-    "commercial_use": "Unverified",
-    "self_hostable": "Unverified",
-    "webhooks": "Unverified",
-    "rate_limit": "Unverified",
-    "free_tier_reset": "Unverified",
+    "requires_credit_card": "Yes; AWS requires a valid payment method to create an account (with limited exceptions in some regions/programs).",
+    "authentication": "AWS Signature Version 4 using access keys, or temporary credentials from IAM roles/ST​S; AWS also supports IAM Identity Center and SDK credential providers.",
+    "protocols": [
+      "HTTPS",
+      "REST",
+      "JSON",
+      "XML",
+      "AWS Query"
+    ],
+    "sdk_languages": [
+      "C++",
+      "Go",
+      "Java",
+      ".NET",
+      "JavaScript",
+      "PHP",
+      "Python",
+      "Ruby",
+      "Rust",
+      "Kotlin",
+      "Swift"
+    ],
+    "commercial_use": "Commercial use is permitted subject to the AWS Customer Agreement and service terms.",
+    "self_hostable": "AWS services are hosted by AWS; AWS SDKs and APIs can be used from customer infrastructure, but the AWS services themselves are not self-hostable.",
+    "webhooks": "Unavailable as a universal AWS API property; individual services document event destinations/webhooks separately.",
+    "rate_limit": "Service-specific; AWS documents quotas and API throttling separately for each service.",
+    "free_tier_reset": "Varies by service and offer; many offers are monthly, while some are time-limited or always-free.",
     "uses": [
       "API/resource management",
       "deployment/infrastructure control",
@@ -3027,18 +3208,31 @@
       "authentication/integrations",
       "monitoring/automation"
     ],
-    "last_verified": null,
-    "verified_by": null,
-    "status": "catalog-only",
-    "verification_status": "provider-homepage-fallback"
+    "last_verified": "2026-09-25",
+    "verified_by": "manual-official-doc-review",
+    "status": "active",
+    "verification_status": "manually-verified",
+    "verification_sources": {
+      "requires_credit_card": "https://aws.amazon.com/premiumsupport/knowledge-center/what-is-free-tier/",
+      "authentication": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_sigv.html",
+      "protocols": "https://docs.aws.amazon.com/general/latest/gr/signature-version-4.html",
+      "sdk_languages": "https://aws.amazon.com/developer/tools/",
+      "commercial_use": "https://aws.amazon.com/agreement/",
+      "self_hostable": "https://aws.amazon.com/architecture/",
+      "webhooks": "https://docs.aws.amazon.com/",
+      "rate_limit": "https://docs.aws.amazon.com/general/latest/gr/aws-service-information.html",
+      "free_tier_reset": "https://aws.amazon.com/free/",
+      "documentation": "https://docs.aws.amazon.com/",
+      "pricing": "https://aws.amazon.com/free/"
+    }
   },
   {
     "name": "Cloudflare API",
     "category": "Dev Tools / Infra",
     "description": "Cataloged API provider.",
     "signup_url": "https://dash.cloudflare.com/profile/api-tokens",
-    "pricing_url": "https://dash.cloudflare.com/profile/api-tokens",
-    "documentation_url": "https://dash.cloudflare.com/profile/api-tokens",
+    "pricing_url": "https://www.cloudflare.com/plans/",
+    "documentation_url": "https://developers.cloudflare.com/api/",
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
@@ -3046,15 +3240,28 @@
       "amount": "Unverified",
       "expiry": "Unverified"
     },
-    "requires_credit_card": "Unverified",
-    "authentication": "Unverified",
-    "protocols": [],
-    "sdk_languages": [],
-    "commercial_use": "Unverified",
-    "self_hostable": "Unverified",
-    "webhooks": "Unverified",
-    "rate_limit": "Unverified",
-    "free_tier_reset": "Unverified",
+    "requires_credit_card": "No credit card is required for the Free plan; payment details are required for paid products or usage-based services.",
+    "authentication": "API tokens (recommended) or the global API key with account email; Bearer token authentication is used for API tokens.",
+    "protocols": [
+      "HTTPS",
+      "REST",
+      "JSON"
+    ],
+    "sdk_languages": [
+      "Python",
+      "Go",
+      "JavaScript",
+      ".NET",
+      "Java",
+      "PHP",
+      "Ruby",
+      "Terraform"
+    ],
+    "commercial_use": "Permitted subject to Cloudflare's Self-Serve Subscription Agreement and applicable product terms.",
+    "self_hostable": "No; Cloudflare API controls Cloudflare-hosted services and is not a self-hostable Cloudflare service.",
+    "webhooks": "Cloudflare supports notification webhooks for applicable products/events; availability is product-specific.",
+    "rate_limit": "The Cloudflare API limit is 1,200 requests per five minutes per user (with endpoint-specific limits possible).",
+    "free_tier_reset": "Unavailable as a single API-wide reset; Free-plan limits and quotas are product-specific.",
     "uses": [
       "API/resource management",
       "deployment/infrastructure control",
@@ -3062,18 +3269,31 @@
       "authentication/integrations",
       "monitoring/automation"
     ],
-    "last_verified": null,
-    "verified_by": null,
-    "status": "catalog-only",
-    "verification_status": "provider-homepage-fallback"
+    "last_verified": "2026-09-25",
+    "verified_by": "manual-official-doc-review",
+    "status": "active",
+    "verification_status": "manually-verified",
+    "verification_sources": {
+      "requires_credit_card": "https://www.cloudflare.com/plans/free/",
+      "authentication": "https://developers.cloudflare.com/fundamentals/api/get-started/create-token/",
+      "protocols": "https://developers.cloudflare.com/api/",
+      "sdk_languages": "https://developers.cloudflare.com/api/",
+      "commercial_use": "https://www.cloudflare.com/service-specific-terms/",
+      "self_hostable": "https://developers.cloudflare.com/api/",
+      "webhooks": "https://developers.cloudflare.com/notifications/notifications/",
+      "rate_limit": "https://developers.cloudflare.com/fundamentals/api/reference/limits/",
+      "free_tier_reset": "https://developers.cloudflare.com/fundamentals/api/reference/limits/",
+      "documentation": "https://developers.cloudflare.com/api/",
+      "pricing": "https://www.cloudflare.com/plans/"
+    }
   },
   {
     "name": "Firebase",
     "category": "Dev Tools / Infra",
     "description": "Cataloged API provider.",
     "signup_url": "https://console.firebase.google.com",
-    "pricing_url": "https://console.firebase.google.com",
-    "documentation_url": "https://console.firebase.google.com",
+    "pricing_url": "https://firebase.google.com/pricing",
+    "documentation_url": "https://firebase.google.com/docs",
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
@@ -3081,15 +3301,30 @@
       "amount": "Unverified",
       "expiry": "Unverified"
     },
-    "requires_credit_card": "Unverified",
-    "authentication": "Unverified",
-    "protocols": [],
-    "sdk_languages": [],
-    "commercial_use": "Unverified",
-    "self_hostable": "Unverified",
-    "webhooks": "Unverified",
-    "rate_limit": "Unverified",
-    "free_tier_reset": "Unverified",
+    "requires_credit_card": "No credit card is required for the Spark (no-cost) plan; billing is required to use Blaze pay-as-you-go services.",
+    "authentication": "Firebase Authentication, Firebase App Check, Google service-account credentials, and OAuth 2.0 access tokens for Admin/Google APIs.",
+    "protocols": [
+      "HTTPS",
+      "REST",
+      "gRPC"
+    ],
+    "sdk_languages": [
+      "C++",
+      "Java",
+      "JavaScript",
+      "Kotlin",
+      "Objective-C",
+      "Swift",
+      "Dart",
+      "Python",
+      "Go",
+      ".NET"
+    ],
+    "commercial_use": "Permitted subject to the Firebase Terms of Service and Google Cloud terms; quotas and product terms apply.",
+    "self_hostable": "No; Firebase is a Google-hosted backend platform. Firebase open-source client SDKs do not make Firebase services self-hostable.",
+    "webhooks": "Firebase Cloud Functions and event triggers support outbound HTTP/webhook-style integrations; availability is product-specific.",
+    "rate_limit": "Quotas and limits are product-specific (for example, Cloud Firestore and Authentication document separate quotas).",
+    "free_tier_reset": "Varies by product; Spark-plan quotas are generally daily or monthly according to the product quota documentation.",
     "uses": [
       "API/resource management",
       "deployment/infrastructure control",
@@ -3097,18 +3332,31 @@
       "authentication/integrations",
       "monitoring/automation"
     ],
-    "last_verified": null,
-    "verified_by": null,
-    "status": "catalog-only",
-    "verification_status": "provider-homepage-fallback"
+    "last_verified": "2026-09-25",
+    "verified_by": "manual-official-doc-review",
+    "status": "active",
+    "verification_status": "manually-verified",
+    "verification_sources": {
+      "requires_credit_card": "https://firebase.google.com/docs/projects/billing/firebase-pricing-plans",
+      "authentication": "https://firebase.google.com/docs/admin/setup",
+      "protocols": "https://firebase.google.com/docs/reference/rest",
+      "sdk_languages": "https://firebase.google.com/docs/libraries",
+      "commercial_use": "https://firebase.google.com/terms",
+      "self_hostable": "https://firebase.google.com/docs",
+      "webhooks": "https://firebase.google.com/docs/functions/http-events",
+      "rate_limit": "https://firebase.google.com/docs/hosting/quotas-pricing",
+      "free_tier_reset": "https://firebase.google.com/docs/projects/billing/firebase-pricing-plans",
+      "documentation": "https://firebase.google.com/docs",
+      "pricing": "https://firebase.google.com/pricing"
+    }
   },
   {
     "name": "GitHub API",
     "category": "Dev Tools / Infra",
     "description": "Cataloged API provider.",
     "signup_url": "https://github.com/settings/tokens",
-    "pricing_url": "https://github.com/settings/tokens",
-    "documentation_url": "https://github.com/settings/tokens",
+    "pricing_url": "https://github.com/pricing",
+    "documentation_url": "https://docs.github.com/en/rest",
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
@@ -3116,15 +3364,29 @@
       "amount": "Unverified",
       "expiry": "Unverified"
     },
-    "requires_credit_card": "Unverified",
-    "authentication": "Unverified",
-    "protocols": [],
-    "sdk_languages": [],
-    "commercial_use": "Unverified",
-    "self_hostable": "Unverified",
-    "webhooks": "Unverified",
-    "rate_limit": "Unverified",
-    "free_tier_reset": "Unverified",
+    "requires_credit_card": "Unavailable",
+    "authentication": "Personal access tokens, OAuth apps, and GitHub Apps (Bearer token authentication)",
+    "protocols": [
+      "HTTPS REST",
+      "GraphQL"
+    ],
+    "sdk_languages": [
+      "Ruby",
+      "JavaScript/TypeScript",
+      "C#",
+      "Java",
+      "Go",
+      "PHP",
+      "Python",
+      "Rust",
+      "Swift",
+      "Kotlin"
+    ],
+    "commercial_use": "Permitted subject to GitHub terms and applicable API policies",
+    "self_hostable": "Unavailable for the GitHub.com API; GitHub Enterprise Server provides an on-premises GitHub product/API",
+    "webhooks": "Supported",
+    "rate_limit": "REST API unauthenticated: 60 requests/hour; authenticated user: 5,000 requests/hour (higher limits apply to GitHub App installations and Enterprise Cloud)",
+    "free_tier_reset": "Unavailable",
     "uses": [
       "API/resource management",
       "deployment/infrastructure control",
@@ -3132,18 +3394,31 @@
       "authentication/integrations",
       "monitoring/automation"
     ],
-    "last_verified": null,
-    "verified_by": null,
-    "status": "catalog-only",
-    "verification_status": "provider-homepage-fallback"
+    "last_verified": "2026-09-25",
+    "verified_by": "manual-official-doc-review",
+    "status": "active",
+    "verification_status": "manually-verified",
+    "verification_sources": {
+      "requires_credit_card": "https://docs.github.com/en/get-started/learning-about-github/githubs-plans",
+      "authentication": "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api",
+      "protocols": "https://docs.github.com/en/rest/using-the-rest-api/about-the-rest-api",
+      "sdk_languages": "https://github.com/github/rest-api-description",
+      "commercial_use": "https://docs.github.com/en/site-policy/github-terms/github-terms-of-service",
+      "self_hostable": "https://docs.github.com/en/enterprise-server@latest/admin/overview/about-github-enterprise-server",
+      "webhooks": "https://docs.github.com/en/webhooks/about-webhooks",
+      "rate_limit": "https://docs.github.com/en/rest/using-the-rest-api/rate-limits-for-the-rest-api",
+      "free_tier_reset": "https://docs.github.com/en/rest/using-the-rest-api/rate-limits-for-the-rest-api",
+      "documentation": "https://docs.github.com/en/rest",
+      "pricing": "https://github.com/pricing"
+    }
   },
   {
     "name": "GitLab API",
     "category": "Dev Tools / Infra",
     "description": "Cataloged API provider.",
     "signup_url": "https://gitlab.com/-/profile/personal_access_tokens",
-    "pricing_url": "https://gitlab.com/-/profile/personal_access_tokens",
-    "documentation_url": "https://gitlab.com/-/profile/personal_access_tokens",
+    "pricing_url": "https://about.gitlab.com/pricing/",
+    "documentation_url": "https://docs.gitlab.com/api/",
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
@@ -3151,15 +3426,24 @@
       "amount": "Unverified",
       "expiry": "Unverified"
     },
-    "requires_credit_card": "Unverified",
-    "authentication": "Unverified",
-    "protocols": [],
-    "sdk_languages": [],
-    "commercial_use": "Unverified",
-    "self_hostable": "Unverified",
-    "webhooks": "Unverified",
-    "rate_limit": "Unverified",
-    "free_tier_reset": "Unverified",
+    "requires_credit_card": "Unavailable",
+    "authentication": "OAuth 2.0, personal/project/group access tokens, and deploy tokens",
+    "protocols": [
+      "HTTPS REST",
+      "GraphQL"
+    ],
+    "sdk_languages": [
+      "Ruby",
+      "Go",
+      "Python",
+      "JavaScript",
+      "Java"
+    ],
+    "commercial_use": "Permitted under GitLab's applicable terms and license",
+    "self_hostable": "Yes; GitLab Self-Managed",
+    "webhooks": "Supported",
+    "rate_limit": "GitLab.com REST API rate limits are 600 requests per minute per user; additional endpoint-specific limits may apply",
+    "free_tier_reset": "Unavailable",
     "uses": [
       "API/resource management",
       "deployment/infrastructure control",
@@ -3167,18 +3451,31 @@
       "authentication/integrations",
       "monitoring/automation"
     ],
-    "last_verified": null,
-    "verified_by": null,
-    "status": "catalog-only",
-    "verification_status": "provider-homepage-fallback"
+    "last_verified": "2026-09-25",
+    "verified_by": "manual-official-doc-review",
+    "status": "active",
+    "verification_status": "manually-verified",
+    "verification_sources": {
+      "requires_credit_card": "https://about.gitlab.com/pricing/",
+      "authentication": "https://docs.gitlab.com/api/rest/auth/",
+      "protocols": "https://docs.gitlab.com/api/",
+      "sdk_languages": "https://docs.gitlab.com/api/client_libraries/",
+      "commercial_use": "https://about.gitlab.com/terms/",
+      "self_hostable": "https://about.gitlab.com/install/",
+      "webhooks": "https://docs.gitlab.com/user/project/integrations/webhook_events/",
+      "rate_limit": "https://docs.gitlab.com/administration/instance_limits/",
+      "free_tier_reset": "https://about.gitlab.com/pricing/",
+      "documentation": "https://docs.gitlab.com/api/",
+      "pricing": "https://about.gitlab.com/pricing/"
+    }
   },
   {
     "name": "Netlify API",
     "category": "Dev Tools / Infra",
     "description": "Cataloged API provider.",
     "signup_url": "https://app.netlify.com/user/applications",
-    "pricing_url": "https://app.netlify.com/user/applications",
-    "documentation_url": "https://app.netlify.com/user/applications",
+    "pricing_url": "https://www.netlify.com/pricing/",
+    "documentation_url": "https://docs.netlify.com/api/get-started/",
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
@@ -3186,15 +3483,19 @@
       "amount": "Unverified",
       "expiry": "Unverified"
     },
-    "requires_credit_card": "Unverified",
-    "authentication": "Unverified",
-    "protocols": [],
-    "sdk_languages": [],
-    "commercial_use": "Unverified",
-    "self_hostable": "Unverified",
-    "webhooks": "Unverified",
-    "rate_limit": "Unverified",
-    "free_tier_reset": "Unverified",
+    "requires_credit_card": "Unavailable",
+    "authentication": "Personal access tokens and OAuth 2.0",
+    "protocols": [
+      "HTTPS REST"
+    ],
+    "sdk_languages": [
+      "JavaScript/TypeScript"
+    ],
+    "commercial_use": "Unavailable",
+    "self_hostable": "No; Netlify is a hosted platform",
+    "webhooks": "Supported",
+    "rate_limit": "Unavailable",
+    "free_tier_reset": "Unavailable",
     "uses": [
       "API/resource management",
       "deployment/infrastructure control",
@@ -3202,18 +3503,31 @@
       "authentication/integrations",
       "monitoring/automation"
     ],
-    "last_verified": null,
-    "verified_by": null,
-    "status": "catalog-only",
-    "verification_status": "provider-homepage-fallback"
+    "last_verified": "2026-09-25",
+    "verified_by": "manual-official-doc-review",
+    "status": "active",
+    "verification_status": "manually-verified",
+    "verification_sources": {
+      "requires_credit_card": "https://www.netlify.com/pricing/",
+      "authentication": "https://docs.netlify.com/api/get-started/#authentication",
+      "protocols": "https://open-api.netlify.com/",
+      "sdk_languages": "https://github.com/netlify/js-client",
+      "commercial_use": "https://www.netlify.com/legal/terms-of-use/",
+      "self_hostable": "https://www.netlify.com/platform/",
+      "webhooks": "https://docs.netlify.com/api/get-started/#webhooks",
+      "rate_limit": "https://docs.netlify.com/api/get-started/",
+      "free_tier_reset": "https://www.netlify.com/pricing/",
+      "documentation": "https://docs.netlify.com/api/get-started/",
+      "pricing": "https://www.netlify.com/pricing/"
+    }
   },
   {
     "name": "Notion API",
     "category": "Dev Tools / Infra",
     "description": "Cataloged API provider.",
     "signup_url": "https://www.notion.so/my-integrations",
-    "pricing_url": "https://www.notion.so/my-integrations",
-    "documentation_url": "https://www.notion.so/my-integrations",
+    "pricing_url": "https://www.notion.com/pricing",
+    "documentation_url": "https://developers.notion.com/",
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
@@ -3221,15 +3535,20 @@
       "amount": "Unverified",
       "expiry": "Unverified"
     },
-    "requires_credit_card": "Unverified",
-    "authentication": "Unverified",
-    "protocols": [],
-    "sdk_languages": [],
-    "commercial_use": "Unverified",
-    "self_hostable": "Unverified",
-    "webhooks": "Unverified",
-    "rate_limit": "Unverified",
-    "free_tier_reset": "Unverified",
+    "requires_credit_card": "Unavailable",
+    "authentication": "Bearer token (internal integration token or OAuth 2.0)",
+    "protocols": [
+      "HTTPS REST"
+    ],
+    "sdk_languages": [
+      "JavaScript/TypeScript",
+      "Python"
+    ],
+    "commercial_use": "Unavailable",
+    "self_hostable": "No; hosted Notion API",
+    "webhooks": "Supported",
+    "rate_limit": "Average of 3 requests per second per integration, with some variation",
+    "free_tier_reset": "Unavailable",
     "uses": [
       "API/resource management",
       "deployment/infrastructure control",
@@ -3237,18 +3556,31 @@
       "authentication/integrations",
       "monitoring/automation"
     ],
-    "last_verified": null,
-    "verified_by": null,
-    "status": "catalog-only",
-    "verification_status": "provider-homepage-fallback"
+    "last_verified": "2026-09-25",
+    "verified_by": "manual-official-doc-review",
+    "status": "active",
+    "verification_status": "manually-verified",
+    "verification_sources": {
+      "requires_credit_card": "https://www.notion.com/pricing",
+      "authentication": "https://developers.notion.com/reference/authentication",
+      "protocols": "https://developers.notion.com/reference/intro",
+      "sdk_languages": "https://developers.notion.com/page/libraries",
+      "commercial_use": "https://www.notion.com/terms",
+      "self_hostable": "https://developers.notion.com/reference/intro",
+      "webhooks": "https://developers.notion.com/reference/webhooks",
+      "rate_limit": "https://developers.notion.com/reference/request-limits",
+      "free_tier_reset": "https://www.notion.com/pricing",
+      "documentation": "https://developers.notion.com/",
+      "pricing": "https://www.notion.com/pricing"
+    }
   },
   {
     "name": "PostHog",
     "category": "Dev Tools / Infra",
     "description": "Cataloged API provider.",
     "signup_url": "https://app.posthog.com/signup",
-    "pricing_url": "https://app.posthog.com/signup",
-    "documentation_url": "https://app.posthog.com/signup",
+    "pricing_url": "https://posthog.com/pricing",
+    "documentation_url": "https://posthog.com/docs/api",
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
@@ -3256,15 +3588,31 @@
       "amount": "Unverified",
       "expiry": "Unverified"
     },
-    "requires_credit_card": "Unverified",
-    "authentication": "Unverified",
-    "protocols": [],
-    "sdk_languages": [],
-    "commercial_use": "Unverified",
-    "self_hostable": "Unverified",
-    "webhooks": "Unverified",
-    "rate_limit": "Unverified",
-    "free_tier_reset": "Unverified",
+    "requires_credit_card": "No for the free tier (official pricing presents a free usage tier)",
+    "authentication": "Project API key for ingestion; personal/API keys for management APIs",
+    "protocols": [
+      "HTTPS REST",
+      "JavaScript SDK/event ingestion"
+    ],
+    "sdk_languages": [
+      "JavaScript",
+      "React",
+      "React Native",
+      "Node.js",
+      "Python",
+      "Ruby",
+      "PHP",
+      "Go",
+      "iOS",
+      "Android",
+      "Flutter",
+      "Unity"
+    ],
+    "commercial_use": "Permitted under PostHog's applicable terms",
+    "self_hostable": "Yes; PostHog provides a self-hosted deployment",
+    "webhooks": "Supported (webhooks destination)",
+    "rate_limit": "Unavailable",
+    "free_tier_reset": "Monthly",
     "uses": [
       "API/resource management",
       "deployment/infrastructure control",
@@ -3272,18 +3620,31 @@
       "authentication/integrations",
       "monitoring/automation"
     ],
-    "last_verified": null,
-    "verified_by": null,
-    "status": "catalog-only",
-    "verification_status": "provider-homepage-fallback"
+    "last_verified": "2026-09-25",
+    "verified_by": "manual-official-doc-review",
+    "status": "active",
+    "verification_status": "manually-verified",
+    "verification_sources": {
+      "requires_credit_card": "https://posthog.com/pricing",
+      "authentication": "https://posthog.com/docs/api/overview",
+      "protocols": "https://posthog.com/docs/api",
+      "sdk_languages": "https://posthog.com/docs/libraries",
+      "commercial_use": "https://posthog.com/terms",
+      "self_hostable": "https://posthog.com/docs/self-host",
+      "webhooks": "https://posthog.com/docs/cdp/destinations/webhooks",
+      "rate_limit": "https://posthog.com/docs/api",
+      "free_tier_reset": "https://posthog.com/pricing",
+      "documentation": "https://posthog.com/docs/api",
+      "pricing": "https://posthog.com/pricing"
+    }
   },
   {
     "name": "Pusher",
     "category": "Dev Tools / Infra",
     "description": "Cataloged API provider.",
     "signup_url": "https://dashboard.pusher.com/accounts/sign_up",
-    "pricing_url": "https://dashboard.pusher.com/accounts/sign_up",
-    "documentation_url": "https://dashboard.pusher.com/accounts/sign_up",
+    "pricing_url": "https://pusher.com/channels/pricing/",
+    "documentation_url": "https://pusher.com/docs/channels/",
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
@@ -3291,15 +3652,27 @@
       "amount": "Unverified",
       "expiry": "Unverified"
     },
-    "requires_credit_card": "Unverified",
-    "authentication": "Unverified",
-    "protocols": [],
-    "sdk_languages": [],
-    "commercial_use": "Unverified",
-    "self_hostable": "Unverified",
-    "webhooks": "Unverified",
-    "rate_limit": "Unverified",
-    "free_tier_reset": "Unverified",
+    "requires_credit_card": "No for the Sandbox plan (provider says no credit card required)",
+    "authentication": "App key for client connection; server API requests use app_id, key and secret (HTTP API authentication)",
+    "protocols": [
+      "WebSocket",
+      "HTTP/REST"
+    ],
+    "sdk_languages": [
+      "JavaScript",
+      "Node.js",
+      "Ruby",
+      "PHP",
+      "Python",
+      "Java",
+      ".NET",
+      "Go"
+    ],
+    "commercial_use": "Permitted under Pusher terms (paid service plans are offered for production use)",
+    "self_hostable": "No; Pusher Channels is a hosted service",
+    "webhooks": "Supported; channel events can be delivered to configured webhook endpoints",
+    "rate_limit": "Published limits vary by plan and API operation; Pusher documents a 10 requests/second limit for some REST API operations",
+    "free_tier_reset": "Monthly quota (Sandbox plan)",
     "uses": [
       "API/resource management",
       "deployment/infrastructure control",
@@ -3307,18 +3680,31 @@
       "authentication/integrations",
       "monitoring/automation"
     ],
-    "last_verified": null,
-    "verified_by": null,
-    "status": "catalog-only",
-    "verification_status": "provider-homepage-fallback"
+    "last_verified": "2026-09-25",
+    "verified_by": "manual-official-doc-review",
+    "status": "active",
+    "verification_status": "manually-verified",
+    "verification_sources": {
+      "requires_credit_card": "https://pusher.com/channels/pricing/",
+      "authentication": "https://pusher.com/docs/channels/library_auth_reference/rest-api/",
+      "protocols": "https://pusher.com/docs/channels/using_channels/connection/",
+      "sdk_languages": "https://pusher.com/docs/channels/channels_libraries/libraries/",
+      "commercial_use": "https://pusher.com/legal/terms-of-service/",
+      "self_hostable": "https://pusher.com/channels/",
+      "webhooks": "https://pusher.com/docs/channels/miscellaneous/webhooks/",
+      "rate_limit": "https://pusher.com/docs/channels/miscellaneous/quotas-limits/",
+      "free_tier_reset": "https://pusher.com/channels/pricing/",
+      "documentation": "https://pusher.com/docs/channels/",
+      "pricing": "https://pusher.com/channels/pricing/"
+    }
   },
   {
     "name": "Sentry",
     "category": "Dev Tools / Infra",
     "description": "Cataloged API provider.",
     "signup_url": "https://sentry.io/signup/",
-    "pricing_url": "https://sentry.io/signup/",
-    "documentation_url": "https://sentry.io/signup/",
+    "pricing_url": "https://sentry.io/pricing/",
+    "documentation_url": "https://docs.sentry.io/",
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
@@ -3326,15 +3712,31 @@
       "amount": "Unverified",
       "expiry": "Unverified"
     },
-    "requires_credit_card": "Unverified",
-    "authentication": "Unverified",
-    "protocols": [],
-    "sdk_languages": [],
-    "commercial_use": "Unverified",
-    "self_hostable": "Unverified",
-    "webhooks": "Unverified",
-    "rate_limit": "Unverified",
-    "free_tier_reset": "Unverified",
+    "requires_credit_card": "No for the Developer plan; card is required when upgrading to paid plans",
+    "authentication": "API authentication uses an auth token (Bearer token); DSN is used by SDKs to submit events",
+    "protocols": [
+      "HTTPS/REST"
+    ],
+    "sdk_languages": [
+      "JavaScript",
+      "Python",
+      "Ruby",
+      "PHP",
+      "Java",
+      "C#",
+      "Go",
+      "Rust",
+      "C/C++",
+      "Dart",
+      "Elixir",
+      "Kotlin",
+      "Swift"
+    ],
+    "commercial_use": "Permitted subject to Sentry terms; commercial plans are published",
+    "self_hostable": "Yes; Sentry publishes a self-hosted installation option",
+    "webhooks": "Supported through Sentry integrations/webhooks",
+    "rate_limit": "API rate limits are published in the API response rate-limit headers and documented by Sentry",
+    "free_tier_reset": "Monthly quota reset",
     "uses": [
       "API/resource management",
       "deployment/infrastructure control",
@@ -3342,18 +3744,31 @@
       "authentication/integrations",
       "monitoring/automation"
     ],
-    "last_verified": null,
-    "verified_by": null,
-    "status": "catalog-only",
-    "verification_status": "provider-homepage-fallback"
+    "last_verified": "2026-09-25",
+    "verified_by": "manual-official-doc-review",
+    "status": "active",
+    "verification_status": "manually-verified",
+    "verification_sources": {
+      "requires_credit_card": "https://sentry.io/pricing/",
+      "authentication": "https://docs.sentry.io/api/auth/",
+      "protocols": "https://docs.sentry.io/api/",
+      "sdk_languages": "https://docs.sentry.io/platforms/",
+      "commercial_use": "https://sentry.io/terms/",
+      "self_hostable": "https://develop.sentry.dev/self-hosted/",
+      "webhooks": "https://docs.sentry.io/product/integrations/integration-platform/webhooks/",
+      "rate_limit": "https://docs.sentry.io/api/ratelimits/",
+      "free_tier_reset": "https://sentry.io/pricing/",
+      "documentation": "https://docs.sentry.io/",
+      "pricing": "https://sentry.io/pricing/"
+    }
   },
   {
     "name": "Stripe (test keys)",
     "category": "Dev Tools / Infra",
     "description": "Cataloged API provider.",
     "signup_url": "https://dashboard.stripe.com/register",
-    "pricing_url": "https://dashboard.stripe.com/register",
-    "documentation_url": "https://dashboard.stripe.com/register",
+    "pricing_url": "https://stripe.com/pricing",
+    "documentation_url": "https://docs.stripe.com/",
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
@@ -3361,15 +3776,25 @@
       "amount": "Unverified",
       "expiry": "Unverified"
     },
-    "requires_credit_card": "Unverified",
-    "authentication": "Unverified",
-    "protocols": [],
-    "sdk_languages": [],
-    "commercial_use": "Unverified",
-    "self_hostable": "Unverified",
-    "webhooks": "Unverified",
-    "rate_limit": "Unverified",
-    "free_tier_reset": "Unverified",
+    "requires_credit_card": "No; test mode is available without making live charges",
+    "authentication": "Secret and publishable API keys; test keys are prefixed sk_test_ and pk_test_",
+    "protocols": [
+      "HTTPS/REST"
+    ],
+    "sdk_languages": [
+      "Ruby",
+      "PHP",
+      "Java",
+      "Python",
+      "Node.js",
+      ".NET",
+      "Go"
+    ],
+    "commercial_use": "Permitted subject to Stripe Services Agreement and applicable product terms",
+    "self_hostable": "No; Stripe API is a hosted service",
+    "webhooks": "Supported; Stripe sends event notifications to HTTPS webhook endpoints",
+    "rate_limit": "Stripe API rate limit is 100 operations per second in live mode and 25 operations per second in test mode",
+    "free_tier_reset": "Unavailable",
     "uses": [
       "API/resource management",
       "deployment/infrastructure control",
@@ -3377,18 +3802,31 @@
       "authentication/integrations",
       "monitoring/automation"
     ],
-    "last_verified": null,
-    "verified_by": null,
-    "status": "catalog-only",
-    "verification_status": "provider-homepage-fallback"
+    "last_verified": "2026-09-25",
+    "verified_by": "manual-official-doc-review",
+    "status": "active",
+    "verification_status": "manually-verified",
+    "verification_sources": {
+      "requires_credit_card": "https://docs.stripe.com/keys",
+      "authentication": "https://docs.stripe.com/keys",
+      "protocols": "https://docs.stripe.com/api",
+      "sdk_languages": "https://docs.stripe.com/sdks",
+      "commercial_use": "https://stripe.com/legal/ssa",
+      "self_hostable": "https://docs.stripe.com/api",
+      "webhooks": "https://docs.stripe.com/webhooks",
+      "rate_limit": "https://docs.stripe.com/rate-limits",
+      "free_tier_reset": "https://stripe.com/pricing",
+      "documentation": "https://docs.stripe.com/",
+      "pricing": "https://stripe.com/pricing"
+    }
   },
   {
     "name": "Supabase",
     "category": "Dev Tools / Infra",
     "description": "Cataloged API provider.",
     "signup_url": "https://supabase.com/dashboard",
-    "pricing_url": "https://supabase.com/dashboard",
-    "documentation_url": "https://supabase.com/dashboard",
+    "pricing_url": "https://supabase.com/pricing",
+    "documentation_url": "https://supabase.com/docs",
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
@@ -3396,15 +3834,26 @@
       "amount": "Unverified",
       "expiry": "Unverified"
     },
-    "requires_credit_card": "Unverified",
-    "authentication": "Unverified",
-    "protocols": [],
-    "sdk_languages": [],
-    "commercial_use": "Unverified",
-    "self_hostable": "Unverified",
-    "webhooks": "Unverified",
-    "rate_limit": "Unverified",
-    "free_tier_reset": "Unverified",
+    "requires_credit_card": "No for the Free plan",
+    "authentication": "API keys (publishable/anon and secret/service_role) are supplied in request headers; user auth uses JWT",
+    "protocols": [
+      "HTTPS/REST",
+      "WebSocket"
+    ],
+    "sdk_languages": [
+      "JavaScript/TypeScript",
+      "Dart",
+      "Flutter",
+      "Python",
+      "C#",
+      "Swift",
+      "Kotlin"
+    ],
+    "commercial_use": "Permitted subject to Supabase Terms of Service",
+    "self_hostable": "Yes; Supabase provides self-hosting documentation",
+    "webhooks": "Supported through Database Webhooks",
+    "rate_limit": "Published limits depend on product/resource and plan; Supabase documents API rate limits",
+    "free_tier_reset": "Monthly billing-cycle quota reset",
     "uses": [
       "API/resource management",
       "deployment/infrastructure control",
@@ -3412,18 +3861,31 @@
       "authentication/integrations",
       "monitoring/automation"
     ],
-    "last_verified": null,
-    "verified_by": null,
-    "status": "catalog-only",
-    "verification_status": "provider-homepage-fallback"
+    "last_verified": "2026-09-25",
+    "verified_by": "manual-official-doc-review",
+    "status": "active",
+    "verification_status": "manually-verified",
+    "verification_sources": {
+      "requires_credit_card": "https://supabase.com/pricing",
+      "authentication": "https://supabase.com/docs/guides/api/api-keys",
+      "protocols": "https://supabase.com/docs/guides/api",
+      "sdk_languages": "https://supabase.com/docs/reference",
+      "commercial_use": "https://supabase.com/terms",
+      "self_hostable": "https://supabase.com/docs/guides/self-hosting",
+      "webhooks": "https://supabase.com/docs/guides/database/webhooks",
+      "rate_limit": "https://supabase.com/docs/guides/platform/quotas",
+      "free_tier_reset": "https://supabase.com/pricing",
+      "documentation": "https://supabase.com/docs",
+      "pricing": "https://supabase.com/pricing"
+    }
   },
   {
     "name": "Vercel API",
     "category": "Dev Tools / Infra",
     "description": "Cataloged API provider.",
     "signup_url": "https://vercel.com/account/tokens",
-    "pricing_url": "https://vercel.com/account/tokens",
-    "documentation_url": "https://vercel.com/account/tokens",
+    "pricing_url": "https://vercel.com/pricing",
+    "documentation_url": "https://vercel.com/docs/rest-api",
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
@@ -3431,15 +3893,19 @@
       "amount": "Unverified",
       "expiry": "Unverified"
     },
-    "requires_credit_card": "Unverified",
-    "authentication": "Unverified",
-    "protocols": [],
-    "sdk_languages": [],
-    "commercial_use": "Unverified",
-    "self_hostable": "Unverified",
-    "webhooks": "Unverified",
-    "rate_limit": "Unverified",
-    "free_tier_reset": "Unverified",
+    "requires_credit_card": "No for the Hobby plan; payment details are required for paid plans",
+    "authentication": "Bearer token in the Authorization header; tokens are created in account settings",
+    "protocols": [
+      "HTTPS/REST"
+    ],
+    "sdk_languages": [
+      "JavaScript/TypeScript (Vercel SDK)"
+    ],
+    "commercial_use": "Permitted subject to Vercel Terms of Service and plan restrictions",
+    "self_hostable": "No; Vercel API is a hosted service",
+    "webhooks": "Supported through Vercel webhooks/integrations",
+    "rate_limit": "Rate limits are published in the Vercel API documentation and returned in response headers",
+    "free_tier_reset": "Unavailable",
     "uses": [
       "API/resource management",
       "deployment/infrastructure control",
@@ -3447,18 +3913,31 @@
       "authentication/integrations",
       "monitoring/automation"
     ],
-    "last_verified": null,
-    "verified_by": null,
-    "status": "catalog-only",
-    "verification_status": "provider-homepage-fallback"
+    "last_verified": "2026-09-25",
+    "verified_by": "manual-official-doc-review",
+    "status": "active",
+    "verification_status": "manually-verified",
+    "verification_sources": {
+      "requires_credit_card": "https://vercel.com/pricing",
+      "authentication": "https://vercel.com/docs/rest-api#authentication",
+      "protocols": "https://vercel.com/docs/rest-api",
+      "sdk_languages": "https://vercel.com/docs/rest-api/sdk",
+      "commercial_use": "https://vercel.com/legal/terms",
+      "self_hostable": "https://vercel.com/docs/rest-api",
+      "webhooks": "https://vercel.com/docs/webhooks",
+      "rate_limit": "https://vercel.com/docs/rest-api#rate-limits",
+      "free_tier_reset": "https://vercel.com/pricing",
+      "documentation": "https://vercel.com/docs/rest-api",
+      "pricing": "https://vercel.com/pricing"
+    }
   },
   {
     "name": "Bitly API",
     "category": "Dev Tools / Infra (additional)",
     "description": "Cataloged API provider.",
     "signup_url": "https://bitly.com",
-    "pricing_url": "https://bitly.com",
-    "documentation_url": "https://bitly.com",
+    "pricing_url": "https://bitly.com/pages/pricing",
+    "documentation_url": "https://dev.bitly.com/",
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
@@ -3466,15 +3945,24 @@
       "amount": "Unverified",
       "expiry": "Unverified"
     },
-    "requires_credit_card": "Unverified",
-    "authentication": "Unverified",
-    "protocols": [],
-    "sdk_languages": [],
-    "commercial_use": "Unverified",
-    "self_hostable": "Unverified",
-    "webhooks": "Unverified",
-    "rate_limit": "Unverified",
-    "free_tier_reset": "Unverified",
+    "requires_credit_card": "Unavailable",
+    "authentication": "OAuth 2.0 bearer tokens and personal access tokens",
+    "protocols": [
+      "HTTPS",
+      "REST",
+      "JSON"
+    ],
+    "sdk_languages": [
+      "PHP",
+      "Python",
+      "Ruby",
+      "JavaScript"
+    ],
+    "commercial_use": "Unavailable",
+    "self_hostable": false,
+    "webhooks": "Webhooks are supported through Bitly webhooks endpoints",
+    "rate_limit": "1,000 requests per hour per user",
+    "free_tier_reset": "Unavailable",
     "uses": [
       "API/resource management",
       "deployment/infrastructure control",
@@ -3482,18 +3970,31 @@
       "authentication/integrations",
       "monitoring/automation"
     ],
-    "last_verified": null,
-    "verified_by": null,
-    "status": "catalog-only",
-    "verification_status": "provider-homepage-fallback"
+    "last_verified": "2026-09-25",
+    "verified_by": "manual-official-doc-review",
+    "status": "active",
+    "verification_status": "manually-verified",
+    "verification_sources": {
+      "requires_credit_card": "https://bitly.com/pages/pricing",
+      "authentication": "https://dev.bitly.com/docs/getting-started/authentication/",
+      "protocols": "https://dev.bitly.com/api-reference/",
+      "sdk_languages": "https://dev.bitly.com/docs/getting-started/libraries/",
+      "commercial_use": "https://bitly.com/pages/terms-of-service",
+      "self_hostable": "https://bitly.com/pages/terms-of-service",
+      "webhooks": "https://dev.bitly.com/api-reference/webhooks/",
+      "rate_limit": "https://dev.bitly.com/docs/getting-started/rate-limits/",
+      "free_tier_reset": "https://bitly.com/pages/pricing",
+      "documentation": "https://dev.bitly.com/",
+      "pricing": "https://bitly.com/pages/pricing"
+    }
   },
   {
     "name": "Contentful",
     "category": "Dev Tools / Infra (additional)",
     "description": "Cataloged API provider.",
     "signup_url": "https://www.contentful.com",
-    "pricing_url": "https://www.contentful.com",
-    "documentation_url": "https://www.contentful.com",
+    "pricing_url": "https://www.contentful.com/pricing/",
+    "documentation_url": "https://www.contentful.com/developers/docs/",
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
@@ -3501,15 +4002,29 @@
       "amount": "Unverified",
       "expiry": "Unverified"
     },
-    "requires_credit_card": "Unverified",
-    "authentication": "Unverified",
-    "protocols": [],
-    "sdk_languages": [],
-    "commercial_use": "Unverified",
-    "self_hostable": "Unverified",
-    "webhooks": "Unverified",
-    "rate_limit": "Unverified",
-    "free_tier_reset": "Unverified",
+    "requires_credit_card": "No for the Free plan",
+    "authentication": "API keys/tokens via Authorization bearer token; OAuth 2.0 for applications",
+    "protocols": [
+      "HTTPS",
+      "REST",
+      "GraphQL",
+      "JSON"
+    ],
+    "sdk_languages": [
+      "JavaScript",
+      "Java",
+      "PHP",
+      "Python",
+      ".NET",
+      "Ruby",
+      "Swift",
+      "Kotlin"
+    ],
+    "commercial_use": "Yes, subject to plan terms",
+    "self_hostable": false,
+    "webhooks": "Supported",
+    "rate_limit": "Content Management API: 10 requests per second per space; Content Delivery API: 78 requests per second per space",
+    "free_tier_reset": "Unavailable",
     "uses": [
       "API/resource management",
       "deployment/infrastructure control",
@@ -3517,18 +4032,31 @@
       "authentication/integrations",
       "monitoring/automation"
     ],
-    "last_verified": null,
-    "verified_by": null,
-    "status": "catalog-only",
-    "verification_status": "provider-homepage-fallback"
+    "last_verified": "2026-09-25",
+    "verified_by": "manual-official-doc-review",
+    "status": "active",
+    "verification_status": "manually-verified",
+    "verification_sources": {
+      "requires_credit_card": "https://www.contentful.com/pricing/",
+      "authentication": "https://www.contentful.com/developers/docs/references/authentication/",
+      "protocols": "https://www.contentful.com/developers/docs/references/",
+      "sdk_languages": "https://www.contentful.com/developers/docs/references/sdks/",
+      "commercial_use": "https://www.contentful.com/legal/terms-of-service/",
+      "self_hostable": "https://www.contentful.com/legal/terms-of-service/",
+      "webhooks": "https://www.contentful.com/developers/docs/webhooks/",
+      "rate_limit": "https://www.contentful.com/developers/docs/references/content-management-api/#/introduction/api-rate-limits",
+      "free_tier_reset": "https://www.contentful.com/pricing/",
+      "documentation": "https://www.contentful.com/developers/docs/",
+      "pricing": "https://www.contentful.com/pricing/"
+    }
   },
   {
     "name": "DigitalOcean API",
     "category": "Dev Tools / Infra (additional)",
     "description": "Cataloged API provider.",
     "signup_url": "https://cloud.digitalocean.com/account/api/tokens",
-    "pricing_url": "https://cloud.digitalocean.com/account/api/tokens",
-    "documentation_url": "https://cloud.digitalocean.com/account/api/tokens",
+    "pricing_url": "https://www.digitalocean.com/pricing/",
+    "documentation_url": "https://docs.digitalocean.com/reference/api/",
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
@@ -3536,15 +4064,25 @@
       "amount": "Unverified",
       "expiry": "Unverified"
     },
-    "requires_credit_card": "Unverified",
-    "authentication": "Unverified",
-    "protocols": [],
-    "sdk_languages": [],
-    "commercial_use": "Unverified",
-    "self_hostable": "Unverified",
-    "webhooks": "Unverified",
-    "rate_limit": "Unverified",
-    "free_tier_reset": "Unverified",
+    "requires_credit_card": "Yes to create an account/use paid resources; promotional trial terms may vary",
+    "authentication": "OAuth 2.0 and personal access tokens using Bearer authentication",
+    "protocols": [
+      "HTTPS",
+      "REST",
+      "JSON"
+    ],
+    "sdk_languages": [
+      "Go",
+      "Python",
+      "Ruby",
+      "PHP",
+      "JavaScript"
+    ],
+    "commercial_use": "Yes, subject to DigitalOcean terms",
+    "self_hostable": false,
+    "webhooks": "Unavailable",
+    "rate_limit": "5,000 requests per hour",
+    "free_tier_reset": "Unavailable",
     "uses": [
       "API/resource management",
       "deployment/infrastructure control",
@@ -3552,18 +4090,31 @@
       "authentication/integrations",
       "monitoring/automation"
     ],
-    "last_verified": null,
-    "verified_by": null,
-    "status": "catalog-only",
-    "verification_status": "provider-homepage-fallback"
+    "last_verified": "2026-09-25",
+    "verified_by": "manual-official-doc-review",
+    "status": "active",
+    "verification_status": "manually-verified",
+    "verification_sources": {
+      "requires_credit_card": "https://www.digitalocean.com/try/",
+      "authentication": "https://docs.digitalocean.com/reference/api/api-reference/#authentication",
+      "protocols": "https://docs.digitalocean.com/reference/api/",
+      "sdk_languages": "https://docs.digitalocean.com/reference/api/libraries/",
+      "commercial_use": "https://www.digitalocean.com/legal/terms-of-service-agreement/",
+      "self_hostable": "https://www.digitalocean.com/legal/terms-of-service-agreement/",
+      "webhooks": "https://docs.digitalocean.com/reference/api/",
+      "rate_limit": "https://docs.digitalocean.com/reference/api/api-reference/#rate-limit",
+      "free_tier_reset": "https://www.digitalocean.com/pricing/",
+      "documentation": "https://docs.digitalocean.com/reference/api/",
+      "pricing": "https://www.digitalocean.com/pricing/"
+    }
   },
   {
     "name": "Fauna",
     "category": "Dev Tools / Infra (additional)",
     "description": "Cataloged API provider.",
     "signup_url": "https://fauna.com",
-    "pricing_url": "https://fauna.com",
-    "documentation_url": "https://fauna.com",
+    "pricing_url": "https://fauna.com/pricing",
+    "documentation_url": "https://docs.fauna.com/",
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
@@ -3571,15 +4122,27 @@
       "amount": "Unverified",
       "expiry": "Unverified"
     },
-    "requires_credit_card": "Unverified",
-    "authentication": "Unverified",
-    "protocols": [],
-    "sdk_languages": [],
-    "commercial_use": "Unverified",
-    "self_hostable": "Unverified",
-    "webhooks": "Unverified",
-    "rate_limit": "Unverified",
-    "free_tier_reset": "Unverified",
+    "requires_credit_card": "Unavailable",
+    "authentication": "Secret keys sent in the Authorization header as Bearer tokens",
+    "protocols": [
+      "HTTPS",
+      "HTTP",
+      "JSON"
+    ],
+    "sdk_languages": [
+      "JavaScript",
+      "TypeScript",
+      "Java",
+      "Go",
+      "Python",
+      "Ruby",
+      "C#"
+    ],
+    "commercial_use": "Yes, subject to terms",
+    "self_hostable": false,
+    "webhooks": "Unavailable",
+    "rate_limit": "Unavailable",
+    "free_tier_reset": "Unavailable",
     "uses": [
       "API/resource management",
       "deployment/infrastructure control",
@@ -3587,17 +4150,30 @@
       "authentication/integrations",
       "monitoring/automation"
     ],
-    "last_verified": null,
-    "verified_by": null,
-    "status": "catalog-only",
-    "verification_status": "provider-homepage-fallback"
+    "last_verified": "2026-09-25",
+    "verified_by": "manual-official-doc-review",
+    "status": "active",
+    "verification_status": "manually-verified",
+    "verification_sources": {
+      "requires_credit_card": "https://fauna.com/pricing",
+      "authentication": "https://docs.fauna.com/fauna/current/reference/http/",
+      "protocols": "https://docs.fauna.com/fauna/current/reference/http/",
+      "sdk_languages": "https://docs.fauna.com/fauna/current/drivers/",
+      "commercial_use": "https://fauna.com/terms",
+      "self_hostable": "https://fauna.com/terms",
+      "webhooks": "https://docs.fauna.com/fauna/current/",
+      "rate_limit": "https://docs.fauna.com/fauna/current/",
+      "free_tier_reset": "https://fauna.com/pricing",
+      "documentation": "https://docs.fauna.com/",
+      "pricing": "https://fauna.com/pricing"
+    }
   },
   {
     "name": "Heroku Platform API",
     "category": "Dev Tools / Infra (additional)",
     "description": "Cataloged API provider.",
     "signup_url": "https://devcenter.heroku.com/articles/platform-api-reference",
-    "pricing_url": "https://devcenter.heroku.com/articles/platform-api-reference",
+    "pricing_url": "https://www.heroku.com/pricing",
     "documentation_url": "https://devcenter.heroku.com/articles/platform-api-reference",
     "free_tier": {
       "has_free_tier": null,
@@ -3606,15 +4182,25 @@
       "amount": "Unverified",
       "expiry": "Unverified"
     },
-    "requires_credit_card": "Unverified",
-    "authentication": "Unverified",
-    "protocols": [],
-    "sdk_languages": [],
-    "commercial_use": "Unverified",
-    "self_hostable": "Unverified",
-    "webhooks": "Unverified",
-    "rate_limit": "Unverified",
-    "free_tier_reset": "Unverified",
+    "requires_credit_card": "No for a Heroku account; payment method may be required for paid resources",
+    "authentication": "OAuth 2.0 or API tokens via Authorization header",
+    "protocols": [
+      "HTTPS",
+      "REST",
+      "JSON"
+    ],
+    "sdk_languages": [
+      "Ruby",
+      "Node.js",
+      "Python",
+      "Java",
+      "Go"
+    ],
+    "commercial_use": "Yes, subject to Heroku terms",
+    "self_hostable": false,
+    "webhooks": "Unavailable",
+    "rate_limit": "4,500 requests per hour per account",
+    "free_tier_reset": "Unavailable",
     "uses": [
       "API/resource management",
       "deployment/infrastructure control",
@@ -3622,18 +4208,31 @@
       "authentication/integrations",
       "monitoring/automation"
     ],
-    "last_verified": null,
-    "verified_by": null,
-    "status": "catalog-only",
-    "verification_status": "provider-homepage-fallback"
+    "last_verified": "2026-09-25",
+    "verified_by": "manual-official-doc-review",
+    "status": "active",
+    "verification_status": "manually-verified",
+    "verification_sources": {
+      "requires_credit_card": "https://www.heroku.com/pricing",
+      "authentication": "https://devcenter.heroku.com/articles/platform-api-reference#authentication",
+      "protocols": "https://devcenter.heroku.com/articles/platform-api-reference",
+      "sdk_languages": "https://devcenter.heroku.com/articles/platform-api-reference#libraries",
+      "commercial_use": "https://www.heroku.com/policy/terms-of-service",
+      "self_hostable": "https://www.heroku.com/policy/terms-of-service",
+      "webhooks": "https://devcenter.heroku.com/articles/platform-api-reference",
+      "rate_limit": "https://devcenter.heroku.com/articles/platform-api-reference#rate-limits",
+      "free_tier_reset": "https://www.heroku.com/pricing",
+      "documentation": "https://devcenter.heroku.com/articles/platform-api-reference",
+      "pricing": "https://www.heroku.com/pricing"
+    }
   },
   {
     "name": "Linode API",
     "category": "Dev Tools / Infra (additional)",
     "description": "Cataloged API provider.",
     "signup_url": "https://cloud.linode.com/profile/tokens",
-    "pricing_url": "https://cloud.linode.com/profile/tokens",
-    "documentation_url": "https://cloud.linode.com/profile/tokens",
+    "pricing_url": "https://www.linode.com/pricing/",
+    "documentation_url": "https://www.linode.com/docs/products/tools/cloud-management-api/",
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
@@ -3641,15 +4240,28 @@
       "amount": "Unverified",
       "expiry": "Unverified"
     },
-    "requires_credit_card": "Unverified",
-    "authentication": "Unverified",
-    "protocols": [],
-    "sdk_languages": [],
-    "commercial_use": "Unverified",
-    "self_hostable": "Unverified",
-    "webhooks": "Unverified",
-    "rate_limit": "Unverified",
-    "free_tier_reset": "Unverified",
+    "requires_credit_card": "Yes for creating a paid Cloud Manager account; trial eligibility and payment requirements are described by Linode",
+    "authentication": [
+      "Personal access tokens",
+      "OAuth 2.0"
+    ],
+    "protocols": [
+      "HTTPS",
+      "REST",
+      "JSON"
+    ],
+    "sdk_languages": [
+      "Go",
+      "Python",
+      "Ruby",
+      "PHP",
+      "JavaScript/TypeScript"
+    ],
+    "commercial_use": "Permitted subject to Akamai/Linode terms of service",
+    "self_hostable": "No; Linode API manages Akamai cloud resources and is not offered as self-hosted software",
+    "webhooks": "Unavailable",
+    "rate_limit": "800 requests per minute per account; API returns HTTP 429 when exceeded",
+    "free_tier_reset": "Unavailable",
     "uses": [
       "API/resource management",
       "deployment/infrastructure control",
@@ -3657,18 +4269,31 @@
       "authentication/integrations",
       "monitoring/automation"
     ],
-    "last_verified": null,
-    "verified_by": null,
-    "status": "catalog-only",
-    "verification_status": "provider-homepage-fallback"
+    "last_verified": "2026-09-25",
+    "verified_by": "manual-official-doc-review",
+    "status": "active",
+    "verification_status": "manually-verified",
+    "verification_sources": {
+      "requires_credit_card": "https://www.linode.com/docs/products/tools/cloud-manager/guides/free-credit/",
+      "authentication": "https://www.linode.com/docs/products/tools/cloud-management-api/#section_authentication",
+      "protocols": "https://www.linode.com/docs/products/tools/cloud-management-api/",
+      "sdk_languages": "https://www.linode.com/docs/products/tools/cloud-management-api/",
+      "commercial_use": "https://www.linode.com/legal/terms-of-service/",
+      "self_hostable": "https://www.linode.com/docs/products/tools/cloud-management-api/",
+      "webhooks": "https://www.linode.com/docs/products/tools/cloud-management-api/",
+      "rate_limit": "https://www.linode.com/docs/products/tools/cloud-management-api/#section_rate_limiting",
+      "free_tier_reset": "https://www.linode.com/docs/products/tools/cloud-manager/guides/free-credit/",
+      "documentation": "https://www.linode.com/docs/products/tools/cloud-management-api/",
+      "pricing": "https://www.linode.com/pricing/"
+    }
   },
   {
     "name": "MongoDB Atlas",
     "category": "Dev Tools / Infra (additional)",
     "description": "Cataloged API provider.",
     "signup_url": "https://www.mongodb.com/cloud/atlas",
-    "pricing_url": "https://www.mongodb.com/cloud/atlas",
-    "documentation_url": "https://www.mongodb.com/cloud/atlas",
+    "pricing_url": "https://www.mongodb.com/pricing/",
+    "documentation_url": "https://www.mongodb.com/docs/atlas/api/",
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
@@ -3676,15 +4301,24 @@
       "amount": "Unverified",
       "expiry": "Unverified"
     },
-    "requires_credit_card": "Unverified",
-    "authentication": "Unverified",
-    "protocols": [],
-    "sdk_languages": [],
-    "commercial_use": "Unverified",
-    "self_hostable": "Unverified",
-    "webhooks": "Unverified",
-    "rate_limit": "Unverified",
-    "free_tier_reset": "Unverified",
+    "requires_credit_card": "No for the Free cluster; a payment method is required when upgrading to a paid service",
+    "authentication": [
+      "Programmatic API keys (public/private key pair)",
+      "OAuth 2.0"
+    ],
+    "protocols": [
+      "HTTPS",
+      "REST",
+      "JSON"
+    ],
+    "sdk_languages": [
+      "Unavailable"
+    ],
+    "commercial_use": "Permitted subject to MongoDB Atlas terms",
+    "self_hostable": "No; Atlas is MongoDB's managed cloud service",
+    "webhooks": "Atlas App Services webhooks are available, but Atlas Administration API webhooks are not documented as a general API feature",
+    "rate_limit": "100 requests per minute per IP address for the Atlas Administration API",
+    "free_tier_reset": "Free cluster limits do not reset on a recurring API quota schedule; Atlas Free cluster is a continuously available tier subject to its limits",
     "uses": [
       "API/resource management",
       "deployment/infrastructure control",
@@ -3692,18 +4326,31 @@
       "authentication/integrations",
       "monitoring/automation"
     ],
-    "last_verified": null,
-    "verified_by": null,
-    "status": "catalog-only",
-    "verification_status": "provider-homepage-fallback"
+    "last_verified": "2026-09-25",
+    "verified_by": "manual-official-doc-review",
+    "status": "active",
+    "verification_status": "manually-verified",
+    "verification_sources": {
+      "requires_credit_card": "https://www.mongodb.com/docs/atlas/billing/paying-for-atlas/",
+      "authentication": "https://www.mongodb.com/docs/atlas/api/apiKeyManagement/",
+      "protocols": "https://www.mongodb.com/docs/atlas/reference/api-resources-spec/v2/",
+      "sdk_languages": "https://www.mongodb.com/docs/atlas/api/",
+      "commercial_use": "https://www.mongodb.com/legal/terms-of-use/",
+      "self_hostable": "https://www.mongodb.com/docs/atlas/getting-started/",
+      "webhooks": "https://www.mongodb.com/docs/atlas/app-services/functions/http/",
+      "rate_limit": "https://www.mongodb.com/docs/atlas/reference/api/api-limits/",
+      "free_tier_reset": "https://www.mongodb.com/docs/atlas/tutorial/deploy-free-tier-cluster/",
+      "documentation": "https://www.mongodb.com/docs/atlas/api/",
+      "pricing": "https://www.mongodb.com/pricing/"
+    }
   },
   {
     "name": "Neon (Postgres)",
     "category": "Dev Tools / Infra (additional)",
     "description": "Cataloged API provider.",
     "signup_url": "https://neon.tech",
-    "pricing_url": "https://neon.tech",
-    "documentation_url": "https://neon.tech",
+    "pricing_url": "https://neon.tech/pricing",
+    "documentation_url": "https://neon.tech/docs/reference/api-reference",
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
@@ -3711,15 +4358,28 @@
       "amount": "Unverified",
       "expiry": "Unverified"
     },
-    "requires_credit_card": "Unverified",
-    "authentication": "Unverified",
-    "protocols": [],
-    "sdk_languages": [],
-    "commercial_use": "Unverified",
-    "self_hostable": "Unverified",
-    "webhooks": "Unverified",
-    "rate_limit": "Unverified",
-    "free_tier_reset": "Unverified",
+    "requires_credit_card": "No for the Free plan",
+    "authentication": [
+      "API key",
+      "Neon CLI/API credentials"
+    ],
+    "protocols": [
+      "HTTPS",
+      "REST",
+      "JSON"
+    ],
+    "sdk_languages": [
+      "JavaScript/TypeScript",
+      "Python",
+      "Go",
+      "Ruby",
+      "Rust"
+    ],
+    "commercial_use": "Permitted under Neon Terms of Service",
+    "self_hostable": "No; Neon Cloud is a hosted service (the Neon server is open source, but Neon API is not a self-hosted offering)",
+    "webhooks": "Unavailable",
+    "rate_limit": "Unavailable",
+    "free_tier_reset": "Unavailable",
     "uses": [
       "API/resource management",
       "deployment/infrastructure control",
@@ -3727,18 +4387,31 @@
       "authentication/integrations",
       "monitoring/automation"
     ],
-    "last_verified": null,
-    "verified_by": null,
-    "status": "catalog-only",
-    "verification_status": "provider-homepage-fallback"
+    "last_verified": "2026-09-25",
+    "verified_by": "manual-official-doc-review",
+    "status": "active",
+    "verification_status": "manually-verified",
+    "verification_sources": {
+      "requires_credit_card": "https://neon.tech/pricing",
+      "authentication": "https://neon.tech/docs/manage/api-keys",
+      "protocols": "https://neon.tech/docs/reference/api-reference",
+      "sdk_languages": "https://neon.tech/docs/reference/neon-sdk",
+      "commercial_use": "https://neon.tech/terms-of-service",
+      "self_hostable": "https://neon.tech/docs/introduction/architecture",
+      "webhooks": "https://neon.tech/docs/reference/api-reference",
+      "rate_limit": "https://neon.tech/docs/reference/api-reference",
+      "free_tier_reset": "https://neon.tech/pricing",
+      "documentation": "https://neon.tech/docs/reference/api-reference",
+      "pricing": "https://neon.tech/pricing"
+    }
   },
   {
     "name": "PlanetScale",
     "category": "Dev Tools / Infra (additional)",
     "description": "Cataloged API provider.",
     "signup_url": "https://planetscale.com",
-    "pricing_url": "https://planetscale.com",
-    "documentation_url": "https://planetscale.com",
+    "pricing_url": "https://planetscale.com/pricing",
+    "documentation_url": "https://planetscale.com/docs/api/reference",
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
@@ -3746,15 +4419,24 @@
       "amount": "Unverified",
       "expiry": "Unverified"
     },
-    "requires_credit_card": "Unverified",
-    "authentication": "Unverified",
-    "protocols": [],
-    "sdk_languages": [],
-    "commercial_use": "Unverified",
-    "self_hostable": "Unverified",
-    "webhooks": "Unverified",
-    "rate_limit": "Unverified",
-    "free_tier_reset": "Unverified",
+    "requires_credit_card": "Unavailable",
+    "authentication": [
+      "Service tokens",
+      "OAuth applications"
+    ],
+    "protocols": [
+      "HTTPS",
+      "REST",
+      "JSON"
+    ],
+    "sdk_languages": [
+      "Unavailable"
+    ],
+    "commercial_use": "Permitted subject to PlanetScale terms",
+    "self_hostable": "No; PlanetScale is a managed database platform",
+    "webhooks": "Unavailable",
+    "rate_limit": "Unavailable",
+    "free_tier_reset": "Unavailable",
     "uses": [
       "API/resource management",
       "deployment/infrastructure control",
@@ -3762,18 +4444,31 @@
       "authentication/integrations",
       "monitoring/automation"
     ],
-    "last_verified": null,
-    "verified_by": null,
-    "status": "catalog-only",
-    "verification_status": "provider-homepage-fallback"
+    "last_verified": "2026-09-25",
+    "verified_by": "manual-official-doc-review",
+    "status": "active",
+    "verification_status": "manually-verified",
+    "verification_sources": {
+      "requires_credit_card": "https://planetscale.com/pricing",
+      "authentication": "https://planetscale.com/docs/api/reference/authentication",
+      "protocols": "https://planetscale.com/docs/api/reference",
+      "sdk_languages": "https://planetscale.com/docs/api/reference",
+      "commercial_use": "https://planetscale.com/legal/terms-of-service",
+      "self_hostable": "https://planetscale.com/docs/concepts/planetscale-overview",
+      "webhooks": "https://planetscale.com/docs/api/reference",
+      "rate_limit": "https://planetscale.com/docs/api/reference",
+      "free_tier_reset": "https://planetscale.com/pricing",
+      "documentation": "https://planetscale.com/docs/api/reference",
+      "pricing": "https://planetscale.com/pricing"
+    }
   },
   {
     "name": "Postman API Platform",
     "category": "Dev Tools / Infra (additional)",
     "description": "Cataloged API provider.",
     "signup_url": "https://www.postman.com",
-    "pricing_url": "https://www.postman.com",
-    "documentation_url": "https://www.postman.com",
+    "pricing_url": "https://www.postman.com/pricing/",
+    "documentation_url": "https://learning.postman.com/docs/developer/postman-api/",
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
@@ -3781,15 +4476,24 @@
       "amount": "Unverified",
       "expiry": "Unverified"
     },
-    "requires_credit_card": "Unverified",
-    "authentication": "Unverified",
-    "protocols": [],
-    "sdk_languages": [],
-    "commercial_use": "Unverified",
-    "self_hostable": "Unverified",
-    "webhooks": "Unverified",
-    "rate_limit": "Unverified",
-    "free_tier_reset": "Unverified",
+    "requires_credit_card": "No for the Free plan",
+    "authentication": [
+      "Postman API key (X-Api-Key header)",
+      "OAuth 2.0 (where supported)"
+    ],
+    "protocols": [
+      "HTTPS",
+      "REST",
+      "JSON"
+    ],
+    "sdk_languages": [
+      "Unavailable"
+    ],
+    "commercial_use": "Permitted subject to Postman Terms of Service and plan terms",
+    "self_hostable": "No for Postman cloud API; Postman Enterprise additionally documents on-premises/private deployment options for the platform",
+    "webhooks": "Postman webhooks are supported for collections",
+    "rate_limit": "The Postman Public API has plan-dependent request limits; the official API documentation directs users to the rate-limit response headers and plan limits",
+    "free_tier_reset": "Unavailable",
     "uses": [
       "API/resource management",
       "deployment/infrastructure control",
@@ -3797,10 +4501,23 @@
       "authentication/integrations",
       "monitoring/automation"
     ],
-    "last_verified": null,
-    "verified_by": null,
-    "status": "catalog-only",
-    "verification_status": "provider-homepage-fallback"
+    "last_verified": "2026-09-25",
+    "verified_by": "manual-official-doc-review",
+    "status": "active",
+    "verification_status": "manually-verified",
+    "verification_sources": {
+      "requires_credit_card": "https://www.postman.com/pricing/",
+      "authentication": "https://learning.postman.com/docs/developer/postman-api/authentication/",
+      "protocols": "https://learning.postman.com/docs/developer/postman-api/intro-api/",
+      "sdk_languages": "https://learning.postman.com/docs/developer/postman-api/intro-api/",
+      "commercial_use": "https://www.postman.com/legal/terms/",
+      "self_hostable": "https://www.postman.com/enterprise/",
+      "webhooks": "https://learning.postman.com/docs/sending-requests/webhooks/",
+      "rate_limit": "https://learning.postman.com/docs/developer/postman-api/api-rate-limits/",
+      "free_tier_reset": "https://www.postman.com/pricing/",
+      "documentation": "https://learning.postman.com/docs/developer/postman-api/",
+      "pricing": "https://www.postman.com/pricing/"
+    }
   },
   {
     "name": "Railway",
