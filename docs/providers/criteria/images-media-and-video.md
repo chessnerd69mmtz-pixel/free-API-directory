@@ -1,0 +1,26 @@
+# Images, Media & Video
+
+**20 providers**
+
+| Provider | Original Category | Provider / API-key URL | Tier / pricing URL | Major Functions & Capabilities |
+|---|---|---|---|---|
+| 500px API | Images / Media (additional) | [Open](https://500px.com/p/api) | [Check tiers](https://500px.com/p/api) | image search/retrieval<br>image metadata<br>transformation/optimization<br>OCR or image analysis where offered<br>media delivery |
+| Adobe Stock API | Images / Media (additional) | [Open](https://developer.adobe.com/stock/) | [Check tiers](https://developer.adobe.com/stock/) | image search/retrieval<br>image metadata<br>transformation/optimization<br>OCR or image analysis where offered<br>media delivery |
+| Cloudinary | Images / Media | [Open](https://cloudinary.com/users/register/free) | [Check tiers](https://cloudinary.com/users/register/free) | image search/retrieval<br>image metadata<br>transformation/optimization<br>OCR or image analysis where offered<br>media delivery |
+| DeepAI | Images / Media (additional) | [Open](https://deepai.org) | [Check tiers](https://deepai.org) | image search/retrieval<br>image metadata<br>transformation/optimization<br>OCR or image analysis where offered<br>media delivery |
+| Flickr API | Images / Media (additional) | [Open](https://www.flickr.com/services/api/) | [Check tiers](https://www.flickr.com/services/api/) | image search/retrieval<br>image metadata<br>transformation/optimization<br>OCR or image analysis where offered<br>media delivery |
+| Getty Images API | Images / Media (additional) | [Open](https://developers.gettyimages.com) | [Check tiers](https://developers.gettyimages.com) | image search/retrieval<br>image metadata<br>transformation/optimization<br>OCR or image analysis where offered<br>media delivery |
+| Giphy API | Images / Media | [Open](https://developers.giphy.com) | [Check tiers](https://developers.giphy.com) | image search/retrieval<br>image metadata<br>transformation/optimization<br>OCR or image analysis where offered<br>media delivery |
+| Imagga | Images / Media (additional) | [Open](https://imagga.com) | [Check tiers](https://imagga.com) | image search/retrieval<br>image metadata<br>transformation/optimization<br>OCR or image analysis where offered<br>media delivery |
+| imgix | Images / Media | [Open](https://www.imgix.com/signup) | [Check tiers](https://www.imgix.com/signup) | image search/retrieval<br>image metadata<br>transformation/optimization<br>OCR or image analysis where offered<br>media delivery |
+| Mux API | Video / Streaming | [Open](https://www.mux.com) | [Check tiers](https://www.mux.com) | video metadata<br>upload/management<br>playback/streaming<br>channels/users<br>comments or engagement data<br>analytics where offered |
+| OCR.space | Images / Media (additional) | [Open](https://ocr.space/ocrapi) | [Check tiers](https://ocr.space/ocrapi) | image search/retrieval<br>image metadata<br>transformation/optimization<br>OCR or image analysis where offered<br>media delivery |
+| Pexels API | Images / Media | [Open](https://www.pexels.com/api/) | [Check tiers](https://www.pexels.com/api/) | image search/retrieval<br>image metadata<br>transformation/optimization<br>OCR or image analysis where offered<br>media delivery |
+| Pixabay API | Images / Media | [Open](https://pixabay.com/api/docs/) | [Check tiers](https://pixabay.com/api/docs/) | image search/retrieval<br>image metadata<br>transformation/optimization<br>OCR or image analysis where offered<br>media delivery |
+| remove.bg | Images / Media | [Open](https://www.remove.bg/api) | [Check tiers](https://www.remove.bg/api) | image search/retrieval<br>image metadata<br>transformation/optimization<br>OCR or image analysis where offered<br>media delivery |
+| Shutterstock API | Images / Media (additional) | [Open](https://developer.shutterstock.com) | [Check tiers](https://developer.shutterstock.com) | image search/retrieval<br>image metadata<br>transformation/optimization<br>OCR or image analysis where offered<br>media delivery |
+| TinyPNG API | Images / Media | [Open](https://tinypng.com/developers) | [Check tiers](https://tinypng.com/developers) | image search/retrieval<br>image metadata<br>transformation/optimization<br>OCR or image analysis where offered<br>media delivery |
+| Twitch API | Video / Streaming | [Open](https://dev.twitch.tv) | [Check tiers](https://dev.twitch.tv) | video metadata<br>upload/management<br>playback/streaming<br>channels/users<br>comments or engagement data<br>analytics where offered |
+| Unsplash API | Images / Media | [Open](https://unsplash.com/developers) | [Check tiers](https://unsplash.com/developers) | image search/retrieval<br>image metadata<br>transformation/optimization<br>OCR or image analysis where offered<br>media delivery |
+| Vimeo API | Video / Streaming | [Open](https://developer.vimeo.com) | [Check tiers](https://developer.vimeo.com) | video metadata<br>upload/management<br>playback/streaming<br>channels/users<br>comments or engagement data<br>analytics where offered |
+| YouTube Data API | Video / Streaming | [Open](https://console.cloud.google.com/apis/library/youtube.googleapis.com) | [Check tiers](https://console.cloud.google.com/apis/library/youtube.googleapis.com) | video metadata<br>upload/management<br>playback/streaming<br>channels/users<br>comments or engagement data<br>analytics where offered |
