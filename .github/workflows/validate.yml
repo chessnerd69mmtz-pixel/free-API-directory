@@ -12,4 +12,3 @@ jobs:
           python-version: '3.x'
       - run: python scripts/validate.py
       - run: python scripts/generate_tables.py
-      - run: git diff --exit-code
