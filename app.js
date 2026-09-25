@@ -1,1 +1,220 @@
-const DATA_URL="data/provider_profiles.json";let APIS=[];const $=s=>document.querySelector(s);const esc=s=>String(s??"").replace(/[&<>"]/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[m]));const link=(u,t)=>u?'<a href="'+esc(u)+'" target="_blank" rel="noopener">'+esc(t||u)+'</a>':'<span class="muted">Unverified</span>';const uses=a=>"<ul>"+((a&&a.length)?a:["Not independently specified"]).map(x=>"<li>"+esc(x)+"</li>").join("")+"</ul>";const free=p=>p.free_tier?.has_free_tier===true?'<span class="pill good">Free recorded</span>':p.free_tier?.has_free_tier===false?'<span class="pill">No free tier recorded</span>':'<span class="pill warn">Unverified</span>';const stat=p=>p.status==="active"?'<span class="pill good">Active</span>':p.status==="needs re-verification"?'<span class="pill warn">Needs re-verification</span>':'<span class="pill">'+esc(p.status||"Catalog only")+"</span>";async function load(){if(APIS.length)return APIS;const r=await fetch(DATA_URL);if(!r.ok)throw Error("Catalog data could not be loaded");APIS=await r.json();return APIS}function nav(){return'<nav class="nav"><a class="logo" href="index.html">Free API Directory</a><a href="finder.html">Find an API</a><a href="recommend.html">Build a project</a><a href="compare.html">Compare</a><a href="changes.html">Verified / Changed</a><a href="criteria.html">Browse</a></nav>'}function add(){document.body.insertAdjacentHTML("afterbegin",'<div class="wrap">'+nav()+'<div id="app"></div></div>')}async function finder(){const a=await load();add();$("#app").innerHTML='<section class="hero"><h1>Find an API</h1><p>Search by provider, category or capability. Filters never turn unverified information into a claim.</p></section><div class="card tool"><input id=q class=input placeholder="Search APIs…"><select id=f class=select><option value="">Free status: any</option><option value=yes>Free access recorded</option><option value=unknown>Free status unverified</option></select><select id=c class=select><option value="">Card requirement: any</option><option value=no>No card recorded</option><option value=unknown>Unverified</option></select></div><div id=r></div>';function render(){let q=$("#q").value.toLowerCase(),f=$("#f").value,c=$("#c").value,o=a.filter(p=>(!q||JSON.stringify([p.name,p.category,p.description,p.uses]).toLowerCase().includes(q))&&(!f||(f==="yes"&&p.free_tier?.has_free_tier===true)||(f==="unknown"&&p.free_tier?.has_free_tier==null))&&(!c||(c==="no"&&p.requires_credit_card===false)||(c==="unknown"&&typeof p.requires_credit_card!=="boolean")));$("#r").innerHTML='<div class=tablebox><div class=scroll><table><thead><tr><th>Provider</th><th>Category</th><th>Free tier</th><th>Functions</th><th>Verification</th></tr></thead><tbody>'+o.map(p=>'<tr><td class=provider><a href="api.html?provider='+encodeURIComponent(p.name)+'">'+esc(p.name)+'</a></td><td>'+esc(p.category)+'</td><td>'+free(p)+'</td><td class=uses>'+uses(p.uses)+'</td><td>'+stat(p)+'<br>'+esc(p.last_verified||"Not recorded")+'</td></tr>').join("")+'</tbody></table></div></div><p class=muted>'+o.length+" matches</p>"}["q","f","c"].forEach(id=>$(id==="q"?"#q":"#"+id).oninput=render);render()}async function compare(){const a=await load();add();$("#app").innerHTML='<section class=hero><h1>Compare APIs</h1><p>Compare up to four providers without sending any API keys anywhere.</p></section><div class="card tool"><select id=p class=select><option value="">Add provider…</option>'+a.map(x=>"<option>"+esc(x.name)+"</option>").join("")+'</select><button id=clear class="btn secondary">Clear</button></div><div id=r></div>';let chosen=[];$("#p").onchange=e=>{if(e.target.value&&!chosen.includes(e.target.value)&&chosen.length<4)chosen.push(e.target.value);e.target.value="";render()};$("#clear").onclick=()=>{chosen=[];render()};function render(){if(!chosen.length){$("#r").innerHTML='<div class=card>Select providers above.</div>';return}let ps=chosen.map(n=>a.find(x=>x.name===n));let fs=[["Free tier",p=>p.free_tier?.has_free_tier===true?"Recorded":p.free_tier?.has_free_tier===false?"No":"Unverified"],["Free amount",p=>p.free_tier?.amount],["Credit card",p=>p.requires_credit_card],["Authentication",p=>p.authentication],["Rate limit",p=>p.rate_limit],["SDKs",p=>p.sdk_languages?.length?p.sdk_languages.join(", "):"Unverified"],["Protocols",p=>p.protocols?.length?p.protocols.join(", "):"Unverified"],["Commercial use",p=>p.commercial_use],["Self-hostable",p=>p.self_hostable],["Webhooks",p=>p.webhooks],["Last verified",p=>p.last_verified||"Not recorded"]];$("#r").innerHTML='<div class=tablebox><div class=scroll><table><thead><tr><th>Field</th>'+ps.map(p=>"<th>"+esc(p.name)+"</th>").join("")+"</tr></thead><tbody>"+fs.map(f=>"<tr><td><b>"+f[0]+"</b></td>"+ps.map(p=>"<td>"+esc(String(f[1](p)))+"</td>").join("")+"</tr>").join("")+"</tbody></table></div></div>"}}async function api(){const a=await load();add();let health={};try{health=await (await fetch("data/source_hashes.json")).json()}catch(e){}let p=a.find(x=>x.name===new URLSearchParams(location.search).get("provider"));if(!p){$("#app").innerHTML='<div class=hero><h1>API not found</h1><p>Choose one from Find an API.</p></div>';return}let f=p.free_tier||{};$("#app").innerHTML='<section class=hero><h1>'+esc(p.name)+'</h1><p>'+esc(p.description)+'</p><div class=stats>'+stat(p)+' '+free(p)+'</div></section><div class=grid><section class=card><h2>Access & verification</h2><div class=kv><div>Provider / key</div><div>'+link(p.signup_url,"Open provider")+'</div><div>Pricing</div><div>'+link(p.pricing_url,"Open pricing")+'</div><div>Documentation</div><div>'+link(p.documentation_url,"Open docs")+'</div><div>Last verified</div><div>'+esc(p.last_verified||"Not recorded")+'</div><div>Card required</div><div>'+esc(p.requires_credit_card)+'</div><div>Official source monitor</div><div>'+ (health[p.name]?.hash?'<span class="pill good">Last check succeeded</span>':health[p.name]?.error?'<span class="pill warn">Last check failed</span>':'<span class="pill warn">Not checked yet</span>') +'</div></div></section><section class=card><h2>Free-tier facts</h2><div class=kv><div>Status</div><div>'+free(p)+'</div><div>Type</div><div>'+esc(f.type||"Unverified")+'</div><div>Amount</div><div>'+esc(f.amount||"Unverified")+'</div><div>Reset</div><div>'+esc(p.free_tier_reset)+'</div><div>Expiry</div><div>'+esc(f.expiry||"Unverified")+'</div></div></section></div><section class=card style="margin-top:16px"><h2>Major functions & capabilities</h2>'+uses(p.uses)+'</section><section class=card style="margin-top:16px"><h2>Similar providers</h2><div class=grid>'+a.filter(x=>x.name!==p.name&&(x.category===p.category||x.uses?.some(u=>p.uses?.includes(u)))).slice(0,6).map(x=>'<a class=card href="api.html?provider='+encodeURIComponent(x.name)+'"><b>'+esc(x.name)+'</b><br><span class=muted>'+esc(x.category)+'</span></a>').join('')+'</div></section><section class=card style="margin-top:16px"><h2>Developer template</h2><div class=notice>This is a generic template, not an assertion of this provider’s exact endpoint or authentication syntax.</div><pre class=code># Python\nimport requests\nresponse = requests.get("YOUR_API_ENDPOINT", headers={"Authorization":"Bearer YOUR_API_KEY"})\nprint(response.json())\n\n# JavaScript\nconst response = await fetch("YOUR_API_ENDPOINT", {headers:{Authorization:"Bearer YOUR_API_KEY"}});\nconsole.log(await response.json());</pre></section>'}async function changes(){const a=await load();add();let r=[];try{const z=await fetch("data/change_log.json");r=await z.json()}catch(e){}if(!r.length)r=a.filter(x=>x.last_verified).sort((x,y)=>String(y.last_verified).localeCompare(String(x.last_verified))).slice(0,100);$("#app").innerHTML='<section class=hero><h1>Verification history</h1><p>These dates show when catalog information was last verified. A verification date is not presented as proof that the provider changed its service.</p></section><div class=tablebox><div class=scroll><table><thead><tr><th>Provider</th><th>Last verified</th><th>Status</th><th>Tier verification</th></tr></thead><tbody>'+r.map(p=>'<tr><td class=provider>'+ (p.provider?'<a href="api.html?provider='+encodeURIComponent(p.provider)+'">'+esc(p.provider)+'</a>': '<a href="api.html?provider='+encodeURIComponent(p.name)+'">'+esc(p.name)+'</a>') +'</td><td>'+esc(p.date||p.last_verified||'Not recorded')+'</td><td>'+esc(p.type||p.status||'Verification record')+'</td><td>'+ (p.source_url?link(p.source_url,'Open source'):esc(p.verification_status||'Catalog verification')) +'</td></tr>').join("")+"</tbody></table></div></div>"}async function recommend(){const a=await load();add();$("#app").innerHTML='<section class=hero><h1>Project API Recommender</h1><p>Describe what you are building. This uses local catalog matching only; no AI service and no API key are required.</p></section><div class="card tool"><textarea id=q class=input style="min-height:130px" placeholder="Example: I want to build a weather dashboard that sends email alerts and shows maps."></textarea><button id=go class=btn>Find matching APIs</button></div><div id=r></div>';$("#go").onclick=()=>{let q=$("#q").value.toLowerCase(),terms=q.split(/[^a-z0-9]+/).filter(x=>x.length>2);let scored=a.map(p=>{let text=(p.name+" "+p.category+" "+p.description+" "+(p.uses||[]).join(" ")).toLowerCase();let score=terms.reduce((n,t)=>n+(text.includes(t)?1:0),0);return{p,score}}).filter(x=>x.score>0).sort((x,y)=>y.score-x.score||x.p.name.localeCompare(y.p.name)).slice(0,15);$("#r").innerHTML=scored.length?'<div class=tablebox><div class=scroll><table><thead><tr><th>Provider</th><th>Why it matched</th><th>Free status</th><th>Verification</th></tr></thead><tbody>'+scored.map(x=>'<tr><td class=provider><a href="api.html?provider='+encodeURIComponent(x.p.name)+'">'+esc(x.p.name)+'</a></td><td>'+esc(x.p.uses?.filter(u=>terms.some(t=>u.toLowerCase().includes(t))).join(", ")||x.p.category)+'</td><td>'+free(x.p)+'</td><td>'+stat(x.p)+'</td></tr>').join("")+'</tbody></table></div></div>':'<div class=card>No catalog matches found. Try describing the technologies or functions you need.</div>'}async function boot(){try{let p=location.pathname;if(p.endsWith("finder.html"))await finder();else if(p.endsWith("recommend.html"))await recommend();else if(p.endsWith("compare.html"))await compare();else if(p.endsWith("api.html"))await api();else if(p.endsWith("changes.html"))await changes()}catch(e){document.body.innerHTML='<div class=wrap><div class=hero><h1>Directory data unavailable</h1><p>'+esc(e.message)+"</p></div></div>"}}boot();
+const DATA_URL = new URL("data/provider_profiles.json", document.baseURI).href;
+const CHANGE_URL = new URL("data/change_log.json", document.baseURI).href;
+const HASH_URL = new URL("data/source_hashes.json", document.baseURI).href;
+
+let APIS = [];
+
+const $ = (s) => document.querySelector(s);
+const esc = (s) => String(s ?? "").replace(/[&<>"]/g, (m) => ({
+  "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"
+}[m]));
+
+function link(url, label) {
+  return url
+    ? '<a href="' + esc(url) + '" target="_blank" rel="noopener noreferrer">' + esc(label || url) + '</a>'
+    : '<span class="muted">Unverified</span>';
+}
+
+function uses(list) {
+  const items = Array.isArray(list) && list.length ? list : ["Not independently specified"];
+  return "<ul>" + items.map(x => "<li>" + esc(x) + "</li>").join("") + "</ul>";
+}
+
+function freeTier(p) {
+  const v = p.free_tier?.has_free_tier;
+  if (v === true) return '<span class="pill good">Free access recorded</span>';
+  if (v === false) return '<span class="pill">No free tier recorded</span>';
+  return '<span class="pill warn">Unverified</span>';
+}
+
+function status(p) {
+  if (p.status === "active") return '<span class="pill good">Active</span>';
+  if (p.status === "needs re-verification") return '<span class="pill warn">Needs re-verification</span>';
+  return '<span class="pill">' + esc(p.status || "Catalog only") + "</span>";
+}
+
+function nav() {
+  return '<nav class="nav">' +
+    '<a class="logo" href="index.html">Free API Directory</a>' +
+    '<a href="finder.html">Find an API</a>' +
+    '<a href="recommend.html">Build a project</a>' +
+    '<a href="compare.html">Compare</a>' +
+    '<a href="changes.html">Verified / Changed</a>' +
+    '<a href="criteria.html">Browse</a>' +
+  "</nav>";
+}
+
+function shell(html) {
+  const root = $("#app");
+  if (!root) return;
+  root.innerHTML = '<div class="wrap">' + nav() + html + "</div>";
+}
+
+async function getJson(url) {
+  const response = await fetch(url, {cache:"no-store"});
+  if (!response.ok) throw new Error("Could not load " + url + " (HTTP " + response.status + ")");
+  return response.json();
+}
+
+async function loadApis() {
+  if (APIS.length) return APIS;
+  APIS = await getJson(DATA_URL);
+  if (!Array.isArray(APIS)) throw new Error("The provider catalog is not a valid JSON array.");
+  return APIS;
+}
+
+async function finder() {
+  const a = await loadApis();
+  shell(
+    '<section class="hero"><h1>Find an API</h1><p>Search by provider, category or capability.</p></section>' +
+    '<div class="card tool"><input id="q" class="input" placeholder="Search APIs…">' +
+    '<select id="f" class="select"><option value="">Free status: any</option><option value="yes">Free access recorded</option><option value="unknown">Free status unverified</option></select>' +
+    '<select id="c" class="select"><option value="">Card requirement: any</option><option value="no">No card recorded</option><option value="unknown">Unverified</option></select></div>' +
+    '<div id="r"></div>'
+  );
+
+  const render = () => {
+    const q = $("#q").value.toLowerCase().trim();
+    const f = $("#f").value;
+    const c = $("#c").value;
+    const rows = a.filter(p => {
+      const hay = JSON.stringify([p.name,p.category,p.description,p.uses]).toLowerCase();
+      const freeOK = !f || (f === "yes" && p.free_tier?.has_free_tier === true) ||
+        (f === "unknown" && p.free_tier?.has_free_tier == null);
+      const cardOK = !c || (c === "no" && p.requires_credit_card === false) ||
+        (c === "unknown" && typeof p.requires_credit_card !== "boolean");
+      return (!q || hay.includes(q)) && freeOK && cardOK;
+    });
+
+    $("#r").innerHTML = '<div class="tablebox"><div class="scroll"><table><thead><tr>' +
+      '<th>Provider</th><th>Category</th><th>Free tier</th><th>Functions</th><th>Verification</th></tr></thead><tbody>' +
+      rows.map(p => '<tr><td class="provider"><a href="api.html?provider=' + encodeURIComponent(p.name) + '">' + esc(p.name) +
+        '</a></td><td>' + esc(p.category) + '</td><td>' + freeTier(p) + '</td><td class="uses">' + uses(p.uses) +
+        '</td><td>' + status(p) + '<br>' + esc(p.last_verified || "Not recorded") + '</td></tr>').join("") +
+      '</tbody></table></div></div><p class="muted">' + rows.length + " matches</p>";
+  };
+
+  $("#q").addEventListener("input", render);
+  $("#f").addEventListener("change", render);
+  $("#c").addEventListener("change", render);
+  render();
+}
+
+async function compare() {
+  const a = await loadApis();
+  shell(
+    '<section class="hero"><h1>Compare APIs</h1><p>Compare up to four providers using the catalog data.</p></section>' +
+    '<div class="card tool"><select id="p" class="select"><option value="">Add provider…</option>' +
+    a.map(x => '<option value="' + esc(x.name) + '">' + esc(x.name) + "</option>").join("") +
+    '</select><button id="clear" class="btn secondary">Clear</button></div><div id="r"></div>'
+  );
+
+  const chosen = [];
+  const select = $("#p");
+
+  select.addEventListener("change", () => {
+    if (select.value && !chosen.includes(select.value) && chosen.length < 4) chosen.push(select.value);
+    select.value = "";
+    render();
+  });
+  $("#clear").addEventListener("click", () => { chosen.length = 0; render(); });
+
+  function render() {
+    if (!chosen.length) {
+      $("#r").innerHTML = '<div class="card">Select up to four providers above.</div>';
+      return;
+    }
+    const ps = chosen.map(n => a.find(x => x.name === n)).filter(Boolean);
+    const fields = [
+      ["Free tier", p => p.free_tier?.has_free_tier === true ? "Recorded" : p.free_tier?.has_free_tier === false ? "No" : "Unverified"],
+      ["Free amount", p => p.free_tier?.amount || "Unverified"],
+      ["Credit card", p => typeof p.requires_credit_card === "boolean" ? String(p.requires_credit_card) : "Unverified"],
+      ["Authentication", p => p.authentication || "Unverified"],
+      ["Rate limit", p => p.rate_limit || "Unverified"],
+      ["SDKs", p => p.sdk_languages?.length ? p.sdk_languages.join(", ") : "Unverified"],
+      ["Protocols", p => p.protocols?.length ? p.protocols.join(", ") : "Unverified"],
+      ["Commercial use", p => p.commercial_use || "Unverified"],
+      ["Self-hostable", p => p.self_hostable || "Unverified"],
+      ["Webhooks", p => p.webhooks || "Unverified"],
+      ["Last verified", p => p.last_verified || "Not recorded"]
+    ];
+    $("#r").innerHTML = '<div class="tablebox"><div class="scroll"><table><thead><tr><th>Field</th>' +
+      ps.map(p => "<th>" + esc(p.name) + "</th>").join("") + "</tr></thead><tbody>" +
+      fields.map(f => "<tr><td><b>" + esc(f[0]) + "</b></td>" +
+        ps.map(p => "<td>" + esc(f[1](p)) + "</td>").join("") + "</tr>").join("") +
+      "</tbody></table></div></div>";
+  }
+  render();
+}
+
+async function changes() {
+  const a = await loadApis();
+  let records = [];
+  try { records = await getJson(CHANGE_URL); } catch (_) {}
+  if (!Array.isArray(records) || !records.length) {
+    records = a.filter(x => x.last_verified)
+      .sort((x,y) => String(y.last_verified).localeCompare(String(x.last_verified)))
+      .slice(0,100);
+  }
+
+  shell(
+    '<section class="hero"><h1>Verification history</h1><p>Catalog verification dates and source-change records.</p></section>' +
+    '<div class="tablebox"><div class="scroll"><table><thead><tr><th>Provider</th><th>Date</th><th>Status / event</th><th>Source</th></tr></thead><tbody>' +
+    records.map(p => {
+      const name = p.provider || p.name || "Unknown";
+      const date = p.date || p.last_verified || "Not recorded";
+      return '<tr><td class="provider"><a href="api.html?provider=' + encodeURIComponent(name) + '">' + esc(name) +
+        '</a></td><td>' + esc(date) + '</td><td>' + esc(p.type || p.status || "Verification record") +
+        '</td><td>' + (p.source_url ? link(p.source_url,"Open source") : esc(p.verification_status || "Catalog verification")) +
+        "</td></tr>";
+    }).join("") +
+    '</tbody></table></div></div>'
+  );
+}
+
+async function recommend() {
+  const a = await loadApis();
+  shell(
+    '<section class="hero"><h1>Project API Recommender</h1><p>Describe what you are building. Matching runs locally; no AI service or API key is required.</p></section>' +
+    '<div class="card tool"><textarea id="q" class="input" style="min-height:130px" placeholder="Example: weather dashboard with email alerts and maps"></textarea>' +
+    '<button id="go" class="btn">Find matching APIs</button></div><div id="r"></div>'
+  );
+
+  $("#go").addEventListener("click", () => {
+    const q = $("#q").value.toLowerCase();
+    const terms = q.split(/[^a-z0-9]+/).filter(x => x.length > 2);
+    const scored = a.map(p => {
+      const text = (p.name + " " + p.category + " " + p.description + " " + (p.uses || []).join(" ")).toLowerCase();
+      const score = terms.reduce((n,t) => n + (text.includes(t) ? 1 : 0), 0);
+      return {p,score};
+    }).filter(x => x.score > 0)
+      .sort((x,y) => y.score - x.score || x.p.name.localeCompare(y.p.name))
+      .slice(0,15);
+
+    $("#r").innerHTML = scored.length
+      ? '<div class="tablebox"><div class="scroll"><table><thead><tr><th>Provider</th><th>Why it matched</th><th>Free status</th><th>Verification</th></tr></thead><tbody>' +
+        scored.map(x => '<tr><td class="provider"><a href="api.html?provider=' + encodeURIComponent(x.p.name) + '">' + esc(x.p.name) +
+          '</a></td><td>' + esc(x.p.uses?.filter(u => terms.some(t => u.toLowerCase().includes(t))).join(", ") || x.p.category) +
+          '</td><td>' + freeTier(x.p) + '</td><td>' + status(x.p) + '</td></tr>').join("") +
+        '</tbody></table></div></div>'
+      : '<div class="card">No catalog matches found. Try describing the technologies or functions you need.</div>';
+  });
+}
+
+async function boot() {
+  try {
+    const page = document.body.dataset.page;
+    if (page === "finder") return await finder();
+    if (page === "compare") return await compare();
+    if (page === "changes") return await changes();
+    if (page === "recommend") return await recommend();
+  } catch (error) {
+    const message = error instanceof Error ? error.message : String(error);
+    const root = $("#app");
+    if (root) root.innerHTML = '<div class="wrap">' + nav() +
+      '<section class="hero"><h1>Page could not load</h1><p>' + esc(message) +
+      '</p><p>Refresh the page after GitHub Pages finishes publishing the latest commit.</p></section></div>';
+  }
+}
+
+document.addEventListener("DOMContentLoaded", boot);
