@@ -4,7 +4,8 @@ const HASH_URL = new URL("data/source_hashes.json", document.baseURI).href;
 const PUBLIC_API_LISTS_URL = "https://public-api-lists.github.io/public-api-lists/api/all.json";
 const PUBLIC_APIS_URL = "https://api.publicapis.org/entries";
 const KIPRIO_URL = "https://kiprio.com/datasets/free-apis.json";
-const CATALOG_TARGET = 1000;
+const PUBLIC_APIS_EXPANSION_URL = new URL("data/public_apis_expansion.json", document.baseURI).href;
+const CATALOG_TARGET = 2500;
 const SOURCE_META = ["Public API Lists","Public APIs","Kiprio Free APIs"];
 
 let APIS = [];
@@ -63,6 +64,41 @@ async function getJson(url) {
   return response.json();
 }
 
+function normalizeExpansionEntry(x) {
+  if (!x || !x.name || !x.provider_url) return null;
+  const auth = String(x.auth || "No");
+  return {
+    name: String(x.name),
+    category: String(x.category || "General"),
+    description: String(x.description || "Community-listed public API."),
+    signup_url: String(x.provider_url),
+    pricing_url: null,
+    documentation_url: String(x.provider_url),
+    free_tier: {
+      has_free_tier: true,
+      type: "community-listed-free",
+      details: "Listed in the September 2026 public-apis expansion as a free public API. Current provider quota, card requirement, expiry, commercial terms, and availability have not been independently verified by this directory.",
+      amount: "Not independently quantified",
+      expiry: "Not independently verified"
+    },
+    requires_credit_card: "Unverified",
+    authentication: auth,
+    protocols: [String(x.https || "").toLowerCase() === "yes" ? "HTTPS" : "HTTP/HTTPS"],
+    sdk_languages: [],
+    commercial_use: "Unverified; check provider terms.",
+    self_hostable: "Unverified",
+    webhooks: "Unverified",
+    rate_limit: "Unverified",
+    free_tier_reset: "Unverified",
+    uses: [String(x.category || "General"), String(x.description || "Community-listed public API.")],
+    last_verified: null,
+    verified_by: "public-apis-community-source",
+    status: "upstream-community",
+    verification_status: "community-free-source",
+    verification_sources: { provider: String(x.provider_url), source_1: "https://github.com/public-apis/public-apis/blob/master/README.md" }
+  };
+}
+
 function normalizeExternalEntry(x, source, categoryHint) {
   const name = x.name || x.API || x.title;
   const description = x.description || x.Description || "Community-listed public API.";
@@ -111,6 +147,22 @@ async function loadApis() {
   const seen = new Set(local.map(p => String(p.name || "").trim().toLowerCase()).filter(Boolean));
   const urls = new Set(local.map(p => String(p.verification_sources?.provider || p.documentation_url || p.signup_url || "").trim().toLowerCase()).filter(Boolean));
 
+  try {
+    const expansion = await getJson(PUBLIC_APIS_EXPANSION_URL);
+    const entries = Array.isArray(expansion?.providers) ? expansion.providers : [];
+    for (const raw of entries) {
+      if (APIS.length >= CATALOG_TARGET) break;
+      const p = normalizeExpansionEntry(raw);
+      if (!p) continue;
+      const key = p.name.trim().toLowerCase();
+      const url = p.documentation_url.trim().toLowerCase();
+      if (seen.has(key) || (url && urls.has(url))) continue;
+      seen.add(key);
+      if (url) urls.add(url);
+      APIS.push(p);
+    }
+  } catch (_) {}
+
   const external = await Promise.allSettled([
     getJson(PUBLIC_API_LISTS_URL),
     getJson(PUBLIC_APIS_URL),
@@ -142,7 +194,7 @@ async function loadApis() {
 async function finder() {
   const a = await loadApis();
   shell(
-    '<section class="hero"><h1>Find an API</h1><p>Search the live 1,000-provider discovery pool by provider, category or capability. Curated records and upstream community-free records are clearly distinguished.</p></section>' +
+    '<section class="hero"><h1>Find an API</h1><p>Search the live 2,500-provider discovery pool by provider, category or capability. Curated records and upstream community-free records are clearly distinguished.</p></section>' +
     '<div class="card tool"><input id="q" class="input" placeholder="Search APIs…">' +
     '<select id="f" class="select"><option value="">Free status: any</option><option value="yes">Free access recorded</option><option value="unknown">Free status unverified</option></select>' +
     '<select id="c" class="select"><option value="">Card requirement: any</option><option value="no">No card recorded</option><option value="unknown">Unverified</option></select></div>' +
