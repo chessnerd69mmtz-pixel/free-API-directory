@@ -2,7 +2,7 @@ const DATA_URL = new URL("data/provider_profiles.json", document.baseURI).href;
 const CHANGE_URL = new URL("data/change_log.json", document.baseURI).href;
 const HASH_URL = new URL("data/source_hashes.json", document.baseURI).href;
 
-let APIS = [];
+let APIS = Array.isArray(window.API_CATALOG) ? window.API_CATALOG : [];
 
 const $ = (s) => document.querySelector(s);
 const esc = (s) => String(s ?? "").replace(/[&<>"]/g, (m) => ({
