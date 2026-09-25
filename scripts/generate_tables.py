@@ -7,7 +7,40 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 PRIMARY = json.loads((ROOT / "data/providers.json").read_text(encoding="utf-8"))
 ADDITIONAL = json.loads((ROOT / "data/provider_urls.json").read_text(encoding="utf-8"))
-PROVIDERS = PRIMARY + ADDITIONAL
+EXPANSION_RAW = json.loads((ROOT / "data/public_apis_expansion.json").read_text(encoding="utf-8")).get("providers", [])
+EXPANSION = [{
+    "name": p["name"], "category": p["category"], "description": p["description"],
+    "signup_url": p["provider_url"], "pricing_url": "Unavailable",
+    "documentation_url": p["provider_url"],
+    "free_tier": {"has_free_tier": True, "type": "community-listed-free",
+                   "details": "Community-listed free public API; verify current provider terms before use.",
+                   "amount": "Not independently quantified", "expiry": "Not independently verified"},
+    "requires_credit_card": "Unverified", "uses": [p["category"], p["description"]],
+    "status": "upstream-community", "verification_status": "community-free-source",
+    "verification_sources": {"provider": p["provider_url"],
+                             "source_1": "https://github.com/public-apis/public-apis/blob/master/README.md"}
+} for p in EXPANSION_RAW]
+_seen = set()
+PROVIDERS = []
+for p in PRIMARY + ADDITIONAL + EXPANSION:
+    key = str(p["name"]).strip().lower()
+    if key in _seen: continue
+    _seen.add(key)
+    PROVIDERS.append(p)
+
+PUBLIC_EXTRA = [
+    ("Animals", "animals"), ("Anime", "anime"), ("Anti-Malware", "anti-malware"),
+    ("Art & Design", "art-and-design"), ("Authentication & Authorization", "authentication-and-authorization"),
+    ("Books & Literature", "books"), ("Business", "business"), ("Calendar & Time", "calendar"),
+    ("Cloud Storage & File Sharing", "cloud-storage-and-file-sharing"), ("Dictionaries", "dictionaries"),
+    ("Documents & Productivity", "documents-and-productivity"), ("Entertainment", "entertainment"),
+    ("Events", "events"), ("Open Data", "open-data"), ("Open Source Projects", "open-source-projects"),
+    ("Patent & Intellectual Property", "patent"), ("Personality", "personality"),
+    ("Phone & SMS Utilities", "phone"), ("Photography", "photography"), ("Programming", "programming"),
+    ("Science & Math", "science-and-math"), ("Shopping", "shopping"), ("Test Data", "test-data"),
+    ("Text Analysis", "text-analysis"), ("Tracking & Logistics", "tracking"),
+    ("URL Shorteners", "url-shorteners"), ("Vehicle & Auto", "vehicle"), ("Video", "video")
+]
 
 CRITERIA = [
     ("AI & Machine Learning", "ai-and-machine-learning"),
@@ -37,6 +70,7 @@ CRITERIA = [
     ("Travel & Transportation", "travel-and-transportation"),
     ("Weather & Environment", "weather-and-environment"),
 ]
+CRITERIA.extend(PUBLIC_EXTRA)
 
 AI_CROSS = {"OpenAI API","Anthropic API","Google Gemini API","Groq","Mistral AI","DeepSeek API","xAI API","OpenRouter","Hugging Face","Cohere","NVIDIA NIM APIs","Replicate","DeepInfra","Perplexity API","Together AI","Fireworks AI","AI21 Labs","AssemblyAI (speech-to-text)","Clarifai (vision)","Roboflow (vision)","Stability AI","Jina AI","Baseten","Modal","RunPod","Voyage AI (embeddings)","Wit.ai (Meta)","Dialogflow (Google)","Google Cloud Natural Language","Google Cloud Vision API","Amazon Comprehend","Amazon Polly","Amazon Rekognition","Amazon Transcribe","IBM Watson (Cloud)"}
 CODING_CROSS = {"OpenAI API","Anthropic API","Google Gemini API","Groq","Mistral AI","DeepSeek API","xAI API","OpenRouter","Hugging Face","Cohere","NVIDIA NIM APIs","Replicate","DeepInfra","Perplexity API","Together AI","Fireworks AI","AI21 Labs","Jina AI","Baseten","Modal","RunPod","Voyage AI (embeddings)"}
