@@ -19,7 +19,17 @@
     ],
     "last_verified": "2026-09-25",
     "verified_by": "automated-live-verification",
-    "status": "active"
+    "status": "active",
+    "tier_verification_url": "https://groq.com/pricing/",
+    "tier_verification_status": "official-pricing-page-identified",
+    "uses": [
+      "text generation and chat",
+      "summarization and rewriting",
+      "question answering",
+      "classification and extraction",
+      "embeddings or semantic search",
+      "AI application backends"
+    ]
   },
   {
     "name": "Mistral AI",
@@ -42,7 +52,17 @@
     ],
     "last_verified": "2026-09-25",
     "verified_by": "automated-live-verification",
-    "status": "active"
+    "status": "active",
+    "tier_verification_url": "https://mistral.ai/pricing/",
+    "tier_verification_status": "official-pricing-page-identified",
+    "uses": [
+      "text generation and chat",
+      "summarization and rewriting",
+      "question answering",
+      "classification and extraction",
+      "embeddings or semantic search",
+      "AI application backends"
+    ]
   },
   {
     "name": "Google Gemini API",
@@ -64,7 +84,17 @@
     ],
     "last_verified": "2026-09-25",
     "verified_by": "automated-live-verification",
-    "status": "active"
+    "status": "active",
+    "tier_verification_url": "https://ai.google.dev/gemini-api/docs/billing",
+    "tier_verification_status": "official-pricing-page-identified",
+    "uses": [
+      "text generation and chat",
+      "summarization and rewriting",
+      "question answering",
+      "classification and extraction",
+      "embeddings or semantic search",
+      "AI application backends"
+    ]
   },
   {
     "name": "OpenRouter",
@@ -87,7 +117,17 @@
     ],
     "last_verified": "2026-09-25",
     "verified_by": "automated-live-verification",
-    "status": "active"
+    "status": "active",
+    "tier_verification_url": "https://openrouter.ai/pricing/",
+    "tier_verification_status": "official-pricing-page-identified",
+    "uses": [
+      "text generation and chat",
+      "summarization and rewriting",
+      "question answering",
+      "classification and extraction",
+      "embeddings or semantic search",
+      "AI application backends"
+    ]
   },
   {
     "name": "Hugging Face",
@@ -109,7 +149,17 @@
     ],
     "last_verified": "2026-09-25",
     "verified_by": "automated-live-verification",
-    "status": "active"
+    "status": "active",
+    "tier_verification_url": "https://huggingface.co/docs/inference-providers/pricing",
+    "tier_verification_status": "official-pricing-page-identified",
+    "uses": [
+      "text generation and chat",
+      "summarization and rewriting",
+      "question answering",
+      "classification and extraction",
+      "embeddings or semantic search",
+      "AI application backends"
+    ]
   },
   {
     "name": "Cohere",
@@ -132,7 +182,17 @@
     ],
     "last_verified": "2026-09-25",
     "verified_by": "automated-live-verification",
-    "status": "active"
+    "status": "active",
+    "tier_verification_url": "https://cohere.com/pricing",
+    "tier_verification_status": "official-pricing-page-identified",
+    "uses": [
+      "text generation and chat",
+      "summarization and rewriting",
+      "question answering",
+      "classification and extraction",
+      "embeddings or semantic search",
+      "AI application backends"
+    ]
   },
   {
     "name": "NVIDIA NIM APIs",
@@ -154,7 +214,17 @@
     ],
     "last_verified": "2026-09-25",
     "verified_by": "automated-live-verification",
-    "status": "active"
+    "status": "active",
+    "tier_verification_url": "https://docs.api.nvidia.com/nim/docs/api-quickstart",
+    "tier_verification_status": "official-pricing-page-identified",
+    "uses": [
+      "text generation and chat",
+      "summarization and rewriting",
+      "question answering",
+      "classification and extraction",
+      "embeddings or semantic search",
+      "AI application backends"
+    ]
   },
   {
     "name": "Replicate",
@@ -176,7 +246,17 @@
     ],
     "last_verified": "2026-09-25",
     "verified_by": "automated-live-verification",
-    "status": "active"
+    "status": "active",
+    "tier_verification_url": "https://replicate.com/pricing",
+    "tier_verification_status": "official-pricing-page-identified",
+    "uses": [
+      "text generation and chat",
+      "summarization and rewriting",
+      "question answering",
+      "classification and extraction",
+      "embeddings or semantic search",
+      "AI application backends"
+    ]
   },
   {
     "name": "DeepInfra",
@@ -198,7 +278,17 @@
     ],
     "last_verified": "2026-09-25",
     "verified_by": "automated-live-verification",
-    "status": "needs re-verification"
+    "status": "needs re-verification",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "text generation and chat",
+      "summarization and rewriting",
+      "question answering",
+      "classification and extraction",
+      "embeddings or semantic search",
+      "AI application backends"
+    ]
   },
   {
     "name": "OpenAI API",
@@ -220,7 +310,17 @@
     ],
     "last_verified": "2026-09-25",
     "verified_by": "automated-live-verification",
-    "status": "active"
+    "status": "active",
+    "tier_verification_url": "https://openai.com/api/pricing/",
+    "tier_verification_status": "official-pricing-page-identified",
+    "uses": [
+      "text generation and chat",
+      "summarization and rewriting",
+      "question answering",
+      "classification and extraction",
+      "embeddings or semantic search",
+      "AI application backends"
+    ]
   },
   {
     "name": "xAI API",
@@ -242,7 +342,17 @@
     ],
     "last_verified": "2026-09-25",
     "verified_by": "automated-live-verification",
-    "status": "active"
+    "status": "active",
+    "tier_verification_url": "https://docs.x.ai/developers/models",
+    "tier_verification_status": "official-pricing-page-identified",
+    "uses": [
+      "text generation and chat",
+      "summarization and rewriting",
+      "question answering",
+      "classification and extraction",
+      "embeddings or semantic search",
+      "AI application backends"
+    ]
   },
   {
     "name": "Anthropic API",
@@ -264,7 +374,17 @@
     ],
     "last_verified": "2026-09-25",
     "verified_by": "automated-live-verification",
-    "status": "needs re-verification"
+    "status": "needs re-verification",
+    "tier_verification_url": "https://www.anthropic.com/pricing#api",
+    "tier_verification_status": "official-pricing-page-identified",
+    "uses": [
+      "text generation and chat",
+      "summarization and rewriting",
+      "question answering",
+      "classification and extraction",
+      "embeddings or semantic search",
+      "AI application backends"
+    ]
   },
   {
     "name": "DeepSeek API",
@@ -286,7 +406,17 @@
     ],
     "last_verified": "2026-09-25",
     "verified_by": "automated-live-verification",
-    "status": "needs re-verification"
+    "status": "needs re-verification",
+    "tier_verification_url": "https://api-docs.deepseek.com/quick_start/pricing",
+    "tier_verification_status": "official-pricing-page-identified",
+    "uses": [
+      "text generation and chat",
+      "summarization and rewriting",
+      "question answering",
+      "classification and extraction",
+      "embeddings or semantic search",
+      "AI application backends"
+    ]
   },
   {
     "name": "Deepgram",
@@ -308,7 +438,16 @@
     ],
     "last_verified": "2026-09-25",
     "verified_by": "automated-live-verification",
-    "status": "active"
+    "status": "active",
+    "tier_verification_url": "https://deepgram.com/pricing",
+    "tier_verification_status": "official-pricing-page-identified",
+    "uses": [
+      "speech-to-text transcription",
+      "text-to-speech and voice generation",
+      "audio analysis",
+      "speaker or language processing",
+      "voice-enabled applications"
+    ]
   },
   {
     "name": "ElevenLabs",
@@ -330,7 +469,16 @@
     ],
     "last_verified": "2026-09-25",
     "verified_by": "automated-live-verification",
-    "status": "active"
+    "status": "active",
+    "tier_verification_url": "https://elevenlabs.io/pricing",
+    "tier_verification_status": "official-pricing-page-identified",
+    "uses": [
+      "speech-to-text transcription",
+      "text-to-speech and voice generation",
+      "audio analysis",
+      "speaker or language processing",
+      "voice-enabled applications"
+    ]
   },
   {
     "name": "fal.ai",
@@ -352,7 +500,17 @@
     ],
     "last_verified": "2026-09-25",
     "verified_by": "automated-live-verification",
-    "status": "active"
+    "status": "active",
+    "tier_verification_url": "https://fal.ai/pricing",
+    "tier_verification_status": "official-pricing-page-identified",
+    "uses": [
+      "text generation and chat",
+      "summarization and rewriting",
+      "question answering",
+      "classification and extraction",
+      "embeddings or semantic search",
+      "AI application backends"
+    ]
   },
   {
     "name": "OpenWeather",
@@ -374,7 +532,16 @@
     ],
     "last_verified": "2026-09-25",
     "verified_by": "automated-live-verification",
-    "status": "active"
+    "status": "active",
+    "tier_verification_url": "https://openweathermap.org/price",
+    "tier_verification_status": "official-pricing-page-identified",
+    "uses": [
+      "current weather data",
+      "forecast retrieval",
+      "historical weather data",
+      "weather alerts and conditions",
+      "weather dashboards and applications"
+    ]
   },
   {
     "name": "Mapbox",
@@ -396,7 +563,16 @@
     ],
     "last_verified": "2026-09-25",
     "verified_by": "automated-live-verification",
-    "status": "active"
+    "status": "active",
+    "tier_verification_url": "https://www.mapbox.com/pricing",
+    "tier_verification_status": "official-pricing-page-identified",
+    "uses": [
+      "geocoding and reverse geocoding",
+      "places and location search",
+      "routing and distance calculations",
+      "maps and map tiles",
+      "location-aware applications"
+    ]
   },
   {
     "name": "MapTiler",
@@ -418,7 +594,16 @@
     ],
     "last_verified": "2026-09-25",
     "verified_by": "automated-live-verification",
-    "status": "active"
+    "status": "active",
+    "tier_verification_url": "https://www.maptiler.com/cloud/pricing/",
+    "tier_verification_status": "official-pricing-page-identified",
+    "uses": [
+      "geocoding and reverse geocoding",
+      "places and location search",
+      "routing and distance calculations",
+      "maps and map tiles",
+      "location-aware applications"
+    ]
   },
   {
     "name": "LocationIQ",
@@ -440,7 +625,16 @@
     ],
     "last_verified": "2026-09-25",
     "verified_by": "automated-live-verification",
-    "status": "active"
+    "status": "active",
+    "tier_verification_url": "https://locationiq.com/pricing",
+    "tier_verification_status": "official-pricing-page-identified",
+    "uses": [
+      "geocoding and reverse geocoding",
+      "places and location search",
+      "routing and distance calculations",
+      "maps and map tiles",
+      "location-aware applications"
+    ]
   },
   {
     "name": "Resend",
@@ -462,7 +656,17 @@
     ],
     "last_verified": "2026-09-25",
     "verified_by": "automated-live-verification",
-    "status": "active"
+    "status": "active",
+    "tier_verification_url": "https://resend.com/pricing",
+    "tier_verification_status": "official-pricing-page-identified",
+    "uses": [
+      "text generation and chat",
+      "summarization and rewriting",
+      "question answering",
+      "classification and extraction",
+      "embeddings or semantic search",
+      "AI application backends"
+    ]
   },
   {
     "name": "SendGrid",
@@ -484,7 +688,17 @@
     ],
     "last_verified": "2026-09-25",
     "verified_by": "automated-live-verification",
-    "status": "active"
+    "status": "active",
+    "tier_verification_url": "https://sendgrid.com/pricing/",
+    "tier_verification_status": "official-pricing-page-identified",
+    "uses": [
+      "text generation and chat",
+      "summarization and rewriting",
+      "question answering",
+      "classification and extraction",
+      "embeddings or semantic search",
+      "AI application backends"
+    ]
   },
   {
     "name": "Twilio",
@@ -506,7 +720,16 @@
     ],
     "last_verified": "2026-09-25",
     "verified_by": "automated-live-verification",
-    "status": "active"
+    "status": "active",
+    "tier_verification_url": "https://www.twilio.com/pricing",
+    "tier_verification_status": "official-pricing-page-identified",
+    "uses": [
+      "SMS messaging",
+      "voice calls",
+      "phone verification",
+      "messaging workflows",
+      "communications automation"
+    ]
   },
   {
     "name": "Alpha Vantage",
@@ -528,7 +751,16 @@
     ],
     "last_verified": "2026-09-25",
     "verified_by": "automated-live-verification",
-    "status": "active"
+    "status": "active",
+    "tier_verification_url": "https://www.alphavantage.co/premium/",
+    "tier_verification_status": "official-pricing-page-identified",
+    "uses": [
+      "market and price data",
+      "historical financial data",
+      "currency or exchange-rate data",
+      "economic indicators",
+      "portfolio and financial dashboards"
+    ]
   },
   {
     "name": "SerpApi",
@@ -550,7 +782,15 @@
     ],
     "last_verified": "2026-09-25",
     "verified_by": "automated-live-verification",
-    "status": "active"
+    "status": "active",
+    "tier_verification_url": "https://serpapi.com/pricing",
+    "tier_verification_status": "official-pricing-page-identified",
+    "uses": [
+      "web or search result retrieval",
+      "data extraction",
+      "validation and enrichment",
+      "automation and research workflows"
+    ]
   },
   {
     "name": "Tavily",
@@ -572,6 +812,14 @@
     ],
     "last_verified": "2026-09-25",
     "verified_by": "automated-live-verification",
-    "status": "active"
+    "status": "active",
+    "tier_verification_url": "https://www.tavily.com/pricing",
+    "tier_verification_status": "official-pricing-page-identified",
+    "uses": [
+      "web or search result retrieval",
+      "data extraction",
+      "validation and enrichment",
+      "automation and research workflows"
+    ]
   }
 ]
