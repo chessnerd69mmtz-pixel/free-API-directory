@@ -4,31 +4,31 @@ The catalog contains **339 unique providers**. Providers can appear in **multipl
 
 | Criterion | Providers | Table |
 |---|---:|---|
-| AI & Machine Learning | 37 | [Open table](./criteria/ai-and-machine-learning.md) |
-| Blockchain & Web3 | 5 | [Open table](./criteria/blockchain-and-web3.md) |
-| Coding & Developer Tools | 57 | [Open table](./criteria/coding-and-developer-tools.md) |
-| Communication, Email & SMS | 20 | [Open table](./criteria/communication-email-and-sms.md) |
-| Data, Research & Public Data | 37 | [Open table](./criteria/data-research-and-public-data.md) |
-| E-commerce & Shopping | 8 | [Open table](./criteria/e-commerce-and-shopping.md) |
-| Finance, Crypto & Economics | 27 | [Open table](./criteria/finance-crypto-and-economics.md) |
-| Food & Nutrition | 7 | [Open table](./criteria/food-and-nutrition.md) |
-| Gaming | 5 | [Open table](./criteria/gaming.md) |
-| Geospatial, Maps & Location | 21 | [Open table](./criteria/geospatial-maps-and-location.md) |
-| Health & Fitness | 6 | [Open table](./criteria/health-and-fitness.md) |
-| Images, Media & Video | 37 | [Open table](./criteria/images-media-and-video.md) |
-| IoT | 3 | [Open table](./criteria/iot.md) |
-| Jobs & Recruiting | 4 | [Open table](./criteria/jobs-and-recruiting.md) |
-| Miscellaneous & Utilities | 26 | [Open table](./criteria/miscellaneous-and-utilities.md) |
-| Music & Entertainment | 14 | [Open table](./criteria/music-and-entertainment.md) |
-| News & Content | 10 | [Open table](./criteria/news-and-content.md) |
-| Payments | 7 | [Open table](./criteria/payments.md) |
-| Real Estate | 3 | [Open table](./criteria/real-estate.md) |
-| Search, Web & Scraping | 21 | [Open table](./criteria/search-web-and-scraping.md) |
-| Security & Threat Intelligence | 11 | [Open table](./criteria/security-and-threat-intelligence.md) |
-| Social Media | 10 | [Open table](./criteria/social-media.md) |
-| Sports | 9 | [Open table](./criteria/sports.md) |
-| Translation & Language | 13 | [Open table](./criteria/translation-and-language.md) |
-| Travel & Transportation | 9 | [Open table](./criteria/travel-and-transportation.md) |
-| Weather & Environment | 18 | [Open table](./criteria/weather-and-environment.md) |
+| AI & Machine Learning | 37 | [Open table](../criteria.html?criterion=ai-and-machine-learning) |
+| Blockchain & Web3 | 5 | [Open table](../criteria.html?criterion=blockchain-and-web3) |
+| Coding & Developer Tools | 57 | [Open table](../criteria.html?criterion=coding-and-developer-tools) |
+| Communication, Email & SMS | 20 | [Open table](../criteria.html?criterion=communication-email-and-sms) |
+| Data, Research & Public Data | 37 | [Open table](../criteria.html?criterion=data-research-and-public-data) |
+| E-commerce & Shopping | 8 | [Open table](../criteria.html?criterion=e-commerce-and-shopping) |
+| Finance, Crypto & Economics | 27 | [Open table](../criteria.html?criterion=finance-crypto-and-economics) |
+| Food & Nutrition | 7 | [Open table](../criteria.html?criterion=food-and-nutrition) |
+| Gaming | 5 | [Open table](../criteria.html?criterion=gaming) |
+| Geospatial, Maps & Location | 21 | [Open table](../criteria.html?criterion=geospatial-maps-and-location) |
+| Health & Fitness | 6 | [Open table](../criteria.html?criterion=health-and-fitness) |
+| Images, Media & Video | 37 | [Open table](../criteria.html?criterion=images-media-and-video) |
+| IoT | 3 | [Open table](../criteria.html?criterion=iot) |
+| Jobs & Recruiting | 4 | [Open table](../criteria.html?criterion=jobs-and-recruiting) |
+| Miscellaneous & Utilities | 26 | [Open table](../criteria.html?criterion=miscellaneous-and-utilities) |
+| Music & Entertainment | 14 | [Open table](../criteria.html?criterion=music-and-entertainment) |
+| News & Content | 10 | [Open table](../criteria.html?criterion=news-and-content) |
+| Payments | 7 | [Open table](../criteria.html?criterion=payments) |
+| Real Estate | 3 | [Open table](../criteria.html?criterion=real-estate) |
+| Search, Web & Scraping | 21 | [Open table](../criteria.html?criterion=search-web-and-scraping) |
+| Security & Threat Intelligence | 11 | [Open table](../criteria.html?criterion=security-and-threat-intelligence) |
+| Social Media | 10 | [Open table](../criteria.html?criterion=social-media) |
+| Sports | 9 | [Open table](../criteria.html?criterion=sports) |
+| Translation & Language | 13 | [Open table](../criteria.html?criterion=translation-and-language) |
+| Travel & Transportation | 9 | [Open table](../criteria.html?criterion=travel-and-transportation) |
+| Weather & Environment | 18 | [Open table](../criteria.html?criterion=weather-and-environment) |
 
 > **Important:** criterion counts are memberships, not unique-provider counts. The underlying catalog remains 339 unique providers.
