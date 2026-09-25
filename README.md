@@ -27,11 +27,11 @@ python scripts/check_links.py
 
 No API keys are stored in this repository.
 
-## Directory table
+## Directory by criterion
 
-**[Open the complete provider table →](docs/providers/all.md)**
+The provider catalog is split into **25 practical criteria** such as AI & Machine Learning, Coding & Developer Tools, Geospatial, Health, Finance, Data & Research, Communication, Media, Weather, and more.
 
-The table contains all 339 catalogued providers, their categories, provider/API-key links, tier/pricing links, and major functions & capabilities.
+**[Browse all criteria and tables →](docs/providers/criteria.md)**
 
 ## Contributing
 
