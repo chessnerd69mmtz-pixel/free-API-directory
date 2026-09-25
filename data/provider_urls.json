@@ -3268,8 +3268,8 @@
   {
     "name": "Wikidata API",
     "category": "Public / General Data",
-    "url": "https://www.wikidata.org/wiki/Wikidata\\:Data_access",
-    "tier_verification_url": "https://www.wikidata.org/wiki/Wikidata\\:Data_access",
+    "url": "https://www.wikidata.org/wiki/Wikidata:Data_access",
+    "tier_verification_url": "https://www.wikidata.org/wiki/Wikidata:Data_access",
     "tier_verification_status": "provider-homepage-fallback",
     "uses": [
       "dataset search",
@@ -3282,8 +3282,8 @@
   {
     "name": "Wikipedia API",
     "category": "Public / General Data",
-    "url": "https://www.mediawiki.org/wiki/API\\:Main_page",
-    "tier_verification_url": "https://www.mediawiki.org/wiki/API\\:Main_page",
+    "url": "https://www.mediawiki.org/wiki/API:Main_page",
+    "tier_verification_url": "https://www.mediawiki.org/wiki/API:Main_page",
     "tier_verification_status": "provider-homepage-fallback",
     "uses": [
       "dataset search",
