@@ -243,6 +243,32 @@ async function changes() {
   );
 }
 
+async function apiProfile() {
+  const a = await loadApis();
+  const name = new URLSearchParams(location.search).get("provider");
+  const p = a.find(x => x.name === name);
+  if (!p) {
+    shell('<section class="hero"><h1>API not found</h1><p>This provider is not currently present in the live catalog.</p></section>');
+    return;
+  }
+  const source = p.verification_sources?.provider || p.documentation_url || p.signup_url;
+  shell(
+    '<section class="hero"><h1>' + esc(p.name) + '</h1><p>' + esc(p.description || "API provider") + '</p></section>' +
+    '<div class="card"><div class="kv">' +
+    '<b>Category</b><span>' + esc(p.category) + '</span>' +
+    '<b>Free tier</b><span>' + freeTier(p) + ' ' + esc(p.free_tier?.details || "") + '</span>' +
+    '<b>Authentication</b><span>' + esc(p.authentication || "Unverified") + '</span>' +
+    '<b>Credit card</b><span>' + esc(typeof p.requires_credit_card === "boolean" ? (p.requires_credit_card ? "Required" : "Not required") : String(p.requires_credit_card || "Unverified")) + '</span>' +
+    '<b>Rate limit</b><span>' + esc(p.rate_limit || "Unverified") + '</span>' +
+    '<b>Commercial use</b><span>' + esc(p.commercial_use || "Unverified") + '</span>' +
+    '<b>Functions</b><span>' + uses(p.uses) + '</span>' +
+    '<b>Provider</b><span>' + link(source, "Official / source page") + '</span>' +
+    '<b>API key</b><span><a class="save-key-link" href="keys.html?provider=' + encodeURIComponent(p.name) + '">🔐 Save key locally</a></span>' +
+    '<b>Verification</b><span>' + status(p) + ' ' + esc(p.last_verified || "Not independently verified") + '</span>' +
+    '</div></div>'
+  );
+}
+
 async function recommend() {
   const a = await loadApis();
   shell(
@@ -279,6 +305,7 @@ async function boot() {
     if (page === "compare") return await compare();
     if (page === "changes") return await changes();
     if (page === "recommend") return await recommend();
+    if (page === "api") return await apiProfile();
   } catch (error) {
     const message = error instanceof Error ? error.message : String(error);
     const root = $("#app");
