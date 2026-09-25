@@ -142,7 +142,7 @@ async function loadApis(){
 async function finder() {
   const a = await loadApis();
   shell(
-    '<section class="hero"><h1>Find an API</h1><p>Search the live 2,750-provider discovery pool by provider, category or capability. Curated records and upstream community-free records are clearly distinguished.</p></section>' +
+    '<section class="hero"><h1>Find an API</h1><p>Search the 2,565-provider catalog by provider, category or capability. Curated records and upstream community-free records are clearly distinguished.</p></section>' +
     '<div class="card tool"><input id="q" class="input" placeholder="Search APIs…">' +
     '<select id="f" class="select"><option value="">Free status: any</option><option value="yes">Free access recorded</option><option value="unknown">Free status unverified</option></select>' +
     '<select id="c" class="select"><option value="">Card requirement: any</option><option value="no">No card recorded</option><option value="unknown">Unverified</option></select></div>' +
