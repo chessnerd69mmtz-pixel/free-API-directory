@@ -29,26 +29,27 @@ for i,p in enumerate(data,1):
 names=[p['name'].lower() for p in data]
 if len(names)!=len(set(names)): errors.append('duplicate provider names')
 
-# Validate the broad community expansion separately. These records intentionally
-# carry provider/source URLs but do not claim independent quota verification.
-expansion_path = ROOT/'data/public_apis_expansion.json'
-if expansion_path.exists():
+# Validate the broad community expansion snapshots separately.
+curated_names = set(names)
+all_expansion_names = set()
+for expansion_file in ('data/public_apis_expansion.json','data/public_api_lists_expansion.json'):
+    expansion_path = ROOT/expansion_file
+    if not expansion_path.exists(): continue
     expansion = json.loads(expansion_path.read_text(encoding='utf-8'))
     exp = expansion.get('providers', [])
-    if not isinstance(exp, list): errors.append('public_apis_expansion.json: providers must be a list')
-    else:
-        exp_names = set()
-        curated_names = set(names)
-        for i, p in enumerate(exp, 1):
-            for field in ('name','category','description','provider_url','auth'):
-                if not p.get(field): errors.append(f'expansion {i}: missing {field}')
-            n = str(p.get('name','')).lower()
-            if n in exp_names: errors.append(f'expansion duplicate provider name: {p.get("name")}')
-            exp_names.add(n)
-            if n in curated_names: errors.append(f'expansion overlaps curated provider: {p.get("name")}')
-            q = urlparse(str(p.get('provider_url','')))
-            if q.scheme != 'https' or not q.netloc: errors.append(f'expansion {i}: invalid provider_url')
-        if expansion.get('count') != len(exp): errors.append('public_apis_expansion.json: count does not match providers length')
+    if not isinstance(exp, list):
+        errors.append(f'{expansion_file}: providers must be a list')
+        continue
+    for i, p in enumerate(exp, 1):
+        for field in ('name','category','description','provider_url','auth'):
+            if not p.get(field): errors.append(f'{expansion_file} {i}: missing {field}')
+        n = str(p.get('name','')).lower()
+        if n in all_expansion_names: errors.append(f'{expansion_file}: duplicate provider name across expansion snapshots: {p.get("name")}')
+        all_expansion_names.add(n)
+        if n in curated_names: errors.append(f'{expansion_file}: overlaps curated provider: {p.get("name")}')
+        q = urlparse(str(p.get('provider_url','')))
+        if q.scheme != 'https' or not q.netloc: errors.append(f'{expansion_file} {i}: invalid provider_url')
+    if expansion.get('count') != len(exp): errors.append(f'{expansion_file}: count does not match providers length')
 
 if errors: print('\n'.join(errors)); sys.exit(1)
 print(f'Validated {len(data)} providers successfully.')
