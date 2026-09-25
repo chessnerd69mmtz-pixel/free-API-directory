@@ -1,0 +1,22 @@
+# Weather & Environment
+
+**16 providers**
+
+| Provider | Original Category | Provider / API-key URL | Tier / pricing URL | Major Functions & Capabilities |
+|---|---|---|---|---|
+| AccuWeather API | Weather | [Open](https://developer.accuweather.com) | [Check tiers](https://developer.accuweather.com) | current conditions<br>hourly/daily forecasts<br>historical weather<br>alerts<br>location/weather lookup<br>environmental data where offered |
+| Ambee (environment) | Weather (additional) | [Open](https://www.getambee.com) | [Check tiers](https://www.getambee.com) | current conditions<br>hourly/daily forecasts<br>historical weather<br>alerts<br>location/weather lookup<br>environmental data where offered |
+| Foreca | Weather (additional) | [Open](https://developer.foreca.com) | [Check tiers](https://developer.foreca.com) | current conditions<br>hourly/daily forecasts<br>historical weather<br>alerts<br>location/weather lookup<br>environmental data where offered |
+| Meteoblue | Weather (additional) | [Open](https://www.meteoblue.com/en/weather-api) | [Check tiers](https://www.meteoblue.com/en/weather-api) | current conditions<br>hourly/daily forecasts<br>historical weather<br>alerts<br>location/weather lookup<br>environmental data where offered |
+| Meteomatics | Weather | [Open](https://www.meteomatics.com/en/sign-up) | [Check tiers](https://www.meteomatics.com/en/sign-up) | current conditions<br>hourly/daily forecasts<br>historical weather<br>alerts<br>location/weather lookup<br>environmental data where offered |
+| NOAA Weather API | Weather | [Open](https://www.weather.gov/documentation/services-web-api) | [Check tiers](https://www.weather.gov/documentation/services-web-api) | current conditions<br>hourly/daily forecasts<br>historical weather<br>alerts<br>location/weather lookup<br>environmental data where offered |
+| Open-Meteo | Weather (additional) | [Open](https://open-meteo.com) | [Check tiers](https://open-meteo.com) | current conditions<br>hourly/daily forecasts<br>historical weather<br>alerts<br>location/weather lookup<br>environmental data where offered |
+| OpenWeather | Weather | [Open](https://home.openweathermap.org/api_keys) | [Check tiers](https://openweathermap.org/price) | current weather<br>forecasts<br>historical weather<br>air pollution<br>geocoding<br>weather maps |
+| OpenWeatherMap | Weather | [Open](https://home.openweathermap.org/users/sign_up) | [Check tiers](https://home.openweathermap.org/users/sign_up) | current conditions<br>hourly/daily forecasts<br>historical weather<br>alerts<br>location/weather lookup<br>environmental data where offered |
+| StormGlass (marine) | Weather (additional) | [Open](https://stormglass.io) | [Check tiers](https://stormglass.io) | current conditions<br>hourly/daily forecasts<br>historical weather<br>alerts<br>location/weather lookup<br>environmental data where offered |
+| Tomorrow\.io | Weather | [Open](https://app.tomorrow.io/signup) | [Check tiers](https://app.tomorrow.io/signup) | current conditions<br>hourly/daily forecasts<br>historical weather<br>alerts<br>location/weather lookup<br>environmental data where offered |
+| Visual Crossing | Weather | [Open](https://www.visualcrossing.com/sign-up) | [Check tiers](https://www.visualcrossing.com/sign-up) | current conditions<br>hourly/daily forecasts<br>historical weather<br>alerts<br>location/weather lookup<br>environmental data where offered |
+| WeatherAPI.com | Weather | [Open](https://www.weatherapi.com/signup.aspx) | [Check tiers](https://www.weatherapi.com/signup.aspx) | current conditions<br>hourly/daily forecasts<br>historical weather<br>alerts<br>location/weather lookup<br>environmental data where offered |
+| Weatherbit | Weather | [Open](https://www.weatherbit.io/account/create) | [Check tiers](https://www.weatherbit.io/account/create) | current conditions<br>hourly/daily forecasts<br>historical weather<br>alerts<br>location/weather lookup<br>environmental data where offered |
+| Weatherstack | Weather (additional) | [Open](https://weatherstack.com) | [Check tiers](https://weatherstack.com) | current conditions<br>hourly/daily forecasts<br>historical weather<br>alerts<br>location/weather lookup<br>environmental data where offered |
+| Xweather (Aeris) | Weather (additional) | [Open](https://www.xweather.com) | [Check tiers](https://www.xweather.com) | current conditions<br>hourly/daily forecasts<br>historical weather<br>alerts<br>location/weather lookup<br>environmental data where offered |
