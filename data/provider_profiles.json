@@ -4,7 +4,7 @@
     "category": "AI / LLM",
     "description": "Fast inference API for open and hosted language models.",
     "signup_url": "https://console.groq.com/keys",
-    "pricing_url": "https://groq.com/pricing/",
+    "pricing_url": "https://groq.com/pricing",
     "documentation_url": "https://console.groq.com/docs/quickstart",
     "free_tier": {
       "has_free_tier": true,
@@ -13,15 +13,21 @@
       "amount": "Unverified - check provider page",
       "expiry": "Unverified - check provider page"
     },
-    "requires_credit_card": "Unverified",
-    "authentication": "Unverified",
-    "protocols": [],
-    "sdk_languages": [],
-    "commercial_use": "Unverified",
-    "self_hostable": "Unverified",
-    "webhooks": "Unverified",
-    "rate_limit": "Unverified",
-    "free_tier_reset": "Unverified",
+    "requires_credit_card": "No for the free GroqCloud developer tier; a payment method is used for paid usage.",
+    "authentication": "API keys sent as Bearer tokens in the Authorization header.",
+    "protocols": [
+      "HTTPS REST API",
+      "OpenAI-compatible API"
+    ],
+    "sdk_languages": [
+      "Python",
+      "JavaScript/TypeScript"
+    ],
+    "commercial_use": "Available subject to Groq's terms and applicable model/provider terms.",
+    "self_hostable": "Unavailable for the GroqCloud service; Groq documents cloud API access rather than customer self-hosting.",
+    "webhooks": "Unavailable in the published GroqCloud API documentation.",
+    "rate_limit": "Published limits are organization-level and vary by model and plan, including requests-per-minute and tokens-per-minute/day limits.",
+    "free_tier_reset": "Daily limits reset at 00:00 UTC; per-minute limits use rolling/minute windows.",
     "uses": [
       "LLM inference",
       "text generation/chat",
@@ -31,17 +37,31 @@
       "open-model serving"
     ],
     "last_verified": "2026-09-25",
-    "verified_by": "automated-live-verification",
+    "verified_by": "official-source-verification",
     "status": "active",
-    "verification_status": "official-pricing-page-identified"
+    "verification_status": "manually-verified",
+    "verification_sources": {
+      "provider": "https://groq.com/",
+      "requires_credit_card": "https://console.groq.com/docs/overview",
+      "authentication": "https://console.groq.com/docs/quickstart",
+      "protocols": "https://console.groq.com/docs/openai",
+      "sdk_languages": "https://console.groq.com/docs/libraries",
+      "commercial_use": "https://groq.com/terms-of-use",
+      "self_hostable": "https://console.groq.com/docs/models",
+      "webhooks": "https://console.groq.com/docs/overview",
+      "rate_limit": "https://console.groq.com/docs/rate-limits",
+      "free_tier_reset": "https://console.groq.com/docs/rate-limits",
+      "documentation_url": "https://console.groq.com/docs/quickstart",
+      "pricing_url": "https://groq.com/pricing"
+    }
   },
   {
     "name": "Mistral AI",
     "category": "AI / LLM",
     "description": "Mistral Studio API for language, document, audio and agent workloads.",
     "signup_url": "https://console.mistral.ai/api-keys",
-    "pricing_url": "https://mistral.ai/pricing/",
-    "documentation_url": "https://docs.mistral.ai/getting-started/quickstarts/studio/activate-and-generate-api-key",
+    "pricing_url": "https://mistral.ai/technology/#pricing",
+    "documentation_url": "https://docs.mistral.ai/getting-started/quickstart/",
     "free_tier": {
       "has_free_tier": true,
       "type": "rate-limited-free",
@@ -49,15 +69,20 @@
       "amount": "$10/month API credits on the Free plan; verify current applicability",
       "expiry": "Unverified - check provider page"
     },
-    "requires_credit_card": false,
-    "authentication": "Unverified",
-    "protocols": [],
-    "sdk_languages": [],
-    "commercial_use": "Unverified",
-    "self_hostable": "Unverified",
-    "webhooks": "Unverified",
-    "rate_limit": "Unverified",
-    "free_tier_reset": "Unverified",
+    "requires_credit_card": "No for the free Experiment plan; paid Scale usage requires billing setup.",
+    "authentication": "API keys sent in the Authorization: Bearer header.",
+    "protocols": [
+      "HTTPS REST API"
+    ],
+    "sdk_languages": [
+      "Python",
+      "TypeScript/JavaScript"
+    ],
+    "commercial_use": "Commercial use is permitted under Mistral's applicable API terms, subject to the terms and model-specific licenses.",
+    "self_hostable": "Yes for models that Mistral publishes under licenses permitting deployment; Mistral also provides self-deployment documentation.",
+    "webhooks": "Unavailable in the published Mistral API reference.",
+    "rate_limit": "The Experiment plan has published request/token limits; Scale limits depend on the purchased plan and account.",
+    "free_tier_reset": "Experiment-plan quotas are rate limits (minute-based), not a published monthly credit reset.",
     "uses": [
       "LLM inference",
       "text generation/chat",
@@ -68,17 +93,31 @@
       "speech/audio models where offered"
     ],
     "last_verified": "2026-09-25",
-    "verified_by": "automated-live-verification",
+    "verified_by": "official-source-verification",
     "status": "active",
-    "verification_status": "official-pricing-page-identified"
+    "verification_status": "manually-verified",
+    "verification_sources": {
+      "provider": "https://mistral.ai/",
+      "requires_credit_card": "https://docs.mistral.ai/getting-started/plans/",
+      "authentication": "https://docs.mistral.ai/getting-started/quickstart/",
+      "protocols": "https://docs.mistral.ai/api/",
+      "sdk_languages": "https://docs.mistral.ai/deployment/libraries/",
+      "commercial_use": "https://mistral.ai/terms/",
+      "self_hostable": "https://docs.mistral.ai/deployment/self-deployment/",
+      "webhooks": "https://docs.mistral.ai/api/",
+      "rate_limit": "https://docs.mistral.ai/getting-started/plans/",
+      "free_tier_reset": "https://docs.mistral.ai/getting-started/plans/",
+      "documentation_url": "https://docs.mistral.ai/getting-started/quickstart/",
+      "pricing_url": "https://mistral.ai/technology/#pricing"
+    }
   },
   {
     "name": "Google Gemini API",
     "category": "AI / LLM",
     "description": "Gemini API through Google AI Studio.",
     "signup_url": "https://aistudio.google.com/app/apikey",
-    "pricing_url": "https://ai.google.dev/gemini-api/docs/billing",
-    "documentation_url": "https://ai.google.dev/gemini-api/docs/get-started",
+    "pricing_url": "https://ai.google.dev/gemini-api/pricing",
+    "documentation_url": "https://ai.google.dev/gemini-api/docs",
     "free_tier": {
       "has_free_tier": true,
       "type": "rate-limited-free",
@@ -86,15 +125,24 @@
       "amount": "Model-specific; see official billing page",
       "expiry": "Unverified - check provider page"
     },
-    "requires_credit_card": false,
-    "authentication": "Unverified",
-    "protocols": [],
-    "sdk_languages": [],
-    "commercial_use": "Unverified",
-    "self_hostable": "Unverified",
-    "webhooks": "Unverified",
-    "rate_limit": "Unverified",
-    "free_tier_reset": "Unverified",
+    "requires_credit_card": "No for the Gemini API free tier; billing is required to use the paid tier.",
+    "authentication": "An API key is passed with the x-goog-api-key header (or the SDK's API-key configuration).",
+    "protocols": [
+      "HTTPS REST API",
+      "Server-sent events (streaming)"
+    ],
+    "sdk_languages": [
+      "Python",
+      "JavaScript/TypeScript",
+      "Go",
+      "Java",
+      "C#"
+    ],
+    "commercial_use": "Commercial use is available on the paid tier, subject to Google's Gemini API additional terms and applicable model terms.",
+    "self_hostable": "No; the Gemini API is a hosted Google service.",
+    "webhooks": "Unavailable in the published Gemini API documentation.",
+    "rate_limit": "Limits are measured by requests per minute, tokens per minute, and requests per day, and vary by model and usage tier.",
+    "free_tier_reset": "Requests-per-day quotas reset at midnight Pacific time; per-minute quotas use minute windows.",
     "uses": [
       "multimodal generation",
       "text generation/chat",
@@ -105,17 +153,31 @@
       "long-context applications"
     ],
     "last_verified": "2026-09-25",
-    "verified_by": "automated-live-verification",
+    "verified_by": "official-source-verification",
     "status": "active",
-    "verification_status": "official-pricing-page-identified"
+    "verification_status": "manually-verified",
+    "verification_sources": {
+      "provider": "https://ai.google.dev/gemini-api",
+      "requires_credit_card": "https://ai.google.dev/gemini-api/docs/billing",
+      "authentication": "https://ai.google.dev/gemini-api/docs/quickstart",
+      "protocols": "https://ai.google.dev/gemini-api/docs/text-generation",
+      "sdk_languages": "https://ai.google.dev/gemini-api/docs/libraries",
+      "commercial_use": "https://ai.google.dev/gemini-api/terms",
+      "self_hostable": "https://ai.google.dev/gemini-api/docs",
+      "webhooks": "https://ai.google.dev/gemini-api/docs",
+      "rate_limit": "https://ai.google.dev/gemini-api/docs/rate-limits",
+      "free_tier_reset": "https://ai.google.dev/gemini-api/docs/rate-limits",
+      "documentation_url": "https://ai.google.dev/gemini-api/docs",
+      "pricing_url": "https://ai.google.dev/gemini-api/pricing"
+    }
   },
   {
     "name": "OpenRouter",
     "category": "AI / LLM",
     "description": "Unified API gateway for many model providers, including a free plan and free models.",
     "signup_url": "https://openrouter.ai/settings/keys",
-    "pricing_url": "https://openrouter.ai/pricing/",
-    "documentation_url": "https://openrouter.ai/collections/free-models/",
+    "pricing_url": "https://openrouter.ai/pricing",
+    "documentation_url": "https://openrouter.ai/docs",
     "free_tier": {
       "has_free_tier": true,
       "type": "free-models",
@@ -123,15 +185,21 @@
       "amount": "25+ free models; 50 requests/day on the Free plan",
       "expiry": "Unverified - check provider page"
     },
-    "requires_credit_card": false,
-    "authentication": "Unverified",
-    "protocols": [],
-    "sdk_languages": [],
-    "commercial_use": "Unverified",
-    "self_hostable": "Unverified",
-    "webhooks": "Unverified",
-    "rate_limit": "Unverified",
-    "free_tier_reset": "Unverified",
+    "requires_credit_card": "No to use the free models/free plan; payment is required to purchase credits for paid usage.",
+    "authentication": "An OpenRouter API key is sent as a Bearer token in the Authorization header.",
+    "protocols": [
+      "HTTPS REST API",
+      "OpenAI-compatible API"
+    ],
+    "sdk_languages": [
+      "Python",
+      "JavaScript/TypeScript"
+    ],
+    "commercial_use": "Commercial use is governed by OpenRouter's terms and by the terms/licenses of the selected model and upstream provider.",
+    "self_hostable": "No for the OpenRouter routing service; it is a hosted gateway.",
+    "webhooks": "Unavailable in the published OpenRouter API documentation.",
+    "rate_limit": "Free users are limited to 200 requests per day; paid users' limits are based on credits and account/provider constraints.",
+    "free_tier_reset": "The free-model request limit resets daily.",
     "uses": [
       "multi-provider LLM routing",
       "text generation/chat",
@@ -142,17 +210,31 @@
       "access to free and paid models"
     ],
     "last_verified": "2026-09-25",
-    "verified_by": "automated-live-verification",
+    "verified_by": "official-source-verification",
     "status": "active",
-    "verification_status": "official-pricing-page-identified"
+    "verification_status": "manually-verified",
+    "verification_sources": {
+      "provider": "https://openrouter.ai/",
+      "requires_credit_card": "https://openrouter.ai/docs/faq",
+      "authentication": "https://openrouter.ai/docs/quickstart",
+      "protocols": "https://openrouter.ai/docs/api-reference/overview",
+      "sdk_languages": "https://openrouter.ai/docs/community",
+      "commercial_use": "https://openrouter.ai/terms",
+      "self_hostable": "https://openrouter.ai/docs",
+      "webhooks": "https://openrouter.ai/docs/api-reference/overview",
+      "rate_limit": "https://openrouter.ai/docs/api-reference/limits",
+      "free_tier_reset": "https://openrouter.ai/docs/api-reference/limits",
+      "documentation_url": "https://openrouter.ai/docs",
+      "pricing_url": "https://openrouter.ai/pricing"
+    }
   },
   {
     "name": "Hugging Face",
     "category": "AI / ML",
     "description": "Model hub and hosted inference with user access tokens.",
     "signup_url": "https://huggingface.co/settings/tokens",
-    "pricing_url": "https://huggingface.co/docs/inference-providers/pricing",
-    "documentation_url": "https://huggingface.co/docs/hub/security-tokens",
+    "pricing_url": "https://huggingface.co/pricing",
+    "documentation_url": "https://huggingface.co/docs",
     "free_tier": {
       "has_free_tier": true,
       "type": "monthly-credit",
@@ -160,15 +242,20 @@
       "amount": "$0.10/month for Free users, subject to change",
       "expiry": "Monthly credits; verify current terms"
     },
-    "requires_credit_card": false,
-    "authentication": "Unverified",
-    "protocols": [],
-    "sdk_languages": [],
-    "commercial_use": "Unverified",
-    "self_hostable": "Unverified",
-    "webhooks": "Unverified",
-    "rate_limit": "Unverified",
-    "free_tier_reset": "Unverified",
+    "requires_credit_card": "No for the free Hub/Inference Providers allowance; payment is required for paid credits or upgraded plans.",
+    "authentication": "A Hugging Face user access token is supplied as a Bearer token.",
+    "protocols": [
+      "HTTPS REST API"
+    ],
+    "sdk_languages": [
+      "Python",
+      "JavaScript/TypeScript"
+    ],
+    "commercial_use": "Depends on the license and terms of the particular model, dataset, Space, or provider; Hugging Face does not publish one provider-wide commercial-use permission.",
+    "self_hostable": "Yes: Hugging Face publishes open models and documents downloading/running them locally; hosted Inference Providers are not self-hosted.",
+    "webhooks": "Yes for documented Hub webhooks (repository events); this is distinct from an inference-result webhook.",
+    "rate_limit": "Limits depend on the selected Inference Provider/model and the user's account/plan; no single provider-wide numeric limit is published.",
+    "free_tier_reset": "Free monthly Inference Providers credits are replenished monthly; the published amount and eligibility depend on account status.",
     "uses": [
       "model inference",
       "text generation",
@@ -178,9 +265,23 @@
       "inference endpoints"
     ],
     "last_verified": "2026-09-25",
-    "verified_by": "automated-live-verification",
+    "verified_by": "official-source-verification",
     "status": "active",
-    "verification_status": "official-pricing-page-identified"
+    "verification_status": "manually-verified",
+    "verification_sources": {
+      "provider": "https://huggingface.co/",
+      "requires_credit_card": "https://huggingface.co/docs/inference-providers/pricing",
+      "authentication": "https://huggingface.co/docs/huggingface_hub/security-tokens",
+      "protocols": "https://huggingface.co/docs/api-inference/index",
+      "sdk_languages": "https://huggingface.co/docs/huggingface_hub/guides/inference",
+      "commercial_use": "https://huggingface.co/docs/hub/repositories-licenses",
+      "self_hostable": "https://huggingface.co/docs/transformers/installation",
+      "webhooks": "https://huggingface.co/docs/hub/webhooks",
+      "rate_limit": "https://huggingface.co/docs/inference-providers/en/rate-limits",
+      "free_tier_reset": "https://huggingface.co/docs/inference-providers/pricing",
+      "documentation_url": "https://huggingface.co/docs",
+      "pricing_url": "https://huggingface.co/pricing"
+    }
   },
   {
     "name": "Cohere",
@@ -188,7 +289,7 @@
     "description": "Language and embedding APIs with trial API keys.",
     "signup_url": "https://dashboard.cohere.com/api-keys",
     "pricing_url": "https://cohere.com/pricing",
-    "documentation_url": "https://docs.cohere.com/docs/going-live",
+    "documentation_url": "https://docs.cohere.com/reference/about",
     "free_tier": {
       "has_free_tier": true,
       "type": "rate-limited-free",
@@ -196,15 +297,26 @@
       "amount": "Trial keys are limited; official docs currently state 1,000 API calls/month for trial keys, with endpoint-specific rate limits",
       "expiry": "Unverified - check provider page"
     },
-    "requires_credit_card": false,
-    "authentication": "Unverified",
-    "protocols": [],
-    "sdk_languages": [],
-    "commercial_use": "Unverified",
-    "self_hostable": "Unverified",
-    "webhooks": "Unverified",
-    "rate_limit": "Unverified",
-    "free_tier_reset": "Unverified",
+    "requires_credit_card": "Unavailable",
+    "authentication": "API key sent in the Authorization header (Bearer token).",
+    "protocols": [
+      "HTTPS REST API"
+    ],
+    "sdk_languages": [
+      "Python",
+      "TypeScript",
+      "Java",
+      "C#",
+      "Go",
+      "PHP",
+      "Ruby",
+      "CLI"
+    ],
+    "commercial_use": "Cohere's commercial terms provide for use of the services by business customers; use is subject to the Cohere Terms of Use and any applicable model-specific terms.",
+    "self_hostable": "Cohere publishes model deployment options through North, including deployment in a customer's environment; availability depends on the applicable Cohere offering and license.",
+    "webhooks": "Unavailable",
+    "rate_limit": "Rate limits vary by endpoint and account/plan; Cohere documents them as requests per minute and tokens per minute in the rate-limit documentation.",
+    "free_tier_reset": "Unavailable",
     "uses": [
       "text generation",
       "embeddings",
@@ -214,17 +326,31 @@
       "tool use"
     ],
     "last_verified": "2026-09-25",
-    "verified_by": "automated-live-verification",
+    "verified_by": "official-source-verification",
     "status": "active",
-    "verification_status": "official-pricing-page-identified"
+    "verification_status": "manually-verified",
+    "verification_sources": {
+      "provider": "https://cohere.com/",
+      "requires_credit_card": "https://cohere.com/pricing",
+      "authentication": "https://docs.cohere.com/docs/authentication",
+      "protocols": "https://docs.cohere.com/reference/about",
+      "sdk_languages": "https://docs.cohere.com/docs/sdks",
+      "commercial_use": "https://cohere.com/terms-of-use",
+      "self_hostable": "https://cohere.com/north",
+      "webhooks": "https://docs.cohere.com/reference/about",
+      "rate_limit": "https://docs.cohere.com/docs/rate-limits",
+      "free_tier_reset": "https://cohere.com/pricing",
+      "documentation_url": "https://docs.cohere.com/reference/about",
+      "pricing_url": "https://cohere.com/pricing"
+    }
   },
   {
     "name": "NVIDIA NIM APIs",
     "category": "AI / LLM",
     "description": "NVIDIA-hosted model APIs through the NVIDIA Developer Program.",
     "signup_url": "https://build.nvidia.com/settings/api-keys",
-    "pricing_url": "https://docs.api.nvidia.com/nim/docs/api-quickstart",
-    "documentation_url": "https://docs.api.nvidia.com/nim/docs/api-quickstart",
+    "pricing_url": "https://build.nvidia.com/explore/discover",
+    "documentation_url": "https://docs.nvidia.com/nim/",
     "free_tier": {
       "has_free_tier": true,
       "type": "rate-limited-free",
@@ -232,15 +358,18 @@
       "amount": "Unverified - check provider page",
       "expiry": "Unverified - check provider page"
     },
-    "requires_credit_card": false,
-    "authentication": "Unverified",
-    "protocols": [],
+    "requires_credit_card": "Unavailable",
+    "authentication": "An NVIDIA API key is used for hosted build.nvidia.com API access and is supplied as a Bearer token in the Authorization header.",
+    "protocols": [
+      "HTTPS REST API",
+      "OpenAI-compatible API"
+    ],
     "sdk_languages": [],
-    "commercial_use": "Unverified",
-    "self_hostable": "Unverified",
-    "webhooks": "Unverified",
-    "rate_limit": "Unverified",
-    "free_tier_reset": "Unverified",
+    "commercial_use": "NVIDIA's hosted API terms govern use; the official hosted API documentation does not publish a blanket commercial-use permission independent of those terms.",
+    "self_hostable": "NVIDIA NIM is available as deployable containers for self-hosted inference, subject to NVIDIA's software licensing and the applicable NIM product entitlement.",
+    "webhooks": "Unavailable",
+    "rate_limit": "NVIDIA documents hosted API limits/quotas by service and account; a single universal rate limit is not published.",
+    "free_tier_reset": "Unavailable",
     "uses": [
       "LLM inference",
       "vision/language models",
@@ -249,9 +378,23 @@
       "GPU-accelerated inference"
     ],
     "last_verified": "2026-09-25",
-    "verified_by": "automated-live-verification",
+    "verified_by": "official-source-verification",
     "status": "active",
-    "verification_status": "official-pricing-page-identified"
+    "verification_status": "manually-verified",
+    "verification_sources": {
+      "provider": "https://build.nvidia.com/",
+      "requires_credit_card": "https://build.nvidia.com/explore/discover",
+      "authentication": "https://docs.api.nvidia.com/nim/reference/authentication",
+      "protocols": "https://docs.nvidia.com/nim/large-language-models/latest/getting-started.html",
+      "sdk_languages": "https://docs.api.nvidia.com/nim/",
+      "commercial_use": "https://www.nvidia.com/en-us/agreements/enterprise-software/product-specific-terms/",
+      "self_hostable": "https://docs.nvidia.com/nim/",
+      "webhooks": "https://docs.api.nvidia.com/nim/",
+      "rate_limit": "https://docs.api.nvidia.com/nim/",
+      "free_tier_reset": "https://build.nvidia.com/explore/discover",
+      "documentation_url": "https://docs.nvidia.com/nim/",
+      "pricing_url": "https://build.nvidia.com/explore/discover"
+    }
   },
   {
     "name": "Replicate",
@@ -259,7 +402,7 @@
     "description": "API for running open models and creating model predictions.",
     "signup_url": "https://replicate.com/account/api-tokens",
     "pricing_url": "https://replicate.com/pricing",
-    "documentation_url": "https://replicate.com/docs/topics/security/api-tokens",
+    "documentation_url": "https://replicate.com/docs/reference/http",
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
@@ -267,15 +410,25 @@
       "amount": "Unverified - check provider page",
       "expiry": "Unverified - check provider page"
     },
-    "requires_credit_card": "Unverified",
-    "authentication": "Unverified",
-    "protocols": [],
-    "sdk_languages": [],
-    "commercial_use": "Unverified",
-    "self_hostable": "Unverified",
-    "webhooks": "Unverified",
-    "rate_limit": "Unverified",
-    "free_tier_reset": "Unverified",
+    "requires_credit_card": "A payment method is required to continue using Replicate after the introductory free credits are exhausted.",
+    "authentication": "Use a Replicate API token in the Authorization header as a Bearer token.",
+    "protocols": [
+      "HTTPS REST API",
+      "HTTP streaming"
+    ],
+    "sdk_languages": [
+      "Python",
+      "JavaScript/TypeScript",
+      "Elixir",
+      "Go",
+      "Java",
+      "Swift"
+    ],
+    "commercial_use": "Replicate's Terms of Service permit use of the service for commercial purposes, subject to the terms, acceptable-use rules, and model-specific licenses.",
+    "self_hostable": "Replicate's hosted API is not self-hostable; Replicate separately documents Cog as an open-source tool for packaging and running models on your own infrastructure.",
+    "webhooks": "Yes. Predictions can be configured with a webhook URL; Replicate sends lifecycle event HTTP POST requests.",
+    "rate_limit": "Replicate documents a default limit of 600 API requests per minute for authenticated API requests.",
+    "free_tier_reset": "Replicate provides introductory credits for new accounts; it does not document a recurring free-tier reset schedule.",
     "uses": [
       "data retrieval",
       "search/query operations",
@@ -285,9 +438,23 @@
       "developer applications"
     ],
     "last_verified": "2026-09-25",
-    "verified_by": "automated-live-verification",
+    "verified_by": "official-source-verification",
     "status": "active",
-    "verification_status": "official-pricing-page-identified"
+    "verification_status": "manually-verified",
+    "verification_sources": {
+      "provider": "https://replicate.com/",
+      "requires_credit_card": "https://replicate.com/docs/billing",
+      "authentication": "https://replicate.com/docs/reference/http#authentication",
+      "protocols": "https://replicate.com/docs/reference/http",
+      "sdk_languages": "https://replicate.com/docs/get-started",
+      "commercial_use": "https://replicate.com/terms",
+      "self_hostable": "https://github.com/replicate/cog",
+      "webhooks": "https://replicate.com/docs/topics/webhooks",
+      "rate_limit": "https://replicate.com/docs/reference/http#rate-limits",
+      "free_tier_reset": "https://replicate.com/docs/billing",
+      "documentation_url": "https://replicate.com/docs/reference/http",
+      "pricing_url": "https://replicate.com/pricing"
+    }
   },
   {
     "name": "DeepInfra",
@@ -295,7 +462,7 @@
     "description": "Hosted open-source model inference API.",
     "signup_url": "https://deepinfra.com/dash/api_keys",
     "pricing_url": "https://deepinfra.com/pricing",
-    "documentation_url": "https://github.com/deepinfra/docs/blob/main/quickstart.mdx",
+    "documentation_url": "https://deepinfra.com/docs",
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
@@ -303,15 +470,21 @@
       "amount": "Unverified - check provider page",
       "expiry": "Unverified - check provider page"
     },
-    "requires_credit_card": "Unverified",
-    "authentication": "Unverified",
-    "protocols": [],
-    "sdk_languages": [],
-    "commercial_use": "Unverified",
-    "self_hostable": "Unverified",
-    "webhooks": "Unverified",
-    "rate_limit": "Unverified",
-    "free_tier_reset": "Unverified",
+    "requires_credit_card": "Unavailable",
+    "authentication": "Use a DeepInfra API token as a Bearer token in the Authorization header.",
+    "protocols": [
+      "HTTPS REST API",
+      "OpenAI-compatible API"
+    ],
+    "sdk_languages": [
+      "Python",
+      "JavaScript/TypeScript"
+    ],
+    "commercial_use": "DeepInfra's terms govern commercial use; the service documentation does not publish a separate blanket commercial-use license for every model.",
+    "self_hostable": "No. DeepInfra documents a hosted inference API and does not publish a self-hosting option for the DeepInfra service.",
+    "webhooks": "Unavailable",
+    "rate_limit": "Unavailable",
+    "free_tier_reset": "DeepInfra documents a one-time free-credit allowance for new users, not a recurring reset schedule.",
     "uses": [
       "data retrieval",
       "search/query operations",
@@ -321,9 +494,23 @@
       "developer applications"
     ],
     "last_verified": "2026-09-25",
-    "verified_by": "automated-live-verification",
-    "status": "needs re-verification",
-    "verification_status": "provider-source-is-pricing-or-plan-page"
+    "verified_by": "official-source-verification",
+    "status": "active",
+    "verification_status": "manually-verified",
+    "verification_sources": {
+      "provider": "https://deepinfra.com/",
+      "requires_credit_card": "https://deepinfra.com/pricing",
+      "authentication": "https://deepinfra.com/docs/advanced/api",
+      "protocols": "https://deepinfra.com/docs/advanced/api",
+      "sdk_languages": "https://deepinfra.com/docs/advanced/api",
+      "commercial_use": "https://deepinfra.com/terms-of-service",
+      "self_hostable": "https://deepinfra.com/docs",
+      "webhooks": "https://deepinfra.com/docs",
+      "rate_limit": "https://deepinfra.com/docs",
+      "free_tier_reset": "https://deepinfra.com/pricing",
+      "documentation_url": "https://deepinfra.com/docs",
+      "pricing_url": "https://deepinfra.com/pricing"
+    }
   },
   {
     "name": "OpenAI API",
@@ -331,7 +518,7 @@
     "description": "OpenAI developer API.",
     "signup_url": "https://platform.openai.com/api-keys",
     "pricing_url": "https://openai.com/api/pricing/",
-    "documentation_url": "https://developers.openai.com/api/docs/quickstart",
+    "documentation_url": "https://platform.openai.com/docs/api-reference",
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
@@ -339,15 +526,27 @@
       "amount": "Unverified - check provider page",
       "expiry": "Unverified - check provider page"
     },
-    "requires_credit_card": "Unverified",
-    "authentication": "Unverified",
-    "protocols": [],
-    "sdk_languages": [],
-    "commercial_use": "Unverified",
-    "self_hostable": "Unverified",
-    "webhooks": "Unverified",
-    "rate_limit": "Unverified",
-    "free_tier_reset": "Unverified",
+    "requires_credit_card": "A payment method is required to purchase API credits/use prepaid billing; ChatGPT login is separate from API authentication and billing.",
+    "authentication": "Authenticate API requests with an API key in the Authorization header as a Bearer token.",
+    "protocols": [
+      "HTTPS REST API",
+      "Server-sent events (streaming)",
+      "WebSocket"
+    ],
+    "sdk_languages": [
+      "Python",
+      "JavaScript/TypeScript",
+      ".NET",
+      "Java",
+      "Go",
+      "Ruby",
+      "PHP"
+    ],
+    "commercial_use": "OpenAI's business/API services terms grant customers rights to use input and output for business purposes, subject to the applicable terms and policies.",
+    "self_hostable": "No. OpenAI API models are provided as hosted services; OpenAI does not publish weights or a self-hosting option for the API models.",
+    "webhooks": "Yes. OpenAI documents webhooks for receiving events from API resources such as background responses and fine-tuning jobs.",
+    "rate_limit": "Limits are organization/project-specific and measured in requests per minute and tokens per minute; the dashboard and response headers expose applicable limits.",
+    "free_tier_reset": "OpenAI does not publish a recurring free API-tier reset schedule; API usage is billed according to the pricing and account billing documents.",
     "uses": [
       "text generation/chat",
       "vision and multimodal processing",
@@ -358,9 +557,23 @@
       "tool/function calling"
     ],
     "last_verified": "2026-09-25",
-    "verified_by": "automated-live-verification",
+    "verified_by": "official-source-verification",
     "status": "active",
-    "verification_status": "official-pricing-page-identified"
+    "verification_status": "manually-verified",
+    "verification_sources": {
+      "provider": "https://openai.com/api/",
+      "requires_credit_card": "https://help.openai.com/en/articles/8264644-how-can-i-set-up-prepaid-billing",
+      "authentication": "https://platform.openai.com/docs/api-reference/authentication",
+      "protocols": "https://platform.openai.com/docs/api-reference/streaming",
+      "sdk_languages": "https://platform.openai.com/docs/libraries",
+      "commercial_use": "https://openai.com/policies/business-terms/",
+      "self_hostable": "https://openai.com/api/",
+      "webhooks": "https://platform.openai.com/docs/guides/webhooks",
+      "rate_limit": "https://platform.openai.com/docs/guides/rate-limits",
+      "free_tier_reset": "https://openai.com/api/pricing/",
+      "documentation_url": "https://platform.openai.com/docs/api-reference",
+      "pricing_url": "https://openai.com/api/pricing/"
+    }
   },
   {
     "name": "xAI API",
@@ -6243,8 +6456,8 @@
     "category": "Email / SMS / Communication",
     "description": "Cataloged API provider.",
     "signup_url": "https://account.postmarkapp.com/sign_up",
-    "pricing_url": "https://account.postmarkapp.com/sign_up",
-    "documentation_url": "https://account.postmarkapp.com/sign_up",
+    "pricing_url": "https://postmarkapp.com/pricing",
+    "documentation_url": "https://postmarkapp.com/developer",
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
@@ -6252,15 +6465,25 @@
       "amount": "Unverified",
       "expiry": "Unverified"
     },
-    "requires_credit_card": "Unverified",
-    "authentication": "Unverified",
-    "protocols": [],
-    "sdk_languages": [],
-    "commercial_use": "Unverified",
-    "self_hostable": "Unverified",
-    "webhooks": "Unverified",
-    "rate_limit": "Unverified",
-    "free_tier_reset": "Unverified",
+    "requires_credit_card": "No credit card is required to start the free developer plan.",
+    "authentication": "The API authenticates with a Server API Token or Account API Token supplied in the X-Postmark-Server-Token or X-Postmark-Account-Token header.",
+    "protocols": [
+      "HTTPS REST API",
+      "SMTP"
+    ],
+    "sdk_languages": [
+      "C#",
+      "Java",
+      "Node.js",
+      "PHP",
+      "Python",
+      "Ruby"
+    ],
+    "commercial_use": "Commercial use is permitted under Postmark's Terms of Service, subject to the service restrictions and acceptable-use requirements.",
+    "self_hostable": "Unavailable",
+    "webhooks": "Postmark supports webhooks for delivery, bounce, spam complaint, open, click, subscription-change, and other message events.",
+    "rate_limit": "The Postmark API limit is 500 requests per second per IP address.",
+    "free_tier_reset": "The free developer plan includes 100 emails per month; the allowance resets monthly.",
     "uses": [
       "transactional email",
       "SMS/MMS",
@@ -6269,18 +6492,32 @@
       "delivery tracking",
       "webhooks/automation"
     ],
-    "last_verified": null,
-    "verified_by": null,
-    "status": "catalog-only",
-    "verification_status": "provider-homepage-fallback"
+    "last_verified": "2026-09-25",
+    "verified_by": "official-source-verification",
+    "status": "active",
+    "verification_status": "manually-verified",
+    "verification_sources": {
+      "provider": "https://postmarkapp.com/",
+      "requires_credit_card": "https://postmarkapp.com/pricing",
+      "authentication": "https://postmarkapp.com/developer/api/overview",
+      "protocols": "https://postmarkapp.com/developer/user-guide/send-email/overview",
+      "sdk_languages": "https://postmarkapp.com/developer/integration/official-libraries",
+      "commercial_use": "https://postmarkapp.com/legal/terms-of-service",
+      "self_hostable": "https://postmarkapp.com/",
+      "webhooks": "https://postmarkapp.com/developer/webhooks/webhooks-overview",
+      "rate_limit": "https://postmarkapp.com/developer/api/overview#rate-limits",
+      "free_tier_reset": "https://postmarkapp.com/pricing",
+      "documentation_url": "https://postmarkapp.com/developer",
+      "pricing_url": "https://postmarkapp.com/pricing"
+    }
   },
   {
     "name": "Vonage (Nexmo)",
     "category": "Email / SMS / Communication",
     "description": "Cataloged API provider.",
     "signup_url": "https://dashboard.nexmo.com/sign-up",
-    "pricing_url": "https://dashboard.nexmo.com/sign-up",
-    "documentation_url": "https://dashboard.nexmo.com/sign-up",
+    "pricing_url": "https://www.vonage.com/communications-apis/pricing/",
+    "documentation_url": "https://developer.vonage.com/",
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
@@ -6288,15 +6525,26 @@
       "amount": "Unverified",
       "expiry": "Unverified"
     },
-    "requires_credit_card": "Unverified",
-    "authentication": "Unverified",
-    "protocols": [],
-    "sdk_languages": [],
-    "commercial_use": "Unverified",
-    "self_hostable": "Unverified",
-    "webhooks": "Unverified",
-    "rate_limit": "Unverified",
-    "free_tier_reset": "Unverified",
+    "requires_credit_card": "Unavailable",
+    "authentication": "Vonage APIs authenticate using an API key and API secret, with JWT authentication used for some APIs; the applicable method is specified by the individual API reference.",
+    "protocols": [
+      "HTTPS REST API",
+      "SIP"
+    ],
+    "sdk_languages": [
+      "C#",
+      "Java",
+      "JavaScript",
+      "PHP",
+      "Python",
+      "Ruby",
+      "Go"
+    ],
+    "commercial_use": "Vonage's API Platform terms permit commercial use subject to the applicable terms, acceptable-use policy, and product restrictions.",
+    "self_hostable": "Unavailable",
+    "webhooks": "Vonage APIs document webhooks for asynchronous event notifications where supported by the API.",
+    "rate_limit": "Rate limits are API-specific and are stated in the relevant Vonage API documentation; no single provider-wide limit is published.",
+    "free_tier_reset": "Unavailable",
     "uses": [
       "transactional email",
       "SMS/MMS",
@@ -6305,18 +6553,32 @@
       "delivery tracking",
       "webhooks/automation"
     ],
-    "last_verified": null,
-    "verified_by": null,
-    "status": "catalog-only",
-    "verification_status": "provider-homepage-fallback"
+    "last_verified": "2026-09-25",
+    "verified_by": "official-source-verification",
+    "status": "active",
+    "verification_status": "manually-verified",
+    "verification_sources": {
+      "provider": "https://developer.vonage.com/",
+      "requires_credit_card": "https://developer.vonage.com/",
+      "authentication": "https://developer.vonage.com/en/api/application.v2",
+      "protocols": "https://developer.vonage.com/en/api",
+      "sdk_languages": "https://developer.vonage.com/en/sdk",
+      "commercial_use": "https://www.vonage.com/legal/communications-apis-terms/",
+      "self_hostable": "https://developer.vonage.com/",
+      "webhooks": "https://developer.vonage.com/en/concepts/guides/webhooks",
+      "rate_limit": "https://developer.vonage.com/en/api",
+      "free_tier_reset": "https://www.vonage.com/communications-apis/pricing/",
+      "documentation_url": "https://developer.vonage.com/",
+      "pricing_url": "https://www.vonage.com/communications-apis/pricing/"
+    }
   },
   {
     "name": "Zoho ZeptoMail",
     "category": "Email / SMS / Communication",
     "description": "Cataloged API provider.",
     "signup_url": "https://www.zoho.com/zeptomail/",
-    "pricing_url": "https://www.zoho.com/zeptomail/",
-    "documentation_url": "https://www.zoho.com/zeptomail/",
+    "pricing_url": "https://www.zoho.com/zeptomail/pricing.html",
+    "documentation_url": "https://www.zoho.com/zeptomail/help/api/",
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
@@ -6324,15 +6586,18 @@
       "amount": "Unverified",
       "expiry": "Unverified"
     },
-    "requires_credit_card": "Unverified",
-    "authentication": "Unverified",
-    "protocols": [],
+    "requires_credit_card": "A credit card is not required for the free trial; payment is required when purchasing credits.",
+    "authentication": "The ZeptoMail Send Mail API authenticates with a Send Mail Token in the Authorization header (Zoho-enczapikey token).",
+    "protocols": [
+      "HTTPS REST API",
+      "SMTP"
+    ],
     "sdk_languages": [],
-    "commercial_use": "Unverified",
-    "self_hostable": "Unverified",
-    "webhooks": "Unverified",
-    "rate_limit": "Unverified",
-    "free_tier_reset": "Unverified",
+    "commercial_use": "ZeptoMail is a transactional-email service and may be used for business email subject to Zoho's terms and anti-spam policy; promotional/bulk marketing email is not allowed.",
+    "self_hostable": "Unavailable",
+    "webhooks": "ZeptoMail supports webhooks for email events and lets users configure webhook URLs for those events.",
+    "rate_limit": "ZeptoMail documents API limits in its API documentation; a provider-wide numeric rate limit is not published there.",
+    "free_tier_reset": "The free trial provides 10,000 emails and is available for 14 days; it is a one-time trial rather than a recurring monthly reset.",
     "uses": [
       "transactional email",
       "SMS/MMS",
@@ -6341,18 +6606,32 @@
       "delivery tracking",
       "webhooks/automation"
     ],
-    "last_verified": null,
-    "verified_by": null,
-    "status": "catalog-only",
-    "verification_status": "provider-homepage-fallback"
+    "last_verified": "2026-09-25",
+    "verified_by": "official-source-verification",
+    "status": "active",
+    "verification_status": "manually-verified",
+    "verification_sources": {
+      "provider": "https://www.zoho.com/zeptomail/",
+      "requires_credit_card": "https://www.zoho.com/zeptomail/pricing.html",
+      "authentication": "https://www.zoho.com/zeptomail/help/api/email-api.html",
+      "protocols": "https://www.zoho.com/zeptomail/help/api/",
+      "sdk_languages": "https://www.zoho.com/zeptomail/help/api/",
+      "commercial_use": "https://www.zoho.com/zeptomail/terms.html",
+      "self_hostable": "https://www.zoho.com/zeptomail/",
+      "webhooks": "https://www.zoho.com/zeptomail/help/webhooks/",
+      "rate_limit": "https://www.zoho.com/zeptomail/help/api/",
+      "free_tier_reset": "https://www.zoho.com/zeptomail/pricing.html",
+      "documentation_url": "https://www.zoho.com/zeptomail/help/api/",
+      "pricing_url": "https://www.zoho.com/zeptomail/pricing.html"
+    }
   },
   {
     "name": "Alpaca (trading)",
     "category": "Finance / Crypto (additional)",
     "description": "Cataloged API provider.",
     "signup_url": "https://alpaca.markets",
-    "pricing_url": "https://alpaca.markets",
-    "documentation_url": "https://alpaca.markets",
+    "pricing_url": "https://alpaca.markets/pricing",
+    "documentation_url": "https://docs.alpaca.markets/",
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
@@ -6360,15 +6639,23 @@
       "amount": "Unverified",
       "expiry": "Unverified"
     },
-    "requires_credit_card": "Unverified",
-    "authentication": "Unverified",
-    "protocols": [],
-    "sdk_languages": [],
-    "commercial_use": "Unverified",
-    "self_hostable": "Unverified",
-    "webhooks": "Unverified",
-    "rate_limit": "Unverified",
-    "free_tier_reset": "Unverified",
+    "requires_credit_card": "No credit card is required for an Alpaca account; the official paper-trading documentation describes paper trading as free.",
+    "authentication": "API key and secret key sent in APCA-API-KEY-ID and APCA-API-SECRET-KEY headers.",
+    "protocols": [
+      "REST",
+      "WebSocket"
+    ],
+    "sdk_languages": [
+      "Python",
+      "JavaScript",
+      "Go",
+      "C#"
+    ],
+    "commercial_use": "Unavailable",
+    "self_hostable": "Unavailable",
+    "webhooks": "Trading API streaming uses WebSocket; Alpaca also documents webhooks for account/trading events.",
+    "rate_limit": "The Trading API has a documented limit of 200 requests per minute per account.",
+    "free_tier_reset": "Unavailable",
     "uses": [
       "market/price data",
       "historical time series",
@@ -6377,18 +6664,32 @@
       "portfolio/account data where offered",
       "trading/order APIs where offered"
     ],
-    "last_verified": null,
-    "verified_by": null,
-    "status": "catalog-only",
-    "verification_status": "provider-homepage-fallback"
+    "last_verified": "2026-09-25",
+    "verified_by": "official-source-verification",
+    "status": "active",
+    "verification_status": "manually-verified",
+    "verification_sources": {
+      "provider": "https://docs.alpaca.markets/",
+      "requires_credit_card": "https://docs.alpaca.markets/docs/paper-trading",
+      "authentication": "https://docs.alpaca.markets/docs/authentication",
+      "protocols": "https://docs.alpaca.markets/docs/streaming-market-data",
+      "sdk_languages": "https://docs.alpaca.markets/docs/sdks",
+      "commercial_use": "https://alpaca.markets/disclosures",
+      "self_hostable": "https://docs.alpaca.markets/",
+      "webhooks": "https://docs.alpaca.markets/docs/webhooks",
+      "rate_limit": "https://docs.alpaca.markets/docs/rate-limits",
+      "free_tier_reset": "https://alpaca.markets/pricing",
+      "documentation_url": "https://docs.alpaca.markets/",
+      "pricing_url": "https://alpaca.markets/pricing"
+    }
   },
   {
     "name": "Binance API",
     "category": "Finance / Crypto (additional)",
     "description": "Cataloged API provider.",
     "signup_url": "https://www.binance.com/en/binance-api",
-    "pricing_url": "https://www.binance.com/en/binance-api",
-    "documentation_url": "https://www.binance.com/en/binance-api",
+    "pricing_url": "https://www.binance.com/en/fee/trading",
+    "documentation_url": "https://developers.binance.com/docs/binance-spot-api-docs",
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
@@ -6396,15 +6697,26 @@
       "amount": "Unverified",
       "expiry": "Unverified"
     },
-    "requires_credit_card": "Unverified",
-    "authentication": "Unverified",
-    "protocols": [],
-    "sdk_languages": [],
-    "commercial_use": "Unverified",
-    "self_hostable": "Unverified",
-    "webhooks": "Unverified",
-    "rate_limit": "Unverified",
-    "free_tier_reset": "Unverified",
+    "requires_credit_card": "Unavailable",
+    "authentication": "API key authentication is required for API-key and signed endpoints; signed requests also require an HMAC SHA-256 signature using the secret key.",
+    "protocols": [
+      "REST",
+      "WebSocket"
+    ],
+    "sdk_languages": [
+      "C#",
+      "Go",
+      "Java",
+      "Python",
+      "Ruby",
+      "Rust",
+      "TypeScript"
+    ],
+    "commercial_use": "Unavailable",
+    "self_hostable": "Unavailable",
+    "webhooks": "Unavailable",
+    "rate_limit": "Binance documents request-weight limits and an IP limit of 6,000 request weight per minute for the Spot REST API; responses include rate-limit headers.",
+    "free_tier_reset": "Unavailable",
     "uses": [
       "market/price data",
       "historical time series",
@@ -6413,10 +6725,24 @@
       "portfolio/account data where offered",
       "trading/order APIs where offered"
     ],
-    "last_verified": null,
-    "verified_by": null,
-    "status": "catalog-only",
-    "verification_status": "provider-homepage-fallback"
+    "last_verified": "2026-09-25",
+    "verified_by": "official-source-verification",
+    "status": "active",
+    "verification_status": "manually-verified",
+    "verification_sources": {
+      "provider": "https://developers.binance.com/docs/binance-spot-api-docs",
+      "requires_credit_card": "https://developers.binance.com/docs/binance-spot-api-docs",
+      "authentication": "https://developers.binance.com/docs/binance-spot-api-docs/rest-api/general-api-information",
+      "protocols": "https://developers.binance.com/docs/binance-spot-api-docs/web-socket-streams",
+      "sdk_languages": "https://github.com/binance/binance-connector",
+      "commercial_use": "https://www.binance.com/en/terms",
+      "self_hostable": "https://developers.binance.com/docs/binance-spot-api-docs",
+      "webhooks": "https://developers.binance.com/docs/binance-spot-api-docs/web-socket-streams",
+      "rate_limit": "https://developers.binance.com/docs/binance-spot-api-docs/rest-api/limits",
+      "free_tier_reset": "https://developers.binance.com/docs/binance-spot-api-docs/rest-api/limits",
+      "documentation_url": "https://developers.binance.com/docs/binance-spot-api-docs",
+      "pricing_url": "https://www.binance.com/en/fee/trading"
+    }
   },
   {
     "name": "BscScan",
@@ -6424,7 +6750,7 @@
     "description": "Cataloged API provider.",
     "signup_url": "https://bscscan.com/apis",
     "pricing_url": "https://bscscan.com/apis",
-    "documentation_url": "https://bscscan.com/apis",
+    "documentation_url": "https://docs.bscscan.com/",
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
@@ -6432,15 +6758,17 @@
       "amount": "Unverified",
       "expiry": "Unverified"
     },
-    "requires_credit_card": "Unverified",
-    "authentication": "Unverified",
-    "protocols": [],
+    "requires_credit_card": "No credit card requirement is stated; the official API page describes API keys as free.",
+    "authentication": "An API key is passed using the apikey query parameter.",
+    "protocols": [
+      "REST"
+    ],
     "sdk_languages": [],
-    "commercial_use": "Unverified",
-    "self_hostable": "Unverified",
-    "webhooks": "Unverified",
-    "rate_limit": "Unverified",
-    "free_tier_reset": "Unverified",
+    "commercial_use": "Unavailable",
+    "self_hostable": "Unavailable",
+    "webhooks": "Unavailable",
+    "rate_limit": "The free API plan is limited to 5 calls per second and 100,000 calls per day.",
+    "free_tier_reset": "The free daily limit resets every 24 hours.",
     "uses": [
       "market/price data",
       "historical time series",
@@ -6449,18 +6777,32 @@
       "portfolio/account data where offered",
       "trading/order APIs where offered"
     ],
-    "last_verified": null,
-    "verified_by": null,
-    "status": "catalog-only",
-    "verification_status": "provider-homepage-fallback"
+    "last_verified": "2026-09-25",
+    "verified_by": "official-source-verification",
+    "status": "active",
+    "verification_status": "manually-verified",
+    "verification_sources": {
+      "provider": "https://docs.bscscan.com/",
+      "requires_credit_card": "https://docs.bscscan.com/getting-started/api-keys",
+      "authentication": "https://docs.bscscan.com/getting-started/using-our-api",
+      "protocols": "https://docs.bscscan.com/",
+      "sdk_languages": "https://docs.bscscan.com/",
+      "commercial_use": "https://bscscan.com/terms",
+      "self_hostable": "https://docs.bscscan.com/",
+      "webhooks": "https://docs.bscscan.com/",
+      "rate_limit": "https://docs.bscscan.com/getting-started/endpoint-rate-limits",
+      "free_tier_reset": "https://docs.bscscan.com/getting-started/endpoint-rate-limits",
+      "documentation_url": "https://docs.bscscan.com/",
+      "pricing_url": "https://bscscan.com/apis"
+    }
   },
   {
     "name": "Coinbase API",
     "category": "Finance / Crypto (additional)",
     "description": "Cataloged API provider.",
     "signup_url": "https://docs.cloud.coinbase.com",
-    "pricing_url": "https://docs.cloud.coinbase.com",
-    "documentation_url": "https://docs.cloud.coinbase.com",
+    "pricing_url": "https://www.coinbase.com/pricing",
+    "documentation_url": "https://docs.cdp.coinbase.com/",
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
@@ -6468,15 +6810,22 @@
       "amount": "Unverified",
       "expiry": "Unverified"
     },
-    "requires_credit_card": "Unverified",
-    "authentication": "Unverified",
-    "protocols": [],
-    "sdk_languages": [],
-    "commercial_use": "Unverified",
-    "self_hostable": "Unverified",
-    "webhooks": "Unverified",
-    "rate_limit": "Unverified",
-    "free_tier_reset": "Unverified",
+    "requires_credit_card": "Unavailable",
+    "authentication": "Coinbase documents CDP API-key authentication using a key name and private key, with JWT bearer tokens for authenticated requests; some public endpoints require no authentication.",
+    "protocols": [
+      "REST",
+      "WebSocket"
+    ],
+    "sdk_languages": [
+      "TypeScript",
+      "Python",
+      "Go"
+    ],
+    "commercial_use": "Unavailable",
+    "self_hostable": "Unavailable",
+    "webhooks": "Coinbase CDP documents webhooks for receiving asynchronous event notifications.",
+    "rate_limit": "Coinbase documents endpoint-specific rate limits and returns rate-limit headers; limits vary by API and product.",
+    "free_tier_reset": "Unavailable",
     "uses": [
       "market/price data",
       "historical time series",
@@ -6485,18 +6834,32 @@
       "portfolio/account data where offered",
       "trading/order APIs where offered"
     ],
-    "last_verified": null,
-    "verified_by": null,
-    "status": "catalog-only",
-    "verification_status": "provider-homepage-fallback"
+    "last_verified": "2026-09-25",
+    "verified_by": "official-source-verification",
+    "status": "active",
+    "verification_status": "manually-verified",
+    "verification_sources": {
+      "provider": "https://docs.cdp.coinbase.com/",
+      "requires_credit_card": "https://docs.cdp.coinbase.com/",
+      "authentication": "https://docs.cdp.coinbase.com/get-started/authentication",
+      "protocols": "https://docs.cdp.coinbase.com/exchange/introduction/websocket-feed",
+      "sdk_languages": "https://docs.cdp.coinbase.com/sdks",
+      "commercial_use": "https://www.coinbase.com/legal/user_agreement",
+      "self_hostable": "https://docs.cdp.coinbase.com/",
+      "webhooks": "https://docs.cdp.coinbase.com/embedded-wallets/webhooks",
+      "rate_limit": "https://docs.cdp.coinbase.com/api-reference/v2/limits",
+      "free_tier_reset": "https://www.coinbase.com/pricing",
+      "documentation_url": "https://docs.cdp.coinbase.com/",
+      "pricing_url": "https://www.coinbase.com/pricing"
+    }
   },
   {
     "name": "CryptoCompare",
     "category": "Finance / Crypto (additional)",
     "description": "Cataloged API provider.",
     "signup_url": "https://min-api.cryptocompare.com",
-    "pricing_url": "https://min-api.cryptocompare.com",
-    "documentation_url": "https://min-api.cryptocompare.com",
+    "pricing_url": "https://www.cryptocompare.com/enterprise/",
+    "documentation_url": "https://min-api.cryptocompare.com/documentation",
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
@@ -6504,15 +6867,18 @@
       "amount": "Unverified",
       "expiry": "Unverified"
     },
-    "requires_credit_card": "Unverified",
-    "authentication": "Unverified",
-    "protocols": [],
+    "requires_credit_card": "Unavailable",
+    "authentication": "CryptoCompare documents API-key authentication using the authorization header or an api_key query parameter; some endpoints are available without a key.",
+    "protocols": [
+      "REST",
+      "WebSocket"
+    ],
     "sdk_languages": [],
-    "commercial_use": "Unverified",
-    "self_hostable": "Unverified",
-    "webhooks": "Unverified",
-    "rate_limit": "Unverified",
-    "free_tier_reset": "Unverified",
+    "commercial_use": "Unavailable",
+    "self_hostable": "Unavailable",
+    "webhooks": "Unavailable",
+    "rate_limit": "CryptoCompare documents plan-dependent minute, hour, day, and month request limits.",
+    "free_tier_reset": "The free plan's request allowance is documented as resetting monthly.",
     "uses": [
       "market/price data",
       "historical time series",
@@ -6521,10 +6887,24 @@
       "portfolio/account data where offered",
       "trading/order APIs where offered"
     ],
-    "last_verified": null,
-    "verified_by": null,
-    "status": "catalog-only",
-    "verification_status": "provider-homepage-fallback"
+    "last_verified": "2026-09-25",
+    "verified_by": "official-source-verification",
+    "status": "active",
+    "verification_status": "manually-verified",
+    "verification_sources": {
+      "provider": "https://min-api.cryptocompare.com/documentation",
+      "requires_credit_card": "https://www.cryptocompare.com/enterprise/",
+      "authentication": "https://min-api.cryptocompare.com/documentation/authorization",
+      "protocols": "https://min-api.cryptocompare.com/documentation/websocket",
+      "sdk_languages": "https://min-api.cryptocompare.com/documentation",
+      "commercial_use": "https://www.cryptocompare.com/terms-conditions/",
+      "self_hostable": "https://min-api.cryptocompare.com/documentation",
+      "webhooks": "https://min-api.cryptocompare.com/documentation",
+      "rate_limit": "https://min-api.cryptocompare.com/documentation/streaming-ratelimits",
+      "free_tier_reset": "https://www.cryptocompare.com/enterprise/",
+      "documentation_url": "https://min-api.cryptocompare.com/documentation",
+      "pricing_url": "https://www.cryptocompare.com/enterprise/"
+    }
   },
   {
     "name": "Etherscan",
@@ -6532,7 +6912,7 @@
     "description": "Cataloged API provider.",
     "signup_url": "https://etherscan.io/apis",
     "pricing_url": "https://etherscan.io/apis",
-    "documentation_url": "https://etherscan.io/apis",
+    "documentation_url": "https://docs.etherscan.io/",
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
@@ -6540,15 +6920,17 @@
       "amount": "Unverified",
       "expiry": "Unverified"
     },
-    "requires_credit_card": "Unverified",
-    "authentication": "Unverified",
-    "protocols": [],
+    "requires_credit_card": "No for the free API plan; a card is required only when subscribing to paid plans (official pricing).",
+    "authentication": "API key authentication using the apikey parameter; API keys are generated in an Etherscan account.",
+    "protocols": [
+      "HTTPS REST API"
+    ],
     "sdk_languages": [],
-    "commercial_use": "Unverified",
-    "self_hostable": "Unverified",
-    "webhooks": "Unverified",
-    "rate_limit": "Unverified",
-    "free_tier_reset": "Unverified",
+    "commercial_use": "Paid API plans are offered for commercial use; the free plan's permitted use is governed by Etherscan's terms.",
+    "self_hostable": "No self-hosted deployment is published; Etherscan documents a hosted API service.",
+    "webhooks": "Unavailable",
+    "rate_limit": "Free API tier: 3 calls per second and 100,000 calls per day; paid tiers have higher documented limits.",
+    "free_tier_reset": "Daily (the free tier quota is stated as 100,000 calls per day).",
     "uses": [
       "market/price data",
       "historical time series",
@@ -6557,17 +6939,31 @@
       "portfolio/account data where offered",
       "trading/order APIs where offered"
     ],
-    "last_verified": null,
-    "verified_by": null,
-    "status": "catalog-only",
-    "verification_status": "provider-homepage-fallback"
+    "last_verified": "2026-09-25",
+    "verified_by": "official-source-verification",
+    "status": "active",
+    "verification_status": "manually-verified",
+    "verification_sources": {
+      "provider": "https://etherscan.io/",
+      "requires_credit_card": "https://etherscan.io/apis",
+      "authentication": "https://docs.etherscan.io/getting-started/authentication",
+      "protocols": "https://docs.etherscan.io/getting-started/endpoint-urls",
+      "sdk_languages": "https://docs.etherscan.io/",
+      "commercial_use": "https://etherscan.io/apis",
+      "self_hostable": "https://docs.etherscan.io/",
+      "webhooks": "https://docs.etherscan.io/",
+      "rate_limit": "https://docs.etherscan.io/resources/rate-limits",
+      "free_tier_reset": "https://etherscan.io/apis",
+      "documentation_url": "https://docs.etherscan.io/",
+      "pricing_url": "https://etherscan.io/apis"
+    }
   },
   {
     "name": "Financial Modeling Prep",
     "category": "Finance / Crypto (additional)",
     "description": "Cataloged API provider.",
     "signup_url": "https://site.financialmodelingprep.com/developer/docs",
-    "pricing_url": "https://site.financialmodelingprep.com/developer/docs",
+    "pricing_url": "https://site.financialmodelingprep.com/pricing-plans",
     "documentation_url": "https://site.financialmodelingprep.com/developer/docs",
     "free_tier": {
       "has_free_tier": null,
@@ -6576,15 +6972,17 @@
       "amount": "Unverified",
       "expiry": "Unverified"
     },
-    "requires_credit_card": "Unverified",
-    "authentication": "Unverified",
-    "protocols": [],
+    "requires_credit_card": "No for the free plan; payment details are required for paid subscriptions.",
+    "authentication": "API-key authentication using the apikey query parameter.",
+    "protocols": [
+      "HTTPS REST API"
+    ],
     "sdk_languages": [],
-    "commercial_use": "Unverified",
-    "self_hostable": "Unverified",
-    "webhooks": "Unverified",
-    "rate_limit": "Unverified",
-    "free_tier_reset": "Unverified",
+    "commercial_use": "Commercial access is offered through paid plans; plan and license restrictions apply.",
+    "self_hostable": "No self-hosted version is published.",
+    "webhooks": "Unavailable",
+    "rate_limit": "The free plan is limited to 250 API requests per day.",
+    "free_tier_reset": "Daily.",
     "uses": [
       "market/price data",
       "historical time series",
@@ -6593,18 +6991,32 @@
       "portfolio/account data where offered",
       "trading/order APIs where offered"
     ],
-    "last_verified": null,
-    "verified_by": null,
-    "status": "catalog-only",
-    "verification_status": "provider-homepage-fallback"
+    "last_verified": "2026-09-25",
+    "verified_by": "official-source-verification",
+    "status": "active",
+    "verification_status": "manually-verified",
+    "verification_sources": {
+      "provider": "https://financialmodelingprep.com/",
+      "requires_credit_card": "https://site.financialmodelingprep.com/pricing-plans",
+      "authentication": "https://site.financialmodelingprep.com/developer/docs",
+      "protocols": "https://site.financialmodelingprep.com/developer/docs",
+      "sdk_languages": "https://site.financialmodelingprep.com/developer/docs",
+      "commercial_use": "https://site.financialmodelingprep.com/pricing-plans",
+      "self_hostable": "https://site.financialmodelingprep.com/developer/docs",
+      "webhooks": "https://site.financialmodelingprep.com/developer/docs",
+      "rate_limit": "https://site.financialmodelingprep.com/developer/docs",
+      "free_tier_reset": "https://site.financialmodelingprep.com/pricing-plans",
+      "documentation_url": "https://site.financialmodelingprep.com/developer/docs",
+      "pricing_url": "https://site.financialmodelingprep.com/pricing-plans"
+    }
   },
   {
     "name": "Kraken API",
     "category": "Finance / Crypto (additional)",
     "description": "Cataloged API provider.",
     "signup_url": "https://www.kraken.com/features/api",
-    "pricing_url": "https://www.kraken.com/features/api",
-    "documentation_url": "https://www.kraken.com/features/api",
+    "pricing_url": "Unavailable",
+    "documentation_url": "https://docs.kraken.com/api/",
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
@@ -6612,15 +7024,18 @@
       "amount": "Unverified",
       "expiry": "Unverified"
     },
-    "requires_credit_card": "Unverified",
-    "authentication": "Unverified",
-    "protocols": [],
+    "requires_credit_card": "No API credit card requirement is published; API access uses a Kraken account and API keys.",
+    "authentication": "Public endpoints require no authentication; private REST requests use API key, nonce, and HMAC-SHA512 signature; private WebSocket uses a token.",
+    "protocols": [
+      "HTTPS REST API",
+      "WebSocket API"
+    ],
     "sdk_languages": [],
-    "commercial_use": "Unverified",
-    "self_hostable": "Unverified",
-    "webhooks": "Unverified",
-    "rate_limit": "Unverified",
-    "free_tier_reset": "Unverified",
+    "commercial_use": "Unavailable in the API documentation; commercial rights depend on Kraken's applicable terms.",
+    "self_hostable": "No self-hosted Kraken API server is published.",
+    "webhooks": "Unavailable",
+    "rate_limit": "REST private endpoints use a per-key call counter (with documented tier-dependent limits); WebSocket has documented per-connection rate limits.",
+    "free_tier_reset": "Not applicable; Kraken does not publish a separate free-tier quota/reset in the API documentation.",
     "uses": [
       "market/price data",
       "historical time series",
@@ -6629,18 +7044,32 @@
       "portfolio/account data where offered",
       "trading/order APIs where offered"
     ],
-    "last_verified": null,
-    "verified_by": null,
-    "status": "catalog-only",
-    "verification_status": "provider-homepage-fallback"
+    "last_verified": "2026-09-25",
+    "verified_by": "official-source-verification",
+    "status": "active",
+    "verification_status": "manually-verified",
+    "verification_sources": {
+      "provider": "https://www.kraken.com/features/api",
+      "requires_credit_card": "https://docs.kraken.com/api/docs/guides/spot-rest-auth/",
+      "authentication": "https://docs.kraken.com/api/docs/guides/spot-rest-auth/",
+      "protocols": "https://docs.kraken.com/api/",
+      "sdk_languages": "https://docs.kraken.com/api/",
+      "commercial_use": "https://www.kraken.com/legal",
+      "self_hostable": "https://docs.kraken.com/api/",
+      "webhooks": "https://docs.kraken.com/api/",
+      "rate_limit": "https://docs.kraken.com/api/docs/guides/spot-rest-rate-limits/",
+      "free_tier_reset": "https://docs.kraken.com/api/",
+      "documentation_url": "https://docs.kraken.com/api/",
+      "pricing_url": "https://www.kraken.com/legal"
+    }
   },
   {
     "name": "Marketstack",
     "category": "Finance / Crypto (additional)",
     "description": "Cataloged API provider.",
     "signup_url": "https://marketstack.com",
-    "pricing_url": "https://marketstack.com",
-    "documentation_url": "https://marketstack.com",
+    "pricing_url": "https://marketstack.com/product",
+    "documentation_url": "https://marketstack.com/documentation",
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
@@ -6648,15 +7077,17 @@
       "amount": "Unverified",
       "expiry": "Unverified"
     },
-    "requires_credit_card": "Unverified",
-    "authentication": "Unverified",
-    "protocols": [],
+    "requires_credit_card": "No for the free plan; paid subscriptions require payment details.",
+    "authentication": "API-key authentication using the access_key query parameter.",
+    "protocols": [
+      "HTTPS REST API"
+    ],
     "sdk_languages": [],
-    "commercial_use": "Unverified",
-    "self_hostable": "Unverified",
-    "webhooks": "Unverified",
-    "rate_limit": "Unverified",
-    "free_tier_reset": "Unverified",
+    "commercial_use": "Commercial use is available on paid plans; the free plan is limited by its published plan terms.",
+    "self_hostable": "No self-hosted deployment is published.",
+    "webhooks": "Unavailable",
+    "rate_limit": "Free plan: 100 requests per month; higher plans publish larger monthly quotas.",
+    "free_tier_reset": "Monthly.",
     "uses": [
       "market/price data",
       "historical time series",
@@ -6665,18 +7096,32 @@
       "portfolio/account data where offered",
       "trading/order APIs where offered"
     ],
-    "last_verified": null,
-    "verified_by": null,
-    "status": "catalog-only",
-    "verification_status": "provider-homepage-fallback"
+    "last_verified": "2026-09-25",
+    "verified_by": "official-source-verification",
+    "status": "active",
+    "verification_status": "manually-verified",
+    "verification_sources": {
+      "provider": "https://marketstack.com/",
+      "requires_credit_card": "https://marketstack.com/product",
+      "authentication": "https://marketstack.com/documentation",
+      "protocols": "https://marketstack.com/documentation",
+      "sdk_languages": "https://marketstack.com/documentation",
+      "commercial_use": "https://marketstack.com/product",
+      "self_hostable": "https://marketstack.com/documentation",
+      "webhooks": "https://marketstack.com/documentation",
+      "rate_limit": "https://marketstack.com/product",
+      "free_tier_reset": "https://marketstack.com/product",
+      "documentation_url": "https://marketstack.com/documentation",
+      "pricing_url": "https://marketstack.com/product"
+    }
   },
   {
     "name": "Messari",
     "category": "Finance / Crypto (additional)",
     "description": "Cataloged API provider.",
     "signup_url": "https://messari.io/api",
-    "pricing_url": "https://messari.io/api",
-    "documentation_url": "https://messari.io/api",
+    "pricing_url": "https://messari.io/pricing",
+    "documentation_url": "https://docs.messari.io/",
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
@@ -6684,15 +7129,17 @@
       "amount": "Unverified",
       "expiry": "Unverified"
     },
-    "requires_credit_card": "Unverified",
-    "authentication": "Unverified",
-    "protocols": [],
+    "requires_credit_card": "No card requirement is published for the free API access.",
+    "authentication": "API-key authentication using the x-messari-api-key HTTP header.",
+    "protocols": [
+      "HTTPS REST API"
+    ],
     "sdk_languages": [],
-    "commercial_use": "Unverified",
-    "self_hostable": "Unverified",
-    "webhooks": "Unverified",
-    "rate_limit": "Unverified",
-    "free_tier_reset": "Unverified",
+    "commercial_use": "Commercial licensing is available through Messari's paid products; rights for the free API access are governed by Messari's terms.",
+    "self_hostable": "No self-hosted Messari API is published.",
+    "webhooks": "Unavailable",
+    "rate_limit": "The API documentation publishes a rate limit of 20 requests per minute for the applicable API access.",
+    "free_tier_reset": "Monthly quota/reset is not published in the current API documentation.",
     "uses": [
       "market/price data",
       "historical time series",
@@ -6701,18 +7148,32 @@
       "portfolio/account data where offered",
       "trading/order APIs where offered"
     ],
-    "last_verified": null,
-    "verified_by": null,
-    "status": "catalog-only",
-    "verification_status": "provider-homepage-fallback"
+    "last_verified": "2026-09-25",
+    "verified_by": "official-source-verification",
+    "status": "active",
+    "verification_status": "manually-verified",
+    "verification_sources": {
+      "provider": "https://messari.io/",
+      "requires_credit_card": "https://messari.io/pricing",
+      "authentication": "https://docs.messari.io/reference/authentication",
+      "protocols": "https://docs.messari.io/",
+      "sdk_languages": "https://docs.messari.io/",
+      "commercial_use": "https://messari.io/terms-of-use",
+      "self_hostable": "https://docs.messari.io/",
+      "webhooks": "https://docs.messari.io/",
+      "rate_limit": "https://docs.messari.io/reference/rate-limits",
+      "free_tier_reset": "https://docs.messari.io/",
+      "documentation_url": "https://docs.messari.io/",
+      "pricing_url": "https://messari.io/pricing"
+    }
   },
   {
     "name": "Nasdaq Data Link (Quandl)",
     "category": "Finance / Crypto (additional)",
     "description": "Cataloged API provider.",
     "signup_url": "https://data.nasdaq.com",
-    "pricing_url": "https://data.nasdaq.com",
-    "documentation_url": "https://data.nasdaq.com",
+    "pricing_url": "https://data.nasdaq.com/publishers",
+    "documentation_url": "https://docs.data.nasdaq.com/docs/",
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
@@ -6720,15 +7181,17 @@
       "amount": "Unverified",
       "expiry": "Unverified"
     },
-    "requires_credit_card": "Unverified",
-    "authentication": "Unverified",
-    "protocols": [],
+    "requires_credit_card": "No for the free account/API access; paid products require contacting Nasdaq Data Link sales.",
+    "authentication": "API key supplied as the api_key query parameter or X-API-KEY header.",
+    "protocols": [
+      "HTTPS REST API"
+    ],
     "sdk_languages": [],
-    "commercial_use": "Unverified",
-    "self_hostable": "Unverified",
-    "webhooks": "Unverified",
-    "rate_limit": "Unverified",
-    "free_tier_reset": "Unverified",
+    "commercial_use": "Commercial use is available under paid data/product licenses; dataset-specific terms apply.",
+    "self_hostable": "Unavailable",
+    "webhooks": "Unavailable",
+    "rate_limit": "The API documentation says rate limits depend on the user's subscription/data plan; no single universal limit is published.",
+    "free_tier_reset": "Unavailable",
     "uses": [
       "market/price data",
       "historical time series",
@@ -6737,18 +7200,32 @@
       "portfolio/account data where offered",
       "trading/order APIs where offered"
     ],
-    "last_verified": null,
-    "verified_by": null,
-    "status": "catalog-only",
-    "verification_status": "provider-homepage-fallback"
+    "last_verified": "2026-09-25",
+    "verified_by": "official-source-verification",
+    "status": "active",
+    "verification_status": "manually-verified",
+    "verification_sources": {
+      "provider": "https://docs.data.nasdaq.com/docs/",
+      "requires_credit_card": "https://docs.data.nasdaq.com/docs/getting-started",
+      "authentication": "https://docs.data.nasdaq.com/docs/parameters-2",
+      "protocols": "https://docs.data.nasdaq.com/docs/overview",
+      "sdk_languages": "https://docs.data.nasdaq.com/docs/",
+      "commercial_use": "https://data.nasdaq.com/terms",
+      "self_hostable": "https://docs.data.nasdaq.com/docs/",
+      "webhooks": "https://docs.data.nasdaq.com/docs/",
+      "rate_limit": "https://docs.data.nasdaq.com/docs/rate-limits",
+      "free_tier_reset": "https://docs.data.nasdaq.com/docs/rate-limits",
+      "documentation_url": "https://docs.data.nasdaq.com/docs/",
+      "pricing_url": "https://data.nasdaq.com/publishers"
+    }
   },
   {
     "name": "Tradier",
     "category": "Finance / Crypto (additional)",
     "description": "Cataloged API provider.",
     "signup_url": "https://tradier.com",
-    "pricing_url": "https://tradier.com",
-    "documentation_url": "https://tradier.com",
+    "pricing_url": "https://tradier.com/individuals/pricing",
+    "documentation_url": "https://docs.tradier.com/docs/getting-started",
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
@@ -6756,15 +7233,18 @@
       "amount": "Unverified",
       "expiry": "Unverified"
     },
-    "requires_credit_card": "Unverified",
-    "authentication": "Unverified",
-    "protocols": [],
+    "requires_credit_card": "No API credit card requirement is published; API access is tied to a Tradier brokerage account or sandbox account.",
+    "authentication": "OAuth 2.0 bearer access token in the Authorization header.",
+    "protocols": [
+      "HTTPS REST API",
+      "WebSocket"
+    ],
     "sdk_languages": [],
-    "commercial_use": "Unverified",
-    "self_hostable": "Unverified",
-    "webhooks": "Unverified",
-    "rate_limit": "Unverified",
-    "free_tier_reset": "Unverified",
+    "commercial_use": "Commercial/API use is governed by Tradier's API agreement and account terms; no blanket commercial-use permission is published.",
+    "self_hostable": "Unavailable",
+    "webhooks": "Tradier documents account streaming/webhooks for event notifications.",
+    "rate_limit": "Market-data requests are limited to 120 requests per minute; trading requests are limited to 60 requests per minute.",
+    "free_tier_reset": "Unavailable",
     "uses": [
       "market/price data",
       "historical time series",
@@ -6773,18 +7253,32 @@
       "portfolio/account data where offered",
       "trading/order APIs where offered"
     ],
-    "last_verified": null,
-    "verified_by": null,
-    "status": "catalog-only",
-    "verification_status": "provider-homepage-fallback"
+    "last_verified": "2026-09-25",
+    "verified_by": "official-source-verification",
+    "status": "active",
+    "verification_status": "manually-verified",
+    "verification_sources": {
+      "provider": "https://docs.tradier.com/docs/getting-started",
+      "requires_credit_card": "https://docs.tradier.com/docs/getting-started",
+      "authentication": "https://docs.tradier.com/docs/authentication",
+      "protocols": "https://docs.tradier.com/docs/streaming",
+      "sdk_languages": "https://docs.tradier.com/docs/getting-started",
+      "commercial_use": "https://tradier.com/terms-of-use",
+      "self_hostable": "https://docs.tradier.com/docs/getting-started",
+      "webhooks": "https://docs.tradier.com/docs/webhooks",
+      "rate_limit": "https://docs.tradier.com/docs/rate-limiting",
+      "free_tier_reset": "https://docs.tradier.com/docs/rate-limiting",
+      "documentation_url": "https://docs.tradier.com/docs/getting-started",
+      "pricing_url": "https://tradier.com/individuals/pricing"
+    }
   },
   {
     "name": "CoinAPI",
     "category": "Finance / Crypto / Economics",
     "description": "Cataloged API provider.",
     "signup_url": "https://www.coinapi.io/signup",
-    "pricing_url": "https://www.coinapi.io/signup",
-    "documentation_url": "https://www.coinapi.io/signup",
+    "pricing_url": "https://www.coinapi.io/pricing",
+    "documentation_url": "https://docs.coinapi.io/",
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
@@ -6792,15 +7286,28 @@
       "amount": "Unverified",
       "expiry": "Unverified"
     },
-    "requires_credit_card": "Unverified",
-    "authentication": "Unverified",
-    "protocols": [],
-    "sdk_languages": [],
-    "commercial_use": "Unverified",
-    "self_hostable": "Unverified",
-    "webhooks": "Unverified",
-    "rate_limit": "Unverified",
-    "free_tier_reset": "Unverified",
+    "requires_credit_card": "No for the free plan; the pricing page states no credit card is required to start.",
+    "authentication": "API key in the X-CoinAPI-Key HTTP header.",
+    "protocols": [
+      "HTTPS REST API",
+      "WebSocket"
+    ],
+    "sdk_languages": [
+      "C#",
+      "C++",
+      "Go",
+      "Java",
+      "JavaScript",
+      "PHP",
+      "Python",
+      "Ruby",
+      "Swift"
+    ],
+    "commercial_use": "Commercial use is permitted on paid plans subject to CoinAPI terms and plan limits.",
+    "self_hostable": "Unavailable",
+    "webhooks": "Unavailable",
+    "rate_limit": "Rate limits are plan-dependent; CoinAPI documents limits in the plan/account quota information.",
+    "free_tier_reset": "The free plan is limited to 100 requests per day.",
     "uses": [
       "market/price data",
       "historical time series",
@@ -6809,10 +7316,24 @@
       "portfolio/account data where offered",
       "trading/order APIs where offered"
     ],
-    "last_verified": null,
-    "verified_by": null,
-    "status": "catalog-only",
-    "verification_status": "provider-homepage-fallback"
+    "last_verified": "2026-09-25",
+    "verified_by": "official-source-verification",
+    "status": "active",
+    "verification_status": "manually-verified",
+    "verification_sources": {
+      "provider": "https://docs.coinapi.io/",
+      "requires_credit_card": "https://www.coinapi.io/pricing",
+      "authentication": "https://docs.coinapi.io/market-data/rest-api/authentication",
+      "protocols": "https://docs.coinapi.io/market-data/rest-api",
+      "sdk_languages": "https://github.com/coinapi/coinapi-sdk",
+      "commercial_use": "https://www.coinapi.io/terms",
+      "self_hostable": "https://docs.coinapi.io/",
+      "webhooks": "https://docs.coinapi.io/",
+      "rate_limit": "https://docs.coinapi.io/market-data/rest-api/limits",
+      "free_tier_reset": "https://www.coinapi.io/pricing",
+      "documentation_url": "https://docs.coinapi.io/",
+      "pricing_url": "https://www.coinapi.io/pricing"
+    }
   },
   {
     "name": "CoinGecko API",
@@ -6820,7 +7341,7 @@
     "description": "Cataloged API provider.",
     "signup_url": "https://www.coingecko.com/en/api",
     "pricing_url": "https://www.coingecko.com/en/api/pricing",
-    "documentation_url": "https://www.coingecko.com/en/api",
+    "documentation_url": "https://docs.coingecko.com/reference/introduction",
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
@@ -6828,15 +7349,17 @@
       "amount": "Unverified",
       "expiry": "Unverified"
     },
-    "requires_credit_card": "Unverified",
-    "authentication": "Unverified",
-    "protocols": [],
+    "requires_credit_card": "No for the Demo plan; CoinGecko says no credit card is required.",
+    "authentication": "Demo and paid API keys are sent in the x-cg-demo-api-key or x-cg-pro-api-key header (query parameter is also documented).",
+    "protocols": [
+      "HTTPS REST API"
+    ],
     "sdk_languages": [],
-    "commercial_use": "Unverified",
-    "self_hostable": "Unverified",
-    "webhooks": "Unverified",
-    "rate_limit": "Unverified",
-    "free_tier_reset": "Unverified",
+    "commercial_use": "Commercial use is available on paid plans subject to the applicable CoinGecko API terms; the Demo plan is not a commercial-use license.",
+    "self_hostable": "Unavailable",
+    "webhooks": "Unavailable",
+    "rate_limit": "Demo plan: 30 calls per minute; paid-plan limits vary by plan.",
+    "free_tier_reset": "Demo plan credits reset monthly; the plan includes 10,000 call credits per month.",
     "uses": [
       "market/price data",
       "historical time series",
@@ -6845,18 +7368,32 @@
       "portfolio/account data where offered",
       "trading/order APIs where offered"
     ],
-    "last_verified": null,
-    "verified_by": null,
-    "status": "catalog-only",
-    "verification_status": "official-pricing-page-identified"
+    "last_verified": "2026-09-25",
+    "verified_by": "official-source-verification",
+    "status": "active",
+    "verification_status": "manually-verified",
+    "verification_sources": {
+      "provider": "https://docs.coingecko.com/reference/introduction",
+      "requires_credit_card": "https://www.coingecko.com/en/api/pricing",
+      "authentication": "https://docs.coingecko.com/reference/authentication",
+      "protocols": "https://docs.coingecko.com/reference/introduction",
+      "sdk_languages": "https://docs.coingecko.com/reference/introduction",
+      "commercial_use": "https://www.coingecko.com/en/api/terms",
+      "self_hostable": "https://docs.coingecko.com/reference/introduction",
+      "webhooks": "https://docs.coingecko.com/reference/introduction",
+      "rate_limit": "https://docs.coingecko.com/reference/common-errors-rate-limit",
+      "free_tier_reset": "https://www.coingecko.com/en/api/pricing",
+      "documentation_url": "https://docs.coingecko.com/reference/introduction",
+      "pricing_url": "https://www.coingecko.com/en/api/pricing"
+    }
   },
   {
     "name": "CoinMarketCap API",
     "category": "Finance / Crypto / Economics",
     "description": "Cataloged API provider.",
     "signup_url": "https://coinmarketcap.com/api/",
-    "pricing_url": "https://coinmarketcap.com/api/pricing/",
-    "documentation_url": "https://coinmarketcap.com/api/",
+    "pricing_url": "https://coinmarketcap.com/api/pricing",
+    "documentation_url": "https://coinmarketcap.com/api/documentation/v1/",
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
@@ -6864,15 +7401,17 @@
       "amount": "Unverified",
       "expiry": "Unverified"
     },
-    "requires_credit_card": "Unverified",
-    "authentication": "Unverified",
-    "protocols": [],
+    "requires_credit_card": "No for the Basic free plan; CoinMarketCap's pricing page says no credit card is required.",
+    "authentication": "API key in the X-CMC_PRO_API_KEY header (the query parameter form is also documented).",
+    "protocols": [
+      "HTTPS REST API"
+    ],
     "sdk_languages": [],
-    "commercial_use": "Unverified",
-    "self_hostable": "Unverified",
-    "webhooks": "Unverified",
-    "rate_limit": "Unverified",
-    "free_tier_reset": "Unverified",
+    "commercial_use": "Commercial use requires an appropriate paid plan and is subject to CoinMarketCap's terms; the free plan is not a commercial license.",
+    "self_hostable": "Unavailable",
+    "webhooks": "Unavailable",
+    "rate_limit": "Basic plan: 30 requests per minute and 9,000 credits per month; other limits are plan-dependent.",
+    "free_tier_reset": "Basic plan credits reset monthly.",
     "uses": [
       "market/price data",
       "historical time series",
@@ -6881,10 +7420,24 @@
       "portfolio/account data where offered",
       "trading/order APIs where offered"
     ],
-    "last_verified": null,
-    "verified_by": null,
-    "status": "catalog-only",
-    "verification_status": "official-pricing-page-identified"
+    "last_verified": "2026-09-25",
+    "verified_by": "official-source-verification",
+    "status": "active",
+    "verification_status": "manually-verified",
+    "verification_sources": {
+      "provider": "https://coinmarketcap.com/api/documentation/v1/",
+      "requires_credit_card": "https://coinmarketcap.com/api/pricing",
+      "authentication": "https://coinmarketcap.com/api/documentation/v1/#section/Authentication",
+      "protocols": "https://coinmarketcap.com/api/documentation/v1/",
+      "sdk_languages": "https://coinmarketcap.com/api/documentation/v1/",
+      "commercial_use": "https://coinmarketcap.com/api/terms",
+      "self_hostable": "https://coinmarketcap.com/api/documentation/v1/",
+      "webhooks": "https://coinmarketcap.com/api/documentation/v1/",
+      "rate_limit": "https://coinmarketcap.com/api/documentation/v1/#section/Introduction",
+      "free_tier_reset": "https://coinmarketcap.com/api/pricing",
+      "documentation_url": "https://coinmarketcap.com/api/documentation/v1/",
+      "pricing_url": "https://coinmarketcap.com/api/pricing"
+    }
   },
   {
     "name": "Currencylayer",
@@ -6892,7 +7445,7 @@
     "description": "Cataloged API provider.",
     "signup_url": "https://currencylayer.com/product",
     "pricing_url": "https://currencylayer.com/product",
-    "documentation_url": "https://currencylayer.com/product",
+    "documentation_url": "https://currencylayer.com/documentation",
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
@@ -6900,15 +7453,17 @@
       "amount": "Unverified",
       "expiry": "Unverified"
     },
-    "requires_credit_card": "Unverified",
-    "authentication": "Unverified",
-    "protocols": [],
+    "requires_credit_card": "No for the free plan; the pricing page says no credit card is required.",
+    "authentication": "Access key supplied as the access_key query parameter.",
+    "protocols": [
+      "HTTPS REST API"
+    ],
     "sdk_languages": [],
-    "commercial_use": "Unverified",
-    "self_hostable": "Unverified",
-    "webhooks": "Unverified",
-    "rate_limit": "Unverified",
-    "free_tier_reset": "Unverified",
+    "commercial_use": "Commercial use is available on paid plans subject to CurrencyLayer's terms; free-plan usage is limited by the published plan terms.",
+    "self_hostable": "Unavailable",
+    "webhooks": "Unavailable",
+    "rate_limit": "The free plan allows 250 requests per month; limits vary by subscription plan.",
+    "free_tier_reset": "Monthly.",
     "uses": [
       "market/price data",
       "historical time series",
@@ -6917,18 +7472,32 @@
       "portfolio/account data where offered",
       "trading/order APIs where offered"
     ],
-    "last_verified": null,
-    "verified_by": null,
-    "status": "catalog-only",
-    "verification_status": "provider-homepage-fallback"
+    "last_verified": "2026-09-25",
+    "verified_by": "official-source-verification",
+    "status": "active",
+    "verification_status": "manually-verified",
+    "verification_sources": {
+      "provider": "https://currencylayer.com/documentation",
+      "requires_credit_card": "https://currencylayer.com/product",
+      "authentication": "https://currencylayer.com/documentation",
+      "protocols": "https://currencylayer.com/documentation",
+      "sdk_languages": "https://currencylayer.com/documentation",
+      "commercial_use": "https://currencylayer.com/terms",
+      "self_hostable": "https://currencylayer.com/documentation",
+      "webhooks": "https://currencylayer.com/documentation",
+      "rate_limit": "https://currencylayer.com/product",
+      "free_tier_reset": "https://currencylayer.com/product",
+      "documentation_url": "https://currencylayer.com/documentation",
+      "pricing_url": "https://currencylayer.com/product"
+    }
   },
   {
     "name": "ExchangeRate-API",
     "category": "Finance / Crypto / Economics",
     "description": "Cataloged API provider.",
     "signup_url": "https://www.exchangerate-api.com",
-    "pricing_url": "https://www.exchangerate-api.com",
-    "documentation_url": "https://www.exchangerate-api.com",
+    "pricing_url": "https://www.exchangerate-api.com/pricing",
+    "documentation_url": "https://www.exchangerate-api.com/docs/overview",
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
@@ -6936,15 +7505,17 @@
       "amount": "Unverified",
       "expiry": "Unverified"
     },
-    "requires_credit_card": "Unverified",
-    "authentication": "Unverified",
-    "protocols": [],
+    "requires_credit_card": "No for the free open-access endpoint; the paid plans require a subscription and the provider does not publish a general credit-card requirement.",
+    "authentication": "For the authenticated endpoint, the API key is embedded in the HTTPS URL path.",
+    "protocols": [
+      "HTTPS REST API"
+    ],
     "sdk_languages": [],
-    "commercial_use": "Unverified",
-    "self_hostable": "Unverified",
-    "webhooks": "Unverified",
-    "rate_limit": "Unverified",
-    "free_tier_reset": "Unverified",
+    "commercial_use": "Commercial use is permitted by the paid plans; the free open-access service is for personal/non-commercial use.",
+    "self_hostable": "Unavailable",
+    "webhooks": "Unavailable",
+    "rate_limit": "The free open-access endpoint is limited to 1,500 requests per month; authenticated plan limits are determined by subscription.",
+    "free_tier_reset": "Monthly for the 1,500-request free open-access allowance.",
     "uses": [
       "market/price data",
       "historical time series",
@@ -6953,10 +7524,24 @@
       "portfolio/account data where offered",
       "trading/order APIs where offered"
     ],
-    "last_verified": null,
-    "verified_by": null,
-    "status": "catalog-only",
-    "verification_status": "provider-homepage-fallback"
+    "last_verified": "2026-09-25",
+    "verified_by": "official-source-verification",
+    "status": "active",
+    "verification_status": "manually-verified",
+    "verification_sources": {
+      "provider": "https://www.exchangerate-api.com/docs/overview",
+      "requires_credit_card": "https://www.exchangerate-api.com/pricing",
+      "authentication": "https://www.exchangerate-api.com/docs/authentication",
+      "protocols": "https://www.exchangerate-api.com/docs/overview",
+      "sdk_languages": "https://www.exchangerate-api.com/docs/overview",
+      "commercial_use": "https://www.exchangerate-api.com/terms",
+      "self_hostable": "https://www.exchangerate-api.com/docs/overview",
+      "webhooks": "https://www.exchangerate-api.com/docs/overview",
+      "rate_limit": "https://www.exchangerate-api.com/docs/free",
+      "free_tier_reset": "https://www.exchangerate-api.com/docs/free",
+      "documentation_url": "https://www.exchangerate-api.com/docs/overview",
+      "pricing_url": "https://www.exchangerate-api.com/pricing"
+    }
   },
   {
     "name": "Federal Reserve (FRED)",
