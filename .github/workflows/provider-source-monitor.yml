@@ -1,0 +1,28 @@
+name: Monitor provider sources
+
+on:
+  schedule:
+    - cron: "17 3 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  monitor:
+    runs-on: ubuntu-slim
+    timeout-minutes: 15
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Check official source pages
+        run: python scripts/update_source_changes.py
+
+      - name: Commit source-change log
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/source_hashes.json data/change_log.json
+          git diff --cached --quiet || git commit -m "Update provider source change log"
+          git push
