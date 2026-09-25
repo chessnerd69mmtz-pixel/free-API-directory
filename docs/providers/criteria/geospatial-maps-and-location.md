@@ -1,6 +1,6 @@
 # Geospatial, Maps & Location
 
-**21 providers**
+**21 providers in this criterion**
 
 | Provider | Original Category | Provider / API-key URL | Tier / pricing URL | Major Functions & Capabilities |
 |---|---|---|---|---|
