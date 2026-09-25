@@ -13,7 +13,40 @@ async function derive(password,salt){const m=await crypto.subtle.importKey("raw"
 async function enc(text){const iv=crypto.getRandomValues(new Uint8Array(12));const data=await crypto.subtle.encrypt({name:"AES-GCM",iv},vaultKey,new TextEncoder().encode(text));return {iv:b64(iv),data:b64(data)}}
 async function dec(r){const p=await crypto.subtle.decrypt({name:"AES-GCM",iv:ub64(r.iv)},vaultKey,ub64(r.data));return new TextDecoder().decode(p)}
 function hasVault(){return !!localStorage.getItem("apiVaultSalt")}
-async function unlock(password){if(typeof crypto==="undefined"||!crypto.subtle)throw new Error("Web Crypto unavailable");let salt;if(hasVault()){try{salt=ub64(localStorage.getItem("apiVaultSalt"))}catch(_){throw new Error("Vault data is corrupted")}}else{salt=crypto.getRandomValues(new Uint8Array(16));localStorage.setItem("apiVaultSalt",b64(salt))}const candidate=await derive(password,salt);const previous=vaultKey;vaultKey=candidate;try{const verifier=localStorage.getItem("apiVaultVerifier");if(verifier){let v;try{v=JSON.parse(verifier)}catch(_){throw new Error("Vault verifier is corrupted")}if(!v||!v.iv||!v.data||await dec(v)!=="FREE-API-DIRECTORY-VAULT")throw new Error("wrong password")}else{const existing=await all();if(existing.length){let opened=false;for(const r of existing){try{await dec(r);opened=true;break}catch(_){}}if(!opened)throw new Error("wrong password")}localStorage.setItem("apiVaultVerifier",JSON.stringify(await enc("FREE-API-DIRECTORY-VAULT")))}records=await all()}catch(e){vaultKey=previous;throw e}}
+async function unlock(password){
+if(typeof crypto==="undefined"||!crypto.subtle)throw new Error("Web Crypto is unavailable. Open the HTTPS GitHub Pages address.");
+if(!password||password.length<8)throw new Error("Password must contain at least 8 characters.");
+let salt;
+if(hasVault()){try{salt=ub64(localStorage.getItem("apiVaultSalt"))}catch(_){throw new Error("Saved vault salt is corrupted.")}}
+else{salt=crypto.getRandomValues(new Uint8Array(16));localStorage.setItem("apiVaultSalt",b64(salt))}
+const candidate=await derive(password,salt);
+const previous=vaultKey;vaultKey=candidate;
+try{
+const verifier=localStorage.getItem("apiVaultVerifier");
+let verified=false;
+if(verifier){
+try{
+const v=JSON.parse(verifier);
+if(v&&v.iv&&v.data)verified=await dec(v)==="FREE-API-DIRECTORY-VAULT";
+}catch(_){}
+}
+if(!verified){
+const existing=await all();
+for(const r of existing){
+try{
+const plain=await dec(r);
+if(plain){verified=true;break}
+}catch(_){}
+}
+if(!verified&&verifier)throw new Error("wrong password");
+if(!verified&&!verifier&&existing.length)throw new Error("wrong password");
+}
+if(!verifier) {
+localStorage.setItem("apiVaultVerifier",JSON.stringify(await enc("FREE-API-DIRECTORY-VAULT")));
+} else if(!verified) throw new Error("wrong password");
+records=await all();
+}catch(e){vaultKey=previous;throw e}
+}
 function msg(t){const x=$("#msg");if(x){x.innerHTML='<div class="notice">'+esc(t)+'</div>'}}
 function renderLogin(){document.querySelector("#app").innerHTML='<div class="wrap">'+nav()+'<section class="hero"><h1>🔐 My API Keys</h1><p>Your API credentials are encrypted and stored only in this browser.</p></section><div class="card vault-card"><h2>'+(hasVault()?"Unlock your vault":"Create your vault")+'</h2><p class="muted">'+(hasVault()?"Enter your vault password. It never leaves this device.":"Create a password of at least 8 characters. If you forget it, the vault cannot be decrypted.")+'</p><div class="password-wrap"><input id="vault-pass" class="input" type="password" placeholder="Vault password" autocomplete="new-password"><button id="show-pass" class="btn secondary" type="button">Show</button></div><button id="unlock" class="btn">'+(hasVault()?"Unlock":"Create vault")+'</button><div id="msg"></div></div></div>';$("#show-pass").onclick=()=>{const p=$("#vault-pass"),b=$("#show-pass");p.type=p.type==="password"?"text":"password";b.textContent=p.type==="password"?"Show":"Hide"};$("#vault-pass").addEventListener("keydown",e=>{if(e.key==="Enter")$("#unlock").click()});$("#unlock").onclick=async()=>{try{if($("#vault-pass").value.length<8)throw new Error();await unlock($("#vault-pass").value);renderVault()}catch(_){msg("The password is incorrect or could not unlock the vault.")}}}
 function options(selected){return (Array.isArray(window.API_CATALOG)?window.API_CATALOG:[]).map(p=>'<option value="'+esc(p.name)+'" '+(p.name===selected?"selected":"")+'>'+esc(p.name)+'</option>').join("")}
