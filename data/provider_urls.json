@@ -2,1566 +2,4426 @@
   {
     "name": "AI21 Labs",
     "category": "AI / ML",
-    "url": "https://studio.ai21.com"
+    "url": "https://studio.ai21.com",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "text generation and chat",
+      "summarization and rewriting",
+      "question answering",
+      "classification and extraction",
+      "embeddings or semantic search",
+      "AI application backends"
+    ]
   },
   {
     "name": "AssemblyAI (speech-to-text)",
     "category": "AI / ML",
-    "url": "https://www.assemblyai.com/dashboard/signup"
+    "url": "https://www.assemblyai.com/dashboard/signup",
+    "tier_verification_url": "https://www.assemblyai.com/pricing/",
+    "tier_verification_status": "official-pricing-page-identified",
+    "uses": [
+      "text generation and chat",
+      "summarization and rewriting",
+      "question answering",
+      "classification and extraction",
+      "embeddings or semantic search",
+      "AI application backends"
+    ]
   },
   {
     "name": "Clarifai (vision)",
     "category": "AI / ML",
-    "url": "https://clarifai.com/signup"
+    "url": "https://clarifai.com/signup",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "text generation and chat",
+      "summarization and rewriting",
+      "question answering",
+      "classification and extraction",
+      "embeddings or semantic search",
+      "AI application backends"
+    ]
   },
   {
     "name": "Perplexity API",
     "category": "AI / ML",
-    "url": "https://www.perplexity.ai/settings/api"
+    "url": "https://www.perplexity.ai/settings/api",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "text generation and chat",
+      "summarization and rewriting",
+      "question answering",
+      "classification and extraction",
+      "embeddings or semantic search",
+      "AI application backends"
+    ]
   },
   {
     "name": "Roboflow (vision)",
     "category": "AI / ML",
-    "url": "https://app.roboflow.com"
+    "url": "https://app.roboflow.com",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "text generation and chat",
+      "summarization and rewriting",
+      "question answering",
+      "classification and extraction",
+      "embeddings or semantic search",
+      "AI application backends"
+    ]
   },
   {
     "name": "Stability AI",
     "category": "AI / ML",
-    "url": "https://platform.stability.ai"
+    "url": "https://platform.stability.ai",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "text generation and chat",
+      "summarization and rewriting",
+      "question answering",
+      "classification and extraction",
+      "embeddings or semantic search",
+      "AI application backends"
+    ]
   },
   {
     "name": "Together AI",
     "category": "AI / ML",
-    "url": "https://api.together.ai"
+    "url": "https://api.together.ai",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "text generation and chat",
+      "summarization and rewriting",
+      "question answering",
+      "classification and extraction",
+      "embeddings or semantic search",
+      "AI application backends"
+    ]
   },
   {
     "name": "Amazon Comprehend",
     "category": "AI / ML (additional)",
-    "url": "https://aws.amazon.com/comprehend/"
+    "url": "https://aws.amazon.com/comprehend/",
+    "tier_verification_url": "https://aws.amazon.com/comprehend/pricing/",
+    "tier_verification_status": "official-pricing-page-identified",
+    "uses": [
+      "text generation and chat",
+      "summarization and rewriting",
+      "question answering",
+      "classification and extraction",
+      "embeddings or semantic search",
+      "AI application backends"
+    ]
   },
   {
     "name": "Amazon Polly",
     "category": "AI / ML (additional)",
-    "url": "https://aws.amazon.com/polly/"
+    "url": "https://aws.amazon.com/polly/",
+    "tier_verification_url": "https://aws.amazon.com/polly/pricing/",
+    "tier_verification_status": "official-pricing-page-identified",
+    "uses": [
+      "text generation and chat",
+      "summarization and rewriting",
+      "question answering",
+      "classification and extraction",
+      "embeddings or semantic search",
+      "AI application backends"
+    ]
   },
   {
     "name": "Amazon Rekognition",
     "category": "AI / ML (additional)",
-    "url": "https://aws.amazon.com/rekognition/"
+    "url": "https://aws.amazon.com/rekognition/",
+    "tier_verification_url": "https://aws.amazon.com/rekognition/pricing/",
+    "tier_verification_status": "official-pricing-page-identified",
+    "uses": [
+      "text generation and chat",
+      "summarization and rewriting",
+      "question answering",
+      "classification and extraction",
+      "embeddings or semantic search",
+      "AI application backends"
+    ]
   },
   {
     "name": "Amazon Transcribe",
     "category": "AI / ML (additional)",
-    "url": "https://aws.amazon.com/transcribe/"
+    "url": "https://aws.amazon.com/transcribe/",
+    "tier_verification_url": "https://aws.amazon.com/transcribe/pricing/",
+    "tier_verification_status": "official-pricing-page-identified",
+    "uses": [
+      "text generation and chat",
+      "summarization and rewriting",
+      "question answering",
+      "classification and extraction",
+      "embeddings or semantic search",
+      "AI application backends"
+    ]
   },
   {
     "name": "Baseten",
     "category": "AI / ML (additional)",
-    "url": "https://www.baseten.co"
+    "url": "https://www.baseten.co",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "text generation and chat",
+      "summarization and rewriting",
+      "question answering",
+      "classification and extraction",
+      "embeddings or semantic search",
+      "AI application backends"
+    ]
   },
   {
     "name": "Dialogflow (Google)",
     "category": "AI / ML (additional)",
-    "url": "https://dialogflow.cloud.google.com"
+    "url": "https://dialogflow.cloud.google.com",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "text generation and chat",
+      "summarization and rewriting",
+      "question answering",
+      "classification and extraction",
+      "embeddings or semantic search",
+      "AI application backends"
+    ]
   },
   {
     "name": "Fireworks AI",
     "category": "AI / ML (additional)",
-    "url": "https://fireworks.ai"
+    "url": "https://fireworks.ai",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "text generation and chat",
+      "summarization and rewriting",
+      "question answering",
+      "classification and extraction",
+      "embeddings or semantic search",
+      "AI application backends"
+    ]
   },
   {
     "name": "Google Cloud Natural Language",
     "category": "AI / ML (additional)",
-    "url": "https://console.cloud.google.com/apis/library/language.googleapis.com"
+    "url": "https://console.cloud.google.com/apis/library/language.googleapis.com",
+    "tier_verification_url": "https://cloud.google.com/products/natural-language/pricing",
+    "tier_verification_status": "official-pricing-page-identified",
+    "uses": [
+      "text generation and chat",
+      "summarization and rewriting",
+      "question answering",
+      "classification and extraction",
+      "embeddings or semantic search",
+      "AI application backends"
+    ]
   },
   {
     "name": "Google Cloud Vision API",
     "category": "AI / ML (additional)",
-    "url": "https://console.cloud.google.com/apis/library/vision.googleapis.com"
+    "url": "https://console.cloud.google.com/apis/library/vision.googleapis.com",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "text generation and chat",
+      "summarization and rewriting",
+      "question answering",
+      "classification and extraction",
+      "embeddings or semantic search",
+      "AI application backends"
+    ]
   },
   {
     "name": "IBM Watson (Cloud)",
     "category": "AI / ML (additional)",
-    "url": "https://cloud.ibm.com/registration"
+    "url": "https://cloud.ibm.com/registration",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "text generation and chat",
+      "summarization and rewriting",
+      "question answering",
+      "classification and extraction",
+      "embeddings or semantic search",
+      "AI application backends"
+    ]
   },
   {
     "name": "Jina AI",
     "category": "AI / ML (additional)",
-    "url": "https://jina.ai"
+    "url": "https://jina.ai",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "text generation and chat",
+      "summarization and rewriting",
+      "question answering",
+      "classification and extraction",
+      "embeddings or semantic search",
+      "AI application backends"
+    ]
   },
   {
     "name": "Microsoft Azure AI Services",
     "category": "AI / ML (additional)",
-    "url": "https://azure.microsoft.com/en-us/products/ai-services"
+    "url": "https://azure.microsoft.com/en-us/products/ai-services",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "text generation and chat",
+      "summarization and rewriting",
+      "question answering",
+      "classification and extraction",
+      "embeddings or semantic search",
+      "AI application backends"
+    ]
   },
   {
     "name": "Modal",
     "category": "AI / ML (additional)",
-    "url": "https://modal.com"
+    "url": "https://modal.com",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "text generation and chat",
+      "summarization and rewriting",
+      "question answering",
+      "classification and extraction",
+      "embeddings or semantic search",
+      "AI application backends"
+    ]
   },
   {
     "name": "RunPod",
     "category": "AI / ML (additional)",
-    "url": "https://www.runpod.io"
+    "url": "https://www.runpod.io",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "text generation and chat",
+      "summarization and rewriting",
+      "question answering",
+      "classification and extraction",
+      "embeddings or semantic search",
+      "AI application backends"
+    ]
   },
   {
     "name": "Voyage AI (embeddings)",
     "category": "AI / ML (additional)",
-    "url": "https://www.voyageai.com"
+    "url": "https://www.voyageai.com",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "text generation and chat",
+      "summarization and rewriting",
+      "question answering",
+      "classification and extraction",
+      "embeddings or semantic search",
+      "AI application backends"
+    ]
   },
   {
     "name": "Wit.ai (Meta)",
     "category": "AI / ML (additional)",
-    "url": "https://wit.ai"
+    "url": "https://wit.ai",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "text generation and chat",
+      "summarization and rewriting",
+      "question answering",
+      "classification and extraction",
+      "embeddings or semantic search",
+      "AI application backends"
+    ]
   },
   {
     "name": "Amplitude API",
     "category": "Analytics",
-    "url": "https://amplitude.com"
+    "url": "https://amplitude.com",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "API data retrieval",
+      "application integrations",
+      "automation workflows",
+      "data processing",
+      "developer applications"
+    ]
   },
   {
     "name": "Google Analytics API",
     "category": "Analytics",
-    "url": "https://developers.google.com/analytics"
+    "url": "https://developers.google.com/analytics",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "API data retrieval",
+      "application integrations",
+      "automation workflows",
+      "data processing",
+      "developer applications"
+    ]
   },
   {
     "name": "Mixpanel API",
     "category": "Analytics",
-    "url": "https://mixpanel.com"
+    "url": "https://mixpanel.com",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "API data retrieval",
+      "application integrations",
+      "automation workflows",
+      "data processing",
+      "developer applications"
+    ]
   },
   {
     "name": "Segment API",
     "category": "Analytics",
-    "url": "https://segment.com"
+    "url": "https://segment.com",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "API data retrieval",
+      "application integrations",
+      "automation workflows",
+      "data processing",
+      "developer applications"
+    ]
   },
   {
     "name": "Alchemy API",
     "category": "Blockchain / Web3",
-    "url": "https://www.alchemy.com"
+    "url": "https://www.alchemy.com",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "text generation and chat",
+      "summarization and rewriting",
+      "question answering",
+      "classification and extraction",
+      "embeddings or semantic search",
+      "AI application backends"
+    ]
   },
   {
     "name": "Infura API",
     "category": "Blockchain / Web3",
-    "url": "https://www.infura.io"
+    "url": "https://www.infura.io",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "text generation and chat",
+      "summarization and rewriting",
+      "question answering",
+      "classification and extraction",
+      "embeddings or semantic search",
+      "AI application backends"
+    ]
   },
   {
     "name": "Moralis API",
     "category": "Blockchain / Web3",
-    "url": "https://moralis.io"
+    "url": "https://moralis.io",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "text generation and chat",
+      "summarization and rewriting",
+      "question answering",
+      "classification and extraction",
+      "embeddings or semantic search",
+      "AI application backends"
+    ]
   },
   {
     "name": "QuickNode",
     "category": "Blockchain / Web3",
-    "url": "https://www.quicknode.com"
+    "url": "https://www.quicknode.com",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "text generation and chat",
+      "summarization and rewriting",
+      "question answering",
+      "classification and extraction",
+      "embeddings or semantic search",
+      "AI application backends"
+    ]
   },
   {
     "name": "The Graph",
     "category": "Blockchain / Web3",
-    "url": "https://thegraph.com"
+    "url": "https://thegraph.com",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "text generation and chat",
+      "summarization and rewriting",
+      "question answering",
+      "classification and extraction",
+      "embeddings or semantic search",
+      "AI application backends"
+    ]
   },
   {
     "name": "Ably (realtime)",
     "category": "Dev Tools / Infra",
-    "url": "https://ably.com/sign-up"
+    "url": "https://ably.com/sign-up",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "API data retrieval",
+      "application integrations",
+      "automation workflows",
+      "data processing",
+      "developer applications"
+    ]
   },
   {
     "name": "Airtable API",
     "category": "Dev Tools / Infra",
-    "url": "https://airtable.com/create/tokens"
+    "url": "https://airtable.com/create/tokens",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "text generation and chat",
+      "summarization and rewriting",
+      "question answering",
+      "classification and extraction",
+      "embeddings or semantic search",
+      "AI application backends"
+    ]
   },
   {
     "name": "Algolia Search",
     "category": "Dev Tools / Infra",
-    "url": "https://www.algolia.com/users/sign_up"
+    "url": "https://www.algolia.com/users/sign_up",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "web or search result retrieval",
+      "data extraction",
+      "validation and enrichment",
+      "automation and research workflows"
+    ]
   },
   {
     "name": "Auth0",
     "category": "Dev Tools / Infra",
-    "url": "https://auth0.com/signup"
+    "url": "https://auth0.com/signup",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "API data retrieval",
+      "application integrations",
+      "automation workflows",
+      "data processing",
+      "developer applications"
+    ]
   },
   {
     "name": "AWS (free tier)",
     "category": "Dev Tools / Infra",
-    "url": "https://aws.amazon.com/free/"
+    "url": "https://aws.amazon.com/free/",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "API data retrieval",
+      "application integrations",
+      "automation workflows",
+      "data processing",
+      "developer applications"
+    ]
   },
   {
     "name": "Cloudflare API",
     "category": "Dev Tools / Infra",
-    "url": "https://dash.cloudflare.com/profile/api-tokens"
+    "url": "https://dash.cloudflare.com/profile/api-tokens",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "API data retrieval",
+      "application integrations",
+      "automation workflows",
+      "data processing",
+      "developer applications"
+    ]
   },
   {
     "name": "Firebase",
     "category": "Dev Tools / Infra",
-    "url": "https://console.firebase.google.com"
+    "url": "https://console.firebase.google.com",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "API data retrieval",
+      "application integrations",
+      "automation workflows",
+      "data processing",
+      "developer applications"
+    ]
   },
   {
     "name": "GitHub API",
     "category": "Dev Tools / Infra",
-    "url": "https://github.com/settings/tokens"
+    "url": "https://github.com/settings/tokens",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "API data retrieval",
+      "application integrations",
+      "automation workflows",
+      "data processing",
+      "developer applications"
+    ]
   },
   {
     "name": "GitLab API",
     "category": "Dev Tools / Infra",
-    "url": "https://gitlab.com/-/profile/personal_access_tokens"
+    "url": "https://gitlab.com/-/profile/personal_access_tokens",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "API data retrieval",
+      "application integrations",
+      "automation workflows",
+      "data processing",
+      "developer applications"
+    ]
   },
   {
     "name": "Netlify API",
     "category": "Dev Tools / Infra",
-    "url": "https://app.netlify.com/user/applications"
+    "url": "https://app.netlify.com/user/applications",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "API data retrieval",
+      "application integrations",
+      "automation workflows",
+      "data processing",
+      "developer applications"
+    ]
   },
   {
     "name": "Notion API",
     "category": "Dev Tools / Infra",
-    "url": "https://www.notion.so/my-integrations"
+    "url": "https://www.notion.so/my-integrations",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "API data retrieval",
+      "application integrations",
+      "automation workflows",
+      "data processing",
+      "developer applications"
+    ]
   },
   {
     "name": "PostHog",
     "category": "Dev Tools / Infra",
-    "url": "https://app.posthog.com/signup"
+    "url": "https://app.posthog.com/signup",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "API data retrieval",
+      "application integrations",
+      "automation workflows",
+      "data processing",
+      "developer applications"
+    ]
   },
   {
     "name": "Pusher",
     "category": "Dev Tools / Infra",
-    "url": "https://dashboard.pusher.com/accounts/sign_up"
+    "url": "https://dashboard.pusher.com/accounts/sign_up",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "API data retrieval",
+      "application integrations",
+      "automation workflows",
+      "data processing",
+      "developer applications"
+    ]
   },
   {
     "name": "Sentry",
     "category": "Dev Tools / Infra",
-    "url": "https://sentry.io/signup/"
+    "url": "https://sentry.io/signup/",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "API data retrieval",
+      "application integrations",
+      "automation workflows",
+      "data processing",
+      "developer applications"
+    ]
   },
   {
     "name": "Stripe (test keys)",
     "category": "Dev Tools / Infra",
-    "url": "https://dashboard.stripe.com/register"
+    "url": "https://dashboard.stripe.com/register",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "API data retrieval",
+      "application integrations",
+      "automation workflows",
+      "data processing",
+      "developer applications"
+    ]
   },
   {
     "name": "Supabase",
     "category": "Dev Tools / Infra",
-    "url": "https://supabase.com/dashboard"
+    "url": "https://supabase.com/dashboard",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "API data retrieval",
+      "application integrations",
+      "automation workflows",
+      "data processing",
+      "developer applications"
+    ]
   },
   {
     "name": "Vercel API",
     "category": "Dev Tools / Infra",
-    "url": "https://vercel.com/account/tokens"
+    "url": "https://vercel.com/account/tokens",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "API data retrieval",
+      "application integrations",
+      "automation workflows",
+      "data processing",
+      "developer applications"
+    ]
   },
   {
     "name": "Bitly API",
     "category": "Dev Tools / Infra (additional)",
-    "url": "https://bitly.com"
+    "url": "https://bitly.com",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "API data retrieval",
+      "application integrations",
+      "automation workflows",
+      "data processing",
+      "developer applications"
+    ]
   },
   {
     "name": "Contentful",
     "category": "Dev Tools / Infra (additional)",
-    "url": "https://www.contentful.com"
+    "url": "https://www.contentful.com",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "API data retrieval",
+      "application integrations",
+      "automation workflows",
+      "data processing",
+      "developer applications"
+    ]
   },
   {
     "name": "DigitalOcean API",
     "category": "Dev Tools / Infra (additional)",
-    "url": "https://cloud.digitalocean.com/account/api/tokens"
+    "url": "https://cloud.digitalocean.com/account/api/tokens",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "API data retrieval",
+      "application integrations",
+      "automation workflows",
+      "data processing",
+      "developer applications"
+    ]
   },
   {
     "name": "Fauna",
     "category": "Dev Tools / Infra (additional)",
-    "url": "https://fauna.com"
+    "url": "https://fauna.com",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "API data retrieval",
+      "application integrations",
+      "automation workflows",
+      "data processing",
+      "developer applications"
+    ]
   },
   {
     "name": "Heroku Platform API",
     "category": "Dev Tools / Infra (additional)",
-    "url": "https://devcenter.heroku.com/articles/platform-api-reference"
+    "url": "https://devcenter.heroku.com/articles/platform-api-reference",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "API data retrieval",
+      "application integrations",
+      "automation workflows",
+      "data processing",
+      "developer applications"
+    ]
   },
   {
     "name": "Linode API",
     "category": "Dev Tools / Infra (additional)",
-    "url": "https://cloud.linode.com/profile/tokens"
+    "url": "https://cloud.linode.com/profile/tokens",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "API data retrieval",
+      "application integrations",
+      "automation workflows",
+      "data processing",
+      "developer applications"
+    ]
   },
   {
     "name": "MongoDB Atlas",
     "category": "Dev Tools / Infra (additional)",
-    "url": "https://www.mongodb.com/cloud/atlas"
+    "url": "https://www.mongodb.com/cloud/atlas",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "API data retrieval",
+      "application integrations",
+      "automation workflows",
+      "data processing",
+      "developer applications"
+    ]
   },
   {
     "name": "Neon (Postgres)",
     "category": "Dev Tools / Infra (additional)",
-    "url": "https://neon.tech"
+    "url": "https://neon.tech",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "API data retrieval",
+      "application integrations",
+      "automation workflows",
+      "data processing",
+      "developer applications"
+    ]
   },
   {
     "name": "PlanetScale",
     "category": "Dev Tools / Infra (additional)",
-    "url": "https://planetscale.com"
+    "url": "https://planetscale.com",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "API data retrieval",
+      "application integrations",
+      "automation workflows",
+      "data processing",
+      "developer applications"
+    ]
   },
   {
     "name": "Postman API Platform",
     "category": "Dev Tools / Infra (additional)",
-    "url": "https://www.postman.com"
+    "url": "https://www.postman.com",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "API data retrieval",
+      "application integrations",
+      "automation workflows",
+      "data processing",
+      "developer applications"
+    ]
   },
   {
     "name": "Railway",
     "category": "Dev Tools / Infra (additional)",
-    "url": "https://railway.app"
+    "url": "https://railway.app",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "text generation and chat",
+      "summarization and rewriting",
+      "question answering",
+      "classification and extraction",
+      "embeddings or semantic search",
+      "AI application backends"
+    ]
   },
   {
     "name": "RapidAPI Marketplace",
     "category": "Dev Tools / Infra (additional)",
-    "url": "https://rapidapi.com"
+    "url": "https://rapidapi.com",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "API data retrieval",
+      "application integrations",
+      "automation workflows",
+      "data processing",
+      "developer applications"
+    ]
   },
   {
     "name": "Redis Cloud",
     "category": "Dev Tools / Infra (additional)",
-    "url": "https://redis.com/try-free/"
+    "url": "https://redis.com/try-free/",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "API data retrieval",
+      "application integrations",
+      "automation workflows",
+      "data processing",
+      "developer applications"
+    ]
   },
   {
     "name": "Render",
     "category": "Dev Tools / Infra (additional)",
-    "url": "https://render.com"
+    "url": "https://render.com",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "API data retrieval",
+      "application integrations",
+      "automation workflows",
+      "data processing",
+      "developer applications"
+    ]
   },
   {
     "name": "Sanity.io",
     "category": "Dev Tools / Infra (additional)",
-    "url": "https://www.sanity.io"
+    "url": "https://www.sanity.io",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "API data retrieval",
+      "application integrations",
+      "automation workflows",
+      "data processing",
+      "developer applications"
+    ]
   },
   {
     "name": "Strapi Cloud",
     "category": "Dev Tools / Infra (additional)",
-    "url": "https://strapi.io"
+    "url": "https://strapi.io",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "API data retrieval",
+      "application integrations",
+      "automation workflows",
+      "data processing",
+      "developer applications"
+    ]
   },
   {
     "name": "TinyURL API",
     "category": "Dev Tools / Infra (additional)",
-    "url": "https://tinyurl.com/app"
+    "url": "https://tinyurl.com/app",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "API data retrieval",
+      "application integrations",
+      "automation workflows",
+      "data processing",
+      "developer applications"
+    ]
   },
   {
     "name": "Upstash",
     "category": "Dev Tools / Infra (additional)",
-    "url": "https://upstash.com"
+    "url": "https://upstash.com",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "API data retrieval",
+      "application integrations",
+      "automation workflows",
+      "data processing",
+      "developer applications"
+    ]
   },
   {
     "name": "Amazon Product Advertising API",
     "category": "E-commerce / Shopping",
-    "url": "https://webservices.amazon.com/paapi5/documentation/"
+    "url": "https://webservices.amazon.com/paapi5/documentation/",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "API data retrieval",
+      "application integrations",
+      "automation workflows",
+      "data processing",
+      "developer applications"
+    ]
   },
   {
     "name": "BigCommerce API",
     "category": "E-commerce / Shopping",
-    "url": "https://developer.bigcommerce.com"
+    "url": "https://developer.bigcommerce.com",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "API data retrieval",
+      "application integrations",
+      "automation workflows",
+      "data processing",
+      "developer applications"
+    ]
   },
   {
     "name": "eBay API",
     "category": "E-commerce / Shopping",
-    "url": "https://developer.ebay.com"
+    "url": "https://developer.ebay.com",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "API data retrieval",
+      "application integrations",
+      "automation workflows",
+      "data processing",
+      "developer applications"
+    ]
   },
   {
     "name": "Etsy API",
     "category": "E-commerce / Shopping",
-    "url": "https://developers.etsy.com"
+    "url": "https://developers.etsy.com",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "API data retrieval",
+      "application integrations",
+      "automation workflows",
+      "data processing",
+      "developer applications"
+    ]
   },
   {
     "name": "PayPal API",
     "category": "E-commerce / Shopping",
-    "url": "https://developer.paypal.com"
+    "url": "https://developer.paypal.com",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "payment processing",
+      "orders and transactions",
+      "refunds and payment status",
+      "customer/payment workflows",
+      "checkout integrations"
+    ]
   },
   {
     "name": "Shopify Admin API",
     "category": "E-commerce / Shopping",
-    "url": "https://shopify.dev"
+    "url": "https://shopify.dev",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "API data retrieval",
+      "application integrations",
+      "automation workflows",
+      "data processing",
+      "developer applications"
+    ]
   },
   {
     "name": "Square API",
     "category": "E-commerce / Shopping",
-    "url": "https://developer.squareup.com"
+    "url": "https://developer.squareup.com",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "payment processing",
+      "orders and transactions",
+      "refunds and payment status",
+      "customer/payment workflows",
+      "checkout integrations"
+    ]
   },
   {
     "name": "WooCommerce REST API",
     "category": "E-commerce / Shopping",
-    "url": "https://woocommerce.github.io/woocommerce-rest-api-docs/"
+    "url": "https://woocommerce.github.io/woocommerce-rest-api-docs/",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "API data retrieval",
+      "application integrations",
+      "automation workflows",
+      "data processing",
+      "developer applications"
+    ]
   },
   {
     "name": "Bandwidth",
     "category": "Email / SMS (additional)",
-    "url": "https://dashboard.bandwidth.com"
+    "url": "https://dashboard.bandwidth.com",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "text generation and chat",
+      "summarization and rewriting",
+      "question answering",
+      "classification and extraction",
+      "embeddings or semantic search",
+      "AI application backends"
+    ]
   },
   {
     "name": "ClickSend",
     "category": "Email / SMS (additional)",
-    "url": "https://dashboard.clicksend.com"
+    "url": "https://dashboard.clicksend.com",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "text generation and chat",
+      "summarization and rewriting",
+      "question answering",
+      "classification and extraction",
+      "embeddings or semantic search",
+      "AI application backends"
+    ]
   },
   {
     "name": "EmailJS",
     "category": "Email / SMS (additional)",
-    "url": "https://www.emailjs.com"
+    "url": "https://www.emailjs.com",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "text generation and chat",
+      "summarization and rewriting",
+      "question answering",
+      "classification and extraction",
+      "embeddings or semantic search",
+      "AI application backends"
+    ]
   },
   {
     "name": "Infobip",
     "category": "Email / SMS (additional)",
-    "url": "https://www.infobip.com"
+    "url": "https://www.infobip.com",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "text generation and chat",
+      "summarization and rewriting",
+      "question answering",
+      "classification and extraction",
+      "embeddings or semantic search",
+      "AI application backends"
+    ]
   },
   {
     "name": "Mailtrap",
     "category": "Email / SMS (additional)",
-    "url": "https://mailtrap.io"
+    "url": "https://mailtrap.io",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "text generation and chat",
+      "summarization and rewriting",
+      "question answering",
+      "classification and extraction",
+      "embeddings or semantic search",
+      "AI application backends"
+    ]
   },
   {
     "name": "Sinch",
     "category": "Email / SMS (additional)",
-    "url": "https://dashboard.sinch.com"
+    "url": "https://dashboard.sinch.com",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "text generation and chat",
+      "summarization and rewriting",
+      "question answering",
+      "classification and extraction",
+      "embeddings or semantic search",
+      "AI application backends"
+    ]
   },
   {
     "name": "SparkPost",
     "category": "Email / SMS (additional)",
-    "url": "https://app.sparkpost.com/join"
+    "url": "https://app.sparkpost.com/join",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "text generation and chat",
+      "summarization and rewriting",
+      "question answering",
+      "classification and extraction",
+      "embeddings or semantic search",
+      "AI application backends"
+    ]
   },
   {
     "name": "Telnyx",
     "category": "Email / SMS (additional)",
-    "url": "https://portal.telnyx.com"
+    "url": "https://portal.telnyx.com",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "text generation and chat",
+      "summarization and rewriting",
+      "question answering",
+      "classification and extraction",
+      "embeddings or semantic search",
+      "AI application backends"
+    ]
   },
   {
     "name": "TextMagic",
     "category": "Email / SMS (additional)",
-    "url": "https://www.textmagic.com"
+    "url": "https://www.textmagic.com",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "text generation and chat",
+      "summarization and rewriting",
+      "question answering",
+      "classification and extraction",
+      "embeddings or semantic search",
+      "AI application backends"
+    ]
   },
   {
     "name": "Brevo (Sendinblue)",
     "category": "Email / SMS / Communication",
-    "url": "https://onboarding.brevo.com/account/register"
+    "url": "https://onboarding.brevo.com/account/register",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "text generation and chat",
+      "summarization and rewriting",
+      "question answering",
+      "classification and extraction",
+      "embeddings or semantic search",
+      "AI application backends"
+    ]
   },
   {
     "name": "Mailgun",
     "category": "Email / SMS / Communication",
-    "url": "https://signup.mailgun.com/new/signup"
+    "url": "https://signup.mailgun.com/new/signup",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "text generation and chat",
+      "summarization and rewriting",
+      "question answering",
+      "classification and extraction",
+      "embeddings or semantic search",
+      "AI application backends"
+    ]
   },
   {
     "name": "Mailjet",
     "category": "Email / SMS / Communication",
-    "url": "https://app.mailjet.com/signup"
+    "url": "https://app.mailjet.com/signup",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "text generation and chat",
+      "summarization and rewriting",
+      "question answering",
+      "classification and extraction",
+      "embeddings or semantic search",
+      "AI application backends"
+    ]
   },
   {
     "name": "MessageBird",
     "category": "Email / SMS / Communication",
-    "url": "https://dashboard.messagebird.com/en/sign-up"
+    "url": "https://dashboard.messagebird.com/en/sign-up",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "text generation and chat",
+      "summarization and rewriting",
+      "question answering",
+      "classification and extraction",
+      "embeddings or semantic search",
+      "AI application backends"
+    ]
   },
   {
     "name": "Plivo",
     "category": "Email / SMS / Communication",
-    "url": "https://console.plivo.com/accounts/register/"
+    "url": "https://console.plivo.com/accounts/register/",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "text generation and chat",
+      "summarization and rewriting",
+      "question answering",
+      "classification and extraction",
+      "embeddings or semantic search",
+      "AI application backends"
+    ]
   },
   {
     "name": "Postmark",
     "category": "Email / SMS / Communication",
-    "url": "https://account.postmarkapp.com/sign_up"
+    "url": "https://account.postmarkapp.com/sign_up",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "text generation and chat",
+      "summarization and rewriting",
+      "question answering",
+      "classification and extraction",
+      "embeddings or semantic search",
+      "AI application backends"
+    ]
   },
   {
     "name": "Vonage (Nexmo)",
     "category": "Email / SMS / Communication",
-    "url": "https://dashboard.nexmo.com/sign-up"
+    "url": "https://dashboard.nexmo.com/sign-up",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "text generation and chat",
+      "summarization and rewriting",
+      "question answering",
+      "classification and extraction",
+      "embeddings or semantic search",
+      "AI application backends"
+    ]
   },
   {
     "name": "Zoho ZeptoMail",
     "category": "Email / SMS / Communication",
-    "url": "https://www.zoho.com/zeptomail/"
+    "url": "https://www.zoho.com/zeptomail/",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "text generation and chat",
+      "summarization and rewriting",
+      "question answering",
+      "classification and extraction",
+      "embeddings or semantic search",
+      "AI application backends"
+    ]
   },
   {
     "name": "Alpaca (trading)",
     "category": "Finance / Crypto (additional)",
-    "url": "https://alpaca.markets"
+    "url": "https://alpaca.markets",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "market and price data",
+      "historical financial data",
+      "currency or exchange-rate data",
+      "economic indicators",
+      "portfolio and financial dashboards"
+    ]
   },
   {
     "name": "Binance API",
     "category": "Finance / Crypto (additional)",
-    "url": "https://www.binance.com/en/binance-api"
+    "url": "https://www.binance.com/en/binance-api",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "market and price data",
+      "historical financial data",
+      "currency or exchange-rate data",
+      "economic indicators",
+      "portfolio and financial dashboards"
+    ]
   },
   {
     "name": "BscScan",
     "category": "Finance / Crypto (additional)",
-    "url": "https://bscscan.com/apis"
+    "url": "https://bscscan.com/apis",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "market and price data",
+      "historical financial data",
+      "currency or exchange-rate data",
+      "economic indicators",
+      "portfolio and financial dashboards"
+    ]
   },
   {
     "name": "Coinbase API",
     "category": "Finance / Crypto (additional)",
-    "url": "https://docs.cloud.coinbase.com"
+    "url": "https://docs.cloud.coinbase.com",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "market and price data",
+      "historical financial data",
+      "currency or exchange-rate data",
+      "economic indicators",
+      "portfolio and financial dashboards"
+    ]
   },
   {
     "name": "CryptoCompare",
     "category": "Finance / Crypto (additional)",
-    "url": "https://min-api.cryptocompare.com"
+    "url": "https://min-api.cryptocompare.com",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "market and price data",
+      "historical financial data",
+      "currency or exchange-rate data",
+      "economic indicators",
+      "portfolio and financial dashboards"
+    ]
   },
   {
     "name": "Etherscan",
     "category": "Finance / Crypto (additional)",
-    "url": "https://etherscan.io/apis"
+    "url": "https://etherscan.io/apis",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "market and price data",
+      "historical financial data",
+      "currency or exchange-rate data",
+      "economic indicators",
+      "portfolio and financial dashboards"
+    ]
   },
   {
     "name": "Financial Modeling Prep",
     "category": "Finance / Crypto (additional)",
-    "url": "https://site.financialmodelingprep.com/developer/docs"
+    "url": "https://site.financialmodelingprep.com/developer/docs",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "market and price data",
+      "historical financial data",
+      "currency or exchange-rate data",
+      "economic indicators",
+      "portfolio and financial dashboards"
+    ]
   },
   {
     "name": "Kraken API",
     "category": "Finance / Crypto (additional)",
-    "url": "https://www.kraken.com/features/api"
+    "url": "https://www.kraken.com/features/api",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "market and price data",
+      "historical financial data",
+      "currency or exchange-rate data",
+      "economic indicators",
+      "portfolio and financial dashboards"
+    ]
   },
   {
     "name": "Marketstack",
     "category": "Finance / Crypto (additional)",
-    "url": "https://marketstack.com"
+    "url": "https://marketstack.com",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "market and price data",
+      "historical financial data",
+      "currency or exchange-rate data",
+      "economic indicators",
+      "portfolio and financial dashboards"
+    ]
   },
   {
     "name": "Messari",
     "category": "Finance / Crypto (additional)",
-    "url": "https://messari.io/api"
+    "url": "https://messari.io/api",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "market and price data",
+      "historical financial data",
+      "currency or exchange-rate data",
+      "economic indicators",
+      "portfolio and financial dashboards"
+    ]
   },
   {
     "name": "Nasdaq Data Link (Quandl)",
     "category": "Finance / Crypto (additional)",
-    "url": "https://data.nasdaq.com"
+    "url": "https://data.nasdaq.com",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "market and price data",
+      "historical financial data",
+      "currency or exchange-rate data",
+      "economic indicators",
+      "portfolio and financial dashboards"
+    ]
   },
   {
     "name": "Tradier",
     "category": "Finance / Crypto (additional)",
-    "url": "https://tradier.com"
+    "url": "https://tradier.com",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "market and price data",
+      "historical financial data",
+      "currency or exchange-rate data",
+      "economic indicators",
+      "portfolio and financial dashboards"
+    ]
   },
   {
     "name": "CoinAPI",
     "category": "Finance / Crypto / Economics",
-    "url": "https://www.coinapi.io/signup"
+    "url": "https://www.coinapi.io/signup",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "market and price data",
+      "historical financial data",
+      "currency or exchange-rate data",
+      "economic indicators",
+      "portfolio and financial dashboards"
+    ]
   },
   {
     "name": "CoinGecko API",
     "category": "Finance / Crypto / Economics",
-    "url": "https://www.coingecko.com/en/api"
+    "url": "https://www.coingecko.com/en/api",
+    "tier_verification_url": "https://www.coingecko.com/en/api/pricing",
+    "tier_verification_status": "official-pricing-page-identified",
+    "uses": [
+      "market and price data",
+      "historical financial data",
+      "currency or exchange-rate data",
+      "economic indicators",
+      "portfolio and financial dashboards"
+    ]
   },
   {
     "name": "CoinMarketCap API",
     "category": "Finance / Crypto / Economics",
-    "url": "https://coinmarketcap.com/api/"
+    "url": "https://coinmarketcap.com/api/",
+    "tier_verification_url": "https://coinmarketcap.com/api/pricing/",
+    "tier_verification_status": "official-pricing-page-identified",
+    "uses": [
+      "market and price data",
+      "historical financial data",
+      "currency or exchange-rate data",
+      "economic indicators",
+      "portfolio and financial dashboards"
+    ]
   },
   {
     "name": "Currencylayer",
     "category": "Finance / Crypto / Economics",
-    "url": "https://currencylayer.com/product"
+    "url": "https://currencylayer.com/product",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "market and price data",
+      "historical financial data",
+      "currency or exchange-rate data",
+      "economic indicators",
+      "portfolio and financial dashboards"
+    ]
   },
   {
     "name": "ExchangeRate-API",
     "category": "Finance / Crypto / Economics",
-    "url": "https://www.exchangerate-api.com"
+    "url": "https://www.exchangerate-api.com",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "market and price data",
+      "historical financial data",
+      "currency or exchange-rate data",
+      "economic indicators",
+      "portfolio and financial dashboards"
+    ]
   },
   {
     "name": "Federal Reserve (FRED)",
     "category": "Finance / Crypto / Economics",
-    "url": "https://fred.stlouisfed.org/docs/api/api_key.html"
+    "url": "https://fred.stlouisfed.org/docs/api/api_key.html",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "market and price data",
+      "historical financial data",
+      "currency or exchange-rate data",
+      "economic indicators",
+      "portfolio and financial dashboards"
+    ]
   },
   {
     "name": "Finnhub",
     "category": "Finance / Crypto / Economics",
-    "url": "https://finnhub.io/register"
+    "url": "https://finnhub.io/register",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "market and price data",
+      "historical financial data",
+      "currency or exchange-rate data",
+      "economic indicators",
+      "portfolio and financial dashboards"
+    ]
   },
   {
     "name": "Fixer.io",
     "category": "Finance / Crypto / Economics",
-    "url": "https://fixer.io/product"
+    "url": "https://fixer.io/product",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "market and price data",
+      "historical financial data",
+      "currency or exchange-rate data",
+      "economic indicators",
+      "portfolio and financial dashboards"
+    ]
   },
   {
     "name": "IEX Cloud",
     "category": "Finance / Crypto / Economics",
-    "url": "https://iexcloud.io/console/"
+    "url": "https://iexcloud.io/console/",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "market and price data",
+      "historical financial data",
+      "currency or exchange-rate data",
+      "economic indicators",
+      "portfolio and financial dashboards"
+    ]
   },
   {
     "name": "Open Exchange Rates",
     "category": "Finance / Crypto / Economics",
-    "url": "https://openexchangerates.org/signup/free"
+    "url": "https://openexchangerates.org/signup/free",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "market and price data",
+      "historical financial data",
+      "currency or exchange-rate data",
+      "economic indicators",
+      "portfolio and financial dashboards"
+    ]
   },
   {
     "name": "Plaid (banking)",
     "category": "Finance / Crypto / Economics",
-    "url": "https://dashboard.plaid.com/signup"
+    "url": "https://dashboard.plaid.com/signup",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "text generation and chat",
+      "summarization and rewriting",
+      "question answering",
+      "classification and extraction",
+      "embeddings or semantic search",
+      "AI application backends"
+    ]
   },
   {
     "name": "Polygon.io",
     "category": "Finance / Crypto / Economics",
-    "url": "https://polygon.io/dashboard/signup"
+    "url": "https://polygon.io/dashboard/signup",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "market and price data",
+      "historical financial data",
+      "currency or exchange-rate data",
+      "economic indicators",
+      "portfolio and financial dashboards"
+    ]
   },
   {
     "name": "Twelve Data",
     "category": "Finance / Crypto / Economics",
-    "url": "https://twelvedata.com/register"
+    "url": "https://twelvedata.com/register",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "market and price data",
+      "historical financial data",
+      "currency or exchange-rate data",
+      "economic indicators",
+      "portfolio and financial dashboards"
+    ]
   },
   {
     "name": "World Bank API",
     "category": "Finance / Crypto / Economics",
-    "url": "https://datahelpdesk.worldbank.org/knowledgebase/articles/889392"
+    "url": "https://datahelpdesk.worldbank.org/knowledgebase/articles/889392",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "market and price data",
+      "historical financial data",
+      "currency or exchange-rate data",
+      "economic indicators",
+      "portfolio and financial dashboards"
+    ]
   },
   {
     "name": "Open Food Facts API",
     "category": "Food",
-    "url": "https://world.openfoodfacts.org/data"
+    "url": "https://world.openfoodfacts.org/data",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "food and recipe data",
+      "restaurant search",
+      "nutrition information",
+      "ingredient and meal workflows"
+    ]
   },
   {
     "name": "TheCocktailDB",
     "category": "Food",
-    "url": "https://www.thecocktaildb.com/api.php"
+    "url": "https://www.thecocktaildb.com/api.php",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "text generation and chat",
+      "summarization and rewriting",
+      "question answering",
+      "classification and extraction",
+      "embeddings or semantic search",
+      "AI application backends"
+    ]
   },
   {
     "name": "TheMealDB",
     "category": "Food",
-    "url": "https://www.themealdb.com/api.php"
+    "url": "https://www.themealdb.com/api.php",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "food and recipe data",
+      "restaurant search",
+      "nutrition information",
+      "ingredient and meal workflows"
+    ]
   },
   {
     "name": "Yelp Fusion API",
     "category": "Food",
-    "url": "https://www.yelp.com/developers"
+    "url": "https://www.yelp.com/developers",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "food and recipe data",
+      "restaurant search",
+      "nutrition information",
+      "ingredient and meal workflows"
+    ]
   },
   {
     "name": "Battle.net API",
     "category": "Gaming",
-    "url": "https://develop.battle.net"
+    "url": "https://develop.battle.net",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "game metadata",
+      "player or account integrations",
+      "game statistics",
+      "game-related applications"
+    ]
   },
   {
     "name": "Riot Games API",
     "category": "Gaming",
-    "url": "https://developer.riotgames.com"
+    "url": "https://developer.riotgames.com",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "game metadata",
+      "player or account integrations",
+      "game statistics",
+      "game-related applications"
+    ]
   },
   {
     "name": "Steam Web API",
     "category": "Gaming",
-    "url": "https://steamcommunity.com/dev"
+    "url": "https://steamcommunity.com/dev",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "game metadata",
+      "player or account integrations",
+      "game statistics",
+      "game-related applications"
+    ]
   },
   {
     "name": "CMS.gov Data API",
     "category": "Health / Fitness",
-    "url": "https://data.cms.gov"
+    "url": "https://data.cms.gov",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "health or fitness data access",
+      "activity and workout data",
+      "health-data integrations",
+      "analytics and dashboards"
+    ]
   },
   {
     "name": "Fitbit API",
     "category": "Health / Fitness",
-    "url": "https://dev.fitbit.com"
+    "url": "https://dev.fitbit.com",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "health or fitness data access",
+      "activity and workout data",
+      "health-data integrations",
+      "analytics and dashboards"
+    ]
   },
   {
     "name": "Human API",
     "category": "Health / Fitness",
-    "url": "https://www.humanapi.co"
+    "url": "https://www.humanapi.co",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "health or fitness data access",
+      "activity and workout data",
+      "health-data integrations",
+      "analytics and dashboards"
+    ]
   },
   {
     "name": "openFDA API",
     "category": "Health / Fitness",
-    "url": "https://open.fda.gov"
+    "url": "https://open.fda.gov",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "health or fitness data access",
+      "activity and workout data",
+      "health-data integrations",
+      "analytics and dashboards"
+    ]
   },
   {
     "name": "Strava API",
     "category": "Health / Fitness",
-    "url": "https://developers.strava.com"
+    "url": "https://developers.strava.com",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "health or fitness data access",
+      "activity and workout data",
+      "health-data integrations",
+      "analytics and dashboards"
+    ]
   },
   {
     "name": "Withings API",
     "category": "Health / Fitness",
-    "url": "https://developer.withings.com"
+    "url": "https://developer.withings.com",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "health or fitness data access",
+      "activity and workout data",
+      "health-data integrations",
+      "analytics and dashboards"
+    ]
   },
   {
     "name": "Cloudinary",
     "category": "Images / Media",
-    "url": "https://cloudinary.com/users/register/free"
+    "url": "https://cloudinary.com/users/register/free",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "image search and retrieval",
+      "image metadata",
+      "image transformation or delivery",
+      "image analysis or OCR",
+      "media workflows"
+    ]
   },
   {
     "name": "Giphy API",
     "category": "Images / Media",
-    "url": "https://developers.giphy.com"
+    "url": "https://developers.giphy.com",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "image search and retrieval",
+      "image metadata",
+      "image transformation or delivery",
+      "image analysis or OCR",
+      "media workflows"
+    ]
   },
   {
     "name": "imgix",
     "category": "Images / Media",
-    "url": "https://www.imgix.com/signup"
+    "url": "https://www.imgix.com/signup",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "image search and retrieval",
+      "image metadata",
+      "image transformation or delivery",
+      "image analysis or OCR",
+      "media workflows"
+    ]
   },
   {
     "name": "Pexels API",
     "category": "Images / Media",
-    "url": "https://www.pexels.com/api/"
+    "url": "https://www.pexels.com/api/",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "image search and retrieval",
+      "image metadata",
+      "image transformation or delivery",
+      "image analysis or OCR",
+      "media workflows"
+    ]
   },
   {
     "name": "Pixabay API",
     "category": "Images / Media",
-    "url": "https://pixabay.com/api/docs/"
+    "url": "https://pixabay.com/api/docs/",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "image search and retrieval",
+      "image metadata",
+      "image transformation or delivery",
+      "image analysis or OCR",
+      "media workflows"
+    ]
   },
   {
     "name": "remove.bg",
     "category": "Images / Media",
-    "url": "https://www.remove.bg/api"
+    "url": "https://www.remove.bg/api",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "image search and retrieval",
+      "image metadata",
+      "image transformation or delivery",
+      "image analysis or OCR",
+      "media workflows"
+    ]
   },
   {
     "name": "TinyPNG API",
     "category": "Images / Media",
-    "url": "https://tinypng.com/developers"
+    "url": "https://tinypng.com/developers",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "image search and retrieval",
+      "image metadata",
+      "image transformation or delivery",
+      "image analysis or OCR",
+      "media workflows"
+    ]
   },
   {
     "name": "Unsplash API",
     "category": "Images / Media",
-    "url": "https://unsplash.com/developers"
+    "url": "https://unsplash.com/developers",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "image search and retrieval",
+      "image metadata",
+      "image transformation or delivery",
+      "image analysis or OCR",
+      "media workflows"
+    ]
   },
   {
     "name": "500px API",
     "category": "Images / Media (additional)",
-    "url": "https://500px.com/p/api"
+    "url": "https://500px.com/p/api",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "image search and retrieval",
+      "image metadata",
+      "image transformation or delivery",
+      "image analysis or OCR",
+      "media workflows"
+    ]
   },
   {
     "name": "Adobe Stock API",
     "category": "Images / Media (additional)",
-    "url": "https://developer.adobe.com/stock/"
+    "url": "https://developer.adobe.com/stock/",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "market and price data",
+      "historical financial data",
+      "currency or exchange-rate data",
+      "economic indicators",
+      "portfolio and financial dashboards"
+    ]
   },
   {
     "name": "DeepAI",
     "category": "Images / Media (additional)",
-    "url": "https://deepai.org"
+    "url": "https://deepai.org",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "text generation and chat",
+      "summarization and rewriting",
+      "question answering",
+      "classification and extraction",
+      "embeddings or semantic search",
+      "AI application backends"
+    ]
   },
   {
     "name": "Flickr API",
     "category": "Images / Media (additional)",
-    "url": "https://www.flickr.com/services/api/"
+    "url": "https://www.flickr.com/services/api/",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "image search and retrieval",
+      "image metadata",
+      "image transformation or delivery",
+      "image analysis or OCR",
+      "media workflows"
+    ]
   },
   {
     "name": "Getty Images API",
     "category": "Images / Media (additional)",
-    "url": "https://developers.gettyimages.com"
+    "url": "https://developers.gettyimages.com",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "image search and retrieval",
+      "image metadata",
+      "image transformation or delivery",
+      "image analysis or OCR",
+      "media workflows"
+    ]
   },
   {
     "name": "Imagga",
     "category": "Images / Media (additional)",
-    "url": "https://imagga.com"
+    "url": "https://imagga.com",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "image search and retrieval",
+      "image metadata",
+      "image transformation or delivery",
+      "image analysis or OCR",
+      "media workflows"
+    ]
   },
   {
     "name": "OCR.space",
     "category": "Images / Media (additional)",
-    "url": "https://ocr.space/ocrapi"
+    "url": "https://ocr.space/ocrapi",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "image search and retrieval",
+      "image metadata",
+      "image transformation or delivery",
+      "image analysis or OCR",
+      "media workflows"
+    ]
   },
   {
     "name": "Shutterstock API",
     "category": "Images / Media (additional)",
-    "url": "https://developer.shutterstock.com"
+    "url": "https://developer.shutterstock.com",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "market and price data",
+      "historical financial data",
+      "currency or exchange-rate data",
+      "economic indicators",
+      "portfolio and financial dashboards"
+    ]
   },
   {
     "name": "Blynk API",
     "category": "IoT",
-    "url": "https://blynk.io"
+    "url": "https://blynk.io",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "device telemetry",
+      "IoT data ingestion",
+      "device control",
+      "sensor dashboards",
+      "automation"
+    ]
   },
   {
     "name": "Particle.io API",
     "category": "IoT",
-    "url": "https://www.particle.io"
+    "url": "https://www.particle.io",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "device telemetry",
+      "IoT data ingestion",
+      "device control",
+      "sensor dashboards",
+      "automation"
+    ]
   },
   {
     "name": "ThingSpeak API",
     "category": "IoT",
-    "url": "https://thingspeak.com"
+    "url": "https://thingspeak.com",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "device telemetry",
+      "IoT data ingestion",
+      "device control",
+      "sensor dashboards",
+      "automation"
+    ]
   },
   {
     "name": "Adzuna API",
     "category": "Jobs / Recruiting",
-    "url": "https://developer.adzuna.com"
+    "url": "https://developer.adzuna.com",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "job search and listings",
+      "job metadata",
+      "recruiting workflows",
+      "employment-market analytics"
+    ]
   },
   {
     "name": "Indeed Publisher API",
     "category": "Jobs / Recruiting",
-    "url": "https://www.indeed.com/publisher"
+    "url": "https://www.indeed.com/publisher",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "job search and listings",
+      "job metadata",
+      "recruiting workflows",
+      "employment-market analytics"
+    ]
   },
   {
     "name": "Jooble API",
     "category": "Jobs / Recruiting",
-    "url": "https://jooble.org/api/about"
+    "url": "https://jooble.org/api/about",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "job search and listings",
+      "job metadata",
+      "recruiting workflows",
+      "employment-market analytics"
+    ]
   },
   {
     "name": "USAJobs API",
     "category": "Jobs / Recruiting",
-    "url": "https://developer.usajobs.gov"
+    "url": "https://developer.usajobs.gov",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "job search and listings",
+      "job metadata",
+      "recruiting workflows",
+      "employment-market analytics"
+    ]
   },
   {
     "name": "Abstract API (geolocation)",
     "category": "Maps / Geocoding / Location",
-    "url": "https://www.abstractapi.com/api/ip-geolocation-api"
+    "url": "https://www.abstractapi.com/api/ip-geolocation-api",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "geocoding and reverse geocoding",
+      "places and location search",
+      "routing and distance calculations",
+      "maps and map tiles",
+      "location-aware applications"
+    ]
   },
   {
     "name": "Geoapify",
     "category": "Maps / Geocoding / Location",
-    "url": "https://myprojects.geoapify.com/register"
+    "url": "https://myprojects.geoapify.com/register",
+    "tier_verification_url": "https://www.geoapify.com/pricing/",
+    "tier_verification_status": "official-pricing-page-identified",
+    "uses": [
+      "geocoding and reverse geocoding",
+      "places and location search",
+      "routing and distance calculations",
+      "maps and map tiles",
+      "location-aware applications"
+    ]
   },
   {
     "name": "Google Maps Platform",
     "category": "Maps / Geocoding / Location",
-    "url": "https://console.cloud.google.com/google/maps-apis"
+    "url": "https://console.cloud.google.com/google/maps-apis",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "geocoding and reverse geocoding",
+      "places and location search",
+      "routing and distance calculations",
+      "maps and map tiles",
+      "location-aware applications"
+    ]
   },
   {
     "name": "HERE API",
     "category": "Maps / Geocoding / Location",
-    "url": "https://developer.here.com/sign-up"
+    "url": "https://developer.here.com/sign-up",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "geocoding and reverse geocoding",
+      "places and location search",
+      "routing and distance calculations",
+      "maps and map tiles",
+      "location-aware applications"
+    ]
   },
   {
     "name": "ip-api.com",
     "category": "Maps / Geocoding / Location",
-    "url": "https://members.ip-api.com/register"
+    "url": "https://members.ip-api.com/register",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "geocoding and reverse geocoding",
+      "places and location search",
+      "routing and distance calculations",
+      "maps and map tiles",
+      "location-aware applications"
+    ]
   },
   {
     "name": "IPinfo",
     "category": "Maps / Geocoding / Location",
-    "url": "https://ipinfo.io/signup"
+    "url": "https://ipinfo.io/signup",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "geocoding and reverse geocoding",
+      "places and location search",
+      "routing and distance calculations",
+      "maps and map tiles",
+      "location-aware applications"
+    ]
   },
   {
     "name": "ipstack",
     "category": "Maps / Geocoding / Location",
-    "url": "https://ipstack.com/product"
+    "url": "https://ipstack.com/product",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "geocoding and reverse geocoding",
+      "places and location search",
+      "routing and distance calculations",
+      "maps and map tiles",
+      "location-aware applications"
+    ]
   },
   {
     "name": "OpenCage Geocoding",
     "category": "Maps / Geocoding / Location",
-    "url": "https://opencagedata.com/users/sign_up"
+    "url": "https://opencagedata.com/users/sign_up",
+    "tier_verification_url": "https://opencagedata.com/pricing",
+    "tier_verification_status": "official-pricing-page-identified",
+    "uses": [
+      "geocoding and reverse geocoding",
+      "places and location search",
+      "routing and distance calculations",
+      "maps and map tiles",
+      "location-aware applications"
+    ]
   },
   {
     "name": "Positionstack",
     "category": "Maps / Geocoding / Location",
-    "url": "https://positionstack.com/signup/free"
+    "url": "https://positionstack.com/signup/free",
+    "tier_verification_url": "https://positionstack.com/pricing/",
+    "tier_verification_status": "official-pricing-page-identified",
+    "uses": [
+      "geocoding and reverse geocoding",
+      "places and location search",
+      "routing and distance calculations",
+      "maps and map tiles",
+      "location-aware applications"
+    ]
   },
   {
     "name": "TomTom Maps",
     "category": "Maps / Geocoding / Location",
-    "url": "https://developer.tomtom.com/user/register"
+    "url": "https://developer.tomtom.com/user/register",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "geocoding and reverse geocoding",
+      "places and location search",
+      "routing and distance calculations",
+      "maps and map tiles",
+      "location-aware applications"
+    ]
   },
   {
     "name": "Bing Maps API",
     "category": "Maps / Location (additional)",
-    "url": "https://www.bingmapsportal.com"
+    "url": "https://www.bingmapsportal.com",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "geocoding and reverse geocoding",
+      "places and location search",
+      "routing and distance calculations",
+      "maps and map tiles",
+      "location-aware applications"
+    ]
   },
   {
     "name": "Foursquare Places API",
     "category": "Maps / Location (additional)",
-    "url": "https://developer.foursquare.com"
+    "url": "https://developer.foursquare.com",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "geocoding and reverse geocoding",
+      "places and location search",
+      "routing and distance calculations",
+      "maps and map tiles",
+      "location-aware applications"
+    ]
   },
   {
     "name": "Geocodio",
     "category": "Maps / Location (additional)",
-    "url": "https://www.geocod.io"
+    "url": "https://www.geocod.io",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "geocoding and reverse geocoding",
+      "places and location search",
+      "routing and distance calculations",
+      "maps and map tiles",
+      "location-aware applications"
+    ]
   },
   {
     "name": "GeoNames",
     "category": "Maps / Location (additional)",
-    "url": "http://www.geonames.org/export/web-services.html"
+    "url": "http://www.geonames.org/export/web-services.html",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "geocoding and reverse geocoding",
+      "places and location search",
+      "routing and distance calculations",
+      "maps and map tiles",
+      "location-aware applications"
+    ]
   },
   {
     "name": "Nominatim (OpenStreetMap)",
     "category": "Maps / Location (additional)",
-    "url": "https://nominatim.org"
+    "url": "https://nominatim.org",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "geocoding and reverse geocoding",
+      "places and location search",
+      "routing and distance calculations",
+      "maps and map tiles",
+      "location-aware applications"
+    ]
   },
   {
     "name": "Radar.io",
     "category": "Maps / Location (additional)",
-    "url": "https://radar.com"
+    "url": "https://radar.com",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "geocoding and reverse geocoding",
+      "places and location search",
+      "routing and distance calculations",
+      "maps and map tiles",
+      "location-aware applications"
+    ]
   },
   {
     "name": "SmartyStreets",
     "category": "Maps / Location (additional)",
-    "url": "https://www.smarty.com"
+    "url": "https://www.smarty.com",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "geocoding and reverse geocoding",
+      "places and location search",
+      "routing and distance calculations",
+      "maps and map tiles",
+      "location-aware applications"
+    ]
   },
   {
     "name": "Bright Data",
     "category": "Miscellaneous / Utility",
-    "url": "https://brightdata.com/cp/start"
+    "url": "https://brightdata.com/cp/start",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "API data retrieval",
+      "application integrations",
+      "automation workflows",
+      "data processing",
+      "developer applications"
+    ]
   },
   {
     "name": "Calendarific (holidays)",
     "category": "Miscellaneous / Utility",
-    "url": "https://calendarific.com/signup"
+    "url": "https://calendarific.com/signup",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "API data retrieval",
+      "application integrations",
+      "automation workflows",
+      "data processing",
+      "developer applications"
+    ]
   },
   {
     "name": "Clearbit",
     "category": "Miscellaneous / Utility",
-    "url": "https://dashboard.clearbit.com/signup"
+    "url": "https://dashboard.clearbit.com/signup",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "API data retrieval",
+      "application integrations",
+      "automation workflows",
+      "data processing",
+      "developer applications"
+    ]
   },
   {
     "name": "Diffbot",
     "category": "Miscellaneous / Utility",
-    "url": "https://www.diffbot.com/plans/trial/"
+    "url": "https://www.diffbot.com/plans/trial/",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "web or search result retrieval",
+      "data extraction",
+      "validation and enrichment",
+      "automation and research workflows"
+    ]
   },
   {
     "name": "Edamam (nutrition/recipes)",
     "category": "Miscellaneous / Utility",
-    "url": "https://developer.edamam.com"
+    "url": "https://developer.edamam.com",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "food and recipe data",
+      "restaurant search",
+      "nutrition information",
+      "ingredient and meal workflows"
+    ]
   },
   {
     "name": "Hunter.io",
     "category": "Miscellaneous / Utility",
-    "url": "https://hunter.io/users/sign_up"
+    "url": "https://hunter.io/users/sign_up",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "web or search result retrieval",
+      "data extraction",
+      "validation and enrichment",
+      "automation and research workflows"
+    ]
   },
   {
     "name": "IPQualityScore",
     "category": "Miscellaneous / Utility",
-    "url": "https://www.ipqualityscore.com/create-account"
+    "url": "https://www.ipqualityscore.com/create-account",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "API data retrieval",
+      "application integrations",
+      "automation workflows",
+      "data processing",
+      "developer applications"
+    ]
   },
   {
     "name": "JSONPlaceholder (fake data)",
     "category": "Miscellaneous / Utility",
-    "url": "https://jsonplaceholder.typicode.com"
+    "url": "https://jsonplaceholder.typicode.com",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "API data retrieval",
+      "application integrations",
+      "automation workflows",
+      "data processing",
+      "developer applications"
+    ]
   },
   {
     "name": "Mockaroo",
     "category": "Miscellaneous / Utility",
-    "url": "https://www.mockaroo.com/api/docs"
+    "url": "https://www.mockaroo.com/api/docs",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "API data retrieval",
+      "application integrations",
+      "automation workflows",
+      "data processing",
+      "developer applications"
+    ]
   },
   {
     "name": "Nutritionix API",
     "category": "Miscellaneous / Utility",
-    "url": "https://developer.nutritionix.com"
+    "url": "https://developer.nutritionix.com",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "food and recipe data",
+      "restaurant search",
+      "nutrition information",
+      "ingredient and meal workflows"
+    ]
   },
   {
     "name": "PokéAPI",
     "category": "Miscellaneous / Utility",
-    "url": "https://pokeapi.co"
+    "url": "https://pokeapi.co",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "API data retrieval",
+      "application integrations",
+      "automation workflows",
+      "data processing",
+      "developer applications"
+    ]
   },
   {
     "name": "QR Code API (goqr.me)",
     "category": "Miscellaneous / Utility",
-    "url": "https://goqr.me/api/"
+    "url": "https://goqr.me/api/",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "API data retrieval",
+      "application integrations",
+      "automation workflows",
+      "data processing",
+      "developer applications"
+    ]
   },
   {
     "name": "RandomUser.me",
     "category": "Miscellaneous / Utility",
-    "url": "https://randomuser.me/documentation"
+    "url": "https://randomuser.me/documentation",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "API data retrieval",
+      "application integrations",
+      "automation workflows",
+      "data processing",
+      "developer applications"
+    ]
   },
   {
     "name": "ScraperAPI",
     "category": "Miscellaneous / Utility",
-    "url": "https://www.scraperapi.com/signup"
+    "url": "https://www.scraperapi.com/signup",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "web or search result retrieval",
+      "data extraction",
+      "validation and enrichment",
+      "automation and research workflows"
+    ]
   },
   {
     "name": "Spoonacular (recipes)",
     "category": "Miscellaneous / Utility",
-    "url": "https://spoonacular.com/food-api"
+    "url": "https://spoonacular.com/food-api",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "food and recipe data",
+      "restaurant search",
+      "nutrition information",
+      "ingredient and meal workflows"
+    ]
   },
   {
     "name": "Wolfram Alpha API",
     "category": "Miscellaneous / Utility",
-    "url": "https://developer.wolframalpha.com"
+    "url": "https://developer.wolframalpha.com",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "API data retrieval",
+      "application integrations",
+      "automation workflows",
+      "data processing",
+      "developer applications"
+    ]
   },
   {
     "name": "ZeroBounce",
     "category": "Miscellaneous / Utility",
-    "url": "https://www.zerobounce.net/members/register"
+    "url": "https://www.zerobounce.net/members/register",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "web or search result retrieval",
+      "data extraction",
+      "validation and enrichment",
+      "automation and research workflows"
+    ]
   },
   {
     "name": "Zippopotam.us (zip codes)",
     "category": "Miscellaneous / Utility",
-    "url": "https://zippopotam.us"
+    "url": "https://zippopotam.us",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "API data retrieval",
+      "application integrations",
+      "automation workflows",
+      "data processing",
+      "developer applications"
+    ]
   },
   {
     "name": "Discogs API",
     "category": "Music / Entertainment",
-    "url": "https://www.discogs.com/settings/developers"
+    "url": "https://www.discogs.com/settings/developers",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "text generation and chat",
+      "summarization and rewriting",
+      "question answering",
+      "classification and extraction",
+      "embeddings or semantic search",
+      "AI application backends"
+    ]
   },
   {
     "name": "Genius API",
     "category": "Music / Entertainment",
-    "url": "https://genius.com/api-clients"
+    "url": "https://genius.com/api-clients",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "text generation and chat",
+      "summarization and rewriting",
+      "question answering",
+      "classification and extraction",
+      "embeddings or semantic search",
+      "AI application backends"
+    ]
   },
   {
     "name": "IGDB (games)",
     "category": "Music / Entertainment",
-    "url": "https://api-docs.igdb.com"
+    "url": "https://api-docs.igdb.com",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "text generation and chat",
+      "summarization and rewriting",
+      "question answering",
+      "classification and extraction",
+      "embeddings or semantic search",
+      "AI application backends"
+    ]
   },
   {
     "name": "Last.fm API",
     "category": "Music / Entertainment",
-    "url": "https://www.last.fm/api/account/create"
+    "url": "https://www.last.fm/api/account/create",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "text generation and chat",
+      "summarization and rewriting",
+      "question answering",
+      "classification and extraction",
+      "embeddings or semantic search",
+      "AI application backends"
+    ]
   },
   {
     "name": "OMDb API",
     "category": "Music / Entertainment",
-    "url": "https://www.omdbapi.com/apikey.aspx"
+    "url": "https://www.omdbapi.com/apikey.aspx",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "text generation and chat",
+      "summarization and rewriting",
+      "question answering",
+      "classification and extraction",
+      "embeddings or semantic search",
+      "AI application backends"
+    ]
   },
   {
     "name": "RAWG (video games)",
     "category": "Music / Entertainment",
-    "url": "https://rawg.io/apidocs"
+    "url": "https://rawg.io/apidocs",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "text generation and chat",
+      "summarization and rewriting",
+      "question answering",
+      "classification and extraction",
+      "embeddings or semantic search",
+      "AI application backends"
+    ]
   },
   {
     "name": "Spotify Web API",
     "category": "Music / Entertainment",
-    "url": "https://developer.spotify.com/dashboard"
+    "url": "https://developer.spotify.com/dashboard",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "text generation and chat",
+      "summarization and rewriting",
+      "question answering",
+      "classification and extraction",
+      "embeddings or semantic search",
+      "AI application backends"
+    ]
   },
   {
     "name": "TMDB (movies)",
     "category": "Music / Entertainment",
-    "url": "https://www.themoviedb.org/settings/api"
+    "url": "https://www.themoviedb.org/settings/api",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "text generation and chat",
+      "summarization and rewriting",
+      "question answering",
+      "classification and extraction",
+      "embeddings or semantic search",
+      "AI application backends"
+    ]
   },
   {
     "name": "Apple Music API",
     "category": "Music / Entertainment (additional)",
-    "url": "https://developer.apple.com/musickit/"
+    "url": "https://developer.apple.com/musickit/",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "text generation and chat",
+      "summarization and rewriting",
+      "question answering",
+      "classification and extraction",
+      "embeddings or semantic search",
+      "AI application backends"
+    ]
   },
   {
     "name": "Deezer API",
     "category": "Music / Entertainment (additional)",
-    "url": "https://developers.deezer.com"
+    "url": "https://developers.deezer.com",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "text generation and chat",
+      "summarization and rewriting",
+      "question answering",
+      "classification and extraction",
+      "embeddings or semantic search",
+      "AI application backends"
+    ]
   },
   {
     "name": "Jamendo API",
     "category": "Music / Entertainment (additional)",
-    "url": "https://developer.jamendo.com"
+    "url": "https://developer.jamendo.com",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "text generation and chat",
+      "summarization and rewriting",
+      "question answering",
+      "classification and extraction",
+      "embeddings or semantic search",
+      "AI application backends"
+    ]
   },
   {
     "name": "Musixmatch API",
     "category": "Music / Entertainment (additional)",
-    "url": "https://developer.musixmatch.com"
+    "url": "https://developer.musixmatch.com",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "text generation and chat",
+      "summarization and rewriting",
+      "question answering",
+      "classification and extraction",
+      "embeddings or semantic search",
+      "AI application backends"
+    ]
   },
   {
     "name": "SoundCloud API",
     "category": "Music / Entertainment (additional)",
-    "url": "https://developers.soundcloud.com"
+    "url": "https://developers.soundcloud.com",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "text generation and chat",
+      "summarization and rewriting",
+      "question answering",
+      "classification and extraction",
+      "embeddings or semantic search",
+      "AI application backends"
+    ]
   },
   {
     "name": "TheAudioDB",
     "category": "Music / Entertainment (additional)",
-    "url": "https://www.theaudiodb.com/api_guide.php"
+    "url": "https://www.theaudiodb.com/api_guide.php",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "text generation and chat",
+      "summarization and rewriting",
+      "question answering",
+      "classification and extraction",
+      "embeddings or semantic search",
+      "AI application backends"
+    ]
   },
   {
     "name": "Aylien News API",
     "category": "News (additional)",
-    "url": "https://aylien.com/news-api"
+    "url": "https://aylien.com/news-api",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "news and article retrieval",
+      "search and filtering",
+      "headlines and feeds",
+      "content metadata",
+      "news aggregation applications"
+    ]
   },
   {
     "name": "Bing News Search API",
     "category": "News (additional)",
-    "url": "https://www.microsoft.com/en-us/bing/apis/bing-news-search-api"
+    "url": "https://www.microsoft.com/en-us/bing/apis/bing-news-search-api",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "news and article retrieval",
+      "search and filtering",
+      "headlines and feeds",
+      "content metadata",
+      "news aggregation applications"
+    ]
   },
   {
     "name": "Webz.io News API",
     "category": "News (additional)",
-    "url": "https://webz.io"
+    "url": "https://webz.io",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "news and article retrieval",
+      "search and filtering",
+      "headlines and feeds",
+      "content metadata",
+      "news aggregation applications"
+    ]
   },
   {
     "name": "Currents API",
     "category": "News / Content",
-    "url": "https://currentsapi.services/en/register"
+    "url": "https://currentsapi.services/en/register",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "news and article retrieval",
+      "search and filtering",
+      "headlines and feeds",
+      "content metadata",
+      "news aggregation applications"
+    ]
   },
   {
     "name": "GNews",
     "category": "News / Content",
-    "url": "https://gnews.io/register"
+    "url": "https://gnews.io/register",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "news and article retrieval",
+      "search and filtering",
+      "headlines and feeds",
+      "content metadata",
+      "news aggregation applications"
+    ]
   },
   {
     "name": "Mediastack",
     "category": "News / Content",
-    "url": "https://mediastack.com/product"
+    "url": "https://mediastack.com/product",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "news and article retrieval",
+      "search and filtering",
+      "headlines and feeds",
+      "content metadata",
+      "news aggregation applications"
+    ]
   },
   {
     "name": "New York Times API",
     "category": "News / Content",
-    "url": "https://developer.nytimes.com/accounts/create"
+    "url": "https://developer.nytimes.com/accounts/create",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "news and article retrieval",
+      "search and filtering",
+      "headlines and feeds",
+      "content metadata",
+      "news aggregation applications"
+    ]
   },
   {
     "name": "NewsAPI.org",
     "category": "News / Content",
-    "url": "https://newsapi.org/register"
+    "url": "https://newsapi.org/register",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "news and article retrieval",
+      "search and filtering",
+      "headlines and feeds",
+      "content metadata",
+      "news aggregation applications"
+    ]
   },
   {
     "name": "Reddit API",
     "category": "News / Content",
-    "url": "https://www.reddit.com/prefs/apps"
+    "url": "https://www.reddit.com/prefs/apps",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "news and article retrieval",
+      "search and filtering",
+      "headlines and feeds",
+      "content metadata",
+      "news aggregation applications"
+    ]
   },
   {
     "name": "The Guardian Open Platform",
     "category": "News / Content",
-    "url": "https://open-platform.theguardian.com/access/"
+    "url": "https://open-platform.theguardian.com/access/",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "news and article retrieval",
+      "search and filtering",
+      "headlines and feeds",
+      "content metadata",
+      "news aggregation applications"
+    ]
   },
   {
     "name": "Adyen API",
     "category": "Payments (additional)",
-    "url": "https://www.adyen.com/api-explorer"
+    "url": "https://www.adyen.com/api-explorer",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "payment processing",
+      "orders and transactions",
+      "refunds and payment status",
+      "customer/payment workflows",
+      "checkout integrations"
+    ]
   },
   {
     "name": "Braintree API",
     "category": "Payments (additional)",
-    "url": "https://developer.paypal.com/braintree/docs"
+    "url": "https://developer.paypal.com/braintree/docs",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "text generation and chat",
+      "summarization and rewriting",
+      "question answering",
+      "classification and extraction",
+      "embeddings or semantic search",
+      "AI application backends"
+    ]
   },
   {
     "name": "Razorpay API",
     "category": "Payments (additional)",
-    "url": "https://razorpay.com/docs/"
+    "url": "https://razorpay.com/docs/",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "payment processing",
+      "orders and transactions",
+      "refunds and payment status",
+      "customer/payment workflows",
+      "checkout integrations"
+    ]
   },
   {
     "name": "data.gov",
     "category": "Public / General Data",
-    "url": "https://api.data.gov/signup"
+    "url": "https://api.data.gov/signup",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "public and scientific data retrieval",
+      "search and metadata access",
+      "research datasets",
+      "statistical or scientific analysis",
+      "data-driven applications"
+    ]
   },
   {
     "name": "data.world",
     "category": "Public / General Data",
-    "url": "https://data.world/settings/advanced"
+    "url": "https://data.world/settings/advanced",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "API data retrieval",
+      "application integrations",
+      "automation workflows",
+      "data processing",
+      "developer applications"
+    ]
   },
   {
     "name": "Eurostat API",
     "category": "Public / General Data",
-    "url": "https://ec.europa.eu/eurostat/web/main/data/web-services"
+    "url": "https://ec.europa.eu/eurostat/web/main/data/web-services",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "text generation and chat",
+      "summarization and rewriting",
+      "question answering",
+      "classification and extraction",
+      "embeddings or semantic search",
+      "AI application backends"
+    ]
   },
   {
     "name": "Figshare API",
     "category": "Public / General Data",
-    "url": "https://docs.figshare.com"
+    "url": "https://docs.figshare.com",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "API data retrieval",
+      "application integrations",
+      "automation workflows",
+      "data processing",
+      "developer applications"
+    ]
   },
   {
     "name": "Kaggle API",
     "category": "Public / General Data",
-    "url": "https://www.kaggle.com/settings"
+    "url": "https://www.kaggle.com/settings",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "API data retrieval",
+      "application integrations",
+      "automation workflows",
+      "data processing",
+      "developer applications"
+    ]
   },
   {
     "name": "NASA Open APIs",
     "category": "Public / General Data",
-    "url": "https://api.nasa.gov"
+    "url": "https://api.nasa.gov",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "public and scientific data retrieval",
+      "search and metadata access",
+      "research datasets",
+      "statistical or scientific analysis",
+      "data-driven applications"
+    ]
   },
   {
     "name": "OpenAQ (air quality)",
     "category": "Public / General Data",
-    "url": "https://docs.openaq.org"
+    "url": "https://docs.openaq.org",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "text generation and chat",
+      "summarization and rewriting",
+      "question answering",
+      "classification and extraction",
+      "embeddings or semantic search",
+      "AI application backends"
+    ]
   },
   {
     "name": "OpenCorporates",
     "category": "Public / General Data",
-    "url": "https://api.opencorporates.com"
+    "url": "https://api.opencorporates.com",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "API data retrieval",
+      "application integrations",
+      "automation workflows",
+      "data processing",
+      "developer applications"
+    ]
   },
   {
     "name": "REST Countries",
     "category": "Public / General Data",
-    "url": "https://restcountries.com"
+    "url": "https://restcountries.com",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "API data retrieval",
+      "application integrations",
+      "automation workflows",
+      "data processing",
+      "developer applications"
+    ]
   },
   {
     "name": "USGS Earthquake API",
     "category": "Public / General Data",
-    "url": "https://earthquake.usgs.gov/fdsnws/event/1/"
+    "url": "https://earthquake.usgs.gov/fdsnws/event/1/",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "public and scientific data retrieval",
+      "search and metadata access",
+      "research datasets",
+      "statistical or scientific analysis",
+      "data-driven applications"
+    ]
   },
   {
     "name": "Wikidata API",
     "category": "Public / General Data",
-    "url": "https://www.wikidata.org/wiki/Wikidata\\:Data_access"
+    "url": "https://www.wikidata.org/wiki/Wikidata\\:Data_access",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "public and scientific data retrieval",
+      "search and metadata access",
+      "research datasets",
+      "statistical or scientific analysis",
+      "data-driven applications"
+    ]
   },
   {
     "name": "Wikipedia API",
     "category": "Public / General Data",
-    "url": "https://www.mediawiki.org/wiki/API\\:Main_page"
+    "url": "https://www.mediawiki.org/wiki/API\\:Main_page",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "text generation and chat",
+      "summarization and rewriting",
+      "question answering",
+      "classification and extraction",
+      "embeddings or semantic search",
+      "AI application backends"
+    ]
   },
   {
     "name": "Zenodo API",
     "category": "Public / General Data",
-    "url": "https://zenodo.org/account/settings/applications/"
+    "url": "https://zenodo.org/account/settings/applications/",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "API data retrieval",
+      "application integrations",
+      "automation workflows",
+      "data processing",
+      "developer applications"
+    ]
   },
   {
     "name": "arXiv API",
     "category": "Public / Scientific Data (additional)",
-    "url": "https://arxiv.org/help/api"
+    "url": "https://arxiv.org/help/api",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "public and scientific data retrieval",
+      "search and metadata access",
+      "research datasets",
+      "statistical or scientific analysis",
+      "data-driven applications"
+    ]
   },
   {
     "name": "CDC Data API",
     "category": "Public / Scientific Data (additional)",
-    "url": "https://data.cdc.gov"
+    "url": "https://data.cdc.gov",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "public and scientific data retrieval",
+      "search and metadata access",
+      "research datasets",
+      "statistical or scientific analysis",
+      "data-driven applications"
+    ]
   },
   {
     "name": "CrossRef API",
     "category": "Public / Scientific Data (additional)",
-    "url": "https://www.crossref.org/documentation/retrieve-metadata/rest-api/"
+    "url": "https://www.crossref.org/documentation/retrieve-metadata/rest-api/",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "public and scientific data retrieval",
+      "search and metadata access",
+      "research datasets",
+      "statistical or scientific analysis",
+      "data-driven applications"
+    ]
   },
   {
     "name": "data.europa.eu",
     "category": "Public / Scientific Data (additional)",
-    "url": "https://data.europa.eu/en"
+    "url": "https://data.europa.eu/en",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "public and scientific data retrieval",
+      "search and metadata access",
+      "research datasets",
+      "statistical or scientific analysis",
+      "data-driven applications"
+    ]
   },
   {
     "name": "GBIF (biodiversity)",
     "category": "Public / Scientific Data (additional)",
-    "url": "https://www.gbif.org/developer/summary"
+    "url": "https://www.gbif.org/developer/summary",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "public and scientific data retrieval",
+      "search and metadata access",
+      "research datasets",
+      "statistical or scientific analysis",
+      "data-driven applications"
+    ]
   },
   {
     "name": "NASA Exoplanet Archive",
     "category": "Public / Scientific Data (additional)",
-    "url": "https://exoplanetarchive.ipac.caltech.edu"
+    "url": "https://exoplanetarchive.ipac.caltech.edu",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "public and scientific data retrieval",
+      "search and metadata access",
+      "research datasets",
+      "statistical or scientific analysis",
+      "data-driven applications"
+    ]
   },
   {
     "name": "OpenAlex",
     "category": "Public / Scientific Data (additional)",
-    "url": "https://openalex.org"
+    "url": "https://openalex.org",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "public and scientific data retrieval",
+      "search and metadata access",
+      "research datasets",
+      "statistical or scientific analysis",
+      "data-driven applications"
+    ]
   },
   {
     "name": "PubMed E-utilities",
     "category": "Public / Scientific Data (additional)",
-    "url": "https://www.ncbi.nlm.nih.gov/books/NBK25501/"
+    "url": "https://www.ncbi.nlm.nih.gov/books/NBK25501/",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "public and scientific data retrieval",
+      "search and metadata access",
+      "research datasets",
+      "statistical or scientific analysis",
+      "data-driven applications"
+    ]
   },
   {
     "name": "Semantic Scholar API",
     "category": "Public / Scientific Data (additional)",
-    "url": "https://www.semanticscholar.org/product/api"
+    "url": "https://www.semanticscholar.org/product/api",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "public and scientific data retrieval",
+      "search and metadata access",
+      "research datasets",
+      "statistical or scientific analysis",
+      "data-driven applications"
+    ]
   },
   {
     "name": "UK data.gov.uk",
     "category": "Public / Scientific Data (additional)",
-    "url": "https://www.data.gov.uk"
+    "url": "https://www.data.gov.uk",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "public and scientific data retrieval",
+      "search and metadata access",
+      "research datasets",
+      "statistical or scientific analysis",
+      "data-driven applications"
+    ]
   },
   {
     "name": "US Census Bureau API",
     "category": "Public / Scientific Data (additional)",
-    "url": "https://api.census.gov/data/key_signup.html"
+    "url": "https://api.census.gov/data/key_signup.html",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "public and scientific data retrieval",
+      "search and metadata access",
+      "research datasets",
+      "statistical or scientific analysis",
+      "data-driven applications"
+    ]
   },
   {
     "name": "WHO API",
     "category": "Public / Scientific Data (additional)",
-    "url": "https://www.who.int/data/gho/info/gho-odata-api"
+    "url": "https://www.who.int/data/gho/info/gho-odata-api",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "public and scientific data retrieval",
+      "search and metadata access",
+      "research datasets",
+      "statistical or scientific analysis",
+      "data-driven applications"
+    ]
   },
   {
     "name": "World Air Quality Index",
     "category": "Public / Scientific Data (additional)",
-    "url": "https://aqicn.org/api/"
+    "url": "https://aqicn.org/api/",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "text generation and chat",
+      "summarization and rewriting",
+      "question answering",
+      "classification and extraction",
+      "embeddings or semantic search",
+      "AI application backends"
+    ]
   },
   {
     "name": "ATTOM Data",
     "category": "Real Estate",
-    "url": "https://api.developer.attomdata.com"
+    "url": "https://api.developer.attomdata.com",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "property data",
+      "real-estate search",
+      "property valuation or enrichment",
+      "real-estate analytics"
+    ]
   },
   {
     "name": "Bridge Interactive (Zillow data)",
     "category": "Real Estate",
-    "url": "https://www.bridgedataoutput.com"
+    "url": "https://www.bridgedataoutput.com",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "property data",
+      "real-estate search",
+      "property valuation or enrichment",
+      "real-estate analytics"
+    ]
   },
   {
     "name": "Estated",
     "category": "Real Estate",
-    "url": "https://estated.com"
+    "url": "https://estated.com",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "property data",
+      "real-estate search",
+      "property valuation or enrichment",
+      "real-estate analytics"
+    ]
   },
   {
     "name": "Bing Web Search API",
     "category": "Search / Scraping / Misc Utility",
-    "url": "https://www.microsoft.com/en-us/bing/apis/bing-web-search-api"
+    "url": "https://www.microsoft.com/en-us/bing/apis/bing-web-search-api",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "web or search result retrieval",
+      "data extraction",
+      "validation and enrichment",
+      "automation and research workflows"
+    ]
   },
   {
     "name": "Clearout (email verification)",
     "category": "Search / Scraping / Misc Utility",
-    "url": "https://clearout.io"
+    "url": "https://clearout.io",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "text generation and chat",
+      "summarization and rewriting",
+      "question answering",
+      "classification and extraction",
+      "embeddings or semantic search",
+      "AI application backends"
+    ]
   },
   {
     "name": "Google Custom Search API",
     "category": "Search / Scraping / Misc Utility",
-    "url": "https://programmablesearchengine.google.com"
+    "url": "https://programmablesearchengine.google.com",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "web or search result retrieval",
+      "data extraction",
+      "validation and enrichment",
+      "automation and research workflows"
+    ]
   },
   {
     "name": "IPGeolocation.io",
     "category": "Search / Scraping / Misc Utility",
-    "url": "https://ipgeolocation.io"
+    "url": "https://ipgeolocation.io",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "geocoding and reverse geocoding",
+      "places and location search",
+      "routing and distance calculations",
+      "maps and map tiles",
+      "location-aware applications"
+    ]
   },
   {
     "name": "Kickbox (email verification)",
     "category": "Search / Scraping / Misc Utility",
-    "url": "https://kickbox.com"
+    "url": "https://kickbox.com",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "text generation and chat",
+      "summarization and rewriting",
+      "question answering",
+      "classification and extraction",
+      "embeddings or semantic search",
+      "AI application backends"
+    ]
   },
   {
     "name": "NumVerify (phone validation)",
     "category": "Search / Scraping / Misc Utility",
-    "url": "https://numverify.com"
+    "url": "https://numverify.com",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "web or search result retrieval",
+      "data extraction",
+      "validation and enrichment",
+      "automation and research workflows"
+    ]
   },
   {
     "name": "Random.org API",
     "category": "Search / Scraping / Misc Utility",
-    "url": "https://api.random.org"
+    "url": "https://api.random.org",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "web or search result retrieval",
+      "data extraction",
+      "validation and enrichment",
+      "automation and research workflows"
+    ]
   },
   {
     "name": "ScrapingBee",
     "category": "Search / Scraping / Misc Utility",
-    "url": "https://www.scrapingbee.com"
+    "url": "https://www.scrapingbee.com",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "web or search result retrieval",
+      "data extraction",
+      "validation and enrichment",
+      "automation and research workflows"
+    ]
   },
   {
     "name": "AbuseIPDB",
     "category": "Security / Threat Intel",
-    "url": "https://www.abuseipdb.com/register"
+    "url": "https://www.abuseipdb.com/register",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "IP/domain reputation checks",
+      "threat intelligence",
+      "malware or URL analysis",
+      "security research",
+      "incident-response workflows"
+    ]
   },
   {
     "name": "Censys API",
     "category": "Security / Threat Intel",
-    "url": "https://search.censys.io/account/api"
+    "url": "https://search.censys.io/account/api",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "web or search result retrieval",
+      "data extraction",
+      "validation and enrichment",
+      "automation and research workflows"
+    ]
   },
   {
     "name": "Have I Been Pwned API",
     "category": "Security / Threat Intel",
-    "url": "https://haveibeenpwned.com/API/Key"
+    "url": "https://haveibeenpwned.com/API/Key",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "IP/domain reputation checks",
+      "threat intelligence",
+      "malware or URL analysis",
+      "security research",
+      "incident-response workflows"
+    ]
   },
   {
     "name": "Shodan API",
     "category": "Security / Threat Intel",
-    "url": "https://developer.shodan.io"
+    "url": "https://developer.shodan.io",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "IP/domain reputation checks",
+      "threat intelligence",
+      "malware or URL analysis",
+      "security research",
+      "incident-response workflows"
+    ]
   },
   {
     "name": "URLScan.io",
     "category": "Security / Threat Intel",
-    "url": "https://urlscan.io/about-api/"
+    "url": "https://urlscan.io/about-api/",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "IP/domain reputation checks",
+      "threat intelligence",
+      "malware or URL analysis",
+      "security research",
+      "incident-response workflows"
+    ]
   },
   {
     "name": "VirusTotal API",
     "category": "Security / Threat Intel",
-    "url": "https://www.virustotal.com/gui/join-us"
+    "url": "https://www.virustotal.com/gui/join-us",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "IP/domain reputation checks",
+      "threat intelligence",
+      "malware or URL analysis",
+      "security research",
+      "incident-response workflows"
+    ]
   },
   {
     "name": "Discord API",
     "category": "Social Media",
-    "url": "https://discord.com/developers/docs/intro"
+    "url": "https://discord.com/developers/docs/intro",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "posts and content access",
+      "user or profile data where permitted",
+      "publishing and messaging",
+      "social analytics",
+      "social integrations"
+    ]
   },
   {
     "name": "Facebook Graph API",
     "category": "Social Media",
-    "url": "https://developers.facebook.com"
+    "url": "https://developers.facebook.com",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "posts and content access",
+      "user or profile data where permitted",
+      "publishing and messaging",
+      "social analytics",
+      "social integrations"
+    ]
   },
   {
     "name": "Instagram Graph API",
     "category": "Social Media",
-    "url": "https://developers.facebook.com/docs/instagram-api/"
+    "url": "https://developers.facebook.com/docs/instagram-api/",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "posts and content access",
+      "user or profile data where permitted",
+      "publishing and messaging",
+      "social analytics",
+      "social integrations"
+    ]
   },
   {
     "name": "LinkedIn API",
     "category": "Social Media",
-    "url": "https://www.linkedin.com/developers/"
+    "url": "https://www.linkedin.com/developers/",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "posts and content access",
+      "user or profile data where permitted",
+      "publishing and messaging",
+      "social analytics",
+      "social integrations"
+    ]
   },
   {
     "name": "Mastodon API",
     "category": "Social Media",
-    "url": "https://docs.joinmastodon.org/api/"
+    "url": "https://docs.joinmastodon.org/api/",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "posts and content access",
+      "user or profile data where permitted",
+      "publishing and messaging",
+      "social analytics",
+      "social integrations"
+    ]
   },
   {
     "name": "Pinterest API",
     "category": "Social Media",
-    "url": "https://developers.pinterest.com"
+    "url": "https://developers.pinterest.com",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "posts and content access",
+      "user or profile data where permitted",
+      "publishing and messaging",
+      "social analytics",
+      "social integrations"
+    ]
   },
   {
     "name": "Telegram Bot API",
     "category": "Social Media",
-    "url": "https://core.telegram.org/bots/api"
+    "url": "https://core.telegram.org/bots/api",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "posts and content access",
+      "user or profile data where permitted",
+      "publishing and messaging",
+      "social analytics",
+      "social integrations"
+    ]
   },
   {
     "name": "TikTok for Developers",
     "category": "Social Media",
-    "url": "https://developers.tiktok.com"
+    "url": "https://developers.tiktok.com",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "posts and content access",
+      "user or profile data where permitted",
+      "publishing and messaging",
+      "social analytics",
+      "social integrations"
+    ]
   },
   {
     "name": "X (Twitter) API",
     "category": "Social Media",
-    "url": "https://developer.twitter.com"
+    "url": "https://developer.twitter.com",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "posts and content access",
+      "user or profile data where permitted",
+      "publishing and messaging",
+      "social analytics",
+      "social integrations"
+    ]
   },
   {
     "name": "API-Football",
     "category": "Sports",
-    "url": "https://www.api-football.com"
+    "url": "https://www.api-football.com",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "scores and fixtures",
+      "teams and player data",
+      "league and tournament data",
+      "sports statistics",
+      "sports applications"
+    ]
   },
   {
     "name": "balldontlie (NBA)",
     "category": "Sports",
-    "url": "https://www.balldontlie.io"
+    "url": "https://www.balldontlie.io",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "scores and fixtures",
+      "teams and player data",
+      "league and tournament data",
+      "sports statistics",
+      "sports applications"
+    ]
   },
   {
     "name": "football-data.org",
     "category": "Sports",
-    "url": "https://www.football-data.org/client/register"
+    "url": "https://www.football-data.org/client/register",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "scores and fixtures",
+      "teams and player data",
+      "league and tournament data",
+      "sports statistics",
+      "sports applications"
+    ]
   },
   {
     "name": "Sportradar",
     "category": "Sports",
-    "url": "https://developer.sportradar.com"
+    "url": "https://developer.sportradar.com",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "geocoding and reverse geocoding",
+      "places and location search",
+      "routing and distance calculations",
+      "maps and map tiles",
+      "location-aware applications"
+    ]
   },
   {
     "name": "TheSportsDB",
     "category": "Sports",
-    "url": "https://www.thesportsdb.com/api.php"
+    "url": "https://www.thesportsdb.com/api.php",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "scores and fixtures",
+      "teams and player data",
+      "league and tournament data",
+      "sports statistics",
+      "sports applications"
+    ]
   },
   {
     "name": "API-Baseball",
     "category": "Sports (additional)",
-    "url": "https://www.api-baseball.com"
+    "url": "https://www.api-baseball.com",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "scores and fixtures",
+      "teams and player data",
+      "league and tournament data",
+      "sports statistics",
+      "sports applications"
+    ]
   },
   {
     "name": "API-Basketball",
     "category": "Sports (additional)",
-    "url": "https://www.api-basketball.com"
+    "url": "https://www.api-basketball.com",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "scores and fixtures",
+      "teams and player data",
+      "league and tournament data",
+      "sports statistics",
+      "sports applications"
+    ]
   },
   {
     "name": "MySportsFeeds",
     "category": "Sports (additional)",
-    "url": "https://www.mysportsfeeds.com"
+    "url": "https://www.mysportsfeeds.com",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "scores and fixtures",
+      "teams and player data",
+      "league and tournament data",
+      "sports statistics",
+      "sports applications"
+    ]
   },
   {
     "name": "SportsDataIO",
     "category": "Sports (additional)",
-    "url": "https://sportsdata.io"
+    "url": "https://sportsdata.io",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "text generation and chat",
+      "summarization and rewriting",
+      "question answering",
+      "classification and extraction",
+      "embeddings or semantic search",
+      "AI application backends"
+    ]
   },
   {
     "name": "Amazon Translate",
     "category": "Translation (additional)",
-    "url": "https://aws.amazon.com/translate/"
+    "url": "https://aws.amazon.com/translate/",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "text translation",
+      "language detection",
+      "multilingual content workflows",
+      "localized applications"
+    ]
   },
   {
     "name": "IBM Watson Language Translator",
     "category": "Translation (additional)",
-    "url": "https://www.ibm.com/products/natural-language-understanding"
+    "url": "https://www.ibm.com/products/natural-language-understanding",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "text generation and chat",
+      "summarization and rewriting",
+      "question answering",
+      "classification and extraction",
+      "embeddings or semantic search",
+      "AI application backends"
+    ]
   },
   {
     "name": "Systran",
     "category": "Translation (additional)",
-    "url": "https://www.systran.net"
+    "url": "https://www.systran.net",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "text translation",
+      "language detection",
+      "multilingual content workflows",
+      "localized applications"
+    ]
   },
   {
     "name": "DeepL API",
     "category": "Translation / Language",
-    "url": "https://www.deepl.com/en/pro-api"
+    "url": "https://www.deepl.com/en/pro-api",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "text generation and chat",
+      "summarization and rewriting",
+      "question answering",
+      "classification and extraction",
+      "embeddings or semantic search",
+      "AI application backends"
+    ]
   },
   {
     "name": "Google Cloud Translation",
     "category": "Translation / Language",
-    "url": "https://console.cloud.google.com/apis/library/translate.googleapis.com"
+    "url": "https://console.cloud.google.com/apis/library/translate.googleapis.com",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "text generation and chat",
+      "summarization and rewriting",
+      "question answering",
+      "classification and extraction",
+      "embeddings or semantic search",
+      "AI application backends"
+    ]
   },
   {
     "name": "LibreTranslate",
     "category": "Translation / Language",
-    "url": "https://portal.libretranslate.com"
+    "url": "https://portal.libretranslate.com",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "text generation and chat",
+      "summarization and rewriting",
+      "question answering",
+      "classification and extraction",
+      "embeddings or semantic search",
+      "AI application backends"
+    ]
   },
   {
     "name": "Lingva/Yandex Translate",
     "category": "Translation / Language",
-    "url": "https://yandex.com/dev/translate/"
+    "url": "https://yandex.com/dev/translate/",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "text generation and chat",
+      "summarization and rewriting",
+      "question answering",
+      "classification and extraction",
+      "embeddings or semantic search",
+      "AI application backends"
+    ]
   },
   {
     "name": "Microsoft Translator",
     "category": "Translation / Language",
-    "url": "https://azure.microsoft.com/en-us/products/ai-services/ai-translator"
+    "url": "https://azure.microsoft.com/en-us/products/ai-services/ai-translator",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "text generation and chat",
+      "summarization and rewriting",
+      "question answering",
+      "classification and extraction",
+      "embeddings or semantic search",
+      "AI application backends"
+    ]
   },
   {
     "name": "AeroDataBox",
     "category": "Travel / Transportation",
-    "url": "https://www.aerodatabox.com"
+    "url": "https://www.aerodatabox.com",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "scores and fixtures",
+      "teams and player data",
+      "league and tournament data",
+      "sports statistics",
+      "sports applications"
+    ]
   },
   {
     "name": "Amadeus for Developers",
     "category": "Travel / Transportation",
-    "url": "https://developers.amadeus.com"
+    "url": "https://developers.amadeus.com",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "scores and fixtures",
+      "teams and player data",
+      "league and tournament data",
+      "sports statistics",
+      "sports applications"
+    ]
   },
   {
     "name": "Aviationstack",
     "category": "Travel / Transportation",
-    "url": "https://aviationstack.com"
+    "url": "https://aviationstack.com",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "scores and fixtures",
+      "teams and player data",
+      "league and tournament data",
+      "sports statistics",
+      "sports applications"
+    ]
   },
   {
     "name": "Booking.com API",
     "category": "Travel / Transportation",
-    "url": "https://developers.booking.com"
+    "url": "https://developers.booking.com",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "scores and fixtures",
+      "teams and player data",
+      "league and tournament data",
+      "sports statistics",
+      "sports applications"
+    ]
   },
   {
     "name": "Lyft API",
     "category": "Travel / Transportation",
-    "url": "https://developer.lyft.com"
+    "url": "https://developer.lyft.com",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "scores and fixtures",
+      "teams and player data",
+      "league and tournament data",
+      "sports statistics",
+      "sports applications"
+    ]
   },
   {
     "name": "Rome2Rio API",
     "category": "Travel / Transportation",
-    "url": "https://www.rome2rio.com/documentation"
+    "url": "https://www.rome2rio.com/documentation",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "scores and fixtures",
+      "teams and player data",
+      "league and tournament data",
+      "sports statistics",
+      "sports applications"
+    ]
   },
   {
     "name": "Skyscanner API",
     "category": "Travel / Transportation",
-    "url": "https://developers.skyscanner.net"
+    "url": "https://developers.skyscanner.net",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "scores and fixtures",
+      "teams and player data",
+      "league and tournament data",
+      "sports statistics",
+      "sports applications"
+    ]
   },
   {
     "name": "TripAdvisor Content API",
     "category": "Travel / Transportation",
-    "url": "https://tripadvisor-content-api.readme.io"
+    "url": "https://tripadvisor-content-api.readme.io",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "scores and fixtures",
+      "teams and player data",
+      "league and tournament data",
+      "sports statistics",
+      "sports applications"
+    ]
   },
   {
     "name": "Uber API",
     "category": "Travel / Transportation",
-    "url": "https://developer.uber.com"
+    "url": "https://developer.uber.com",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "scores and fixtures",
+      "teams and player data",
+      "league and tournament data",
+      "sports statistics",
+      "sports applications"
+    ]
   },
   {
     "name": "Mux API",
     "category": "Video / Streaming",
-    "url": "https://www.mux.com"
+    "url": "https://www.mux.com",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "video metadata",
+      "video uploads and playback",
+      "streaming workflows",
+      "channel or creator data",
+      "video analytics"
+    ]
   },
   {
     "name": "Twitch API",
     "category": "Video / Streaming",
-    "url": "https://dev.twitch.tv"
+    "url": "https://dev.twitch.tv",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "video metadata",
+      "video uploads and playback",
+      "streaming workflows",
+      "channel or creator data",
+      "video analytics"
+    ]
   },
   {
     "name": "Vimeo API",
     "category": "Video / Streaming",
-    "url": "https://developer.vimeo.com"
+    "url": "https://developer.vimeo.com",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "video metadata",
+      "video uploads and playback",
+      "streaming workflows",
+      "channel or creator data",
+      "video analytics"
+    ]
   },
   {
     "name": "YouTube Data API",
     "category": "Video / Streaming",
-    "url": "https://console.cloud.google.com/apis/library/youtube.googleapis.com"
+    "url": "https://console.cloud.google.com/apis/library/youtube.googleapis.com",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "video metadata",
+      "video uploads and playback",
+      "streaming workflows",
+      "channel or creator data",
+      "video analytics"
+    ]
   },
   {
     "name": "AccuWeather API",
     "category": "Weather",
-    "url": "https://developer.accuweather.com"
+    "url": "https://developer.accuweather.com",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "current weather data",
+      "forecast retrieval",
+      "historical weather data",
+      "weather alerts and conditions",
+      "weather dashboards and applications"
+    ]
   },
   {
     "name": "Meteomatics",
     "category": "Weather",
-    "url": "https://www.meteomatics.com/en/sign-up"
+    "url": "https://www.meteomatics.com/en/sign-up",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "current weather data",
+      "forecast retrieval",
+      "historical weather data",
+      "weather alerts and conditions",
+      "weather dashboards and applications"
+    ]
   },
   {
     "name": "NOAA Weather API",
     "category": "Weather",
-    "url": "https://www.weather.gov/documentation/services-web-api"
+    "url": "https://www.weather.gov/documentation/services-web-api",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "current weather data",
+      "forecast retrieval",
+      "historical weather data",
+      "weather alerts and conditions",
+      "weather dashboards and applications"
+    ]
   },
   {
     "name": "OpenWeatherMap",
     "category": "Weather",
-    "url": "https://home.openweathermap.org/users/sign_up"
+    "url": "https://home.openweathermap.org/users/sign_up",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "current weather data",
+      "forecast retrieval",
+      "historical weather data",
+      "weather alerts and conditions",
+      "weather dashboards and applications"
+    ]
   },
   {
     "name": "Tomorrow\\.io",
     "category": "Weather",
-    "url": "https://app.tomorrow.io/signup"
+    "url": "https://app.tomorrow.io/signup",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "current weather data",
+      "forecast retrieval",
+      "historical weather data",
+      "weather alerts and conditions",
+      "weather dashboards and applications"
+    ]
   },
   {
     "name": "Visual Crossing",
     "category": "Weather",
-    "url": "https://www.visualcrossing.com/sign-up"
+    "url": "https://www.visualcrossing.com/sign-up",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "current weather data",
+      "forecast retrieval",
+      "historical weather data",
+      "weather alerts and conditions",
+      "weather dashboards and applications"
+    ]
   },
   {
     "name": "WeatherAPI.com",
     "category": "Weather",
-    "url": "https://www.weatherapi.com/signup.aspx"
+    "url": "https://www.weatherapi.com/signup.aspx",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "current weather data",
+      "forecast retrieval",
+      "historical weather data",
+      "weather alerts and conditions",
+      "weather dashboards and applications"
+    ]
   },
   {
     "name": "Weatherbit",
     "category": "Weather",
-    "url": "https://www.weatherbit.io/account/create"
+    "url": "https://www.weatherbit.io/account/create",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "current weather data",
+      "forecast retrieval",
+      "historical weather data",
+      "weather alerts and conditions",
+      "weather dashboards and applications"
+    ]
   },
   {
     "name": "Ambee (environment)",
     "category": "Weather (additional)",
-    "url": "https://www.getambee.com"
+    "url": "https://www.getambee.com",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "current weather data",
+      "forecast retrieval",
+      "historical weather data",
+      "weather alerts and conditions",
+      "weather dashboards and applications"
+    ]
   },
   {
     "name": "Foreca",
     "category": "Weather (additional)",
-    "url": "https://developer.foreca.com"
+    "url": "https://developer.foreca.com",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "current weather data",
+      "forecast retrieval",
+      "historical weather data",
+      "weather alerts and conditions",
+      "weather dashboards and applications"
+    ]
   },
   {
     "name": "Meteoblue",
     "category": "Weather (additional)",
-    "url": "https://www.meteoblue.com/en/weather-api"
+    "url": "https://www.meteoblue.com/en/weather-api",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "current weather data",
+      "forecast retrieval",
+      "historical weather data",
+      "weather alerts and conditions",
+      "weather dashboards and applications"
+    ]
   },
   {
     "name": "Open-Meteo",
     "category": "Weather (additional)",
-    "url": "https://open-meteo.com"
+    "url": "https://open-meteo.com",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "current weather data",
+      "forecast retrieval",
+      "historical weather data",
+      "weather alerts and conditions",
+      "weather dashboards and applications"
+    ]
   },
   {
     "name": "StormGlass (marine)",
     "category": "Weather (additional)",
-    "url": "https://stormglass.io"
+    "url": "https://stormglass.io",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "current weather data",
+      "forecast retrieval",
+      "historical weather data",
+      "weather alerts and conditions",
+      "weather dashboards and applications"
+    ]
   },
   {
     "name": "Weatherstack",
     "category": "Weather (additional)",
-    "url": "https://weatherstack.com"
+    "url": "https://weatherstack.com",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "current weather data",
+      "forecast retrieval",
+      "historical weather data",
+      "weather alerts and conditions",
+      "weather dashboards and applications"
+    ]
   },
   {
     "name": "Xweather (Aeris)",
     "category": "Weather (additional)",
-    "url": "https://www.xweather.com"
+    "url": "https://www.xweather.com",
+    "tier_verification_url": null,
+    "tier_verification_status": "not-identified",
+    "uses": [
+      "current weather data",
+      "forecast retrieval",
+      "historical weather data",
+      "weather alerts and conditions",
+      "weather dashboards and applications"
+    ]
   }
 ]
