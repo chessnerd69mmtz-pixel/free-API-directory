@@ -1,6 +1,9 @@
 const DATA_URL = new URL("data/provider_profiles.json", document.baseURI).href;
 const CHANGE_URL = new URL("data/change_log.json", document.baseURI).href;
 const HASH_URL = new URL("data/source_hashes.json", document.baseURI).href;
+const PUBLIC_API_LISTS_URL = "https://public-api-lists.github.io/public-api-lists/api/all.json";
+const PUBLIC_APIS_URL = "https://api.publicapis.org/entries";
+const CATALOG_TARGET = 1000;
 
 let APIS = Array.isArray(window.API_CATALOG) ? window.API_CATALOG : [];
 
@@ -57,10 +60,77 @@ async function getJson(url) {
   return response.json();
 }
 
+function normalizeExternalEntry(x, source, categoryHint) {
+  const name = x.name || x.API || x.title;
+  const description = x.description || x.Description || "Community-listed public API.";
+  const url = x.url || x.Link || x.link || x.provider_url || "";
+  if (!name || !url) return null;
+  const auth = x.auth || x.Auth || "No";
+  const category = x.category || x.Category || categoryHint || "General";
+  const requiresKey = auth && String(auth).toLowerCase() !== "no";
+  return {
+    name: String(name),
+    category: String(category),
+    description: String(description),
+    signup_url: requiresKey ? url : url,
+    pricing_url: null,
+    documentation_url: url,
+    free_tier: {
+      has_free_tier: true,
+      type: "community-listed-free",
+      details: "Listed by a community-maintained directory as a free public API. Exact provider quota, card requirement, commercial-use terms, and current availability should be confirmed on the official provider site.",
+      amount: "Not independently quantified",
+      expiry: "Not independently verified"
+    },
+    requires_credit_card: "Unverified",
+    authentication: String(auth),
+    protocols: [String(x.https || x.HTTPS || "").toLowerCase() === "yes" ? "HTTPS" : "HTTP/HTTPS"],
+    sdk_languages: [],
+    commercial_use: "Unverified; check provider terms.",
+    self_hostable: "Unverified",
+    webhooks: "Unverified",
+    rate_limit: "Unverified",
+    free_tier_reset: "Unverified",
+    uses: [String(category), String(description)],
+    last_verified: null,
+    verified_by: source,
+    status: "upstream-community",
+    verification_status: "community-free-source",
+    verification_sources: { provider: url }
+  };
+}
+
 async function loadApis() {
   if (APIS.length) return APIS;
-  APIS = await getJson(DATA_URL);
-  if (!Array.isArray(APIS)) throw new Error("The provider catalog is not a valid JSON array.");
+  const local = await getJson(DATA_URL);
+  if (!Array.isArray(local)) throw new Error("The provider catalog is not a valid JSON array.");
+  APIS = [...local];
+  const seen = new Set(local.map(p => String(p.name || "").trim().toLowerCase()).filter(Boolean));
+  const urls = new Set(local.map(p => String(p.verification_sources?.provider || p.documentation_url || p.signup_url || "").trim().toLowerCase()).filter(Boolean));
+
+  const external = await Promise.allSettled([
+    getJson(PUBLIC_API_LISTS_URL),
+    getJson(PUBLIC_APIS_URL)
+  ]);
+
+  for (let i = 0; i < external.length && APIS.length < CATALOG_TARGET; i++) {
+    if (external[i].status !== "fulfilled") continue;
+    const payload = external[i].value;
+    const entries = Array.isArray(payload) ? payload :
+      Array.isArray(payload?.entries) ? payload.entries :
+      Array.isArray(payload?.data) ? payload.data : [];
+    for (const raw of entries) {
+      if (APIS.length >= CATALOG_TARGET) break;
+      const p = normalizeExternalEntry(raw, i === 0 ? "public-api-lists-community" : "public-apis-community");
+      if (!p) continue;
+      const key = p.name.trim().toLowerCase();
+      const url = p.documentation_url.trim().toLowerCase();
+      if (seen.has(key) || (url && urls.has(url))) continue;
+      seen.add(key);
+      if (url) urls.add(url);
+      APIS.push(p);
+    }
+  }
   return APIS;
 }
 
