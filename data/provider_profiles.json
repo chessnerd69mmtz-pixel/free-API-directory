@@ -11552,15 +11552,20 @@
       "amount": "Unverified",
       "expiry": "Unverified"
     },
-    "requires_credit_card": "Unverified",
-    "authentication": "Unverified",
-    "protocols": [],
+    "requires_credit_card": false,
+    "authentication": "None",
+    "protocols": [
+      "HTTP",
+      "HTTPS",
+      "GET",
+      "POST"
+    ],
     "sdk_languages": [],
-    "commercial_use": "Unverified",
-    "self_hostable": "Unverified",
-    "webhooks": "Unverified",
-    "rate_limit": "Unverified",
-    "free_tier_reset": "Unverified",
+    "commercial_use": "Yes; the API is published as free for commercial and non-commercial use, subject to its terms and fair-use requirements",
+    "self_hostable": "Unavailable",
+    "webhooks": "Unavailable",
+    "rate_limit": "No numeric rate limit is published; fair-use restrictions apply",
+    "free_tier_reset": "Unavailable",
     "uses": [
       "data retrieval",
       "search/query operations",
@@ -11569,10 +11574,24 @@
       "automation workflows",
       "developer applications"
     ],
-    "last_verified": null,
-    "verified_by": null,
-    "status": "catalog-only",
-    "verification_status": "provider-homepage-fallback"
+    "last_verified": "2026-09-25",
+    "verified_by": "official-source-verification",
+    "status": "active",
+    "verification_status": "manually-verified",
+    "verification_sources": {
+      "provider": "https://goqr.me/",
+      "requires_credit_card": "https://goqr.me/api/",
+      "authentication": "https://goqr.me/api/",
+      "protocols": "https://goqr.me/api/",
+      "sdk_languages": "https://goqr.me/api/",
+      "commercial_use": "https://goqr.me/api/",
+      "self_hostable": "https://goqr.me/api/",
+      "webhooks": "https://goqr.me/api/",
+      "rate_limit": "https://goqr.me/api/",
+      "free_tier_reset": "https://goqr.me/api/",
+      "documentation_url": "https://goqr.me/api/",
+      "pricing_url": "https://goqr.me/api/"
+    }
   },
   {
     "name": "RandomUser.me",
