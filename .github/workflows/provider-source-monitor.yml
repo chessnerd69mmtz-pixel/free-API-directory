@@ -16,6 +16,12 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Synchronize profiles
+        run: python scripts/generate_profiles.py
+
+      - name: Validate profiles
+        run: python scripts/validate_profiles.py
+
       - name: Check official source pages
         run: python scripts/update_source_changes.py
 
@@ -23,6 +29,6 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/source_hashes.json data/change_log.json
+          git add data/provider_profiles.json data/source_hashes.json data/change_log.json
           git diff --cached --quiet || git commit -m "Update provider source change log"
           git push
