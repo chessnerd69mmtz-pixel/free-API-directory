@@ -15,7 +15,7 @@ This repository is deliberately conservative:
 
 ## Current catalog
 
-The authoritative source is [data/providers.json](data/providers.json). Generated category tables are under [docs/providers](docs/providers).
+The authoritative curated source is [data/providers.json](data/providers.json). The live website also merges maintained community-free public API indexes and caps the discovery pool at 1,000 entries. Upstream records are marked `community-free-source` and are not treated as independently verified provider quotas. Generated category tables are under [docs/providers](docs/providers).
 
 Run locally:
 
@@ -58,4 +58,4 @@ The website never requires an API key belonging to the directory owner. Unknown 
 
 ## September 2026 expansion
 
-The catalog now contains **576 unique provider records**. The latest expansion added **237 previously absent providers** from a 250-entry candidate pool; 13 names were already present and were deduplicated. Candidate entries are intentionally marked **candidate / candidate-unverified** until their current free access, key page, pricing, and limits are checked against official provider sources.
+The curated catalog contains **576 local provider records**. The website now expands the live discovery pool to **1,000 entries** by merging maintained community-free API indexes, including Public API Lists and the Public APIs directory. The live merge deduplicates local records first and caps the combined pool at 1,000. Community-sourced records are clearly marked `community-free-source`; their existence/free classification comes from the upstream directory and does not mean their exact quotas, card requirements, commercial terms, or current uptime have been independently verified. The 237 earlier candidate entries remain explicitly marked **candidate / candidate-unverified** until their current provider-side details are verified.
