@@ -11,4 +11,5 @@ jobs:
         with:
           python-version: '3.x'
       - run: python scripts/validate.py
+      - run: python scripts/validate_profiles.py
       - run: python scripts/generate_tables.py
