@@ -2,9 +2,10 @@
 window.API_CATALOG = [];
 (async () => {
   try {
-    const [local, expansion] = await Promise.all([
+    const [local, expansion, listsExpansion] = await Promise.all([
       fetch("data/provider_profiles.json",{cache:"no-store"}).then(r=>r.json()),
-      fetch("data/public_apis_expansion.json",{cache:"no-store"}).then(r=>r.json())
+      fetch("data/public_apis_expansion.json",{cache:"no-store"}).then(r=>r.json()),
+      fetch("data/public_api_lists_expansion.json",{cache:"no-store"}).then(r=>r.json())
     ]);
     const seen = new Set();
     const normalize = x => x.provider_url ? {
@@ -20,9 +21,9 @@ window.API_CATALOG = [];
       verification_status:"community-free-source",
       verification_sources:{provider:x.provider_url}
     } : x;
-    window.API_CATALOG = [...local,...(expansion.providers||[]).map(normalize)]
+    window.API_CATALOG = [...local,...(expansion.providers||[]).map(normalize),...(listsExpansion.providers||[]).map(normalize)]
       .filter(x => { const k=String(x.name||"").toLowerCase(); if(seen.has(k)) return false; seen.add(k); return true; })
-      .slice(0,2500);
+      .slice(0,2750);
     window.dispatchEvent(new Event("api-catalog-ready"));
   } catch (_) {}
 })();
