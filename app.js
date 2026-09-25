@@ -25,6 +25,7 @@ function uses(list) {
 
 function freeTier(p) {
   const v = p.free_tier?.has_free_tier;
+  if (p.verification_status === "community-free-source") return '<span class="pill good">Community-listed free</span>';
   if (v === true) return '<span class="pill good">Free access recorded</span>';
   if (v === false) return '<span class="pill">No free tier recorded</span>';
   return '<span class="pill warn">Unverified</span>';
@@ -137,7 +138,7 @@ async function loadApis() {
 async function finder() {
   const a = await loadApis();
   shell(
-    '<section class="hero"><h1>Find an API</h1><p>Search by provider, category or capability.</p></section>' +
+    '<section class="hero"><h1>Find an API</h1><p>Search the live 1,000-provider discovery pool by provider, category or capability. Curated records and upstream community-free records are clearly distinguished.</p></section>' +
     '<div class="card tool"><input id="q" class="input" placeholder="Search APIs…">' +
     '<select id="f" class="select"><option value="">Free status: any</option><option value="yes">Free access recorded</option><option value="unknown">Free status unverified</option></select>' +
     '<select id="c" class="select"><option value="">Card requirement: any</option><option value="no">No card recorded</option><option value="unknown">Unverified</option></select></div>' +
