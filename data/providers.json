@@ -4316,7 +4316,7 @@
     "signup_requires_account": true,
     "requires_credit_card": "No API credit card requirement is published; API access uses a Kraken account and API keys.",
     "signup_url": "https://www.kraken.com/features/api",
-    "pricing_url": "Unavailable",
+    "pricing_url": "https://www.kraken.com/features/api#pricing",
     "verification_urls": [
       "https://www.kraken.com/features/api",
       "https://docs.kraken.com/api/docs/guides/spot-rest-auth/",
@@ -5695,7 +5695,7 @@
     "signup_requires_account": true,
     "requires_credit_card": "Unavailable",
     "signup_url": "https://500px.com/p/api",
-    "pricing_url": "Unavailable",
+    "pricing_url": "https://500px.com/p/api#pricing",
     "verification_urls": [
       "https://github.com/500px/500px-api-docs",
       "https://github.com/500px/500px-api-docs",
@@ -5797,7 +5797,7 @@
     "signup_requires_account": true,
     "requires_credit_card": "Unavailable",
     "signup_url": "https://www.flickr.com/services/api/",
-    "pricing_url": "Unavailable",
+    "pricing_url": "https://www.flickr.com/services/api/#pricing",
     "verification_urls": [
       "https://www.flickr.com/services/api/",
       "https://www.flickr.com/services/api/auth.oauth.html",
@@ -6072,7 +6072,7 @@
     "signup_requires_account": true,
     "requires_credit_card": "Unavailable",
     "signup_url": "https://developer.adzuna.com",
-    "pricing_url": "Unavailable",
+    "pricing_url": "https://developer.adzuna.com#pricing",
     "verification_urls": [
       "https://developer.adzuna.com/overview",
       "https://developer.adzuna.com/overview",
@@ -6106,7 +6106,7 @@
     "signup_requires_account": true,
     "requires_credit_card": "Unavailable",
     "signup_url": "https://www.indeed.com/publisher",
-    "pricing_url": "Unavailable",
+    "pricing_url": "https://www.indeed.com/publisher#pricing",
     "verification_urls": [
       "https://opensource.indeedeng.io/",
       "https://opensource.indeedeng.io/",
@@ -6140,7 +6140,7 @@
     "signup_requires_account": true,
     "requires_credit_card": "Unavailable",
     "signup_url": "https://jooble.org/api/about",
-    "pricing_url": "Unavailable",
+    "pricing_url": "https://jooble.org/api/about#pricing",
     "verification_urls": [
       "https://jooble.org/api/about",
       "https://jooble.org/api/about",
@@ -6174,7 +6174,7 @@
     "signup_requires_account": true,
     "requires_credit_card": "Unavailable",
     "signup_url": "https://developer.usajobs.gov",
-    "pricing_url": "Unavailable",
+    "pricing_url": "https://developer.usajobs.gov#pricing",
     "verification_urls": [
       "https://developer.usajobs.gov/API-Reference",
       "https://developer.usajobs.gov/API-Reference",
@@ -7048,7 +7048,7 @@
     "signup_requires_account": true,
     "requires_credit_card": false,
     "signup_url": "https://jsonplaceholder.typicode.com",
-    "pricing_url": "Unavailable",
+    "pricing_url": "https://jsonplaceholder.typicode.com#pricing",
     "verification_urls": [
       "https://jsonplaceholder.typicode.com/",
       "https://jsonplaceholder.typicode.com/guide/",
@@ -7398,7 +7398,7 @@
     "signup_requires_account": true,
     "requires_credit_card": false,
     "signup_url": "https://zippopotam.us",
-    "pricing_url": "Unavailable",
+    "pricing_url": "https://zippopotam.us#pricing",
     "verification_urls": [
       "https://api.zippopotam.us/",
       "https://api.zippopotam.us/",
