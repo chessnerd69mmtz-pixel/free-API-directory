@@ -27,6 +27,12 @@ python scripts/check_links.py
 
 No API keys are stored in this repository.
 
+## Directory table
+
+**[Open the complete provider table →](docs/providers/all.md)**
+
+The table contains all 339 catalogued providers, their categories, provider/API-key links, tier/pricing links, and major functions & capabilities.
+
 ## Contributing
 
 See [CONTRIBUTING.md](CONTRIBUTING.md).
