@@ -1,321 +1,317 @@
 # Additional Provider URLs
 
-This file contains unique provider URLs imported from the supplied source list. Providers already present in `data/providers.json`, duplicate provider names, and duplicate URLs were excluded.
-
-**URL catalog only:** no free-tier, credit-card, expiry, or verification claims are made for these additions.
-
-| Provider | Category | URL |
-|---|---|---|
-| AI21 Labs | AI / ML | https://studio.ai21.com |
-| AssemblyAI (speech-to-text) | AI / ML | https://www.assemblyai.com/dashboard/signup |
-| Clarifai (vision) | AI / ML | https://clarifai.com/signup |
-| Perplexity API | AI / ML | https://www.perplexity.ai/settings/api |
-| Roboflow (vision) | AI / ML | https://app.roboflow.com |
-| Stability AI | AI / ML | https://platform.stability.ai |
-| Together AI | AI / ML | https://api.together.ai |
-| Amazon Comprehend | AI / ML (additional) | https://aws.amazon.com/comprehend/ |
-| Amazon Polly | AI / ML (additional) | https://aws.amazon.com/polly/ |
-| Amazon Rekognition | AI / ML (additional) | https://aws.amazon.com/rekognition/ |
-| Amazon Transcribe | AI / ML (additional) | https://aws.amazon.com/transcribe/ |
-| Baseten | AI / ML (additional) | https://www.baseten.co |
-| Dialogflow (Google) | AI / ML (additional) | https://dialogflow.cloud.google.com |
-| Fireworks AI | AI / ML (additional) | https://fireworks.ai |
-| Google Cloud Natural Language | AI / ML (additional) | https://console.cloud.google.com/apis/library/language.googleapis.com |
-| Google Cloud Vision API | AI / ML (additional) | https://console.cloud.google.com/apis/library/vision.googleapis.com |
-| IBM Watson (Cloud) | AI / ML (additional) | https://cloud.ibm.com/registration |
-| Jina AI | AI / ML (additional) | https://jina.ai |
-| Microsoft Azure AI Services | AI / ML (additional) | https://azure.microsoft.com/en-us/products/ai-services |
-| Modal | AI / ML (additional) | https://modal.com |
-| RunPod | AI / ML (additional) | https://www.runpod.io |
-| Voyage AI (embeddings) | AI / ML (additional) | https://www.voyageai.com |
-| Wit.ai (Meta) | AI / ML (additional) | https://wit.ai |
-| Amplitude API | Analytics | https://amplitude.com |
-| Google Analytics API | Analytics | https://developers.google.com/analytics |
-| Mixpanel API | Analytics | https://mixpanel.com |
-| Segment API | Analytics | https://segment.com |
-| Alchemy API | Blockchain / Web3 | https://www.alchemy.com |
-| Infura API | Blockchain / Web3 | https://www.infura.io |
-| Moralis API | Blockchain / Web3 | https://moralis.io |
-| QuickNode | Blockchain / Web3 | https://www.quicknode.com |
-| The Graph | Blockchain / Web3 | https://thegraph.com |
-| Ably (realtime) | Dev Tools / Infra | https://ably.com/sign-up |
-| Airtable API | Dev Tools / Infra | https://airtable.com/create/tokens |
-| Algolia Search | Dev Tools / Infra | https://www.algolia.com/users/sign_up |
-| Auth0 | Dev Tools / Infra | https://auth0.com/signup |
-| AWS (free tier) | Dev Tools / Infra | https://aws.amazon.com/free/ |
-| Cloudflare API | Dev Tools / Infra | https://dash.cloudflare.com/profile/api-tokens |
-| Firebase | Dev Tools / Infra | https://console.firebase.google.com |
-| GitHub API | Dev Tools / Infra | https://github.com/settings/tokens |
-| GitLab API | Dev Tools / Infra | https://gitlab.com/-/profile/personal_access_tokens |
-| Netlify API | Dev Tools / Infra | https://app.netlify.com/user/applications |
-| Notion API | Dev Tools / Infra | https://www.notion.so/my-integrations |
-| PostHog | Dev Tools / Infra | https://app.posthog.com/signup |
-| Pusher | Dev Tools / Infra | https://dashboard.pusher.com/accounts/sign_up |
-| Sentry | Dev Tools / Infra | https://sentry.io/signup/ |
-| Stripe (test keys) | Dev Tools / Infra | https://dashboard.stripe.com/register |
-| Supabase | Dev Tools / Infra | https://supabase.com/dashboard |
-| Vercel API | Dev Tools / Infra | https://vercel.com/account/tokens |
-| Bitly API | Dev Tools / Infra (additional) | https://bitly.com |
-| Contentful | Dev Tools / Infra (additional) | https://www.contentful.com |
-| DigitalOcean API | Dev Tools / Infra (additional) | https://cloud.digitalocean.com/account/api/tokens |
-| Fauna | Dev Tools / Infra (additional) | https://fauna.com |
-| Heroku Platform API | Dev Tools / Infra (additional) | https://devcenter.heroku.com/articles/platform-api-reference |
-| Linode API | Dev Tools / Infra (additional) | https://cloud.linode.com/profile/tokens |
-| MongoDB Atlas | Dev Tools / Infra (additional) | https://www.mongodb.com/cloud/atlas |
-| Neon (Postgres) | Dev Tools / Infra (additional) | https://neon.tech |
-| PlanetScale | Dev Tools / Infra (additional) | https://planetscale.com |
-| Postman API Platform | Dev Tools / Infra (additional) | https://www.postman.com |
-| Railway | Dev Tools / Infra (additional) | https://railway.app |
-| RapidAPI Marketplace | Dev Tools / Infra (additional) | https://rapidapi.com |
-| Redis Cloud | Dev Tools / Infra (additional) | https://redis.com/try-free/ |
-| Render | Dev Tools / Infra (additional) | https://render.com |
-| Sanity.io | Dev Tools / Infra (additional) | https://www.sanity.io |
-| Strapi Cloud | Dev Tools / Infra (additional) | https://strapi.io |
-| TinyURL API | Dev Tools / Infra (additional) | https://tinyurl.com/app |
-| Upstash | Dev Tools / Infra (additional) | https://upstash.com |
-| Amazon Product Advertising API | E-commerce / Shopping | https://webservices.amazon.com/paapi5/documentation/ |
-| BigCommerce API | E-commerce / Shopping | https://developer.bigcommerce.com |
-| eBay API | E-commerce / Shopping | https://developer.ebay.com |
-| Etsy API | E-commerce / Shopping | https://developers.etsy.com |
-| PayPal API | E-commerce / Shopping | https://developer.paypal.com |
-| Shopify Admin API | E-commerce / Shopping | https://shopify.dev |
-| Square API | E-commerce / Shopping | https://developer.squareup.com |
-| WooCommerce REST API | E-commerce / Shopping | https://woocommerce.github.io/woocommerce-rest-api-docs/ |
-| Bandwidth | Email / SMS (additional) | https://dashboard.bandwidth.com |
-| ClickSend | Email / SMS (additional) | https://dashboard.clicksend.com |
-| EmailJS | Email / SMS (additional) | https://www.emailjs.com |
-| Infobip | Email / SMS (additional) | https://www.infobip.com |
-| Mailtrap | Email / SMS (additional) | https://mailtrap.io |
-| Sinch | Email / SMS (additional) | https://dashboard.sinch.com |
-| SparkPost | Email / SMS (additional) | https://app.sparkpost.com/join |
-| Telnyx | Email / SMS (additional) | https://portal.telnyx.com |
-| TextMagic | Email / SMS (additional) | https://www.textmagic.com |
-| Brevo (Sendinblue) | Email / SMS / Communication | https://onboarding.brevo.com/account/register |
-| Mailgun | Email / SMS / Communication | https://signup.mailgun.com/new/signup |
-| Mailjet | Email / SMS / Communication | https://app.mailjet.com/signup |
-| MessageBird | Email / SMS / Communication | https://dashboard.messagebird.com/en/sign-up |
-| Plivo | Email / SMS / Communication | https://console.plivo.com/accounts/register/ |
-| Postmark | Email / SMS / Communication | https://account.postmarkapp.com/sign_up |
-| Vonage (Nexmo) | Email / SMS / Communication | https://dashboard.nexmo.com/sign-up |
-| Zoho ZeptoMail | Email / SMS / Communication | https://www.zoho.com/zeptomail/ |
-| Alpaca (trading) | Finance / Crypto (additional) | https://alpaca.markets |
-| Binance API | Finance / Crypto (additional) | https://www.binance.com/en/binance-api |
-| BscScan | Finance / Crypto (additional) | https://bscscan.com/apis |
-| Coinbase API | Finance / Crypto (additional) | https://docs.cloud.coinbase.com |
-| CryptoCompare | Finance / Crypto (additional) | https://min-api.cryptocompare.com |
-| Etherscan | Finance / Crypto (additional) | https://etherscan.io/apis |
-| Financial Modeling Prep | Finance / Crypto (additional) | https://site.financialmodelingprep.com/developer/docs |
-| Kraken API | Finance / Crypto (additional) | https://www.kraken.com/features/api |
-| Marketstack | Finance / Crypto (additional) | https://marketstack.com |
-| Messari | Finance / Crypto (additional) | https://messari.io/api |
-| Nasdaq Data Link (Quandl) | Finance / Crypto (additional) | https://data.nasdaq.com |
-| Tradier | Finance / Crypto (additional) | https://tradier.com |
-| CoinAPI | Finance / Crypto / Economics | https://www.coinapi.io/signup |
-| CoinGecko API | Finance / Crypto / Economics | https://www.coingecko.com/en/api |
-| CoinMarketCap API | Finance / Crypto / Economics | https://coinmarketcap.com/api/ |
-| Currencylayer | Finance / Crypto / Economics | https://currencylayer.com/product |
-| ExchangeRate-API | Finance / Crypto / Economics | https://www.exchangerate-api.com |
-| Federal Reserve (FRED) | Finance / Crypto / Economics | https://fred.stlouisfed.org/docs/api/api_key.html |
-| Finnhub | Finance / Crypto / Economics | https://finnhub.io/register |
-| Fixer.io | Finance / Crypto / Economics | https://fixer.io/product |
-| IEX Cloud | Finance / Crypto / Economics | https://iexcloud.io/console/ |
-| Open Exchange Rates | Finance / Crypto / Economics | https://openexchangerates.org/signup/free |
-| Plaid (banking) | Finance / Crypto / Economics | https://dashboard.plaid.com/signup |
-| Polygon.io | Finance / Crypto / Economics | https://polygon.io/dashboard/signup |
-| Twelve Data | Finance / Crypto / Economics | https://twelvedata.com/register |
-| World Bank API | Finance / Crypto / Economics | https://datahelpdesk.worldbank.org/knowledgebase/articles/889392 |
-| Open Food Facts API | Food | https://world.openfoodfacts.org/data |
-| TheCocktailDB | Food | https://www.thecocktaildb.com/api.php |
-| TheMealDB | Food | https://www.themealdb.com/api.php |
-| Yelp Fusion API | Food | https://www.yelp.com/developers |
-| Battle.net API | Gaming | https://develop.battle.net |
-| Riot Games API | Gaming | https://developer.riotgames.com |
-| Steam Web API | Gaming | https://steamcommunity.com/dev |
-| CMS.gov Data API | Health / Fitness | https://data.cms.gov |
-| Fitbit API | Health / Fitness | https://dev.fitbit.com |
-| Human API | Health / Fitness | https://www.humanapi.co |
-| openFDA API | Health / Fitness | https://open.fda.gov |
-| Strava API | Health / Fitness | https://developers.strava.com |
-| Withings API | Health / Fitness | https://developer.withings.com |
-| Cloudinary | Images / Media | https://cloudinary.com/users/register/free |
-| Giphy API | Images / Media | https://developers.giphy.com |
-| imgix | Images / Media | https://www.imgix.com/signup |
-| Pexels API | Images / Media | https://www.pexels.com/api/ |
-| Pixabay API | Images / Media | https://pixabay.com/api/docs/ |
-| remove.bg | Images / Media | https://www.remove.bg/api |
-| TinyPNG API | Images / Media | https://tinypng.com/developers |
-| Unsplash API | Images / Media | https://unsplash.com/developers |
-| 500px API | Images / Media (additional) | https://500px.com/p/api |
-| Adobe Stock API | Images / Media (additional) | https://developer.adobe.com/stock/ |
-| DeepAI | Images / Media (additional) | https://deepai.org |
-| Flickr API | Images / Media (additional) | https://www.flickr.com/services/api/ |
-| Getty Images API | Images / Media (additional) | https://developers.gettyimages.com |
-| Imagga | Images / Media (additional) | https://imagga.com |
-| OCR.space | Images / Media (additional) | https://ocr.space/ocrapi |
-| Shutterstock API | Images / Media (additional) | https://developer.shutterstock.com |
-| Blynk API | IoT | https://blynk.io |
-| Particle.io API | IoT | https://www.particle.io |
-| ThingSpeak API | IoT | https://thingspeak.com |
-| Adzuna API | Jobs / Recruiting | https://developer.adzuna.com |
-| Indeed Publisher API | Jobs / Recruiting | https://www.indeed.com/publisher |
-| Jooble API | Jobs / Recruiting | https://jooble.org/api/about |
-| USAJobs API | Jobs / Recruiting | https://developer.usajobs.gov |
-| Abstract API (geolocation) | Maps / Geocoding / Location | https://www.abstractapi.com/api/ip-geolocation-api |
-| Geoapify | Maps / Geocoding / Location | https://myprojects.geoapify.com/register |
-| Google Maps Platform | Maps / Geocoding / Location | https://console.cloud.google.com/google/maps-apis |
-| HERE API | Maps / Geocoding / Location | https://developer.here.com/sign-up |
-| ip-api.com | Maps / Geocoding / Location | https://members.ip-api.com/register |
-| IPinfo | Maps / Geocoding / Location | https://ipinfo.io/signup |
-| ipstack | Maps / Geocoding / Location | https://ipstack.com/product |
-| OpenCage Geocoding | Maps / Geocoding / Location | https://opencagedata.com/users/sign_up |
-| Positionstack | Maps / Geocoding / Location | https://positionstack.com/signup/free |
-| TomTom Maps | Maps / Geocoding / Location | https://developer.tomtom.com/user/register |
-| Bing Maps API | Maps / Location (additional) | https://www.bingmapsportal.com |
-| Foursquare Places API | Maps / Location (additional) | https://developer.foursquare.com |
-| Geocodio | Maps / Location (additional) | https://www.geocod.io |
-| GeoNames | Maps / Location (additional) | http://www.geonames.org/export/web-services.html |
-| Nominatim (OpenStreetMap) | Maps / Location (additional) | https://nominatim.org |
-| Radar.io | Maps / Location (additional) | https://radar.com |
-| SmartyStreets | Maps / Location (additional) | https://www.smarty.com |
-| Bright Data | Miscellaneous / Utility | https://brightdata.com/cp/start |
-| Calendarific (holidays) | Miscellaneous / Utility | https://calendarific.com/signup |
-| Clearbit | Miscellaneous / Utility | https://dashboard.clearbit.com/signup |
-| Diffbot | Miscellaneous / Utility | https://www.diffbot.com/plans/trial/ |
-| Edamam (nutrition/recipes) | Miscellaneous / Utility | https://developer.edamam.com |
-| Hunter.io | Miscellaneous / Utility | https://hunter.io/users/sign_up |
-| IPQualityScore | Miscellaneous / Utility | https://www.ipqualityscore.com/create-account |
-| JSONPlaceholder (fake data) | Miscellaneous / Utility | https://jsonplaceholder.typicode.com |
-| Mockaroo | Miscellaneous / Utility | https://www.mockaroo.com/api/docs |
-| Nutritionix API | Miscellaneous / Utility | https://developer.nutritionix.com |
-| PokéAPI | Miscellaneous / Utility | https://pokeapi.co |
-| QR Code API (goqr.me) | Miscellaneous / Utility | https://goqr.me/api/ |
-| RandomUser.me | Miscellaneous / Utility | https://randomuser.me/documentation |
-| ScraperAPI | Miscellaneous / Utility | https://www.scraperapi.com/signup |
-| Spoonacular (recipes) | Miscellaneous / Utility | https://spoonacular.com/food-api |
-| Wolfram Alpha API | Miscellaneous / Utility | https://developer.wolframalpha.com |
-| ZeroBounce | Miscellaneous / Utility | https://www.zerobounce.net/members/register |
-| Zippopotam.us (zip codes) | Miscellaneous / Utility | https://zippopotam.us |
-| Discogs API | Music / Entertainment | https://www.discogs.com/settings/developers |
-| Genius API | Music / Entertainment | https://genius.com/api-clients |
-| IGDB (games) | Music / Entertainment | https://api-docs.igdb.com |
-| Last.fm API | Music / Entertainment | https://www.last.fm/api/account/create |
-| OMDb API | Music / Entertainment | https://www.omdbapi.com/apikey.aspx |
-| RAWG (video games) | Music / Entertainment | https://rawg.io/apidocs |
-| Spotify Web API | Music / Entertainment | https://developer.spotify.com/dashboard |
-| TMDB (movies) | Music / Entertainment | https://www.themoviedb.org/settings/api |
-| Apple Music API | Music / Entertainment (additional) | https://developer.apple.com/musickit/ |
-| Deezer API | Music / Entertainment (additional) | https://developers.deezer.com |
-| Jamendo API | Music / Entertainment (additional) | https://developer.jamendo.com |
-| Musixmatch API | Music / Entertainment (additional) | https://developer.musixmatch.com |
-| SoundCloud API | Music / Entertainment (additional) | https://developers.soundcloud.com |
-| TheAudioDB | Music / Entertainment (additional) | https://www.theaudiodb.com/api_guide.php |
-| Aylien News API | News (additional) | https://aylien.com/news-api |
-| Bing News Search API | News (additional) | https://www.microsoft.com/en-us/bing/apis/bing-news-search-api |
-| Webz.io News API | News (additional) | https://webz.io |
-| Currents API | News / Content | https://currentsapi.services/en/register |
-| GNews | News / Content | https://gnews.io/register |
-| Mediastack | News / Content | https://mediastack.com/product |
-| New York Times API | News / Content | https://developer.nytimes.com/accounts/create |
-| NewsAPI.org | News / Content | https://newsapi.org/register |
-| Reddit API | News / Content | https://www.reddit.com/prefs/apps |
-| The Guardian Open Platform | News / Content | https://open-platform.theguardian.com/access/ |
-| Adyen API | Payments (additional) | https://www.adyen.com/api-explorer |
-| Braintree API | Payments (additional) | https://developer.paypal.com/braintree/docs |
-| Razorpay API | Payments (additional) | https://razorpay.com/docs/ |
-| data.gov | Public / General Data | https://api.data.gov/signup |
-| data.world | Public / General Data | https://data.world/settings/advanced |
-| Eurostat API | Public / General Data | https://ec.europa.eu/eurostat/web/main/data/web-services |
-| Figshare API | Public / General Data | https://docs.figshare.com |
-| Kaggle API | Public / General Data | https://www.kaggle.com/settings |
-| NASA Open APIs | Public / General Data | https://api.nasa.gov |
-| OpenAQ (air quality) | Public / General Data | https://docs.openaq.org |
-| OpenCorporates | Public / General Data | https://api.opencorporates.com |
-| REST Countries | Public / General Data | https://restcountries.com |
-| USGS Earthquake API | Public / General Data | https://earthquake.usgs.gov/fdsnws/event/1/ |
-| Wikidata API | Public / General Data | https://www.wikidata.org/wiki/Wikidata\:Data_access |
-| Wikipedia API | Public / General Data | https://www.mediawiki.org/wiki/API\:Main_page |
-| Zenodo API | Public / General Data | https://zenodo.org/account/settings/applications/ |
-| arXiv API | Public / Scientific Data (additional) | https://arxiv.org/help/api |
-| CDC Data API | Public / Scientific Data (additional) | https://data.cdc.gov |
-| CrossRef API | Public / Scientific Data (additional) | https://www.crossref.org/documentation/retrieve-metadata/rest-api/ |
-| data.europa.eu | Public / Scientific Data (additional) | https://data.europa.eu/en |
-| GBIF (biodiversity) | Public / Scientific Data (additional) | https://www.gbif.org/developer/summary |
-| NASA Exoplanet Archive | Public / Scientific Data (additional) | https://exoplanetarchive.ipac.caltech.edu |
-| OpenAlex | Public / Scientific Data (additional) | https://openalex.org |
-| PubMed E-utilities | Public / Scientific Data (additional) | https://www.ncbi.nlm.nih.gov/books/NBK25501/ |
-| Semantic Scholar API | Public / Scientific Data (additional) | https://www.semanticscholar.org/product/api |
-| UK data.gov.uk | Public / Scientific Data (additional) | https://www.data.gov.uk |
-| US Census Bureau API | Public / Scientific Data (additional) | https://api.census.gov/data/key_signup.html |
-| WHO API | Public / Scientific Data (additional) | https://www.who.int/data/gho/info/gho-odata-api |
-| World Air Quality Index | Public / Scientific Data (additional) | https://aqicn.org/api/ |
-| ATTOM Data | Real Estate | https://api.developer.attomdata.com |
-| Bridge Interactive (Zillow data) | Real Estate | https://www.bridgedataoutput.com |
-| Estated | Real Estate | https://estated.com |
-| Bing Web Search API | Search / Scraping / Misc Utility | https://www.microsoft.com/en-us/bing/apis/bing-web-search-api |
-| Clearout (email verification) | Search / Scraping / Misc Utility | https://clearout.io |
-| Google Custom Search API | Search / Scraping / Misc Utility | https://programmablesearchengine.google.com |
-| IPGeolocation.io | Search / Scraping / Misc Utility | https://ipgeolocation.io |
-| Kickbox (email verification) | Search / Scraping / Misc Utility | https://kickbox.com |
-| NumVerify (phone validation) | Search / Scraping / Misc Utility | https://numverify.com |
-| Random.org API | Search / Scraping / Misc Utility | https://api.random.org |
-| ScrapingBee | Search / Scraping / Misc Utility | https://www.scrapingbee.com |
-| AbuseIPDB | Security / Threat Intel | https://www.abuseipdb.com/register |
-| Censys API | Security / Threat Intel | https://search.censys.io/account/api |
-| Have I Been Pwned API | Security / Threat Intel | https://haveibeenpwned.com/API/Key |
-| Shodan API | Security / Threat Intel | https://developer.shodan.io |
-| URLScan.io | Security / Threat Intel | https://urlscan.io/about-api/ |
-| VirusTotal API | Security / Threat Intel | https://www.virustotal.com/gui/join-us |
-| Discord API | Social Media | https://discord.com/developers/docs/intro |
-| Facebook Graph API | Social Media | https://developers.facebook.com |
-| Instagram Graph API | Social Media | https://developers.facebook.com/docs/instagram-api/ |
-| LinkedIn API | Social Media | https://www.linkedin.com/developers/ |
-| Mastodon API | Social Media | https://docs.joinmastodon.org/api/ |
-| Pinterest API | Social Media | https://developers.pinterest.com |
-| Telegram Bot API | Social Media | https://core.telegram.org/bots/api |
-| TikTok for Developers | Social Media | https://developers.tiktok.com |
-| X (Twitter) API | Social Media | https://developer.twitter.com |
-| API-Football | Sports | https://www.api-football.com |
-| balldontlie (NBA) | Sports | https://www.balldontlie.io |
-| football-data.org | Sports | https://www.football-data.org/client/register |
-| Sportradar | Sports | https://developer.sportradar.com |
-| TheSportsDB | Sports | https://www.thesportsdb.com/api.php |
-| API-Baseball | Sports (additional) | https://www.api-baseball.com |
-| API-Basketball | Sports (additional) | https://www.api-basketball.com |
-| MySportsFeeds | Sports (additional) | https://www.mysportsfeeds.com |
-| SportsDataIO | Sports (additional) | https://sportsdata.io |
-| Amazon Translate | Translation (additional) | https://aws.amazon.com/translate/ |
-| IBM Watson Language Translator | Translation (additional) | https://www.ibm.com/products/natural-language-understanding |
-| Systran | Translation (additional) | https://www.systran.net |
-| DeepL API | Translation / Language | https://www.deepl.com/en/pro-api |
-| Google Cloud Translation | Translation / Language | https://console.cloud.google.com/apis/library/translate.googleapis.com |
-| LibreTranslate | Translation / Language | https://portal.libretranslate.com |
-| Lingva/Yandex Translate | Translation / Language | https://yandex.com/dev/translate/ |
-| Microsoft Translator | Translation / Language | https://azure.microsoft.com/en-us/products/ai-services/ai-translator |
-| AeroDataBox | Travel / Transportation | https://www.aerodatabox.com |
-| Amadeus for Developers | Travel / Transportation | https://developers.amadeus.com |
-| Aviationstack | Travel / Transportation | https://aviationstack.com |
-| Booking.com API | Travel / Transportation | https://developers.booking.com |
-| Lyft API | Travel / Transportation | https://developer.lyft.com |
-| Rome2Rio API | Travel / Transportation | https://www.rome2rio.com/documentation |
-| Skyscanner API | Travel / Transportation | https://developers.skyscanner.net |
-| TripAdvisor Content API | Travel / Transportation | https://tripadvisor-content-api.readme.io |
-| Uber API | Travel / Transportation | https://developer.uber.com |
-| Mux API | Video / Streaming | https://www.mux.com |
-| Twitch API | Video / Streaming | https://dev.twitch.tv |
-| Vimeo API | Video / Streaming | https://developer.vimeo.com |
-| YouTube Data API | Video / Streaming | https://console.cloud.google.com/apis/library/youtube.googleapis.com |
-| AccuWeather API | Weather | https://developer.accuweather.com |
-| Meteomatics | Weather | https://www.meteomatics.com/en/sign-up |
-| NOAA Weather API | Weather | https://www.weather.gov/documentation/services-web-api |
-| OpenWeatherMap | Weather | https://home.openweathermap.org/users/sign_up |
-| Tomorrow\.io | Weather | https://app.tomorrow.io/signup |
-| Visual Crossing | Weather | https://www.visualcrossing.com/sign-up |
-| WeatherAPI.com | Weather | https://www.weatherapi.com/signup.aspx |
-| Weatherbit | Weather | https://www.weatherbit.io/account/create |
-| Ambee (environment) | Weather (additional) | https://www.getambee.com |
-| Foreca | Weather (additional) | https://developer.foreca.com |
-| Meteoblue | Weather (additional) | https://www.meteoblue.com/en/weather-api |
-| Open-Meteo | Weather (additional) | https://open-meteo.com |
-| StormGlass (marine) | Weather (additional) | https://stormglass.io |
-| Weatherstack | Weather (additional) | https://weatherstack.com |
-| Xweather (Aeris) | Weather (additional) | https://www.xweather.com |
+| Provider | Category | Provider URL | Link to verify free/paid tiers | What this API key can be used for |
+|---|---|---|---|---|
+| 500px API | Images / Media (additional) | https://500px.com/p/api | Not identified | image search and retrieval; image metadata; image transformation or delivery; image analysis or OCR; media workflows |
+| Ably (realtime) | Dev Tools / Infra | https://ably.com/sign-up | Not identified | API data retrieval; application integrations; automation workflows; data processing; developer applications |
+| Abstract API (geolocation) | Maps / Geocoding / Location | https://www.abstractapi.com/api/ip-geolocation-api | Not identified | geocoding and reverse geocoding; places and location search; routing and distance calculations; maps and map tiles; location-aware applications |
+| AbuseIPDB | Security / Threat Intel | https://www.abuseipdb.com/register | Not identified | IP/domain reputation checks; threat intelligence; malware or URL analysis; security research; incident-response workflows |
+| AccuWeather API | Weather | https://developer.accuweather.com | Not identified | current weather data; forecast retrieval; historical weather data; weather alerts and conditions; weather dashboards and applications |
+| Adobe Stock API | Images / Media (additional) | https://developer.adobe.com/stock/ | Not identified | market and price data; historical financial data; currency or exchange-rate data; economic indicators; portfolio and financial dashboards |
+| Adyen API | Payments (additional) | https://www.adyen.com/api-explorer | Not identified | payment processing; orders and transactions; refunds and payment status; customer/payment workflows; checkout integrations |
+| Adzuna API | Jobs / Recruiting | https://developer.adzuna.com | Not identified | job search and listings; job metadata; recruiting workflows; employment-market analytics |
+| AeroDataBox | Travel / Transportation | https://www.aerodatabox.com | Not identified | scores and fixtures; teams and player data; league and tournament data; sports statistics; sports applications |
+| AI21 Labs | AI / ML | https://studio.ai21.com | Not identified | text generation and chat; summarization and rewriting; question answering; classification and extraction; embeddings or semantic search; AI application backends |
+| Airtable API | Dev Tools / Infra | https://airtable.com/create/tokens | Not identified | text generation and chat; summarization and rewriting; question answering; classification and extraction; embeddings or semantic search; AI application backends |
+| Alchemy API | Blockchain / Web3 | https://www.alchemy.com | Not identified | text generation and chat; summarization and rewriting; question answering; classification and extraction; embeddings or semantic search; AI application backends |
+| Algolia Search | Dev Tools / Infra | https://www.algolia.com/users/sign_up | Not identified | web or search result retrieval; data extraction; validation and enrichment; automation and research workflows |
+| Alpaca (trading) | Finance / Crypto (additional) | https://alpaca.markets | Not identified | market and price data; historical financial data; currency or exchange-rate data; economic indicators; portfolio and financial dashboards |
+| Amadeus for Developers | Travel / Transportation | https://developers.amadeus.com | Not identified | scores and fixtures; teams and player data; league and tournament data; sports statistics; sports applications |
+| Amazon Comprehend | AI / ML (additional) | https://aws.amazon.com/comprehend/ | https://aws.amazon.com/comprehend/pricing/ | text generation and chat; summarization and rewriting; question answering; classification and extraction; embeddings or semantic search; AI application backends |
+| Amazon Polly | AI / ML (additional) | https://aws.amazon.com/polly/ | https://aws.amazon.com/polly/pricing/ | text generation and chat; summarization and rewriting; question answering; classification and extraction; embeddings or semantic search; AI application backends |
+| Amazon Product Advertising API | E-commerce / Shopping | https://webservices.amazon.com/paapi5/documentation/ | Not identified | API data retrieval; application integrations; automation workflows; data processing; developer applications |
+| Amazon Rekognition | AI / ML (additional) | https://aws.amazon.com/rekognition/ | https://aws.amazon.com/rekognition/pricing/ | text generation and chat; summarization and rewriting; question answering; classification and extraction; embeddings or semantic search; AI application backends |
+| Amazon Transcribe | AI / ML (additional) | https://aws.amazon.com/transcribe/ | https://aws.amazon.com/transcribe/pricing/ | text generation and chat; summarization and rewriting; question answering; classification and extraction; embeddings or semantic search; AI application backends |
+| Amazon Translate | Translation (additional) | https://aws.amazon.com/translate/ | Not identified | text translation; language detection; multilingual content workflows; localized applications |
+| Ambee (environment) | Weather (additional) | https://www.getambee.com | Not identified | current weather data; forecast retrieval; historical weather data; weather alerts and conditions; weather dashboards and applications |
+| Amplitude API | Analytics | https://amplitude.com | Not identified | API data retrieval; application integrations; automation workflows; data processing; developer applications |
+| API-Baseball | Sports (additional) | https://www.api-baseball.com | Not identified | scores and fixtures; teams and player data; league and tournament data; sports statistics; sports applications |
+| API-Basketball | Sports (additional) | https://www.api-basketball.com | Not identified | scores and fixtures; teams and player data; league and tournament data; sports statistics; sports applications |
+| API-Football | Sports | https://www.api-football.com | Not identified | scores and fixtures; teams and player data; league and tournament data; sports statistics; sports applications |
+| Apple Music API | Music / Entertainment (additional) | https://developer.apple.com/musickit/ | Not identified | text generation and chat; summarization and rewriting; question answering; classification and extraction; embeddings or semantic search; AI application backends |
+| arXiv API | Public / Scientific Data (additional) | https://arxiv.org/help/api | Not identified | public and scientific data retrieval; search and metadata access; research datasets; statistical or scientific analysis; data-driven applications |
+| AssemblyAI (speech-to-text) | AI / ML | https://www.assemblyai.com/dashboard/signup | https://www.assemblyai.com/pricing/ | text generation and chat; summarization and rewriting; question answering; classification and extraction; embeddings or semantic search; AI application backends |
+| ATTOM Data | Real Estate | https://api.developer.attomdata.com | Not identified | property data; real-estate search; property valuation or enrichment; real-estate analytics |
+| Auth0 | Dev Tools / Infra | https://auth0.com/signup | Not identified | API data retrieval; application integrations; automation workflows; data processing; developer applications |
+| Aviationstack | Travel / Transportation | https://aviationstack.com | Not identified | scores and fixtures; teams and player data; league and tournament data; sports statistics; sports applications |
+| AWS (free tier) | Dev Tools / Infra | https://aws.amazon.com/free/ | Not identified | API data retrieval; application integrations; automation workflows; data processing; developer applications |
+| Aylien News API | News (additional) | https://aylien.com/news-api | Not identified | news and article retrieval; search and filtering; headlines and feeds; content metadata; news aggregation applications |
+| balldontlie (NBA) | Sports | https://www.balldontlie.io | Not identified | scores and fixtures; teams and player data; league and tournament data; sports statistics; sports applications |
+| Bandwidth | Email / SMS (additional) | https://dashboard.bandwidth.com | Not identified | text generation and chat; summarization and rewriting; question answering; classification and extraction; embeddings or semantic search; AI application backends |
+| Baseten | AI / ML (additional) | https://www.baseten.co | Not identified | text generation and chat; summarization and rewriting; question answering; classification and extraction; embeddings or semantic search; AI application backends |
+| Battle.net API | Gaming | https://develop.battle.net | Not identified | game metadata; player or account integrations; game statistics; game-related applications |
+| BigCommerce API | E-commerce / Shopping | https://developer.bigcommerce.com | Not identified | API data retrieval; application integrations; automation workflows; data processing; developer applications |
+| Binance API | Finance / Crypto (additional) | https://www.binance.com/en/binance-api | Not identified | market and price data; historical financial data; currency or exchange-rate data; economic indicators; portfolio and financial dashboards |
+| Bing Maps API | Maps / Location (additional) | https://www.bingmapsportal.com | Not identified | geocoding and reverse geocoding; places and location search; routing and distance calculations; maps and map tiles; location-aware applications |
+| Bing News Search API | News (additional) | https://www.microsoft.com/en-us/bing/apis/bing-news-search-api | Not identified | news and article retrieval; search and filtering; headlines and feeds; content metadata; news aggregation applications |
+| Bing Web Search API | Search / Scraping / Misc Utility | https://www.microsoft.com/en-us/bing/apis/bing-web-search-api | Not identified | web or search result retrieval; data extraction; validation and enrichment; automation and research workflows |
+| Bitly API | Dev Tools / Infra (additional) | https://bitly.com | Not identified | API data retrieval; application integrations; automation workflows; data processing; developer applications |
+| Blynk API | IoT | https://blynk.io | Not identified | device telemetry; IoT data ingestion; device control; sensor dashboards; automation |
+| Booking.com API | Travel / Transportation | https://developers.booking.com | Not identified | scores and fixtures; teams and player data; league and tournament data; sports statistics; sports applications |
+| Braintree API | Payments (additional) | https://developer.paypal.com/braintree/docs | Not identified | text generation and chat; summarization and rewriting; question answering; classification and extraction; embeddings or semantic search; AI application backends |
+| Brevo (Sendinblue) | Email / SMS / Communication | https://onboarding.brevo.com/account/register | Not identified | text generation and chat; summarization and rewriting; question answering; classification and extraction; embeddings or semantic search; AI application backends |
+| Bridge Interactive (Zillow data) | Real Estate | https://www.bridgedataoutput.com | Not identified | property data; real-estate search; property valuation or enrichment; real-estate analytics |
+| Bright Data | Miscellaneous / Utility | https://brightdata.com/cp/start | Not identified | API data retrieval; application integrations; automation workflows; data processing; developer applications |
+| BscScan | Finance / Crypto (additional) | https://bscscan.com/apis | Not identified | market and price data; historical financial data; currency or exchange-rate data; economic indicators; portfolio and financial dashboards |
+| Calendarific (holidays) | Miscellaneous / Utility | https://calendarific.com/signup | Not identified | API data retrieval; application integrations; automation workflows; data processing; developer applications |
+| CDC Data API | Public / Scientific Data (additional) | https://data.cdc.gov | Not identified | public and scientific data retrieval; search and metadata access; research datasets; statistical or scientific analysis; data-driven applications |
+| Censys API | Security / Threat Intel | https://search.censys.io/account/api | Not identified | web or search result retrieval; data extraction; validation and enrichment; automation and research workflows |
+| Clarifai (vision) | AI / ML | https://clarifai.com/signup | Not identified | text generation and chat; summarization and rewriting; question answering; classification and extraction; embeddings or semantic search; AI application backends |
+| Clearbit | Miscellaneous / Utility | https://dashboard.clearbit.com/signup | Not identified | API data retrieval; application integrations; automation workflows; data processing; developer applications |
+| Clearout (email verification) | Search / Scraping / Misc Utility | https://clearout.io | Not identified | text generation and chat; summarization and rewriting; question answering; classification and extraction; embeddings or semantic search; AI application backends |
+| ClickSend | Email / SMS (additional) | https://dashboard.clicksend.com | Not identified | text generation and chat; summarization and rewriting; question answering; classification and extraction; embeddings or semantic search; AI application backends |
+| Cloudflare API | Dev Tools / Infra | https://dash.cloudflare.com/profile/api-tokens | Not identified | API data retrieval; application integrations; automation workflows; data processing; developer applications |
+| Cloudinary | Images / Media | https://cloudinary.com/users/register/free | Not identified | image search and retrieval; image metadata; image transformation or delivery; image analysis or OCR; media workflows |
+| CMS.gov Data API | Health / Fitness | https://data.cms.gov | Not identified | health or fitness data access; activity and workout data; health-data integrations; analytics and dashboards |
+| CoinAPI | Finance / Crypto / Economics | https://www.coinapi.io/signup | Not identified | market and price data; historical financial data; currency or exchange-rate data; economic indicators; portfolio and financial dashboards |
+| Coinbase API | Finance / Crypto (additional) | https://docs.cloud.coinbase.com | Not identified | market and price data; historical financial data; currency or exchange-rate data; economic indicators; portfolio and financial dashboards |
+| CoinGecko API | Finance / Crypto / Economics | https://www.coingecko.com/en/api | https://www.coingecko.com/en/api/pricing | market and price data; historical financial data; currency or exchange-rate data; economic indicators; portfolio and financial dashboards |
+| CoinMarketCap API | Finance / Crypto / Economics | https://coinmarketcap.com/api/ | https://coinmarketcap.com/api/pricing/ | market and price data; historical financial data; currency or exchange-rate data; economic indicators; portfolio and financial dashboards |
+| Contentful | Dev Tools / Infra (additional) | https://www.contentful.com | Not identified | API data retrieval; application integrations; automation workflows; data processing; developer applications |
+| CrossRef API | Public / Scientific Data (additional) | https://www.crossref.org/documentation/retrieve-metadata/rest-api/ | Not identified | public and scientific data retrieval; search and metadata access; research datasets; statistical or scientific analysis; data-driven applications |
+| CryptoCompare | Finance / Crypto (additional) | https://min-api.cryptocompare.com | Not identified | market and price data; historical financial data; currency or exchange-rate data; economic indicators; portfolio and financial dashboards |
+| Currencylayer | Finance / Crypto / Economics | https://currencylayer.com/product | Not identified | market and price data; historical financial data; currency or exchange-rate data; economic indicators; portfolio and financial dashboards |
+| Currents API | News / Content | https://currentsapi.services/en/register | Not identified | news and article retrieval; search and filtering; headlines and feeds; content metadata; news aggregation applications |
+| data.europa.eu | Public / Scientific Data (additional) | https://data.europa.eu/en | Not identified | public and scientific data retrieval; search and metadata access; research datasets; statistical or scientific analysis; data-driven applications |
+| data.gov | Public / General Data | https://api.data.gov/signup | Not identified | public and scientific data retrieval; search and metadata access; research datasets; statistical or scientific analysis; data-driven applications |
+| data.world | Public / General Data | https://data.world/settings/advanced | Not identified | API data retrieval; application integrations; automation workflows; data processing; developer applications |
+| DeepAI | Images / Media (additional) | https://deepai.org | Not identified | text generation and chat; summarization and rewriting; question answering; classification and extraction; embeddings or semantic search; AI application backends |
+| DeepL API | Translation / Language | https://www.deepl.com/en/pro-api | Not identified | text generation and chat; summarization and rewriting; question answering; classification and extraction; embeddings or semantic search; AI application backends |
+| Deezer API | Music / Entertainment (additional) | https://developers.deezer.com | Not identified | text generation and chat; summarization and rewriting; question answering; classification and extraction; embeddings or semantic search; AI application backends |
+| Dialogflow (Google) | AI / ML (additional) | https://dialogflow.cloud.google.com | Not identified | text generation and chat; summarization and rewriting; question answering; classification and extraction; embeddings or semantic search; AI application backends |
+| Diffbot | Miscellaneous / Utility | https://www.diffbot.com/plans/trial/ | https://www.diffbot.com/plans/trial/ | web or search result retrieval; data extraction; validation and enrichment; automation and research workflows |
+| DigitalOcean API | Dev Tools / Infra (additional) | https://cloud.digitalocean.com/account/api/tokens | Not identified | API data retrieval; application integrations; automation workflows; data processing; developer applications |
+| Discogs API | Music / Entertainment | https://www.discogs.com/settings/developers | Not identified | text generation and chat; summarization and rewriting; question answering; classification and extraction; embeddings or semantic search; AI application backends |
+| Discord API | Social Media | https://discord.com/developers/docs/intro | Not identified | posts and content access; user or profile data where permitted; publishing and messaging; social analytics; social integrations |
+| eBay API | E-commerce / Shopping | https://developer.ebay.com | Not identified | API data retrieval; application integrations; automation workflows; data processing; developer applications |
+| Edamam (nutrition/recipes) | Miscellaneous / Utility | https://developer.edamam.com | Not identified | food and recipe data; restaurant search; nutrition information; ingredient and meal workflows |
+| EmailJS | Email / SMS (additional) | https://www.emailjs.com | Not identified | text generation and chat; summarization and rewriting; question answering; classification and extraction; embeddings or semantic search; AI application backends |
+| Estated | Real Estate | https://estated.com | Not identified | property data; real-estate search; property valuation or enrichment; real-estate analytics |
+| Etherscan | Finance / Crypto (additional) | https://etherscan.io/apis | Not identified | market and price data; historical financial data; currency or exchange-rate data; economic indicators; portfolio and financial dashboards |
+| Etsy API | E-commerce / Shopping | https://developers.etsy.com | Not identified | API data retrieval; application integrations; automation workflows; data processing; developer applications |
+| Eurostat API | Public / General Data | https://ec.europa.eu/eurostat/web/main/data/web-services | Not identified | text generation and chat; summarization and rewriting; question answering; classification and extraction; embeddings or semantic search; AI application backends |
+| ExchangeRate-API | Finance / Crypto / Economics | https://www.exchangerate-api.com | Not identified | market and price data; historical financial data; currency or exchange-rate data; economic indicators; portfolio and financial dashboards |
+| Facebook Graph API | Social Media | https://developers.facebook.com | Not identified | posts and content access; user or profile data where permitted; publishing and messaging; social analytics; social integrations |
+| Fauna | Dev Tools / Infra (additional) | https://fauna.com | Not identified | API data retrieval; application integrations; automation workflows; data processing; developer applications |
+| Federal Reserve (FRED) | Finance / Crypto / Economics | https://fred.stlouisfed.org/docs/api/api_key.html | Not identified | market and price data; historical financial data; currency or exchange-rate data; economic indicators; portfolio and financial dashboards |
+| Figshare API | Public / General Data | https://docs.figshare.com | Not identified | API data retrieval; application integrations; automation workflows; data processing; developer applications |
+| Financial Modeling Prep | Finance / Crypto (additional) | https://site.financialmodelingprep.com/developer/docs | Not identified | market and price data; historical financial data; currency or exchange-rate data; economic indicators; portfolio and financial dashboards |
+| Finnhub | Finance / Crypto / Economics | https://finnhub.io/register | Not identified | market and price data; historical financial data; currency or exchange-rate data; economic indicators; portfolio and financial dashboards |
+| Firebase | Dev Tools / Infra | https://console.firebase.google.com | Not identified | API data retrieval; application integrations; automation workflows; data processing; developer applications |
+| Fireworks AI | AI / ML (additional) | https://fireworks.ai | Not identified | text generation and chat; summarization and rewriting; question answering; classification and extraction; embeddings or semantic search; AI application backends |
+| Fitbit API | Health / Fitness | https://dev.fitbit.com | Not identified | health or fitness data access; activity and workout data; health-data integrations; analytics and dashboards |
+| Fixer.io | Finance / Crypto / Economics | https://fixer.io/product | Not identified | market and price data; historical financial data; currency or exchange-rate data; economic indicators; portfolio and financial dashboards |
+| Flickr API | Images / Media (additional) | https://www.flickr.com/services/api/ | Not identified | image search and retrieval; image metadata; image transformation or delivery; image analysis or OCR; media workflows |
+| football-data.org | Sports | https://www.football-data.org/client/register | Not identified | scores and fixtures; teams and player data; league and tournament data; sports statistics; sports applications |
+| Foreca | Weather (additional) | https://developer.foreca.com | Not identified | current weather data; forecast retrieval; historical weather data; weather alerts and conditions; weather dashboards and applications |
+| Foursquare Places API | Maps / Location (additional) | https://developer.foursquare.com | Not identified | geocoding and reverse geocoding; places and location search; routing and distance calculations; maps and map tiles; location-aware applications |
+| GBIF (biodiversity) | Public / Scientific Data (additional) | https://www.gbif.org/developer/summary | Not identified | public and scientific data retrieval; search and metadata access; research datasets; statistical or scientific analysis; data-driven applications |
+| Genius API | Music / Entertainment | https://genius.com/api-clients | Not identified | text generation and chat; summarization and rewriting; question answering; classification and extraction; embeddings or semantic search; AI application backends |
+| Geoapify | Maps / Geocoding / Location | https://myprojects.geoapify.com/register | https://www.geoapify.com/pricing/ | geocoding and reverse geocoding; places and location search; routing and distance calculations; maps and map tiles; location-aware applications |
+| Geocodio | Maps / Location (additional) | https://www.geocod.io | Not identified | geocoding and reverse geocoding; places and location search; routing and distance calculations; maps and map tiles; location-aware applications |
+| GeoNames | Maps / Location (additional) | http://www.geonames.org/export/web-services.html | Not identified | geocoding and reverse geocoding; places and location search; routing and distance calculations; maps and map tiles; location-aware applications |
+| Getty Images API | Images / Media (additional) | https://developers.gettyimages.com | Not identified | image search and retrieval; image metadata; image transformation or delivery; image analysis or OCR; media workflows |
+| Giphy API | Images / Media | https://developers.giphy.com | Not identified | image search and retrieval; image metadata; image transformation or delivery; image analysis or OCR; media workflows |
+| GitHub API | Dev Tools / Infra | https://github.com/settings/tokens | Not identified | API data retrieval; application integrations; automation workflows; data processing; developer applications |
+| GitLab API | Dev Tools / Infra | https://gitlab.com/-/profile/personal_access_tokens | Not identified | API data retrieval; application integrations; automation workflows; data processing; developer applications |
+| GNews | News / Content | https://gnews.io/register | Not identified | news and article retrieval; search and filtering; headlines and feeds; content metadata; news aggregation applications |
+| Google Analytics API | Analytics | https://developers.google.com/analytics | Not identified | API data retrieval; application integrations; automation workflows; data processing; developer applications |
+| Google Cloud Natural Language | AI / ML (additional) | https://console.cloud.google.com/apis/library/language.googleapis.com | https://cloud.google.com/products/natural-language/pricing | text generation and chat; summarization and rewriting; question answering; classification and extraction; embeddings or semantic search; AI application backends |
+| Google Cloud Translation | Translation / Language | https://console.cloud.google.com/apis/library/translate.googleapis.com | Not identified | text generation and chat; summarization and rewriting; question answering; classification and extraction; embeddings or semantic search; AI application backends |
+| Google Cloud Vision API | AI / ML (additional) | https://console.cloud.google.com/apis/library/vision.googleapis.com | Not identified | text generation and chat; summarization and rewriting; question answering; classification and extraction; embeddings or semantic search; AI application backends |
+| Google Custom Search API | Search / Scraping / Misc Utility | https://programmablesearchengine.google.com | Not identified | web or search result retrieval; data extraction; validation and enrichment; automation and research workflows |
+| Google Maps Platform | Maps / Geocoding / Location | https://console.cloud.google.com/google/maps-apis | Not identified | geocoding and reverse geocoding; places and location search; routing and distance calculations; maps and map tiles; location-aware applications |
+| Have I Been Pwned API | Security / Threat Intel | https://haveibeenpwned.com/API/Key | Not identified | IP/domain reputation checks; threat intelligence; malware or URL analysis; security research; incident-response workflows |
+| HERE API | Maps / Geocoding / Location | https://developer.here.com/sign-up | Not identified | geocoding and reverse geocoding; places and location search; routing and distance calculations; maps and map tiles; location-aware applications |
+| Heroku Platform API | Dev Tools / Infra (additional) | https://devcenter.heroku.com/articles/platform-api-reference | Not identified | API data retrieval; application integrations; automation workflows; data processing; developer applications |
+| Human API | Health / Fitness | https://www.humanapi.co | Not identified | health or fitness data access; activity and workout data; health-data integrations; analytics and dashboards |
+| Hunter.io | Miscellaneous / Utility | https://hunter.io/users/sign_up | Not identified | web or search result retrieval; data extraction; validation and enrichment; automation and research workflows |
+| IBM Watson (Cloud) | AI / ML (additional) | https://cloud.ibm.com/registration | Not identified | text generation and chat; summarization and rewriting; question answering; classification and extraction; embeddings or semantic search; AI application backends |
+| IBM Watson Language Translator | Translation (additional) | https://www.ibm.com/products/natural-language-understanding | Not identified | text generation and chat; summarization and rewriting; question answering; classification and extraction; embeddings or semantic search; AI application backends |
+| IEX Cloud | Finance / Crypto / Economics | https://iexcloud.io/console/ | Not identified | market and price data; historical financial data; currency or exchange-rate data; economic indicators; portfolio and financial dashboards |
+| IGDB (games) | Music / Entertainment | https://api-docs.igdb.com | Not identified | text generation and chat; summarization and rewriting; question answering; classification and extraction; embeddings or semantic search; AI application backends |
+| Imagga | Images / Media (additional) | https://imagga.com | Not identified | image search and retrieval; image metadata; image transformation or delivery; image analysis or OCR; media workflows |
+| imgix | Images / Media | https://www.imgix.com/signup | Not identified | image search and retrieval; image metadata; image transformation or delivery; image analysis or OCR; media workflows |
+| Indeed Publisher API | Jobs / Recruiting | https://www.indeed.com/publisher | Not identified | job search and listings; job metadata; recruiting workflows; employment-market analytics |
+| Infobip | Email / SMS (additional) | https://www.infobip.com | Not identified | text generation and chat; summarization and rewriting; question answering; classification and extraction; embeddings or semantic search; AI application backends |
+| Infura API | Blockchain / Web3 | https://www.infura.io | Not identified | text generation and chat; summarization and rewriting; question answering; classification and extraction; embeddings or semantic search; AI application backends |
+| Instagram Graph API | Social Media | https://developers.facebook.com/docs/instagram-api/ | Not identified | posts and content access; user or profile data where permitted; publishing and messaging; social analytics; social integrations |
+| ip-api.com | Maps / Geocoding / Location | https://members.ip-api.com/register | Not identified | geocoding and reverse geocoding; places and location search; routing and distance calculations; maps and map tiles; location-aware applications |
+| IPGeolocation.io | Search / Scraping / Misc Utility | https://ipgeolocation.io | Not identified | geocoding and reverse geocoding; places and location search; routing and distance calculations; maps and map tiles; location-aware applications |
+| IPinfo | Maps / Geocoding / Location | https://ipinfo.io/signup | Not identified | geocoding and reverse geocoding; places and location search; routing and distance calculations; maps and map tiles; location-aware applications |
+| IPQualityScore | Miscellaneous / Utility | https://www.ipqualityscore.com/create-account | Not identified | API data retrieval; application integrations; automation workflows; data processing; developer applications |
+| ipstack | Maps / Geocoding / Location | https://ipstack.com/product | Not identified | geocoding and reverse geocoding; places and location search; routing and distance calculations; maps and map tiles; location-aware applications |
+| Jamendo API | Music / Entertainment (additional) | https://developer.jamendo.com | Not identified | text generation and chat; summarization and rewriting; question answering; classification and extraction; embeddings or semantic search; AI application backends |
+| Jina AI | AI / ML (additional) | https://jina.ai | Not identified | text generation and chat; summarization and rewriting; question answering; classification and extraction; embeddings or semantic search; AI application backends |
+| Jooble API | Jobs / Recruiting | https://jooble.org/api/about | Not identified | job search and listings; job metadata; recruiting workflows; employment-market analytics |
+| JSONPlaceholder (fake data) | Miscellaneous / Utility | https://jsonplaceholder.typicode.com | Not identified | API data retrieval; application integrations; automation workflows; data processing; developer applications |
+| Kaggle API | Public / General Data | https://www.kaggle.com/settings | Not identified | API data retrieval; application integrations; automation workflows; data processing; developer applications |
+| Kickbox (email verification) | Search / Scraping / Misc Utility | https://kickbox.com | Not identified | text generation and chat; summarization and rewriting; question answering; classification and extraction; embeddings or semantic search; AI application backends |
+| Kraken API | Finance / Crypto (additional) | https://www.kraken.com/features/api | Not identified | market and price data; historical financial data; currency or exchange-rate data; economic indicators; portfolio and financial dashboards |
+| Last.fm API | Music / Entertainment | https://www.last.fm/api/account/create | Not identified | text generation and chat; summarization and rewriting; question answering; classification and extraction; embeddings or semantic search; AI application backends |
+| LibreTranslate | Translation / Language | https://portal.libretranslate.com | Not identified | text generation and chat; summarization and rewriting; question answering; classification and extraction; embeddings or semantic search; AI application backends |
+| Lingva/Yandex Translate | Translation / Language | https://yandex.com/dev/translate/ | Not identified | text generation and chat; summarization and rewriting; question answering; classification and extraction; embeddings or semantic search; AI application backends |
+| LinkedIn API | Social Media | https://www.linkedin.com/developers/ | Not identified | posts and content access; user or profile data where permitted; publishing and messaging; social analytics; social integrations |
+| Linode API | Dev Tools / Infra (additional) | https://cloud.linode.com/profile/tokens | Not identified | API data retrieval; application integrations; automation workflows; data processing; developer applications |
+| Lyft API | Travel / Transportation | https://developer.lyft.com | Not identified | scores and fixtures; teams and player data; league and tournament data; sports statistics; sports applications |
+| Mailgun | Email / SMS / Communication | https://signup.mailgun.com/new/signup | Not identified | text generation and chat; summarization and rewriting; question answering; classification and extraction; embeddings or semantic search; AI application backends |
+| Mailjet | Email / SMS / Communication | https://app.mailjet.com/signup | Not identified | text generation and chat; summarization and rewriting; question answering; classification and extraction; embeddings or semantic search; AI application backends |
+| Mailtrap | Email / SMS (additional) | https://mailtrap.io | Not identified | text generation and chat; summarization and rewriting; question answering; classification and extraction; embeddings or semantic search; AI application backends |
+| Marketstack | Finance / Crypto (additional) | https://marketstack.com | Not identified | market and price data; historical financial data; currency or exchange-rate data; economic indicators; portfolio and financial dashboards |
+| Mastodon API | Social Media | https://docs.joinmastodon.org/api/ | Not identified | posts and content access; user or profile data where permitted; publishing and messaging; social analytics; social integrations |
+| Mediastack | News / Content | https://mediastack.com/product | Not identified | news and article retrieval; search and filtering; headlines and feeds; content metadata; news aggregation applications |
+| MessageBird | Email / SMS / Communication | https://dashboard.messagebird.com/en/sign-up | Not identified | text generation and chat; summarization and rewriting; question answering; classification and extraction; embeddings or semantic search; AI application backends |
+| Messari | Finance / Crypto (additional) | https://messari.io/api | Not identified | market and price data; historical financial data; currency or exchange-rate data; economic indicators; portfolio and financial dashboards |
+| Meteoblue | Weather (additional) | https://www.meteoblue.com/en/weather-api | Not identified | current weather data; forecast retrieval; historical weather data; weather alerts and conditions; weather dashboards and applications |
+| Meteomatics | Weather | https://www.meteomatics.com/en/sign-up | Not identified | current weather data; forecast retrieval; historical weather data; weather alerts and conditions; weather dashboards and applications |
+| Microsoft Azure AI Services | AI / ML (additional) | https://azure.microsoft.com/en-us/products/ai-services | Not identified | text generation and chat; summarization and rewriting; question answering; classification and extraction; embeddings or semantic search; AI application backends |
+| Microsoft Translator | Translation / Language | https://azure.microsoft.com/en-us/products/ai-services/ai-translator | Not identified | text generation and chat; summarization and rewriting; question answering; classification and extraction; embeddings or semantic search; AI application backends |
+| Mixpanel API | Analytics | https://mixpanel.com | Not identified | API data retrieval; application integrations; automation workflows; data processing; developer applications |
+| Mockaroo | Miscellaneous / Utility | https://www.mockaroo.com/api/docs | Not identified | API data retrieval; application integrations; automation workflows; data processing; developer applications |
+| Modal | AI / ML (additional) | https://modal.com | Not identified | text generation and chat; summarization and rewriting; question answering; classification and extraction; embeddings or semantic search; AI application backends |
+| MongoDB Atlas | Dev Tools / Infra (additional) | https://www.mongodb.com/cloud/atlas | Not identified | API data retrieval; application integrations; automation workflows; data processing; developer applications |
+| Moralis API | Blockchain / Web3 | https://moralis.io | Not identified | text generation and chat; summarization and rewriting; question answering; classification and extraction; embeddings or semantic search; AI application backends |
+| Musixmatch API | Music / Entertainment (additional) | https://developer.musixmatch.com | Not identified | text generation and chat; summarization and rewriting; question answering; classification and extraction; embeddings or semantic search; AI application backends |
+| Mux API | Video / Streaming | https://www.mux.com | Not identified | video metadata; video uploads and playback; streaming workflows; channel or creator data; video analytics |
+| MySportsFeeds | Sports (additional) | https://www.mysportsfeeds.com | Not identified | scores and fixtures; teams and player data; league and tournament data; sports statistics; sports applications |
+| NASA Exoplanet Archive | Public / Scientific Data (additional) | https://exoplanetarchive.ipac.caltech.edu | Not identified | public and scientific data retrieval; search and metadata access; research datasets; statistical or scientific analysis; data-driven applications |
+| NASA Open APIs | Public / General Data | https://api.nasa.gov | Not identified | public and scientific data retrieval; search and metadata access; research datasets; statistical or scientific analysis; data-driven applications |
+| Nasdaq Data Link (Quandl) | Finance / Crypto (additional) | https://data.nasdaq.com | Not identified | market and price data; historical financial data; currency or exchange-rate data; economic indicators; portfolio and financial dashboards |
+| Neon (Postgres) | Dev Tools / Infra (additional) | https://neon.tech | Not identified | API data retrieval; application integrations; automation workflows; data processing; developer applications |
+| Netlify API | Dev Tools / Infra | https://app.netlify.com/user/applications | Not identified | API data retrieval; application integrations; automation workflows; data processing; developer applications |
+| New York Times API | News / Content | https://developer.nytimes.com/accounts/create | Not identified | news and article retrieval; search and filtering; headlines and feeds; content metadata; news aggregation applications |
+| NewsAPI.org | News / Content | https://newsapi.org/register | Not identified | news and article retrieval; search and filtering; headlines and feeds; content metadata; news aggregation applications |
+| NOAA Weather API | Weather | https://www.weather.gov/documentation/services-web-api | Not identified | current weather data; forecast retrieval; historical weather data; weather alerts and conditions; weather dashboards and applications |
+| Nominatim (OpenStreetMap) | Maps / Location (additional) | https://nominatim.org | Not identified | geocoding and reverse geocoding; places and location search; routing and distance calculations; maps and map tiles; location-aware applications |
+| Notion API | Dev Tools / Infra | https://www.notion.so/my-integrations | Not identified | API data retrieval; application integrations; automation workflows; data processing; developer applications |
+| NumVerify (phone validation) | Search / Scraping / Misc Utility | https://numverify.com | Not identified | web or search result retrieval; data extraction; validation and enrichment; automation and research workflows |
+| Nutritionix API | Miscellaneous / Utility | https://developer.nutritionix.com | Not identified | food and recipe data; restaurant search; nutrition information; ingredient and meal workflows |
+| OCR.space | Images / Media (additional) | https://ocr.space/ocrapi | Not identified | image search and retrieval; image metadata; image transformation or delivery; image analysis or OCR; media workflows |
+| OMDb API | Music / Entertainment | https://www.omdbapi.com/apikey.aspx | Not identified | text generation and chat; summarization and rewriting; question answering; classification and extraction; embeddings or semantic search; AI application backends |
+| Open Exchange Rates | Finance / Crypto / Economics | https://openexchangerates.org/signup/free | Not identified | market and price data; historical financial data; currency or exchange-rate data; economic indicators; portfolio and financial dashboards |
+| Open Food Facts API | Food | https://world.openfoodfacts.org/data | Not identified | food and recipe data; restaurant search; nutrition information; ingredient and meal workflows |
+| Open-Meteo | Weather (additional) | https://open-meteo.com | Not identified | current weather data; forecast retrieval; historical weather data; weather alerts and conditions; weather dashboards and applications |
+| OpenAlex | Public / Scientific Data (additional) | https://openalex.org | Not identified | public and scientific data retrieval; search and metadata access; research datasets; statistical or scientific analysis; data-driven applications |
+| OpenAQ (air quality) | Public / General Data | https://docs.openaq.org | Not identified | text generation and chat; summarization and rewriting; question answering; classification and extraction; embeddings or semantic search; AI application backends |
+| OpenCage Geocoding | Maps / Geocoding / Location | https://opencagedata.com/users/sign_up | https://opencagedata.com/pricing | geocoding and reverse geocoding; places and location search; routing and distance calculations; maps and map tiles; location-aware applications |
+| OpenCorporates | Public / General Data | https://api.opencorporates.com | Not identified | API data retrieval; application integrations; automation workflows; data processing; developer applications |
+| openFDA API | Health / Fitness | https://open.fda.gov | Not identified | health or fitness data access; activity and workout data; health-data integrations; analytics and dashboards |
+| OpenWeatherMap | Weather | https://home.openweathermap.org/users/sign_up | Not identified | current weather data; forecast retrieval; historical weather data; weather alerts and conditions; weather dashboards and applications |
+| Particle.io API | IoT | https://www.particle.io | Not identified | device telemetry; IoT data ingestion; device control; sensor dashboards; automation |
+| PayPal API | E-commerce / Shopping | https://developer.paypal.com | Not identified | payment processing; orders and transactions; refunds and payment status; customer/payment workflows; checkout integrations |
+| Perplexity API | AI / ML | https://www.perplexity.ai/settings/api | Not identified | text generation and chat; summarization and rewriting; question answering; classification and extraction; embeddings or semantic search; AI application backends |
+| Pexels API | Images / Media | https://www.pexels.com/api/ | Not identified | image search and retrieval; image metadata; image transformation or delivery; image analysis or OCR; media workflows |
+| Pinterest API | Social Media | https://developers.pinterest.com | Not identified | posts and content access; user or profile data where permitted; publishing and messaging; social analytics; social integrations |
+| Pixabay API | Images / Media | https://pixabay.com/api/docs/ | Not identified | image search and retrieval; image metadata; image transformation or delivery; image analysis or OCR; media workflows |
+| Plaid (banking) | Finance / Crypto / Economics | https://dashboard.plaid.com/signup | Not identified | text generation and chat; summarization and rewriting; question answering; classification and extraction; embeddings or semantic search; AI application backends |
+| PlanetScale | Dev Tools / Infra (additional) | https://planetscale.com | Not identified | API data retrieval; application integrations; automation workflows; data processing; developer applications |
+| Plivo | Email / SMS / Communication | https://console.plivo.com/accounts/register/ | Not identified | text generation and chat; summarization and rewriting; question answering; classification and extraction; embeddings or semantic search; AI application backends |
+| PokéAPI | Miscellaneous / Utility | https://pokeapi.co | Not identified | API data retrieval; application integrations; automation workflows; data processing; developer applications |
+| Polygon.io | Finance / Crypto / Economics | https://polygon.io/dashboard/signup | Not identified | market and price data; historical financial data; currency or exchange-rate data; economic indicators; portfolio and financial dashboards |
+| Positionstack | Maps / Geocoding / Location | https://positionstack.com/signup/free | https://positionstack.com/pricing/ | geocoding and reverse geocoding; places and location search; routing and distance calculations; maps and map tiles; location-aware applications |
+| PostHog | Dev Tools / Infra | https://app.posthog.com/signup | Not identified | API data retrieval; application integrations; automation workflows; data processing; developer applications |
+| Postman API Platform | Dev Tools / Infra (additional) | https://www.postman.com | Not identified | API data retrieval; application integrations; automation workflows; data processing; developer applications |
+| Postmark | Email / SMS / Communication | https://account.postmarkapp.com/sign_up | Not identified | text generation and chat; summarization and rewriting; question answering; classification and extraction; embeddings or semantic search; AI application backends |
+| PubMed E-utilities | Public / Scientific Data (additional) | https://www.ncbi.nlm.nih.gov/books/NBK25501/ | Not identified | public and scientific data retrieval; search and metadata access; research datasets; statistical or scientific analysis; data-driven applications |
+| Pusher | Dev Tools / Infra | https://dashboard.pusher.com/accounts/sign_up | Not identified | API data retrieval; application integrations; automation workflows; data processing; developer applications |
+| QR Code API (goqr.me) | Miscellaneous / Utility | https://goqr.me/api/ | Not identified | API data retrieval; application integrations; automation workflows; data processing; developer applications |
+| QuickNode | Blockchain / Web3 | https://www.quicknode.com | Not identified | text generation and chat; summarization and rewriting; question answering; classification and extraction; embeddings or semantic search; AI application backends |
+| Radar.io | Maps / Location (additional) | https://radar.com | Not identified | geocoding and reverse geocoding; places and location search; routing and distance calculations; maps and map tiles; location-aware applications |
+| Railway | Dev Tools / Infra (additional) | https://railway.app | Not identified | text generation and chat; summarization and rewriting; question answering; classification and extraction; embeddings or semantic search; AI application backends |
+| Random.org API | Search / Scraping / Misc Utility | https://api.random.org | Not identified | web or search result retrieval; data extraction; validation and enrichment; automation and research workflows |
+| RandomUser.me | Miscellaneous / Utility | https://randomuser.me/documentation | Not identified | API data retrieval; application integrations; automation workflows; data processing; developer applications |
+| RapidAPI Marketplace | Dev Tools / Infra (additional) | https://rapidapi.com | Not identified | API data retrieval; application integrations; automation workflows; data processing; developer applications |
+| RAWG (video games) | Music / Entertainment | https://rawg.io/apidocs | Not identified | text generation and chat; summarization and rewriting; question answering; classification and extraction; embeddings or semantic search; AI application backends |
+| Razorpay API | Payments (additional) | https://razorpay.com/docs/ | Not identified | payment processing; orders and transactions; refunds and payment status; customer/payment workflows; checkout integrations |
+| Reddit API | News / Content | https://www.reddit.com/prefs/apps | Not identified | news and article retrieval; search and filtering; headlines and feeds; content metadata; news aggregation applications |
+| Redis Cloud | Dev Tools / Infra (additional) | https://redis.com/try-free/ | Not identified | API data retrieval; application integrations; automation workflows; data processing; developer applications |
+| remove.bg | Images / Media | https://www.remove.bg/api | Not identified | image search and retrieval; image metadata; image transformation or delivery; image analysis or OCR; media workflows |
+| Render | Dev Tools / Infra (additional) | https://render.com | Not identified | API data retrieval; application integrations; automation workflows; data processing; developer applications |
+| REST Countries | Public / General Data | https://restcountries.com | Not identified | API data retrieval; application integrations; automation workflows; data processing; developer applications |
+| Riot Games API | Gaming | https://developer.riotgames.com | Not identified | game metadata; player or account integrations; game statistics; game-related applications |
+| Roboflow (vision) | AI / ML | https://app.roboflow.com | Not identified | text generation and chat; summarization and rewriting; question answering; classification and extraction; embeddings or semantic search; AI application backends |
+| Rome2Rio API | Travel / Transportation | https://www.rome2rio.com/documentation | Not identified | scores and fixtures; teams and player data; league and tournament data; sports statistics; sports applications |
+| RunPod | AI / ML (additional) | https://www.runpod.io | Not identified | text generation and chat; summarization and rewriting; question answering; classification and extraction; embeddings or semantic search; AI application backends |
+| Sanity.io | Dev Tools / Infra (additional) | https://www.sanity.io | Not identified | API data retrieval; application integrations; automation workflows; data processing; developer applications |
+| ScraperAPI | Miscellaneous / Utility | https://www.scraperapi.com/signup | Not identified | web or search result retrieval; data extraction; validation and enrichment; automation and research workflows |
+| ScrapingBee | Search / Scraping / Misc Utility | https://www.scrapingbee.com | Not identified | web or search result retrieval; data extraction; validation and enrichment; automation and research workflows |
+| Segment API | Analytics | https://segment.com | Not identified | API data retrieval; application integrations; automation workflows; data processing; developer applications |
+| Semantic Scholar API | Public / Scientific Data (additional) | https://www.semanticscholar.org/product/api | Not identified | public and scientific data retrieval; search and metadata access; research datasets; statistical or scientific analysis; data-driven applications |
+| Sentry | Dev Tools / Infra | https://sentry.io/signup/ | Not identified | API data retrieval; application integrations; automation workflows; data processing; developer applications |
+| Shodan API | Security / Threat Intel | https://developer.shodan.io | Not identified | IP/domain reputation checks; threat intelligence; malware or URL analysis; security research; incident-response workflows |
+| Shopify Admin API | E-commerce / Shopping | https://shopify.dev | Not identified | API data retrieval; application integrations; automation workflows; data processing; developer applications |
+| Shutterstock API | Images / Media (additional) | https://developer.shutterstock.com | Not identified | market and price data; historical financial data; currency or exchange-rate data; economic indicators; portfolio and financial dashboards |
+| Sinch | Email / SMS (additional) | https://dashboard.sinch.com | Not identified | text generation and chat; summarization and rewriting; question answering; classification and extraction; embeddings or semantic search; AI application backends |
+| Skyscanner API | Travel / Transportation | https://developers.skyscanner.net | Not identified | scores and fixtures; teams and player data; league and tournament data; sports statistics; sports applications |
+| SmartyStreets | Maps / Location (additional) | https://www.smarty.com | Not identified | geocoding and reverse geocoding; places and location search; routing and distance calculations; maps and map tiles; location-aware applications |
+| SoundCloud API | Music / Entertainment (additional) | https://developers.soundcloud.com | Not identified | text generation and chat; summarization and rewriting; question answering; classification and extraction; embeddings or semantic search; AI application backends |
+| SparkPost | Email / SMS (additional) | https://app.sparkpost.com/join | Not identified | text generation and chat; summarization and rewriting; question answering; classification and extraction; embeddings or semantic search; AI application backends |
+| Spoonacular (recipes) | Miscellaneous / Utility | https://spoonacular.com/food-api | Not identified | food and recipe data; restaurant search; nutrition information; ingredient and meal workflows |
+| Sportradar | Sports | https://developer.sportradar.com | Not identified | geocoding and reverse geocoding; places and location search; routing and distance calculations; maps and map tiles; location-aware applications |
+| SportsDataIO | Sports (additional) | https://sportsdata.io | Not identified | text generation and chat; summarization and rewriting; question answering; classification and extraction; embeddings or semantic search; AI application backends |
+| Spotify Web API | Music / Entertainment | https://developer.spotify.com/dashboard | Not identified | text generation and chat; summarization and rewriting; question answering; classification and extraction; embeddings or semantic search; AI application backends |
+| Square API | E-commerce / Shopping | https://developer.squareup.com | Not identified | payment processing; orders and transactions; refunds and payment status; customer/payment workflows; checkout integrations |
+| Stability AI | AI / ML | https://platform.stability.ai | Not identified | text generation and chat; summarization and rewriting; question answering; classification and extraction; embeddings or semantic search; AI application backends |
+| Steam Web API | Gaming | https://steamcommunity.com/dev | Not identified | game metadata; player or account integrations; game statistics; game-related applications |
+| StormGlass (marine) | Weather (additional) | https://stormglass.io | Not identified | current weather data; forecast retrieval; historical weather data; weather alerts and conditions; weather dashboards and applications |
+| Strapi Cloud | Dev Tools / Infra (additional) | https://strapi.io | Not identified | API data retrieval; application integrations; automation workflows; data processing; developer applications |
+| Strava API | Health / Fitness | https://developers.strava.com | Not identified | health or fitness data access; activity and workout data; health-data integrations; analytics and dashboards |
+| Stripe (test keys) | Dev Tools / Infra | https://dashboard.stripe.com/register | Not identified | API data retrieval; application integrations; automation workflows; data processing; developer applications |
+| Supabase | Dev Tools / Infra | https://supabase.com/dashboard | Not identified | API data retrieval; application integrations; automation workflows; data processing; developer applications |
+| Systran | Translation (additional) | https://www.systran.net | Not identified | text translation; language detection; multilingual content workflows; localized applications |
+| Telegram Bot API | Social Media | https://core.telegram.org/bots/api | Not identified | posts and content access; user or profile data where permitted; publishing and messaging; social analytics; social integrations |
+| Telnyx | Email / SMS (additional) | https://portal.telnyx.com | Not identified | text generation and chat; summarization and rewriting; question answering; classification and extraction; embeddings or semantic search; AI application backends |
+| TextMagic | Email / SMS (additional) | https://www.textmagic.com | Not identified | text generation and chat; summarization and rewriting; question answering; classification and extraction; embeddings or semantic search; AI application backends |
+| The Graph | Blockchain / Web3 | https://thegraph.com | Not identified | text generation and chat; summarization and rewriting; question answering; classification and extraction; embeddings or semantic search; AI application backends |
+| The Guardian Open Platform | News / Content | https://open-platform.theguardian.com/access/ | Not identified | news and article retrieval; search and filtering; headlines and feeds; content metadata; news aggregation applications |
+| TheAudioDB | Music / Entertainment (additional) | https://www.theaudiodb.com/api_guide.php | Not identified | text generation and chat; summarization and rewriting; question answering; classification and extraction; embeddings or semantic search; AI application backends |
+| TheCocktailDB | Food | https://www.thecocktaildb.com/api.php | Not identified | text generation and chat; summarization and rewriting; question answering; classification and extraction; embeddings or semantic search; AI application backends |
+| TheMealDB | Food | https://www.themealdb.com/api.php | Not identified | food and recipe data; restaurant search; nutrition information; ingredient and meal workflows |
+| TheSportsDB | Sports | https://www.thesportsdb.com/api.php | Not identified | scores and fixtures; teams and player data; league and tournament data; sports statistics; sports applications |
+| ThingSpeak API | IoT | https://thingspeak.com | Not identified | device telemetry; IoT data ingestion; device control; sensor dashboards; automation |
+| TikTok for Developers | Social Media | https://developers.tiktok.com | Not identified | posts and content access; user or profile data where permitted; publishing and messaging; social analytics; social integrations |
+| TinyPNG API | Images / Media | https://tinypng.com/developers | Not identified | image search and retrieval; image metadata; image transformation or delivery; image analysis or OCR; media workflows |
+| TinyURL API | Dev Tools / Infra (additional) | https://tinyurl.com/app | Not identified | API data retrieval; application integrations; automation workflows; data processing; developer applications |
+| TMDB (movies) | Music / Entertainment | https://www.themoviedb.org/settings/api | Not identified | text generation and chat; summarization and rewriting; question answering; classification and extraction; embeddings or semantic search; AI application backends |
+| Together AI | AI / ML | https://api.together.ai | Not identified | text generation and chat; summarization and rewriting; question answering; classification and extraction; embeddings or semantic search; AI application backends |
+| Tomorrow\.io | Weather | https://app.tomorrow.io/signup | Not identified | current weather data; forecast retrieval; historical weather data; weather alerts and conditions; weather dashboards and applications |
+| TomTom Maps | Maps / Geocoding / Location | https://developer.tomtom.com/user/register | Not identified | geocoding and reverse geocoding; places and location search; routing and distance calculations; maps and map tiles; location-aware applications |
+| Tradier | Finance / Crypto (additional) | https://tradier.com | Not identified | market and price data; historical financial data; currency or exchange-rate data; economic indicators; portfolio and financial dashboards |
+| TripAdvisor Content API | Travel / Transportation | https://tripadvisor-content-api.readme.io | Not identified | scores and fixtures; teams and player data; league and tournament data; sports statistics; sports applications |
+| Twelve Data | Finance / Crypto / Economics | https://twelvedata.com/register | Not identified | market and price data; historical financial data; currency or exchange-rate data; economic indicators; portfolio and financial dashboards |
+| Twitch API | Video / Streaming | https://dev.twitch.tv | Not identified | video metadata; video uploads and playback; streaming workflows; channel or creator data; video analytics |
+| Uber API | Travel / Transportation | https://developer.uber.com | Not identified | scores and fixtures; teams and player data; league and tournament data; sports statistics; sports applications |
+| UK data.gov.uk | Public / Scientific Data (additional) | https://www.data.gov.uk | Not identified | public and scientific data retrieval; search and metadata access; research datasets; statistical or scientific analysis; data-driven applications |
+| Unsplash API | Images / Media | https://unsplash.com/developers | Not identified | image search and retrieval; image metadata; image transformation or delivery; image analysis or OCR; media workflows |
+| Upstash | Dev Tools / Infra (additional) | https://upstash.com | Not identified | API data retrieval; application integrations; automation workflows; data processing; developer applications |
+| URLScan.io | Security / Threat Intel | https://urlscan.io/about-api/ | Not identified | IP/domain reputation checks; threat intelligence; malware or URL analysis; security research; incident-response workflows |
+| US Census Bureau API | Public / Scientific Data (additional) | https://api.census.gov/data/key_signup.html | Not identified | public and scientific data retrieval; search and metadata access; research datasets; statistical or scientific analysis; data-driven applications |
+| USAJobs API | Jobs / Recruiting | https://developer.usajobs.gov | Not identified | job search and listings; job metadata; recruiting workflows; employment-market analytics |
+| USGS Earthquake API | Public / General Data | https://earthquake.usgs.gov/fdsnws/event/1/ | Not identified | public and scientific data retrieval; search and metadata access; research datasets; statistical or scientific analysis; data-driven applications |
+| Vercel API | Dev Tools / Infra | https://vercel.com/account/tokens | Not identified | API data retrieval; application integrations; automation workflows; data processing; developer applications |
+| Vimeo API | Video / Streaming | https://developer.vimeo.com | Not identified | video metadata; video uploads and playback; streaming workflows; channel or creator data; video analytics |
+| VirusTotal API | Security / Threat Intel | https://www.virustotal.com/gui/join-us | Not identified | IP/domain reputation checks; threat intelligence; malware or URL analysis; security research; incident-response workflows |
+| Visual Crossing | Weather | https://www.visualcrossing.com/sign-up | Not identified | current weather data; forecast retrieval; historical weather data; weather alerts and conditions; weather dashboards and applications |
+| Vonage (Nexmo) | Email / SMS / Communication | https://dashboard.nexmo.com/sign-up | Not identified | text generation and chat; summarization and rewriting; question answering; classification and extraction; embeddings or semantic search; AI application backends |
+| Voyage AI (embeddings) | AI / ML (additional) | https://www.voyageai.com | Not identified | text generation and chat; summarization and rewriting; question answering; classification and extraction; embeddings or semantic search; AI application backends |
+| WeatherAPI.com | Weather | https://www.weatherapi.com/signup.aspx | Not identified | current weather data; forecast retrieval; historical weather data; weather alerts and conditions; weather dashboards and applications |
+| Weatherbit | Weather | https://www.weatherbit.io/account/create | Not identified | current weather data; forecast retrieval; historical weather data; weather alerts and conditions; weather dashboards and applications |
+| Weatherstack | Weather (additional) | https://weatherstack.com | Not identified | current weather data; forecast retrieval; historical weather data; weather alerts and conditions; weather dashboards and applications |
+| Webz.io News API | News (additional) | https://webz.io | Not identified | news and article retrieval; search and filtering; headlines and feeds; content metadata; news aggregation applications |
+| WHO API | Public / Scientific Data (additional) | https://www.who.int/data/gho/info/gho-odata-api | Not identified | public and scientific data retrieval; search and metadata access; research datasets; statistical or scientific analysis; data-driven applications |
+| Wikidata API | Public / General Data | https://www.wikidata.org/wiki/Wikidata\:Data_access | Not identified | public and scientific data retrieval; search and metadata access; research datasets; statistical or scientific analysis; data-driven applications |
+| Wikipedia API | Public / General Data | https://www.mediawiki.org/wiki/API\:Main_page | Not identified | text generation and chat; summarization and rewriting; question answering; classification and extraction; embeddings or semantic search; AI application backends |
+| Wit.ai (Meta) | AI / ML (additional) | https://wit.ai | Not identified | text generation and chat; summarization and rewriting; question answering; classification and extraction; embeddings or semantic search; AI application backends |
+| Withings API | Health / Fitness | https://developer.withings.com | Not identified | health or fitness data access; activity and workout data; health-data integrations; analytics and dashboards |
+| Wolfram Alpha API | Miscellaneous / Utility | https://developer.wolframalpha.com | Not identified | API data retrieval; application integrations; automation workflows; data processing; developer applications |
+| WooCommerce REST API | E-commerce / Shopping | https://woocommerce.github.io/woocommerce-rest-api-docs/ | Not identified | API data retrieval; application integrations; automation workflows; data processing; developer applications |
+| World Air Quality Index | Public / Scientific Data (additional) | https://aqicn.org/api/ | Not identified | text generation and chat; summarization and rewriting; question answering; classification and extraction; embeddings or semantic search; AI application backends |
+| World Bank API | Finance / Crypto / Economics | https://datahelpdesk.worldbank.org/knowledgebase/articles/889392 | Not identified | market and price data; historical financial data; currency or exchange-rate data; economic indicators; portfolio and financial dashboards |
+| X (Twitter) API | Social Media | https://developer.twitter.com | Not identified | posts and content access; user or profile data where permitted; publishing and messaging; social analytics; social integrations |
+| Xweather (Aeris) | Weather (additional) | https://www.xweather.com | Not identified | current weather data; forecast retrieval; historical weather data; weather alerts and conditions; weather dashboards and applications |
+| Yelp Fusion API | Food | https://www.yelp.com/developers | Not identified | food and recipe data; restaurant search; nutrition information; ingredient and meal workflows |
+| YouTube Data API | Video / Streaming | https://console.cloud.google.com/apis/library/youtube.googleapis.com | Not identified | video metadata; video uploads and playback; streaming workflows; channel or creator data; video analytics |
+| Zenodo API | Public / General Data | https://zenodo.org/account/settings/applications/ | Not identified | API data retrieval; application integrations; automation workflows; data processing; developer applications |
+| ZeroBounce | Miscellaneous / Utility | https://www.zerobounce.net/members/register | Not identified | web or search result retrieval; data extraction; validation and enrichment; automation and research workflows |
+| Zippopotam.us (zip codes) | Miscellaneous / Utility | https://zippopotam.us | Not identified | API data retrieval; application integrations; automation workflows; data processing; developer applications |
+| Zoho ZeptoMail | Email / SMS / Communication | https://www.zoho.com/zeptomail/ | Not identified | text generation and chat; summarization and rewriting; question answering; classification and extraction; embeddings or semantic search; AI application backends |
