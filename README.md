@@ -15,7 +15,7 @@ This repository is deliberately conservative:
 
 ## Current catalog
 
-The authoritative curated source is [data/providers.json](data/providers.json). The live website also merges maintained community-free public API indexes and caps the discovery pool at 1,000 entries. Upstream records are marked `community-free-source` and are not treated as independently verified provider quotas. Generated category tables are under [docs/providers](docs/providers).
+The authoritative curated source is [data/providers.json](data/providers.json). The live website combines the curated catalog with a 1,716-entry community expansion snapshot and maintained upstream public-API indexes, then caps the live discovery pool at 2,500 entries. Upstream records are marked `community-free-source` and are not treated as independently verified provider quotas. Generated category tables are under [docs/providers](docs/providers).
 
 Run locally:
 
@@ -29,7 +29,7 @@ No API keys are stored in this repository.
 
 ## Directory by criterion
 
-The provider catalog is split into **36 practical criteria** including AI & Machine Learning, Coding & Developer Tools, Geospatial, Health, Finance, Data & Research, Jobs & Recruiting, Communication, Media, Weather, and more. Providers may appear in multiple criteria when their capabilities span several use cases.
+The provider catalog is split into **63 browse criteria** including AI & Machine Learning, Coding & Developer Tools, Geospatial, Health, Finance, Data & Research, Jobs & Recruiting, Communication, Media, Weather, and more. Providers may appear in multiple criteria when their capabilities span several use cases.
 
 **[Browse all criteria and tables →](docs/providers/criteria.md)**
 
@@ -58,4 +58,6 @@ The website never requires an API key belonging to the directory owner. Unknown 
 
 ## September 2026 expansion
 
-The curated catalog contains **576 local provider records**. The website now expands the live discovery pool to **1,000 entries** by merging maintained community-free API indexes, including Public API Lists and the Public APIs directory. The live merge deduplicates local records first and caps the combined pool at 1,000. Community-sourced records are clearly marked `community-free-source`; their existence/free classification comes from the upstream directory and does not mean their exact quotas, card requirements, commercial terms, or current uptime have been independently verified. The 237 earlier candidate entries remain explicitly marked **candidate / candidate-unverified** until their current provider-side details are verified.
+The curated catalog contains **576 independently maintained provider records**. The September 2026 expansion adds **1,716 new community-sourced provider records** from the current public-apis/public-apis snapshot, bringing the local deduplicated catalog to **2,292 providers** before live upstream supplementation. The website now caps the live discovery pool at **2,500 entries** and can fill the remaining slots from maintained upstream public-API sources. Expansion records are explicitly marked `community-free-source` / `upstream-community`: the source lists them as free/public APIs, but this repository does **not** claim independent verification of their exact quotas, card requirements, commercial terms, key-minting pages, or current uptime. The original 237 candidate entries remain explicitly marked **candidate / candidate-unverified** until provider-side details are checked.
+
+The expansion source snapshot is stored in [`data/public_apis_expansion.json`](./data/public_apis_expansion.json). Research provenance and the additional independent directory cross-checks used for the expansion are documented in [`data/research_sources.md`](./data/research_sources.md).
