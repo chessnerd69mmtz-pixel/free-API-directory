@@ -23,12 +23,12 @@
     "tier_verification_url": "https://groq.com/pricing/",
     "tier_verification_status": "official-pricing-page-identified",
     "uses": [
-      "text generation and chat",
-      "summarization and rewriting",
-      "question answering",
-      "classification and extraction",
-      "embeddings or semantic search",
-      "AI application backends"
+      "LLM inference",
+      "text generation/chat",
+      "structured outputs",
+      "tool/function calling",
+      "vision-capable model inference where offered",
+      "open-model serving"
     ]
   },
   {
@@ -56,12 +56,13 @@
     "tier_verification_url": "https://mistral.ai/pricing/",
     "tier_verification_status": "official-pricing-page-identified",
     "uses": [
-      "text generation and chat",
-      "summarization and rewriting",
-      "question answering",
-      "classification and extraction",
-      "embeddings or semantic search",
-      "AI application backends"
+      "LLM inference",
+      "text generation/chat",
+      "embeddings",
+      "document/OCR processing",
+      "moderation",
+      "agents/tool calling",
+      "speech/audio models where offered"
     ]
   },
   {
@@ -88,12 +89,13 @@
     "tier_verification_url": "https://ai.google.dev/gemini-api/docs/billing",
     "tier_verification_status": "official-pricing-page-identified",
     "uses": [
-      "text generation and chat",
-      "summarization and rewriting",
-      "question answering",
-      "classification and extraction",
-      "embeddings or semantic search",
-      "AI application backends"
+      "multimodal generation",
+      "text generation/chat",
+      "image/audio/video understanding",
+      "structured output",
+      "function calling",
+      "embeddings",
+      "long-context applications"
     ]
   },
   {
@@ -121,12 +123,13 @@
     "tier_verification_url": "https://openrouter.ai/pricing/",
     "tier_verification_status": "official-pricing-page-identified",
     "uses": [
-      "text generation and chat",
-      "summarization and rewriting",
-      "question answering",
-      "classification and extraction",
-      "embeddings or semantic search",
-      "AI application backends"
+      "multi-provider LLM routing",
+      "text generation/chat",
+      "model selection/fallbacks",
+      "streaming",
+      "structured outputs",
+      "tool calling",
+      "access to free and paid models"
     ]
   },
   {
@@ -153,12 +156,12 @@
     "tier_verification_url": "https://huggingface.co/docs/inference-providers/pricing",
     "tier_verification_status": "official-pricing-page-identified",
     "uses": [
-      "text generation and chat",
-      "summarization and rewriting",
-      "question answering",
-      "classification and extraction",
-      "embeddings or semantic search",
-      "AI application backends"
+      "model inference",
+      "text generation",
+      "embeddings",
+      "image/audio inference",
+      "model/dataset access",
+      "inference endpoints"
     ]
   },
   {
@@ -186,12 +189,12 @@
     "tier_verification_url": "https://cohere.com/pricing",
     "tier_verification_status": "official-pricing-page-identified",
     "uses": [
-      "text generation and chat",
-      "summarization and rewriting",
-      "question answering",
-      "classification and extraction",
-      "embeddings or semantic search",
-      "AI application backends"
+      "text generation",
+      "embeddings",
+      "reranking",
+      "classification",
+      "semantic search",
+      "tool use"
     ]
   },
   {
@@ -218,12 +221,11 @@
     "tier_verification_url": "https://docs.api.nvidia.com/nim/docs/api-quickstart",
     "tier_verification_status": "official-pricing-page-identified",
     "uses": [
-      "text generation and chat",
-      "summarization and rewriting",
-      "question answering",
-      "classification and extraction",
-      "embeddings or semantic search",
-      "AI application backends"
+      "LLM inference",
+      "vision/language models",
+      "embeddings",
+      "reranking",
+      "GPU-accelerated inference"
     ]
   },
   {
@@ -250,12 +252,12 @@
     "tier_verification_url": "https://replicate.com/pricing",
     "tier_verification_status": "official-pricing-page-identified",
     "uses": [
-      "text generation and chat",
-      "summarization and rewriting",
-      "question answering",
-      "classification and extraction",
-      "embeddings or semantic search",
-      "AI application backends"
+      "data retrieval",
+      "search/query operations",
+      "resource management where supported",
+      "application integrations",
+      "automation workflows",
+      "developer applications"
     ]
   },
   {
@@ -282,12 +284,12 @@
     "tier_verification_url": "https://deepinfra.com/pricing",
     "tier_verification_status": "provider-source-is-pricing-or-plan-page",
     "uses": [
-      "text generation and chat",
-      "summarization and rewriting",
-      "question answering",
-      "classification and extraction",
-      "embeddings or semantic search",
-      "AI application backends"
+      "data retrieval",
+      "search/query operations",
+      "resource management where supported",
+      "application integrations",
+      "automation workflows",
+      "developer applications"
     ]
   },
   {
@@ -314,12 +316,13 @@
     "tier_verification_url": "https://openai.com/api/pricing/",
     "tier_verification_status": "official-pricing-page-identified",
     "uses": [
-      "text generation and chat",
-      "summarization and rewriting",
-      "question answering",
-      "classification and extraction",
-      "embeddings or semantic search",
-      "AI application backends"
+      "text generation/chat",
+      "vision and multimodal processing",
+      "embeddings",
+      "image generation",
+      "speech-to-text/text-to-speech",
+      "moderation",
+      "tool/function calling"
     ]
   },
   {
@@ -346,12 +349,12 @@
     "tier_verification_url": "https://docs.x.ai/developers/models",
     "tier_verification_status": "official-pricing-page-identified",
     "uses": [
-      "text generation and chat",
-      "summarization and rewriting",
-      "question answering",
-      "classification and extraction",
-      "embeddings or semantic search",
-      "AI application backends"
+      "data retrieval",
+      "search/query operations",
+      "resource management where supported",
+      "application integrations",
+      "automation workflows",
+      "developer applications"
     ]
   },
   {
@@ -378,12 +381,12 @@
     "tier_verification_url": "https://www.anthropic.com/pricing#api",
     "tier_verification_status": "official-pricing-page-identified",
     "uses": [
-      "text generation and chat",
-      "summarization and rewriting",
-      "question answering",
-      "classification and extraction",
-      "embeddings or semantic search",
-      "AI application backends"
+      "LLM text generation",
+      "chat",
+      "long-context reasoning",
+      "vision",
+      "tool use",
+      "structured outputs"
     ]
   },
   {
@@ -410,12 +413,11 @@
     "tier_verification_url": "https://api-docs.deepseek.com/quick_start/pricing",
     "tier_verification_status": "official-pricing-page-identified",
     "uses": [
-      "text generation and chat",
-      "summarization and rewriting",
-      "question answering",
-      "classification and extraction",
-      "embeddings or semantic search",
-      "AI application backends"
+      "LLM text generation",
+      "chat",
+      "reasoning models",
+      "code generation",
+      "structured/tool workflows"
     ]
   },
   {
@@ -442,11 +444,11 @@
     "tier_verification_url": "https://deepgram.com/pricing",
     "tier_verification_status": "official-pricing-page-identified",
     "uses": [
-      "speech-to-text transcription",
-      "text-to-speech and voice generation",
-      "audio analysis",
-      "speaker or language processing",
-      "voice-enabled applications"
+      "speech-to-text",
+      "text-to-speech",
+      "real-time transcription",
+      "speaker diarization",
+      "audio intelligence"
     ]
   },
   {
@@ -473,11 +475,11 @@
     "tier_verification_url": "https://elevenlabs.io/pricing",
     "tier_verification_status": "official-pricing-page-identified",
     "uses": [
-      "speech-to-text transcription",
-      "text-to-speech and voice generation",
-      "audio analysis",
-      "speaker or language processing",
-      "voice-enabled applications"
+      "text-to-speech",
+      "voice cloning",
+      "speech-to-speech",
+      "voice design",
+      "audio generation"
     ]
   },
   {
@@ -504,12 +506,11 @@
     "tier_verification_url": "https://fal.ai/pricing",
     "tier_verification_status": "official-pricing-page-identified",
     "uses": [
-      "text generation and chat",
-      "summarization and rewriting",
-      "question answering",
-      "classification and extraction",
-      "embeddings or semantic search",
-      "AI application backends"
+      "image generation",
+      "video generation",
+      "image editing",
+      "audio/voice models",
+      "model inference"
     ]
   },
   {
@@ -536,11 +537,12 @@
     "tier_verification_url": "https://openweathermap.org/price",
     "tier_verification_status": "official-pricing-page-identified",
     "uses": [
-      "current weather data",
-      "forecast retrieval",
-      "historical weather data",
-      "weather alerts and conditions",
-      "weather dashboards and applications"
+      "current weather",
+      "forecasts",
+      "historical weather",
+      "air pollution",
+      "geocoding",
+      "weather maps"
     ]
   },
   {
@@ -567,11 +569,12 @@
     "tier_verification_url": "https://www.mapbox.com/pricing",
     "tier_verification_status": "official-pricing-page-identified",
     "uses": [
-      "geocoding and reverse geocoding",
-      "places and location search",
-      "routing and distance calculations",
-      "maps and map tiles",
-      "location-aware applications"
+      "maps",
+      "geocoding",
+      "places",
+      "directions/routing",
+      "distance matrices",
+      "navigation/location services"
     ]
   },
   {
@@ -598,11 +601,12 @@
     "tier_verification_url": "https://www.maptiler.com/cloud/pricing/",
     "tier_verification_status": "official-pricing-page-identified",
     "uses": [
-      "geocoding and reverse geocoding",
-      "places and location search",
-      "routing and distance calculations",
-      "maps and map tiles",
-      "location-aware applications"
+      "maps/tiles",
+      "geocoding",
+      "routing",
+      "static maps",
+      "map styling",
+      "geospatial data"
     ]
   },
   {
@@ -629,11 +633,11 @@
     "tier_verification_url": "https://locationiq.com/pricing",
     "tier_verification_status": "official-pricing-page-identified",
     "uses": [
-      "geocoding and reverse geocoding",
-      "places and location search",
-      "routing and distance calculations",
-      "maps and map tiles",
-      "location-aware applications"
+      "forward/reverse geocoding",
+      "maps",
+      "routing",
+      "places/search",
+      "location autocomplete"
     ]
   },
   {
@@ -660,12 +664,12 @@
     "tier_verification_url": "https://resend.com/pricing",
     "tier_verification_status": "official-pricing-page-identified",
     "uses": [
-      "text generation and chat",
-      "summarization and rewriting",
-      "question answering",
-      "classification and extraction",
-      "embeddings or semantic search",
-      "AI application backends"
+      "transactional email",
+      "email templates",
+      "domains/senders",
+      "delivery events",
+      "attachments",
+      "webhooks"
     ]
   },
   {
@@ -692,12 +696,12 @@
     "tier_verification_url": "https://sendgrid.com/pricing/",
     "tier_verification_status": "official-pricing-page-identified",
     "uses": [
-      "text generation and chat",
-      "summarization and rewriting",
-      "question answering",
-      "classification and extraction",
-      "embeddings or semantic search",
-      "AI application backends"
+      "transactional email",
+      "marketing email",
+      "templates",
+      "contacts",
+      "delivery analytics",
+      "webhooks"
     ]
   },
   {
@@ -724,11 +728,12 @@
     "tier_verification_url": "https://www.twilio.com/pricing",
     "tier_verification_status": "official-pricing-page-identified",
     "uses": [
-      "SMS messaging",
-      "voice calls",
-      "phone verification",
-      "messaging workflows",
-      "communications automation"
+      "SMS/MMS",
+      "voice",
+      "WhatsApp",
+      "phone numbers",
+      "verification",
+      "messaging/communications workflows"
     ]
   },
   {
@@ -755,11 +760,12 @@
     "tier_verification_url": "https://www.alphavantage.co/premium/",
     "tier_verification_status": "official-pricing-page-identified",
     "uses": [
-      "market and price data",
-      "historical financial data",
-      "currency or exchange-rate data",
+      "stock/forex/crypto data",
+      "historical prices",
+      "technical indicators",
+      "fundamental data",
       "economic indicators",
-      "portfolio and financial dashboards"
+      "market news"
     ]
   },
   {
@@ -786,10 +792,10 @@
     "tier_verification_url": "https://serpapi.com/pricing",
     "tier_verification_status": "official-pricing-page-identified",
     "uses": [
-      "web or search result retrieval",
-      "data extraction",
-      "validation and enrichment",
-      "automation and research workflows"
+      "search engine results",
+      "Google/Bing/etc. search extraction",
+      "shopping/news/image results where supported",
+      "structured SERP data"
     ]
   },
   {
@@ -816,10 +822,11 @@
     "tier_verification_url": "https://www.tavily.com/pricing",
     "tier_verification_status": "official-pricing-page-identified",
     "uses": [
-      "web or search result retrieval",
-      "data extraction",
-      "validation and enrichment",
-      "automation and research workflows"
+      "web search",
+      "AI-focused research search",
+      "content retrieval",
+      "source extraction",
+      "search result filtering"
     ]
   }
 ]
