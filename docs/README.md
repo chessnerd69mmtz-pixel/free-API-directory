@@ -1,3 +1,5 @@
 # Provider Tables
 
-Run `python scripts/generate_tables.py` to regenerate the category tables from `data/providers.json`.
+- [All verified/current catalog](./providers/all.md)
+
+`data/providers.json` is the source of truth. Run `python scripts/generate_tables.py` to regenerate category tables locally.
