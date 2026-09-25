@@ -45,3 +45,12 @@ MIT
 ## Additional provider URLs
 
 A URL-only catalog of additional providers imported from the supplied source list is maintained in [`data/provider_urls.json`](./data/provider_urls.json) and [`docs/providers/additional-urls.md`](./docs/providers/additional-urls.md). These entries intentionally do not make free-tier or verification claims.
+
+## Developer tools
+
+- [Find an API](../finder.html) — search providers by capability and verified free-tier information.
+- [Compare APIs](../compare.html) — compare up to four providers without sending keys anywhere.
+- [API profiles](../api.html) — detailed provider pages with verification status, capabilities and generic code templates.
+- [Verification history](../changes.html) — official-source change monitoring and verification records.
+
+The website never requires an API key belonging to the directory owner. Unknown provider facts remain explicitly marked as **Unverified**. The automated monitor uses only public provider pages and GitHub Actions' built-in repository token; it does not call provider APIs on the site's behalf.
