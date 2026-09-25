@@ -5,6 +5,7 @@ const PUBLIC_API_LISTS_URL = "https://public-api-lists.github.io/public-api-list
 const PUBLIC_APIS_URL = "https://api.publicapis.org/entries";
 const KIPRIO_URL = "https://kiprio.com/datasets/free-apis.json";
 const CATALOG_TARGET = 1000;
+const SOURCE_META = ["Public API Lists","Public APIs","Kiprio Free APIs"];
 
 let APIS = [];
 
@@ -125,7 +126,7 @@ async function loadApis() {
       Array.isArray(payload?.apis) ? payload.apis : [];
     for (const raw of entries) {
       if (APIS.length >= CATALOG_TARGET) break;
-      const p = normalizeExternalEntry(raw, i === 0 ? "public-api-lists-community" : "public-apis-community");
+      const p = normalizeExternalEntry(raw, i === 0 ? "public-api-lists-community" : i === 1 ? "public-apis-community" : "kiprio-verified-free-dataset");
       if (!p) continue;
       const key = p.name.trim().toLowerCase();
       const url = p.documentation_url.trim().toLowerCase();
