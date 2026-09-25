@@ -1,6 +1,6 @@
 # E-commerce & Shopping
 
-**8 providers**
+**8 providers in this criterion**
 
 | Provider | Original Category | Provider / API-key URL | Tier / pricing URL | Major Functions & Capabilities |
 |---|---|---|---|---|
