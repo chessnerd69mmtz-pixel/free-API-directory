@@ -33,5 +33,10 @@
     "type": "Source added",
     "status": "Added maintained public API source for additional free/keyless discovery.",
     "source_url": "https://github.com/davemachado/public-api"
+  },
+  {
+    "date": "2026-09-26",
+    "type": "catalog-sync",
+    "summary": "Unified all website pages around the committed 2,565-unique-provider catalog; removed runtime third-party provider feeds and centralized category mapping/counts."
   }
 ]
