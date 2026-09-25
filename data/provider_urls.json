@@ -1,1 +1,1557 @@
-[]
+[
+  {
+    "name": "AI21 Labs",
+    "category": "AI / ML",
+    "url": "https://studio.ai21.com"
+  },
+  {
+    "name": "AssemblyAI (speech-to-text)",
+    "category": "AI / ML",
+    "url": "https://www.assemblyai.com/dashboard/signup"
+  },
+  {
+    "name": "Clarifai (vision)",
+    "category": "AI / ML",
+    "url": "https://clarifai.com/signup"
+  },
+  {
+    "name": "Perplexity API",
+    "category": "AI / ML",
+    "url": "https://www.perplexity.ai/settings/api"
+  },
+  {
+    "name": "Roboflow (vision)",
+    "category": "AI / ML",
+    "url": "https://app.roboflow.com"
+  },
+  {
+    "name": "Stability AI",
+    "category": "AI / ML",
+    "url": "https://platform.stability.ai"
+  },
+  {
+    "name": "Together AI",
+    "category": "AI / ML",
+    "url": "https://api.together.ai"
+  },
+  {
+    "name": "Amazon Comprehend",
+    "category": "AI / ML (additional)",
+    "url": "https://aws.amazon.com/comprehend/"
+  },
+  {
+    "name": "Amazon Polly",
+    "category": "AI / ML (additional)",
+    "url": "https://aws.amazon.com/polly/"
+  },
+  {
+    "name": "Amazon Rekognition",
+    "category": "AI / ML (additional)",
+    "url": "https://aws.amazon.com/rekognition/"
+  },
+  {
+    "name": "Amazon Transcribe",
+    "category": "AI / ML (additional)",
+    "url": "https://aws.amazon.com/transcribe/"
+  },
+  {
+    "name": "Baseten",
+    "category": "AI / ML (additional)",
+    "url": "https://www.baseten.co"
+  },
+  {
+    "name": "Dialogflow (Google)",
+    "category": "AI / ML (additional)",
+    "url": "https://dialogflow.cloud.google.com"
+  },
+  {
+    "name": "Fireworks AI",
+    "category": "AI / ML (additional)",
+    "url": "https://fireworks.ai"
+  },
+  {
+    "name": "Google Cloud Natural Language",
+    "category": "AI / ML (additional)",
+    "url": "https://console.cloud.google.com/apis/library/language.googleapis.com"
+  },
+  {
+    "name": "Google Cloud Vision API",
+    "category": "AI / ML (additional)",
+    "url": "https://console.cloud.google.com/apis/library/vision.googleapis.com"
+  },
+  {
+    "name": "IBM Watson (Cloud)",
+    "category": "AI / ML (additional)",
+    "url": "https://cloud.ibm.com/registration"
+  },
+  {
+    "name": "Jina AI",
+    "category": "AI / ML (additional)",
+    "url": "https://jina.ai"
+  },
+  {
+    "name": "Microsoft Azure AI Services",
+    "category": "AI / ML (additional)",
+    "url": "https://azure.microsoft.com/en-us/products/ai-services"
+  },
+  {
+    "name": "Modal",
+    "category": "AI / ML (additional)",
+    "url": "https://modal.com"
+  },
+  {
+    "name": "RunPod",
+    "category": "AI / ML (additional)",
+    "url": "https://www.runpod.io"
+  },
+  {
+    "name": "Voyage AI (embeddings)",
+    "category": "AI / ML (additional)",
+    "url": "https://www.voyageai.com"
+  },
+  {
+    "name": "Wit.ai (Meta)",
+    "category": "AI / ML (additional)",
+    "url": "https://wit.ai"
+  },
+  {
+    "name": "Amplitude API",
+    "category": "Analytics",
+    "url": "https://amplitude.com"
+  },
+  {
+    "name": "Google Analytics API",
+    "category": "Analytics",
+    "url": "https://developers.google.com/analytics"
+  },
+  {
+    "name": "Mixpanel API",
+    "category": "Analytics",
+    "url": "https://mixpanel.com"
+  },
+  {
+    "name": "Segment API",
+    "category": "Analytics",
+    "url": "https://segment.com"
+  },
+  {
+    "name": "Alchemy API",
+    "category": "Blockchain / Web3",
+    "url": "https://www.alchemy.com"
+  },
+  {
+    "name": "Infura API",
+    "category": "Blockchain / Web3",
+    "url": "https://www.infura.io"
+  },
+  {
+    "name": "Moralis API",
+    "category": "Blockchain / Web3",
+    "url": "https://moralis.io"
+  },
+  {
+    "name": "QuickNode",
+    "category": "Blockchain / Web3",
+    "url": "https://www.quicknode.com"
+  },
+  {
+    "name": "The Graph",
+    "category": "Blockchain / Web3",
+    "url": "https://thegraph.com"
+  },
+  {
+    "name": "Ably (realtime)",
+    "category": "Dev Tools / Infra",
+    "url": "https://ably.com/sign-up"
+  },
+  {
+    "name": "Airtable API",
+    "category": "Dev Tools / Infra",
+    "url": "https://airtable.com/create/tokens"
+  },
+  {
+    "name": "Algolia Search",
+    "category": "Dev Tools / Infra",
+    "url": "https://www.algolia.com/users/sign_up"
+  },
+  {
+    "name": "Auth0",
+    "category": "Dev Tools / Infra",
+    "url": "https://auth0.com/signup"
+  },
+  {
+    "name": "AWS (free tier)",
+    "category": "Dev Tools / Infra",
+    "url": "https://aws.amazon.com/free/"
+  },
+  {
+    "name": "Cloudflare API",
+    "category": "Dev Tools / Infra",
+    "url": "https://dash.cloudflare.com/profile/api-tokens"
+  },
+  {
+    "name": "Firebase",
+    "category": "Dev Tools / Infra",
+    "url": "https://console.firebase.google.com"
+  },
+  {
+    "name": "GitLab API",
+    "category": "Dev Tools / Infra",
+    "url": "https://gitlab.com/-/profile/personal_access_tokens"
+  },
+  {
+    "name": "Netlify API",
+    "category": "Dev Tools / Infra",
+    "url": "https://app.netlify.com/user/applications"
+  },
+  {
+    "name": "PostHog",
+    "category": "Dev Tools / Infra",
+    "url": "https://app.posthog.com/signup"
+  },
+  {
+    "name": "Pusher",
+    "category": "Dev Tools / Infra",
+    "url": "https://dashboard.pusher.com/accounts/sign_up"
+  },
+  {
+    "name": "Sentry",
+    "category": "Dev Tools / Infra",
+    "url": "https://sentry.io/signup/"
+  },
+  {
+    "name": "Stripe (test keys)",
+    "category": "Dev Tools / Infra",
+    "url": "https://dashboard.stripe.com/register"
+  },
+  {
+    "name": "Supabase",
+    "category": "Dev Tools / Infra",
+    "url": "https://supabase.com/dashboard"
+  },
+  {
+    "name": "Vercel API",
+    "category": "Dev Tools / Infra",
+    "url": "https://vercel.com/account/tokens"
+  },
+  {
+    "name": "Bitly API",
+    "category": "Dev Tools / Infra (additional)",
+    "url": "https://bitly.com"
+  },
+  {
+    "name": "Contentful",
+    "category": "Dev Tools / Infra (additional)",
+    "url": "https://www.contentful.com"
+  },
+  {
+    "name": "DigitalOcean API",
+    "category": "Dev Tools / Infra (additional)",
+    "url": "https://cloud.digitalocean.com/account/api/tokens"
+  },
+  {
+    "name": "Fauna",
+    "category": "Dev Tools / Infra (additional)",
+    "url": "https://fauna.com"
+  },
+  {
+    "name": "Heroku Platform API",
+    "category": "Dev Tools / Infra (additional)",
+    "url": "https://devcenter.heroku.com/articles/platform-api-reference"
+  },
+  {
+    "name": "Linode API",
+    "category": "Dev Tools / Infra (additional)",
+    "url": "https://cloud.linode.com/profile/tokens"
+  },
+  {
+    "name": "MongoDB Atlas",
+    "category": "Dev Tools / Infra (additional)",
+    "url": "https://www.mongodb.com/cloud/atlas"
+  },
+  {
+    "name": "Neon (Postgres)",
+    "category": "Dev Tools / Infra (additional)",
+    "url": "https://neon.tech"
+  },
+  {
+    "name": "PlanetScale",
+    "category": "Dev Tools / Infra (additional)",
+    "url": "https://planetscale.com"
+  },
+  {
+    "name": "Postman API Platform",
+    "category": "Dev Tools / Infra (additional)",
+    "url": "https://www.postman.com"
+  },
+  {
+    "name": "Railway",
+    "category": "Dev Tools / Infra (additional)",
+    "url": "https://railway.app"
+  },
+  {
+    "name": "RapidAPI Marketplace",
+    "category": "Dev Tools / Infra (additional)",
+    "url": "https://rapidapi.com"
+  },
+  {
+    "name": "Redis Cloud",
+    "category": "Dev Tools / Infra (additional)",
+    "url": "https://redis.com/try-free/"
+  },
+  {
+    "name": "Render",
+    "category": "Dev Tools / Infra (additional)",
+    "url": "https://render.com"
+  },
+  {
+    "name": "Sanity.io",
+    "category": "Dev Tools / Infra (additional)",
+    "url": "https://www.sanity.io"
+  },
+  {
+    "name": "Strapi Cloud",
+    "category": "Dev Tools / Infra (additional)",
+    "url": "https://strapi.io"
+  },
+  {
+    "name": "TinyURL API",
+    "category": "Dev Tools / Infra (additional)",
+    "url": "https://tinyurl.com/app"
+  },
+  {
+    "name": "Upstash",
+    "category": "Dev Tools / Infra (additional)",
+    "url": "https://upstash.com"
+  },
+  {
+    "name": "Amazon Product Advertising API",
+    "category": "E-commerce / Shopping",
+    "url": "https://webservices.amazon.com/paapi5/documentation/"
+  },
+  {
+    "name": "BigCommerce API",
+    "category": "E-commerce / Shopping",
+    "url": "https://developer.bigcommerce.com"
+  },
+  {
+    "name": "eBay API",
+    "category": "E-commerce / Shopping",
+    "url": "https://developer.ebay.com"
+  },
+  {
+    "name": "Etsy API",
+    "category": "E-commerce / Shopping",
+    "url": "https://developers.etsy.com"
+  },
+  {
+    "name": "PayPal API",
+    "category": "E-commerce / Shopping",
+    "url": "https://developer.paypal.com"
+  },
+  {
+    "name": "Shopify Admin API",
+    "category": "E-commerce / Shopping",
+    "url": "https://shopify.dev"
+  },
+  {
+    "name": "Square API",
+    "category": "E-commerce / Shopping",
+    "url": "https://developer.squareup.com"
+  },
+  {
+    "name": "WooCommerce REST API",
+    "category": "E-commerce / Shopping",
+    "url": "https://woocommerce.github.io/woocommerce-rest-api-docs/"
+  },
+  {
+    "name": "Bandwidth",
+    "category": "Email / SMS (additional)",
+    "url": "https://dashboard.bandwidth.com"
+  },
+  {
+    "name": "ClickSend",
+    "category": "Email / SMS (additional)",
+    "url": "https://dashboard.clicksend.com"
+  },
+  {
+    "name": "EmailJS",
+    "category": "Email / SMS (additional)",
+    "url": "https://www.emailjs.com"
+  },
+  {
+    "name": "Infobip",
+    "category": "Email / SMS (additional)",
+    "url": "https://www.infobip.com"
+  },
+  {
+    "name": "Mailtrap",
+    "category": "Email / SMS (additional)",
+    "url": "https://mailtrap.io"
+  },
+  {
+    "name": "Sinch",
+    "category": "Email / SMS (additional)",
+    "url": "https://dashboard.sinch.com"
+  },
+  {
+    "name": "SparkPost",
+    "category": "Email / SMS (additional)",
+    "url": "https://app.sparkpost.com/join"
+  },
+  {
+    "name": "Telnyx",
+    "category": "Email / SMS (additional)",
+    "url": "https://portal.telnyx.com"
+  },
+  {
+    "name": "TextMagic",
+    "category": "Email / SMS (additional)",
+    "url": "https://www.textmagic.com"
+  },
+  {
+    "name": "Brevo (Sendinblue)",
+    "category": "Email / SMS / Communication",
+    "url": "https://onboarding.brevo.com/account/register"
+  },
+  {
+    "name": "Mailgun",
+    "category": "Email / SMS / Communication",
+    "url": "https://signup.mailgun.com/new/signup"
+  },
+  {
+    "name": "Mailjet",
+    "category": "Email / SMS / Communication",
+    "url": "https://app.mailjet.com/signup"
+  },
+  {
+    "name": "MessageBird",
+    "category": "Email / SMS / Communication",
+    "url": "https://dashboard.messagebird.com/en/sign-up"
+  },
+  {
+    "name": "Plivo",
+    "category": "Email / SMS / Communication",
+    "url": "https://console.plivo.com/accounts/register/"
+  },
+  {
+    "name": "Postmark",
+    "category": "Email / SMS / Communication",
+    "url": "https://account.postmarkapp.com/sign_up"
+  },
+  {
+    "name": "Vonage (Nexmo)",
+    "category": "Email / SMS / Communication",
+    "url": "https://dashboard.nexmo.com/sign-up"
+  },
+  {
+    "name": "Zoho ZeptoMail",
+    "category": "Email / SMS / Communication",
+    "url": "https://www.zoho.com/zeptomail/"
+  },
+  {
+    "name": "Alpaca (trading)",
+    "category": "Finance / Crypto (additional)",
+    "url": "https://alpaca.markets"
+  },
+  {
+    "name": "Binance API",
+    "category": "Finance / Crypto (additional)",
+    "url": "https://www.binance.com/en/binance-api"
+  },
+  {
+    "name": "BscScan",
+    "category": "Finance / Crypto (additional)",
+    "url": "https://bscscan.com/apis"
+  },
+  {
+    "name": "Coinbase API",
+    "category": "Finance / Crypto (additional)",
+    "url": "https://docs.cloud.coinbase.com"
+  },
+  {
+    "name": "CryptoCompare",
+    "category": "Finance / Crypto (additional)",
+    "url": "https://min-api.cryptocompare.com"
+  },
+  {
+    "name": "Etherscan",
+    "category": "Finance / Crypto (additional)",
+    "url": "https://etherscan.io/apis"
+  },
+  {
+    "name": "Financial Modeling Prep",
+    "category": "Finance / Crypto (additional)",
+    "url": "https://site.financialmodelingprep.com/developer/docs"
+  },
+  {
+    "name": "Kraken API",
+    "category": "Finance / Crypto (additional)",
+    "url": "https://www.kraken.com/features/api"
+  },
+  {
+    "name": "Marketstack",
+    "category": "Finance / Crypto (additional)",
+    "url": "https://marketstack.com"
+  },
+  {
+    "name": "Messari",
+    "category": "Finance / Crypto (additional)",
+    "url": "https://messari.io/api"
+  },
+  {
+    "name": "Nasdaq Data Link (Quandl)",
+    "category": "Finance / Crypto (additional)",
+    "url": "https://data.nasdaq.com"
+  },
+  {
+    "name": "Tradier",
+    "category": "Finance / Crypto (additional)",
+    "url": "https://tradier.com"
+  },
+  {
+    "name": "CoinAPI",
+    "category": "Finance / Crypto / Economics",
+    "url": "https://www.coinapi.io/signup"
+  },
+  {
+    "name": "CoinGecko API",
+    "category": "Finance / Crypto / Economics",
+    "url": "https://www.coingecko.com/en/api"
+  },
+  {
+    "name": "CoinMarketCap API",
+    "category": "Finance / Crypto / Economics",
+    "url": "https://coinmarketcap.com/api/"
+  },
+  {
+    "name": "Currencylayer",
+    "category": "Finance / Crypto / Economics",
+    "url": "https://currencylayer.com/product"
+  },
+  {
+    "name": "ExchangeRate-API",
+    "category": "Finance / Crypto / Economics",
+    "url": "https://www.exchangerate-api.com"
+  },
+  {
+    "name": "Federal Reserve (FRED)",
+    "category": "Finance / Crypto / Economics",
+    "url": "https://fred.stlouisfed.org/docs/api/api_key.html"
+  },
+  {
+    "name": "Finnhub",
+    "category": "Finance / Crypto / Economics",
+    "url": "https://finnhub.io/register"
+  },
+  {
+    "name": "Fixer.io",
+    "category": "Finance / Crypto / Economics",
+    "url": "https://fixer.io/product"
+  },
+  {
+    "name": "IEX Cloud",
+    "category": "Finance / Crypto / Economics",
+    "url": "https://iexcloud.io/console/"
+  },
+  {
+    "name": "Open Exchange Rates",
+    "category": "Finance / Crypto / Economics",
+    "url": "https://openexchangerates.org/signup/free"
+  },
+  {
+    "name": "Plaid (banking)",
+    "category": "Finance / Crypto / Economics",
+    "url": "https://dashboard.plaid.com/signup"
+  },
+  {
+    "name": "Polygon.io",
+    "category": "Finance / Crypto / Economics",
+    "url": "https://polygon.io/dashboard/signup"
+  },
+  {
+    "name": "Twelve Data",
+    "category": "Finance / Crypto / Economics",
+    "url": "https://twelvedata.com/register"
+  },
+  {
+    "name": "World Bank API",
+    "category": "Finance / Crypto / Economics",
+    "url": "https://datahelpdesk.worldbank.org/knowledgebase/articles/889392"
+  },
+  {
+    "name": "Open Food Facts API",
+    "category": "Food",
+    "url": "https://world.openfoodfacts.org/data"
+  },
+  {
+    "name": "TheCocktailDB",
+    "category": "Food",
+    "url": "https://www.thecocktaildb.com/api.php"
+  },
+  {
+    "name": "TheMealDB",
+    "category": "Food",
+    "url": "https://www.themealdb.com/api.php"
+  },
+  {
+    "name": "Yelp Fusion API",
+    "category": "Food",
+    "url": "https://www.yelp.com/developers"
+  },
+  {
+    "name": "Battle.net API",
+    "category": "Gaming",
+    "url": "https://develop.battle.net"
+  },
+  {
+    "name": "Riot Games API",
+    "category": "Gaming",
+    "url": "https://developer.riotgames.com"
+  },
+  {
+    "name": "Steam Web API",
+    "category": "Gaming",
+    "url": "https://steamcommunity.com/dev"
+  },
+  {
+    "name": "CMS.gov Data API",
+    "category": "Health / Fitness",
+    "url": "https://data.cms.gov"
+  },
+  {
+    "name": "Fitbit API",
+    "category": "Health / Fitness",
+    "url": "https://dev.fitbit.com"
+  },
+  {
+    "name": "Human API",
+    "category": "Health / Fitness",
+    "url": "https://www.humanapi.co"
+  },
+  {
+    "name": "openFDA API",
+    "category": "Health / Fitness",
+    "url": "https://open.fda.gov"
+  },
+  {
+    "name": "Strava API",
+    "category": "Health / Fitness",
+    "url": "https://developers.strava.com"
+  },
+  {
+    "name": "Withings API",
+    "category": "Health / Fitness",
+    "url": "https://developer.withings.com"
+  },
+  {
+    "name": "Cloudinary",
+    "category": "Images / Media",
+    "url": "https://cloudinary.com/users/register/free"
+  },
+  {
+    "name": "Giphy API",
+    "category": "Images / Media",
+    "url": "https://developers.giphy.com"
+  },
+  {
+    "name": "imgix",
+    "category": "Images / Media",
+    "url": "https://www.imgix.com/signup"
+  },
+  {
+    "name": "Pexels API",
+    "category": "Images / Media",
+    "url": "https://www.pexels.com/api/"
+  },
+  {
+    "name": "Pixabay API",
+    "category": "Images / Media",
+    "url": "https://pixabay.com/api/docs/"
+  },
+  {
+    "name": "remove.bg",
+    "category": "Images / Media",
+    "url": "https://www.remove.bg/api"
+  },
+  {
+    "name": "TinyPNG API",
+    "category": "Images / Media",
+    "url": "https://tinypng.com/developers"
+  },
+  {
+    "name": "Unsplash API",
+    "category": "Images / Media",
+    "url": "https://unsplash.com/developers"
+  },
+  {
+    "name": "500px API",
+    "category": "Images / Media (additional)",
+    "url": "https://500px.com/p/api"
+  },
+  {
+    "name": "Adobe Stock API",
+    "category": "Images / Media (additional)",
+    "url": "https://developer.adobe.com/stock/"
+  },
+  {
+    "name": "DeepAI",
+    "category": "Images / Media (additional)",
+    "url": "https://deepai.org"
+  },
+  {
+    "name": "Flickr API",
+    "category": "Images / Media (additional)",
+    "url": "https://www.flickr.com/services/api/"
+  },
+  {
+    "name": "Getty Images API",
+    "category": "Images / Media (additional)",
+    "url": "https://developers.gettyimages.com"
+  },
+  {
+    "name": "Imagga",
+    "category": "Images / Media (additional)",
+    "url": "https://imagga.com"
+  },
+  {
+    "name": "OCR.space",
+    "category": "Images / Media (additional)",
+    "url": "https://ocr.space/ocrapi"
+  },
+  {
+    "name": "Shutterstock API",
+    "category": "Images / Media (additional)",
+    "url": "https://developer.shutterstock.com"
+  },
+  {
+    "name": "Blynk API",
+    "category": "IoT",
+    "url": "https://blynk.io"
+  },
+  {
+    "name": "Particle.io API",
+    "category": "IoT",
+    "url": "https://www.particle.io"
+  },
+  {
+    "name": "ThingSpeak API",
+    "category": "IoT",
+    "url": "https://thingspeak.com"
+  },
+  {
+    "name": "Adzuna API",
+    "category": "Jobs / Recruiting",
+    "url": "https://developer.adzuna.com"
+  },
+  {
+    "name": "Indeed Publisher API",
+    "category": "Jobs / Recruiting",
+    "url": "https://www.indeed.com/publisher"
+  },
+  {
+    "name": "Jooble API",
+    "category": "Jobs / Recruiting",
+    "url": "https://jooble.org/api/about"
+  },
+  {
+    "name": "USAJobs API",
+    "category": "Jobs / Recruiting",
+    "url": "https://developer.usajobs.gov"
+  },
+  {
+    "name": "Abstract API (geolocation)",
+    "category": "Maps / Geocoding / Location",
+    "url": "https://www.abstractapi.com/api/ip-geolocation-api"
+  },
+  {
+    "name": "Geoapify",
+    "category": "Maps / Geocoding / Location",
+    "url": "https://myprojects.geoapify.com/register"
+  },
+  {
+    "name": "Google Maps Platform",
+    "category": "Maps / Geocoding / Location",
+    "url": "https://console.cloud.google.com/google/maps-apis"
+  },
+  {
+    "name": "HERE API",
+    "category": "Maps / Geocoding / Location",
+    "url": "https://developer.here.com/sign-up"
+  },
+  {
+    "name": "ip-api.com",
+    "category": "Maps / Geocoding / Location",
+    "url": "https://members.ip-api.com/register"
+  },
+  {
+    "name": "IPinfo",
+    "category": "Maps / Geocoding / Location",
+    "url": "https://ipinfo.io/signup"
+  },
+  {
+    "name": "ipstack",
+    "category": "Maps / Geocoding / Location",
+    "url": "https://ipstack.com/product"
+  },
+  {
+    "name": "OpenCage Geocoding",
+    "category": "Maps / Geocoding / Location",
+    "url": "https://opencagedata.com/users/sign_up"
+  },
+  {
+    "name": "Positionstack",
+    "category": "Maps / Geocoding / Location",
+    "url": "https://positionstack.com/signup/free"
+  },
+  {
+    "name": "TomTom Maps",
+    "category": "Maps / Geocoding / Location",
+    "url": "https://developer.tomtom.com/user/register"
+  },
+  {
+    "name": "Bing Maps API",
+    "category": "Maps / Location (additional)",
+    "url": "https://www.bingmapsportal.com"
+  },
+  {
+    "name": "Foursquare Places API",
+    "category": "Maps / Location (additional)",
+    "url": "https://developer.foursquare.com"
+  },
+  {
+    "name": "Geocodio",
+    "category": "Maps / Location (additional)",
+    "url": "https://www.geocod.io"
+  },
+  {
+    "name": "GeoNames",
+    "category": "Maps / Location (additional)",
+    "url": "http://www.geonames.org/export/web-services.html"
+  },
+  {
+    "name": "Nominatim (OpenStreetMap)",
+    "category": "Maps / Location (additional)",
+    "url": "https://nominatim.org"
+  },
+  {
+    "name": "Radar.io",
+    "category": "Maps / Location (additional)",
+    "url": "https://radar.com"
+  },
+  {
+    "name": "SmartyStreets",
+    "category": "Maps / Location (additional)",
+    "url": "https://www.smarty.com"
+  },
+  {
+    "name": "Bright Data",
+    "category": "Miscellaneous / Utility",
+    "url": "https://brightdata.com/cp/start"
+  },
+  {
+    "name": "Calendarific (holidays)",
+    "category": "Miscellaneous / Utility",
+    "url": "https://calendarific.com/signup"
+  },
+  {
+    "name": "Clearbit",
+    "category": "Miscellaneous / Utility",
+    "url": "https://dashboard.clearbit.com/signup"
+  },
+  {
+    "name": "Diffbot",
+    "category": "Miscellaneous / Utility",
+    "url": "https://www.diffbot.com/plans/trial/"
+  },
+  {
+    "name": "Edamam (nutrition/recipes)",
+    "category": "Miscellaneous / Utility",
+    "url": "https://developer.edamam.com"
+  },
+  {
+    "name": "Hunter.io",
+    "category": "Miscellaneous / Utility",
+    "url": "https://hunter.io/users/sign_up"
+  },
+  {
+    "name": "IPQualityScore",
+    "category": "Miscellaneous / Utility",
+    "url": "https://www.ipqualityscore.com/create-account"
+  },
+  {
+    "name": "JSONPlaceholder (fake data)",
+    "category": "Miscellaneous / Utility",
+    "url": "https://jsonplaceholder.typicode.com"
+  },
+  {
+    "name": "Mockaroo",
+    "category": "Miscellaneous / Utility",
+    "url": "https://www.mockaroo.com/api/docs"
+  },
+  {
+    "name": "Nutritionix API",
+    "category": "Miscellaneous / Utility",
+    "url": "https://developer.nutritionix.com"
+  },
+  {
+    "name": "PokéAPI",
+    "category": "Miscellaneous / Utility",
+    "url": "https://pokeapi.co"
+  },
+  {
+    "name": "QR Code API (goqr.me)",
+    "category": "Miscellaneous / Utility",
+    "url": "https://goqr.me/api/"
+  },
+  {
+    "name": "RandomUser.me",
+    "category": "Miscellaneous / Utility",
+    "url": "https://randomuser.me/documentation"
+  },
+  {
+    "name": "ScraperAPI",
+    "category": "Miscellaneous / Utility",
+    "url": "https://www.scraperapi.com/signup"
+  },
+  {
+    "name": "Spoonacular (recipes)",
+    "category": "Miscellaneous / Utility",
+    "url": "https://spoonacular.com/food-api"
+  },
+  {
+    "name": "Wolfram Alpha API",
+    "category": "Miscellaneous / Utility",
+    "url": "https://developer.wolframalpha.com"
+  },
+  {
+    "name": "ZeroBounce",
+    "category": "Miscellaneous / Utility",
+    "url": "https://www.zerobounce.net/members/register"
+  },
+  {
+    "name": "Zippopotam.us (zip codes)",
+    "category": "Miscellaneous / Utility",
+    "url": "https://zippopotam.us"
+  },
+  {
+    "name": "Discogs API",
+    "category": "Music / Entertainment",
+    "url": "https://www.discogs.com/settings/developers"
+  },
+  {
+    "name": "Genius API",
+    "category": "Music / Entertainment",
+    "url": "https://genius.com/api-clients"
+  },
+  {
+    "name": "IGDB (games)",
+    "category": "Music / Entertainment",
+    "url": "https://api-docs.igdb.com"
+  },
+  {
+    "name": "Last.fm API",
+    "category": "Music / Entertainment",
+    "url": "https://www.last.fm/api/account/create"
+  },
+  {
+    "name": "OMDb API",
+    "category": "Music / Entertainment",
+    "url": "https://www.omdbapi.com/apikey.aspx"
+  },
+  {
+    "name": "RAWG (video games)",
+    "category": "Music / Entertainment",
+    "url": "https://rawg.io/apidocs"
+  },
+  {
+    "name": "Spotify Web API",
+    "category": "Music / Entertainment",
+    "url": "https://developer.spotify.com/dashboard"
+  },
+  {
+    "name": "TMDB (movies)",
+    "category": "Music / Entertainment",
+    "url": "https://www.themoviedb.org/settings/api"
+  },
+  {
+    "name": "Apple Music API",
+    "category": "Music / Entertainment (additional)",
+    "url": "https://developer.apple.com/musickit/"
+  },
+  {
+    "name": "Deezer API",
+    "category": "Music / Entertainment (additional)",
+    "url": "https://developers.deezer.com"
+  },
+  {
+    "name": "Jamendo API",
+    "category": "Music / Entertainment (additional)",
+    "url": "https://developer.jamendo.com"
+  },
+  {
+    "name": "Musixmatch API",
+    "category": "Music / Entertainment (additional)",
+    "url": "https://developer.musixmatch.com"
+  },
+  {
+    "name": "SoundCloud API",
+    "category": "Music / Entertainment (additional)",
+    "url": "https://developers.soundcloud.com"
+  },
+  {
+    "name": "TheAudioDB",
+    "category": "Music / Entertainment (additional)",
+    "url": "https://www.theaudiodb.com/api_guide.php"
+  },
+  {
+    "name": "Aylien News API",
+    "category": "News (additional)",
+    "url": "https://aylien.com/news-api"
+  },
+  {
+    "name": "Bing News Search API",
+    "category": "News (additional)",
+    "url": "https://www.microsoft.com/en-us/bing/apis/bing-news-search-api"
+  },
+  {
+    "name": "Webz.io News API",
+    "category": "News (additional)",
+    "url": "https://webz.io"
+  },
+  {
+    "name": "Currents API",
+    "category": "News / Content",
+    "url": "https://currentsapi.services/en/register"
+  },
+  {
+    "name": "GNews",
+    "category": "News / Content",
+    "url": "https://gnews.io/register"
+  },
+  {
+    "name": "Mediastack",
+    "category": "News / Content",
+    "url": "https://mediastack.com/product"
+  },
+  {
+    "name": "New York Times API",
+    "category": "News / Content",
+    "url": "https://developer.nytimes.com/accounts/create"
+  },
+  {
+    "name": "NewsAPI.org",
+    "category": "News / Content",
+    "url": "https://newsapi.org/register"
+  },
+  {
+    "name": "Reddit API",
+    "category": "News / Content",
+    "url": "https://www.reddit.com/prefs/apps"
+  },
+  {
+    "name": "The Guardian Open Platform",
+    "category": "News / Content",
+    "url": "https://open-platform.theguardian.com/access/"
+  },
+  {
+    "name": "Adyen API",
+    "category": "Payments (additional)",
+    "url": "https://www.adyen.com/api-explorer"
+  },
+  {
+    "name": "Braintree API",
+    "category": "Payments (additional)",
+    "url": "https://developer.paypal.com/braintree/docs"
+  },
+  {
+    "name": "Razorpay API",
+    "category": "Payments (additional)",
+    "url": "https://razorpay.com/docs/"
+  },
+  {
+    "name": "data.gov",
+    "category": "Public / General Data",
+    "url": "https://api.data.gov/signup"
+  },
+  {
+    "name": "data.world",
+    "category": "Public / General Data",
+    "url": "https://data.world/settings/advanced"
+  },
+  {
+    "name": "Eurostat API",
+    "category": "Public / General Data",
+    "url": "https://ec.europa.eu/eurostat/web/main/data/web-services"
+  },
+  {
+    "name": "Figshare API",
+    "category": "Public / General Data",
+    "url": "https://docs.figshare.com"
+  },
+  {
+    "name": "Kaggle API",
+    "category": "Public / General Data",
+    "url": "https://www.kaggle.com/settings"
+  },
+  {
+    "name": "NASA Open APIs",
+    "category": "Public / General Data",
+    "url": "https://api.nasa.gov"
+  },
+  {
+    "name": "OpenAQ (air quality)",
+    "category": "Public / General Data",
+    "url": "https://docs.openaq.org"
+  },
+  {
+    "name": "OpenCorporates",
+    "category": "Public / General Data",
+    "url": "https://api.opencorporates.com"
+  },
+  {
+    "name": "REST Countries",
+    "category": "Public / General Data",
+    "url": "https://restcountries.com"
+  },
+  {
+    "name": "USGS Earthquake API",
+    "category": "Public / General Data",
+    "url": "https://earthquake.usgs.gov/fdsnws/event/1/"
+  },
+  {
+    "name": "Wikidata API",
+    "category": "Public / General Data",
+    "url": "https://www.wikidata.org/wiki/Wikidata\\:Data_access"
+  },
+  {
+    "name": "Wikipedia API",
+    "category": "Public / General Data",
+    "url": "https://www.mediawiki.org/wiki/API\\:Main_page"
+  },
+  {
+    "name": "Zenodo API",
+    "category": "Public / General Data",
+    "url": "https://zenodo.org/account/settings/applications/"
+  },
+  {
+    "name": "arXiv API",
+    "category": "Public / Scientific Data (additional)",
+    "url": "https://arxiv.org/help/api"
+  },
+  {
+    "name": "CDC Data API",
+    "category": "Public / Scientific Data (additional)",
+    "url": "https://data.cdc.gov"
+  },
+  {
+    "name": "CrossRef API",
+    "category": "Public / Scientific Data (additional)",
+    "url": "https://www.crossref.org/documentation/retrieve-metadata/rest-api/"
+  },
+  {
+    "name": "data.europa.eu",
+    "category": "Public / Scientific Data (additional)",
+    "url": "https://data.europa.eu/en"
+  },
+  {
+    "name": "GBIF (biodiversity)",
+    "category": "Public / Scientific Data (additional)",
+    "url": "https://www.gbif.org/developer/summary"
+  },
+  {
+    "name": "NASA Exoplanet Archive",
+    "category": "Public / Scientific Data (additional)",
+    "url": "https://exoplanetarchive.ipac.caltech.edu"
+  },
+  {
+    "name": "OpenAlex",
+    "category": "Public / Scientific Data (additional)",
+    "url": "https://openalex.org"
+  },
+  {
+    "name": "PubMed E-utilities",
+    "category": "Public / Scientific Data (additional)",
+    "url": "https://www.ncbi.nlm.nih.gov/books/NBK25501/"
+  },
+  {
+    "name": "Semantic Scholar API",
+    "category": "Public / Scientific Data (additional)",
+    "url": "https://www.semanticscholar.org/product/api"
+  },
+  {
+    "name": "UK data.gov.uk",
+    "category": "Public / Scientific Data (additional)",
+    "url": "https://www.data.gov.uk"
+  },
+  {
+    "name": "US Census Bureau API",
+    "category": "Public / Scientific Data (additional)",
+    "url": "https://api.census.gov/data/key_signup.html"
+  },
+  {
+    "name": "WHO API",
+    "category": "Public / Scientific Data (additional)",
+    "url": "https://www.who.int/data/gho/info/gho-odata-api"
+  },
+  {
+    "name": "World Air Quality Index",
+    "category": "Public / Scientific Data (additional)",
+    "url": "https://aqicn.org/api/"
+  },
+  {
+    "name": "ATTOM Data",
+    "category": "Real Estate",
+    "url": "https://api.developer.attomdata.com"
+  },
+  {
+    "name": "Bridge Interactive (Zillow data)",
+    "category": "Real Estate",
+    "url": "https://www.bridgedataoutput.com"
+  },
+  {
+    "name": "Estated",
+    "category": "Real Estate",
+    "url": "https://estated.com"
+  },
+  {
+    "name": "Bing Web Search API",
+    "category": "Search / Scraping / Misc Utility",
+    "url": "https://www.microsoft.com/en-us/bing/apis/bing-web-search-api"
+  },
+  {
+    "name": "Clearout (email verification)",
+    "category": "Search / Scraping / Misc Utility",
+    "url": "https://clearout.io"
+  },
+  {
+    "name": "Google Custom Search API",
+    "category": "Search / Scraping / Misc Utility",
+    "url": "https://programmablesearchengine.google.com"
+  },
+  {
+    "name": "IPGeolocation.io",
+    "category": "Search / Scraping / Misc Utility",
+    "url": "https://ipgeolocation.io"
+  },
+  {
+    "name": "Kickbox (email verification)",
+    "category": "Search / Scraping / Misc Utility",
+    "url": "https://kickbox.com"
+  },
+  {
+    "name": "NumVerify (phone validation)",
+    "category": "Search / Scraping / Misc Utility",
+    "url": "https://numverify.com"
+  },
+  {
+    "name": "Random.org API",
+    "category": "Search / Scraping / Misc Utility",
+    "url": "https://api.random.org"
+  },
+  {
+    "name": "ScrapingBee",
+    "category": "Search / Scraping / Misc Utility",
+    "url": "https://www.scrapingbee.com"
+  },
+  {
+    "name": "AbuseIPDB",
+    "category": "Security / Threat Intel",
+    "url": "https://www.abuseipdb.com/register"
+  },
+  {
+    "name": "Censys API",
+    "category": "Security / Threat Intel",
+    "url": "https://search.censys.io/account/api"
+  },
+  {
+    "name": "Have I Been Pwned API",
+    "category": "Security / Threat Intel",
+    "url": "https://haveibeenpwned.com/API/Key"
+  },
+  {
+    "name": "Shodan API",
+    "category": "Security / Threat Intel",
+    "url": "https://developer.shodan.io"
+  },
+  {
+    "name": "URLScan.io",
+    "category": "Security / Threat Intel",
+    "url": "https://urlscan.io/about-api/"
+  },
+  {
+    "name": "VirusTotal API",
+    "category": "Security / Threat Intel",
+    "url": "https://www.virustotal.com/gui/join-us"
+  },
+  {
+    "name": "Discord API",
+    "category": "Social Media",
+    "url": "https://discord.com/developers/docs/intro"
+  },
+  {
+    "name": "Facebook Graph API",
+    "category": "Social Media",
+    "url": "https://developers.facebook.com"
+  },
+  {
+    "name": "Instagram Graph API",
+    "category": "Social Media",
+    "url": "https://developers.facebook.com/docs/instagram-api/"
+  },
+  {
+    "name": "LinkedIn API",
+    "category": "Social Media",
+    "url": "https://www.linkedin.com/developers/"
+  },
+  {
+    "name": "Mastodon API",
+    "category": "Social Media",
+    "url": "https://docs.joinmastodon.org/api/"
+  },
+  {
+    "name": "Pinterest API",
+    "category": "Social Media",
+    "url": "https://developers.pinterest.com"
+  },
+  {
+    "name": "Telegram Bot API",
+    "category": "Social Media",
+    "url": "https://core.telegram.org/bots/api"
+  },
+  {
+    "name": "TikTok for Developers",
+    "category": "Social Media",
+    "url": "https://developers.tiktok.com"
+  },
+  {
+    "name": "X (Twitter) API",
+    "category": "Social Media",
+    "url": "https://developer.twitter.com"
+  },
+  {
+    "name": "API-Football",
+    "category": "Sports",
+    "url": "https://www.api-football.com"
+  },
+  {
+    "name": "balldontlie (NBA)",
+    "category": "Sports",
+    "url": "https://www.balldontlie.io"
+  },
+  {
+    "name": "football-data.org",
+    "category": "Sports",
+    "url": "https://www.football-data.org/client/register"
+  },
+  {
+    "name": "Sportradar",
+    "category": "Sports",
+    "url": "https://developer.sportradar.com"
+  },
+  {
+    "name": "TheSportsDB",
+    "category": "Sports",
+    "url": "https://www.thesportsdb.com/api.php"
+  },
+  {
+    "name": "API-Baseball",
+    "category": "Sports (additional)",
+    "url": "https://www.api-baseball.com"
+  },
+  {
+    "name": "API-Basketball",
+    "category": "Sports (additional)",
+    "url": "https://www.api-basketball.com"
+  },
+  {
+    "name": "MySportsFeeds",
+    "category": "Sports (additional)",
+    "url": "https://www.mysportsfeeds.com"
+  },
+  {
+    "name": "SportsDataIO",
+    "category": "Sports (additional)",
+    "url": "https://sportsdata.io"
+  },
+  {
+    "name": "Amazon Translate",
+    "category": "Translation (additional)",
+    "url": "https://aws.amazon.com/translate/"
+  },
+  {
+    "name": "IBM Watson Language Translator",
+    "category": "Translation (additional)",
+    "url": "https://www.ibm.com/products/natural-language-understanding"
+  },
+  {
+    "name": "Systran",
+    "category": "Translation (additional)",
+    "url": "https://www.systran.net"
+  },
+  {
+    "name": "DeepL API",
+    "category": "Translation / Language",
+    "url": "https://www.deepl.com/en/pro-api"
+  },
+  {
+    "name": "Google Cloud Translation",
+    "category": "Translation / Language",
+    "url": "https://console.cloud.google.com/apis/library/translate.googleapis.com"
+  },
+  {
+    "name": "LibreTranslate",
+    "category": "Translation / Language",
+    "url": "https://portal.libretranslate.com"
+  },
+  {
+    "name": "Lingva/Yandex Translate",
+    "category": "Translation / Language",
+    "url": "https://yandex.com/dev/translate/"
+  },
+  {
+    "name": "Microsoft Translator",
+    "category": "Translation / Language",
+    "url": "https://azure.microsoft.com/en-us/products/ai-services/ai-translator"
+  },
+  {
+    "name": "AeroDataBox",
+    "category": "Travel / Transportation",
+    "url": "https://www.aerodatabox.com"
+  },
+  {
+    "name": "Amadeus for Developers",
+    "category": "Travel / Transportation",
+    "url": "https://developers.amadeus.com"
+  },
+  {
+    "name": "Aviationstack",
+    "category": "Travel / Transportation",
+    "url": "https://aviationstack.com"
+  },
+  {
+    "name": "Booking.com API",
+    "category": "Travel / Transportation",
+    "url": "https://developers.booking.com"
+  },
+  {
+    "name": "Lyft API",
+    "category": "Travel / Transportation",
+    "url": "https://developer.lyft.com"
+  },
+  {
+    "name": "Rome2Rio API",
+    "category": "Travel / Transportation",
+    "url": "https://www.rome2rio.com/documentation"
+  },
+  {
+    "name": "Skyscanner API",
+    "category": "Travel / Transportation",
+    "url": "https://developers.skyscanner.net"
+  },
+  {
+    "name": "TripAdvisor Content API",
+    "category": "Travel / Transportation",
+    "url": "https://tripadvisor-content-api.readme.io"
+  },
+  {
+    "name": "Uber API",
+    "category": "Travel / Transportation",
+    "url": "https://developer.uber.com"
+  },
+  {
+    "name": "Mux API",
+    "category": "Video / Streaming",
+    "url": "https://www.mux.com"
+  },
+  {
+    "name": "Twitch API",
+    "category": "Video / Streaming",
+    "url": "https://dev.twitch.tv"
+  },
+  {
+    "name": "Vimeo API",
+    "category": "Video / Streaming",
+    "url": "https://developer.vimeo.com"
+  },
+  {
+    "name": "YouTube Data API",
+    "category": "Video / Streaming",
+    "url": "https://console.cloud.google.com/apis/library/youtube.googleapis.com"
+  },
+  {
+    "name": "AccuWeather API",
+    "category": "Weather",
+    "url": "https://developer.accuweather.com"
+  },
+  {
+    "name": "Meteomatics",
+    "category": "Weather",
+    "url": "https://www.meteomatics.com/en/sign-up"
+  },
+  {
+    "name": "NOAA Weather API",
+    "category": "Weather",
+    "url": "https://www.weather.gov/documentation/services-web-api"
+  },
+  {
+    "name": "OpenWeatherMap",
+    "category": "Weather",
+    "url": "https://home.openweathermap.org/users/sign_up"
+  },
+  {
+    "name": "Tomorrow\\.io",
+    "category": "Weather",
+    "url": "https://app.tomorrow.io/signup"
+  },
+  {
+    "name": "Visual Crossing",
+    "category": "Weather",
+    "url": "https://www.visualcrossing.com/sign-up"
+  },
+  {
+    "name": "WeatherAPI.com",
+    "category": "Weather",
+    "url": "https://www.weatherapi.com/signup.aspx"
+  },
+  {
+    "name": "Weatherbit",
+    "category": "Weather",
+    "url": "https://www.weatherbit.io/account/create"
+  },
+  {
+    "name": "Ambee (environment)",
+    "category": "Weather (additional)",
+    "url": "https://www.getambee.com"
+  },
+  {
+    "name": "Foreca",
+    "category": "Weather (additional)",
+    "url": "https://developer.foreca.com"
+  },
+  {
+    "name": "Meteoblue",
+    "category": "Weather (additional)",
+    "url": "https://www.meteoblue.com/en/weather-api"
+  },
+  {
+    "name": "Open-Meteo",
+    "category": "Weather (additional)",
+    "url": "https://open-meteo.com"
+  },
+  {
+    "name": "StormGlass (marine)",
+    "category": "Weather (additional)",
+    "url": "https://stormglass.io"
+  },
+  {
+    "name": "Weatherstack",
+    "category": "Weather (additional)",
+    "url": "https://weatherstack.com"
+  },
+  {
+    "name": "Xweather (Aeris)",
+    "category": "Weather (additional)",
+    "url": "https://www.xweather.com"
+  }
+]
