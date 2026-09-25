@@ -1,6 +1,6 @@
 # All Providers by Criterion
 
-The **339 unique-provider** catalog is organized into practical criteria. Providers are intentionally **cross-listed** when they serve multiple use cases.
+The **576 unique-provider** catalog is organized into practical criteria. Providers are intentionally **cross-listed** when they serve multiple use cases.
 
 ## AI & Machine Learning
 **37 criterion memberships** — [Open AI & Machine Learning table](./criteria/ai-and-machine-learning.md)
@@ -80,3 +80,35 @@ The **339 unique-provider** catalog is organized into practical criteria. Provid
 ## Weather & Environment
 **18 criterion memberships** — [Open Weather & Environment table](./criteria/weather-and-environment.md)
 
+
+# Expanded Provider Categories
+
+## AI Observability & Evaluation
+**6 providers** — [Open AI Observability & Evaluation table](./criteria/ai-observability-and-evaluation.md)
+
+## AI Compute & GPU
+**4 providers** — [Open AI Compute & GPU table](./criteria/ai-compute-and-gpu.md)
+
+## Databases & Backend
+**16 providers** — [Open Databases & Backend table](./criteria/databases-and-backend.md)
+
+## Vector Databases
+**2 providers** — [Open Vector Databases table](./criteria/vector-databases.md)
+
+## CI/CD & DevOps
+**7 providers** — [Open CI/CD & DevOps table](./criteria/ci-cd-and-devops.md)
+
+## Web Scraping & Browser Automation
+**15 providers** — [Open Web Scraping & Browser Automation table](./criteria/web-scraping-and-browser-automation.md)
+
+## Geospatial & Routing
+**14 providers** — [Open Geospatial & Routing table](./criteria/geospatial-and-routing.md)
+
+## Scientific Research
+**10 providers** — [Open Scientific Research table](./criteria/scientific-research.md)
+
+## Bioinformatics
+**7 providers** — [Open Bioinformatics table](./criteria/bioinformatics.md)
+
+## Government & Civic Data
+**17 providers** — [Open Government & Civic Data table](./criteria/government-and-civic-data.md)
