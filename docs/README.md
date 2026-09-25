@@ -2,7 +2,7 @@
 
 The directory is organized by **practical criteria**, with intentional cross-listing for multifunction APIs.
 
-- [Browse all 26 criteria](./providers/criteria.md)
+- [Browse all 26 criteria](./criteria.html)
 - [All providers by criterion](./providers/all.md)
 - [Additional provider URL catalog](./providers/additional-urls.md)
 - [Criterion definitions and classification approach](./providers/criteria.md)
