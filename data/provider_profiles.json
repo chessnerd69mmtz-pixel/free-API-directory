@@ -9944,8 +9944,8 @@
     "category": "Jobs / Recruiting",
     "description": "Cataloged API provider.",
     "signup_url": "https://developer.usajobs.gov",
-    "pricing_url": "https://developer.usajobs.gov",
-    "documentation_url": "https://developer.usajobs.gov",
+    "pricing_url": "Unavailable",
+    "documentation_url": "https://developer.usajobs.gov/API-Reference",
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
@@ -9953,15 +9953,15 @@
       "amount": "Unverified",
       "expiry": "Unverified"
     },
-    "requires_credit_card": "Unverified",
-    "authentication": "Unverified",
+    "requires_credit_card": "Unavailable",
+    "authentication": "Unavailable",
     "protocols": [],
     "sdk_languages": [],
-    "commercial_use": "Unverified",
-    "self_hostable": "Unverified",
-    "webhooks": "Unverified",
-    "rate_limit": "Unverified",
-    "free_tier_reset": "Unverified",
+    "commercial_use": "Unavailable",
+    "self_hostable": "Unavailable",
+    "webhooks": "Unavailable",
+    "rate_limit": "Unavailable",
+    "free_tier_reset": "Unavailable",
     "uses": [
       "job search",
       "job listings",
@@ -9969,17 +9969,31 @@
       "salary/employer data where offered",
       "recruiting integrations"
     ],
-    "last_verified": null,
-    "verified_by": null,
-    "status": "catalog-only",
-    "verification_status": "provider-homepage-fallback"
+    "last_verified": "2026-09-25",
+    "verified_by": "official-source-verification",
+    "status": "active",
+    "verification_status": "manually-verified",
+    "verification_sources": {
+      "requires_credit_card": "https://developer.usajobs.gov/API-Reference",
+      "authentication": "https://developer.usajobs.gov/API-Reference",
+      "protocols": "https://developer.usajobs.gov/API-Reference",
+      "sdk_languages": "https://developer.usajobs.gov/API-Reference",
+      "commercial_use": "https://developer.usajobs.gov/TermsOfService",
+      "self_hostable": "https://developer.usajobs.gov/API-Reference",
+      "webhooks": "https://developer.usajobs.gov/API-Reference",
+      "rate_limit": "https://developer.usajobs.gov/API-Reference",
+      "free_tier_reset": "https://developer.usajobs.gov/API-Reference",
+      "documentation_url": "https://developer.usajobs.gov/API-Reference",
+      "pricing_url": "https://developer.usajobs.gov/TermsOfService",
+      "provider": "https://developer.usajobs.gov/API-Reference"
+    }
   },
   {
     "name": "Abstract API (geolocation)",
     "category": "Maps / Geocoding / Location",
     "description": "Cataloged API provider.",
     "signup_url": "https://www.abstractapi.com/api/ip-geolocation-api",
-    "pricing_url": "https://www.abstractapi.com/api/ip-geolocation-api",
+    "pricing_url": "https://www.abstractapi.com/pricing",
     "documentation_url": "https://www.abstractapi.com/api/ip-geolocation-api",
     "free_tier": {
       "has_free_tier": null,
@@ -9988,15 +10002,19 @@
       "amount": "Unverified",
       "expiry": "Unverified"
     },
-    "requires_credit_card": "Unverified",
-    "authentication": "Unverified",
-    "protocols": [],
+    "requires_credit_card": "Unavailable",
+    "authentication": "API key",
+    "protocols": [
+      "HTTPS",
+      "REST",
+      "JSON"
+    ],
     "sdk_languages": [],
-    "commercial_use": "Unverified",
-    "self_hostable": "Unverified",
-    "webhooks": "Unverified",
-    "rate_limit": "Unverified",
-    "free_tier_reset": "Unverified",
+    "commercial_use": "Unavailable",
+    "self_hostable": "No",
+    "webhooks": "Unavailable",
+    "rate_limit": "Unavailable",
+    "free_tier_reset": "Unavailable",
     "uses": [
       "geocoding",
       "reverse geocoding",
@@ -10005,10 +10023,24 @@
       "maps/tiles",
       "address/location metadata"
     ],
-    "last_verified": null,
-    "verified_by": null,
-    "status": "catalog-only",
-    "verification_status": "provider-homepage-fallback"
+    "last_verified": "2026-09-25",
+    "verified_by": "official-source-verification",
+    "status": "active",
+    "verification_status": "manually-verified",
+    "verification_sources": {
+      "requires_credit_card": "https://www.abstractapi.com/pricing",
+      "authentication": "https://www.abstractapi.com/api/ip-geolocation-api",
+      "protocols": "https://www.abstractapi.com/api/ip-geolocation-api",
+      "sdk_languages": "https://www.abstractapi.com/api/ip-geolocation-api",
+      "commercial_use": "https://www.abstractapi.com/terms-of-service",
+      "self_hostable": "https://www.abstractapi.com/api/ip-geolocation-api",
+      "webhooks": "https://www.abstractapi.com/api/ip-geolocation-api",
+      "rate_limit": "https://www.abstractapi.com/api/ip-geolocation-api",
+      "free_tier_reset": "https://www.abstractapi.com/pricing",
+      "documentation_url": "https://www.abstractapi.com/api/ip-geolocation-api",
+      "pricing_url": "https://www.abstractapi.com/pricing",
+      "provider": "https://www.abstractapi.com/api/ip-geolocation-api"
+    }
   },
   {
     "name": "Geoapify",
