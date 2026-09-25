@@ -1169,7 +1169,7 @@
     "category": "Search / Research",
     "description": "Search and research API for AI applications.",
     "signup_url": "https://app.tavily.com/home",
-    "pricing_url": "https://www.tavily.com/pricing",
+    "pricing_url": "https://tavily.com/pricing",
     "documentation_url": "https://docs.tavily.com/",
     "free_tier": {
       "has_free_tier": null,
@@ -1178,15 +1178,19 @@
       "amount": "Unverified - check provider page",
       "expiry": "Unverified - check provider page"
     },
-    "requires_credit_card": "Unverified",
-    "authentication": "Unverified",
-    "protocols": [],
-    "sdk_languages": [],
-    "commercial_use": "Unverified",
-    "self_hostable": "Unverified",
-    "webhooks": "Unverified",
-    "rate_limit": "Unverified",
-    "free_tier_reset": "Unverified",
+    "requires_credit_card": "Unavailable",
+    "authentication": "Unavailable",
+    "protocols": [
+      "Unavailable"
+    ],
+    "sdk_languages": [
+      "Unavailable"
+    ],
+    "commercial_use": "Unavailable",
+    "self_hostable": "Unavailable",
+    "webhooks": "Unavailable",
+    "rate_limit": "Unavailable",
+    "free_tier_reset": "Unavailable",
     "uses": [
       "web search",
       "AI-focused research search",
@@ -1195,9 +1199,22 @@
       "search result filtering"
     ],
     "last_verified": "2026-09-25",
-    "verified_by": "automated-live-verification",
+    "verified_by": "manual-official-doc-review",
     "status": "active",
-    "verification_status": "official-pricing-page-identified"
+    "verification_status": "manually-verified",
+    "verification_sources": {
+      "requires_credit_card": "https://tavily.com/",
+      "authentication": "https://docs.tavily.com/",
+      "protocols": "https://docs.tavily.com/",
+      "sdk_languages": "https://docs.tavily.com/",
+      "commercial_use": "https://tavily.com/terms",
+      "self_hostable": "https://docs.tavily.com/",
+      "webhooks": "https://docs.tavily.com/",
+      "rate_limit": "https://docs.tavily.com/",
+      "free_tier_reset": "https://tavily.com/",
+      "documentation": "https://docs.tavily.com/",
+      "pricing": "https://tavily.com/pricing"
+    }
   },
   {
     "name": "AI21 Labs",
@@ -1214,16 +1231,15 @@
       "expiry": "Unverified"
     },
     "requires_credit_card": "Unavailable",
-    "authentication": "API key supplied in the Authorization header as a Bearer token.",
+    "authentication": "Unavailable",
     "protocols": [
-      "HTTPS REST API with JSON requests and responses."
+      "Unavailable"
     ],
     "sdk_languages": [
-      "Python",
-      "JavaScript/TypeScript."
+      "Unavailable"
     ],
     "commercial_use": "Unavailable",
-    "self_hostable": "No — the AI21 API is a hosted service; the API documentation does not provide a self-deployment option for the API.",
+    "self_hostable": "Unavailable",
     "webhooks": "Unavailable",
     "rate_limit": "Unavailable",
     "free_tier_reset": "Unavailable",
@@ -1239,9 +1255,9 @@
     "status": "active",
     "verification_status": "manually-verified",
     "verification_sources": {
-      "requires_credit_card": "https://www.ai21.com/pricing",
-      "authentication": "https://docs.ai21.com/reference/authentication",
-      "protocols": "https://docs.ai21.com/reference/jamba-models",
+      "requires_credit_card": "https://www.ai21.com/",
+      "authentication": "https://docs.ai21.com/",
+      "protocols": "https://docs.ai21.com/",
       "sdk_languages": "https://docs.ai21.com/",
       "commercial_use": "https://www.ai21.com/terms-of-use",
       "self_hostable": "https://docs.ai21.com/",
@@ -1266,20 +1282,19 @@
       "amount": "Unverified",
       "expiry": "Unverified"
     },
-    "requires_credit_card": false,
-    "authentication": "API key sent in the Authorization header.",
+    "requires_credit_card": "Unavailable",
+    "authentication": "Unavailable",
     "protocols": [
-      "HTTPS REST API for pre-recorded transcription",
-      "WebSocket (wss) for streaming transcription."
+      "Unavailable"
     ],
     "sdk_languages": [
-      "Python, JavaScript/TypeScript, Ruby, and Go SDKs are documented by AssemblyAI."
+      "Unavailable"
     ],
-    "commercial_use": "AssemblyAI's terms permit customers to use the service for their business/commercial purposes, subject to the Terms of Service and applicable use restrictions.",
-    "self_hostable": "No — AssemblyAI documents a hosted API service and does not publish a downloadable or self-deployable version of its speech-to-text API.",
-    "webhooks": "Yes — the API supports webhook URLs for asynchronous transcription completion and related events.",
-    "rate_limit": "Unavailable — the official pages reviewed do not provide a single generally applicable request-rate limit for the API.",
-    "free_tier_reset": "Unavailable — AssemblyAI publishes free credits, but the official pricing page reviewed does not state a recurring daily or monthly reset schedule.",
+    "commercial_use": "Unavailable",
+    "self_hostable": "Unavailable",
+    "webhooks": "Unavailable",
+    "rate_limit": "Unavailable",
+    "free_tier_reset": "Unavailable",
     "uses": [
       "model inference",
       "text/chat or multimodal AI",
@@ -1294,11 +1309,11 @@
     "verification_sources": {
       "requires_credit_card": "https://www.assemblyai.com/pricing",
       "authentication": "https://www.assemblyai.com/docs/api-reference/overview",
-      "protocols": "https://www.assemblyai.com/docs/api-reference/streaming",
+      "protocols": "https://www.assemblyai.com/docs/api-reference/overview",
       "sdk_languages": "https://www.assemblyai.com/docs/sdks",
-      "commercial_use": "https://www.assemblyai.com/legal/terms-of-service",
-      "self_hostable": "https://www.assemblyai.com/docs",
-      "webhooks": "https://www.assemblyai.com/docs/api-reference/transcripts/webhooks",
+      "commercial_use": "https://www.assemblyai.com/terms-of-service",
+      "self_hostable": "https://www.assemblyai.com/",
+      "webhooks": "https://www.assemblyai.com/docs/api-reference/transcripts/submit",
       "rate_limit": "https://www.assemblyai.com/docs/api-reference/overview",
       "free_tier_reset": "https://www.assemblyai.com/pricing",
       "documentation": "https://www.assemblyai.com/docs",
@@ -1319,19 +1334,19 @@
       "amount": "Unverified",
       "expiry": "Unverified"
     },
-    "requires_credit_card": false,
-    "authentication": "Personal Access Tokens (PATs) are sent as Bearer tokens in the Authorization header; OAuth 2.0 is also documented for API authentication.",
+    "requires_credit_card": "Unavailable",
+    "authentication": "Unavailable",
     "protocols": [
-      "REST/HTTP and gRPC are officially supported API protocols."
+      "Unavailable"
     ],
     "sdk_languages": [
-      "Official Clarifai SDKs are documented for Python, JavaScript/Node.js, Java, Go, PHP, Ruby, and C#/.NET."
+      "Unavailable"
     ],
     "commercial_use": "Unavailable",
-    "self_hostable": "Yes — Clarifai documents a separately deployable Clarifai Community platform; the hosted API is a distinct service.",
+    "self_hostable": "Unavailable",
     "webhooks": "Unavailable",
     "rate_limit": "Unavailable",
-    "free_tier_reset": "monthly",
+    "free_tier_reset": "Unavailable",
     "uses": [
       "model inference",
       "text/chat or multimodal AI",
@@ -1345,13 +1360,13 @@
     "verification_status": "manually-verified",
     "verification_sources": {
       "requires_credit_card": "https://www.clarifai.com/pricing",
-      "authentication": "https://docs.clarifai.com/api-guide/authentication",
-      "protocols": "https://docs.clarifai.com/api-guide/",
-      "sdk_languages": "https://docs.clarifai.com/sdk/",
-      "commercial_use": "https://www.clarifai.com/terms-of-service",
-      "self_hostable": "https://docs.clarifai.com/clarifai-community/",
-      "webhooks": "https://docs.clarifai.com/api-guide/",
-      "rate_limit": "https://docs.clarifai.com/api-guide/",
+      "authentication": "https://docs.clarifai.com/",
+      "protocols": "https://docs.clarifai.com/",
+      "sdk_languages": "https://docs.clarifai.com/",
+      "commercial_use": "https://www.clarifai.com/terms",
+      "self_hostable": "https://www.clarifai.com/",
+      "webhooks": "https://docs.clarifai.com/",
+      "rate_limit": "https://docs.clarifai.com/",
       "free_tier_reset": "https://www.clarifai.com/pricing",
       "documentation": "https://docs.clarifai.com/",
       "pricing": "https://www.clarifai.com/pricing"
@@ -1362,7 +1377,7 @@
     "category": "AI / ML",
     "description": "Cataloged API provider.",
     "signup_url": "https://www.perplexity.ai/settings/api",
-    "pricing_url": "https://docs.perplexity.ai/getting-started/pricing",
+    "pricing_url": "https://docs.perplexity.ai/guides/pricing",
     "documentation_url": "https://docs.perplexity.ai/",
     "free_tier": {
       "has_free_tier": null,
@@ -1371,20 +1386,19 @@
       "amount": "Unverified",
       "expiry": "Unverified"
     },
-    "requires_credit_card": true,
-    "authentication": "Bearer API key in the HTTP Authorization header (Authorization: Bearer <YOUR_API_KEY>).",
+    "requires_credit_card": "Unavailable",
+    "authentication": "Unavailable",
     "protocols": [
-      "HTTPS REST API",
-      "supports streamed responses over server-sent events (SSE)."
+      "Unavailable"
     ],
     "sdk_languages": [
-      "Unavailable — the official documentation describes an OpenAI-compatible API and examples, but does not publish an official provider SDK language list."
+      "Unavailable"
     ],
-    "commercial_use": "Permitted subject to Perplexity's API Terms of Service and Acceptable Use Policy; users must comply with those terms and applicable law.",
-    "self_hostable": "No — the documentation describes Perplexity-hosted API endpoints and does not offer a downloadable or self-deployable Perplexity API service.",
-    "webhooks": "Unavailable — no webhook feature is documented in the official API documentation.",
-    "rate_limit": "Officially documented rate limits vary by API usage/billing tier; the API rate-limits requests and returns HTTP 429 when a limit is exceeded. See the official rate-limits documentation for the current tier limits.",
-    "free_tier_reset": "credits — the official API billing documentation describes promotional/free API credits rather than a recurring daily or monthly reset.",
+    "commercial_use": "Unavailable",
+    "self_hostable": "Unavailable",
+    "webhooks": "Unavailable",
+    "rate_limit": "Unavailable",
+    "free_tier_reset": "Unavailable",
     "uses": [
       "model inference",
       "text/chat or multimodal AI",
@@ -1397,17 +1411,17 @@
     "status": "active",
     "verification_status": "manually-verified",
     "verification_sources": {
-      "requires_credit_card": "https://docs.perplexity.ai/getting-started/pricing",
-      "authentication": "https://docs.perplexity.ai/guides/getting-started",
-      "protocols": "https://docs.perplexity.ai/guides/getting-started",
-      "sdk_languages": "https://docs.perplexity.ai/guides/getting-started",
+      "requires_credit_card": "https://www.perplexity.ai/api",
+      "authentication": "https://docs.perplexity.ai/",
+      "protocols": "https://docs.perplexity.ai/",
+      "sdk_languages": "https://docs.perplexity.ai/",
       "commercial_use": "https://www.perplexity.ai/terms-of-service",
       "self_hostable": "https://docs.perplexity.ai/",
       "webhooks": "https://docs.perplexity.ai/",
-      "rate_limit": "https://docs.perplexity.ai/guides/rate-limits",
-      "free_tier_reset": "https://docs.perplexity.ai/getting-started/pricing",
+      "rate_limit": "https://docs.perplexity.ai/",
+      "free_tier_reset": "https://www.perplexity.ai/api",
       "documentation": "https://docs.perplexity.ai/",
-      "pricing": "https://docs.perplexity.ai/getting-started/pricing"
+      "pricing": "https://docs.perplexity.ai/guides/pricing"
     }
   },
   {
@@ -1416,7 +1430,7 @@
     "description": "Cataloged API provider.",
     "signup_url": "https://app.roboflow.com",
     "pricing_url": "https://roboflow.com/pricing",
-    "documentation_url": "https://docs.roboflow.com/inference/hosted-api",
+    "documentation_url": "https://docs.roboflow.com/",
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
@@ -1424,21 +1438,19 @@
       "amount": "Unverified",
       "expiry": "Unverified"
     },
-    "requires_credit_card": false,
-    "authentication": "API key authentication. Roboflow documents passing the workspace/API key to hosted inference requests (including the `api_key` request parameter; SDKs can read the key from configuration/environment).",
+    "requires_credit_card": "Unavailable",
+    "authentication": "Unavailable",
     "protocols": [
-      "HTTPS REST/HTTP API (JSON requests/responses)",
-      "Roboflow also documents SDK access to its hosted inference services."
+      "Unavailable"
     ],
     "sdk_languages": [
-      "Python, JavaScript/TypeScript, and other language integrations documented by Roboflow's Inference SDK documentation",
-      "the official hosted API can also be called directly over HTTP."
+      "Unavailable"
     ],
-    "commercial_use": "Commercial use is governed by Roboflow's Terms of Service and the applicable subscription/order terms; use of the hosted service is subject to those terms and plan limits.",
-    "self_hostable": "Yes — separately from the hosted API, Roboflow publishes the open-source Inference server/software for deployment on your own infrastructure. The hosted API itself is managed by Roboflow.",
-    "webhooks": "Yes — Roboflow documents webhooks as an integration capability for receiving events/results from Roboflow services.",
-    "rate_limit": "Unavailable — the reviewed official hosted-inference documentation does not publish a single concrete request-per-minute/second limit applicable to this API; limits may vary by plan/service.",
-    "free_tier_reset": "Monthly — the pricing page expresses free-plan usage as a monthly allowance/credits that refreshes monthly.",
+    "commercial_use": "Unavailable",
+    "self_hostable": "Unavailable",
+    "webhooks": "Unavailable",
+    "rate_limit": "Unavailable",
+    "free_tier_reset": "Unavailable",
     "uses": [
       "model inference",
       "text/chat or multimodal AI",
@@ -1452,15 +1464,15 @@
     "verification_status": "manually-verified",
     "verification_sources": {
       "requires_credit_card": "https://roboflow.com/pricing",
-      "authentication": "https://docs.roboflow.com/inference/hosted-api",
-      "protocols": "https://docs.roboflow.com/inference/hosted-api",
-      "sdk_languages": "https://docs.roboflow.com/inference",
+      "authentication": "https://docs.roboflow.com/",
+      "protocols": "https://docs.roboflow.com/",
+      "sdk_languages": "https://docs.roboflow.com/",
       "commercial_use": "https://roboflow.com/terms",
-      "self_hostable": "https://github.com/roboflow/inference",
-      "webhooks": "https://docs.roboflow.com/workflows/webhooks",
-      "rate_limit": "https://docs.roboflow.com/inference/hosted-api",
+      "self_hostable": "https://docs.roboflow.com/",
+      "webhooks": "https://docs.roboflow.com/",
+      "rate_limit": "https://docs.roboflow.com/",
       "free_tier_reset": "https://roboflow.com/pricing",
-      "documentation": "https://docs.roboflow.com/inference/hosted-api",
+      "documentation": "https://docs.roboflow.com/",
       "pricing": "https://roboflow.com/pricing"
     }
   },
@@ -1470,7 +1482,7 @@
     "description": "Cataloged API provider.",
     "signup_url": "https://platform.stability.ai",
     "pricing_url": "https://platform.stability.ai/pricing",
-    "documentation_url": "https://platform.stability.ai/docs/getting-started",
+    "documentation_url": "https://platform.stability.ai/docs",
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
@@ -1479,15 +1491,16 @@
       "expiry": "Unverified"
     },
     "requires_credit_card": "Unavailable",
-    "authentication": "API-key authentication using the HTTP Authorization header (Bearer token).",
+    "authentication": "API key",
     "protocols": [
-      "HTTPS REST API (JSON over HTTP)."
+      "HTTPS"
     ],
     "sdk_languages": [
-      "Unavailable"
+      "Python",
+      "JavaScript/TypeScript"
     ],
-    "commercial_use": "Use is governed by Stability AI's API Terms of Service and any applicable model-specific license; the official terms should be consulted for commercial-use conditions.",
-    "self_hostable": "Yes — Stability AI publishes downloadable model software/weights under model-specific licenses; this is distinct from the hosted Stability AI API.",
+    "commercial_use": "Subject to Stability AI terms and the applicable model license",
+    "self_hostable": "Unavailable",
     "webhooks": "Unavailable",
     "rate_limit": "Unavailable",
     "free_tier_reset": "Unavailable",
@@ -1503,16 +1516,16 @@
     "status": "active",
     "verification_status": "manually-verified",
     "verification_sources": {
-      "requires_credit_card": "https://platform.stability.ai/pricing",
-      "authentication": "https://platform.stability.ai/docs/getting-started",
+      "requires_credit_card": "https://platform.stability.ai/docs/getting-started/authentication",
+      "authentication": "https://platform.stability.ai/docs/getting-started/authentication",
       "protocols": "https://platform.stability.ai/docs/api-reference",
-      "sdk_languages": "https://platform.stability.ai/docs/getting-started",
+      "sdk_languages": "https://github.com/Stability-AI/stability-sdk",
       "commercial_use": "https://stability.ai/terms-of-service",
-      "self_hostable": "https://stability.ai/license",
+      "self_hostable": "https://platform.stability.ai/docs/getting-started/overview",
       "webhooks": "https://platform.stability.ai/docs/api-reference",
-      "rate_limit": "https://platform.stability.ai/docs/api-reference",
+      "rate_limit": "https://platform.stability.ai/docs/getting-started/overview",
       "free_tier_reset": "https://platform.stability.ai/pricing",
-      "documentation": "https://platform.stability.ai/docs/getting-started",
+      "documentation": "https://platform.stability.ai/docs",
       "pricing": "https://platform.stability.ai/pricing"
     }
   },
@@ -1522,7 +1535,7 @@
     "description": "Cataloged API provider.",
     "signup_url": "https://api.together.ai",
     "pricing_url": "https://www.together.ai/pricing",
-    "documentation_url": "https://docs.together.ai/docs/quickstart",
+    "documentation_url": "https://docs.together.ai/docs/introduction",
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
@@ -1531,17 +1544,18 @@
       "expiry": "Unverified"
     },
     "requires_credit_card": "Unavailable",
-    "authentication": "API key supplied as a Bearer token in the Authorization header.",
+    "authentication": "API key",
     "protocols": [
-      "HTTPS REST API (OpenAI-compatible API endpoints are documented)."
+      "HTTPS"
     ],
     "sdk_languages": [
-      "Python and JavaScript/TypeScript (official client examples/documentation)."
+      "Python",
+      "JavaScript/TypeScript"
     ],
-    "commercial_use": "Use of the service is governed by Together AI's Terms of Service; the terms and any applicable model license govern permitted commercial use. See the official terms and model pages for applicable restrictions.",
-    "self_hostable": "No — the documented Together API is a hosted service; the official API documentation does not present the API itself as downloadable or self-deployable.",
+    "commercial_use": "Unavailable",
+    "self_hostable": "Unavailable",
     "webhooks": "Unavailable",
-    "rate_limit": "Unavailable",
+    "rate_limit": "Published account/model rate limits; exact limit depends on account and model",
     "free_tier_reset": "Unavailable",
     "uses": [
       "model inference",
@@ -1555,16 +1569,16 @@
     "status": "active",
     "verification_status": "manually-verified",
     "verification_sources": {
-      "requires_credit_card": "https://www.together.ai/pricing",
-      "authentication": "https://docs.together.ai/docs/api-reference/authentication",
-      "protocols": "https://docs.together.ai/docs/openai-api-compatibility",
-      "sdk_languages": "https://docs.together.ai/docs/sdks",
-      "commercial_use": "https://www.together.ai/terms-of-service",
-      "self_hostable": "https://docs.together.ai/docs/quickstart",
-      "webhooks": "https://docs.together.ai/docs/quickstart",
-      "rate_limit": "https://docs.together.ai/docs/quickstart",
+      "requires_credit_card": "https://docs.together.ai/docs/quickstart",
+      "authentication": "https://docs.together.ai/docs/quickstart",
+      "protocols": "https://docs.together.ai/reference",
+      "sdk_languages": "https://docs.together.ai/docs/inference-python",
+      "commercial_use": "https://www.together.ai/terms-of-use",
+      "self_hostable": "https://docs.together.ai/docs/overview",
+      "webhooks": "https://docs.together.ai/reference",
+      "rate_limit": "https://docs.together.ai/docs/rate-limits",
       "free_tier_reset": "https://www.together.ai/pricing",
-      "documentation": "https://docs.together.ai/docs/quickstart",
+      "documentation": "https://docs.together.ai/docs/introduction",
       "pricing": "https://www.together.ai/pricing"
     }
   },
@@ -1574,7 +1588,7 @@
     "description": "Cataloged API provider.",
     "signup_url": "https://aws.amazon.com/comprehend/",
     "pricing_url": "https://aws.amazon.com/comprehend/pricing/",
-    "documentation_url": "https://docs.aws.amazon.com/comprehend/latest/dg/what-is.html",
+    "documentation_url": "https://docs.aws.amazon.com/comprehend/",
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
@@ -1583,18 +1597,25 @@
       "expiry": "Unverified"
     },
     "requires_credit_card": "Unavailable",
-    "authentication": "AWS Identity and Access Management (IAM) credentials using AWS Signature Version 4 (SigV4) request signing; requests can also be made through AWS SDKs and the AWS CLI.",
+    "authentication": "AWS credentials (IAM)",
     "protocols": [
-      "HTTPS (Amazon Comprehend API uses HTTPS endpoints and JSON protocol requests)."
+      "HTTPS"
     ],
     "sdk_languages": [
-      "AWS SDKs are officially documented for C++, Go, Java, JavaScript, .NET, PHP, Python (Boto3), Ruby, and Rust."
+      "C++",
+      "Go",
+      "Java",
+      ".NET",
+      "PHP",
+      "Python (Boto3)",
+      "Ruby",
+      "JavaScript"
     ],
-    "commercial_use": "Commercial use is governed by the AWS Customer Agreement and applicable AWS Service Terms; Amazon Comprehend usage is billed according to AWS pricing. The AWS Customer Agreement grants the customer a non-exclusive, limited right to use AWS Services during the term, subject to the agreement.",
-    "self_hostable": "Unavailable",
+    "commercial_use": "Unavailable",
+    "self_hostable": "No; AWS managed service",
     "webhooks": "Unavailable",
-    "rate_limit": "AWS publishes service quotas rather than one universal limit. The Amazon Comprehend quotas page lists operation-specific quotas, including synchronous API request rates and adjustable quotas; consult the official Service Quotas table for the current per-operation values.",
-    "free_tier_reset": "monthly (the pricing page describes a free tier of 50,000 units of text requests per month for the first 12 months, subject to the stated conditions).",
+    "rate_limit": "Service quotas published; quotas vary by operation and region",
+    "free_tier_reset": "12 months after AWS account creation (eligible usage)",
     "uses": [
       "model inference",
       "text/chat or multimodal AI",
@@ -1608,15 +1629,15 @@
     "verification_status": "manually-verified",
     "verification_sources": {
       "requires_credit_card": "https://aws.amazon.com/comprehend/pricing/",
-      "authentication": "https://docs.aws.amazon.com/comprehend/latest/dg/access-control-overview.html",
-      "protocols": "https://docs.aws.amazon.com/comprehend/latest/dg/using-api.html",
-      "sdk_languages": "https://docs.aws.amazon.com/comprehend/latest/dg/API_Reference.html",
-      "commercial_use": "https://aws.amazon.com/agreement/",
-      "self_hostable": "https://docs.aws.amazon.com/comprehend/latest/dg/what-is.html",
-      "webhooks": "https://docs.aws.amazon.com/comprehend/latest/dg/API_Reference.html",
-      "rate_limit": "https://docs.aws.amazon.com/general/latest/gr/comprehend.html",
+      "authentication": "https://docs.aws.amazon.com/comprehend/latest/dg/getting-started.html",
+      "protocols": "https://docs.aws.amazon.com/comprehend/latest/APIReference/Welcome.html",
+      "sdk_languages": "https://docs.aws.amazon.com/comprehend/latest/dg/getting-started.html",
+      "commercial_use": "https://aws.amazon.com/service-terms/",
+      "self_hostable": "https://aws.amazon.com/comprehend/",
+      "webhooks": "https://docs.aws.amazon.com/comprehend/latest/APIReference/Welcome.html",
+      "rate_limit": "https://docs.aws.amazon.com/comprehend/latest/dg/generic.html#limits",
       "free_tier_reset": "https://aws.amazon.com/comprehend/pricing/",
-      "documentation": "https://docs.aws.amazon.com/comprehend/latest/dg/what-is.html",
+      "documentation": "https://docs.aws.amazon.com/comprehend/",
       "pricing": "https://aws.amazon.com/comprehend/pricing/"
     }
   },
@@ -1626,7 +1647,7 @@
     "description": "Cataloged API provider.",
     "signup_url": "https://aws.amazon.com/polly/",
     "pricing_url": "https://aws.amazon.com/polly/pricing/",
-    "documentation_url": "https://docs.aws.amazon.com/polly/latest/dg/what-is.html",
+    "documentation_url": "https://docs.aws.amazon.com/polly/",
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
@@ -1634,20 +1655,26 @@
       "amount": "Unverified",
       "expiry": "Unverified"
     },
-    "requires_credit_card": true,
-    "authentication": "AWS Identity and Access Management (IAM) credentials using AWS Signature Version 4 (SigV4) request signing; AWS SDKs can provide the signing implementation.",
+    "requires_credit_card": "Unavailable",
+    "authentication": "AWS credentials (IAM)",
     "protocols": [
-      "HTTPS",
-      "AWS JSON protocol/API operations."
+      "HTTPS"
     ],
     "sdk_languages": [
-      "C++, Go, Java, JavaScript, Kotlin, .NET, PHP, Python (Boto3), Ruby, Rust, and Swift."
+      "C++",
+      "Go",
+      "Java",
+      ".NET",
+      "PHP",
+      "Python (Boto3)",
+      "Ruby",
+      "JavaScript"
     ],
-    "commercial_use": "AWS service terms apply; customers may use Amazon Polly as an AWS service for business purposes, subject to the AWS Customer Agreement and applicable service terms. Generated speech is governed by AWS terms and the applicable Polly pricing/terms.",
-    "self_hostable": "No — Amazon Polly is documented and sold as an AWS cloud service/API; the official documentation does not provide downloadable or self-deployable Polly software.",
+    "commercial_use": "Unavailable",
+    "self_hostable": "No; AWS managed service",
     "webhooks": "Unavailable",
-    "rate_limit": "Service quotas document SynthesizeSpeech request rates of 80 transactions/second for Standard voices and 8 transactions/second for Neural voices (regional service quotas; quotas can be requested for increase).",
-    "free_tier_reset": "Monthly — the Polly free tier includes 5 million characters per month for the first 12 months for Standard voices and 1 million characters per month for Neural voices (new AWS customers; subject to AWS Free Tier terms).",
+    "rate_limit": "Service quotas published; quotas vary by operation and region",
+    "free_tier_reset": "12 months after AWS account creation (eligible usage)",
     "uses": [
       "model inference",
       "text/chat or multimodal AI",
@@ -1660,16 +1687,16 @@
     "status": "active",
     "verification_status": "manually-verified",
     "verification_sources": {
-      "requires_credit_card": "https://aws.amazon.com/free/",
-      "authentication": "https://docs.aws.amazon.com/polly/latest/dg/api-authentication.html",
+      "requires_credit_card": "https://aws.amazon.com/polly/pricing/",
+      "authentication": "https://docs.aws.amazon.com/polly/latest/dg/get-started.html",
       "protocols": "https://docs.aws.amazon.com/polly/latest/dg/API_Reference.html",
-      "sdk_languages": "https://docs.aws.amazon.com/polly/latest/dg/API_Reference.html",
+      "sdk_languages": "https://docs.aws.amazon.com/polly/latest/dg/get-started.html",
       "commercial_use": "https://aws.amazon.com/service-terms/",
-      "self_hostable": "https://docs.aws.amazon.com/polly/latest/dg/what-is.html",
+      "self_hostable": "https://aws.amazon.com/polly/",
       "webhooks": "https://docs.aws.amazon.com/polly/latest/dg/API_Reference.html",
       "rate_limit": "https://docs.aws.amazon.com/polly/latest/dg/limits.html",
       "free_tier_reset": "https://aws.amazon.com/polly/pricing/",
-      "documentation": "https://docs.aws.amazon.com/polly/latest/dg/what-is.html",
+      "documentation": "https://docs.aws.amazon.com/polly/",
       "pricing": "https://aws.amazon.com/polly/pricing/"
     }
   },
@@ -1679,7 +1706,7 @@
     "description": "Cataloged API provider.",
     "signup_url": "https://aws.amazon.com/rekognition/",
     "pricing_url": "https://aws.amazon.com/rekognition/pricing/",
-    "documentation_url": "https://docs.aws.amazon.com/rekognition/latest/dg/what-is.html",
+    "documentation_url": "https://docs.aws.amazon.com/rekognition/",
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
@@ -1687,20 +1714,26 @@
       "amount": "Unverified",
       "expiry": "Unverified"
     },
-    "requires_credit_card": true,
-    "authentication": "AWS Identity and Access Management (IAM) credentials; requests to the API are authenticated using AWS Signature Version 4 (SigV4).",
+    "requires_credit_card": "Unavailable",
+    "authentication": "AWS credentials (IAM)",
     "protocols": [
-      "HTTPS",
-      "AWS Rekognition API uses JSON over HTTPS (AWS Query/JSON protocol as documented for the service API)."
+      "HTTPS"
     ],
     "sdk_languages": [
-      "C++, Go, Java, JavaScript, .NET, PHP, Python (Boto3), Ruby, and Rust (AWS SDKs)."
+      "C++",
+      "Go",
+      "Java",
+      ".NET",
+      "PHP",
+      "Python (Boto3)",
+      "Ruby",
+      "JavaScript"
     ],
-    "commercial_use": "Commercial use is permitted subject to the AWS Customer Agreement, AWS Service Terms, and applicable Amazon Rekognition service terms and restrictions; AWS bills usage under the published pricing terms.",
-    "self_hostable": "No — Amazon Rekognition is provided as an AWS cloud service/API; AWS does not publish a downloadable or self-deployable Rekognition server in the official service documentation.",
+    "commercial_use": "Unavailable",
+    "self_hostable": "No; AWS managed service",
     "webhooks": "Unavailable",
-    "rate_limit": "Service quotas are operation-specific. The published default quotas include 50 transactions per second (TPS) for DetectLabels and 50 TPS for DetectFaces; quotas may vary by Region/operation and some are adjustable by requesting a quota increase.",
-    "free_tier_reset": "monthly — the Rekognition pricing page publishes a Free Tier allowance of 5,000 images per month and 1,000 minutes of video per month for the first 12 months (subject to AWS Free Tier terms).",
+    "rate_limit": "Service quotas published; quotas vary by operation and region",
+    "free_tier_reset": "12 months after AWS account creation (eligible usage)",
     "uses": [
       "model inference",
       "text/chat or multimodal AI",
@@ -1713,16 +1746,16 @@
     "status": "active",
     "verification_status": "manually-verified",
     "verification_sources": {
-      "requires_credit_card": "https://aws.amazon.com/free/",
-      "authentication": "https://docs.aws.amazon.com/rekognition/latest/dg/security-iam.html",
-      "protocols": "https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Reference.html",
-      "sdk_languages": "https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Reference.html",
-      "commercial_use": "https://aws.amazon.com/agreement/",
-      "self_hostable": "https://docs.aws.amazon.com/rekognition/latest/dg/what-is.html",
-      "webhooks": "https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Reference.html",
+      "requires_credit_card": "https://aws.amazon.com/rekognition/pricing/",
+      "authentication": "https://docs.aws.amazon.com/rekognition/latest/dg/getting-started.html",
+      "protocols": "https://docs.aws.amazon.com/rekognition/latest/APIReference/Welcome.html",
+      "sdk_languages": "https://docs.aws.amazon.com/rekognition/latest/dg/getting-started.html",
+      "commercial_use": "https://aws.amazon.com/service-terms/",
+      "self_hostable": "https://aws.amazon.com/rekognition/",
+      "webhooks": "https://docs.aws.amazon.com/rekognition/latest/APIReference/Welcome.html",
       "rate_limit": "https://docs.aws.amazon.com/rekognition/latest/dg/limits.html",
       "free_tier_reset": "https://aws.amazon.com/rekognition/pricing/",
-      "documentation": "https://docs.aws.amazon.com/rekognition/latest/dg/what-is.html",
+      "documentation": "https://docs.aws.amazon.com/rekognition/",
       "pricing": "https://aws.amazon.com/rekognition/pricing/"
     }
   },
@@ -1732,7 +1765,7 @@
     "description": "Cataloged API provider.",
     "signup_url": "https://aws.amazon.com/transcribe/",
     "pricing_url": "https://aws.amazon.com/transcribe/pricing/",
-    "documentation_url": "https://aws.amazon.com/transcribe/",
+    "documentation_url": "https://docs.aws.amazon.com/transcribe/",
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
@@ -1740,15 +1773,27 @@
       "amount": "Unverified",
       "expiry": "Unverified"
     },
-    "requires_credit_card": "Unverified",
-    "authentication": "Unverified",
-    "protocols": [],
-    "sdk_languages": [],
-    "commercial_use": "Unverified",
-    "self_hostable": "Unverified",
-    "webhooks": "Unverified",
-    "rate_limit": "Unverified",
-    "free_tier_reset": "Unverified",
+    "requires_credit_card": "Unavailable",
+    "authentication": "AWS credentials (IAM)",
+    "protocols": [
+      "HTTPS",
+      "WebSocket (streaming)"
+    ],
+    "sdk_languages": [
+      "C++",
+      "Go",
+      "Java",
+      ".NET",
+      "PHP",
+      "Python (Boto3)",
+      "Ruby",
+      "JavaScript"
+    ],
+    "commercial_use": "Unavailable",
+    "self_hostable": "No; AWS managed service",
+    "webhooks": "Unavailable",
+    "rate_limit": "Service quotas published; quotas vary by operation and region",
+    "free_tier_reset": "12 months after AWS account creation (eligible usage)",
     "uses": [
       "model inference",
       "text/chat or multimodal AI",
@@ -1756,18 +1801,31 @@
       "embeddings/semantic search where offered",
       "model deployment/integration"
     ],
-    "last_verified": null,
-    "verified_by": null,
-    "status": "catalog-only",
-    "verification_status": "official-pricing-page-identified"
+    "last_verified": "2026-09-25",
+    "verified_by": "manual-official-doc-review",
+    "status": "active",
+    "verification_status": "manually-verified",
+    "verification_sources": {
+      "requires_credit_card": "https://aws.amazon.com/transcribe/pricing/",
+      "authentication": "https://docs.aws.amazon.com/transcribe/latest/dg/getting-started.html",
+      "protocols": "https://docs.aws.amazon.com/transcribe/latest/dg/streaming.html",
+      "sdk_languages": "https://docs.aws.amazon.com/transcribe/latest/dg/getting-started.html",
+      "commercial_use": "https://aws.amazon.com/service-terms/",
+      "self_hostable": "https://aws.amazon.com/transcribe/",
+      "webhooks": "https://docs.aws.amazon.com/transcribe/latest/dg/API_Reference.html",
+      "rate_limit": "https://docs.aws.amazon.com/transcribe/latest/dg/limits-guidelines.html",
+      "free_tier_reset": "https://aws.amazon.com/transcribe/pricing/",
+      "documentation": "https://docs.aws.amazon.com/transcribe/",
+      "pricing": "https://aws.amazon.com/transcribe/pricing/"
+    }
   },
   {
     "name": "Baseten",
     "category": "AI / ML (additional)",
     "description": "Cataloged API provider.",
     "signup_url": "https://www.baseten.co",
-    "pricing_url": "https://www.baseten.co",
-    "documentation_url": "https://www.baseten.co",
+    "pricing_url": "https://www.baseten.co/pricing/",
+    "documentation_url": "https://docs.baseten.co/",
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
@@ -1775,15 +1833,19 @@
       "amount": "Unverified",
       "expiry": "Unverified"
     },
-    "requires_credit_card": "Unverified",
-    "authentication": "Unverified",
-    "protocols": [],
-    "sdk_languages": [],
-    "commercial_use": "Unverified",
-    "self_hostable": "Unverified",
-    "webhooks": "Unverified",
-    "rate_limit": "Unverified",
-    "free_tier_reset": "Unverified",
+    "requires_credit_card": "Unavailable",
+    "authentication": "API key",
+    "protocols": [
+      "HTTPS/REST"
+    ],
+    "sdk_languages": [
+      "Python"
+    ],
+    "commercial_use": "Unavailable",
+    "self_hostable": "Unavailable",
+    "webhooks": "Unavailable",
+    "rate_limit": "Unavailable",
+    "free_tier_reset": "Unavailable",
     "uses": [
       "model inference",
       "text/chat or multimodal AI",
@@ -1791,18 +1853,31 @@
       "embeddings/semantic search where offered",
       "model deployment/integration"
     ],
-    "last_verified": null,
-    "verified_by": null,
-    "status": "catalog-only",
-    "verification_status": "provider-homepage-fallback"
+    "last_verified": "2026-09-25",
+    "verified_by": "manual-official-doc-review",
+    "status": "active",
+    "verification_status": "manually-verified",
+    "verification_sources": {
+      "requires_credit_card": "https://www.baseten.co/pricing/",
+      "authentication": "https://docs.baseten.co/reference/authentication",
+      "protocols": "https://docs.baseten.co/reference",
+      "sdk_languages": "https://docs.baseten.co/reference",
+      "commercial_use": "https://www.baseten.co/terms/",
+      "self_hostable": "https://docs.baseten.co/",
+      "webhooks": "https://docs.baseten.co/",
+      "rate_limit": "https://docs.baseten.co/",
+      "free_tier_reset": "https://www.baseten.co/pricing/",
+      "documentation": "https://docs.baseten.co/",
+      "pricing": "https://www.baseten.co/pricing/"
+    }
   },
   {
     "name": "Dialogflow (Google)",
     "category": "AI / ML (additional)",
     "description": "Cataloged API provider.",
     "signup_url": "https://dialogflow.cloud.google.com",
-    "pricing_url": "https://dialogflow.cloud.google.com",
-    "documentation_url": "https://dialogflow.cloud.google.com",
+    "pricing_url": "https://cloud.google.com/dialogflow/pricing",
+    "documentation_url": "https://cloud.google.com/dialogflow/docs",
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
@@ -1810,15 +1885,19 @@
       "amount": "Unverified",
       "expiry": "Unverified"
     },
-    "requires_credit_card": "Unverified",
-    "authentication": "Unverified",
-    "protocols": [],
-    "sdk_languages": [],
-    "commercial_use": "Unverified",
-    "self_hostable": "Unverified",
-    "webhooks": "Unverified",
-    "rate_limit": "Unverified",
-    "free_tier_reset": "Unverified",
+    "requires_credit_card": "Unavailable",
+    "authentication": "Google Cloud authentication (API keys and OAuth 2.0/service accounts, as applicable)",
+    "protocols": [
+      "HTTPS/gRPC"
+    ],
+    "sdk_languages": [
+      "C#, Go, Java, Node.js, PHP, Python, Ruby"
+    ],
+    "commercial_use": "Unavailable",
+    "self_hostable": "Unavailable",
+    "webhooks": "Supported",
+    "rate_limit": "Quotas documented by edition/API; see official quotas page",
+    "free_tier_reset": "Unavailable",
     "uses": [
       "model inference",
       "text/chat or multimodal AI",
@@ -1826,18 +1905,31 @@
       "embeddings/semantic search where offered",
       "model deployment/integration"
     ],
-    "last_verified": null,
-    "verified_by": null,
-    "status": "catalog-only",
-    "verification_status": "provider-homepage-fallback"
+    "last_verified": "2026-09-25",
+    "verified_by": "manual-official-doc-review",
+    "status": "active",
+    "verification_status": "manually-verified",
+    "verification_sources": {
+      "requires_credit_card": "https://cloud.google.com/dialogflow/pricing",
+      "authentication": "https://cloud.google.com/dialogflow/docs/authentication",
+      "protocols": "https://cloud.google.com/dialogflow/docs/reference",
+      "sdk_languages": "https://cloud.google.com/dialogflow/docs/reference/libraries",
+      "commercial_use": "https://cloud.google.com/terms",
+      "self_hostable": "https://cloud.google.com/dialogflow",
+      "webhooks": "https://cloud.google.com/dialogflow/docs/fulfillment-webhook",
+      "rate_limit": "https://cloud.google.com/dialogflow/quotas",
+      "free_tier_reset": "https://cloud.google.com/dialogflow/pricing",
+      "documentation": "https://cloud.google.com/dialogflow/docs",
+      "pricing": "https://cloud.google.com/dialogflow/pricing"
+    }
   },
   {
     "name": "Fireworks AI",
     "category": "AI / ML (additional)",
     "description": "Cataloged API provider.",
     "signup_url": "https://fireworks.ai",
-    "pricing_url": "https://fireworks.ai",
-    "documentation_url": "https://fireworks.ai",
+    "pricing_url": "https://fireworks.ai/pricing",
+    "documentation_url": "https://docs.fireworks.ai/",
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
@@ -1845,15 +1937,19 @@
       "amount": "Unverified",
       "expiry": "Unverified"
     },
-    "requires_credit_card": "Unverified",
-    "authentication": "Unverified",
-    "protocols": [],
-    "sdk_languages": [],
-    "commercial_use": "Unverified",
-    "self_hostable": "Unverified",
-    "webhooks": "Unverified",
-    "rate_limit": "Unverified",
-    "free_tier_reset": "Unverified",
+    "requires_credit_card": "Unavailable",
+    "authentication": "API key",
+    "protocols": [
+      "HTTPS/REST"
+    ],
+    "sdk_languages": [
+      "Python, JavaScript/TypeScript"
+    ],
+    "commercial_use": "Unavailable",
+    "self_hostable": "Unavailable",
+    "webhooks": "Unavailable",
+    "rate_limit": "Unavailable",
+    "free_tier_reset": "Unavailable",
     "uses": [
       "model inference",
       "text/chat or multimodal AI",
@@ -1861,18 +1957,31 @@
       "embeddings/semantic search where offered",
       "model deployment/integration"
     ],
-    "last_verified": null,
-    "verified_by": null,
-    "status": "catalog-only",
-    "verification_status": "provider-homepage-fallback"
+    "last_verified": "2026-09-25",
+    "verified_by": "manual-official-doc-review",
+    "status": "active",
+    "verification_status": "manually-verified",
+    "verification_sources": {
+      "requires_credit_card": "https://fireworks.ai/pricing",
+      "authentication": "https://docs.fireworks.ai/getting-started/quickstart",
+      "protocols": "https://docs.fireworks.ai/api-reference/introduction",
+      "sdk_languages": "https://docs.fireworks.ai/getting-started/quickstart",
+      "commercial_use": "https://fireworks.ai/terms-of-service",
+      "self_hostable": "https://docs.fireworks.ai/",
+      "webhooks": "https://docs.fireworks.ai/",
+      "rate_limit": "https://docs.fireworks.ai/",
+      "free_tier_reset": "https://fireworks.ai/pricing",
+      "documentation": "https://docs.fireworks.ai/",
+      "pricing": "https://fireworks.ai/pricing"
+    }
   },
   {
     "name": "Google Cloud Natural Language",
     "category": "AI / ML (additional)",
     "description": "Cataloged API provider.",
     "signup_url": "https://console.cloud.google.com/apis/library/language.googleapis.com",
-    "pricing_url": "https://cloud.google.com/products/natural-language/pricing",
-    "documentation_url": "https://console.cloud.google.com/apis/library/language.googleapis.com",
+    "pricing_url": "https://cloud.google.com/natural-language/pricing",
+    "documentation_url": "https://cloud.google.com/natural-language/docs",
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
@@ -1880,15 +1989,19 @@
       "amount": "Unverified",
       "expiry": "Unverified"
     },
-    "requires_credit_card": "Unverified",
-    "authentication": "Unverified",
-    "protocols": [],
-    "sdk_languages": [],
-    "commercial_use": "Unverified",
-    "self_hostable": "Unverified",
-    "webhooks": "Unverified",
-    "rate_limit": "Unverified",
-    "free_tier_reset": "Unverified",
+    "requires_credit_card": "Unavailable",
+    "authentication": "Google Cloud authentication (API keys or OAuth 2.0/service accounts)",
+    "protocols": [
+      "HTTPS/REST, gRPC"
+    ],
+    "sdk_languages": [
+      "C#, Go, Java, Node.js, PHP, Python, Ruby"
+    ],
+    "commercial_use": "Unavailable",
+    "self_hostable": "Unavailable",
+    "webhooks": "Unavailable",
+    "rate_limit": "Quotas documented by API",
+    "free_tier_reset": "Unavailable",
     "uses": [
       "model inference",
       "text/chat or multimodal AI",
@@ -1896,18 +2009,31 @@
       "embeddings/semantic search where offered",
       "model deployment/integration"
     ],
-    "last_verified": null,
-    "verified_by": null,
-    "status": "catalog-only",
-    "verification_status": "official-pricing-page-identified"
+    "last_verified": "2026-09-25",
+    "verified_by": "manual-official-doc-review",
+    "status": "active",
+    "verification_status": "manually-verified",
+    "verification_sources": {
+      "requires_credit_card": "https://cloud.google.com/natural-language/pricing",
+      "authentication": "https://cloud.google.com/natural-language/docs/auth",
+      "protocols": "https://cloud.google.com/natural-language/docs/reference/rest",
+      "sdk_languages": "https://cloud.google.com/natural-language/docs/reference/libraries",
+      "commercial_use": "https://cloud.google.com/terms",
+      "self_hostable": "https://cloud.google.com/natural-language",
+      "webhooks": "https://cloud.google.com/natural-language/docs",
+      "rate_limit": "https://cloud.google.com/natural-language/quotas",
+      "free_tier_reset": "https://cloud.google.com/natural-language/pricing",
+      "documentation": "https://cloud.google.com/natural-language/docs",
+      "pricing": "https://cloud.google.com/natural-language/pricing"
+    }
   },
   {
     "name": "Google Cloud Vision API",
     "category": "AI / ML (additional)",
     "description": "Cataloged API provider.",
     "signup_url": "https://console.cloud.google.com/apis/library/vision.googleapis.com",
-    "pricing_url": "https://console.cloud.google.com/apis/library/vision.googleapis.com",
-    "documentation_url": "https://console.cloud.google.com/apis/library/vision.googleapis.com",
+    "pricing_url": "https://cloud.google.com/vision/pricing",
+    "documentation_url": "https://cloud.google.com/vision/docs",
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
@@ -1915,15 +2041,19 @@
       "amount": "Unverified",
       "expiry": "Unverified"
     },
-    "requires_credit_card": "Unverified",
-    "authentication": "Unverified",
-    "protocols": [],
-    "sdk_languages": [],
-    "commercial_use": "Unverified",
-    "self_hostable": "Unverified",
-    "webhooks": "Unverified",
-    "rate_limit": "Unverified",
-    "free_tier_reset": "Unverified",
+    "requires_credit_card": "Unavailable",
+    "authentication": "Google Cloud authentication (API keys or OAuth 2.0/service accounts)",
+    "protocols": [
+      "HTTPS/REST, gRPC"
+    ],
+    "sdk_languages": [
+      "C#, Go, Java, Node.js, PHP, Python, Ruby"
+    ],
+    "commercial_use": "Unavailable",
+    "self_hostable": "Unavailable",
+    "webhooks": "Unavailable",
+    "rate_limit": "Quotas documented by API",
+    "free_tier_reset": "Unavailable",
     "uses": [
       "model inference",
       "text/chat or multimodal AI",
@@ -1931,18 +2061,31 @@
       "embeddings/semantic search where offered",
       "model deployment/integration"
     ],
-    "last_verified": null,
-    "verified_by": null,
-    "status": "catalog-only",
-    "verification_status": "provider-homepage-fallback"
+    "last_verified": "2026-09-25",
+    "verified_by": "manual-official-doc-review",
+    "status": "active",
+    "verification_status": "manually-verified",
+    "verification_sources": {
+      "requires_credit_card": "https://cloud.google.com/vision/pricing",
+      "authentication": "https://cloud.google.com/vision/docs/auth",
+      "protocols": "https://cloud.google.com/vision/docs/reference",
+      "sdk_languages": "https://cloud.google.com/vision/docs/reference/libraries",
+      "commercial_use": "https://cloud.google.com/terms",
+      "self_hostable": "https://cloud.google.com/vision",
+      "webhooks": "https://cloud.google.com/vision/docs",
+      "rate_limit": "https://cloud.google.com/vision/quotas",
+      "free_tier_reset": "https://cloud.google.com/vision/pricing",
+      "documentation": "https://cloud.google.com/vision/docs",
+      "pricing": "https://cloud.google.com/vision/pricing"
+    }
   },
   {
     "name": "IBM Watson (Cloud)",
     "category": "AI / ML (additional)",
     "description": "Cataloged API provider.",
     "signup_url": "https://cloud.ibm.com/registration",
-    "pricing_url": "https://cloud.ibm.com/registration",
-    "documentation_url": "https://cloud.ibm.com/registration",
+    "pricing_url": "https://www.ibm.com/products/watsonx-assistant/pricing",
+    "documentation_url": "https://cloud.ibm.com/apidocs",
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
@@ -1950,15 +2093,19 @@
       "amount": "Unverified",
       "expiry": "Unverified"
     },
-    "requires_credit_card": "Unverified",
-    "authentication": "Unverified",
-    "protocols": [],
-    "sdk_languages": [],
-    "commercial_use": "Unverified",
-    "self_hostable": "Unverified",
-    "webhooks": "Unverified",
-    "rate_limit": "Unverified",
-    "free_tier_reset": "Unverified",
+    "requires_credit_card": "Unavailable",
+    "authentication": "IAM API key / bearer token",
+    "protocols": [
+      "HTTPS/REST"
+    ],
+    "sdk_languages": [
+      "Unavailable"
+    ],
+    "commercial_use": "Unavailable",
+    "self_hostable": "Unavailable",
+    "webhooks": "Unavailable",
+    "rate_limit": "Unavailable",
+    "free_tier_reset": "Unavailable",
     "uses": [
       "model inference",
       "text/chat or multimodal AI",
@@ -1966,18 +2113,31 @@
       "embeddings/semantic search where offered",
       "model deployment/integration"
     ],
-    "last_verified": null,
-    "verified_by": null,
-    "status": "catalog-only",
-    "verification_status": "provider-homepage-fallback"
+    "last_verified": "2026-09-25",
+    "verified_by": "manual-official-doc-review",
+    "status": "active",
+    "verification_status": "manually-verified",
+    "verification_sources": {
+      "requires_credit_card": "https://www.ibm.com/products/watsonx-assistant/pricing",
+      "authentication": "https://cloud.ibm.com/apidocs/ Watson authentication documentation",
+      "protocols": "https://cloud.ibm.com/apidocs",
+      "sdk_languages": "https://cloud.ibm.com/apidocs",
+      "commercial_use": "https://www.ibm.com/legal/terms-of-use",
+      "self_hostable": "https://www.ibm.com/watson",
+      "webhooks": "https://cloud.ibm.com/apidocs",
+      "rate_limit": "https://cloud.ibm.com/apidocs",
+      "free_tier_reset": "https://www.ibm.com/products/watsonx-assistant/pricing",
+      "documentation": "https://cloud.ibm.com/apidocs",
+      "pricing": "https://www.ibm.com/products/watsonx-assistant/pricing"
+    }
   },
   {
     "name": "Jina AI",
     "category": "AI / ML (additional)",
     "description": "Cataloged API provider.",
     "signup_url": "https://jina.ai",
-    "pricing_url": "https://jina.ai",
-    "documentation_url": "https://jina.ai",
+    "pricing_url": "https://jina.ai/pricing",
+    "documentation_url": "https://jina.ai/reader/",
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
@@ -1985,15 +2145,19 @@
       "amount": "Unverified",
       "expiry": "Unverified"
     },
-    "requires_credit_card": "Unverified",
-    "authentication": "Unverified",
-    "protocols": [],
-    "sdk_languages": [],
-    "commercial_use": "Unverified",
-    "self_hostable": "Unverified",
-    "webhooks": "Unverified",
-    "rate_limit": "Unverified",
-    "free_tier_reset": "Unverified",
+    "requires_credit_card": "Unavailable",
+    "authentication": "API key in Authorization: Bearer header",
+    "protocols": [
+      "HTTPS REST API"
+    ],
+    "sdk_languages": [
+      "Python, JavaScript/TypeScript (official examples/clients)"
+    ],
+    "commercial_use": "Unavailable",
+    "self_hostable": "Unavailable",
+    "webhooks": "Unavailable",
+    "rate_limit": "Unavailable",
+    "free_tier_reset": "Unavailable",
     "uses": [
       "model inference",
       "text/chat or multimodal AI",
@@ -2001,18 +2165,31 @@
       "embeddings/semantic search where offered",
       "model deployment/integration"
     ],
-    "last_verified": null,
-    "verified_by": null,
-    "status": "catalog-only",
-    "verification_status": "provider-homepage-fallback"
+    "last_verified": "2026-09-25",
+    "verified_by": "manual-official-doc-review",
+    "status": "active",
+    "verification_status": "manually-verified",
+    "verification_sources": {
+      "requires_credit_card": "https://jina.ai/api-key/",
+      "authentication": "https://jina.ai/api-key/",
+      "protocols": "https://jina.ai/reader/",
+      "sdk_languages": "https://jina.ai/embeddings/",
+      "commercial_use": "https://jina.ai/terms/",
+      "self_hostable": "https://jina.ai/embeddings/",
+      "webhooks": "https://jina.ai/reader/",
+      "rate_limit": "https://jina.ai/api-key/",
+      "free_tier_reset": "https://jina.ai/api-key/",
+      "documentation": "https://jina.ai/reader/",
+      "pricing": "https://jina.ai/pricing"
+    }
   },
   {
     "name": "Microsoft Azure AI Services",
     "category": "AI / ML (additional)",
     "description": "Cataloged API provider.",
     "signup_url": "https://azure.microsoft.com/en-us/products/ai-services",
-    "pricing_url": "https://azure.microsoft.com/en-us/products/ai-services",
-    "documentation_url": "https://azure.microsoft.com/en-us/products/ai-services",
+    "pricing_url": "https://azure.microsoft.com/en-us/pricing/details/cognitive-services/",
+    "documentation_url": "https://learn.microsoft.com/en-us/azure/ai-services/",
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
@@ -2020,15 +2197,20 @@
       "amount": "Unverified",
       "expiry": "Unverified"
     },
-    "requires_credit_card": "Unverified",
-    "authentication": "Unverified",
-    "protocols": [],
-    "sdk_languages": [],
-    "commercial_use": "Unverified",
-    "self_hostable": "Unverified",
-    "webhooks": "Unverified",
-    "rate_limit": "Unverified",
-    "free_tier_reset": "Unverified",
+    "requires_credit_card": "A payment instrument is generally required to continue Azure beyond the free account offer; requirements vary by subscription/region",
+    "authentication": "Microsoft Entra ID or Azure resource API keys (depending on service)",
+    "protocols": [
+      "HTTPS REST APIs",
+      "service-specific SDK protocols"
+    ],
+    "sdk_languages": [
+      "C#, Python, Java, JavaScript/TypeScript, Go (service-dependent)"
+    ],
+    "commercial_use": "Available under Microsoft Azure commercial terms",
+    "self_hostable": "Unavailable for Azure-hosted services (some separately licensed/offline offerings may differ)",
+    "webhooks": "Unavailable as a platform-wide Azure AI Services feature",
+    "rate_limit": "Service- and pricing-tier-specific; documented per service",
+    "free_tier_reset": "Unavailable as a single platform-wide schedule; service-specific",
     "uses": [
       "model inference",
       "text/chat or multimodal AI",
@@ -2036,18 +2218,31 @@
       "embeddings/semantic search where offered",
       "model deployment/integration"
     ],
-    "last_verified": null,
-    "verified_by": null,
-    "status": "catalog-only",
-    "verification_status": "provider-homepage-fallback"
+    "last_verified": "2026-09-25",
+    "verified_by": "manual-official-doc-review",
+    "status": "active",
+    "verification_status": "manually-verified",
+    "verification_sources": {
+      "requires_credit_card": "https://azure.microsoft.com/en-us/free/",
+      "authentication": "https://learn.microsoft.com/en-us/azure/ai-services/authentication",
+      "protocols": "https://learn.microsoft.com/en-us/azure/ai-services/reference-rest-api-resources",
+      "sdk_languages": "https://learn.microsoft.com/en-us/azure/ai-services/",
+      "commercial_use": "https://azure.microsoft.com/en-us/support/legal/",
+      "self_hostable": "https://learn.microsoft.com/en-us/azure/ai-services/",
+      "webhooks": "https://learn.microsoft.com/en-us/azure/ai-services/",
+      "rate_limit": "https://learn.microsoft.com/en-us/azure/ai-services/quotas-limits",
+      "free_tier_reset": "https://azure.microsoft.com/en-us/pricing/details/cognitive-services/",
+      "documentation": "https://learn.microsoft.com/en-us/azure/ai-services/",
+      "pricing": "https://azure.microsoft.com/en-us/pricing/details/cognitive-services/"
+    }
   },
   {
     "name": "Modal",
     "category": "AI / ML (additional)",
     "description": "Cataloged API provider.",
     "signup_url": "https://modal.com",
-    "pricing_url": "https://modal.com",
-    "documentation_url": "https://modal.com",
+    "pricing_url": "https://modal.com/pricing",
+    "documentation_url": "https://modal.com/docs/guide",
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
@@ -2055,15 +2250,20 @@
       "amount": "Unverified",
       "expiry": "Unverified"
     },
-    "requires_credit_card": "Unverified",
-    "authentication": "Unverified",
-    "protocols": [],
-    "sdk_languages": [],
-    "commercial_use": "Unverified",
-    "self_hostable": "Unverified",
-    "webhooks": "Unverified",
-    "rate_limit": "Unverified",
-    "free_tier_reset": "Unverified",
+    "requires_credit_card": "Unavailable",
+    "authentication": "Modal token / CLI authentication",
+    "protocols": [
+      "HTTPS",
+      "Modal Python SDK and CLI"
+    ],
+    "sdk_languages": [
+      "Python"
+    ],
+    "commercial_use": "Unavailable",
+    "self_hostable": "No (Modal is a hosted service)",
+    "webhooks": "HTTP web endpoints are supported",
+    "rate_limit": "Unavailable",
+    "free_tier_reset": "Unavailable",
     "uses": [
       "model inference",
       "text/chat or multimodal AI",
@@ -2071,18 +2271,31 @@
       "embeddings/semantic search where offered",
       "model deployment/integration"
     ],
-    "last_verified": null,
-    "verified_by": null,
-    "status": "catalog-only",
-    "verification_status": "provider-homepage-fallback"
+    "last_verified": "2026-09-25",
+    "verified_by": "manual-official-doc-review",
+    "status": "active",
+    "verification_status": "manually-verified",
+    "verification_sources": {
+      "requires_credit_card": "https://modal.com/docs/guide/billing",
+      "authentication": "https://modal.com/docs/reference/modal.client",
+      "protocols": "https://modal.com/docs/guide",
+      "sdk_languages": "https://modal.com/docs/guide",
+      "commercial_use": "https://modal.com/terms",
+      "self_hostable": "https://modal.com/docs/guide",
+      "webhooks": "https://modal.com/docs/guide/webhooks",
+      "rate_limit": "https://modal.com/docs/guide/limits",
+      "free_tier_reset": "https://modal.com/pricing",
+      "documentation": "https://modal.com/docs/guide",
+      "pricing": "https://modal.com/pricing"
+    }
   },
   {
     "name": "RunPod",
     "category": "AI / ML (additional)",
     "description": "Cataloged API provider.",
     "signup_url": "https://www.runpod.io",
-    "pricing_url": "https://www.runpod.io",
-    "documentation_url": "https://www.runpod.io",
+    "pricing_url": "https://www.runpod.io/pricing",
+    "documentation_url": "https://docs.runpod.io/",
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
@@ -2090,15 +2303,20 @@
       "amount": "Unverified",
       "expiry": "Unverified"
     },
-    "requires_credit_card": "Unverified",
-    "authentication": "Unverified",
-    "protocols": [],
-    "sdk_languages": [],
-    "commercial_use": "Unverified",
-    "self_hostable": "Unverified",
-    "webhooks": "Unverified",
-    "rate_limit": "Unverified",
-    "free_tier_reset": "Unverified",
+    "requires_credit_card": "A payment method is required for account funding; exact signup requirement is not published as a universal rule",
+    "authentication": "API key",
+    "protocols": [
+      "HTTPS REST API and GraphQL API"
+    ],
+    "sdk_languages": [
+      "Python (official SDK)",
+      "other languages via APIs"
+    ],
+    "commercial_use": "Unavailable",
+    "self_hostable": "Unavailable",
+    "webhooks": "Webhooks supported for serverless endpoints",
+    "rate_limit": "Unavailable",
+    "free_tier_reset": "Unavailable",
     "uses": [
       "model inference",
       "text/chat or multimodal AI",
@@ -2106,18 +2324,31 @@
       "embeddings/semantic search where offered",
       "model deployment/integration"
     ],
-    "last_verified": null,
-    "verified_by": null,
-    "status": "catalog-only",
-    "verification_status": "provider-homepage-fallback"
+    "last_verified": "2026-09-25",
+    "verified_by": "manual-official-doc-review",
+    "status": "active",
+    "verification_status": "manually-verified",
+    "verification_sources": {
+      "requires_credit_card": "https://docs.runpod.io/get-started/billing",
+      "authentication": "https://docs.runpod.io/get-started/api-keys",
+      "protocols": "https://docs.runpod.io/reference/intro",
+      "sdk_languages": "https://docs.runpod.io/sdks/python",
+      "commercial_use": "https://www.runpod.io/legal/terms-of-service",
+      "self_hostable": "https://docs.runpod.io/",
+      "webhooks": "https://docs.runpod.io/serverless/endpoints/requests",
+      "rate_limit": "https://docs.runpod.io/reference/intro",
+      "free_tier_reset": "https://www.runpod.io/pricing",
+      "documentation": "https://docs.runpod.io/",
+      "pricing": "https://www.runpod.io/pricing"
+    }
   },
   {
     "name": "Voyage AI (embeddings)",
     "category": "AI / ML (additional)",
     "description": "Cataloged API provider.",
     "signup_url": "https://www.voyageai.com",
-    "pricing_url": "https://www.voyageai.com",
-    "documentation_url": "https://www.voyageai.com",
+    "pricing_url": "https://docs.voyageai.com/docs/pricing",
+    "documentation_url": "https://docs.voyageai.com/",
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
@@ -2125,15 +2356,20 @@
       "amount": "Unverified",
       "expiry": "Unverified"
     },
-    "requires_credit_card": "Unverified",
-    "authentication": "Unverified",
-    "protocols": [],
-    "sdk_languages": [],
-    "commercial_use": "Unverified",
-    "self_hostable": "Unverified",
-    "webhooks": "Unverified",
-    "rate_limit": "Unverified",
-    "free_tier_reset": "Unverified",
+    "requires_credit_card": "Unavailable",
+    "authentication": "API key in Authorization: Bearer header",
+    "protocols": [
+      "HTTPS REST API",
+      "Python SDK"
+    ],
+    "sdk_languages": [
+      "Python"
+    ],
+    "commercial_use": "Unavailable",
+    "self_hostable": "Unavailable",
+    "webhooks": "Unavailable",
+    "rate_limit": "Unavailable",
+    "free_tier_reset": "Unavailable",
     "uses": [
       "model inference",
       "text/chat or multimodal AI",
@@ -2141,18 +2377,31 @@
       "embeddings/semantic search where offered",
       "model deployment/integration"
     ],
-    "last_verified": null,
-    "verified_by": null,
-    "status": "catalog-only",
-    "verification_status": "provider-homepage-fallback"
+    "last_verified": "2026-09-25",
+    "verified_by": "manual-official-doc-review",
+    "status": "active",
+    "verification_status": "manually-verified",
+    "verification_sources": {
+      "requires_credit_card": "https://docs.voyageai.com/docs/api-key-and-authentication",
+      "authentication": "https://docs.voyageai.com/docs/api-key-and-authentication",
+      "protocols": "https://docs.voyageai.com/docs/embeddings",
+      "sdk_languages": "https://docs.voyageai.com/docs/embeddings",
+      "commercial_use": "https://www.voyageai.com/terms",
+      "self_hostable": "https://docs.voyageai.com/docs/embeddings",
+      "webhooks": "https://docs.voyageai.com/docs/embeddings",
+      "rate_limit": "https://docs.voyageai.com/docs/rate-limits",
+      "free_tier_reset": "https://docs.voyageai.com/docs/pricing",
+      "documentation": "https://docs.voyageai.com/",
+      "pricing": "https://docs.voyageai.com/docs/pricing"
+    }
   },
   {
     "name": "Wit.ai (Meta)",
     "category": "AI / ML (additional)",
     "description": "Cataloged API provider.",
     "signup_url": "https://wit.ai",
-    "pricing_url": "https://wit.ai",
-    "documentation_url": "https://wit.ai",
+    "pricing_url": "https://wit.ai/faq",
+    "documentation_url": "https://wit.ai/docs",
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
@@ -2160,15 +2409,20 @@
       "amount": "Unverified",
       "expiry": "Unverified"
     },
-    "requires_credit_card": "Unverified",
-    "authentication": "Unverified",
-    "protocols": [],
-    "sdk_languages": [],
-    "commercial_use": "Unverified",
-    "self_hostable": "Unverified",
-    "webhooks": "Unverified",
-    "rate_limit": "Unverified",
-    "free_tier_reset": "Unverified",
+    "requires_credit_card": false,
+    "authentication": "Wit.ai access token using Bearer authentication",
+    "protocols": [
+      "HTTPS REST API",
+      "webhooks for Messenger/integrations"
+    ],
+    "sdk_languages": [
+      "Node.js, Python, Ruby (official/community SDK documentation varies)"
+    ],
+    "commercial_use": "Unavailable",
+    "self_hostable": "Unavailable",
+    "webhooks": "Supported for bot integrations",
+    "rate_limit": "Unavailable",
+    "free_tier_reset": "Unavailable",
     "uses": [
       "model inference",
       "text/chat or multimodal AI",
@@ -2176,18 +2430,31 @@
       "embeddings/semantic search where offered",
       "model deployment/integration"
     ],
-    "last_verified": null,
-    "verified_by": null,
-    "status": "catalog-only",
-    "verification_status": "provider-homepage-fallback"
+    "last_verified": "2026-09-25",
+    "verified_by": "manual-official-doc-review",
+    "status": "active",
+    "verification_status": "manually-verified",
+    "verification_sources": {
+      "requires_credit_card": "https://wit.ai/docs/quickstart",
+      "authentication": "https://wit.ai/docs/http/20230215",
+      "protocols": "https://wit.ai/docs/http/20230215",
+      "sdk_languages": "https://wit.ai/docs",
+      "commercial_use": "https://wit.ai/terms",
+      "self_hostable": "https://wit.ai/docs",
+      "webhooks": "https://wit.ai/docs/quickstart",
+      "rate_limit": "https://wit.ai/docs/http/20230215",
+      "free_tier_reset": "https://wit.ai/faq",
+      "documentation": "https://wit.ai/docs",
+      "pricing": "https://wit.ai/faq"
+    }
   },
   {
     "name": "Amplitude API",
     "category": "Analytics",
     "description": "Cataloged API provider.",
     "signup_url": "https://amplitude.com",
-    "pricing_url": "https://amplitude.com",
-    "documentation_url": "https://amplitude.com",
+    "pricing_url": "https://amplitude.com/pricing",
+    "documentation_url": "https://www.docs.developers.amplitude.com/",
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
@@ -2195,15 +2462,20 @@
       "amount": "Unverified",
       "expiry": "Unverified"
     },
-    "requires_credit_card": "Unverified",
-    "authentication": "Unverified",
-    "protocols": [],
-    "sdk_languages": [],
-    "commercial_use": "Unverified",
-    "self_hostable": "Unverified",
-    "webhooks": "Unverified",
-    "rate_limit": "Unverified",
-    "free_tier_reset": "Unverified",
+    "requires_credit_card": false,
+    "authentication": "API key and secret key for HTTP APIs; OAuth 2.0 for supported APIs",
+    "protocols": [
+      "HTTPS/REST",
+      "HTTP APIs"
+    ],
+    "sdk_languages": [
+      "JavaScript, TypeScript, Java, Swift, Kotlin, Android, iOS, React Native, Flutter, Unity, Python, Go, Ruby, PHP, C#"
+    ],
+    "commercial_use": "Available on paid commercial plans; license/terms govern use",
+    "self_hostable": "No; Amplitude is documented as a cloud service",
+    "webhooks": "Unavailable",
+    "rate_limit": "Varies by API; documented per endpoint/plan",
+    "free_tier_reset": "Monthly (free plan usage limits are monthly)",
     "uses": [
       "event tracking",
       "product/user analytics",
@@ -2211,18 +2483,31 @@
       "segments/cohorts",
       "reports/data retrieval"
     ],
-    "last_verified": null,
-    "verified_by": null,
-    "status": "catalog-only",
-    "verification_status": "provider-homepage-fallback"
+    "last_verified": "2026-09-25",
+    "verified_by": "manual-official-doc-review",
+    "status": "active",
+    "verification_status": "manually-verified",
+    "verification_sources": {
+      "requires_credit_card": "https://amplitude.com/pricing",
+      "authentication": "https://www.docs.developers.amplitude.com/analytics/apis/",
+      "protocols": "https://www.docs.developers.amplitude.com/analytics/apis/",
+      "sdk_languages": "https://www.docs.developers.amplitude.com/data/sdks/",
+      "commercial_use": "https://amplitude.com/terms",
+      "self_hostable": "https://www.docs.developers.amplitude.com/",
+      "webhooks": "https://www.docs.developers.amplitude.com/",
+      "rate_limit": "https://www.docs.developers.amplitude.com/analytics/apis/",
+      "free_tier_reset": "https://amplitude.com/pricing",
+      "documentation": "https://www.docs.developers.amplitude.com/",
+      "pricing": "https://amplitude.com/pricing"
+    }
   },
   {
     "name": "Google Analytics API",
     "category": "Analytics",
     "description": "Cataloged API provider.",
     "signup_url": "https://developers.google.com/analytics",
-    "pricing_url": "https://developers.google.com/analytics",
-    "documentation_url": "https://developers.google.com/analytics",
+    "pricing_url": "https://marketingplatform.google.com/about/analytics-360/pricing/",
+    "documentation_url": "https://developers.google.com/analytics/devguides/reporting/data/v1",
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
@@ -2230,15 +2515,20 @@
       "amount": "Unverified",
       "expiry": "Unverified"
     },
-    "requires_credit_card": "Unverified",
-    "authentication": "Unverified",
-    "protocols": [],
-    "sdk_languages": [],
-    "commercial_use": "Unverified",
-    "self_hostable": "Unverified",
-    "webhooks": "Unverified",
-    "rate_limit": "Unverified",
-    "free_tier_reset": "Unverified",
+    "requires_credit_card": false,
+    "authentication": "OAuth 2.0 and service-account credentials; API key where applicable",
+    "protocols": [
+      "HTTPS/REST",
+      "gRPC for Google Analytics Data API"
+    ],
+    "sdk_languages": [
+      "Java, Python, Node.js, PHP, Ruby, Go, .NET"
+    ],
+    "commercial_use": "Yes, subject to Google Analytics Terms of Service and applicable Google APIs terms",
+    "self_hostable": "No",
+    "webhooks": "Unavailable",
+    "rate_limit": "Data API quotas include per-property and per-project token limits; exact limits documented by quota table",
+    "free_tier_reset": "Daily (quota replenishment is documented as daily for relevant quotas)",
     "uses": [
       "event tracking",
       "product/user analytics",
@@ -2246,18 +2536,31 @@
       "segments/cohorts",
       "reports/data retrieval"
     ],
-    "last_verified": null,
-    "verified_by": null,
-    "status": "catalog-only",
-    "verification_status": "provider-homepage-fallback"
+    "last_verified": "2026-09-25",
+    "verified_by": "manual-official-doc-review",
+    "status": "active",
+    "verification_status": "manually-verified",
+    "verification_sources": {
+      "requires_credit_card": "https://support.google.com/analytics/answer/10285842",
+      "authentication": "https://developers.google.com/analytics/devguides/reporting/data/v1/rest/v1beta/properties/runReport",
+      "protocols": "https://developers.google.com/analytics/devguides/reporting/data/v1",
+      "sdk_languages": "https://developers.google.com/analytics/devguides/reporting/data/v1/quickstarts",
+      "commercial_use": "https://marketingplatform.google.com/about/analytics/terms/us/",
+      "self_hostable": "https://developers.google.com/analytics",
+      "webhooks": "https://developers.google.com/analytics/devguides/reporting/data/v1",
+      "rate_limit": "https://developers.google.com/analytics/devguides/reporting/data/v1/quotas",
+      "free_tier_reset": "https://developers.google.com/analytics/devguides/reporting/data/v1/quotas",
+      "documentation": "https://developers.google.com/analytics/devguides/reporting/data/v1",
+      "pricing": "https://marketingplatform.google.com/about/analytics-360/pricing/"
+    }
   },
   {
     "name": "Mixpanel API",
     "category": "Analytics",
     "description": "Cataloged API provider.",
     "signup_url": "https://mixpanel.com",
-    "pricing_url": "https://mixpanel.com",
-    "documentation_url": "https://mixpanel.com",
+    "pricing_url": "https://mixpanel.com/pricing/",
+    "documentation_url": "https://developer.mixpanel.com/reference/overview",
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
@@ -2265,15 +2568,19 @@
       "amount": "Unverified",
       "expiry": "Unverified"
     },
-    "requires_credit_card": "Unverified",
-    "authentication": "Unverified",
-    "protocols": [],
-    "sdk_languages": [],
-    "commercial_use": "Unverified",
-    "self_hostable": "Unverified",
-    "webhooks": "Unverified",
-    "rate_limit": "Unverified",
-    "free_tier_reset": "Unverified",
+    "requires_credit_card": false,
+    "authentication": "Service account, project secret, OAuth 2.0, or basic authentication depending on API",
+    "protocols": [
+      "HTTPS/REST"
+    ],
+    "sdk_languages": [
+      "JavaScript, Node.js, Python, Java, PHP, Ruby, Go, C#, Swift, Kotlin, Android, iOS"
+    ],
+    "commercial_use": "Yes, subject to Mixpanel Terms of Use and plan terms",
+    "self_hostable": "No",
+    "webhooks": "Yes; Mixpanel supports webhooks for selected exports/integrations, not universally across APIs",
+    "rate_limit": "Endpoint-specific; commonly documented as requests per second and/or concurrent request limits",
+    "free_tier_reset": "Monthly (free plan usage is described monthly)",
     "uses": [
       "event tracking",
       "product/user analytics",
@@ -2281,18 +2588,31 @@
       "segments/cohorts",
       "reports/data retrieval"
     ],
-    "last_verified": null,
-    "verified_by": null,
-    "status": "catalog-only",
-    "verification_status": "provider-homepage-fallback"
+    "last_verified": "2026-09-25",
+    "verified_by": "manual-official-doc-review",
+    "status": "active",
+    "verification_status": "manually-verified",
+    "verification_sources": {
+      "requires_credit_card": "https://mixpanel.com/pricing/",
+      "authentication": "https://developer.mixpanel.com/reference/authentication",
+      "protocols": "https://developer.mixpanel.com/reference/overview",
+      "sdk_languages": "https://developer.mixpanel.com/docs/sdks",
+      "commercial_use": "https://mixpanel.com/legal/terms-of-use/",
+      "self_hostable": "https://developer.mixpanel.com/reference/overview",
+      "webhooks": "https://developer.mixpanel.com/reference/webhooks",
+      "rate_limit": "https://developer.mixpanel.com/reference/rate-limits",
+      "free_tier_reset": "https://mixpanel.com/pricing/",
+      "documentation": "https://developer.mixpanel.com/reference/overview",
+      "pricing": "https://mixpanel.com/pricing/"
+    }
   },
   {
     "name": "Segment API",
     "category": "Analytics",
     "description": "Cataloged API provider.",
     "signup_url": "https://segment.com",
-    "pricing_url": "https://segment.com",
-    "documentation_url": "https://segment.com",
+    "pricing_url": "https://segment.com/pricing/",
+    "documentation_url": "https://segment.com/docs/api/",
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
@@ -2300,15 +2620,20 @@
       "amount": "Unverified",
       "expiry": "Unverified"
     },
-    "requires_credit_card": "Unverified",
-    "authentication": "Unverified",
-    "protocols": [],
-    "sdk_languages": [],
-    "commercial_use": "Unverified",
-    "self_hostable": "Unverified",
-    "webhooks": "Unverified",
-    "rate_limit": "Unverified",
-    "free_tier_reset": "Unverified",
+    "requires_credit_card": "Unavailable",
+    "authentication": "Bearer access token for public APIs; HTTP source write key for tracking APIs",
+    "protocols": [
+      "HTTPS/REST",
+      "HTTP event ingestion"
+    ],
+    "sdk_languages": [
+      "JavaScript, Node.js, Python, Ruby, PHP, Java, .NET, Go, Android, iOS, Swift, Kotlin, React Native"
+    ],
+    "commercial_use": "Yes, subject to Twilio Segment terms and subscription agreement",
+    "self_hostable": "No; Segment is a hosted Twilio service",
+    "webhooks": "Yes; Destination Functions and webhook destinations are documented",
+    "rate_limit": "Varies by API and plan; documented in API reference",
+    "free_tier_reset": "Unavailable",
     "uses": [
       "event tracking",
       "product/user analytics",
@@ -2316,18 +2641,31 @@
       "segments/cohorts",
       "reports/data retrieval"
     ],
-    "last_verified": null,
-    "verified_by": null,
-    "status": "catalog-only",
-    "verification_status": "provider-homepage-fallback"
+    "last_verified": "2026-09-25",
+    "verified_by": "manual-official-doc-review",
+    "status": "active",
+    "verification_status": "manually-verified",
+    "verification_sources": {
+      "requires_credit_card": "https://segment.com/pricing/",
+      "authentication": "https://segment.com/docs/api/public-api/",
+      "protocols": "https://segment.com/docs/connections/sources/catalog/libraries/server/http-api/",
+      "sdk_languages": "https://segment.com/docs/connections/sources/catalog/libraries/",
+      "commercial_use": "https://www.twilio.com/legal/tos",
+      "self_hostable": "https://segment.com/docs/",
+      "webhooks": "https://segment.com/docs/connections/destinations/catalog/webhooks/",
+      "rate_limit": "https://segment.com/docs/api/public-api/#rate-limits",
+      "free_tier_reset": "https://segment.com/pricing/",
+      "documentation": "https://segment.com/docs/api/",
+      "pricing": "https://segment.com/pricing/"
+    }
   },
   {
     "name": "Alchemy API",
     "category": "Blockchain / Web3",
     "description": "Cataloged API provider.",
     "signup_url": "https://www.alchemy.com",
-    "pricing_url": "https://www.alchemy.com",
-    "documentation_url": "https://www.alchemy.com",
+    "pricing_url": "https://www.alchemy.com/pricing",
+    "documentation_url": "https://www.alchemy.com/docs",
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
@@ -2335,15 +2673,21 @@
       "amount": "Unverified",
       "expiry": "Unverified"
     },
-    "requires_credit_card": "Unverified",
-    "authentication": "Unverified",
-    "protocols": [],
-    "sdk_languages": [],
-    "commercial_use": "Unverified",
-    "self_hostable": "Unverified",
-    "webhooks": "Unverified",
-    "rate_limit": "Unverified",
-    "free_tier_reset": "Unverified",
+    "requires_credit_card": false,
+    "authentication": "API key in URL path; some APIs also support authenticated headers/tokens",
+    "protocols": [
+      "HTTPS/JSON-RPC",
+      "REST",
+      "WebSockets"
+    ],
+    "sdk_languages": [
+      "JavaScript/TypeScript, Python, Java, Go, Rust, PHP, and Ruby (official SDKs/tools vary)"
+    ],
+    "commercial_use": "Yes on paid plans, subject to Alchemy terms and plan limits",
+    "self_hostable": "No; Alchemy is a hosted node/API platform",
+    "webhooks": "Yes; Alchemy Notify webhooks",
+    "rate_limit": "Compute-unit based throughput and endpoint-specific limits; plan-dependent",
+    "free_tier_reset": "Monthly (free plan compute units reset monthly)",
     "uses": [
       "blockchain RPC/node access",
       "wallet/transaction data",
@@ -2351,18 +2695,31 @@
       "smart-contract data",
       "on-chain analytics"
     ],
-    "last_verified": null,
-    "verified_by": null,
-    "status": "catalog-only",
-    "verification_status": "provider-homepage-fallback"
+    "last_verified": "2026-09-25",
+    "verified_by": "manual-official-doc-review",
+    "status": "active",
+    "verification_status": "manually-verified",
+    "verification_sources": {
+      "requires_credit_card": "https://www.alchemy.com/pricing",
+      "authentication": "https://www.alchemy.com/docs/reference/api-keys",
+      "protocols": "https://www.alchemy.com/docs/reference/api-overview",
+      "sdk_languages": "https://www.alchemy.com/docs",
+      "commercial_use": "https://www.alchemy.com/legal/terms-of-service",
+      "self_hostable": "https://www.alchemy.com/docs",
+      "webhooks": "https://www.alchemy.com/docs/notify/notify-api/quickstart",
+      "rate_limit": "https://www.alchemy.com/docs/reference/compute-units",
+      "free_tier_reset": "https://www.alchemy.com/pricing",
+      "documentation": "https://www.alchemy.com/docs",
+      "pricing": "https://www.alchemy.com/pricing"
+    }
   },
   {
     "name": "Infura API",
     "category": "Blockchain / Web3",
     "description": "Cataloged API provider.",
     "signup_url": "https://www.infura.io",
-    "pricing_url": "https://www.infura.io",
-    "documentation_url": "https://www.infura.io",
+    "pricing_url": "https://www.infura.io/pricing",
+    "documentation_url": "https://docs.metamask.io/services/",
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
@@ -2370,15 +2727,22 @@
       "amount": "Unverified",
       "expiry": "Unverified"
     },
-    "requires_credit_card": "Unverified",
-    "authentication": "Unverified",
-    "protocols": [],
-    "sdk_languages": [],
-    "commercial_use": "Unverified",
-    "self_hostable": "Unverified",
-    "webhooks": "Unverified",
-    "rate_limit": "Unverified",
-    "free_tier_reset": "Unverified",
+    "requires_credit_card": false,
+    "authentication": "Project ID/API key in endpoint URL; JWT authentication for some services",
+    "protocols": [
+      "HTTPS/JSON-RPC",
+      "WebSockets",
+      "REST for selected APIs"
+    ],
+    "sdk_languages": [
+      "Unavailable as a complete provider SDK-language list",
+      "official docs provide language-specific examples/tools"
+    ],
+    "commercial_use": "Yes, subject to Consensys/Infura terms and plan limits",
+    "self_hostable": "No; Infura is a hosted infrastructure service",
+    "webhooks": "Unavailable",
+    "rate_limit": "Plan- and network-specific request/throughput limits; documented in product limits",
+    "free_tier_reset": "Monthly (free plan usage limits are monthly)",
     "uses": [
       "blockchain RPC/node access",
       "wallet/transaction data",
@@ -2386,10 +2750,23 @@
       "smart-contract data",
       "on-chain analytics"
     ],
-    "last_verified": null,
-    "verified_by": null,
-    "status": "catalog-only",
-    "verification_status": "provider-homepage-fallback"
+    "last_verified": "2026-09-25",
+    "verified_by": "manual-official-doc-review",
+    "status": "active",
+    "verification_status": "manually-verified",
+    "verification_sources": {
+      "requires_credit_card": "https://www.infura.io/pricing",
+      "authentication": "https://docs.metamask.io/services/reference/",
+      "protocols": "https://docs.metamask.io/services/reference/ethereum/json-rpc-methods/",
+      "sdk_languages": "https://docs.metamask.io/services/",
+      "commercial_use": "https://consensys.io/terms-of-use",
+      "self_hostable": "https://docs.metamask.io/services/",
+      "webhooks": "https://docs.metamask.io/services/",
+      "rate_limit": "https://docs.metamask.io/services/reference/limits/",
+      "free_tier_reset": "https://www.infura.io/pricing",
+      "documentation": "https://docs.metamask.io/services/",
+      "pricing": "https://www.infura.io/pricing"
+    }
   },
   {
     "name": "Moralis API",
