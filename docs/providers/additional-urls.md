@@ -45,8 +45,10 @@ This file contains unique provider URLs imported from the supplied source list. 
 | AWS (free tier) | Dev Tools / Infra | https://aws.amazon.com/free/ |
 | Cloudflare API | Dev Tools / Infra | https://dash.cloudflare.com/profile/api-tokens |
 | Firebase | Dev Tools / Infra | https://console.firebase.google.com |
+| GitHub API | Dev Tools / Infra | https://github.com/settings/tokens |
 | GitLab API | Dev Tools / Infra | https://gitlab.com/-/profile/personal_access_tokens |
 | Netlify API | Dev Tools / Infra | https://app.netlify.com/user/applications |
+| Notion API | Dev Tools / Infra | https://www.notion.so/my-integrations |
 | PostHog | Dev Tools / Infra | https://app.posthog.com/signup |
 | Pusher | Dev Tools / Infra | https://dashboard.pusher.com/accounts/sign_up |
 | Sentry | Dev Tools / Infra | https://sentry.io/signup/ |
