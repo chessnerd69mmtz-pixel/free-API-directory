@@ -1,6 +1,6 @@
 # Communication, Email & SMS
 
-**18 providers**
+**20 providers in this criterion**
 
 | Provider | Original Category | Provider / API-key URL | Tier / pricing URL | Major Functions & Capabilities |
 |---|---|---|---|---|
@@ -15,6 +15,8 @@
 | MessageBird | Email / SMS / Communication | [Open](https://dashboard.messagebird.com/en/sign-up) | [Check tiers](https://dashboard.messagebird.com/en/sign-up) | transactional email<br>SMS/MMS<br>voice/messaging where offered<br>templates and sender management<br>delivery tracking<br>webhooks/automation |
 | Plivo | Email / SMS / Communication | [Open](https://console.plivo.com/accounts/register/) | [Check tiers](https://console.plivo.com/accounts/register/) | transactional email<br>SMS/MMS<br>voice/messaging where offered<br>templates and sender management<br>delivery tracking<br>webhooks/automation |
 | Postmark | Email / SMS / Communication | [Open](https://account.postmarkapp.com/sign_up) | [Check tiers](https://account.postmarkapp.com/sign_up) | transactional email<br>SMS/MMS<br>voice/messaging where offered<br>templates and sender management<br>delivery tracking<br>webhooks/automation |
+| Resend | Email | [Open](https://resend.com/api-keys) | [Check tiers](https://resend.com/pricing) | transactional email<br>email templates<br>domains/senders<br>delivery events<br>attachments<br>webhooks |
+| SendGrid | Email | [Open](https://app.sendgrid.com/settings/api_keys) | [Check tiers](https://sendgrid.com/pricing/) | transactional email<br>marketing email<br>templates<br>contacts<br>delivery analytics<br>webhooks |
 | Sinch | Email / SMS (additional) | [Open](https://dashboard.sinch.com) | [Check tiers](https://dashboard.sinch.com) | transactional email<br>SMS/MMS<br>voice/messaging where offered<br>templates and sender management<br>delivery tracking<br>webhooks/automation |
 | SparkPost | Email / SMS (additional) | [Open](https://app.sparkpost.com/join) | [Check tiers](https://app.sparkpost.com/join) | transactional email<br>SMS/MMS<br>voice/messaging where offered<br>templates and sender management<br>delivery tracking<br>webhooks/automation |
 | Telnyx | Email / SMS (additional) | [Open](https://portal.telnyx.com) | [Check tiers](https://portal.telnyx.com) | transactional email<br>SMS/MMS<br>voice/messaging where offered<br>templates and sender management<br>delivery tracking<br>webhooks/automation |
