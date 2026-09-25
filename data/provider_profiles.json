@@ -6846,9 +6846,9 @@
     "name": "GeoNames",
     "category": "Maps / Location (additional)",
     "description": "Cataloged API provider.",
-    "signup_url": "http://www.geonames.org/export/web-services.html",
-    "pricing_url": "http://www.geonames.org/export/web-services.html",
-    "documentation_url": "http://www.geonames.org/export/web-services.html",
+    "signup_url": "https://www.geonames.org/export/web-services.html",
+    "pricing_url": "https://www.geonames.org/export/web-services.html",
+    "documentation_url": "https://www.geonames.org/export/web-services.html",
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
