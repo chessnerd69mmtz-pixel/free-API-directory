@@ -279,8 +279,8 @@
     "last_verified": "2026-09-25",
     "verified_by": "automated-live-verification",
     "status": "needs re-verification",
-    "tier_verification_url": null,
-    "tier_verification_status": "not-identified",
+    "tier_verification_url": "https://deepinfra.com/pricing",
+    "tier_verification_status": "provider-source-is-pricing-or-plan-page",
     "uses": [
       "text generation and chat",
       "summarization and rewriting",
