@@ -39,6 +39,7 @@ function nav() {
     '<a href="finder.html">Find an API</a>' +
     '<a href="recommend.html">Build a project</a>' +
     '<a href="compare.html">Compare</a>' +
+    '<a href="keys.html">🔐 My API Keys</a>' +
     '<a href="changes.html">Verified / Changed</a>' +
     '<a href="criteria.html">Browse</a>' +
   "</nav>";
@@ -89,7 +90,7 @@ async function finder() {
     $("#r").innerHTML = '<div class="tablebox"><div class="scroll"><table><thead><tr>' +
       '<th>Provider</th><th>Category</th><th>Free tier</th><th>Functions</th><th>Verification</th></tr></thead><tbody>' +
       rows.map(p => '<tr><td class="provider"><a href="api.html?provider=' + encodeURIComponent(p.name) + '">' + esc(p.name) +
-        '</a></td><td>' + esc(p.category) + '</td><td>' + freeTier(p) + '</td><td class="uses">' + uses(p.uses) +
+        '</a><br><a class="save-key-link" href="keys.html?provider=' + encodeURIComponent(p.name) + '">🔐 Save key</a></td><td>' + esc(p.category) + '</td><td>' + freeTier(p) + '</td><td class="uses">' + uses(p.uses) +
         '</td><td>' + status(p) + '<br>' + esc(p.last_verified || "Not recorded") + '</td></tr>').join("") +
       '</tbody></table></div></div><p class="muted">' + rows.length + " matches</p>";
   };
