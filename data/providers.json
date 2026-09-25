@@ -1,0 +1,577 @@
+[
+  {
+    "name": "Groq",
+    "category": "AI / LLM",
+    "description": "Fast inference API for open and hosted language models.",
+    "free_tier": {
+      "has_free_tier": true,
+      "type": "rate-limited-free",
+      "details": "Free API access with model- and usage-specific rate limits; verify current limits on the linked pricing page.",
+      "amount": "Unverified - check provider page",
+      "expiry": "Unverified - check provider page"
+    },
+    "signup_requires_account": true,
+    "requires_credit_card": "Unverified",
+    "signup_url": "https://console.groq.com/keys",
+    "pricing_url": "https://groq.com/pricing/",
+    "verification_urls": [
+      "https://console.groq.com/docs/quickstart"
+    ],
+    "last_verified": "2026-09-25",
+    "verified_by": "automated-live-verification",
+    "status": "active"
+  },
+  {
+    "name": "Mistral AI",
+    "category": "AI / LLM",
+    "description": "Mistral Studio API for language, document, audio and agent workloads.",
+    "free_tier": {
+      "has_free_tier": true,
+      "type": "rate-limited-free",
+      "details": "Mistral Studio Free mode provides API access with limited usage and rate limits; official quickstart says no credit card is required.",
+      "amount": "$10/month API credits on the Free plan; verify current applicability",
+      "expiry": "Unverified - check provider page"
+    },
+    "signup_requires_account": true,
+    "requires_credit_card": false,
+    "signup_url": "https://console.mistral.ai/api-keys",
+    "pricing_url": "https://mistral.ai/pricing/",
+    "verification_urls": [
+      "https://docs.mistral.ai/getting-started/quickstarts/studio/activate-and-generate-api-key",
+      "https://docs.mistral.ai/admin/identity-access/api-keys"
+    ],
+    "last_verified": "2026-09-25",
+    "verified_by": "automated-live-verification",
+    "status": "active"
+  },
+  {
+    "name": "Google Gemini API",
+    "category": "AI / LLM",
+    "description": "Gemini API through Google AI Studio.",
+    "free_tier": {
+      "has_free_tier": true,
+      "type": "rate-limited-free",
+      "details": "New accounts begin on the Free Tier with model-specific free-tier rate limits.",
+      "amount": "Model-specific; see official billing page",
+      "expiry": "Unverified - check provider page"
+    },
+    "signup_requires_account": true,
+    "requires_credit_card": false,
+    "signup_url": "https://aistudio.google.com/app/apikey",
+    "pricing_url": "https://ai.google.dev/gemini-api/docs/billing",
+    "verification_urls": [
+      "https://ai.google.dev/gemini-api/docs/get-started"
+    ],
+    "last_verified": "2026-09-25",
+    "verified_by": "automated-live-verification",
+    "status": "active"
+  },
+  {
+    "name": "OpenRouter",
+    "category": "AI / LLM",
+    "description": "Unified API gateway for many model providers, including a free plan and free models.",
+    "free_tier": {
+      "has_free_tier": true,
+      "type": "free-models",
+      "details": "Free plan includes API access to free models.",
+      "amount": "25+ free models; 50 requests/day on the Free plan",
+      "expiry": "Unverified - check provider page"
+    },
+    "signup_requires_account": true,
+    "requires_credit_card": false,
+    "signup_url": "https://openrouter.ai/settings/keys",
+    "pricing_url": "https://openrouter.ai/pricing/",
+    "verification_urls": [
+      "https://openrouter.ai/collections/free-models/",
+      "https://github.com/OpenRouterTeam/docs/blob/main/install.mdx"
+    ],
+    "last_verified": "2026-09-25",
+    "verified_by": "automated-live-verification",
+    "status": "active"
+  },
+  {
+    "name": "Hugging Face",
+    "category": "AI / ML",
+    "description": "Model hub and hosted inference with user access tokens.",
+    "free_tier": {
+      "has_free_tier": true,
+      "type": "monthly-credit",
+      "details": "Free users receive monthly credits for Inference Providers.",
+      "amount": "$0.10/month for Free users, subject to change",
+      "expiry": "Monthly credits; verify current terms"
+    },
+    "signup_requires_account": true,
+    "requires_credit_card": false,
+    "signup_url": "https://huggingface.co/settings/tokens",
+    "pricing_url": "https://huggingface.co/docs/inference-providers/pricing",
+    "verification_urls": [
+      "https://huggingface.co/docs/hub/security-tokens"
+    ],
+    "last_verified": "2026-09-25",
+    "verified_by": "automated-live-verification",
+    "status": "active"
+  },
+  {
+    "name": "Cohere",
+    "category": "AI / LLM",
+    "description": "Language and embedding APIs with trial API keys.",
+    "free_tier": {
+      "has_free_tier": true,
+      "type": "rate-limited-free",
+      "details": "Every registered user receives a free, rate-limited trial key.",
+      "amount": "Trial keys are limited; official docs currently state 1,000 API calls/month for trial keys, with endpoint-specific rate limits",
+      "expiry": "Unverified - check provider page"
+    },
+    "signup_requires_account": true,
+    "requires_credit_card": false,
+    "signup_url": "https://dashboard.cohere.com/api-keys",
+    "pricing_url": "https://cohere.com/pricing",
+    "verification_urls": [
+      "https://docs.cohere.com/docs/going-live",
+      "https://docs.cohere.com/docs/rate-limits"
+    ],
+    "last_verified": "2026-09-25",
+    "verified_by": "automated-live-verification",
+    "status": "active"
+  },
+  {
+    "name": "NVIDIA NIM APIs",
+    "category": "AI / LLM",
+    "description": "NVIDIA-hosted model APIs through the NVIDIA Developer Program.",
+    "free_tier": {
+      "has_free_tier": true,
+      "type": "rate-limited-free",
+      "details": "Developer Program/API Catalog access can generate API keys; exact free allowances vary by model and account access.",
+      "amount": "Unverified - check provider page",
+      "expiry": "Unverified - check provider page"
+    },
+    "signup_requires_account": true,
+    "requires_credit_card": false,
+    "signup_url": "https://build.nvidia.com/settings/api-keys",
+    "pricing_url": "https://docs.api.nvidia.com/nim/docs/api-quickstart",
+    "verification_urls": [
+      "https://docs.api.nvidia.com/nim/docs/api-quickstart"
+    ],
+    "last_verified": "2026-09-25",
+    "verified_by": "automated-live-verification",
+    "status": "active"
+  },
+  {
+    "name": "Replicate",
+    "category": "AI / Models",
+    "description": "API for running open models and creating model predictions.",
+    "free_tier": {
+      "has_free_tier": null,
+      "type": "unknown",
+      "details": "API token creation is verified; current free allowance is not asserted here.",
+      "amount": "Unverified - check provider page",
+      "expiry": "Unverified - check provider page"
+    },
+    "signup_requires_account": true,
+    "requires_credit_card": "Unverified",
+    "signup_url": "https://replicate.com/account/api-tokens",
+    "pricing_url": "https://replicate.com/pricing",
+    "verification_urls": [
+      "https://replicate.com/docs/topics/security/api-tokens"
+    ],
+    "last_verified": "2026-09-25",
+    "verified_by": "automated-live-verification",
+    "status": "active"
+  },
+  {
+    "name": "DeepInfra",
+    "category": "AI / LLM",
+    "description": "Hosted open-source model inference API.",
+    "free_tier": {
+      "has_free_tier": null,
+      "type": "unknown",
+      "details": "API-key creation is documented; free allowance is not asserted without a current official quota source.",
+      "amount": "Unverified - check provider page",
+      "expiry": "Unverified - check provider page"
+    },
+    "signup_requires_account": true,
+    "requires_credit_card": "Unverified",
+    "signup_url": "https://deepinfra.com/dash/api_keys",
+    "pricing_url": "https://deepinfra.com/pricing",
+    "verification_urls": [
+      "https://github.com/deepinfra/docs/blob/main/quickstart.mdx"
+    ],
+    "last_verified": "2026-09-25",
+    "verified_by": "automated-live-verification",
+    "status": "needs re-verification"
+  },
+  {
+    "name": "OpenAI API",
+    "category": "AI / LLM",
+    "description": "OpenAI developer API.",
+    "free_tier": {
+      "has_free_tier": null,
+      "type": "unknown",
+      "details": "API-key creation is verified; no free API quota is asserted here.",
+      "amount": "Unverified - check provider page",
+      "expiry": "Unverified - check provider page"
+    },
+    "signup_requires_account": true,
+    "requires_credit_card": "Unverified",
+    "signup_url": "https://platform.openai.com/api-keys",
+    "pricing_url": "https://openai.com/api/pricing/",
+    "verification_urls": [
+      "https://developers.openai.com/api/docs/quickstart"
+    ],
+    "last_verified": "2026-09-25",
+    "verified_by": "automated-live-verification",
+    "status": "active"
+  },
+  {
+    "name": "xAI API",
+    "category": "AI / LLM",
+    "description": "Grok API through the xAI developer console.",
+    "free_tier": {
+      "has_free_tier": null,
+      "type": "unknown",
+      "details": "API-key creation is verified; current free allowance is not asserted here.",
+      "amount": "Unverified - check provider page",
+      "expiry": "Unverified - check provider page"
+    },
+    "signup_requires_account": true,
+    "requires_credit_card": "Unverified",
+    "signup_url": "https://console.x.ai/team/default/api-keys",
+    "pricing_url": "https://docs.x.ai/developers/models",
+    "verification_urls": [
+      "https://docs.x.ai/developers/rest-api-reference/inference"
+    ],
+    "last_verified": "2026-09-25",
+    "verified_by": "automated-live-verification",
+    "status": "active"
+  },
+  {
+    "name": "Anthropic API",
+    "category": "AI / LLM",
+    "description": "Claude API through the Anthropic Console.",
+    "free_tier": {
+      "has_free_tier": null,
+      "type": "unknown",
+      "details": "API Console/key creation is documented; no free API quota is asserted here.",
+      "amount": "Unverified - check provider page",
+      "expiry": "Unverified - check provider page"
+    },
+    "signup_requires_account": true,
+    "requires_credit_card": "Unverified",
+    "signup_url": "https://console.anthropic.com/settings/keys",
+    "pricing_url": "https://www.anthropic.com/pricing#api",
+    "verification_urls": [
+      "https://support.claude.com/en/articles/8114521-how-can-i-access-the-claude-api"
+    ],
+    "last_verified": "2026-09-25",
+    "verified_by": "automated-live-verification",
+    "status": "needs re-verification"
+  },
+  {
+    "name": "DeepSeek API",
+    "category": "AI / LLM",
+    "description": "DeepSeek API compatible with OpenAI and Anthropic SDK styles.",
+    "free_tier": {
+      "has_free_tier": null,
+      "type": "unknown",
+      "details": "API-key requirement is verified; current free API allowance is not asserted here.",
+      "amount": "Unverified - check provider page",
+      "expiry": "Unverified - check provider page"
+    },
+    "signup_requires_account": true,
+    "requires_credit_card": "Unverified",
+    "signup_url": "https://platform.deepseek.com/api_keys",
+    "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing",
+    "verification_urls": [
+      "https://api-docs.deepseek.com/api/deepseek-api/"
+    ],
+    "last_verified": "2026-09-25",
+    "verified_by": "automated-live-verification",
+    "status": "needs re-verification"
+  },
+  {
+    "name": "Deepgram",
+    "category": "Speech / Audio",
+    "description": "Speech-to-text and audio intelligence APIs.",
+    "free_tier": {
+      "has_free_tier": null,
+      "type": "unknown",
+      "details": "Key-management page verified; current free allowance is not asserted here.",
+      "amount": "Unverified - check provider page",
+      "expiry": "Unverified - check provider page"
+    },
+    "signup_requires_account": true,
+    "requires_credit_card": "Unverified",
+    "signup_url": "https://console.deepgram.com/project/keys",
+    "pricing_url": "https://deepgram.com/pricing",
+    "verification_urls": [
+      "https://developers.deepgram.com/docs/getting-started-with-pre-recorded-audio"
+    ],
+    "last_verified": "2026-09-25",
+    "verified_by": "automated-live-verification",
+    "status": "active"
+  },
+  {
+    "name": "ElevenLabs",
+    "category": "Speech / Audio",
+    "description": "Text-to-speech, speech-to-text and voice APIs.",
+    "free_tier": {
+      "has_free_tier": null,
+      "type": "unknown",
+      "details": "API-key page verified; current free allowance is not asserted here.",
+      "amount": "Unverified - check provider page",
+      "expiry": "Unverified - check provider page"
+    },
+    "signup_requires_account": true,
+    "requires_credit_card": "Unverified",
+    "signup_url": "https://elevenlabs.io/app/developers/api-keys",
+    "pricing_url": "https://elevenlabs.io/pricing",
+    "verification_urls": [
+      "https://elevenlabs.io/docs/api-reference/authentication"
+    ],
+    "last_verified": "2026-09-25",
+    "verified_by": "automated-live-verification",
+    "status": "active"
+  },
+  {
+    "name": "fal.ai",
+    "category": "AI / Image / Video",
+    "description": "Hosted generative media models with API access.",
+    "free_tier": {
+      "has_free_tier": null,
+      "type": "unknown",
+      "details": "Key-management route verified; current free allowance is not asserted here.",
+      "amount": "Unverified - check provider page",
+      "expiry": "Unverified - check provider page"
+    },
+    "signup_requires_account": true,
+    "requires_credit_card": "Unverified",
+    "signup_url": "https://fal.ai/dashboard/keys",
+    "pricing_url": "https://fal.ai/pricing",
+    "verification_urls": [
+      "https://fal.ai/docs/model-apis/authentication"
+    ],
+    "last_verified": "2026-09-25",
+    "verified_by": "automated-live-verification",
+    "status": "active"
+  },
+  {
+    "name": "OpenWeather",
+    "category": "Weather",
+    "description": "Weather and forecast APIs.",
+    "free_tier": {
+      "has_free_tier": true,
+      "type": "rate-limited-free",
+      "details": "Free subscription is offered; current limits should be checked on the official pricing page.",
+      "amount": "Unverified - check provider page",
+      "expiry": "Unverified - check provider page"
+    },
+    "signup_requires_account": true,
+    "requires_credit_card": false,
+    "signup_url": "https://home.openweathermap.org/api_keys",
+    "pricing_url": "https://openweathermap.org/price",
+    "verification_urls": [
+      "https://openweathermap.org/appid"
+    ],
+    "last_verified": "2026-09-25",
+    "verified_by": "automated-live-verification",
+    "status": "active"
+  },
+  {
+    "name": "Mapbox",
+    "category": "Maps / Geocoding",
+    "description": "Maps, tiles, search and navigation APIs.",
+    "free_tier": {
+      "has_free_tier": null,
+      "type": "unknown",
+      "details": "Access-token page verified; current free allowance is not asserted here.",
+      "amount": "Unverified - check provider page",
+      "expiry": "Unverified - check provider page"
+    },
+    "signup_requires_account": true,
+    "requires_credit_card": "Unverified",
+    "signup_url": "https://account.mapbox.com/access-tokens/",
+    "pricing_url": "https://www.mapbox.com/pricing",
+    "verification_urls": [
+      "https://docs.mapbox.com/accounts/guides/tokens/"
+    ],
+    "last_verified": "2026-09-25",
+    "verified_by": "automated-live-verification",
+    "status": "active"
+  },
+  {
+    "name": "MapTiler",
+    "category": "Maps / Geocoding",
+    "description": "Cloud maps, geocoding and tile APIs.",
+    "free_tier": {
+      "has_free_tier": null,
+      "type": "unknown",
+      "details": "Key-management page verified; current free allowance is not asserted here.",
+      "amount": "Unverified - check provider page",
+      "expiry": "Unverified - check provider page"
+    },
+    "signup_requires_account": true,
+    "requires_credit_card": "Unverified",
+    "signup_url": "https://cloud.maptiler.com/account/keys/",
+    "pricing_url": "https://www.maptiler.com/cloud/pricing/",
+    "verification_urls": [
+      "https://docs.maptiler.com/cloud/api/authentication/"
+    ],
+    "last_verified": "2026-09-25",
+    "verified_by": "automated-live-verification",
+    "status": "active"
+  },
+  {
+    "name": "LocationIQ",
+    "category": "Maps / Geocoding",
+    "description": "Geocoding, reverse geocoding, routing and map APIs.",
+    "free_tier": {
+      "has_free_tier": null,
+      "type": "unknown",
+      "details": "Dashboard/key management route verified; current quota is not asserted here.",
+      "amount": "Unverified - check provider page",
+      "expiry": "Unverified - check provider page"
+    },
+    "signup_requires_account": true,
+    "requires_credit_card": "Unverified",
+    "signup_url": "https://my.locationiq.com/dashboard",
+    "pricing_url": "https://locationiq.com/pricing",
+    "verification_urls": [
+      "https://locationiq.com/docs"
+    ],
+    "last_verified": "2026-09-25",
+    "verified_by": "automated-live-verification",
+    "status": "active"
+  },
+  {
+    "name": "Resend",
+    "category": "Email",
+    "description": "Transactional email API.",
+    "free_tier": {
+      "has_free_tier": null,
+      "type": "unknown",
+      "details": "API-key page verified; current free allowance is not asserted here.",
+      "amount": "Unverified - check provider page",
+      "expiry": "Unverified - check provider page"
+    },
+    "signup_requires_account": true,
+    "requires_credit_card": "Unverified",
+    "signup_url": "https://resend.com/api-keys",
+    "pricing_url": "https://resend.com/pricing",
+    "verification_urls": [
+      "https://resend.com/docs/api-reference/introduction"
+    ],
+    "last_verified": "2026-09-25",
+    "verified_by": "automated-live-verification",
+    "status": "active"
+  },
+  {
+    "name": "SendGrid",
+    "category": "Email",
+    "description": "Transactional and marketing email API.",
+    "free_tier": {
+      "has_free_tier": null,
+      "type": "unknown",
+      "details": "API-key management URL verified; current free allowance is not asserted here.",
+      "amount": "Unverified - check provider page",
+      "expiry": "Unverified - check provider page"
+    },
+    "signup_requires_account": true,
+    "requires_credit_card": "Unverified",
+    "signup_url": "https://app.sendgrid.com/settings/api_keys",
+    "pricing_url": "https://sendgrid.com/pricing/",
+    "verification_urls": [
+      "https://www.twilio.com/docs/sendgrid/ui/account-and-settings/api-keys"
+    ],
+    "last_verified": "2026-09-25",
+    "verified_by": "automated-live-verification",
+    "status": "active"
+  },
+  {
+    "name": "Twilio",
+    "category": "SMS / Communications",
+    "description": "SMS, voice and communications APIs.",
+    "free_tier": {
+      "has_free_tier": null,
+      "type": "unknown",
+      "details": "API-key management route verified; current free allowance is not asserted here.",
+      "amount": "Unverified - check provider page",
+      "expiry": "Unverified - check provider page"
+    },
+    "signup_requires_account": true,
+    "requires_credit_card": "Unverified",
+    "signup_url": "https://www.twilio.com/console/project/api-keys",
+    "pricing_url": "https://www.twilio.com/pricing",
+    "verification_urls": [
+      "https://www.twilio.com/docs/iam/keys/api-key"
+    ],
+    "last_verified": "2026-09-25",
+    "verified_by": "automated-live-verification",
+    "status": "active"
+  },
+  {
+    "name": "Alpha Vantage",
+    "category": "Finance / Market Data",
+    "description": "Stocks, forex, crypto and economic data APIs.",
+    "free_tier": {
+      "has_free_tier": true,
+      "type": "rate-limited-free",
+      "details": "Official support page offers a free API key with lifetime access.",
+      "amount": "25 API requests/minute; unlimited requests for verified open-source or educational projects",
+      "expiry": "Lifetime access stated on official key page"
+    },
+    "signup_requires_account": true,
+    "requires_credit_card": false,
+    "signup_url": "https://www.alphavantage.co/support/#api-key",
+    "pricing_url": "https://www.alphavantage.co/premium/",
+    "verification_urls": [
+      "https://www.alphavantage.co/support/"
+    ],
+    "last_verified": "2026-09-25",
+    "verified_by": "automated-live-verification",
+    "status": "active"
+  },
+  {
+    "name": "SerpApi",
+    "category": "Search / Web Data",
+    "description": "Search-engine results API.",
+    "free_tier": {
+      "has_free_tier": null,
+      "type": "unknown",
+      "details": "Dashboard/key route verified; current free allowance is not asserted here.",
+      "amount": "Unverified - check provider page",
+      "expiry": "Unverified - check provider page"
+    },
+    "signup_requires_account": true,
+    "requires_credit_card": "Unverified",
+    "signup_url": "https://serpapi.com/dashboard",
+    "pricing_url": "https://serpapi.com/pricing",
+    "verification_urls": [
+      "https://serpapi.com/"
+    ],
+    "last_verified": "2026-09-25",
+    "verified_by": "automated-live-verification",
+    "status": "active"
+  },
+  {
+    "name": "Tavily",
+    "category": "Search / Research",
+    "description": "Search and research API for AI applications.",
+    "free_tier": {
+      "has_free_tier": null,
+      "type": "unknown",
+      "details": "Dashboard route verified; current free allowance is not asserted here.",
+      "amount": "Unverified - check provider page",
+      "expiry": "Unverified - check provider page"
+    },
+    "signup_requires_account": true,
+    "requires_credit_card": "Unverified",
+    "signup_url": "https://app.tavily.com/home",
+    "pricing_url": "https://www.tavily.com/pricing",
+    "verification_urls": [
+      "https://docs.tavily.com/"
+    ],
+    "last_verified": "2026-09-25",
+    "verified_by": "automated-live-verification",
+    "status": "active"
+  }
+]
