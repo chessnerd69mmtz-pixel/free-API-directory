@@ -32,3 +32,17 @@ The catalog contains **339 unique providers**. Providers can appear in **multipl
 | Weather & Environment | 18 | [Open table](./criteria/weather-and-environment.html) |
 
 > **Important:** criterion counts are memberships, not unique-provider counts. The underlying catalog remains 339 unique providers.
+
+
+## Expanded categories
+
+- [AI Observability & Evaluation](./criteria/ai-observability-and-evaluation.md)
+- [AI Compute & GPU](./criteria/ai-compute-and-gpu.md)
+- [Databases & Backend](./criteria/databases-and-backend.md)
+- [Vector Databases](./criteria/vector-databases.md)
+- [CI/CD & DevOps](./criteria/ci-cd-and-devops.md)
+- [Web Scraping & Browser Automation](./criteria/web-scraping-and-browser-automation.md)
+- [Geospatial & Routing](./criteria/geospatial-and-routing.md)
+- [Scientific Research](./criteria/scientific-research.md)
+- [Bioinformatics](./criteria/bioinformatics.md)
+- [Government & Civic Data](./criteria/government-and-civic-data.md)
