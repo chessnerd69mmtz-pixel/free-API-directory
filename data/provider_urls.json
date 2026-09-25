@@ -2472,8 +2472,8 @@
     "name": "Diffbot",
     "category": "Miscellaneous / Utility",
     "url": "https://www.diffbot.com/plans/trial/",
-    "tier_verification_url": null,
-    "tier_verification_status": "not-identified",
+    "tier_verification_url": "https://www.diffbot.com/plans/trial/",
+    "tier_verification_status": "provider-source-is-pricing-or-plan-page",
     "uses": [
       "web or search result retrieval",
       "data extraction",
