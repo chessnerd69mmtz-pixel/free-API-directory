@@ -145,6 +145,13 @@
       },
       "verification_status": {
         "type": "string"
+      },
+      "verification_sources": {
+        "type": "object",
+        "additionalProperties": {
+          "type": "string",
+          "format": "uri"
+        }
       }
     }
   }
