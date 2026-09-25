@@ -1,13 +1,6 @@
 const DATA_URL = new URL("data/provider_profiles.json", document.baseURI).href;
 const CHANGE_URL = new URL("data/change_log.json", document.baseURI).href;
 const HASH_URL = new URL("data/source_hashes.json", document.baseURI).href;
-const PUBLIC_API_LISTS_URL = "https://public-api-lists.github.io/public-api-lists/api/all.json";
-const PUBLIC_APIS_URL = "https://api.publicapis.org/entries";
-const KIPRIO_URL = "https://kiprio.com/datasets/free-apis.json";
-const PUBLIC_APIS_EXPANSION_URL = new URL("data/public_apis_expansion.json", document.baseURI).href;
-const PUBLIC_API_LISTS_EXPANSION_URL = new URL("data/public_api_lists_expansion.json", document.baseURI).href;
-const CATALOG_TARGET = 2750;
-const SOURCE_META = ["Public API Lists","Public APIs","Kiprio Free APIs"];
 
 let APIS = [];
 
@@ -140,72 +133,10 @@ function normalizeExternalEntry(x, source, categoryHint) {
   };
 }
 
-async function loadApis() {
-  if (APIS.length) return APIS;
-  const local = await getJson(DATA_URL);
-  if (!Array.isArray(local)) throw new Error("The provider catalog is not a valid JSON array.");
-  APIS = [...local];
-  const seen = new Set(local.map(p => String(p.name || "").trim().toLowerCase()).filter(Boolean));
-  const urls = new Set(local.map(p => String(p.verification_sources?.provider || p.documentation_url || p.signup_url || "").trim().toLowerCase()).filter(Boolean));
-
-  try {
-    const expansion = await getJson(PUBLIC_API_LISTS_EXPANSION_URL);
-    const entries = Array.isArray(expansion?.providers) ? expansion.providers : [];
-    for (const raw of entries) {
-      if (APIS.length >= CATALOG_TARGET) break;
-      const p = normalizeExpansionEntry(raw);
-      if (!p) continue;
-      const key = p.name.trim().toLowerCase();
-      const url = p.documentation_url.trim().toLowerCase();
-      if (seen.has(key) || (url && urls.has(url))) continue;
-      seen.add(key);
-      if (url) urls.add(url);
-      APIS.push(p);
-    }
-  } catch (_) {}
-
-  try {
-    const expansion = await getJson(PUBLIC_APIS_EXPANSION_URL);
-    const entries = Array.isArray(expansion?.providers) ? expansion.providers : [];
-    for (const raw of entries) {
-      if (APIS.length >= CATALOG_TARGET) break;
-      const p = normalizeExpansionEntry(raw);
-      if (!p) continue;
-      const key = p.name.trim().toLowerCase();
-      const url = p.documentation_url.trim().toLowerCase();
-      if (seen.has(key) || (url && urls.has(url))) continue;
-      seen.add(key);
-      if (url) urls.add(url);
-      APIS.push(p);
-    }
-  } catch (_) {}
-
-  const external = await Promise.allSettled([
-    getJson(PUBLIC_API_LISTS_URL),
-    getJson(PUBLIC_APIS_URL),
-    getJson(KIPRIO_URL)
-  ]);
-
-  for (let i = 0; i < external.length && APIS.length < CATALOG_TARGET; i++) {
-    if (external[i].status !== "fulfilled") continue;
-    const payload = external[i].value;
-    const entries = Array.isArray(payload) ? payload :
-      Array.isArray(payload?.entries) ? payload.entries :
-      Array.isArray(payload?.data) ? payload.data :
-      Array.isArray(payload?.apis) ? payload.apis : [];
-    for (const raw of entries) {
-      if (APIS.length >= CATALOG_TARGET) break;
-      const p = normalizeExternalEntry(raw, i === 0 ? "public-api-lists-community" : i === 1 ? "public-apis-community" : "kiprio-verified-free-dataset");
-      if (!p) continue;
-      const key = p.name.trim().toLowerCase();
-      const url = p.documentation_url.trim().toLowerCase();
-      if (seen.has(key) || (url && urls.has(url))) continue;
-      seen.add(key);
-      if (url) urls.add(url);
-      APIS.push(p);
-    }
-  }
-  return APIS;
+async function loadApis(){
+  if (Array.isArray(window.API_CATALOG) && window.API_CATALOG.length) return window.API_CATALOG;
+  if (window.API_CATALOG_READY) return await window.API_CATALOG_READY;
+  throw new Error("The canonical catalog loader is not available. Refresh after GitHub Pages publishes the latest files.");
 }
 
 async function finder() {
