@@ -5,7 +5,7 @@ const PUBLIC_API_LISTS_URL = "https://public-api-lists.github.io/public-api-list
 const PUBLIC_APIS_URL = "https://api.publicapis.org/entries";
 const CATALOG_TARGET = 1000;
 
-let APIS = Array.isArray(window.API_CATALOG) ? window.API_CATALOG : [];
+let APIS = [];
 
 const $ = (s) => document.querySelector(s);
 const esc = (s) => String(s ?? "").replace(/[&<>"]/g, (m) => ({
