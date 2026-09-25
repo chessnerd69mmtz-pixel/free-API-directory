@@ -225,6 +225,10 @@ async function compare() {
 
 async function changes() {
   const a = await loadApis();
+  shell(
+    '<section class="hero"><h1>Verification history</h1><p>Catalog verification dates and source-change records.</p></section>' +
+    '<div class="tablebox"><div class="scroll"><table><thead><tr><th>Provider</th><th>Date</th><th>Status / event</th><th>Source</th></tr></thead><tbody id="changeRows"><tr><td colspan="4">Updating records…</td></tr></tbody></table></div></div>'
+  );
   let records = [];
   try { records = await getJson(CHANGE_URL); } catch (_) {}
   if (!Array.isArray(records) || !records.length) {
@@ -232,20 +236,16 @@ async function changes() {
       .sort((x,y) => String(y.last_verified).localeCompare(String(x.last_verified)))
       .slice(0,100);
   }
-
-  shell(
-    '<section class="hero"><h1>Verification history</h1><p>Catalog verification dates and source-change records.</p></section>' +
-    '<div class="tablebox"><div class="scroll"><table><thead><tr><th>Provider</th><th>Date</th><th>Status / event</th><th>Source</th></tr></thead><tbody>' +
-    records.map(p => {
-      const name = p.provider || p.name || "Unknown";
-      const date = p.date || p.last_verified || "Not recorded";
-      return '<tr><td class="provider"><a href="api.html?provider=' + encodeURIComponent(name) + '">' + esc(name) +
-        '</a></td><td>' + esc(date) + '</td><td>' + esc(p.type || p.status || "Verification record") +
-        '</td><td>' + (p.source_url ? link(p.source_url,"Open source") : esc(p.verification_status || "Catalog verification")) +
-        "</td></tr>";
-    }).join("") +
-    '</tbody></table></div></div>'
-  );
+  const body = $("#changeRows");
+  if (!body) return;
+  body.innerHTML = records.map(p => {
+    const name = p.provider || p.name || "Unknown";
+    const date = p.date || p.last_verified || "Not recorded";
+    return '<tr><td class="provider"><a href="api.html?provider=' + encodeURIComponent(name) + '">' + esc(name) +
+      '</a></td><td>' + esc(date) + '</td><td>' + esc(p.type || p.status || "Verification record") +
+      '</td><td>' + (p.source_url ? link(p.source_url,"Open source") : esc(p.verification_status || "Catalog verification")) +
+      "</td></tr>";
+  }).join("") || '<tr><td colspan="4">No verification records available.</td></tr>';
 }
 
 async function apiProfile() {
