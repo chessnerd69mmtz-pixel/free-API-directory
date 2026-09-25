@@ -133,10 +133,15 @@ function normalizeExternalEntry(x, source, categoryHint) {
   };
 }
 
+let CATALOG_PROMISE=null;
 async function loadApis(){
   if (Array.isArray(window.API_CATALOG) && window.API_CATALOG.length) return window.API_CATALOG;
-  if (window.API_CATALOG_READY) return await window.API_CATALOG_READY;
-  throw new Error("The canonical catalog loader is not available. Refresh after GitHub Pages publishes the latest files.");
+  if (!CATALOG_PROMISE){
+    CATALOG_PROMISE=fetch(new URL("data/catalog-lite.json",document.baseURI).href,{cache:"force-cache"})
+      .then(r=>{if(!r.ok)throw new Error("Catalog HTTP "+r.status);return r.json();})
+      .then(d=>{if(!Array.isArray(d.providers))throw new Error("Invalid catalog");return d.providers;});
+  }
+  return CATALOG_PROMISE;
 }
 
 async function finder() {
