@@ -1,6 +1,6 @@
 # Health & Fitness
 
-**6 providers**
+**6 providers in this criterion**
 
 | Provider | Original Category | Provider / API-key URL | Tier / pricing URL | Major Functions & Capabilities |
 |---|---|---|---|---|
