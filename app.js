@@ -3,6 +3,7 @@ const CHANGE_URL = new URL("data/change_log.json", document.baseURI).href;
 const HASH_URL = new URL("data/source_hashes.json", document.baseURI).href;
 const PUBLIC_API_LISTS_URL = "https://public-api-lists.github.io/public-api-lists/api/all.json";
 const PUBLIC_APIS_URL = "https://api.publicapis.org/entries";
+const KIPRIO_URL = "https://kiprio.com/datasets/free-apis.json";
 const CATALOG_TARGET = 1000;
 
 let APIS = [];
@@ -111,7 +112,8 @@ async function loadApis() {
 
   const external = await Promise.allSettled([
     getJson(PUBLIC_API_LISTS_URL),
-    getJson(PUBLIC_APIS_URL)
+    getJson(PUBLIC_APIS_URL),
+    getJson(KIPRIO_URL)
   ]);
 
   for (let i = 0; i < external.length && APIS.length < CATALOG_TARGET; i++) {
@@ -119,7 +121,8 @@ async function loadApis() {
     const payload = external[i].value;
     const entries = Array.isArray(payload) ? payload :
       Array.isArray(payload?.entries) ? payload.entries :
-      Array.isArray(payload?.data) ? payload.data : [];
+      Array.isArray(payload?.data) ? payload.data :
+      Array.isArray(payload?.apis) ? payload.apis : [];
     for (const raw of entries) {
       if (APIS.length >= CATALOG_TARGET) break;
       const p = normalizeExternalEntry(raw, i === 0 ? "public-api-lists-community" : "public-apis-community");
