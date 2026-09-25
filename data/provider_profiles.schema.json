@@ -1,1 +1,151 @@
-{"$schema":"https://json-schema.org/draft/2020-12/schema","type":"array","items":{"type":"object","required":["name","category","signup_url","free_tier","requires_credit_card","authentication","protocols","sdk_languages","commercial_use","self_hostable","webhooks","rate_limit","free_tier_reset","uses"],"properties":{"name":{"type":"string"},"category":{"type":"string"},"description":{"type":"string"},"signup_url":{"type":["string","null"]},"pricing_url":{"type":["string","null"]},"documentation_url":{"type":["string","null"]},"free_tier":{"type":"object","required":["has_free_tier","type","details","amount","expiry"],"properties":{"has_free_tier":{"type":["boolean","null"]},"type":{"type":"string"},"details":{"type":"string"},"amount":{"type":"string"},"expiry":{"type":"string"}}},"requires_credit_card":{"type":["boolean","string","null"]},"authentication":{"type":"string"},"protocols":{"type":"array","items":{"type":"string"}},"sdk_languages":{"type":"array","items":{"type":"string"}},"commercial_use":{"type":"string"},"self_hostable":{"type":"string"},"webhooks":{"type":"string"},"rate_limit":{"type":"string"},"free_tier_reset":{"type":"string"},"uses":{"type":"array","items":{"type":"string"}},"last_verified":{"type":["string","null"]},"verified_by":{"type":["string","null"]},"status":{"type":"string"},"verification_status":{"type":"string"}}}}
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://chessnerd69mmtz-pixel.github.io/free-API-directory/data/provider_profiles.schema.json",
+  "title": "Free API Directory Provider Profiles",
+  "description": "Schema for the structured provider metadata used by the directory website. Unknown facts must remain explicitly unverified.",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "name",
+      "category",
+      "signup_url",
+      "free_tier",
+      "requires_credit_card",
+      "authentication",
+      "protocols",
+      "sdk_languages",
+      "commercial_use",
+      "self_hostable",
+      "webhooks",
+      "rate_limit",
+      "free_tier_reset",
+      "uses"
+    ],
+    "properties": {
+      "name": {
+        "type": "string"
+      },
+      "category": {
+        "type": "string"
+      },
+      "description": {
+        "type": "string"
+      },
+      "signup_url": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "format": "uri"
+      },
+      "pricing_url": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "format": "uri"
+      },
+      "documentation_url": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "format": "uri"
+      },
+      "free_tier": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "has_free_tier",
+          "type",
+          "details",
+          "amount",
+          "expiry"
+        ],
+        "properties": {
+          "has_free_tier": {
+            "type": [
+              "boolean",
+              "null"
+            ]
+          },
+          "type": {
+            "type": "string"
+          },
+          "details": {
+            "type": "string"
+          },
+          "amount": {
+            "type": "string"
+          },
+          "expiry": {
+            "type": "string"
+          }
+        }
+      },
+      "requires_credit_card": {
+        "type": [
+          "boolean",
+          "string",
+          "null"
+        ]
+      },
+      "authentication": {
+        "type": "string"
+      },
+      "protocols": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "sdk_languages": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "commercial_use": {
+        "type": "string"
+      },
+      "self_hostable": {
+        "type": "string"
+      },
+      "webhooks": {
+        "type": "string"
+      },
+      "rate_limit": {
+        "type": "string"
+      },
+      "free_tier_reset": {
+        "type": "string"
+      },
+      "uses": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "last_verified": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "verified_by": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "status": {
+        "type": "string"
+      },
+      "verification_status": {
+        "type": "string"
+      }
+    }
+  }
+}
