@@ -1,6 +1,6 @@
 # Weather & Environment
 
-**16 providers**
+**18 providers in this criterion**
 
 | Provider | Original Category | Provider / API-key URL | Tier / pricing URL | Major Functions & Capabilities |
 |---|---|---|---|---|
@@ -11,6 +11,7 @@
 | Meteomatics | Weather | [Open](https://www.meteomatics.com/en/sign-up) | [Check tiers](https://www.meteomatics.com/en/sign-up) | current conditions<br>hourly/daily forecasts<br>historical weather<br>alerts<br>location/weather lookup<br>environmental data where offered |
 | NOAA Weather API | Weather | [Open](https://www.weather.gov/documentation/services-web-api) | [Check tiers](https://www.weather.gov/documentation/services-web-api) | current conditions<br>hourly/daily forecasts<br>historical weather<br>alerts<br>location/weather lookup<br>environmental data where offered |
 | Open-Meteo | Weather (additional) | [Open](https://open-meteo.com) | [Check tiers](https://open-meteo.com) | current conditions<br>hourly/daily forecasts<br>historical weather<br>alerts<br>location/weather lookup<br>environmental data where offered |
+| OpenAQ (air quality) | Public / General Data | [Open](https://docs.openaq.org) | [Check tiers](https://docs.openaq.org) | dataset search<br>structured data retrieval<br>metadata/records<br>historical time series<br>research/statistical analysis |
 | OpenWeather | Weather | [Open](https://home.openweathermap.org/api_keys) | [Check tiers](https://openweathermap.org/price) | current weather<br>forecasts<br>historical weather<br>air pollution<br>geocoding<br>weather maps |
 | OpenWeatherMap | Weather | [Open](https://home.openweathermap.org/users/sign_up) | [Check tiers](https://home.openweathermap.org/users/sign_up) | current conditions<br>hourly/daily forecasts<br>historical weather<br>alerts<br>location/weather lookup<br>environmental data where offered |
 | StormGlass (marine) | Weather (additional) | [Open](https://stormglass.io) | [Check tiers](https://stormglass.io) | current conditions<br>hourly/daily forecasts<br>historical weather<br>alerts<br>location/weather lookup<br>environmental data where offered |
@@ -19,4 +20,5 @@
 | WeatherAPI.com | Weather | [Open](https://www.weatherapi.com/signup.aspx) | [Check tiers](https://www.weatherapi.com/signup.aspx) | current conditions<br>hourly/daily forecasts<br>historical weather<br>alerts<br>location/weather lookup<br>environmental data where offered |
 | Weatherbit | Weather | [Open](https://www.weatherbit.io/account/create) | [Check tiers](https://www.weatherbit.io/account/create) | current conditions<br>hourly/daily forecasts<br>historical weather<br>alerts<br>location/weather lookup<br>environmental data where offered |
 | Weatherstack | Weather (additional) | [Open](https://weatherstack.com) | [Check tiers](https://weatherstack.com) | current conditions<br>hourly/daily forecasts<br>historical weather<br>alerts<br>location/weather lookup<br>environmental data where offered |
+| World Air Quality Index | Public / Scientific Data (additional) | [Open](https://aqicn.org/api/) | [Check tiers](https://aqicn.org/api/) | dataset search<br>structured data retrieval<br>metadata/records<br>historical time series<br>research/statistical analysis |
 | Xweather (Aeris) | Weather (additional) | [Open](https://www.xweather.com) | [Check tiers](https://www.xweather.com) | current conditions<br>hourly/daily forecasts<br>historical weather<br>alerts<br>location/weather lookup<br>environmental data where offered |
