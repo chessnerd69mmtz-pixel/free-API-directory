@@ -8,6 +8,7 @@ ROOT = Path(__file__).resolve().parents[1]
 PRIMARY = json.loads((ROOT / "data/providers.json").read_text(encoding="utf-8"))
 ADDITIONAL = json.loads((ROOT / "data/provider_urls.json").read_text(encoding="utf-8"))
 EXPANSION_RAW = json.loads((ROOT / "data/public_apis_expansion.json").read_text(encoding="utf-8")).get("providers", [])
+LISTS_EXPANSION_RAW = json.loads((ROOT / "data/public_api_lists_expansion.json").read_text(encoding="utf-8")).get("providers", [])
 EXPANSION = [{
     "name": p["name"], "category": p["category"], "description": p["description"],
     "signup_url": p["provider_url"], "pricing_url": "Unavailable",
@@ -22,7 +23,15 @@ EXPANSION = [{
 } for p in EXPANSION_RAW]
 _seen = set()
 PROVIDERS = []
-for p in PRIMARY + ADDITIONAL + EXPANSION:
+for p in PRIMARY + ADDITIONAL + EXPANSION + [{
+    "name": p["name"], "category": p["category"], "description": p["description"],
+    "signup_url": p["provider_url"], "pricing_url": "Unavailable",
+    "documentation_url": p["provider_url"],
+    "free_tier": {"has_free_tier": True, "type": "community-listed-free", "details": "Community-listed free public API; verify current provider terms.", "amount": "Not independently quantified", "expiry": "Not independently verified"},
+    "requires_credit_card": "Unverified", "uses": [p["category"], p["description"]],
+    "status": "upstream-community", "verification_status": "community-free-source",
+    "verification_sources": {"provider": p["provider_url"], "source_1": "https://public-api-lists.github.io/public-api-lists/"}
+} for p in LISTS_EXPANSION_RAW]:
     key = str(p["name"]).strip().lower()
     if key in _seen: continue
     _seen.add(key)
