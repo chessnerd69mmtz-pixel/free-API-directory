@@ -50,3 +50,12 @@ The existing curated records have a much higher evidence standard: direct key-ma
 Applying that standard manually to 1,716 additional providers in a single bulk import would create a misleading appearance of verification. The expansion therefore prioritizes **breadth without fabricating certainty**, while preserving the curated layer for higher-confidence provider facts.
 
 The live site deduplicates names and then fills the catalog up to 2,500 entries. The Finder, Compare, API profiles, project recommender, category browser and local key tracker all consume the expanded catalog.
+
+
+## Second expansion source
+
+- **Public API Lists** — current JSON index: https://public-api-lists.github.io/public-api-lists/api/all.json
+  - Snapshot used: September 25, 2026
+  - Source entries: 837
+  - New entries after deduplication against the curated catalog and first expansion: **338**
+  - These records are also labeled community-sourced and are not treated as independently verified provider quotas.
