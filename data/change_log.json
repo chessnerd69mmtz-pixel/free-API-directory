@@ -2,6 +2,13 @@
   {
     "provider": "Directory-wide catalog",
     "date": "2026-09-25",
+    "type": "2750-provider expansion",
+    "status": "Added 338 additional community-sourced providers from Public API Lists and raised the live discovery pool from 2500 to 2750.",
+    "source_url": "https://public-api-lists.github.io/public-api-lists/api/all.json"
+  },
+  {
+    "provider": "Directory-wide catalog",
+    "date": "2026-09-25",
     "type": "2500-provider expansion",
     "status": "Added 1,716 new community-sourced providers from the September 24 public-apis snapshot; live discovery pool raised from 1,000 to 2,500 and deduplicates records.",
     "source_url": "https://github.com/public-apis/public-apis"
