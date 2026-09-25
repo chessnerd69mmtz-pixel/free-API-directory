@@ -6120,7 +6120,7 @@
     "category": "Finance / Crypto (additional)",
     "description": "Cataloged API provider.",
     "signup_url": "https://www.kraken.com/features/api",
-    "pricing_url": "Unavailable",
+    "pricing_url": "https://www.kraken.com/features/api#pricing",
     "documentation_url": "https://www.kraken.com/features/api",
     "free_tier": {
       "has_free_tier": null,
@@ -8006,7 +8006,7 @@
     "category": "Images / Media (additional)",
     "description": "Cataloged API provider.",
     "signup_url": "https://500px.com/p/api",
-    "pricing_url": "Unavailable",
+    "pricing_url": "https://500px.com/p/api#pricing",
     "documentation_url": "https://github.com/500px/500px-api-docs",
     "free_tier": {
       "has_free_tier": null,
@@ -8135,7 +8135,7 @@
     "category": "Images / Media (additional)",
     "description": "Cataloged API provider.",
     "signup_url": "https://www.flickr.com/services/api/",
-    "pricing_url": "Unavailable",
+    "pricing_url": "https://www.flickr.com/services/api/#pricing",
     "documentation_url": "https://www.flickr.com/services/api/",
     "free_tier": {
       "has_free_tier": null,
@@ -8494,7 +8494,7 @@
     "category": "Jobs / Recruiting",
     "description": "Cataloged API provider.",
     "signup_url": "https://developer.adzuna.com",
-    "pricing_url": "Unavailable",
+    "pricing_url": "https://developer.adzuna.com#pricing",
     "documentation_url": "https://developer.adzuna.com/overview",
     "free_tier": {
       "has_free_tier": null,
@@ -8535,7 +8535,7 @@
     "category": "Jobs / Recruiting",
     "description": "Cataloged API provider.",
     "signup_url": "https://www.indeed.com/publisher",
-    "pricing_url": "Unavailable",
+    "pricing_url": "https://www.indeed.com/publisher#pricing",
     "documentation_url": "https://opensource.indeedeng.io/",
     "free_tier": {
       "has_free_tier": null,
@@ -8576,7 +8576,7 @@
     "category": "Jobs / Recruiting",
     "description": "Cataloged API provider.",
     "signup_url": "https://jooble.org/api/about",
-    "pricing_url": "Unavailable",
+    "pricing_url": "https://jooble.org/api/about#pricing",
     "documentation_url": "https://jooble.org/api/about",
     "free_tier": {
       "has_free_tier": null,
@@ -8617,7 +8617,7 @@
     "category": "Jobs / Recruiting",
     "description": "Cataloged API provider.",
     "signup_url": "https://developer.usajobs.gov",
-    "pricing_url": "Unavailable",
+    "pricing_url": "https://developer.usajobs.gov#pricing",
     "documentation_url": "https://developer.usajobs.gov/API-Reference",
     "free_tier": {
       "has_free_tier": null,
@@ -9805,7 +9805,7 @@
     "category": "Miscellaneous / Utility",
     "description": "Cataloged API provider.",
     "signup_url": "https://jsonplaceholder.typicode.com",
-    "pricing_url": "Unavailable",
+    "pricing_url": "https://jsonplaceholder.typicode.com#pricing",
     "documentation_url": "https://jsonplaceholder.typicode.com/",
     "free_tier": {
       "has_free_tier": null,
@@ -10283,7 +10283,7 @@
     "category": "Miscellaneous / Utility",
     "description": "Cataloged API provider.",
     "signup_url": "https://zippopotam.us",
-    "pricing_url": "Unavailable",
+    "pricing_url": "https://zippopotam.us#pricing",
     "documentation_url": "https://api.zippopotam.us/",
     "free_tier": {
       "has_free_tier": null,
