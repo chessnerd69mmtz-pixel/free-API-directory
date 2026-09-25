@@ -2,6 +2,20 @@
   {
     "provider": "Directory-wide catalog",
     "date": "2026-09-25",
+    "type": "2500-provider expansion",
+    "status": "Added 1,716 new community-sourced providers from the September 24 public-apis snapshot; live discovery pool raised from 1,000 to 2,500 and deduplicates records.",
+    "source_url": "https://github.com/public-apis/public-apis"
+  },
+  {
+    "provider": "Directory-wide categories",
+    "date": "2026-09-25",
+    "type": "63-category expansion",
+    "status": "Expanded the category browser with 27 additional practical/public-API categories and made category counts live against the expanded catalog.",
+    "source_url": "https://github.com/public-apis/public-apis"
+  },
+  {
+    "provider": "Directory-wide catalog",
+    "date": "2026-09-25",
     "type": "1000-provider live expansion",
     "status": "Merged 576 curated local records with maintained community-free public API sources; live discovery pool capped at 1000. Upstream records are marked community-listed free and not treated as independently verified quotas.",
     "source_url": "https://public-api-lists.github.io/public-api-lists/"
