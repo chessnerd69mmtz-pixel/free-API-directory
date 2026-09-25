@@ -4524,8 +4524,8 @@
     "category": "Dev Tools / Infra (additional)",
     "description": "Cataloged API provider.",
     "signup_url": "https://railway.app",
-    "pricing_url": "https://railway.app",
-    "documentation_url": "https://railway.app",
+    "pricing_url": "https://railway.com/pricing",
+    "documentation_url": "https://docs.railway.com",
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
@@ -4533,15 +4533,19 @@
       "amount": "Unverified",
       "expiry": "Unverified"
     },
-    "requires_credit_card": "Unverified",
-    "authentication": "Unverified",
-    "protocols": [],
-    "sdk_languages": [],
-    "commercial_use": "Unverified",
-    "self_hostable": "Unverified",
-    "webhooks": "Unverified",
-    "rate_limit": "Unverified",
-    "free_tier_reset": "Unverified",
+    "requires_credit_card": "Unavailable",
+    "authentication": "Railway account authentication; API access uses project/account tokens",
+    "protocols": [
+      "HTTP and TCP networking for deployed services; deployments can use Docker/OCI images"
+    ],
+    "sdk_languages": [
+      "Unavailable"
+    ],
+    "commercial_use": "Unavailable",
+    "self_hostable": "No; Railway is documented as a hosted platform",
+    "webhooks": "Project webhooks are documented",
+    "rate_limit": "Unavailable",
+    "free_tier_reset": "Unavailable",
     "uses": [
       "API/resource management",
       "deployment/infrastructure control",
@@ -4549,18 +4553,31 @@
       "authentication/integrations",
       "monitoring/automation"
     ],
-    "last_verified": null,
-    "verified_by": null,
-    "status": "catalog-only",
-    "verification_status": "provider-homepage-fallback"
+    "last_verified": "2026-09-25",
+    "verified_by": "manual-official-doc-review",
+    "status": "active",
+    "verification_status": "manually-verified",
+    "verification_sources": {
+      "requires_credit_card": "https://docs.railway.com/reference/pricing",
+      "authentication": "https://docs.railway.com/reference/public-api",
+      "protocols": "https://docs.railway.com/guides/public-networking",
+      "sdk_languages": "https://docs.railway.com/reference/public-api",
+      "commercial_use": "https://railway.com/legal/terms",
+      "self_hostable": "https://docs.railway.com/overview/about-railway",
+      "webhooks": "https://docs.railway.com/guides/webhooks",
+      "rate_limit": "https://docs.railway.com/reference/public-api",
+      "free_tier_reset": "https://docs.railway.com/reference/pricing",
+      "documentation": "https://docs.railway.com",
+      "pricing": "https://railway.com/pricing"
+    }
   },
   {
     "name": "RapidAPI Marketplace",
     "category": "Dev Tools / Infra (additional)",
     "description": "Cataloged API provider.",
     "signup_url": "https://rapidapi.com",
-    "pricing_url": "https://rapidapi.com",
-    "documentation_url": "https://rapidapi.com",
+    "pricing_url": "https://rapidapi.com/pricing",
+    "documentation_url": "https://docs.rapidapi.com",
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
@@ -4568,15 +4585,19 @@
       "amount": "Unverified",
       "expiry": "Unverified"
     },
-    "requires_credit_card": "Unverified",
-    "authentication": "Unverified",
-    "protocols": [],
-    "sdk_languages": [],
-    "commercial_use": "Unverified",
-    "self_hostable": "Unverified",
-    "webhooks": "Unverified",
-    "rate_limit": "Unverified",
-    "free_tier_reset": "Unverified",
+    "requires_credit_card": "Unavailable",
+    "authentication": "RapidAPI applications authenticate requests with the X-RapidAPI-Key and X-RapidAPI-Host headers",
+    "protocols": [
+      "HTTP/HTTPS APIs"
+    ],
+    "sdk_languages": [
+      "RapidAPI provides code snippets/generated examples for multiple languages; the exact set varies by API"
+    ],
+    "commercial_use": "Depends on the individual API provider and subscription terms; no marketplace-wide blanket permission documented",
+    "self_hostable": "No; RapidAPI Marketplace is a hosted marketplace",
+    "webhooks": "Unavailable",
+    "rate_limit": "Set by the API provider and subscription plan; shown in the API's marketplace listing",
+    "free_tier_reset": "Unavailable",
     "uses": [
       "API/resource management",
       "deployment/infrastructure control",
@@ -4584,18 +4605,31 @@
       "authentication/integrations",
       "monitoring/automation"
     ],
-    "last_verified": null,
-    "verified_by": null,
-    "status": "catalog-only",
-    "verification_status": "provider-homepage-fallback"
+    "last_verified": "2026-09-25",
+    "verified_by": "manual-official-doc-review",
+    "status": "active",
+    "verification_status": "manually-verified",
+    "verification_sources": {
+      "requires_credit_card": "https://docs.rapidapi.com/docs/keys",
+      "authentication": "https://docs.rapidapi.com/docs/keys",
+      "protocols": "https://docs.rapidapi.com/docs/using-rapidapi",
+      "sdk_languages": "https://docs.rapidapi.com/docs/using-rapidapi",
+      "commercial_use": "https://docs.rapidapi.com/docs/terms-of-use",
+      "self_hostable": "https://docs.rapidapi.com/docs/what-is-rapidapi",
+      "webhooks": "https://docs.rapidapi.com",
+      "rate_limit": "https://docs.rapidapi.com/docs/keys",
+      "free_tier_reset": "https://docs.rapidapi.com/docs/monetization",
+      "documentation": "https://docs.rapidapi.com",
+      "pricing": "https://rapidapi.com/pricing"
+    }
   },
   {
     "name": "Redis Cloud",
     "category": "Dev Tools / Infra (additional)",
     "description": "Cataloged API provider.",
     "signup_url": "https://redis.com/try-free/",
-    "pricing_url": "https://redis.com/try-free/",
-    "documentation_url": "https://redis.com/try-free/",
+    "pricing_url": "https://redis.io/pricing/",
+    "documentation_url": "https://redis.io/docs/latest/operate/rc/",
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
@@ -4603,15 +4637,19 @@
       "amount": "Unverified",
       "expiry": "Unverified"
     },
-    "requires_credit_card": "Unverified",
-    "authentication": "Unverified",
-    "protocols": [],
-    "sdk_languages": [],
-    "commercial_use": "Unverified",
-    "self_hostable": "Unverified",
-    "webhooks": "Unverified",
-    "rate_limit": "Unverified",
-    "free_tier_reset": "Unverified",
+    "requires_credit_card": "Unavailable",
+    "authentication": "Redis Cloud databases use a username and password; connections can use TLS",
+    "protocols": [
+      "Redis protocol (RESP); Redis Cloud supports connections from Redis clients over TLS"
+    ],
+    "sdk_languages": [
+      "Redis officially documents client libraries for multiple languages including Python, Node.js, Java, Go, .NET, PHP, and Ruby"
+    ],
+    "commercial_use": "Unavailable",
+    "self_hostable": "No for Redis Cloud; Redis software itself is separately available to run self-managed",
+    "webhooks": "Unavailable",
+    "rate_limit": "Unavailable",
+    "free_tier_reset": "The Redis Cloud free subscription is documented as a persistent free database with plan limits; a periodic reset is not documented",
     "uses": [
       "API/resource management",
       "deployment/infrastructure control",
@@ -4619,18 +4657,31 @@
       "authentication/integrations",
       "monitoring/automation"
     ],
-    "last_verified": null,
-    "verified_by": null,
-    "status": "catalog-only",
-    "verification_status": "provider-homepage-fallback"
+    "last_verified": "2026-09-25",
+    "verified_by": "manual-official-doc-review",
+    "status": "active",
+    "verification_status": "manually-verified",
+    "verification_sources": {
+      "requires_credit_card": "https://redis.io/docs/latest/operate/rc/rc-quickstart/",
+      "authentication": "https://redis.io/docs/latest/operate/rc/security/database-security/",
+      "protocols": "https://redis.io/docs/latest/operate/rc/connect/",
+      "sdk_languages": "https://redis.io/resources/clients/",
+      "commercial_use": "https://redis.io/legal/terms-of-use/",
+      "self_hostable": "https://redis.io/docs/latest/operate/oss_and_stack/",
+      "webhooks": "https://redis.io/docs/latest/operate/rc/",
+      "rate_limit": "https://redis.io/docs/latest/operate/rc/",
+      "free_tier_reset": "https://redis.io/docs/latest/operate/rc/subscriptions/",
+      "documentation": "https://redis.io/docs/latest/operate/rc/",
+      "pricing": "https://redis.io/pricing/"
+    }
   },
   {
     "name": "Render",
     "category": "Dev Tools / Infra (additional)",
     "description": "Cataloged API provider.",
     "signup_url": "https://render.com",
-    "pricing_url": "https://render.com",
-    "documentation_url": "https://render.com",
+    "pricing_url": "https://render.com/pricing",
+    "documentation_url": "https://render.com/docs",
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
@@ -4638,15 +4689,19 @@
       "amount": "Unverified",
       "expiry": "Unverified"
     },
-    "requires_credit_card": "Unverified",
-    "authentication": "Unverified",
-    "protocols": [],
-    "sdk_languages": [],
-    "commercial_use": "Unverified",
-    "self_hostable": "Unverified",
-    "webhooks": "Unverified",
-    "rate_limit": "Unverified",
-    "free_tier_reset": "Unverified",
+    "requires_credit_card": "Unavailable",
+    "authentication": "Render API uses API keys; OAuth is available for integrations",
+    "protocols": [
+      "HTTP/HTTPS, WebSockets, and private network TCP connections as supported by the service type"
+    ],
+    "sdk_languages": [
+      "Unavailable"
+    ],
+    "commercial_use": "Unavailable",
+    "self_hostable": "No; Render is a hosted cloud platform",
+    "webhooks": "Deploy hooks and webhook-based deploy integrations are documented",
+    "rate_limit": "Unavailable",
+    "free_tier_reset": "Unavailable",
     "uses": [
       "API/resource management",
       "deployment/infrastructure control",
@@ -4654,18 +4709,31 @@
       "authentication/integrations",
       "monitoring/automation"
     ],
-    "last_verified": null,
-    "verified_by": null,
-    "status": "catalog-only",
-    "verification_status": "provider-homepage-fallback"
+    "last_verified": "2026-09-25",
+    "verified_by": "manual-official-doc-review",
+    "status": "active",
+    "verification_status": "manually-verified",
+    "verification_sources": {
+      "requires_credit_card": "https://render.com/docs/billing",
+      "authentication": "https://api-docs.render.com",
+      "protocols": "https://render.com/docs/web-services",
+      "sdk_languages": "https://api-docs.render.com",
+      "commercial_use": "https://render.com/legal/terms",
+      "self_hostable": "https://render.com/docs",
+      "webhooks": "https://render.com/docs/deploy-hooks",
+      "rate_limit": "https://api-docs.render.com",
+      "free_tier_reset": "https://render.com/docs/free",
+      "documentation": "https://render.com/docs",
+      "pricing": "https://render.com/pricing"
+    }
   },
   {
     "name": "Sanity.io",
     "category": "Dev Tools / Infra (additional)",
     "description": "Cataloged API provider.",
     "signup_url": "https://www.sanity.io",
-    "pricing_url": "https://www.sanity.io",
-    "documentation_url": "https://www.sanity.io",
+    "pricing_url": "https://www.sanity.io/pricing",
+    "documentation_url": "https://www.sanity.io/docs",
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
@@ -4673,15 +4741,24 @@
       "amount": "Unverified",
       "expiry": "Unverified"
     },
-    "requires_credit_card": "Unverified",
-    "authentication": "Unverified",
-    "protocols": [],
-    "sdk_languages": [],
-    "commercial_use": "Unverified",
-    "self_hostable": "Unverified",
-    "webhooks": "Unverified",
-    "rate_limit": "Unverified",
-    "free_tier_reset": "Unverified",
+    "requires_credit_card": "No for the free plan",
+    "authentication": "API tokens (Bearer tokens); project ID and dataset identify the target",
+    "protocols": [
+      "HTTP APIs",
+      "GROQ query API",
+      "GraphQL API"
+    ],
+    "sdk_languages": [
+      "JavaScript/TypeScript",
+      "PHP",
+      "Ruby",
+      ".NET"
+    ],
+    "commercial_use": "Yes; Sanity’s pricing page offers paid commercial plans",
+    "self_hostable": "No (Sanity is a hosted Content Operating System; the open-source Studio is deployable separately)",
+    "webhooks": true,
+    "rate_limit": "Unavailable",
+    "free_tier_reset": "Unavailable",
     "uses": [
       "API/resource management",
       "deployment/infrastructure control",
@@ -4689,18 +4766,31 @@
       "authentication/integrations",
       "monitoring/automation"
     ],
-    "last_verified": null,
-    "verified_by": null,
-    "status": "catalog-only",
-    "verification_status": "provider-homepage-fallback"
+    "last_verified": "2026-09-25",
+    "verified_by": "manual-official-doc-review",
+    "status": "active",
+    "verification_status": "manually-verified",
+    "verification_sources": {
+      "requires_credit_card": "https://www.sanity.io/pricing",
+      "authentication": "https://www.sanity.io/docs/content-lake/authentication",
+      "protocols": "https://www.sanity.io/docs/http-reference",
+      "sdk_languages": "https://www.sanity.io/docs/client-libraries",
+      "commercial_use": "https://www.sanity.io/pricing",
+      "self_hostable": "https://www.sanity.io/docs/what-is-sanity",
+      "webhooks": "https://www.sanity.io/docs/webhooks",
+      "rate_limit": "https://www.sanity.io/docs/content-lake/http-api-rate-limits",
+      "free_tier_reset": "https://www.sanity.io/pricing",
+      "documentation": "https://www.sanity.io/docs",
+      "pricing": "https://www.sanity.io/pricing"
+    }
   },
   {
     "name": "Strapi Cloud",
     "category": "Dev Tools / Infra (additional)",
     "description": "Cataloged API provider.",
     "signup_url": "https://strapi.io",
-    "pricing_url": "https://strapi.io",
-    "documentation_url": "https://strapi.io",
+    "pricing_url": "https://strapi.io/pricing",
+    "documentation_url": "https://docs.strapi.io/",
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
@@ -4708,15 +4798,20 @@
       "amount": "Unverified",
       "expiry": "Unverified"
     },
-    "requires_credit_card": "Unverified",
-    "authentication": "Unverified",
-    "protocols": [],
-    "sdk_languages": [],
-    "commercial_use": "Unverified",
-    "self_hostable": "Unverified",
-    "webhooks": "Unverified",
-    "rate_limit": "Unverified",
-    "free_tier_reset": "Unverified",
+    "requires_credit_card": "Unavailable",
+    "authentication": "Strapi API tokens and Users & Permissions JWT authentication",
+    "protocols": [
+      "REST",
+      "GraphQL (via the official GraphQL plugin)"
+    ],
+    "sdk_languages": [
+      "Unavailable"
+    ],
+    "commercial_use": "Yes; Strapi documents commercial use under its license/enterprise offerings",
+    "self_hostable": true,
+    "webhooks": true,
+    "rate_limit": "Unavailable",
+    "free_tier_reset": "Unavailable",
     "uses": [
       "API/resource management",
       "deployment/infrastructure control",
@@ -4724,18 +4819,31 @@
       "authentication/integrations",
       "monitoring/automation"
     ],
-    "last_verified": null,
-    "verified_by": null,
-    "status": "catalog-only",
-    "verification_status": "provider-homepage-fallback"
+    "last_verified": "2026-09-25",
+    "verified_by": "manual-official-doc-review",
+    "status": "active",
+    "verification_status": "manually-verified",
+    "verification_sources": {
+      "requires_credit_card": "https://strapi.io/cloud",
+      "authentication": "https://docs.strapi.io/cms/features/API-tokens",
+      "protocols": "https://docs.strapi.io/cms/api/rest; https://docs.strapi.io/cms/api/graphql",
+      "sdk_languages": "https://docs.strapi.io/cms/",
+      "commercial_use": "https://strapi.io/legal/terms-of-service",
+      "self_hostable": "https://docs.strapi.io/cms/quick-start",
+      "webhooks": "https://docs.strapi.io/cms/backend-customization/webhooks",
+      "rate_limit": "https://docs.strapi.io/cms/configurations/middlewares# включ?",
+      "free_tier_reset": "https://strapi.io/cloud",
+      "documentation": "https://docs.strapi.io/",
+      "pricing": "https://strapi.io/pricing"
+    }
   },
   {
     "name": "TinyURL API",
     "category": "Dev Tools / Infra (additional)",
     "description": "Cataloged API provider.",
     "signup_url": "https://tinyurl.com/app",
-    "pricing_url": "https://tinyurl.com/app",
-    "documentation_url": "https://tinyurl.com/app",
+    "pricing_url": "https://tinyurl.com/app/dev",
+    "documentation_url": "https://tinyurl.com/app/dev",
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
@@ -4743,15 +4851,19 @@
       "amount": "Unverified",
       "expiry": "Unverified"
     },
-    "requires_credit_card": "Unverified",
-    "authentication": "Unverified",
-    "protocols": [],
-    "sdk_languages": [],
-    "commercial_use": "Unverified",
-    "self_hostable": "Unverified",
-    "webhooks": "Unverified",
-    "rate_limit": "Unverified",
-    "free_tier_reset": "Unverified",
+    "requires_credit_card": "Unavailable",
+    "authentication": "API key",
+    "protocols": [
+      "HTTPS REST API"
+    ],
+    "sdk_languages": [
+      "Unavailable"
+    ],
+    "commercial_use": "Unavailable",
+    "self_hostable": false,
+    "webhooks": "Unavailable",
+    "rate_limit": "Unavailable",
+    "free_tier_reset": "Unavailable",
     "uses": [
       "API/resource management",
       "deployment/infrastructure control",
@@ -4759,18 +4871,31 @@
       "authentication/integrations",
       "monitoring/automation"
     ],
-    "last_verified": null,
-    "verified_by": null,
-    "status": "catalog-only",
-    "verification_status": "provider-homepage-fallback"
+    "last_verified": "2026-09-25",
+    "verified_by": "manual-official-doc-review",
+    "status": "active",
+    "verification_status": "manually-verified",
+    "verification_sources": {
+      "requires_credit_card": "https://tinyurl.com/app/dev",
+      "authentication": "https://tinyurl.com/app/dev",
+      "protocols": "https://tinyurl.com/app/dev",
+      "sdk_languages": "https://tinyurl.com/app/dev",
+      "commercial_use": "https://tinyurl.com/app/dev",
+      "self_hostable": "https://tinyurl.com/app/dev",
+      "webhooks": "https://tinyurl.com/app/dev",
+      "rate_limit": "https://tinyurl.com/app/dev",
+      "free_tier_reset": "https://tinyurl.com/app/dev",
+      "documentation": "https://tinyurl.com/app/dev",
+      "pricing": "https://tinyurl.com/app/dev"
+    }
   },
   {
     "name": "Upstash",
     "category": "Dev Tools / Infra (additional)",
     "description": "Cataloged API provider.",
     "signup_url": "https://upstash.com",
-    "pricing_url": "https://upstash.com",
-    "documentation_url": "https://upstash.com",
+    "pricing_url": "https://upstash.com/pricing",
+    "documentation_url": "https://upstash.com/docs",
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
@@ -4778,15 +4903,26 @@
       "amount": "Unverified",
       "expiry": "Unverified"
     },
-    "requires_credit_card": "Unverified",
-    "authentication": "Unverified",
-    "protocols": [],
-    "sdk_languages": [],
-    "commercial_use": "Unverified",
-    "self_hostable": "Unverified",
-    "webhooks": "Unverified",
-    "rate_limit": "Unverified",
-    "free_tier_reset": "Unverified",
+    "requires_credit_card": "No for the free tier",
+    "authentication": "REST endpoint URL plus Bearer token (or SDK credentials)",
+    "protocols": [
+      "HTTPS REST",
+      "Redis protocol"
+    ],
+    "sdk_languages": [
+      "JavaScript/TypeScript",
+      "Python",
+      "Go",
+      "Rust",
+      "Java",
+      ".NET",
+      "PHP"
+    ],
+    "commercial_use": "Yes; paid plans are offered for production use",
+    "self_hostable": false,
+    "webhooks": "Unavailable",
+    "rate_limit": "Unavailable",
+    "free_tier_reset": "Unavailable",
     "uses": [
       "API/resource management",
       "deployment/infrastructure control",
@@ -4794,17 +4930,30 @@
       "authentication/integrations",
       "monitoring/automation"
     ],
-    "last_verified": null,
-    "verified_by": null,
-    "status": "catalog-only",
-    "verification_status": "provider-homepage-fallback"
+    "last_verified": "2026-09-25",
+    "verified_by": "manual-official-doc-review",
+    "status": "active",
+    "verification_status": "manually-verified",
+    "verification_sources": {
+      "requires_credit_card": "https://upstash.com/pricing",
+      "authentication": "https://upstash.com/docs/redis/features/restapi",
+      "protocols": "https://upstash.com/docs/redis/features/restapi",
+      "sdk_languages": "https://upstash.com/docs/redis/sdks",
+      "commercial_use": "https://upstash.com/pricing",
+      "self_hostable": "https://upstash.com/docs/redis/overall/getstarted",
+      "webhooks": "https://upstash.com/docs/redis/",
+      "rate_limit": "https://upstash.com/docs/redis/overall/limits",
+      "free_tier_reset": "https://upstash.com/pricing",
+      "documentation": "https://upstash.com/docs",
+      "pricing": "https://upstash.com/pricing"
+    }
   },
   {
     "name": "Amazon Product Advertising API",
     "category": "E-commerce / Shopping",
     "description": "Cataloged API provider.",
     "signup_url": "https://webservices.amazon.com/paapi5/documentation/",
-    "pricing_url": "https://webservices.amazon.com/paapi5/documentation/",
+    "pricing_url": "https://affiliate-program.amazon.com/help/node/topic/GQ6JH4K8C3C7N5ZK",
     "documentation_url": "https://webservices.amazon.com/paapi5/documentation/",
     "free_tier": {
       "has_free_tier": null,
@@ -4813,15 +4962,24 @@
       "amount": "Unverified",
       "expiry": "Unverified"
     },
-    "requires_credit_card": "Unverified",
-    "authentication": "Unverified",
-    "protocols": [],
-    "sdk_languages": [],
-    "commercial_use": "Unverified",
-    "self_hostable": "Unverified",
-    "webhooks": "Unverified",
-    "rate_limit": "Unverified",
-    "free_tier_reset": "Unverified",
+    "requires_credit_card": "Unavailable",
+    "authentication": "AWS Signature Version 4 using an Access Key ID, Secret Access Key, and Associate Tag",
+    "protocols": [
+      "HTTPS",
+      "REST",
+      "JSON"
+    ],
+    "sdk_languages": [
+      "Java",
+      "PHP",
+      "Python",
+      "Node.js"
+    ],
+    "commercial_use": "Unavailable",
+    "self_hostable": "Unavailable",
+    "webhooks": "Unavailable",
+    "rate_limit": "The default request rate is 1 request per second; the initial limit is tied to qualifying Associates revenue and may increase with shipped-item revenue.",
+    "free_tier_reset": "Unavailable",
     "uses": [
       "product/catalog data",
       "orders",
@@ -4830,18 +4988,31 @@
       "payments/checkout",
       "store management"
     ],
-    "last_verified": null,
-    "verified_by": null,
-    "status": "catalog-only",
-    "verification_status": "provider-homepage-fallback"
+    "last_verified": "2026-09-25",
+    "verified_by": "manual-official-doc-review",
+    "status": "active",
+    "verification_status": "manually-verified",
+    "verification_sources": {
+      "requires_credit_card": "https://webservices.amazon.com/paapi5/documentation/",
+      "authentication": "https://webservices.amazon.com/paapi5/documentation/quick-start/using-sdk.html",
+      "protocols": "https://webservices.amazon.com/paapi5/documentation/",
+      "sdk_languages": "https://webservices.amazon.com/paapi5/documentation/quick-start/using-sdk.html",
+      "commercial_use": "https://webservices.amazon.com/paapi5/documentation/",
+      "self_hostable": "https://webservices.amazon.com/paapi5/documentation/",
+      "webhooks": "https://webservices.amazon.com/paapi5/documentation/",
+      "rate_limit": "https://webservices.amazon.com/paapi5/documentation/troubleshooting/too-many-requests.html",
+      "free_tier_reset": "https://webservices.amazon.com/paapi5/documentation/troubleshooting/too-many-requests.html",
+      "documentation": "https://webservices.amazon.com/paapi5/documentation/",
+      "pricing": "https://affiliate-program.amazon.com/help/node/topic/GQ6JH4K8C3C7N5ZK"
+    }
   },
   {
     "name": "BigCommerce API",
     "category": "E-commerce / Shopping",
     "description": "Cataloged API provider.",
     "signup_url": "https://developer.bigcommerce.com",
-    "pricing_url": "https://developer.bigcommerce.com",
-    "documentation_url": "https://developer.bigcommerce.com",
+    "pricing_url": "https://www.bigcommerce.com/essentials/pricing/",
+    "documentation_url": "https://developer.bigcommerce.com/docs/start/about",
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
@@ -4849,15 +5020,25 @@
       "amount": "Unverified",
       "expiry": "Unverified"
     },
-    "requires_credit_card": "Unverified",
-    "authentication": "Unverified",
-    "protocols": [],
-    "sdk_languages": [],
-    "commercial_use": "Unverified",
-    "self_hostable": "Unverified",
-    "webhooks": "Unverified",
-    "rate_limit": "Unverified",
-    "free_tier_reset": "Unverified",
+    "requires_credit_card": "Unavailable",
+    "authentication": "OAuth 2.0 for apps; API accounts use access tokens (with the token sent in X-Auth-Token).",
+    "protocols": [
+      "HTTPS",
+      "REST",
+      "JSON",
+      "GraphQL"
+    ],
+    "sdk_languages": [
+      "Node.js",
+      "PHP",
+      "Python",
+      "Ruby"
+    ],
+    "commercial_use": "Unavailable",
+    "self_hostable": "Unavailable",
+    "webhooks": "Supported",
+    "rate_limit": "API rate limits are quota-based and vary by plan; the standard limit is 20,000 requests per hour, with an additional burst limit of 150 requests per 30 seconds.",
+    "free_tier_reset": "Unavailable",
     "uses": [
       "product/catalog data",
       "orders",
@@ -4866,18 +5047,31 @@
       "payments/checkout",
       "store management"
     ],
-    "last_verified": null,
-    "verified_by": null,
-    "status": "catalog-only",
-    "verification_status": "provider-homepage-fallback"
+    "last_verified": "2026-09-25",
+    "verified_by": "manual-official-doc-review",
+    "status": "active",
+    "verification_status": "manually-verified",
+    "verification_sources": {
+      "requires_credit_card": "https://developer.bigcommerce.com/docs/start/authentication/api-accounts",
+      "authentication": "https://developer.bigcommerce.com/docs/start/authentication",
+      "protocols": "https://developer.bigcommerce.com/docs/storefront/graphql",
+      "sdk_languages": "https://developer.bigcommerce.com/docs/start/about",
+      "commercial_use": "https://developer.bigcommerce.com/docs/start/about",
+      "self_hostable": "https://developer.bigcommerce.com/docs/start/about",
+      "webhooks": "https://developer.bigcommerce.com/docs/integrations/webhooks",
+      "rate_limit": "https://developer.bigcommerce.com/docs/start/best-practices/api-rate-limits",
+      "free_tier_reset": "https://developer.bigcommerce.com/docs/start/best-practices/api-rate-limits",
+      "documentation": "https://developer.bigcommerce.com/docs/start/about",
+      "pricing": "https://www.bigcommerce.com/essentials/pricing/"
+    }
   },
   {
     "name": "eBay API",
     "category": "E-commerce / Shopping",
     "description": "Cataloged API provider.",
     "signup_url": "https://developer.ebay.com",
-    "pricing_url": "https://developer.ebay.com",
-    "documentation_url": "https://developer.ebay.com",
+    "pricing_url": "https://developer.ebay.com/develop/get-started/api-call-limits",
+    "documentation_url": "https://developer.ebay.com/api-docs/static/overview.html",
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
@@ -4885,15 +5079,25 @@
       "amount": "Unverified",
       "expiry": "Unverified"
     },
-    "requires_credit_card": "Unverified",
-    "authentication": "Unverified",
-    "protocols": [],
-    "sdk_languages": [],
-    "commercial_use": "Unverified",
-    "self_hostable": "Unverified",
-    "webhooks": "Unverified",
-    "rate_limit": "Unverified",
-    "free_tier_reset": "Unverified",
+    "requires_credit_card": "Unavailable",
+    "authentication": "OAuth 2.0 (application and user access tokens); legacy APIs may use application credentials.",
+    "protocols": [
+      "HTTPS",
+      "REST",
+      "JSON"
+    ],
+    "sdk_languages": [
+      "Java",
+      "C#",
+      "JavaScript",
+      "PHP",
+      "Python"
+    ],
+    "commercial_use": "Unavailable",
+    "self_hostable": "Unavailable",
+    "webhooks": "Supported through eBay notifications/subscriptions APIs",
+    "rate_limit": "Limits are assigned per application and API; the Call Limit dashboard documents the daily call limits and usage.",
+    "free_tier_reset": "Unavailable",
     "uses": [
       "product/catalog data",
       "orders",
@@ -4902,18 +5106,31 @@
       "payments/checkout",
       "store management"
     ],
-    "last_verified": null,
-    "verified_by": null,
-    "status": "catalog-only",
-    "verification_status": "provider-homepage-fallback"
+    "last_verified": "2026-09-25",
+    "verified_by": "manual-official-doc-review",
+    "status": "active",
+    "verification_status": "manually-verified",
+    "verification_sources": {
+      "requires_credit_card": "https://developer.ebay.com/signin",
+      "authentication": "https://developer.ebay.com/api-docs/static/oauth-authorization.html",
+      "protocols": "https://developer.ebay.com/api-docs/static/overview.html",
+      "sdk_languages": "https://developer.ebay.com/develop/sdks",
+      "commercial_use": "https://developer.ebay.com/api-docs/static/overview.html",
+      "self_hostable": "https://developer.ebay.com/api-docs/static/overview.html",
+      "webhooks": "https://developer.ebay.com/api-docs/commerce/notification/overview.html",
+      "rate_limit": "https://developer.ebay.com/develop/get-started/api-call-limits",
+      "free_tier_reset": "https://developer.ebay.com/develop/get-started/api-call-limits",
+      "documentation": "https://developer.ebay.com/api-docs/static/overview.html",
+      "pricing": "https://developer.ebay.com/develop/get-started/api-call-limits"
+    }
   },
   {
     "name": "Etsy API",
     "category": "E-commerce / Shopping",
     "description": "Cataloged API provider.",
     "signup_url": "https://developers.etsy.com",
-    "pricing_url": "https://developers.etsy.com",
-    "documentation_url": "https://developers.etsy.com",
+    "pricing_url": "https://www.etsy.com/legal/api/",
+    "documentation_url": "https://developers.etsy.com/documentation/",
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
@@ -4921,15 +5138,21 @@
       "amount": "Unverified",
       "expiry": "Unverified"
     },
-    "requires_credit_card": "Unverified",
-    "authentication": "Unverified",
-    "protocols": [],
-    "sdk_languages": [],
-    "commercial_use": "Unverified",
-    "self_hostable": "Unverified",
-    "webhooks": "Unverified",
-    "rate_limit": "Unverified",
-    "free_tier_reset": "Unverified",
+    "requires_credit_card": "Unavailable",
+    "authentication": "OAuth 2.0 with PKCE; requests use a bearer access token and x-api-key header.",
+    "protocols": [
+      "HTTPS",
+      "REST",
+      "JSON"
+    ],
+    "sdk_languages": [
+      "Unavailable"
+    ],
+    "commercial_use": "Unavailable",
+    "self_hostable": "Unavailable",
+    "webhooks": "Supported",
+    "rate_limit": "The API allows 10,000 requests per day per application; response headers provide the remaining quota.",
+    "free_tier_reset": "Unavailable",
     "uses": [
       "product/catalog data",
       "orders",
@@ -4938,18 +5161,31 @@
       "payments/checkout",
       "store management"
     ],
-    "last_verified": null,
-    "verified_by": null,
-    "status": "catalog-only",
-    "verification_status": "provider-homepage-fallback"
+    "last_verified": "2026-09-25",
+    "verified_by": "manual-official-doc-review",
+    "status": "active",
+    "verification_status": "manually-verified",
+    "verification_sources": {
+      "requires_credit_card": "https://developers.etsy.com/documentation/essentials/authentication/",
+      "authentication": "https://developers.etsy.com/documentation/essentials/authentication/",
+      "protocols": "https://developers.etsy.com/documentation/",
+      "sdk_languages": "https://developers.etsy.com/documentation/",
+      "commercial_use": "https://developers.etsy.com/documentation/",
+      "self_hostable": "https://developers.etsy.com/documentation/",
+      "webhooks": "https://developers.etsy.com/documentation/essentials/webhooks/",
+      "rate_limit": "https://developers.etsy.com/documentation/essentials/rate-limits/",
+      "free_tier_reset": "https://developers.etsy.com/documentation/essentials/rate-limits/",
+      "documentation": "https://developers.etsy.com/documentation/",
+      "pricing": "https://www.etsy.com/legal/api/"
+    }
   },
   {
     "name": "PayPal API",
     "category": "E-commerce / Shopping",
     "description": "Cataloged API provider.",
     "signup_url": "https://developer.paypal.com",
-    "pricing_url": "https://developer.paypal.com",
-    "documentation_url": "https://developer.paypal.com",
+    "pricing_url": "https://www.paypal.com/us/business/pricing",
+    "documentation_url": "https://developer.paypal.com/api/rest/",
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
@@ -4957,15 +5193,29 @@
       "amount": "Unverified",
       "expiry": "Unverified"
     },
-    "requires_credit_card": "Unverified",
-    "authentication": "Unverified",
-    "protocols": [],
-    "sdk_languages": [],
-    "commercial_use": "Unverified",
-    "self_hostable": "Unverified",
-    "webhooks": "Unverified",
-    "rate_limit": "Unverified",
-    "free_tier_reset": "Unverified",
+    "requires_credit_card": "Unavailable",
+    "authentication": [
+      "OAuth 2.0 client-credentials access tokens",
+      "API credentials (client ID and secret)"
+    ],
+    "protocols": [
+      "REST",
+      "JSON",
+      "HTTPS"
+    ],
+    "sdk_languages": [
+      "Java",
+      ".NET",
+      "Node.js",
+      "PHP",
+      "Python",
+      "Ruby"
+    ],
+    "commercial_use": true,
+    "self_hostable": false,
+    "webhooks": true,
+    "rate_limit": "PayPal documents API request rate limits by API/resource; consult the rate-limit guidance for the applicable API. A single universal limit is not published.",
+    "free_tier_reset": "Unavailable",
     "uses": [
       "product/catalog data",
       "orders",
@@ -4974,18 +5224,31 @@
       "payments/checkout",
       "store management"
     ],
-    "last_verified": null,
-    "verified_by": null,
-    "status": "catalog-only",
-    "verification_status": "provider-homepage-fallback"
+    "last_verified": "2026-09-25",
+    "verified_by": "manual-official-doc-review",
+    "status": "active",
+    "verification_status": "manually-verified",
+    "verification_sources": {
+      "requires_credit_card": "https://developer.paypal.com/api/rest/",
+      "authentication": "https://developer.paypal.com/api/rest/authentication/",
+      "protocols": "https://developer.paypal.com/api/rest/",
+      "sdk_languages": "https://developer.paypal.com/sdk/",
+      "commercial_use": "https://www.paypal.com/us/webapps/mpp/ua/developer-terms",
+      "self_hostable": "https://developer.paypal.com/api/rest/",
+      "webhooks": "https://developer.paypal.com/api/rest/webhooks/",
+      "rate_limit": "https://developer.paypal.com/api/rest/reference/limits/",
+      "free_tier_reset": "https://www.paypal.com/us/business/pricing",
+      "documentation": "https://developer.paypal.com/api/rest/",
+      "pricing": "https://www.paypal.com/us/business/pricing"
+    }
   },
   {
     "name": "Shopify Admin API",
     "category": "E-commerce / Shopping",
     "description": "Cataloged API provider.",
     "signup_url": "https://shopify.dev",
-    "pricing_url": "https://shopify.dev",
-    "documentation_url": "https://shopify.dev",
+    "pricing_url": "https://www.shopify.com/pricing",
+    "documentation_url": "https://shopify.dev/docs/api/admin-graphql",
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
@@ -4993,15 +5256,27 @@
       "amount": "Unverified",
       "expiry": "Unverified"
     },
-    "requires_credit_card": "Unverified",
-    "authentication": "Unverified",
-    "protocols": [],
-    "sdk_languages": [],
-    "commercial_use": "Unverified",
-    "self_hostable": "Unverified",
-    "webhooks": "Unverified",
-    "rate_limit": "Unverified",
-    "free_tier_reset": "Unverified",
+    "requires_credit_card": "Unavailable",
+    "authentication": [
+      "OAuth 2.0 for installed apps",
+      "Access tokens (including custom-app/admin API access tokens)"
+    ],
+    "protocols": [
+      "GraphQL",
+      "REST",
+      "HTTPS",
+      "JSON"
+    ],
+    "sdk_languages": [
+      "JavaScript/TypeScript",
+      "Ruby",
+      "PHP"
+    ],
+    "commercial_use": true,
+    "self_hostable": false,
+    "webhooks": true,
+    "rate_limit": "GraphQL Admin API uses a leaky-bucket cost limit (shop-specific); REST Admin API uses a leaky-bucket limit of 40 requests per app per store per minute (2 requests/second), with Plus stores having a larger bucket.",
+    "free_tier_reset": "Unavailable",
     "uses": [
       "product/catalog data",
       "orders",
@@ -5010,18 +5285,31 @@
       "payments/checkout",
       "store management"
     ],
-    "last_verified": null,
-    "verified_by": null,
-    "status": "catalog-only",
-    "verification_status": "provider-homepage-fallback"
+    "last_verified": "2026-09-25",
+    "verified_by": "manual-official-doc-review",
+    "status": "active",
+    "verification_status": "manually-verified",
+    "verification_sources": {
+      "requires_credit_card": "https://shopify.dev/docs/apps/launch/billing",
+      "authentication": "https://shopify.dev/docs/apps/build/authentication-authorization",
+      "protocols": "https://shopify.dev/docs/api/admin-graphql",
+      "sdk_languages": "https://shopify.dev/docs/api/libraries",
+      "commercial_use": "https://shopify.dev/docs/apps/launch/billing",
+      "self_hostable": "https://shopify.dev/docs/api/admin-graphql",
+      "webhooks": "https://shopify.dev/docs/apps/build/webhooks",
+      "rate_limit": "https://shopify.dev/docs/api/usage/limits",
+      "free_tier_reset": "https://www.shopify.com/pricing",
+      "documentation": "https://shopify.dev/docs/api/admin-graphql",
+      "pricing": "https://www.shopify.com/pricing"
+    }
   },
   {
     "name": "Square API",
     "category": "E-commerce / Shopping",
     "description": "Cataloged API provider.",
     "signup_url": "https://developer.squareup.com",
-    "pricing_url": "https://developer.squareup.com",
-    "documentation_url": "https://developer.squareup.com",
+    "pricing_url": "https://squareup.com/us/en/pricing",
+    "documentation_url": "https://developer.squareup.com/reference/square",
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
@@ -5029,15 +5317,30 @@
       "amount": "Unverified",
       "expiry": "Unverified"
     },
-    "requires_credit_card": "Unverified",
-    "authentication": "Unverified",
-    "protocols": [],
-    "sdk_languages": [],
-    "commercial_use": "Unverified",
-    "self_hostable": "Unverified",
-    "webhooks": "Unverified",
-    "rate_limit": "Unverified",
-    "free_tier_reset": "Unverified",
+    "requires_credit_card": "Unavailable",
+    "authentication": [
+      "OAuth 2.0",
+      "Personal access tokens",
+      "Application access tokens"
+    ],
+    "protocols": [
+      "REST",
+      "JSON",
+      "HTTPS"
+    ],
+    "sdk_languages": [
+      "Java",
+      ".NET",
+      "PHP",
+      "Python",
+      "Ruby",
+      "Node.js"
+    ],
+    "commercial_use": true,
+    "self_hostable": false,
+    "webhooks": true,
+    "rate_limit": "10 requests per second per application per merchant, with endpoint-specific limits documented in the API reference.",
+    "free_tier_reset": "Unavailable",
     "uses": [
       "product/catalog data",
       "orders",
@@ -5046,17 +5349,30 @@
       "payments/checkout",
       "store management"
     ],
-    "last_verified": null,
-    "verified_by": null,
-    "status": "catalog-only",
-    "verification_status": "provider-homepage-fallback"
+    "last_verified": "2026-09-25",
+    "verified_by": "manual-official-doc-review",
+    "status": "active",
+    "verification_status": "manually-verified",
+    "verification_sources": {
+      "requires_credit_card": "https://developer.squareup.com/docs/build-basics/access-tokens",
+      "authentication": "https://developer.squareup.com/docs/build-basics/access-tokens",
+      "protocols": "https://developer.squareup.com/reference/square",
+      "sdk_languages": "https://developer.squareup.com/docs/devtools/sdks",
+      "commercial_use": "https://squareup.com/us/en/legal/general/terms",
+      "self_hostable": "https://developer.squareup.com/reference/square",
+      "webhooks": "https://developer.squareup.com/docs/webhooks/overview",
+      "rate_limit": "https://developer.squareup.com/docs/build-basics/common-api-patterns#rate-limiting",
+      "free_tier_reset": "https://squareup.com/us/en/pricing",
+      "documentation": "https://developer.squareup.com/reference/square",
+      "pricing": "https://squareup.com/us/en/pricing"
+    }
   },
   {
     "name": "WooCommerce REST API",
     "category": "E-commerce / Shopping",
     "description": "Cataloged API provider.",
     "signup_url": "https://woocommerce.github.io/woocommerce-rest-api-docs/",
-    "pricing_url": "https://woocommerce.github.io/woocommerce-rest-api-docs/",
+    "pricing_url": "https://woocommerce.com/products/woocommerce/",
     "documentation_url": "https://woocommerce.github.io/woocommerce-rest-api-docs/",
     "free_tier": {
       "has_free_tier": null,
@@ -5065,15 +5381,25 @@
       "amount": "Unverified",
       "expiry": "Unverified"
     },
-    "requires_credit_card": "Unverified",
-    "authentication": "Unverified",
-    "protocols": [],
-    "sdk_languages": [],
-    "commercial_use": "Unverified",
-    "self_hostable": "Unverified",
-    "webhooks": "Unverified",
-    "rate_limit": "Unverified",
-    "free_tier_reset": "Unverified",
+    "requires_credit_card": "Unavailable",
+    "authentication": [
+      "API keys (consumer key and consumer secret)",
+      "Basic Authentication over HTTPS",
+      "OAuth 1.0a for applicable clients"
+    ],
+    "protocols": [
+      "REST",
+      "JSON",
+      "HTTPS"
+    ],
+    "sdk_languages": [
+      "Unavailable"
+    ],
+    "commercial_use": true,
+    "self_hostable": true,
+    "webhooks": true,
+    "rate_limit": "Unavailable",
+    "free_tier_reset": "Unavailable",
     "uses": [
       "product/catalog data",
       "orders",
@@ -5082,18 +5408,31 @@
       "payments/checkout",
       "store management"
     ],
-    "last_verified": null,
-    "verified_by": null,
-    "status": "catalog-only",
-    "verification_status": "provider-homepage-fallback"
+    "last_verified": "2026-09-25",
+    "verified_by": "manual-official-doc-review",
+    "status": "active",
+    "verification_status": "manually-verified",
+    "verification_sources": {
+      "requires_credit_card": "https://woocommerce.github.io/woocommerce-rest-api-docs/",
+      "authentication": "https://woocommerce.github.io/woocommerce-rest-api-docs/#authentication",
+      "protocols": "https://woocommerce.github.io/woocommerce-rest-api-docs/",
+      "sdk_languages": "https://woocommerce.github.io/woocommerce-rest-api-docs/",
+      "commercial_use": "https://woocommerce.com/document/woocommerce-terms-conditions/",
+      "self_hostable": "https://woocommerce.com/document/woocommerce-self-service-guide/",
+      "webhooks": "https://woocommerce.com/document/webhooks/",
+      "rate_limit": "https://woocommerce.github.io/woocommerce-rest-api-docs/",
+      "free_tier_reset": "https://woocommerce.com/products/woocommerce/",
+      "documentation": "https://woocommerce.github.io/woocommerce-rest-api-docs/",
+      "pricing": "https://woocommerce.com/products/woocommerce/"
+    }
   },
   {
     "name": "Bandwidth",
     "category": "Email / SMS (additional)",
     "description": "Cataloged API provider.",
     "signup_url": "https://dashboard.bandwidth.com",
-    "pricing_url": "https://dashboard.bandwidth.com",
-    "documentation_url": "https://dashboard.bandwidth.com",
+    "pricing_url": "https://www.bandwidth.com/pricing/",
+    "documentation_url": "https://dev.bandwidth.com/",
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
@@ -5101,15 +5440,27 @@
       "amount": "Unverified",
       "expiry": "Unverified"
     },
-    "requires_credit_card": "Unverified",
-    "authentication": "Unverified",
-    "protocols": [],
-    "sdk_languages": [],
-    "commercial_use": "Unverified",
-    "self_hostable": "Unverified",
-    "webhooks": "Unverified",
-    "rate_limit": "Unverified",
-    "free_tier_reset": "Unverified",
+    "requires_credit_card": "Unavailable",
+    "authentication": "HTTP Basic authentication (application ID and API token)",
+    "protocols": [
+      "REST/HTTP",
+      "SMS",
+      "MMS",
+      "RCS"
+    ],
+    "sdk_languages": [
+      "Java",
+      "C#",
+      "PHP",
+      "Python",
+      "Ruby",
+      "Node.js"
+    ],
+    "commercial_use": "Yes",
+    "self_hostable": false,
+    "webhooks": true,
+    "rate_limit": "Unavailable",
+    "free_tier_reset": "Unavailable",
     "uses": [
       "transactional email",
       "SMS/MMS",
@@ -5118,18 +5469,31 @@
       "delivery tracking",
       "webhooks/automation"
     ],
-    "last_verified": null,
-    "verified_by": null,
-    "status": "catalog-only",
-    "verification_status": "provider-homepage-fallback"
+    "last_verified": "2026-09-25",
+    "verified_by": "manual-official-doc-review",
+    "status": "active",
+    "verification_status": "manually-verified",
+    "verification_sources": {
+      "requires_credit_card": "https://dev.bandwidth.com/",
+      "authentication": "https://dev.bandwidth.com/ap-docs/",
+      "protocols": "https://dev.bandwidth.com/messaging/",
+      "sdk_languages": "https://dev.bandwidth.com/",
+      "commercial_use": "https://www.bandwidth.com/legal/terms-of-service/",
+      "self_hostable": "https://www.bandwidth.com/",
+      "webhooks": "https://dev.bandwidth.com/messaging/notifications/",
+      "rate_limit": "https://dev.bandwidth.com/",
+      "free_tier_reset": "https://www.bandwidth.com/pricing/",
+      "documentation": "https://dev.bandwidth.com/",
+      "pricing": "https://www.bandwidth.com/pricing/"
+    }
   },
   {
     "name": "ClickSend",
     "category": "Email / SMS (additional)",
     "description": "Cataloged API provider.",
     "signup_url": "https://dashboard.clicksend.com",
-    "pricing_url": "https://dashboard.clicksend.com",
-    "documentation_url": "https://dashboard.clicksend.com",
+    "pricing_url": "https://www.clicksend.com/us/pricing/",
+    "documentation_url": "https://developers.clicksend.com/",
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
@@ -5137,15 +5501,28 @@
       "amount": "Unverified",
       "expiry": "Unverified"
     },
-    "requires_credit_card": "Unverified",
-    "authentication": "Unverified",
-    "protocols": [],
-    "sdk_languages": [],
-    "commercial_use": "Unverified",
-    "self_hostable": "Unverified",
-    "webhooks": "Unverified",
-    "rate_limit": "Unverified",
-    "free_tier_reset": "Unverified",
+    "requires_credit_card": "No for the trial account; payment is required for paid usage",
+    "authentication": "HTTP Basic authentication using ClickSend username and API key",
+    "protocols": [
+      "REST/HTTP",
+      "SMS",
+      "MMS",
+      "Email",
+      "SMTP"
+    ],
+    "sdk_languages": [
+      "PHP",
+      "Python",
+      "Ruby",
+      "Node.js",
+      "C#",
+      "Java"
+    ],
+    "commercial_use": "Yes",
+    "self_hostable": false,
+    "webhooks": true,
+    "rate_limit": "Unavailable",
+    "free_tier_reset": "No recurring free tier; trial credit is one-time",
     "uses": [
       "transactional email",
       "SMS/MMS",
@@ -5154,18 +5531,31 @@
       "delivery tracking",
       "webhooks/automation"
     ],
-    "last_verified": null,
-    "verified_by": null,
-    "status": "catalog-only",
-    "verification_status": "provider-homepage-fallback"
+    "last_verified": "2026-09-25",
+    "verified_by": "manual-official-doc-review",
+    "status": "active",
+    "verification_status": "manually-verified",
+    "verification_sources": {
+      "requires_credit_card": "https://www.clicksend.com/us/pricing/",
+      "authentication": "https://developers.clicksend.com/",
+      "protocols": "https://developers.clicksend.com/",
+      "sdk_languages": "https://developers.clicksend.com/",
+      "commercial_use": "https://www.clicksend.com/us/terms/",
+      "self_hostable": "https://www.clicksend.com/us/",
+      "webhooks": "https://developers.clicksend.com/",
+      "rate_limit": "https://developers.clicksend.com/",
+      "free_tier_reset": "https://www.clicksend.com/us/pricing/",
+      "documentation": "https://developers.clicksend.com/",
+      "pricing": "https://www.clicksend.com/us/pricing/"
+    }
   },
   {
     "name": "EmailJS",
     "category": "Email / SMS (additional)",
     "description": "Cataloged API provider.",
     "signup_url": "https://www.emailjs.com",
-    "pricing_url": "https://www.emailjs.com",
-    "documentation_url": "https://www.emailjs.com",
+    "pricing_url": "https://www.emailjs.com/pricing/",
+    "documentation_url": "https://www.emailjs.com/docs/",
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
@@ -5173,15 +5563,20 @@
       "amount": "Unverified",
       "expiry": "Unverified"
     },
-    "requires_credit_card": "Unverified",
-    "authentication": "Unverified",
-    "protocols": [],
-    "sdk_languages": [],
-    "commercial_use": "Unverified",
-    "self_hostable": "Unverified",
-    "webhooks": "Unverified",
-    "rate_limit": "Unverified",
-    "free_tier_reset": "Unverified",
+    "requires_credit_card": "No for the free plan",
+    "authentication": "Public key (user ID) in the client SDK/API request",
+    "protocols": [
+      "HTTPS",
+      "Email/SMTP"
+    ],
+    "sdk_languages": [
+      "JavaScript"
+    ],
+    "commercial_use": "Unavailable",
+    "self_hostable": false,
+    "webhooks": "Unavailable",
+    "rate_limit": "200 requests/month on the free plan",
+    "free_tier_reset": "Monthly",
     "uses": [
       "transactional email",
       "SMS/MMS",
@@ -5190,18 +5585,31 @@
       "delivery tracking",
       "webhooks/automation"
     ],
-    "last_verified": null,
-    "verified_by": null,
-    "status": "catalog-only",
-    "verification_status": "provider-homepage-fallback"
+    "last_verified": "2026-09-25",
+    "verified_by": "manual-official-doc-review",
+    "status": "active",
+    "verification_status": "manually-verified",
+    "verification_sources": {
+      "requires_credit_card": "https://www.emailjs.com/pricing/",
+      "authentication": "https://www.emailjs.com/docs/sdk/installation/",
+      "protocols": "https://www.emailjs.com/docs/",
+      "sdk_languages": "https://www.emailjs.com/docs/sdk/installation/",
+      "commercial_use": "https://www.emailjs.com/terms/",
+      "self_hostable": "https://www.emailjs.com/",
+      "webhooks": "https://www.emailjs.com/docs/",
+      "rate_limit": "https://www.emailjs.com/pricing/",
+      "free_tier_reset": "https://www.emailjs.com/pricing/",
+      "documentation": "https://www.emailjs.com/docs/",
+      "pricing": "https://www.emailjs.com/pricing/"
+    }
   },
   {
     "name": "Infobip",
     "category": "Email / SMS (additional)",
     "description": "Cataloged API provider.",
     "signup_url": "https://www.infobip.com",
-    "pricing_url": "https://www.infobip.com",
-    "documentation_url": "https://www.infobip.com",
+    "pricing_url": "https://www.infobip.com/pricing",
+    "documentation_url": "https://www.infobip.com/docs/api",
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
@@ -5209,15 +5617,30 @@
       "amount": "Unverified",
       "expiry": "Unverified"
     },
-    "requires_credit_card": "Unverified",
-    "authentication": "Unverified",
-    "protocols": [],
-    "sdk_languages": [],
-    "commercial_use": "Unverified",
-    "self_hostable": "Unverified",
-    "webhooks": "Unverified",
-    "rate_limit": "Unverified",
-    "free_tier_reset": "Unverified",
+    "requires_credit_card": "Unavailable",
+    "authentication": "API key in the Authorization header (App/Account API key)",
+    "protocols": [
+      "REST/HTTP",
+      "SMS",
+      "MMS",
+      "RCS",
+      "WhatsApp",
+      "Email",
+      "SMPP"
+    ],
+    "sdk_languages": [
+      "C#",
+      "Java",
+      "Node.js",
+      "PHP",
+      "Python",
+      "Ruby"
+    ],
+    "commercial_use": "Yes",
+    "self_hostable": false,
+    "webhooks": true,
+    "rate_limit": "Unavailable; limits vary by product and account",
+    "free_tier_reset": "Unavailable",
     "uses": [
       "transactional email",
       "SMS/MMS",
@@ -5226,18 +5649,31 @@
       "delivery tracking",
       "webhooks/automation"
     ],
-    "last_verified": null,
-    "verified_by": null,
-    "status": "catalog-only",
-    "verification_status": "provider-homepage-fallback"
+    "last_verified": "2026-09-25",
+    "verified_by": "manual-official-doc-review",
+    "status": "active",
+    "verification_status": "manually-verified",
+    "verification_sources": {
+      "requires_credit_card": "https://www.infobip.com/pricing",
+      "authentication": "https://www.infobip.com/docs/api/essentials/api-essentials",
+      "protocols": "https://www.infobip.com/docs/essentials/",
+      "sdk_languages": "https://www.infobip.com/docs/api/sdks",
+      "commercial_use": "https://www.infobip.com/legal/terms-and-conditions",
+      "self_hostable": "https://www.infobip.com/",
+      "webhooks": "https://www.infobip.com/docs/essentials/webhooks",
+      "rate_limit": "https://www.infobip.com/docs/api",
+      "free_tier_reset": "https://www.infobip.com/pricing",
+      "documentation": "https://www.infobip.com/docs/api",
+      "pricing": "https://www.infobip.com/pricing"
+    }
   },
   {
     "name": "Mailtrap",
     "category": "Email / SMS (additional)",
     "description": "Cataloged API provider.",
     "signup_url": "https://mailtrap.io",
-    "pricing_url": "https://mailtrap.io",
-    "documentation_url": "https://mailtrap.io",
+    "pricing_url": "https://mailtrap.io/pricing/",
+    "documentation_url": "https://docs.mailtrap.io/",
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
@@ -5245,15 +5681,20 @@
       "amount": "Unverified",
       "expiry": "Unverified"
     },
-    "requires_credit_card": "Unverified",
-    "authentication": "Unverified",
-    "protocols": [],
-    "sdk_languages": [],
-    "commercial_use": "Unverified",
-    "self_hostable": "Unverified",
-    "webhooks": "Unverified",
-    "rate_limit": "Unverified",
-    "free_tier_reset": "Unverified",
+    "requires_credit_card": "Unavailable",
+    "authentication": "API token for the REST API; SMTP credentials for SMTP sending/testing",
+    "protocols": [
+      "SMTP",
+      "REST API"
+    ],
+    "sdk_languages": [
+      "Official documentation publishes integration examples/libraries for cURL, PHP, Python, Ruby, Node.js, Java, and .NET; no single official SDK-language support matrix found"
+    ],
+    "commercial_use": "Yes; paid plans are offered for business/production email sending",
+    "self_hostable": "No self-hosted deployment option is published in the official product documentation",
+    "webhooks": "Yes; sending webhooks/event notifications are documented",
+    "rate_limit": "Unavailable",
+    "free_tier_reset": "Monthly (free-plan allowance is described as monthly)",
     "uses": [
       "transactional email",
       "SMS/MMS",
@@ -5262,18 +5703,31 @@
       "delivery tracking",
       "webhooks/automation"
     ],
-    "last_verified": null,
-    "verified_by": null,
-    "status": "catalog-only",
-    "verification_status": "provider-homepage-fallback"
+    "last_verified": "2026-09-25",
+    "verified_by": "manual-official-doc-review",
+    "status": "active",
+    "verification_status": "manually-verified",
+    "verification_sources": {
+      "requires_credit_card": "https://mailtrap.io/pricing/",
+      "authentication": "https://docs.mailtrap.io/email-api-smtp/integration-guides/api-integration/",
+      "protocols": "https://docs.mailtrap.io/email-api-smtp/",
+      "sdk_languages": "https://docs.mailtrap.io/email-api-smtp/integration-guides/",
+      "commercial_use": "https://mailtrap.io/pricing/",
+      "self_hostable": "https://docs.mailtrap.io/",
+      "webhooks": "https://docs.mailtrap.io/email-api-smtp/usage-guides/webhooks/",
+      "rate_limit": "https://docs.mailtrap.io/",
+      "free_tier_reset": "https://mailtrap.io/pricing/",
+      "documentation": "https://docs.mailtrap.io/",
+      "pricing": "https://mailtrap.io/pricing/"
+    }
   },
   {
     "name": "Sinch",
     "category": "Email / SMS (additional)",
     "description": "Cataloged API provider.",
     "signup_url": "https://dashboard.sinch.com",
-    "pricing_url": "https://dashboard.sinch.com",
-    "documentation_url": "https://dashboard.sinch.com",
+    "pricing_url": "https://www.sinch.com/pricing/",
+    "documentation_url": "https://developers.sinch.com/docs/",
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
@@ -5281,15 +5735,21 @@
       "amount": "Unverified",
       "expiry": "Unverified"
     },
-    "requires_credit_card": "Unverified",
-    "authentication": "Unverified",
-    "protocols": [],
-    "sdk_languages": [],
-    "commercial_use": "Unverified",
-    "self_hostable": "Unverified",
-    "webhooks": "Unverified",
-    "rate_limit": "Unverified",
-    "free_tier_reset": "Unverified",
+    "requires_credit_card": "Unavailable",
+    "authentication": "Project ID and access key/secret (product-dependent); Sinch APIs also document OAuth 2.0 for applicable APIs",
+    "protocols": [
+      "REST API",
+      "SIP (Voice products)",
+      "WebSocket (product-dependent)"
+    ],
+    "sdk_languages": [
+      "Java, Node.js, Python, C#, PHP, and Go examples/SDKs are published for applicable Sinch products"
+    ],
+    "commercial_use": "Yes; Sinch publishes business pricing and commercial services",
+    "self_hostable": "No self-hosted deployment option is published; Sinch documents hosted cloud APIs",
+    "webhooks": "Yes; callbacks/webhooks are documented for messaging and voice products",
+    "rate_limit": "Product- and endpoint-specific; no single provider-wide limit is published",
+    "free_tier_reset": "Unavailable",
     "uses": [
       "transactional email",
       "SMS/MMS",
@@ -5298,18 +5758,31 @@
       "delivery tracking",
       "webhooks/automation"
     ],
-    "last_verified": null,
-    "verified_by": null,
-    "status": "catalog-only",
-    "verification_status": "provider-homepage-fallback"
+    "last_verified": "2026-09-25",
+    "verified_by": "manual-official-doc-review",
+    "status": "active",
+    "verification_status": "manually-verified",
+    "verification_sources": {
+      "requires_credit_card": "https://developers.sinch.com/docs/",
+      "authentication": "https://developers.sinch.com/docs/voice/api-reference/authentication/",
+      "protocols": "https://developers.sinch.com/docs/",
+      "sdk_languages": "https://developers.sinch.com/docs/",
+      "commercial_use": "https://www.sinch.com/pricing/",
+      "self_hostable": "https://developers.sinch.com/docs/",
+      "webhooks": "https://developers.sinch.com/docs/messaging/api-reference/callbacks/",
+      "rate_limit": "https://developers.sinch.com/docs/",
+      "free_tier_reset": "https://www.sinch.com/pricing/",
+      "documentation": "https://developers.sinch.com/docs/",
+      "pricing": "https://www.sinch.com/pricing/"
+    }
   },
   {
     "name": "SparkPost",
     "category": "Email / SMS (additional)",
     "description": "Cataloged API provider.",
     "signup_url": "https://app.sparkpost.com/join",
-    "pricing_url": "https://app.sparkpost.com/join",
-    "documentation_url": "https://app.sparkpost.com/join",
+    "pricing_url": "https://www.sparkpost.com/pricing/",
+    "documentation_url": "https://developers.sparkpost.com/",
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
@@ -5317,15 +5790,20 @@
       "amount": "Unverified",
       "expiry": "Unverified"
     },
-    "requires_credit_card": "Unverified",
-    "authentication": "Unverified",
-    "protocols": [],
-    "sdk_languages": [],
-    "commercial_use": "Unverified",
-    "self_hostable": "Unverified",
-    "webhooks": "Unverified",
-    "rate_limit": "Unverified",
-    "free_tier_reset": "Unverified",
+    "requires_credit_card": "Unavailable",
+    "authentication": "API key in the Authorization header; SMTP uses SMTP credentials",
+    "protocols": [
+      "REST API",
+      "SMTP"
+    ],
+    "sdk_languages": [
+      "Official developer documentation provides examples/libraries for cURL, Node.js, Python, PHP, Ruby, Java, and C#"
+    ],
+    "commercial_use": "Yes; SparkPost publishes paid commercial plans",
+    "self_hostable": "No self-hosted deployment option is published in official SparkPost documentation",
+    "webhooks": "Yes; SparkPost supports webhooks for message events",
+    "rate_limit": "Unavailable",
+    "free_tier_reset": "Monthly (free allowance is presented as a monthly sending allowance)",
     "uses": [
       "transactional email",
       "SMS/MMS",
@@ -5334,18 +5812,31 @@
       "delivery tracking",
       "webhooks/automation"
     ],
-    "last_verified": null,
-    "verified_by": null,
-    "status": "catalog-only",
-    "verification_status": "provider-homepage-fallback"
+    "last_verified": "2026-09-25",
+    "verified_by": "manual-official-doc-review",
+    "status": "active",
+    "verification_status": "manually-verified",
+    "verification_sources": {
+      "requires_credit_card": "https://www.sparkpost.com/pricing/",
+      "authentication": "https://developers.sparkpost.com/api/",
+      "protocols": "https://developers.sparkpost.com/api/",
+      "sdk_languages": "https://developers.sparkpost.com/",
+      "commercial_use": "https://www.sparkpost.com/pricing/",
+      "self_hostable": "https://developers.sparkpost.com/",
+      "webhooks": "https://developers.sparkpost.com/api/webhooks/",
+      "rate_limit": "https://developers.sparkpost.com/api/",
+      "free_tier_reset": "https://www.sparkpost.com/pricing/",
+      "documentation": "https://developers.sparkpost.com/",
+      "pricing": "https://www.sparkpost.com/pricing/"
+    }
   },
   {
     "name": "Telnyx",
     "category": "Email / SMS (additional)",
     "description": "Cataloged API provider.",
     "signup_url": "https://portal.telnyx.com",
-    "pricing_url": "https://portal.telnyx.com",
-    "documentation_url": "https://portal.telnyx.com",
+    "pricing_url": "https://telnyx.com/pricing",
+    "documentation_url": "https://developers.telnyx.com/docs",
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
@@ -5353,15 +5844,22 @@
       "amount": "Unverified",
       "expiry": "Unverified"
     },
-    "requires_credit_card": "Unverified",
-    "authentication": "Unverified",
-    "protocols": [],
-    "sdk_languages": [],
-    "commercial_use": "Unverified",
-    "self_hostable": "Unverified",
-    "webhooks": "Unverified",
-    "rate_limit": "Unverified",
-    "free_tier_reset": "Unverified",
+    "requires_credit_card": "Unavailable",
+    "authentication": "Bearer API key; Telnyx also documents API keys and OAuth 2.0 for supported integrations",
+    "protocols": [
+      "REST API",
+      "WebSocket",
+      "SIP",
+      "RTP (media products)"
+    ],
+    "sdk_languages": [
+      "Official Telnyx SDKs are documented for Node.js, Python, Ruby, PHP, Java, and .NET"
+    ],
+    "commercial_use": "Yes; Telnyx publishes usage-based commercial pricing",
+    "self_hostable": "No self-hosted Telnyx platform deployment is published; Telnyx provides hosted network services",
+    "webhooks": "Yes; Telnyx documents webhook event delivery and signing",
+    "rate_limit": "Unavailable",
+    "free_tier_reset": "Unavailable",
     "uses": [
       "transactional email",
       "SMS/MMS",
@@ -5370,18 +5868,31 @@
       "delivery tracking",
       "webhooks/automation"
     ],
-    "last_verified": null,
-    "verified_by": null,
-    "status": "catalog-only",
-    "verification_status": "provider-homepage-fallback"
+    "last_verified": "2026-09-25",
+    "verified_by": "manual-official-doc-review",
+    "status": "active",
+    "verification_status": "manually-verified",
+    "verification_sources": {
+      "requires_credit_card": "https://telnyx.com/pricing",
+      "authentication": "https://developers.telnyx.com/docs/api/v2/overview",
+      "protocols": "https://developers.telnyx.com/docs",
+      "sdk_languages": "https://developers.telnyx.com/docs/api/v2/overview",
+      "commercial_use": "https://telnyx.com/pricing",
+      "self_hostable": "https://developers.telnyx.com/docs",
+      "webhooks": "https://developers.telnyx.com/docs/api/v2/webhooks",
+      "rate_limit": "https://developers.telnyx.com/docs/api/v2/overview",
+      "free_tier_reset": "https://telnyx.com/pricing",
+      "documentation": "https://developers.telnyx.com/docs",
+      "pricing": "https://telnyx.com/pricing"
+    }
   },
   {
     "name": "TextMagic",
     "category": "Email / SMS (additional)",
     "description": "Cataloged API provider.",
     "signup_url": "https://www.textmagic.com",
-    "pricing_url": "https://www.textmagic.com",
-    "documentation_url": "https://www.textmagic.com",
+    "pricing_url": "https://www.textmagic.com/pricing/",
+    "documentation_url": "https://developers.textmagic.com/",
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
@@ -5389,15 +5900,19 @@
       "amount": "Unverified",
       "expiry": "Unverified"
     },
-    "requires_credit_card": "Unverified",
-    "authentication": "Unverified",
-    "protocols": [],
-    "sdk_languages": [],
-    "commercial_use": "Unverified",
-    "self_hostable": "Unverified",
-    "webhooks": "Unverified",
-    "rate_limit": "Unverified",
-    "free_tier_reset": "Unverified",
+    "requires_credit_card": "Unavailable",
+    "authentication": "API key (access token) authentication",
+    "protocols": [
+      "HTTPS REST API"
+    ],
+    "sdk_languages": [
+      "Unavailable"
+    ],
+    "commercial_use": "Unavailable",
+    "self_hostable": "Unavailable",
+    "webhooks": "Unavailable",
+    "rate_limit": "Unavailable",
+    "free_tier_reset": "Unavailable",
     "uses": [
       "transactional email",
       "SMS/MMS",
@@ -5406,18 +5921,31 @@
       "delivery tracking",
       "webhooks/automation"
     ],
-    "last_verified": null,
-    "verified_by": null,
-    "status": "catalog-only",
-    "verification_status": "provider-homepage-fallback"
+    "last_verified": "2026-09-25",
+    "verified_by": "manual-official-doc-review",
+    "status": "active",
+    "verification_status": "manually-verified",
+    "verification_sources": {
+      "requires_credit_card": "https://www.textmagic.com/pricing/",
+      "authentication": "https://developers.textmagic.com/",
+      "protocols": "https://developers.textmagic.com/",
+      "sdk_languages": "https://developers.textmagic.com/",
+      "commercial_use": "https://www.textmagic.com/terms/",
+      "self_hostable": "https://developers.textmagic.com/",
+      "webhooks": "https://developers.textmagic.com/",
+      "rate_limit": "https://developers.textmagic.com/",
+      "free_tier_reset": "https://www.textmagic.com/pricing/",
+      "documentation": "https://developers.textmagic.com/",
+      "pricing": "https://www.textmagic.com/pricing/"
+    }
   },
   {
     "name": "Brevo (Sendinblue)",
     "category": "Email / SMS / Communication",
     "description": "Cataloged API provider.",
     "signup_url": "https://onboarding.brevo.com/account/register",
-    "pricing_url": "https://onboarding.brevo.com/account/register",
-    "documentation_url": "https://onboarding.brevo.com/account/register",
+    "pricing_url": "https://www.brevo.com/pricing/",
+    "documentation_url": "https://developers.brevo.com/",
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
@@ -5425,15 +5953,27 @@
       "amount": "Unverified",
       "expiry": "Unverified"
     },
-    "requires_credit_card": "Unverified",
-    "authentication": "Unverified",
-    "protocols": [],
-    "sdk_languages": [],
-    "commercial_use": "Unverified",
-    "self_hostable": "Unverified",
-    "webhooks": "Unverified",
-    "rate_limit": "Unverified",
-    "free_tier_reset": "Unverified",
+    "requires_credit_card": "No for the free plan (official pricing page says no credit card required)",
+    "authentication": "API key or OAuth 2.0",
+    "protocols": [
+      "HTTPS REST API",
+      "SMTP relay"
+    ],
+    "sdk_languages": [
+      "C#",
+      "Go",
+      "Java",
+      "Node.js",
+      "PHP",
+      "Python",
+      "Ruby",
+      "TypeScript"
+    ],
+    "commercial_use": "Yes (paid plans are offered for business use; license terms apply)",
+    "self_hostable": "No (Brevo is documented as a hosted service)",
+    "webhooks": true,
+    "rate_limit": "300 requests per minute for API calls (unless otherwise specified)",
+    "free_tier_reset": "Monthly (free plan quota renews monthly)",
     "uses": [
       "transactional email",
       "SMS/MMS",
@@ -5442,18 +5982,31 @@
       "delivery tracking",
       "webhooks/automation"
     ],
-    "last_verified": null,
-    "verified_by": null,
-    "status": "catalog-only",
-    "verification_status": "provider-homepage-fallback"
+    "last_verified": "2026-09-25",
+    "verified_by": "manual-official-doc-review",
+    "status": "active",
+    "verification_status": "manually-verified",
+    "verification_sources": {
+      "requires_credit_card": "https://www.brevo.com/pricing/",
+      "authentication": "https://developers.brevo.com/docs/getting-started",
+      "protocols": "https://developers.brevo.com/docs/getting-started",
+      "sdk_languages": "https://developers.brevo.com/docs/getting-started",
+      "commercial_use": "https://www.brevo.com/legal/termsofuse/",
+      "self_hostable": "https://www.brevo.com/legal/termsofuse/",
+      "webhooks": "https://developers.brevo.com/docs/transactional-webhooks",
+      "rate_limit": "https://developers.brevo.com/docs/api-limits",
+      "free_tier_reset": "https://www.brevo.com/pricing/",
+      "documentation": "https://developers.brevo.com/",
+      "pricing": "https://www.brevo.com/pricing/"
+    }
   },
   {
     "name": "Mailgun",
     "category": "Email / SMS / Communication",
     "description": "Cataloged API provider.",
     "signup_url": "https://signup.mailgun.com/new/signup",
-    "pricing_url": "https://signup.mailgun.com/new/signup",
-    "documentation_url": "https://signup.mailgun.com/new/signup",
+    "pricing_url": "https://www.mailgun.com/pricing/",
+    "documentation_url": "https://documentation.mailgun.com/",
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
@@ -5461,15 +6014,25 @@
       "amount": "Unverified",
       "expiry": "Unverified"
     },
-    "requires_credit_card": "Unverified",
-    "authentication": "Unverified",
-    "protocols": [],
-    "sdk_languages": [],
-    "commercial_use": "Unverified",
-    "self_hostable": "Unverified",
-    "webhooks": "Unverified",
-    "rate_limit": "Unverified",
-    "free_tier_reset": "Unverified",
+    "requires_credit_card": "Unavailable",
+    "authentication": "HTTP Basic authentication using API key",
+    "protocols": [
+      "HTTPS REST API",
+      "SMTP"
+    ],
+    "sdk_languages": [
+      "PHP",
+      "Python",
+      "Ruby",
+      "Java",
+      "C#",
+      "Go"
+    ],
+    "commercial_use": "Yes (commercial plans and business use are offered; terms apply)",
+    "self_hostable": "No (Mailgun is a hosted service)",
+    "webhooks": true,
+    "rate_limit": "Unavailable",
+    "free_tier_reset": "Unavailable",
     "uses": [
       "transactional email",
       "SMS/MMS",
@@ -5478,18 +6041,31 @@
       "delivery tracking",
       "webhooks/automation"
     ],
-    "last_verified": null,
-    "verified_by": null,
-    "status": "catalog-only",
-    "verification_status": "provider-homepage-fallback"
+    "last_verified": "2026-09-25",
+    "verified_by": "manual-official-doc-review",
+    "status": "active",
+    "verification_status": "manually-verified",
+    "verification_sources": {
+      "requires_credit_card": "https://www.mailgun.com/pricing/",
+      "authentication": "https://documentation.mailgun.com/docs/mailgun/api-reference/authentication/",
+      "protocols": "https://documentation.mailgun.com/docs/mailgun/api-reference/",
+      "sdk_languages": "https://documentation.mailgun.com/docs/mailgun/api-reference/",
+      "commercial_use": "https://www.mailgun.com/legal/terms/",
+      "self_hostable": "https://documentation.mailgun.com/",
+      "webhooks": "https://documentation.mailgun.com/docs/mailgun/user-manual/webhooks/",
+      "rate_limit": "https://documentation.mailgun.com/docs/mailgun/api-reference/",
+      "free_tier_reset": "https://www.mailgun.com/pricing/",
+      "documentation": "https://documentation.mailgun.com/",
+      "pricing": "https://www.mailgun.com/pricing/"
+    }
   },
   {
     "name": "Mailjet",
     "category": "Email / SMS / Communication",
     "description": "Cataloged API provider.",
     "signup_url": "https://app.mailjet.com/signup",
-    "pricing_url": "https://app.mailjet.com/signup",
-    "documentation_url": "https://app.mailjet.com/signup",
+    "pricing_url": "https://www.mailjet.com/pricing/",
+    "documentation_url": "https://dev.mailjet.com/",
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
@@ -5497,15 +6073,25 @@
       "amount": "Unverified",
       "expiry": "Unverified"
     },
-    "requires_credit_card": "Unverified",
-    "authentication": "Unverified",
-    "protocols": [],
-    "sdk_languages": [],
-    "commercial_use": "Unverified",
-    "self_hostable": "Unverified",
-    "webhooks": "Unverified",
-    "rate_limit": "Unverified",
-    "free_tier_reset": "Unverified",
+    "requires_credit_card": "No for the free plan",
+    "authentication": "API key and secret key (Basic authentication); OAuth 2.0 for supported APIs",
+    "protocols": [
+      "HTTPS REST API",
+      "SMTP relay"
+    ],
+    "sdk_languages": [
+      "PHP",
+      "Python",
+      "Ruby",
+      "Node.js",
+      "Java",
+      ".NET"
+    ],
+    "commercial_use": "Yes (commercial plans offered; terms apply)",
+    "self_hostable": "No (Mailjet is a hosted service)",
+    "webhooks": true,
+    "rate_limit": "Unavailable",
+    "free_tier_reset": "Monthly",
     "uses": [
       "transactional email",
       "SMS/MMS",
@@ -5514,18 +6100,31 @@
       "delivery tracking",
       "webhooks/automation"
     ],
-    "last_verified": null,
-    "verified_by": null,
-    "status": "catalog-only",
-    "verification_status": "provider-homepage-fallback"
+    "last_verified": "2026-09-25",
+    "verified_by": "manual-official-doc-review",
+    "status": "active",
+    "verification_status": "manually-verified",
+    "verification_sources": {
+      "requires_credit_card": "https://www.mailjet.com/pricing/",
+      "authentication": "https://dev.mailjet.com/email/guides/",
+      "protocols": "https://dev.mailjet.com/email/guides/",
+      "sdk_languages": "https://dev.mailjet.com/email/guides/",
+      "commercial_use": "https://www.mailjet.com/legal/terms/",
+      "self_hostable": "https://dev.mailjet.com/",
+      "webhooks": "https://dev.mailjet.com/email/guides/webhooks/",
+      "rate_limit": "https://dev.mailjet.com/email/guides/",
+      "free_tier_reset": "https://www.mailjet.com/pricing/",
+      "documentation": "https://dev.mailjet.com/",
+      "pricing": "https://www.mailjet.com/pricing/"
+    }
   },
   {
     "name": "MessageBird",
     "category": "Email / SMS / Communication",
     "description": "Cataloged API provider.",
     "signup_url": "https://dashboard.messagebird.com/en/sign-up",
-    "pricing_url": "https://dashboard.messagebird.com/en/sign-up",
-    "documentation_url": "https://dashboard.messagebird.com/en/sign-up",
+    "pricing_url": "https://messagebird.com/pricing",
+    "documentation_url": "https://developers.messagebird.com/",
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
@@ -5533,15 +6132,25 @@
       "amount": "Unverified",
       "expiry": "Unverified"
     },
-    "requires_credit_card": "Unverified",
-    "authentication": "Unverified",
-    "protocols": [],
-    "sdk_languages": [],
-    "commercial_use": "Unverified",
-    "self_hostable": "Unverified",
-    "webhooks": "Unverified",
-    "rate_limit": "Unverified",
-    "free_tier_reset": "Unverified",
+    "requires_credit_card": "Unavailable",
+    "authentication": "Access key in the Authorization header",
+    "protocols": [
+      "HTTPS REST API",
+      "SMPP"
+    ],
+    "sdk_languages": [
+      "PHP",
+      "Python",
+      "Ruby",
+      "Java",
+      "Node.js",
+      ".NET"
+    ],
+    "commercial_use": "Yes (business communications service; terms apply)",
+    "self_hostable": "No (MessageBird is a hosted service)",
+    "webhooks": true,
+    "rate_limit": "Unavailable",
+    "free_tier_reset": "Unavailable",
     "uses": [
       "transactional email",
       "SMS/MMS",
@@ -5550,18 +6159,31 @@
       "delivery tracking",
       "webhooks/automation"
     ],
-    "last_verified": null,
-    "verified_by": null,
-    "status": "catalog-only",
-    "verification_status": "provider-homepage-fallback"
+    "last_verified": "2026-09-25",
+    "verified_by": "manual-official-doc-review",
+    "status": "active",
+    "verification_status": "manually-verified",
+    "verification_sources": {
+      "requires_credit_card": "https://messagebird.com/pricing",
+      "authentication": "https://developers.messagebird.com/api/",
+      "protocols": "https://developers.messagebird.com/",
+      "sdk_languages": "https://developers.messagebird.com/",
+      "commercial_use": "https://messagebird.com/legal/terms",
+      "self_hostable": "https://developers.messagebird.com/",
+      "webhooks": "https://developers.messagebird.com/api/conversations/#webhooks",
+      "rate_limit": "https://developers.messagebird.com/",
+      "free_tier_reset": "https://messagebird.com/pricing",
+      "documentation": "https://developers.messagebird.com/",
+      "pricing": "https://messagebird.com/pricing"
+    }
   },
   {
     "name": "Plivo",
     "category": "Email / SMS / Communication",
     "description": "Cataloged API provider.",
     "signup_url": "https://console.plivo.com/accounts/register/",
-    "pricing_url": "https://console.plivo.com/accounts/register/",
-    "documentation_url": "https://console.plivo.com/accounts/register/",
+    "pricing_url": "https://www.plivo.com/pricing/",
+    "documentation_url": "https://www.plivo.com/docs/",
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
@@ -5569,15 +6191,27 @@
       "amount": "Unverified",
       "expiry": "Unverified"
     },
-    "requires_credit_card": "Unverified",
-    "authentication": "Unverified",
-    "protocols": [],
-    "sdk_languages": [],
-    "commercial_use": "Unverified",
-    "self_hostable": "Unverified",
-    "webhooks": "Unverified",
-    "rate_limit": "Unverified",
-    "free_tier_reset": "Unverified",
+    "requires_credit_card": "No for the trial account (trial credit is provided)",
+    "authentication": "Auth ID and Auth Token using HTTP Basic authentication",
+    "protocols": [
+      "HTTPS REST API",
+      "SIP",
+      "SMPP"
+    ],
+    "sdk_languages": [
+      "Python",
+      "Ruby",
+      "PHP",
+      "Node.js",
+      "Java",
+      ".NET",
+      "Go"
+    ],
+    "commercial_use": "Yes (paid commercial service; terms apply)",
+    "self_hostable": "No (Plivo is a hosted service)",
+    "webhooks": true,
+    "rate_limit": "Unavailable",
+    "free_tier_reset": "Unavailable",
     "uses": [
       "transactional email",
       "SMS/MMS",
@@ -5586,10 +6220,23 @@
       "delivery tracking",
       "webhooks/automation"
     ],
-    "last_verified": null,
-    "verified_by": null,
-    "status": "catalog-only",
-    "verification_status": "provider-homepage-fallback"
+    "last_verified": "2026-09-25",
+    "verified_by": "manual-official-doc-review",
+    "status": "active",
+    "verification_status": "manually-verified",
+    "verification_sources": {
+      "requires_credit_card": "https://www.plivo.com/pricing/",
+      "authentication": "https://www.plivo.com/docs/messaging/api/",
+      "protocols": "https://www.plivo.com/docs/",
+      "sdk_languages": "https://www.plivo.com/docs/messaging/quickstart/",
+      "commercial_use": "https://www.plivo.com/legal/terms/",
+      "self_hostable": "https://www.plivo.com/docs/",
+      "webhooks": "https://www.plivo.com/docs/messaging/api/message/",
+      "rate_limit": "https://www.plivo.com/docs/",
+      "free_tier_reset": "https://www.plivo.com/pricing/",
+      "documentation": "https://www.plivo.com/docs/",
+      "pricing": "https://www.plivo.com/pricing/"
+    }
   },
   {
     "name": "Postmark",
