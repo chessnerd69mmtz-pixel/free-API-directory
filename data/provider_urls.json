@@ -4511,5 +4511,2375 @@
       "location/weather lookup",
       "environmental data where offered"
     ]
+  },
+  {
+    "name": "Cerebras",
+    "category": "AI / LLM",
+    "url": "https://cloud.cerebras.ai/",
+    "tier_verification_url": "https://cloud.cerebras.ai/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "ultra-fast LLM inference"
+    ]
+  },
+  {
+    "name": "SambaNova Cloud",
+    "category": "AI / LLM",
+    "url": "https://cloud.sambanova.ai/",
+    "tier_verification_url": "https://cloud.sambanova.ai/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "LLM inference"
+    ]
+  },
+  {
+    "name": "AI21 Labs Studio",
+    "category": "AI / LLM",
+    "url": "https://studio.ai21.com/account/api-key",
+    "tier_verification_url": "https://studio.ai21.com/account/api-key",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "LLM and text generation"
+    ]
+  },
+  {
+    "name": "Writer API",
+    "category": "AI / LLM",
+    "url": "https://dev.writer.com/",
+    "tier_verification_url": "https://dev.writer.com/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "enterprise LLM"
+    ]
+  },
+  {
+    "name": "FriendliAI",
+    "category": "AI / LLM",
+    "url": "https://friendli.ai/",
+    "tier_verification_url": "https://friendli.ai/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "LLM inference"
+    ]
+  },
+  {
+    "name": "Lepton AI",
+    "category": "AI / LLM",
+    "url": "https://dashboard.lepton.ai/",
+    "tier_verification_url": "https://dashboard.lepton.ai/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "model inference"
+    ]
+  },
+  {
+    "name": "Novita AI",
+    "category": "AI / LLM",
+    "url": "https://novita.ai/settings/key-management",
+    "tier_verification_url": "https://novita.ai/settings/key-management",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "LLM and image generation"
+    ]
+  },
+  {
+    "name": "SiliconFlow",
+    "category": "AI / LLM",
+    "url": "https://cloud.siliconflow.cn/account/ak",
+    "tier_verification_url": "https://cloud.siliconflow.cn/account/ak",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "LLM inference"
+    ]
+  },
+  {
+    "name": "ModelScope",
+    "category": "AI / ML",
+    "url": "https://modelscope.cn/",
+    "tier_verification_url": "https://modelscope.cn/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "models and inference"
+    ]
+  },
+  {
+    "name": "Zhipu AI/Z.ai",
+    "category": "AI / LLM",
+    "url": "https://open.bigmodel.cn/",
+    "tier_verification_url": "https://open.bigmodel.cn/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "LLM"
+    ]
+  },
+  {
+    "name": "Baichuan AI",
+    "category": "AI / LLM",
+    "url": "https://platform.baichuan-ai.com/",
+    "tier_verification_url": "https://platform.baichuan-ai.com/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "LLM"
+    ]
+  },
+  {
+    "name": "Moonshot AI",
+    "category": "AI / LLM",
+    "url": "https://platform.moonshot.cn/console/api-keys",
+    "tier_verification_url": "https://platform.moonshot.cn/console/api-keys",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "Kimi LLM"
+    ]
+  },
+  {
+    "name": "MiniMax",
+    "category": "AI / LLM",
+    "url": "https://platform.minimaxi.com/",
+    "tier_verification_url": "https://platform.minimaxi.com/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "text audio and video AI"
+    ]
+  },
+  {
+    "name": "Yi/01.AI",
+    "category": "AI / LLM",
+    "url": "https://platform.lingyiwanwu.com/",
+    "tier_verification_url": "https://platform.lingyiwanwu.com/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "LLM"
+    ]
+  },
+  {
+    "name": "Baidu Qianfan",
+    "category": "AI / LLM",
+    "url": "https://console.bce.baidu.com/qianfan/",
+    "tier_verification_url": "https://console.bce.baidu.com/qianfan/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "LLM platform"
+    ]
+  },
+  {
+    "name": "Alibaba DashScope",
+    "category": "AI / LLM",
+    "url": "https://dashscope.console.aliyun.com/apiKey",
+    "tier_verification_url": "https://dashscope.console.aliyun.com/apiKey",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "Qwen and multimodal AI"
+    ]
+  },
+  {
+    "name": "Tencent Hunyuan",
+    "category": "AI / LLM",
+    "url": "https://console.cloud.tencent.com/hunyuan",
+    "tier_verification_url": "https://console.cloud.tencent.com/hunyuan",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "LLM"
+    ]
+  },
+  {
+    "name": "Zhipu CogView",
+    "category": "AI / Generative Media",
+    "url": "https://open.bigmodel.cn/",
+    "tier_verification_url": "https://open.bigmodel.cn/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "image generation"
+    ]
+  },
+  {
+    "name": "Ideogram API",
+    "category": "AI / Generative Media",
+    "url": "https://ideogram.ai/",
+    "tier_verification_url": "https://ideogram.ai/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "image generation"
+    ]
+  },
+  {
+    "name": "Leonardo AI API",
+    "category": "AI / Generative Media",
+    "url": "https://app.leonardo.ai/",
+    "tier_verification_url": "https://app.leonardo.ai/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "image generation"
+    ]
+  },
+  {
+    "name": "Stability AI Platform",
+    "category": "AI / Generative Media",
+    "url": "https://platform.stability.ai/account/keys",
+    "tier_verification_url": "https://platform.stability.ai/account/keys",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "image and video generation"
+    ]
+  },
+  {
+    "name": "Black Forest Labs",
+    "category": "AI / Generative Media",
+    "url": "https://api.bfl.ai/",
+    "tier_verification_url": "https://api.bfl.ai/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "FLUX image generation"
+    ]
+  },
+  {
+    "name": "Luma AI",
+    "category": "AI / Generative Media",
+    "url": "https://lumalabs.ai/dream-machine/api",
+    "tier_verification_url": "https://lumalabs.ai/dream-machine/api",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "video generation"
+    ]
+  },
+  {
+    "name": "Runway API",
+    "category": "AI / Generative Media",
+    "url": "https://dev.runwayml.com/",
+    "tier_verification_url": "https://dev.runwayml.com/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "video generation"
+    ]
+  },
+  {
+    "name": "Cartesia",
+    "category": "AI / Speech",
+    "url": "https://play.cartesia.ai/",
+    "tier_verification_url": "https://play.cartesia.ai/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "voice generation"
+    ]
+  },
+  {
+    "name": "PlayHT",
+    "category": "AI / Speech",
+    "url": "https://play.ht/",
+    "tier_verification_url": "https://play.ht/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "text to speech"
+    ]
+  },
+  {
+    "name": "Resemble AI",
+    "category": "AI / Speech",
+    "url": "https://app.resemble.ai/",
+    "tier_verification_url": "https://app.resemble.ai/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "voice generation"
+    ]
+  },
+  {
+    "name": "AssemblyAI Universal",
+    "category": "AI / Speech",
+    "url": "https://www.assemblyai.com/dashboard/signup",
+    "tier_verification_url": "https://www.assemblyai.com/dashboard/signup",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "speech to text"
+    ]
+  },
+  {
+    "name": "Speechmatics",
+    "category": "AI / Speech",
+    "url": "https://portal.speechmatics.com/",
+    "tier_verification_url": "https://portal.speechmatics.com/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "speech recognition"
+    ]
+  },
+  {
+    "name": "Soniox",
+    "category": "AI / Speech",
+    "url": "https://soniox.com/",
+    "tier_verification_url": "https://soniox.com/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "speech to text"
+    ]
+  },
+  {
+    "name": "LangSmith",
+    "category": "AI Observability & Evaluation",
+    "url": "https://smith.langchain.com/",
+    "tier_verification_url": "https://smith.langchain.com/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "LLM tracing"
+    ]
+  },
+  {
+    "name": "Langfuse Cloud",
+    "category": "AI Observability & Evaluation",
+    "url": "https://cloud.langfuse.com/",
+    "tier_verification_url": "https://cloud.langfuse.com/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "LLM tracing"
+    ]
+  },
+  {
+    "name": "Helicone",
+    "category": "AI Observability & Evaluation",
+    "url": "https://helicone.ai/",
+    "tier_verification_url": "https://helicone.ai/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "LLM monitoring"
+    ]
+  },
+  {
+    "name": "Portkey",
+    "category": "AI Agents & Infrastructure",
+    "url": "https://app.portkey.ai/",
+    "tier_verification_url": "https://app.portkey.ai/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "AI gateway"
+    ]
+  },
+  {
+    "name": "LiteLLM",
+    "category": "AI Agents & Infrastructure",
+    "url": "https://github.com/BerriAI/litellm",
+    "tier_verification_url": "https://github.com/BerriAI/litellm",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "model routing"
+    ]
+  },
+  {
+    "name": "AgentOps",
+    "category": "AI Observability & Evaluation",
+    "url": "https://app.agentops.ai/",
+    "tier_verification_url": "https://app.agentops.ai/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "agent monitoring"
+    ]
+  },
+  {
+    "name": "Braintrust",
+    "category": "AI Observability & Evaluation",
+    "url": "https://www.braintrust.dev/",
+    "tier_verification_url": "https://www.braintrust.dev/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "LLM evaluation"
+    ]
+  },
+  {
+    "name": "Arize Phoenix",
+    "category": "AI Observability & Evaluation",
+    "url": "https://phoenix.arize.com/",
+    "tier_verification_url": "https://phoenix.arize.com/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "AI tracing"
+    ]
+  },
+  {
+    "name": "Weights & Biases",
+    "category": "ML & Data Science",
+    "url": "https://wandb.ai/authorize",
+    "tier_verification_url": "https://wandb.ai/authorize",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "ML experiments"
+    ]
+  },
+  {
+    "name": "Comet ML",
+    "category": "ML & Data Science",
+    "url": "https://www.comet.com/",
+    "tier_verification_url": "https://www.comet.com/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "ML tracking"
+    ]
+  },
+  {
+    "name": "Neptune AI",
+    "category": "ML & Data Science",
+    "url": "https://app.neptune.ai/",
+    "tier_verification_url": "https://app.neptune.ai/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "experiment tracking"
+    ]
+  },
+  {
+    "name": "ClearML",
+    "category": "ML & Data Science",
+    "url": "https://app.clear.ml/",
+    "tier_verification_url": "https://app.clear.ml/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "ML orchestration"
+    ]
+  },
+  {
+    "name": "Kubeflow",
+    "category": "ML & Data Science",
+    "url": "https://www.kubeflow.org/",
+    "tier_verification_url": "https://www.kubeflow.org/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "ML pipelines"
+    ]
+  },
+  {
+    "name": "Replicate Webhooks",
+    "category": "AI Compute & GPU",
+    "url": "https://replicate.com/account/api-tokens",
+    "tier_verification_url": "https://replicate.com/account/api-tokens",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "model hosting"
+    ]
+  },
+  {
+    "name": "Beam Cloud",
+    "category": "AI Compute & GPU",
+    "url": "https://www.beam.cloud/",
+    "tier_verification_url": "https://www.beam.cloud/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "GPU serverless"
+    ]
+  },
+  {
+    "name": "Baseten Truss",
+    "category": "AI Compute & GPU",
+    "url": "https://www.baseten.co/",
+    "tier_verification_url": "https://www.baseten.co/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "model deployment"
+    ]
+  },
+  {
+    "name": "Banana.dev",
+    "category": "AI Compute & GPU",
+    "url": "https://app.banana.dev/",
+    "tier_verification_url": "https://app.banana.dev/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "GPU inference"
+    ]
+  },
+  {
+    "name": "OctoAI",
+    "category": "AI / LLM",
+    "url": "https://octo.ai/",
+    "tier_verification_url": "https://octo.ai/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "LLM inference"
+    ]
+  },
+  {
+    "name": "Clarifai Workflows",
+    "category": "Computer Vision & AI",
+    "url": "https://clarifai.com/settings/security",
+    "tier_verification_url": "https://clarifai.com/settings/security",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "computer vision and AI workflows"
+    ]
+  },
+  {
+    "name": "Bitbucket Cloud API",
+    "category": "Coding & Developer Tools",
+    "url": "https://bitbucket.org/account/settings/app-passwords/",
+    "tier_verification_url": "https://bitbucket.org/account/settings/app-passwords/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "Git repositories"
+    ]
+  },
+  {
+    "name": "Sourcegraph API",
+    "category": "Coding & Developer Tools",
+    "url": "https://sourcegraph.com/.api-keys",
+    "tier_verification_url": "https://sourcegraph.com/.api-keys",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "code search"
+    ]
+  },
+  {
+    "name": "Codeberg API",
+    "category": "Coding & Developer Tools",
+    "url": "https://codeberg.org/user/settings/applications",
+    "tier_verification_url": "https://codeberg.org/user/settings/applications",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "Git hosting"
+    ]
+  },
+  {
+    "name": "Gitea API",
+    "category": "Coding & Developer Tools",
+    "url": "https://docs.gitea.com/api/",
+    "tier_verification_url": "https://docs.gitea.com/api/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "Git hosting"
+    ]
+  },
+  {
+    "name": "Forgejo API",
+    "category": "Coding & Developer Tools",
+    "url": "https://forgejo.org/docs/latest/user/api-usage/",
+    "tier_verification_url": "https://forgejo.org/docs/latest/user/api-usage/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "Git hosting"
+    ]
+  },
+  {
+    "name": "Docker Hub API",
+    "category": "DevOps & Containers",
+    "url": "https://hub.docker.com/settings/security",
+    "tier_verification_url": "https://hub.docker.com/settings/security",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "container registry"
+    ]
+  },
+  {
+    "name": "NPM Registry API",
+    "category": "Developer Packages",
+    "url": "https://www.npmjs.com/settings/tokens",
+    "tier_verification_url": "https://www.npmjs.com/settings/tokens",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "JavaScript packages"
+    ]
+  },
+  {
+    "name": "PyPI API",
+    "category": "Developer Packages",
+    "url": "https://pypi.org/manage/account/token/",
+    "tier_verification_url": "https://pypi.org/manage/account/token/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "Python packages"
+    ]
+  },
+  {
+    "name": "crates.io API",
+    "category": "Developer Packages",
+    "url": "https://crates.io/settings/tokens",
+    "tier_verification_url": "https://crates.io/settings/tokens",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "Rust packages"
+    ]
+  },
+  {
+    "name": "Maven Central",
+    "category": "Developer Packages",
+    "url": "https://central.sonatype.org/",
+    "tier_verification_url": "https://central.sonatype.org/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "Java packages"
+    ]
+  },
+  {
+    "name": "SonarCloud API",
+    "category": "Code Quality & Security",
+    "url": "https://sonarcloud.io/account/security/",
+    "tier_verification_url": "https://sonarcloud.io/account/security/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "code analysis"
+    ]
+  },
+  {
+    "name": "Snyk API",
+    "category": "Code Quality & Security",
+    "url": "https://app.snyk.io/account/",
+    "tier_verification_url": "https://app.snyk.io/account/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "dependency security"
+    ]
+  },
+  {
+    "name": "Dependabot",
+    "category": "Code Quality & Security",
+    "url": "https://github.com/dependabot",
+    "tier_verification_url": "https://github.com/dependabot",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "dependency updates"
+    ]
+  },
+  {
+    "name": "CircleCI API",
+    "category": "CI/CD & DevOps",
+    "url": "https://app.circleci.com/settings/user/tokens",
+    "tier_verification_url": "https://app.circleci.com/settings/user/tokens",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "CI/CD"
+    ]
+  },
+  {
+    "name": "Travis CI API",
+    "category": "CI/CD & DevOps",
+    "url": "https://app.travis-ci.com/account/preferences",
+    "tier_verification_url": "https://app.travis-ci.com/account/preferences",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "CI"
+    ]
+  },
+  {
+    "name": "Drone CI",
+    "category": "CI/CD & DevOps",
+    "url": "https://docs.drone.io/api/",
+    "tier_verification_url": "https://docs.drone.io/api/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "CI/CD"
+    ]
+  },
+  {
+    "name": "Semaphore CI",
+    "category": "CI/CD & DevOps",
+    "url": "https://semaphoreci.com/",
+    "tier_verification_url": "https://semaphoreci.com/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "CI/CD"
+    ]
+  },
+  {
+    "name": "Buildkite API",
+    "category": "CI/CD & DevOps",
+    "url": "https://buildkite.com/user/api-access-tokens",
+    "tier_verification_url": "https://buildkite.com/user/api-access-tokens",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "CI/CD"
+    ]
+  },
+  {
+    "name": "Buddy API",
+    "category": "CI/CD & DevOps",
+    "url": "https://buddy.works/",
+    "tier_verification_url": "https://buddy.works/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "CI/CD"
+    ]
+  },
+  {
+    "name": "CircleCI Insights",
+    "category": "CI/CD & DevOps",
+    "url": "https://circleci.com/",
+    "tier_verification_url": "https://circleci.com/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "build analytics"
+    ]
+  },
+  {
+    "name": "Pulumi Cloud API",
+    "category": "DevOps & Infrastructure",
+    "url": "https://app.pulumi.com/account/tokens",
+    "tier_verification_url": "https://app.pulumi.com/account/tokens",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "infrastructure as code"
+    ]
+  },
+  {
+    "name": "Terraform Cloud API",
+    "category": "DevOps & Infrastructure",
+    "url": "https://app.terraform.io/app/settings/tokens",
+    "tier_verification_url": "https://app.terraform.io/app/settings/tokens",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "infrastructure as code"
+    ]
+  },
+  {
+    "name": "HashiCorp Vault API",
+    "category": "Security & Secrets",
+    "url": "https://developer.hashicorp.com/vault",
+    "tier_verification_url": "https://developer.hashicorp.com/vault",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "secrets management"
+    ]
+  },
+  {
+    "name": "Consul API",
+    "category": "DevOps & Infrastructure",
+    "url": "https://developer.hashicorp.com/consul",
+    "tier_verification_url": "https://developer.hashicorp.com/consul",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "service discovery"
+    ]
+  },
+  {
+    "name": "Nomad API",
+    "category": "DevOps & Infrastructure",
+    "url": "https://developer.hashicorp.com/nomad",
+    "tier_verification_url": "https://developer.hashicorp.com/nomad",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "workload orchestration"
+    ]
+  },
+  {
+    "name": "CockroachDB Cloud",
+    "category": "Databases & Backend",
+    "url": "https://cockroachlabs.cloud/",
+    "tier_verification_url": "https://cockroachlabs.cloud/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "distributed SQL"
+    ]
+  },
+  {
+    "name": "Turso",
+    "category": "Databases & Backend",
+    "url": "https://turso.tech/app",
+    "tier_verification_url": "https://turso.tech/app",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "SQLite and edge database"
+    ]
+  },
+  {
+    "name": "Convex",
+    "category": "Databases & Backend",
+    "url": "https://dashboard.convex.dev/",
+    "tier_verification_url": "https://dashboard.convex.dev/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "backend and database"
+    ]
+  },
+  {
+    "name": "Appwrite Cloud",
+    "category": "Databases & Backend",
+    "url": "https://cloud.appwrite.io/",
+    "tier_verification_url": "https://cloud.appwrite.io/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "backend as a service"
+    ]
+  },
+  {
+    "name": "PocketBase",
+    "category": "Databases & Backend",
+    "url": "https://pocketbase.io/",
+    "tier_verification_url": "https://pocketbase.io/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "backend"
+    ]
+  },
+  {
+    "name": "Hasura Cloud",
+    "category": "Databases & Backend",
+    "url": "https://cloud.hasura.io/",
+    "tier_verification_url": "https://cloud.hasura.io/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "GraphQL backend"
+    ]
+  },
+  {
+    "name": "Nhost",
+    "category": "Databases & Backend",
+    "url": "https://app.nhost.io/",
+    "tier_verification_url": "https://app.nhost.io/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "GraphQL backend"
+    ]
+  },
+  {
+    "name": "Xata",
+    "category": "Databases & Backend",
+    "url": "https://app.xata.io/",
+    "tier_verification_url": "https://app.xata.io/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "serverless database"
+    ]
+  },
+  {
+    "name": "Fauna FQL",
+    "category": "Databases & Backend",
+    "url": "https://dashboard.fauna.com/",
+    "tier_verification_url": "https://dashboard.fauna.com/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "serverless database"
+    ]
+  },
+  {
+    "name": "PlanetScale MySQL",
+    "category": "Databases & Backend",
+    "url": "https://app.planetscale.com/",
+    "tier_verification_url": "https://app.planetscale.com/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "MySQL"
+    ]
+  },
+  {
+    "name": "CockroachDB SQL API",
+    "category": "Databases & Backend",
+    "url": "https://cockroachlabs.cloud/",
+    "tier_verification_url": "https://cockroachlabs.cloud/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "distributed SQL API"
+    ]
+  },
+  {
+    "name": "Upstash Kafka",
+    "category": "Messaging & Queues",
+    "url": "https://console.upstash.com/",
+    "tier_verification_url": "https://console.upstash.com/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "Kafka"
+    ]
+  },
+  {
+    "name": "Upstash QStash",
+    "category": "Messaging & Queues",
+    "url": "https://console.upstash.com/",
+    "tier_verification_url": "https://console.upstash.com/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "HTTP messaging"
+    ]
+  },
+  {
+    "name": "Aiven",
+    "category": "Databases & Infrastructure",
+    "url": "https://console.aiven.io/",
+    "tier_verification_url": "https://console.aiven.io/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "managed databases"
+    ]
+  },
+  {
+    "name": "Neon Serverless",
+    "category": "Databases & Backend",
+    "url": "https://console.neon.tech/",
+    "tier_verification_url": "https://console.neon.tech/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "PostgreSQL"
+    ]
+  },
+  {
+    "name": "TiDB Cloud",
+    "category": "Databases & Backend",
+    "url": "https://tidbcloud.com/",
+    "tier_verification_url": "https://tidbcloud.com/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "MySQL-compatible database"
+    ]
+  },
+  {
+    "name": "YugabyteDB Managed",
+    "category": "Databases & Backend",
+    "url": "https://cloud.yugabyte.com/",
+    "tier_verification_url": "https://cloud.yugabyte.com/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "distributed SQL"
+    ]
+  },
+  {
+    "name": "Timescale Cloud",
+    "category": "Databases & Backend",
+    "url": "https://console.cloud.timescale.com/",
+    "tier_verification_url": "https://console.cloud.timescale.com/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "time-series database"
+    ]
+  },
+  {
+    "name": "InfluxDB Cloud",
+    "category": "Databases & Backend",
+    "url": "https://cloud2.influxdata.com/",
+    "tier_verification_url": "https://cloud2.influxdata.com/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "time-series database"
+    ]
+  },
+  {
+    "name": "MongoDB Atlas Search",
+    "category": "Search & Vector Databases",
+    "url": "https://account.mongodb.com/account/login",
+    "tier_verification_url": "https://account.mongodb.com/account/login",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "document and search database"
+    ]
+  },
+  {
+    "name": "Elasticsearch Cloud",
+    "category": "Search & Vector Databases",
+    "url": "https://cloud.elastic.co/",
+    "tier_verification_url": "https://cloud.elastic.co/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "search"
+    ]
+  },
+  {
+    "name": "Meilisearch Cloud",
+    "category": "Search & Vector Databases",
+    "url": "https://cloud.meilisearch.com/",
+    "tier_verification_url": "https://cloud.meilisearch.com/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "search"
+    ]
+  },
+  {
+    "name": "Typesense Cloud",
+    "category": "Search & Vector Databases",
+    "url": "https://cloud.typesense.org/",
+    "tier_verification_url": "https://cloud.typesense.org/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "search"
+    ]
+  },
+  {
+    "name": "Qdrant Cloud",
+    "category": "Vector Databases",
+    "url": "https://cloud.qdrant.io/",
+    "tier_verification_url": "https://cloud.qdrant.io/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "vector search"
+    ]
+  },
+  {
+    "name": "Weaviate Cloud",
+    "category": "Vector Databases",
+    "url": "https://console.weaviate.cloud/",
+    "tier_verification_url": "https://console.weaviate.cloud/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "vector search"
+    ]
+  },
+  {
+    "name": "Brave Search API",
+    "category": "Search & Web Intelligence",
+    "url": "https://api.search.brave.com/app/keys",
+    "tier_verification_url": "https://api.search.brave.com/app/keys",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "web search"
+    ]
+  },
+  {
+    "name": "Exa",
+    "category": "Search & Web Intelligence",
+    "url": "https://dashboard.exa.ai/",
+    "tier_verification_url": "https://dashboard.exa.ai/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "semantic search"
+    ]
+  },
+  {
+    "name": "Firecrawl",
+    "category": "Web Scraping & Browser Automation",
+    "url": "https://www.firecrawl.dev/app",
+    "tier_verification_url": "https://www.firecrawl.dev/app",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "web extraction"
+    ]
+  },
+  {
+    "name": "Crawlbase",
+    "category": "Web Scraping & Browser Automation",
+    "url": "https://crawlbase.com/",
+    "tier_verification_url": "https://crawlbase.com/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "web scraping"
+    ]
+  },
+  {
+    "name": "ScrapingAnt",
+    "category": "Web Scraping & Browser Automation",
+    "url": "https://scrapingant.com/",
+    "tier_verification_url": "https://scrapingant.com/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "web scraping"
+    ]
+  },
+  {
+    "name": "ZenRows",
+    "category": "Web Scraping & Browser Automation",
+    "url": "https://app.zenrows.com/",
+    "tier_verification_url": "https://app.zenrows.com/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "web scraping"
+    ]
+  },
+  {
+    "name": "Oxylabs",
+    "category": "Web Scraping & Browser Automation",
+    "url": "https://dashboard.oxylabs.io/",
+    "tier_verification_url": "https://dashboard.oxylabs.io/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "proxies and scraping"
+    ]
+  },
+  {
+    "name": "Zyte API",
+    "category": "Web Scraping & Browser Automation",
+    "url": "https://app.zyte.com/",
+    "tier_verification_url": "https://app.zyte.com/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "web scraping"
+    ]
+  },
+  {
+    "name": "Apify",
+    "category": "Web Scraping & Browser Automation",
+    "url": "https://console.apify.com/account/integrations",
+    "tier_verification_url": "https://console.apify.com/account/integrations",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "actors and scraping"
+    ]
+  },
+  {
+    "name": "Browserless",
+    "category": "Web Scraping & Browser Automation",
+    "url": "https://www.browserless.io/",
+    "tier_verification_url": "https://www.browserless.io/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "headless Chrome"
+    ]
+  },
+  {
+    "name": "BrowserCat",
+    "category": "Web Scraping & Browser Automation",
+    "url": "https://www.browsercat.com/",
+    "tier_verification_url": "https://www.browsercat.com/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "browser automation"
+    ]
+  },
+  {
+    "name": "Steel.dev",
+    "category": "Web Scraping & Browser Automation",
+    "url": "https://steel.dev/",
+    "tier_verification_url": "https://steel.dev/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "browser sessions"
+    ]
+  },
+  {
+    "name": "Scrape.do",
+    "category": "Web Scraping & Browser Automation",
+    "url": "https://dashboard.scrape.do/",
+    "tier_verification_url": "https://dashboard.scrape.do/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "web scraping"
+    ]
+  },
+  {
+    "name": "Serper.dev",
+    "category": "SEO & Search Intelligence",
+    "url": "https://serper.dev/api-key",
+    "tier_verification_url": "https://serper.dev/api-key",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "Google search"
+    ]
+  },
+  {
+    "name": "DataForSEO",
+    "category": "SEO & Search Intelligence",
+    "url": "https://app.dataforseo.com/",
+    "tier_verification_url": "https://app.dataforseo.com/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "SERP and SEO"
+    ]
+  },
+  {
+    "name": "SEOData.io",
+    "category": "SEO & Search Intelligence",
+    "url": "https://seodata.io/",
+    "tier_verification_url": "https://seodata.io/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "SERP data"
+    ]
+  },
+  {
+    "name": "Scale SERP",
+    "category": "SEO & Search Intelligence",
+    "url": "https://scaleserp.com/",
+    "tier_verification_url": "https://scaleserp.com/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "search results"
+    ]
+  },
+  {
+    "name": "Zenserp",
+    "category": "SEO & Search Intelligence",
+    "url": "https://app.zenserp.com/",
+    "tier_verification_url": "https://app.zenserp.com/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "SERP data"
+    ]
+  },
+  {
+    "name": "SearchApi",
+    "category": "SEO & Search Intelligence",
+    "url": "https://www.searchapi.io/",
+    "tier_verification_url": "https://www.searchapi.io/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "search"
+    ]
+  },
+  {
+    "name": "ScrapeStack",
+    "category": "Web Scraping & Browser Automation",
+    "url": "https://apilayer.com/marketplace/scrapestack-api",
+    "tier_verification_url": "https://apilayer.com/marketplace/scrapestack-api",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "web scraping"
+    ]
+  },
+  {
+    "name": "ScreenshotOne",
+    "category": "Web Scraping & Browser Automation",
+    "url": "https://dash.screenshotone.com/",
+    "tier_verification_url": "https://dash.screenshotone.com/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "web screenshots"
+    ]
+  },
+  {
+    "name": "Urlbox",
+    "category": "Web Scraping & Browser Automation",
+    "url": "https://urlbox.com/",
+    "tier_verification_url": "https://urlbox.com/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "web screenshots"
+    ]
+  },
+  {
+    "name": "Microlink",
+    "category": "Web Scraping & Browser Automation",
+    "url": "https://microlink.io/",
+    "tier_verification_url": "https://microlink.io/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "metadata and screenshots"
+    ]
+  },
+  {
+    "name": "HERE Routing",
+    "category": "Geospatial & Routing",
+    "url": "https://developer.here.com/",
+    "tier_verification_url": "https://developer.here.com/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "routing"
+    ]
+  },
+  {
+    "name": "HERE Geocoding",
+    "category": "Geospatial & Routing",
+    "url": "https://developer.here.com/",
+    "tier_verification_url": "https://developer.here.com/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "geocoding"
+    ]
+  },
+  {
+    "name": "Geoapify Routing",
+    "category": "Geospatial & Routing",
+    "url": "https://myprojects.geoapify.com/",
+    "tier_verification_url": "https://myprojects.geoapify.com/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "routing"
+    ]
+  },
+  {
+    "name": "Geoapify Places",
+    "category": "Geospatial & Routing",
+    "url": "https://myprojects.geoapify.com/",
+    "tier_verification_url": "https://myprojects.geoapify.com/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "places"
+    ]
+  },
+  {
+    "name": "Geoapify Geocoding",
+    "category": "Geospatial & Routing",
+    "url": "https://myprojects.geoapify.com/",
+    "tier_verification_url": "https://myprojects.geoapify.com/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "geocoding"
+    ]
+  },
+  {
+    "name": "Geocode.maps.co",
+    "category": "Geospatial & Routing",
+    "url": "https://geocode.maps.co/",
+    "tier_verification_url": "https://geocode.maps.co/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "geocoding"
+    ]
+  },
+  {
+    "name": "GeoJS",
+    "category": "IP Intelligence",
+    "url": "https://www.geojs.io/",
+    "tier_verification_url": "https://www.geojs.io/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "IP geolocation"
+    ]
+  },
+  {
+    "name": "BigDataCloud",
+    "category": "IP Intelligence",
+    "url": "https://www.bigdatacloud.com/",
+    "tier_verification_url": "https://www.bigdatacloud.com/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "geolocation"
+    ]
+  },
+  {
+    "name": "IP2Location",
+    "category": "IP Intelligence",
+    "url": "https://www.ip2location.com/",
+    "tier_verification_url": "https://www.ip2location.com/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "IP lookup"
+    ]
+  },
+  {
+    "name": "IPinfo Lite",
+    "category": "IP Intelligence",
+    "url": "https://ipinfo.io/signup",
+    "tier_verification_url": "https://ipinfo.io/signup",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "IP intelligence"
+    ]
+  },
+  {
+    "name": "Abstract IP Geolocation",
+    "category": "IP Intelligence",
+    "url": "https://app.abstractapi.com/api/ip-geolocation/",
+    "tier_verification_url": "https://app.abstractapi.com/api/ip-geolocation/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "IP geolocation"
+    ]
+  },
+  {
+    "name": "Radar Maps",
+    "category": "Geospatial & Routing",
+    "url": "https://radar.com/",
+    "tier_verification_url": "https://radar.com/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "maps and geofencing"
+    ]
+  },
+  {
+    "name": "MapTiler Geocoding",
+    "category": "Geospatial & Routing",
+    "url": "https://cloud.maptiler.com/account/keys/",
+    "tier_verification_url": "https://cloud.maptiler.com/account/keys/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "geocoding"
+    ]
+  },
+  {
+    "name": "OpenRouteService",
+    "category": "Geospatial & Routing",
+    "url": "https://openrouteservice.org/dev/#/signup",
+    "tier_verification_url": "https://openrouteservice.org/dev/#/signup",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "routing"
+    ]
+  },
+  {
+    "name": "GraphHopper",
+    "category": "Geospatial & Routing",
+    "url": "https://www.graphhopper.com/",
+    "tier_verification_url": "https://www.graphhopper.com/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "routing"
+    ]
+  },
+  {
+    "name": "Valhalla",
+    "category": "Geospatial & Routing",
+    "url": "https://valhalla.github.io/valhalla/",
+    "tier_verification_url": "https://valhalla.github.io/valhalla/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "routing"
+    ]
+  },
+  {
+    "name": "OSRM",
+    "category": "Geospatial & Routing",
+    "url": "https://project-osrm.org/",
+    "tier_verification_url": "https://project-osrm.org/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "routing"
+    ]
+  },
+  {
+    "name": "OSM Nominatim",
+    "category": "Geospatial & Routing",
+    "url": "https://nominatim.org/",
+    "tier_verification_url": "https://nominatim.org/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "geocoding"
+    ]
+  },
+  {
+    "name": "OSM Overpass",
+    "category": "Geospatial & Routing",
+    "url": "https://overpass-api.de/",
+    "tier_verification_url": "https://overpass-api.de/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "OpenStreetMap queries"
+    ]
+  },
+  {
+    "name": "Stooq",
+    "category": "Stock & Market Data",
+    "url": "https://stooq.com/q/d/?s=aapl.us",
+    "tier_verification_url": "https://stooq.com/q/d/?s=aapl.us",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "market data"
+    ]
+  },
+  {
+    "name": "EODHD",
+    "category": "Stock & Market Data",
+    "url": "https://eodhd.com/financial-apis/",
+    "tier_verification_url": "https://eodhd.com/financial-apis/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "market data"
+    ]
+  },
+  {
+    "name": "AlphaQuery",
+    "category": "Stock & Market Data",
+    "url": "https://www.alphaquery.com/",
+    "tier_verification_url": "https://www.alphaquery.com/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "financial data"
+    ]
+  },
+  {
+    "name": "Tiingo",
+    "category": "Stock & Market Data",
+    "url": "https://api.tiingo.com/",
+    "tier_verification_url": "https://api.tiingo.com/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "market data"
+    ]
+  },
+  {
+    "name": "Polygon/Massive",
+    "category": "Stock & Market Data",
+    "url": "https://polygon.io/dashboard/api-keys",
+    "tier_verification_url": "https://polygon.io/dashboard/api-keys",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "market data"
+    ]
+  },
+  {
+    "name": "Alpaca Market Data",
+    "category": "Trading & Brokerage",
+    "url": "https://app.alpaca.markets/paper/dashboard/overview",
+    "tier_verification_url": "https://app.alpaca.markets/paper/dashboard/overview",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "trading and market data"
+    ]
+  },
+  {
+    "name": "Interactive Brokers API",
+    "category": "Trading & Brokerage",
+    "url": "https://www.interactivebrokers.com/",
+    "tier_verification_url": "https://www.interactivebrokers.com/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "trading"
+    ]
+  },
+  {
+    "name": "OANDA v20",
+    "category": "Trading & Brokerage",
+    "url": "https://developer.oanda.com/",
+    "tier_verification_url": "https://developer.oanda.com/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "FX"
+    ]
+  },
+  {
+    "name": "Twelve Data Forex",
+    "category": "Foreign Exchange",
+    "url": "https://twelvedata.com/apikey",
+    "tier_verification_url": "https://twelvedata.com/apikey",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "foreign exchange"
+    ]
+  },
+  {
+    "name": "Frankfurter",
+    "category": "Foreign Exchange",
+    "url": "https://www.frankfurter.app/",
+    "tier_verification_url": "https://www.frankfurter.app/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "foreign exchange"
+    ]
+  },
+  {
+    "name": "CurrencyBeacon",
+    "category": "Foreign Exchange",
+    "url": "https://currencybeacon.com/",
+    "tier_verification_url": "https://currencybeacon.com/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "foreign exchange"
+    ]
+  },
+  {
+    "name": "CurrencyFreaks",
+    "category": "Foreign Exchange",
+    "url": "https://currencyfreaks.com/",
+    "tier_verification_url": "https://currencyfreaks.com/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "foreign exchange"
+    ]
+  },
+  {
+    "name": "Currencyapi.com",
+    "category": "Foreign Exchange",
+    "url": "https://app.currencyapi.com/",
+    "tier_verification_url": "https://app.currencyapi.com/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "foreign exchange"
+    ]
+  },
+  {
+    "name": "FloatRates",
+    "category": "Foreign Exchange",
+    "url": "https://www.floatrates.com/",
+    "tier_verification_url": "https://www.floatrates.com/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "foreign exchange"
+    ]
+  },
+  {
+    "name": "OECD SDMX API",
+    "category": "Economic & Statistical Data",
+    "url": "https://data-explorer.oecd.org/",
+    "tier_verification_url": "https://data-explorer.oecd.org/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "economic data"
+    ]
+  },
+  {
+    "name": "IMF Data API",
+    "category": "Economic & Statistical Data",
+    "url": "https://www.imf.org/en/Data",
+    "tier_verification_url": "https://www.imf.org/en/Data",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "economic data"
+    ]
+  },
+  {
+    "name": "ECB Data API",
+    "category": "Economic & Statistical Data",
+    "url": "https://data-api.ecb.europa.eu/",
+    "tier_verification_url": "https://data-api.ecb.europa.eu/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "financial and economic data"
+    ]
+  },
+  {
+    "name": "BIS Statistics API",
+    "category": "Economic & Statistical Data",
+    "url": "https://www.bis.org/statistics/api.htm",
+    "tier_verification_url": "https://www.bis.org/statistics/api.htm",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "banking statistics"
+    ]
+  },
+  {
+    "name": "UN Data API",
+    "category": "Economic & Statistical Data",
+    "url": "https://data.un.org/",
+    "tier_verification_url": "https://data.un.org/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "global statistics"
+    ]
+  },
+  {
+    "name": "OECD SDMX-JSON",
+    "category": "Economic & Statistical Data",
+    "url": "https://data.oecd.org/",
+    "tier_verification_url": "https://data.oecd.org/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "statistics"
+    ]
+  },
+  {
+    "name": "Europe PMC",
+    "category": "Scientific Research",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/",
+    "tier_verification_url": "https://www.ebi.ac.uk/europepmc/webservices/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "biomedical papers"
+    ]
+  },
+  {
+    "name": "NCBI E-utilities",
+    "category": "Scientific Research",
+    "url": "https://www.ncbi.nlm.nih.gov/home/develop/api/",
+    "tier_verification_url": "https://www.ncbi.nlm.nih.gov/home/develop/api/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "PubMed and NCBI data"
+    ]
+  },
+  {
+    "name": "Semantic Scholar Graph",
+    "category": "Scientific Research",
+    "url": "https://www.semanticscholar.org/product/api",
+    "tier_verification_url": "https://www.semanticscholar.org/product/api",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "scholarly papers"
+    ]
+  },
+  {
+    "name": "Crossref REST API",
+    "category": "Scientific Research",
+    "url": "https://api.crossref.org/",
+    "tier_verification_url": "https://api.crossref.org/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "DOI metadata"
+    ]
+  },
+  {
+    "name": "DataCite API",
+    "category": "Scientific Research",
+    "url": "https://api.datacite.org/",
+    "tier_verification_url": "https://api.datacite.org/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "research metadata"
+    ]
+  },
+  {
+    "name": "ORCID API",
+    "category": "Scientific Research",
+    "url": "https://orcid.org/developer-tools",
+    "tier_verification_url": "https://orcid.org/developer-tools",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "researcher identity"
+    ]
+  },
+  {
+    "name": "CORE API",
+    "category": "Scientific Research",
+    "url": "https://core.ac.uk/services/api",
+    "tier_verification_url": "https://core.ac.uk/services/api",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "open papers"
+    ]
+  },
+  {
+    "name": "Unpaywall API",
+    "category": "Scientific Research",
+    "url": "https://unpaywall.org/products/api",
+    "tier_verification_url": "https://unpaywall.org/products/api",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "open access discovery"
+    ]
+  },
+  {
+    "name": "OpenCitations",
+    "category": "Scientific Research",
+    "url": "https://opencitations.net/",
+    "tier_verification_url": "https://opencitations.net/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "citation data"
+    ]
+  },
+  {
+    "name": "Lens API",
+    "category": "Scientific Research",
+    "url": "https://www.lens.org/lens/user/subscriptions",
+    "tier_verification_url": "https://www.lens.org/lens/user/subscriptions",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "patents and papers"
+    ]
+  },
+  {
+    "name": "NASA APIs",
+    "category": "Science & Space",
+    "url": "https://api.nasa.gov/",
+    "tier_verification_url": "https://api.nasa.gov/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "space data"
+    ]
+  },
+  {
+    "name": "ESA Open Data",
+    "category": "Science & Space",
+    "url": "https://www.esa.int/",
+    "tier_verification_url": "https://www.esa.int/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "space data"
+    ]
+  },
+  {
+    "name": "USGS APIs",
+    "category": "Science & Earth Data",
+    "url": "https://www.usgs.gov/products/data-and-tools",
+    "tier_verification_url": "https://www.usgs.gov/products/data-and-tools",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "earth science"
+    ]
+  },
+  {
+    "name": "NOAA APIs",
+    "category": "Science & Climate Data",
+    "url": "https://www.ncei.noaa.gov/support/access-data-service-api-user-documentation",
+    "tier_verification_url": "https://www.ncei.noaa.gov/support/access-data-service-api-user-documentation",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "climate data"
+    ]
+  },
+  {
+    "name": "GBIF API",
+    "category": "Biodiversity & Life Science",
+    "url": "https://www.gbif.org/developer/summary",
+    "tier_verification_url": "https://www.gbif.org/developer/summary",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "biodiversity"
+    ]
+  },
+  {
+    "name": "iNaturalist API",
+    "category": "Biodiversity & Life Science",
+    "url": "https://www.inaturalist.org/pages/api+reference",
+    "tier_verification_url": "https://www.inaturalist.org/pages/api+reference",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "species data"
+    ]
+  },
+  {
+    "name": "EMBL-EBI APIs",
+    "category": "Bioinformatics",
+    "url": "https://www.ebi.ac.uk/services",
+    "tier_verification_url": "https://www.ebi.ac.uk/services",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "biology data"
+    ]
+  },
+  {
+    "name": "UniProt REST API",
+    "category": "Bioinformatics",
+    "url": "https://www.uniprot.org/help/api",
+    "tier_verification_url": "https://www.uniprot.org/help/api",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "protein data"
+    ]
+  },
+  {
+    "name": "PDB REST API",
+    "category": "Bioinformatics",
+    "url": "https://www.rcsb.org/docs/programmatic-access",
+    "tier_verification_url": "https://www.rcsb.org/docs/programmatic-access",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "protein structures"
+    ]
+  },
+  {
+    "name": "KEGG API",
+    "category": "Bioinformatics",
+    "url": "https://www.kegg.jp/kegg/rest/",
+    "tier_verification_url": "https://www.kegg.jp/kegg/rest/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "genomics"
+    ]
+  },
+  {
+    "name": "Ensembl REST",
+    "category": "Bioinformatics",
+    "url": "https://rest.ensembl.org/",
+    "tier_verification_url": "https://rest.ensembl.org/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "genomics"
+    ]
+  },
+  {
+    "name": "Europe PMC Annotations",
+    "category": "Bioinformatics",
+    "url": "https://www.ebi.ac.uk/europepmc/",
+    "tier_verification_url": "https://www.ebi.ac.uk/europepmc/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "biomedical annotations"
+    ]
+  },
+  {
+    "name": "Open Targets",
+    "category": "Bioinformatics",
+    "url": "https://platform.opentargets.org/",
+    "tier_verification_url": "https://platform.opentargets.org/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "drug discovery"
+    ]
+  },
+  {
+    "name": "data.gov.au",
+    "category": "Government & Civic Data",
+    "url": "https://www.data.gov.au/",
+    "tier_verification_url": "https://www.data.gov.au/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "Australian datasets"
+    ]
+  },
+  {
+    "name": "data.gov.in",
+    "category": "Government & Civic Data",
+    "url": "https://www.data.gov.in/",
+    "tier_verification_url": "https://www.data.gov.in/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "Indian datasets"
+    ]
+  },
+  {
+    "name": "data.gov.uk",
+    "category": "Government & Civic Data",
+    "url": "https://www.data.gov.uk/",
+    "tier_verification_url": "https://www.data.gov.uk/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "UK datasets"
+    ]
+  },
+  {
+    "name": "Data.gov.sg",
+    "category": "Government & Civic Data",
+    "url": "https://data.gov.sg/",
+    "tier_verification_url": "https://data.gov.sg/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "Singapore datasets"
+    ]
+  },
+  {
+    "name": "Canada Open Government",
+    "category": "Government & Civic Data",
+    "url": "https://open.canada.ca/",
+    "tier_verification_url": "https://open.canada.ca/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "Canadian datasets"
+    ]
+  },
+  {
+    "name": "NYC Open Data",
+    "category": "Government & Civic Data",
+    "url": "https://data.cityofnewyork.us/",
+    "tier_verification_url": "https://data.cityofnewyork.us/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "NYC datasets"
+    ]
+  },
+  {
+    "name": "Chicago Data Portal",
+    "category": "Government & Civic Data",
+    "url": "https://data.cityofchicago.org/",
+    "tier_verification_url": "https://data.cityofchicago.org/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "Chicago datasets"
+    ]
+  },
+  {
+    "name": "London Datastore",
+    "category": "Government & Civic Data",
+    "url": "https://data.london.gov.uk/",
+    "tier_verification_url": "https://data.london.gov.uk/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "London datasets"
+    ]
+  },
+  {
+    "name": "UK Parliament API",
+    "category": "Government & Civic Data",
+    "url": "https://developer.parliament.uk/",
+    "tier_verification_url": "https://developer.parliament.uk/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "parliamentary data"
+    ]
+  },
+  {
+    "name": "Congress.gov API",
+    "category": "Government & Civic Data",
+    "url": "https://api.congress.gov/",
+    "tier_verification_url": "https://api.congress.gov/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "US legislation"
+    ]
+  },
+  {
+    "name": "SEC EDGAR API",
+    "category": "Government & Civic Data",
+    "url": "https://www.sec.gov/edgar/sec-api-documentation",
+    "tier_verification_url": "https://www.sec.gov/edgar/sec-api-documentation",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "SEC filings"
+    ]
+  },
+  {
+    "name": "Federal Register API",
+    "category": "Government & Civic Data",
+    "url": "https://www.federalregister.gov/developers/documentation/api/v1",
+    "tier_verification_url": "https://www.federalregister.gov/developers/documentation/api/v1",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "US regulations"
+    ]
+  },
+  {
+    "name": "GovInfo API",
+    "category": "Government & Civic Data",
+    "url": "https://www.govinfo.gov/developers",
+    "tier_verification_url": "https://www.govinfo.gov/developers",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "government documents"
+    ]
+  },
+  {
+    "name": "Census API",
+    "category": "Government & Civic Data",
+    "url": "https://api.census.gov/data/key_signup.html",
+    "tier_verification_url": "https://api.census.gov/data/key_signup.html",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "demographics"
+    ]
+  },
+  {
+    "name": "BLS API",
+    "category": "Government & Civic Data",
+    "url": "https://data.bls.gov/registrationEngine/",
+    "tier_verification_url": "https://data.bls.gov/registrationEngine/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "labor statistics"
+    ]
+  },
+  {
+    "name": "BEA API",
+    "category": "Government & Civic Data",
+    "url": "https://apps.bea.gov/API/signup/",
+    "tier_verification_url": "https://apps.bea.gov/API/signup/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "economic data"
+    ]
+  },
+  {
+    "name": "EIA API",
+    "category": "Energy & Climate Data",
+    "url": "https://www.eia.gov/opendata/register.php",
+    "tier_verification_url": "https://www.eia.gov/opendata/register.php",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "energy data"
+    ]
+  },
+  {
+    "name": "Treasury Fiscal Data",
+    "category": "Government & Civic Data",
+    "url": "https://fiscaldata.treasury.gov/api/fiscal_service/",
+    "tier_verification_url": "https://fiscaldata.treasury.gov/api/fiscal_service/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "US fiscal data"
+    ]
+  },
+  {
+    "name": "World Bank Indicators",
+    "category": "Economic & Statistical Data",
+    "url": "https://datahelpdesk.worldbank.org/knowledgebase/articles/889392-about-the-indicators-api-documentation",
+    "tier_verification_url": "https://datahelpdesk.worldbank.org/knowledgebase/articles/889392-about-the-indicators-api-documentation",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "development data"
+    ]
+  },
+  {
+    "name": "Pixabay",
+    "category": "Images & Stock Media",
+    "url": "https://pixabay.com/api/docs/",
+    "tier_verification_url": "https://pixabay.com/api/docs/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "images"
+    ]
+  },
+  {
+    "name": "Pexels",
+    "category": "Images & Stock Media",
+    "url": "https://www.pexels.com/api/",
+    "tier_verification_url": "https://www.pexels.com/api/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "photos and videos"
+    ]
+  },
+  {
+    "name": "Unsplash",
+    "category": "Images & Stock Media",
+    "url": "https://unsplash.com/developers",
+    "tier_verification_url": "https://unsplash.com/developers",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "photos"
+    ]
+  },
+  {
+    "name": "Giphy",
+    "category": "Images & Stock Media",
+    "url": "https://developers.giphy.com/dashboard/",
+    "tier_verification_url": "https://developers.giphy.com/dashboard/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "GIFs"
+    ]
+  },
+  {
+    "name": "Tenor",
+    "category": "Images & Stock Media",
+    "url": "https://developers.google.com/tenor",
+    "tier_verification_url": "https://developers.google.com/tenor",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "GIFs"
+    ]
+  },
+  {
+    "name": "Flickr",
+    "category": "Images & Stock Media",
+    "url": "https://www.flickr.com/services/api/",
+    "tier_verification_url": "https://www.flickr.com/services/api/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "photos"
+    ]
+  },
+  {
+    "name": "Wikimedia Commons",
+    "category": "Images & Stock Media",
+    "url": "https://commons.wikimedia.org/w/api.php",
+    "tier_verification_url": "https://commons.wikimedia.org/w/api.php",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "media"
+    ]
+  },
+  {
+    "name": "Wikimedia APIs",
+    "category": "Images & Stock Media",
+    "url": "https://api.wikimedia.org/",
+    "tier_verification_url": "https://api.wikimedia.org/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "Wikimedia"
+    ]
+  },
+  {
+    "name": "Coverr",
+    "category": "Video & Streaming",
+    "url": "https://coverr.co/",
+    "tier_verification_url": "https://coverr.co/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "stock video"
+    ]
+  },
+  {
+    "name": "Pixabay Video",
+    "category": "Video & Streaming",
+    "url": "https://pixabay.com/api/docs/",
+    "tier_verification_url": "https://pixabay.com/api/docs/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "stock video"
+    ]
+  },
+  {
+    "name": "Freesound",
+    "category": "Audio & Sound",
+    "url": "https://freesound.org/apiv2/apply/",
+    "tier_verification_url": "https://freesound.org/apiv2/apply/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "audio"
+    ]
+  },
+  {
+    "name": "Internet Archive",
+    "category": "Media & Archives",
+    "url": "https://archive.org/developers/",
+    "tier_verification_url": "https://archive.org/developers/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "archive media"
+    ]
+  },
+  {
+    "name": "Listen Notes",
+    "category": "Podcasts & Radio",
+    "url": "https://www.listennotes.com/api/",
+    "tier_verification_url": "https://www.listennotes.com/api/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "podcasts"
+    ]
+  },
+  {
+    "name": "Podcast Index",
+    "category": "Podcasts & Radio",
+    "url": "https://podcastindex-org.github.io/docs-api/",
+    "tier_verification_url": "https://podcastindex-org.github.io/docs-api/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "podcasts"
+    ]
+  },
+  {
+    "name": "Radio Browser",
+    "category": "Podcasts & Radio",
+    "url": "https://www.radio-browser.info/",
+    "tier_verification_url": "https://www.radio-browser.info/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "internet radio"
+    ]
+  },
+  {
+    "name": "Jamendo",
+    "category": "Music Metadata",
+    "url": "https://developer.jamendo.com/",
+    "tier_verification_url": "https://developer.jamendo.com/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "music"
+    ]
+  },
+  {
+    "name": "MusicBrainz",
+    "category": "Music Metadata",
+    "url": "https://musicbrainz.org/doc/MusicBrainz_API",
+    "tier_verification_url": "https://musicbrainz.org/doc/MusicBrainz_API",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "music metadata"
+    ]
+  },
+  {
+    "name": "Last.fm Extended",
+    "category": "Music Metadata",
+    "url": "https://www.last.fm/api/account/create",
+    "tier_verification_url": "https://www.last.fm/api/account/create",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "music metadata"
+    ]
+  },
+  {
+    "name": "Discogs",
+    "category": "Music Metadata",
+    "url": "https://www.discogs.com/settings/developers",
+    "tier_verification_url": "https://www.discogs.com/settings/developers",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "music metadata"
+    ]
+  },
+  {
+    "name": "TheAudioDB Extended",
+    "category": "Music Metadata",
+    "url": "https://www.theaudiodb.com/api_guide.php",
+    "tier_verification_url": "https://www.theaudiodb.com/api_guide.php",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "artist and album data"
+    ]
+  },
+  {
+    "name": "ESPN API",
+    "category": "Sports Data",
+    "url": "https://www.espn.com/",
+    "tier_verification_url": "https://www.espn.com/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "sports data"
+    ]
+  },
+  {
+    "name": "Sportradar Developer",
+    "category": "Sports Data",
+    "url": "https://developer.sportradar.com/",
+    "tier_verification_url": "https://developer.sportradar.com/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "sports"
+    ]
+  },
+  {
+    "name": "SportsDB",
+    "category": "Sports Data",
+    "url": "https://www.thesportsdb.com/api.php",
+    "tier_verification_url": "https://www.thesportsdb.com/api.php",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "sports data"
+    ]
+  },
+  {
+    "name": "balldontlie NFL",
+    "category": "Sports Data",
+    "url": "https://www.balldontlie.io/",
+    "tier_verification_url": "https://www.balldontlie.io/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "NFL"
+    ]
+  },
+  {
+    "name": "OpenLigaDB",
+    "category": "Sports Data",
+    "url": "https://www.openligadb.de/",
+    "tier_verification_url": "https://www.openligadb.de/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "football data"
+    ]
+  },
+  {
+    "name": "Jolpica F1",
+    "category": "Motorsport",
+    "url": "https://api.jolpi.ca/ergast/f1/",
+    "tier_verification_url": "https://api.jolpi.ca/ergast/f1/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "Formula 1"
+    ]
+  },
+  {
+    "name": "Chess.com API",
+    "category": "Chess & Board Games",
+    "url": "https://www.chess.com/news/view/published-data-api",
+    "tier_verification_url": "https://www.chess.com/news/view/published-data-api",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "chess data"
+    ]
+  },
+  {
+    "name": "Lichess API",
+    "category": "Chess & Board Games",
+    "url": "https://lichess.org/api",
+    "tier_verification_url": "https://lichess.org/api",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "chess data"
+    ]
+  },
+  {
+    "name": "Blizzard API",
+    "category": "Gaming",
+    "url": "https://develop.battle.net/",
+    "tier_verification_url": "https://develop.battle.net/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "game data"
+    ]
+  },
+  {
+    "name": "IGDB API",
+    "category": "Gaming",
+    "url": "https://api-docs.igdb.com/",
+    "tier_verification_url": "https://api-docs.igdb.com/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "game database"
+    ]
+  },
+  {
+    "name": "RAWG API",
+    "category": "Gaming",
+    "url": "https://rawg.io/apidocs",
+    "tier_verification_url": "https://rawg.io/apidocs",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "game database"
+    ]
+  },
+  {
+    "name": "Board Game Atlas",
+    "category": "Chess & Board Games",
+    "url": "https://www.boardgameatlas.com/api/docs",
+    "tier_verification_url": "https://www.boardgameatlas.com/api/docs",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "board games"
+    ]
+  },
+  {
+    "name": "Open Trivia DB",
+    "category": "Gaming & Entertainment",
+    "url": "https://opentdb.com/api_config.php",
+    "tier_verification_url": "https://opentdb.com/api_config.php",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "trivia"
+    ]
+  },
+  {
+    "name": "Jikan",
+    "category": "Anime & Manga",
+    "url": "https://jikan.moe/",
+    "tier_verification_url": "https://jikan.moe/",
+    "tier_verification_status": "candidate-unverified",
+    "uses": [
+      "anime and manga"
+    ]
   }
 ]
