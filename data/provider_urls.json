@@ -2407,8 +2407,8 @@
   {
     "name": "GeoNames",
     "category": "Maps / Location (additional)",
-    "url": "http://www.geonames.org/export/web-services.html",
-    "tier_verification_url": "http://www.geonames.org/export/web-services.html",
+    "url": "https://www.geonames.org/export/web-services.html",
+    "tier_verification_url": "https://www.geonames.org/export/web-services.html",
     "tier_verification_status": "provider-homepage-fallback",
     "uses": [
       "geocoding",
