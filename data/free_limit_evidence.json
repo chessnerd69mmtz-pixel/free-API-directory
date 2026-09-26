@@ -88,8 +88,9 @@
     "notes": "Unauthenticated REST requests are limited to 60/hour per originating IP. Authenticated user requests generally have a 5,000/hour primary limit; search and secondary limits are separate.",
     "quota": {
       "type": "requests",
-      "hourly_requests_unauthenticated": 60,
-      "hourly_requests_authenticated": 5000
+      "hourly_requests": 60,
+      "authenticated_hourly_requests": 5000,
+      "notes": "60/hour unauthenticated; 5,000/hour authenticated user primary limit."
     }
   },
   {
@@ -113,7 +114,7 @@
     "notes": "Current catalog evidence records $200 introductory credit; concurrency limits are product/plan-specific and should not be treated as a monthly request quota.",
     "quota": {
       "type": "credit",
-      "credits_usd": 200
+      "credit_balance_usd": 200
     }
   },
   {
@@ -135,7 +136,7 @@
     "notes": "Current plan information records $5 in free API credits per month; credit-based allowance cannot be converted to requests without endpoint pricing.",
     "quota": {
       "type": "credit",
-      "monthly_credits_usd": 5
+      "credit_balance_usd": 5
     }
   },
   {
@@ -146,7 +147,7 @@
     "notes": "Current official pricing/FAQ evidence records $50 free API credits for supported usage; credits are consumed rather than reset on a monthly schedule.",
     "quota": {
       "type": "credit",
-      "credits_usd": 50
+      "credit_balance_usd": 50
     }
   }
 ]
