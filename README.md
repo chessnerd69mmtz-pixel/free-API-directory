@@ -48,13 +48,20 @@ A URL-only catalog of additional providers imported from the supplied source lis
 
 ## Developer tools
 
-- [Find an API](finder.html) — search providers with free-tier, card, category and verification filters.
-- [Find the Best API Provider](recommend.html) — describe your role, objective and constraints and receive up to 10 explainable provider matches ordered by documented fit.
-- [Compare APIs](compare.html) — compare up to four providers without sending keys anywhere.
-- [API profiles](api.html) — detailed provider pages with verification status, capabilities and generic code templates.
-- [Verification history](changes.html) — official-source change monitoring and verification records.
-
-The website never requires an API key belonging to the directory owner. Unknown provider facts remain explicitly marked as **Not publicly stated**; source-listed/candidate expansion entries are not presented as independently verified. The automated monitor uses only public provider pages and GitHub Actions' built-in repository token; it does not call provider APIs on the site's behalf.
+- [Find an API](finder.html) — search providers with free-tier, card, category, verification and explicit-region filters.
+- [Find the Best API Provider](recommend.html) — describe role, objective and constraints and receive up to 10 explainable matches.
+- [Build an API Stack](stack.html) — assemble a multi-category starting stack for a project.
+- [Free-Tier Calculator](calculator.html) — compare requested volume with documented allowance information without inventing unknown quotas.
+- [Compare APIs](compare.html) — compare providers without sending keys to the directory.
+- [API profiles](api.html) — inspect provider capabilities, source links and verification.
+- [API Playground](playground.html) — prepare browser HTTP requests where provider CORS permits them.
+- [Code Generator](code.html) — generate generic Python, JavaScript and cURL starter requests.
+- [My API Collections](collections.html) — save personal provider shortlists locally.
+- [Verification / Health](health.html) — inspect verification freshness; scheduled GitHub Actions check public source URLs.
+- [API Security Center](security.html) — key-handling and secret-management guidance.
+- [Submit an API](submit.html) — create a local review submission without automatically changing the catalog.
+- [Student Mode](student.html) — student-focused free and research API discovery.
+- [Verification history](changes.html) — review catalog verification records.
 
 
 ## September 2026 expansion
