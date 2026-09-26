@@ -506,7 +506,7 @@ async function freeCalculator(){
  shell('<section class="hero"><h1>💰 Free-Tier Calculator</h1><p>Check documented free allowances against your workload. The calculator distinguishes official evidence, community-listed information and genuinely unknown limits.</p></section>'+
  '<div class="card tool">'+
  '<select id="calcprovider" class="select">'+providerOptions(a)+'</select>'+
- '<select id="calcmetric" class="select"><option value="monthly_requests">Requests / month</option><option value="daily_requests">Requests / day</option><option value="rpm">Peak requests / minute</option><option value="monthly_tokens">Tokens / month</option><option value="daily_tokens">Tokens / day</option><option value="tpm">Peak tokens / minute</option><option value="monthly_credits_usd">Credits / month (USD)</option><option value="daily_units">Provider units / day</option></select>'+
+ '<select id="calcmetric" class="select"><option value="monthly_requests">Requests / month</option><option value="daily_requests">Requests / day</option><option value="hourly_requests">Requests / hour</option><option value="rpm">Peak requests / minute</option><option value="monthly_tokens">Tokens / month</option><option value="daily_tokens">Tokens / day</option><option value="tpm">Peak tokens / minute</option><option value="monthly_credits_usd">Recurring credits / month (USD)</option><option value="credit_balance_usd">One-time credit balance (USD)</option><option value="daily_units">Provider units / day</option></select>'+
  '<input id="calcreq" class="input" type="number" min="0" step="any" placeholder="Enter expected usage">'+
  '<button id="calcgo" class="btn">Calculate</button></div><div id="calcr"></div>');
  function fmt(v){return Number.isFinite(v)?v.toLocaleString(undefined,{maximumFractionDigits:2}):"Not publicly stated";}
@@ -514,7 +514,7 @@ async function freeCalculator(){
  $("#calcgo").onclick=function(){
    const p=a.find(x=>x.name===$("#calcprovider").value), metric=$("#calcmetric").value, value=Number($("#calcreq").value), e=limitEvidenceFor(p&&p.name,evidence);
    if(!p||!Number.isFinite(value)||value<0){$("#calcr").innerHTML='<div class="card notice">Choose a provider and enter a non-negative usage value.</div>';return;}
-   const q=e&&e.quota||null, map={monthly_requests:"monthly_requests",daily_requests:"daily_requests",rpm:"rpm",monthly_tokens:"monthly_tokens",daily_tokens:"daily_tokens",tpm:"tpm",monthly_credits_usd:"monthly_credits_usd",daily_units:"daily_units"};
+   const q=e&&e.quota||null, map={monthly_requests:"monthly_requests",daily_requests:"daily_requests",hourly_requests:"hourly_requests",rpm:"rpm",monthly_tokens:"monthly_tokens",daily_tokens:"daily_tokens",tpm:"tpm",monthly_credits_usd:"monthly_credits_usd",credit_balance_usd:"credit_balance_usd",daily_units:"daily_units"};
    const key=map[metric], result=compare(value,q&&q[key]);
    const community=isCommunity(p)||String(p.verification_status||"").includes("community");
    const source=e&&e.source_url ? link(e.source_url,"Source") : (p.evidence_sources&&p.evidence_sources.length?link(p.evidence_sources[0],"Catalog source"):"");
