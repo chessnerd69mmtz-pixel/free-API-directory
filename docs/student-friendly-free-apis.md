@@ -135,6 +135,77 @@ This table is based on the supplied 200-provider list. It is a discovery table: 
 | 129 | EU Open Data Portal (no key) | https://data.europa.eu/en |
 | 130 | UN Data API (no key) | https://data.un.org |
 
+| 131 | WHO Global Health Observatory API (no key) | https://www.who.int/data/gho/info/gho-odata-api |
+| 132 | World Air Quality Index API | https://aqicn.org/data-platform/token |
+| 133 | Unsplash API | https://unsplash.com/developers |
+| 134 | Pexels API | https://www.pexels.com/api/new |
+| 135 | Pixabay API | https://pixabay.com/api/docs |
+| 136 | Giphy API | https://developers.giphy.com/dashboard |
+| 137 | Tenor API | https://tenor.com/gifapi/documentation |
+| 138 | Cloudinary API | https://cloudinary.com/users/register/free |
+| 139 | remove.bg API | https://www.remove.bg/api |
+| 140 | DiceBear Avatars (no key) | https://www.dicebear.com |
+| 141 | TheMealDB (no key) | https://www.themealdb.com/api.php |
+| 142 | TheCocktailDB (no key) | https://www.thecocktaildb.com/api.php |
+| 143 | Spoonacular API | https://spoonacular.com/food-api/console#Dashboard |
+| 144 | Edamam Recipe Search API | https://developer.edamam.com/edamam-recipe-api |
+| 145 | Adzuna API | https://developer.adzuna.com/signup |
+| 146 | Remotive API (no key) | https://remotive.com/api-documentation |
+| 147 | Arbeitnow API (no key) | https://www.arbeitnow.com/api |
+| 148 | USAJobs API | https://developer.usajobs.gov/apirequest |
+| 149 | Have I Been Pwned API | https://haveibeenpwned.com/API/Key |
+| 150 | VirusTotal API | https://www.virustotal.com/gui/join-us |
+| 151 | AbuseIPDB API | https://www.abuseipdb.com/register |
+| 152 | CatFact.ninja (no key) | https://catfact.ninja |
+| 153 | Dog CEO API (no key) | https://dog.ceo/dog-api |
+| 154 | RandomFox API (no key) | https://randomfox.ca/floof |
+| 155 | CATAAS (no key) | https://cataas.com |
+| 156 | Chuck Norris Jokes API (no key) | https://api.chucknorris.io |
+| 157 | JokeAPI (no key) | https://sv443.net/jokeapi/v2 |
+| 158 | icanhazdadjoke (no key) | https://icanhazdadjoke.com |
+| 159 | Bacon Ipsum API (no key) | https://baconipsum.com/json-api |
+| 160 | Corporate BS Generator (no key) | https://corporatebs-generator.sameerkumar.website |
+| 161 | Agify.io (no key) | https://agify.io |
+| 162 | Genderize.io (no key) | https://genderize.io |
+| 163 | Nationalize.io (no key) | https://nationalize.io |
+| 164 | API Ninjas (multi-endpoint) | https://api-ninjas.com/register |
+| 165 | CSVJSON tools (no key) | https://csvjson.com |
+| 166 | QuickChart API (no key) | https://quickchart.io |
+| 167 | Chart-img API | https://chart-img.com |
+| 168 | Colormind API (no key) | http://colormind.io/api-access |
+| 169 | Lorem Ipsum Generator (loripsum, no key) | https://loripsum.net/api |
+| 170 | Random.org API | https://api.random.org/api-keys |
+| 171 | Newton API (math, no key) | https://newton.vercel.app |
+| 172 | World Time API (no key) | http://worldtimeapi.org |
+| 173 | TimeZoneDB API | https://timezonedb.com/register |
+| 174 | Calendarific API | https://calendarific.com/signup |
+| 175 | Abstract API Holidays | https://www.abstractapi.com/api/holidays-api |
+| 176 | GitHub REST API | https://github.com/settings/tokens |
+| 177 | GitLab API | https://gitlab.com/-/user_settings/personal_access_tokens |
+| 178 | Stack Exchange API | https://api.stackexchange.com |
+| 179 | npm Registry API (no key) | https://registry.npmjs.org |
+| 180 | PyPI JSON API (no key) | https://warehouse.pypa.io/api-reference/json.html |
+| 181 | crates.io API (no key) | https://crates.io/data-access |
+| 182 | Libraries.io API | https://libraries.io/api |
+| 183 | LibreTranslate API | https://portal.libretranslate.com |
+| 184 | MyMemory Translation API (no key) | https://mymemory.translated.net/doc/spec.php |
+| 185 | Yandex Translate API | https://yandex.com/dev/translate |
+| 186 | Merriam-Webster Dictionary API | https://dictionaryapi.com/register/index |
+| 187 | iNaturalist API (no key) | https://api.inaturalist.org/v1/docs |
+| 188 | GBIF API (no key) | https://www.gbif.org/developer/summary |
+| 189 | eBird API | https://ebird.org/api/keygen |
+| 190 | Open Food Facts API (no key) | https://world.openfoodfacts.org/data |
+| 191 | Fake Store API (no key) | https://fakestoreapi.com |
+| 192 | Platzi Fake Store API (no key) | https://fakeapi.platzi.com |
+| 193 | REST Countries v3.1 (no key) | https://restcountries.com/v3.1 |
+| 194 | CoinDesk BPI API (no key) | https://www.coindesk.com/coindesk-api |
+| 195 | Binance Public API (no key) | https://binance-docs.github.io/apidocs |
+| 196 | Alpaca Market Data API | https://alpaca.markets/docs/market-data |
+| 197 | Finnhub API | https://finnhub.io/register |
+| 198 | Marketstack API | https://marketstack.com/product |
+| 199 | CurrencyAPI.com | https://currencyapi.com/pricing |
+| 200 | Open Exchange Rates | https://openexchangerates.org/signup |
+
 ## Research notes
 
 The table has been cross-checked against current provider documentation where available. Important findings:
