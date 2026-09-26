@@ -21,8 +21,8 @@ This pass enriches the directory using current web sources while preserving expl
 
 ## Changes
 
-- Provider catalog expanded from 669 to 869 records.
-- 200 new keyless/public API candidates were added from the secondary public-API cross-check.
+- Canonical catalog expanded to 2,715 unique providers by merging the repository's 869 curated records with its 1,716-record and 338-record maintained expansion sources, plus four newly first-party-reviewed providers.
+- All derived website indexes were regenerated from the canonical catalog.
 - Existing records were enriched where secondary sources supplied missing authentication, HTTPS, CORS or descriptions.
 - Additional rate-limit metadata was added where a concrete figure was available.
 - Selected provider tiers were verified against primary documentation.
@@ -38,8 +38,8 @@ This pass enriches the directory using current web sources while preserving expl
 
 ## Current snapshot
 
-- Providers: 869
-- Categories: 139
+- Providers: 2,715
+- Categories: 150
 - Free access recorded: 503
 - No free tier recorded: 4
 - Free status unresolved: 362
@@ -71,3 +71,17 @@ The override layer is deliberately additive: it never converts an unresolved fie
 ## Important limitation
 
 The broad web contains thousands of APIs and no single source reliably exposes every provider's current quota, card requirement, regional restrictions, commercial license, rate limits and uptime. Where first-party evidence could not be established, the directory continues to display an explicit unknown/unverified state rather than inventing a value.
+
+
+## Additional first-party research — 2026-09-26
+
+- Cerebras Inference: official rate-limit/pricing documentation reviewed; current record distinguishes the $5, 30-day trial from a permanent free tier.
+- Deepgram: official pricing reviewed; current record includes the $200 new-account credit and current concurrency figures shown by the provider.
+- ElevenLabs: official pricing reviewed; current record includes the $0 Free plan and 10,000 monthly credits.
+- Cloudflare Workers AI: official pricing reviewed; current record includes 10,000 Neurons/day and the 00:00 UTC reset.
+- Google Gemini API: official pricing reviewed; the current page states free input/output tokens for supported models and documents free-tier data-use differences from paid tiers. citeturn2search0
+- Cloudflare Workers AI pricing was also independently confirmed from the current provider documentation: 10,000 Neurons/day on the Free plan with daily reset at 00:00 UTC. citeturn2search1
+
+## Synchronization guarantee
+
+`data/providers.json` is the canonical provider set. `data/provider_profiles.json`, `data/provider_urls.json`, `data/catalog-index.json`, `data/categories.json`, and the website runtime all consume the same merged provider universe. The frontend cache/version token was advanced after regeneration so stale catalog-index responses are not intentionally retained.
