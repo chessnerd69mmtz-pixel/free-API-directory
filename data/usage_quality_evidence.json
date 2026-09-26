@@ -1,0 +1,484 @@
+[
+  {
+    "name": "Cohere",
+    "source_type": "official",
+    "verified_at": "2026-09-26",
+    "source_urls": [
+      "https://docs.cohere.com/v1/docs/rate-limits",
+      "https://docs.cohere.com/docs/cohere-faqs"
+    ],
+    "usage_quality": {
+      "free_access": "Trial/evaluation keys are free but limited to 1,000 API calls/month.",
+      "rate_limit": "Endpoint/model-specific. Current official table includes Chat 20 RPM for trial keys; Audio Transcriptions 5 RPM; Rerank 10 RPM; Tokenize 100 RPM; Default 500 RPM; Embed 2,000 inputs/min.",
+      "commercial_use": "Cohere states startups and commercial entities can use its technology for production/commercial purposes under its applicable guidelines.",
+      "payment_method": "Not required for trial-key access according to the cited trial-key documentation; paid production use has metered billing.",
+      "model_dependency": "Yes"
+    }
+  },
+  {
+    "name": "Together AI",
+    "source_type": "official",
+    "verified_at": "2026-09-26",
+    "source_urls": [
+      "https://support.together.ai/articles/1862638756-changes-to-free-tier-and-billing-july-2025",
+      "https://support.together.ai/articles/2650779384-build-tiers-required-spend-and-rate-limits"
+    ],
+    "usage_quality": {
+      "free_access": "No current free trial. Platform access requires a minimum $5 credit purchase.",
+      "rate_limit": "Build Tier 1 (at $5 total spend): 600 RPM for LLMs, 3,000 RPM embeddings, and 500,000 RPM rerank; limits rise with spending tier.",
+      "payment_method": "Credit/debit card required to purchase credits; prepaid cards are not supported.",
+      "free_access_status": "not-free-currently",
+      "source_note": "This supersedes older catalog claims describing signup free credits."
+    }
+  },
+  {
+    "name": "DeepSeek API",
+    "source_type": "official",
+    "verified_at": "2026-09-26",
+    "source_urls": [
+      "https://api-docs.deepseek.com/quick_start/pricing/",
+      "https://api-docs.deepseek.com/quick_start/rate_limit/"
+    ],
+    "usage_quality": {
+      "free_access": "Current pricing documentation documents paid token billing; no universal free API quota is stated on the cited pricing page.",
+      "rate_limit": "Concurrency is account-level and currently listed as 2,500 for deepseek-flash and 500 for deepseek-v4-pro.",
+      "model_dependency": "Yes",
+      "deprecation_notes": "Legacy deepseek-v4-flash aliases are still accepted but requests are served by DeepSeek-V4.1-Flash and billed at the Flash price."
+    }
+  },
+  {
+    "name": "Fireworks AI",
+    "source_type": "official",
+    "verified_at": "2026-09-26",
+    "source_urls": [
+      "https://fireworks.ai/pricing"
+    ],
+    "usage_quality": {
+      "free_access": "$1 in free credits for Serverless Inference.",
+      "rate_limit": "High rate limits are advertised; exact limits vary by workload and plan.",
+      "payment_method": "Not publicly stated in the cited pricing page.",
+      "billing_model": "Pay-per-token Serverless Inference with prepaid/free introductory credit."
+    }
+  },
+  {
+    "name": "Jina AI",
+    "source_type": "official",
+    "verified_at": "2026-09-26",
+    "source_urls": [
+      "https://jina.ai/en-US/contact-sales/"
+    ],
+    "usage_quality": {
+      "free_access": "Free API-key access is documented.",
+      "rate_limit": "Free API key: 100 RPM and 100K TPM generally; no-key Reader API: 20 RPM; endpoint-specific limits apply.",
+      "data_training": "Jina states API requests, inputs and outputs are not used to train its models.",
+      "endpoint_dependency": "Yes"
+    }
+  },
+  {
+    "name": "Perplexity API",
+    "source_type": "official",
+    "verified_at": "2026-09-26",
+    "source_urls": [
+      "https://hub-prod.perplexity.ai/hub/faq/pplx-api"
+    ],
+    "usage_quality": {
+      "free_access": "Perplexity Pro subscribers receive $5 of monthly API credits.",
+      "payment_method": "A valid payment method is required for API billing.",
+      "billing_model": "Credit-based API billing."
+    }
+  },
+  {
+    "name": "Perplexity API",
+    "source_type": "community",
+    "verified_at": "2026-09-26",
+    "source_urls": [
+      "https://community.perplexity.ai/t/starting-new-user-costs/5088"
+    ],
+    "usage_quality": {
+      "minimum_purchase": "A Perplexity staff response in the official API community forum stated the minimum was reduced to $10 in June 2026.",
+      "note": "Community/forum source; retained separately from primary pricing claims."
+    }
+  },
+  {
+    "name": "Hugging Face Inference Providers",
+    "source_type": "official",
+    "verified_at": "2026-09-26",
+    "source_urls": [
+      "https://huggingface.co/docs/inference-providers/pricing"
+    ],
+    "usage_quality": {
+      "free_access": "Free users receive $0.10/month in inference-provider credits, subject to change.",
+      "paid_transition": "Extra usage requires purchased credits/pay-as-you-go.",
+      "payment_method": "Payment requirements for purchasing additional credits are not stated on the cited pricing page.",
+      "provider_dependency": "Prices and model availability depend on the selected inference provider."
+    }
+  },
+  {
+    "name": "Stability AI",
+    "source_type": "official",
+    "verified_at": "2026-09-26",
+    "source_urls": [
+      "https://platform.stability.ai/pricing",
+      "https://platform.stability.ai/docs",
+      "https://stability.ai/license"
+    ],
+    "usage_quality": {
+      "free_access": "25 free API credits for new accounts using Google sign-in.",
+      "credit_value": "1 API credit = $0.01; 25 free credits therefore represent $0.25 of API credit.",
+      "authentication": "API key in Authorization header.",
+      "commercial_use": "API consumption is credit-priced. For self-hosted Core Models, Stability's license distinguishes commercial use and gives specific conditions for organizations above $1M annual revenue.",
+      "payment_method": "Additional credits are purchased after free credits are exhausted."
+    }
+  },
+  {
+    "name": "Voyage AI (embeddings)",
+    "source_type": "official",
+    "verified_at": "2026-09-26",
+    "source_urls": [
+      "https://docs.voyageai.com/docs/pricing",
+      "https://docs.voyageai.com/docs/rate-limits"
+    ],
+    "usage_quality": {
+      "free_access": "First 200M tokens are free for voyage-4-large/voyage-4/voyage-4-lite/voyage-context-4/voyage-code-3; first 50M for listed older models.",
+      "rate_limit": "Tier 1 examples: 2,000 RPM with model-specific TPM; voyage-3.5 is listed at 8M TPM and 2,000 RPM.",
+      "payment_method": "Tier 1 requires a payment method, while free tokens still apply.",
+      "model_dependency": "Yes"
+    }
+  },
+  {
+    "name": "xAI API",
+    "source_type": "official",
+    "verified_at": "2026-09-26",
+    "source_urls": [
+      "https://docs.x.ai/developers/rate-limits",
+      "https://docs.x.ai/developers/pricing",
+      "https://docs.x.ai/developers/advanced-api-usage/regions"
+    ],
+    "usage_quality": {
+      "free_access": "No free quota is asserted by the cited pricing/billing pages; access uses prepaid or invoiced billing.",
+      "rate_limit": "Per-model RPS and TPM limits vary by spend tier; Tier 0 is $0 spend and current examples include 37 RPS / 10M TPM for listed Grok text models.",
+      "regions": "US regional endpoint is available at https://us.api.x.ai/v1 and currently serves only listed models such as grok-4.7 and grok-4.6; US endpoint pricing carries a 10% premium.",
+      "model_dependency": "Yes"
+    }
+  },
+  {
+    "name": "Mistral AI",
+    "source_type": "official",
+    "verified_at": "2026-09-26",
+    "source_urls": [
+      "https://docs.mistral.ai/getting-started/quickstarts/studio/activate-and-generate-api-key",
+      "https://docs.mistral.ai/admin/billing-usage/usage-limits",
+      "https://docs.mistral.ai/resources/known-limitations"
+    ],
+    "usage_quality": {
+      "free_access": "Free mode enables API access and requires no credit card.",
+      "rate_limit": "Per-model and plan-specific; completion limits include tokens/minute and requests/second.",
+      "model_dependency": "Yes",
+      "context_limits": "Current documentation lists model-specific context windows, ranging from 128K to 256K tokens for several current models."
+    }
+  },
+  {
+    "name": "Groq",
+    "source_type": "official",
+    "verified_at": "2026-09-26",
+    "source_urls": [
+      "https://console.groq.com/docs/rate-limits",
+      "https://console.groq.com/docs/billing-faqs",
+      "https://console.groq.com/docs/models"
+    ],
+    "usage_quality": {
+      "free_access": "Free-plan access exists with model-specific limits.",
+      "rate_limit": "Limits can include RPM, RPD, TPM, TPD, audio seconds/hour, audio seconds/day, ITPM and OTPM; exact values are model-specific.",
+      "payment_method": "Payment method is required to upgrade to Developer tier; free-tier use is distinct from paid billing.",
+      "model_dependency": "Yes",
+      "observability": "Rate-limit headers expose remaining requests/tokens and reset times.",
+      "deprecation_notes": "Preview models are intended for evaluation and may be discontinued at short notice."
+    }
+  },
+  {
+    "name": "Google Gemini API",
+    "source_type": "official",
+    "verified_at": "2026-09-26",
+    "source_urls": [
+      "https://ai.google.dev/gemini-api/docs/rate-limits",
+      "https://ai.google.dev/gemini-api/docs/pricing",
+      "https://ai.google.dev/gemini-api/docs/billing"
+    ],
+    "usage_quality": {
+      "free_access": "Free tier is available without a billing account for eligible usage.",
+      "rate_limit": "Model- and usage-tier-specific RPM/TPM/RPD.",
+      "reset": "RPD quotas reset at midnight Pacific time.",
+      "model_dependency": "Yes",
+      "commercial_terms": "Free-tier data-use terms differ from paid tiers; check current provider terms before commercial deployment."
+    }
+  },
+  {
+    "name": "Anthropic API",
+    "source_type": "official",
+    "verified_at": "2026-09-26",
+    "source_urls": [
+      "https://www.anthropic.com/pricing#api",
+      "https://docs.anthropic.com/en/api/getting-started"
+    ],
+    "usage_quality": {
+      "free_access": "No free API quota is asserted in the cited API pricing/key documentation.",
+      "api_billing": "Usage is paid API billing.",
+      "free_account_vs_api": "A consumer Claude account should not be treated as an API free tier."
+    }
+  },
+  {
+    "name": "Cloudflare Workers AI",
+    "source_type": "official",
+    "verified_at": "2026-09-26",
+    "source_urls": [
+      "https://developers.cloudflare.com/workers-ai/platform/pricing/"
+    ],
+    "usage_quality": {
+      "free_access": "10,000 Neurons/day.",
+      "reset": "Daily at 00:00 UTC.",
+      "unit": "Neuron-based allocation.",
+      "plan_scope": "Workers Free and Workers Paid include the documented daily allocation before paid overage."
+    }
+  },
+  {
+    "name": "Deepgram",
+    "source_type": "official",
+    "verified_at": "2026-09-26",
+    "source_urls": [
+      "https://deepgram.com/pricing"
+    ],
+    "usage_quality": {
+      "free_access": "$200 introductory API credit for new accounts.",
+      "reset": "No recurring reset; credit is consumed until used.",
+      "concurrency": "Current pricing lists concurrency limits by API family/plan.",
+      "credit_model": "Credit-based rather than request-count-based."
+    }
+  },
+  {
+    "name": "AssemblyAI (speech-to-text)",
+    "source_type": "official",
+    "verified_at": "2026-09-26",
+    "source_urls": [
+      "https://www.assemblyai.com/pricing",
+      "https://support.assemblyai.com/articles/5370767329-can-i-sign-up-for-free"
+    ],
+    "usage_quality": {
+      "free_access": "$50 free API credits.",
+      "reset": "Credit is consumed until used; official FAQ says credits do not expire.",
+      "payment_method": "Official FAQ states no card is required for the free tier."
+    }
+  },
+  {
+    "name": "ElevenLabs",
+    "source_type": "official",
+    "verified_at": "2026-09-26",
+    "source_urls": [
+      "https://elevenlabs.io/pricing"
+    ],
+    "usage_quality": {
+      "free_access": "Free plan with 10,000 credits/month.",
+      "reset": "Monthly.",
+      "unit": "Credits rather than requests."
+    }
+  },
+  {
+    "name": "Brave Search API",
+    "source_type": "official",
+    "verified_at": "2026-09-26",
+    "source_urls": [
+      "https://api-dashboard.search.brave.com/app/plans",
+      "https://api-dashboard.search.brave.com/documentation"
+    ],
+    "usage_quality": {
+      "free_access": "$5 API credits/month.",
+      "reset": "Monthly.",
+      "payment_method": "Current plan documentation states a credit card is required to access the credit without prepaid spend.",
+      "unit": "Dollar-denominated credit rather than requests."
+    }
+  },
+  {
+    "name": "OpenRouter",
+    "source_type": "official",
+    "verified_at": "2026-09-26",
+    "source_urls": [
+      "https://openrouter.ai/pricing",
+      "https://openrouter.ai/docs"
+    ],
+    "usage_quality": {
+      "free_access": "Free models are available on the Free plan.",
+      "rate_limit": "Free-plan request limits depend on the current free-model policy; current directory evidence records 50 requests/day with 20 RPM, and 1,000/day after qualifying credit purchase.",
+      "model_dependency": "Yes",
+      "note": "Free-model availability and limits can change as the model pool changes."
+    }
+  },
+  {
+    "name": "GitHub API",
+    "source_type": "official",
+    "verified_at": "2026-09-26",
+    "source_urls": [
+      "https://docs.github.com/en/rest/using-the-rest-api/rate-limits-for-the-rest-api"
+    ],
+    "usage_quality": {
+      "rate_limit": "REST primary limit: 60 requests/hour unauthenticated per originating IP; generally 5,000 requests/hour authenticated per user. Search and secondary limits are separate.",
+      "authentication": "Unauthenticated endpoints exist, but authenticated requests receive higher primary limits.",
+      "endpoint_dependency": "Yes"
+    }
+  },
+  {
+    "name": "MongoDB Atlas",
+    "source_type": "official",
+    "verified_at": "2026-09-26",
+    "source_urls": [
+      "https://www.mongodb.com/docs/atlas/reference/free-shared-limitations/",
+      "https://www.mongodb.com/docs/atlas/reference/atlas-limits/",
+      "https://www.mongodb.com/docs/atlas/api/api-rate-limit/"
+    ],
+    "usage_quality": {
+      "free_access": "Atlas Free cluster.",
+      "storage": "0.5 GB.",
+      "throughput": "100 operations/second for Free clusters.",
+      "data_transfer": "10 GB in + 10 GB out in a rolling 7-day period.",
+      "connections": "Maximum 500 connections.",
+      "region_limits": "Free clusters are available only in a subset of AWS, Google Cloud and Azure regions.",
+      "lifecycle": "Free clusters can automatically pause after 30 days of inactivity with zero connections.",
+      "cluster_count": "One Free cluster per project.",
+      "endpoint_dependency": "Yes"
+    }
+  },
+  {
+    "name": "Firebase",
+    "source_type": "official",
+    "verified_at": "2026-09-26",
+    "source_urls": [
+      "https://firebase.google.com/pricing"
+    ],
+    "usage_quality": {
+      "free_access": "Spark (no-cost) plan.",
+      "payment_method": "No payment method needed for Spark plan.",
+      "scope": "Many no-cost quotas are project-level rather than app-level.",
+      "examples": "Realtime Database includes up to 1 GB stored and 360 MB/day download; Hosting includes 10 GB storage and 360 MB/day data transfer; other products have product-specific quotas.",
+      "quota_dependency": "Product-specific"
+    }
+  },
+  {
+    "name": "Render",
+    "source_type": "official",
+    "verified_at": "2026-09-26",
+    "source_urls": [
+      "https://render.com/docs/free"
+    ],
+    "usage_quality": {
+      "free_access": "Free instances for supported service types.",
+      "monthly_allowance": "750 Free instance hours per workspace per calendar month.",
+      "reset": "Monthly.",
+      "database": "Free Postgres is 1 GB and expires 30 days after creation, with a 14-day upgrade grace period before deletion.",
+      "networking": "Free web services cannot send outbound traffic on SMTP ports 25, 465 or 587.",
+      "storage": "Free web-service filesystem changes are not persistent."
+    }
+  },
+  {
+    "name": "Netlify",
+    "source_type": "official",
+    "verified_at": "2026-09-26",
+    "source_urls": [
+      "https://www.netlify.com/pricing/",
+      "https://docs.netlify.com/manage/accounts-and-billing/billing/billing-for-credit-based-plans/credit-based-pricing-plans/"
+    ],
+    "usage_quality": {
+      "free_access": "$0 Free plan.",
+      "monthly_allowance": "300 credits/month with a hard limit.",
+      "reset": "Monthly billing period.",
+      "overage": "Free plan has no automatic recharge.",
+      "deployment": "Git/API/AI deployment, deploy previews and CDN included."
+    }
+  },
+  {
+    "name": "Vercel",
+    "source_type": "official",
+    "verified_at": "2026-09-26",
+    "source_urls": [
+      "https://vercel.com/docs/plans/hobby",
+      "https://vercel.com/docs/functions/limitations",
+      "https://vercel.com/docs/limits"
+    ],
+    "usage_quality": {
+      "free_access": "Hobby plan is free and aimed at developers/personal projects.",
+      "monthly_allowance": "1,000,000 function invocations; 100 GB/month Fast Data Transfer; 4 CPU-hours active compute; 360 GB-hours provisioned memory.",
+      "execution": "Hobby Functions support up to 300s max duration with Fluid Compute; legacy/non-fluid behavior differs.",
+      "limits": "Project and deployment limits also apply.",
+      "commercial_scope": "The cited Hobby documentation describes it as intended for personal projects; commercial suitability should be checked against current Vercel terms."
+    }
+  },
+  {
+    "name": "Upstash",
+    "source_type": "official",
+    "verified_at": "2026-09-26",
+    "source_urls": [
+      "https://upstash.com/docs/redis/help/faq",
+      "https://upstash.com/docs/redis/troubleshooting/max_request_size_exceeded"
+    ],
+    "usage_quality": {
+      "free_access": "Free Redis database tier.",
+      "request_limit": "10,000 requests/day for a Free database according to current FAQ.",
+      "max_request_size": "10 MB per request.",
+      "max_record_size": "100 MB per record.",
+      "upgrade": "Adding a payment method upgrades the database to a paid plan.",
+      "failure_behavior": "Commands above free request limits return an exception."
+    }
+  },
+  {
+    "name": "Baseten",
+    "source_type": "official",
+    "verified_at": "2026-09-26",
+    "source_urls": [
+      "https://www.baseten.co/pricing/"
+    ],
+    "usage_quality": {
+      "free_access": "New accounts receive free credits to experiment with deployments.",
+      "credit_amount": "Current public pricing page does not state a universal fixed dollar amount.",
+      "security": "Baseten states SOC 2 Type II certification and HIPAA compliance.",
+      "pricing_model": "Compute is usage-priced by GPU/CPU resources."
+    }
+  },
+  {
+    "name": "Runpod",
+    "source_type": "official",
+    "verified_at": "2026-09-26",
+    "source_urls": [
+      "https://www.runpod.io/agents",
+      "https://www.runpod.io/product/serverless"
+    ],
+    "usage_quality": {
+      "free_access": "Free account; no credit card required is stated on the current Serverless/Agents page.",
+      "free_credits": "$1,000 credits are available through the selective Startup Program, not as a universal signup allowance.",
+      "regions": "31 regions are advertised for Serverless agent workloads.",
+      "billing": "Serverless billing is per second, rounded up to the nearest second.",
+      "distinction": "Startup-program credits must not be represented as the standard free-tier allowance."
+    }
+  },
+  {
+    "name": "Modal",
+    "source_type": "official",
+    "verified_at": "2026-09-26",
+    "source_urls": [
+      "https://modal.com/pricing"
+    ],
+    "usage_quality": {
+      "free_access": "Starter includes free compute; the public pricing page lists limited free usage.",
+      "academic_credits": "Graduate students, labs and researchers can receive up to $10,000 in free compute credits through the academic program.",
+      "startup_credits": "Early-stage startups can apply for free compute credits.",
+      "distinction": "Programmatic credits are separate from the standard free tier."
+    }
+  },
+  {
+    "name": "xAI API",
+    "source_type": "community",
+    "verified_at": "2026-09-26",
+    "source_urls": [
+      "https://docs.x.ai/developers/rate-limits"
+    ],
+    "usage_quality": {
+      "note": "Community reports should only supplement, not replace, the provider's current Console limits; exact team limits are account-specific."
+    }
+  }
+]
