@@ -63,7 +63,7 @@ function nav() {
     '<a href="compare.html">Compare</a>' +
     '<a href="keys.html">🔐 My API Keys</a>' +
     '<a href="changes.html">Verified / Changed</a>' +
-    '<a href="criteria.html">Browse</a>' +
+    '<a href="criteria.html">Browse</a><a href="quality.html">Data Quality</a>' +
   "</nav>";
 }
 
