@@ -1,0 +1,105 @@
+{
+  "category": "ai-ml",
+  "count": 9,
+  "providers": [
+    {
+      "id": 5,
+      "name": "Hugging Face",
+      "category": "AI / ML",
+      "description": "Model hub and hosted inference with user access tokens.",
+      "free_tier": true,
+      "requires_credit_card": false,
+      "signup_url": "https://huggingface.co/settings/tokens",
+      "last_verified": "2026-09-25",
+      "status": "active"
+    },
+    {
+      "id": 27,
+      "name": "AI21 Labs",
+      "category": "AI / ML",
+      "description": "Cataloged API provider.",
+      "free_tier": null,
+      "requires_credit_card": null,
+      "signup_url": "https://studio.ai21.com",
+      "last_verified": "2026-09-25",
+      "status": "active"
+    },
+    {
+      "id": 28,
+      "name": "AssemblyAI (speech-to-text)",
+      "category": "AI / ML",
+      "description": "Cataloged API provider.",
+      "free_tier": null,
+      "requires_credit_card": false,
+      "signup_url": "https://www.assemblyai.com/dashboard/signup",
+      "last_verified": "2026-09-25",
+      "status": "active"
+    },
+    {
+      "id": 29,
+      "name": "Clarifai (vision)",
+      "category": "AI / ML",
+      "description": "Cataloged API provider.",
+      "free_tier": null,
+      "requires_credit_card": false,
+      "signup_url": "https://clarifai.com/signup",
+      "last_verified": "2026-09-25",
+      "status": "active"
+    },
+    {
+      "id": 30,
+      "name": "Perplexity API",
+      "category": "AI / ML",
+      "description": "Cataloged API provider.",
+      "free_tier": null,
+      "requires_credit_card": true,
+      "signup_url": "https://www.perplexity.ai/settings/api",
+      "last_verified": "2026-09-25",
+      "status": "active"
+    },
+    {
+      "id": 31,
+      "name": "Roboflow (vision)",
+      "category": "AI / ML",
+      "description": "Cataloged API provider.",
+      "free_tier": null,
+      "requires_credit_card": false,
+      "signup_url": "https://app.roboflow.com",
+      "last_verified": "2026-09-25",
+      "status": "active"
+    },
+    {
+      "id": 32,
+      "name": "Stability AI",
+      "category": "AI / ML",
+      "description": "Cataloged API provider.",
+      "free_tier": null,
+      "requires_credit_card": null,
+      "signup_url": "https://platform.stability.ai",
+      "last_verified": "2026-09-25",
+      "status": "active"
+    },
+    {
+      "id": 33,
+      "name": "Together AI",
+      "category": "AI / ML",
+      "description": "Cataloged API provider.",
+      "free_tier": null,
+      "requires_credit_card": null,
+      "signup_url": "https://api.together.ai",
+      "last_verified": "2026-09-25",
+      "status": "active"
+    },
+    {
+      "id": 348,
+      "name": "ModelScope",
+      "category": "AI / ML",
+      "description": "Candidate API provider added in the September 2026 expansion. Current free-tier details require provider-side verification.",
+      "free_tier": true,
+      "requires_credit_card": null,
+      "signup_url": "https://modelscope.cn/",
+      "last_verified": null,
+      "status": "candidate"
+    }
+  ]
+}
