@@ -1,11 +1,11 @@
 {
   "generated_at": "2026-09-26",
-  "catalog_count": 669,
-  "student_provider_count": 391,
-  "methodology": "Includes active catalog records with recorded free access and/or research relevance. Candidate records remain visible but explicitly marked as needing current verification.",
+  "catalog_count": 869,
+  "student_provider_count": 1178,
+  "methodology": "Includes catalog records with recorded free access and/or research relevance. Secondary-directory additions are explicitly marked candidate/secondary-source-only until primary-provider verification.",
   "categories": {
     "Free / Keyless": {
-      "count": 27,
+      "count": 234,
       "providers": [
         {
           "name": "balldontlie API (no key)",
@@ -464,6 +464,3525 @@
           "signup_url": "https://earthquake.usgs.gov/fdsnws/event/1",
           "status": "catalog-only",
           "verification_status": "source-checked-table",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "24 Pull Requests",
+          "category": "Development",
+          "description": "Project to promote open source collaboration during December",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://24pullrequests.com/api",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "7Timer!",
+          "category": "Weather",
+          "description": "Weather, especially for Astroweather",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "http://www.7timer.info/doc.php?lang=en",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "Abacus",
+          "category": "Development",
+          "description": "Free and simple counting service. You can use it to track page hits and specific events",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://abacus.jasoncameron.dev",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "administrative-divisons-db",
+          "category": "Geocoding",
+          "description": "Get all administrative divisions of a country",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://github.com/kamikazechaser/administrative-divisions-db",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "adresse.data.gouv.fr",
+          "category": "Geocoding",
+          "description": "Address database of France, geocoding and reverse",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://adresse.data.gouv.fr",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "ADS-B Exchange",
+          "category": "Transportation",
+          "description": "Access real-time and historical data of any and all airborne aircraft",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://www.adsbexchange.com/data/",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "Aero Key, India",
+          "category": "Transportation",
+          "description": "Indian Domestic Airport Data",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://aerokey-api.vercel.app/",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "AgentDeals",
+          "category": "Development",
+          "description": "Search and compare developer free tiers, startup credits, and pricing changes",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://agentdeals.dev/api",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "Agentic Engineering Jobs",
+          "category": "Jobs",
+          "description": "Job board for engineers building agentic systems (LangChain, LlamaIndex, CrewAI)",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://agentic-engineering-jobs.com/api-reference",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "Agify.io",
+          "category": "Development",
+          "description": "Estimates the age from a first name",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://agify.io",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "AI Dev Jobs",
+          "category": "Jobs",
+          "description": "AI and ML job listings from 289+ companies",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://aidevboard.com/api/v1/jobs",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "AI Model Watch",
+          "category": "Machine Learning",
+          "description": "Daily-updated prices, context windows & deprecation/EOL dates for 190+ AI/LLM models, sourced from official provider docs",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://aimodelwatch.dev/api",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "aikstockdata",
+          "category": "Finance",
+          "description": "KOSPI/KOSDAQ/KONEX daily settled closes, DART filings with receipt times, quarterly earnings",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://aikstockdata.com/en/api",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "Airtel IP",
+          "category": "Geocoding",
+          "description": "IP Geolocation API. Collecting data from multiple sources",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://aether.epias.ltd/ip2country/1.1.1.1/?full=true",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "AlphaSMO",
+          "category": "Finance",
+          "description": "SEC 13F institutional holdings, Form 4 insider trading, and smart money convergence signals",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://alphasmo.com/developer/docs",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "Amazing Endemic Species",
+          "category": "Animals",
+          "description": "Amazing endemic species all over the world",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://aes.shenlu.me",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "An API of Ice And Fire",
+          "category": "Video",
+          "description": "Game Of Thrones API",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://anapioficeandfire.com/",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "AnimeNewsNetwork",
+          "category": "Anime",
+          "description": "Anime industry news",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://www.animenewsnetwork.com/encyclopedia/api.php",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "AOT quotes",
+          "category": "Anime",
+          "description": "Attack on Titan Quotes API",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://attackontitanquotes.vercel.app/",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "API Status Check",
+          "category": "Development",
+          "description": "Real-time status monitoring for 270+ APIs and services",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://apistatuscheck.com/api/status",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "APIs.guru",
+          "category": "Development",
+          "description": "Wikipedia for Web APIs, OpenAPI/Swagger specs for public APIs",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://apis.guru/api-doc/",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "Archive.org",
+          "category": "Open Data",
+          "description": "The Internet Archive",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://archive.readme.io/docs",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "ArcNautical Vessel Check",
+          "category": "Transportation",
+          "description": "Vessel sanctions screening, ownership transparency scoring, and vetting intelligence",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://github.com/SaltyTaro/vessel-check-api",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "arcsecond.io",
+          "category": "Science & Math",
+          "description": "Multiple astronomy data sources",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://api.arcsecond.io/",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "ArulJohn.com",
+          "category": "Development",
+          "description": "A simple IP Address API in JSON",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://api.aruljohn.com/ip/json",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "Auregistre",
+          "category": "Business",
+          "description": "French company history since 2008 from the BODACC gazette, no key required",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://auregistre.fr/api",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "Autobahn API",
+          "category": "Government",
+          "description": "Information about Germany's federal highways like construction sites and traffic jams",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://autobahn.api.bund.dev",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "Bacon Ipsum",
+          "category": "Test Data",
+          "description": "A Meatier Lorem Ipsum Generator",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://baconipsum.com/json-api/",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "balldontlie",
+          "category": "Sports & Fitness",
+          "description": "Ballldontlie provides access to stats data from the NBA",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://balldontlie.io",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "Bandsintown",
+          "category": "Music",
+          "description": "Music Events",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://app.swaggerhub.com/apis/Bandsintown/PublicAPI/3.0.1",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "BCLaws",
+          "category": "Government",
+          "description": "Access to the laws of British Columbia",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "http://www.bclaws.ca/civix/template/complete/api/index.html",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "Beeceptor's CRUD APIs",
+          "category": "Test Data",
+          "description": "Free stateful CRUD APIs",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://beeceptor.com/crud-api/?ref=public-api-lists",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "BetTip",
+          "category": "Open Data",
+          "description": "Lottery draw results for UK49s, Gosloto and South African National Lottery",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://bettip.co.za/api/",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "Bitcoin Halving",
+          "category": "Cryptocurrency",
+          "description": "Halving era, block reward, and schedule arithmetic for any Bitcoin block height",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://why21million.com/halving-api/",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "Block Lottos",
+          "category": "Cryptocurrency",
+          "description": "On-chain lottery, draw history, jackpot and advertising endpoints",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://blocklottos.com/openapi.json",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "Blockchain",
+          "category": "Cryptocurrency",
+          "description": "Bitcoin Payment, Wallet & Transaction Data",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://www.blockchain.info/api",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "Blooms",
+          "category": "Security",
+          "description": "Distribute keys once for serverless applications",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://blooms-production.up.railway.app/api",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "Blue Archive",
+          "category": "Games & Comics",
+          "description": "Blue Archive Game data API Characters",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://github.com/arufars/api-blue-archive",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "bng2latlong",
+          "category": "Geocoding",
+          "description": "Convert British OSGB36 easting and northing (British National Grid) to WGS84 latitude and longitude",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://www.getthedata.com/bng2latlong",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "Bob's Burgers API",
+          "category": "Video",
+          "description": "The Bob's Burgers API contains data for hundreds of characters, episodes, running gags, and images from the show",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://bobsburgersapi.com/",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "Brazil CNPJ",
+          "category": "Government",
+          "description": "Query Brazilian companies by CNPJ with full Receita Federal registry data, no key required",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://cnpj.wiki/docs",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "Brazilian Vehicles and Prices",
+          "category": "Vehicle",
+          "description": "Vehicles information from Fundação Instituto de Pesquisas Econômicas - Fipe",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://deividfortuna.github.io/fipe/",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "Breaking Bad Quotes",
+          "category": "Video",
+          "description": "Some Breaking Bad quotes",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://github.com/shevabam/breaking-bad-quotes",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "Byabbe",
+          "category": "Calendar",
+          "description": "Seach histories from wikipedia for a particular day",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://byabbe.se/on-this-day/#/default/get__month___day__events_json",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "caldays",
+          "category": "Calendar",
+          "description": "Public holidays for 195+ countries",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://caldays.com/api",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "Callook.info",
+          "category": "Open Data",
+          "description": "United States ham radio callsigns",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://callook.info",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "Cambio Uruguay",
+          "category": "Currency Exchange",
+          "description": "Real-time buy/sell rates from every Uruguayan exchange house with conversion and history",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://cambio-uruguay.com",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "Cartola FC",
+          "category": "Sports & Fitness",
+          "description": "The Cartola FC API serves to check the partial points of your team",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://github.com/wgenial/cartrolandofc",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "Cat Facts",
+          "category": "Animals",
+          "description": "Daily cat facts",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://alexwohlbruck.github.io/cat-facts/",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "Cataas",
+          "category": "Animals",
+          "description": "Cat as a service (cats pictures and gifs)",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://cataas.com/",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "Census.gov",
+          "category": "Government",
+          "description": "The US Census Bureau provides various APIs and data sets on demographics and businesses",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://www.census.gov/data/developers/data-sets.html",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "Chronicling America",
+          "category": "News",
+          "description": "Provides access to millions of pages of historic US newspapers from the Library of Congress",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "http://chroniclingamerica.loc.gov/about/api/",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "chucknorris.io",
+          "category": "Personality",
+          "description": "JSON API for hand curated Chuck Norris jokes",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://api.chucknorris.io",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "City Bikes",
+          "category": "Sports & Fitness",
+          "description": "City Bikes around the world",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "http://api.citybik.es/v2/",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "City, Bologna Opendata",
+          "category": "Government",
+          "description": "Bologna(IT) City Open Data",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://dati.comune.bologna.it",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "CitySDK",
+          "category": "Geocoding",
+          "description": "Open APIs for select European cities",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "http://www.citysdk.eu/citysdk-toolkit/",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "CoinDesk",
+          "category": "Cryptocurrency",
+          "description": "Bitcoin Price Index",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "http://www.coindesk.com/api/",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "Coinlore",
+          "category": "Cryptocurrency",
+          "description": "Cryptocurrencies prices, volume and more",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://www.coinlore.com/cryptocurrency-data-api",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "Coinpaprika",
+          "category": "Cryptocurrency",
+          "description": "Cryptocurrencies prices, volume and more",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://api.coinpaprika.com",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "CoinRanking",
+          "category": "Cryptocurrency",
+          "description": "Live Cryptocurrency data",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://docs.coinranking.com/",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "College ROI",
+          "category": "Education",
+          "description": "Lifetime ROI of US colleges and majors — free static JSON, CC BY 4.0",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://le-teen.com/api",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "Colorado Data Engine",
+          "category": "Government",
+          "description": "Formatted and geolocated Colorado public data",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "http://codataengine.org/",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "Colorado Information Marketplace",
+          "category": "Government",
+          "description": "Colorado State Government Open Data",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://data.colorado.gov/",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "Comic Vine",
+          "category": "Games & Comics",
+          "description": "Comics",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://comicvine.gamespot.com/api/documentation",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "Community Transit",
+          "category": "Transportation",
+          "description": "Transitland API",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://github.com/transitland/transitland-datastore/blob/master/README.md#api-endpoints",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "Congressional Stock Brain",
+          "category": "Finance",
+          "description": "AI-powered tool scoring U.S. STOCK Act lawmaker trade disclosures for retail investors",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://congressionalstockbrain.com",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "Country",
+          "category": "Geocoding",
+          "description": "Get your visitors' country from their IP",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "http://country.is/",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "crob.at",
+          "category": "Games & Comics",
+          "description": "Pokémon team sharing and type chart data",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://crob.at/api",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "Cross Universe",
+          "category": "Games & Comics",
+          "description": "Cross Universe Card Data",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://crossuniverse.net/apiDocs",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "CVE.report",
+          "category": "Security",
+          "description": "CVE records with NVD KEV and EPSS enrichment",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://cve.report/api",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "Czech Namedays Calendar",
+          "category": "Calendar",
+          "description": "Lookup for a name and returns nameday date",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "http://svatky.adresa.info/",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "Czech National Bank",
+          "category": "Currency Exchange",
+          "description": "A collection of exchange rates",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://www.cnb.cz/cs/financni_trhy/devizovy_trh/kurzy_devizoveho_trhu/denni_kurz.xml",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "Czech Television",
+          "category": "Video",
+          "description": "TV programme of Czech TV",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "http://www.ceskatelevize.cz/xml/tv-program/",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "DC Hub",
+          "category": "Environment",
+          "description": "Live data on data-center facilities, power markets, grid telemetry, and fiber infrastructure",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://dchub.cloud/playground",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "Deck of Cards",
+          "category": "Games & Comics",
+          "description": "Deck of Cards",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "http://deckofcardsapi.com/",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "Deckaura Horoscope",
+          "category": "Personality",
+          "description": "Daily horoscope readings for all 12 zodiac signs (overview, love, career, lucky number) updated daily at 00:00 UTC",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://horoscope.deckaura.com",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "DevITjobs",
+          "category": "Jobs",
+          "description": "Jobs for software developers",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://devitjobs.us/api/jobsLight",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "Diabetes",
+          "category": "Health",
+          "description": "Logging and retrieving diabetes information",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "http://predictbgl.com/api/",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "Dicebear Avatars",
+          "category": "Test Data",
+          "description": "Generate random pixel-art avatars",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://avatars.dicebear.com/",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "DiscGolf",
+          "category": "Sports & Fitness",
+          "description": "Structured disc golf course data",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://discgolfapi.com/docs/",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "Dog API",
+          "category": "Animals",
+          "description": "Fun facts on dog breeds and groups",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://dogapi.dog",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "Dogs",
+          "category": "Animals",
+          "description": "Based on the Stanford Dogs Dataset",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://dog.ceo/dog-api/",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "Domainsdb.info",
+          "category": "Business",
+          "description": "Registered Domain Names Search",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://domainsdb.info/",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "Dota 2",
+          "category": "Games & Comics",
+          "description": "Provides information about Player stats , Match stats, Rankings for Dota 2",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://docs.opendota.com/",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "Drupal.org",
+          "category": "Open Source Projects",
+          "description": "Drupal.org",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://www.drupal.org/drupalorg/docs/api",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "Dune",
+          "category": "Video",
+          "description": "Dune API",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://github.com/ywalia01/dune-api",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "Dungeons and Dragons",
+          "category": "Games & Comics",
+          "description": "Reference for 5th edition spells, classes, monsters, and more",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "http://www.dnd5eapi.co/",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "DWD API",
+          "category": "Weather",
+          "description": "API of the German Weather Service (DWD): weather data, data from specific weather stations, warnings (local, coast, sea, alps)",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://dwd.api.bund.dev/",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "Echoes",
+          "category": "Personality",
+          "description": "Quotes From Around The World",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://echoes.soferity.com",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "eeemoji",
+          "category": "Art & Design",
+          "description": "Emoji metadata: names, keywords, categories, shortcodes and skin tones",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://eeemoji.com/api",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "Evil Insult Generator",
+          "category": "Open Source Projects",
+          "description": "Evil Insults",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://evilinsult.com/api",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "Exchangerate.dev",
+          "category": "Currency Exchange",
+          "description": "Live and historical exchange rates for 168 currency pairs back to 1999",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://exchangerate.dev/docs",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "F1 API",
+          "category": "Sports & Fitness",
+          "description": "Free F1 data in real time with his own NPM package",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://f1api.dev",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "F1 Data API",
+          "category": "Sports & Fitness",
+          "description": "Formula 1 data API that delivers data from the F1 Archive dating back to 1950",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://github.com/Jacobbrewer1/f1-data",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "FakeNamely",
+          "category": "Test Data",
+          "description": "Fictional identities, addresses and names for tests",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://fakenamely.com/api",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "Favicon.im",
+          "category": "Business",
+          "description": "Instantly fetch and display the favicon for any website",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://favicon.im",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "Federal Register API",
+          "category": "Government & Civic Data",
+          "description": "Candidate API provider added in the September 2026 expansion. Current free-tier details require provider-side verification.",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "not-stated",
+            "details": "Current official free-tier allowance was not established from the available source record; this entry is retained as a research candidate rather than treated as verified.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://www.federalregister.gov/developers/documentation/api/v1",
+          "status": "candidate",
+          "verification_status": "source-identified-not-fully-resolved",
+          "last_verified": null
+        },
+        {
+          "name": "File.io",
+          "category": "Documents & Productivity",
+          "description": "File Sharing",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://www.file.io",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "FilingFirehose",
+          "category": "Finance",
+          "description": "Structured SEC EDGAR filings with body-text-classified 8-Ks, activist-tagged 13D/G, and ATM-offering detection in S-3 / 424B5",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://filingfirehose.com",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "FishFish",
+          "category": "Security",
+          "description": "A volunteer cybersecurity project focused on providing resources and services that improve safety across Discord",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://fishfish.gg/",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "Folderwijzer Folders",
+          "category": "Shopping",
+          "description": "Dutch store folders currently running, with each folder's validity dates and a deeplink (beer & wine)",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://folderwijzer.nl/folder-api/",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "Football (Soccer) Videos",
+          "category": "Sports & Fitness",
+          "description": "Embed codes for goals and highlights from Premier League, Bundesliga, Serie A and many more",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://www.scorebat.com/video-api/",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "Frankfurter",
+          "category": "Foreign Exchange",
+          "description": "Candidate API provider added in the September 2026 expansion. Current free-tier details require provider-side verification.",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "not-stated",
+            "details": "Current official free-tier allowance was not established from the available source record; this entry is retained as a research candidate rather than treated as verified.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://www.frankfurter.app/",
+          "status": "candidate",
+          "verification_status": "source-identified-not-fully-resolved",
+          "last_verified": null
+        },
+        {
+          "name": "FreeGeoIP",
+          "category": "Geocoding",
+          "description": "Free geo ip information, no registration required. 15k/hour rate limit",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://freegeoip.app/",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "French Address Search",
+          "category": "Open Data",
+          "description": "Address search via the French Government",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://geo.api.gouv.fr/adresse",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "Fruits",
+          "category": "Open Data",
+          "description": "Information of fruit trees of the world",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://fruits-api.netlify.app/graphql",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "Gawrshdarn",
+          "category": "Text Analysis",
+          "description": "Profanity detection, filtering, and playful word replacement",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://api.gawrshdarn.com",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "GBIF API",
+          "category": "Biodiversity & Life Science",
+          "description": "Candidate API provider added in the September 2026 expansion. Current free-tier details require provider-side verification.",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "not-stated",
+            "details": "Current official free-tier allowance was not established from the available source record; this entry is retained as a research candidate rather than treated as verified.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://www.gbif.org/developer/summary",
+          "status": "candidate",
+          "verification_status": "source-identified-not-fully-resolved",
+          "last_verified": null
+        },
+        {
+          "name": "Genrenator",
+          "category": "Music",
+          "description": "Music genre generator",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://binaryjazz.us/genrenator-api/",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "GeoJS",
+          "category": "IP Intelligence",
+          "description": "Candidate API provider added in the September 2026 expansion. Current free-tier details require provider-side verification.",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "not-stated",
+            "details": "Current official free-tier allowance was not established from the available source record; this entry is retained as a research candidate rather than treated as verified.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://www.geojs.io/",
+          "status": "candidate",
+          "verification_status": "source-identified-not-fully-resolved",
+          "last_verified": null
+        },
+        {
+          "name": "HackerNews",
+          "category": "Social",
+          "description": "Social news for CS and entrepreneurship",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://github.com/HackerNews/API",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "HackMyIP",
+          "category": "Security",
+          "description": "IP geolocation, VPN and proxy detection, email breach checks, DNS, WHOIS, and reverse DNS lookups",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://hackmyip.com/api",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "Harry Potter API",
+          "category": "Books",
+          "description": "API to get data from Harry Potter books, movies, characters and spells",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://github.com/fedeperin/potterapi",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "Healthcare.gov",
+          "category": "Health",
+          "description": "Educational content about the US Health Insurance Marketplace",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://www.healthcare.gov/developers/",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "Hebrew Calendar",
+          "category": "Calendar",
+          "description": "Convert between Gregorian and Hebrew, fetch Shabbat and Holiday times, etc",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://www.hebcal.com/home/developer-apis",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "Himalayas",
+          "category": "Jobs",
+          "description": "Remote job board and search engine",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://himalayas.app/api",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "Hindi Quotes",
+          "category": "Personality",
+          "description": "Get random Hindi quotes of different categories",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://hindi-quotes.vercel.app/",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "HTTP Dogs",
+          "category": "Animals",
+          "description": "Dogs for every HTTP status code",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://http.dog/",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "HTTPCat",
+          "category": "Animals",
+          "description": "Cat for every HTTP Status",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://http.cat/",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "icanhazdadjoke",
+          "category": "Personality",
+          "description": "The largest selection of dad jokes on the internet",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://icanhazdadjoke.com/api",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "ICD-10 Codes",
+          "category": "Health",
+          "description": "List of all healthcare diagnosis codes",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://clinicaltables.nlm.nih.gov/apidoc/icd10cm/v3/doc.html",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "Icelandic APIs",
+          "category": "Transportation",
+          "description": "Open APIs that deliver services in or regarding Iceland",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "http://docs.apis.is/",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "iDigBio",
+          "category": "Science & Math",
+          "description": "Access millions of museum specimens from organizations around the world",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://github.com/idigbio/idigbio-search-api/wiki",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "IDPhotoSnap Passport Photo Specs",
+          "category": "Documents & Productivity",
+          "description": "Passport, visa, and ID photo specifications for 100+ countries with government source citations",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://idphotosnap.com/api/specs",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "Indian Bank Data API",
+          "category": "Finance",
+          "description": "All Banks IFSC Code data,Search by IFSc or other details",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://github.com/kaustubhk24/Indian-Banks-Data",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "Is It Safe to Travel",
+          "category": "Open Data",
+          "description": "Daily travel-safety scores and 5 risk pillars for 248 countries, from gov advisories and indices",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://isitsafetotravel.org/en/api/",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "ITIS",
+          "category": "Science & Math",
+          "description": "Integrated Taxonomic Information System",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://www.itis.gov/ws_description.html",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "Jikan",
+          "category": "Anime & Manga",
+          "description": "Candidate API provider added in the September 2026 expansion. Current free-tier details require provider-side verification.",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "not-stated",
+            "details": "Current official free-tier allowance was not established from the available source record; this entry is retained as a research candidate rather than treated as verified.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://jikan.moe/",
+          "status": "candidate",
+          "verification_status": "source-identified-not-fully-resolved",
+          "last_verified": null
+        },
+        {
+          "name": "Jobicy",
+          "category": "Jobs",
+          "description": "The latest remote job listings from a diverse range of industries and companies",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://jobicy.com/jobs-rss-feed",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "JSONing",
+          "category": "Test Data",
+          "description": "Mock data for prototyping",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://jsoning.com/api/",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "KeepRule",
+          "category": "Finance",
+          "description": "Investment principles and quotes from Buffett, Munger & more",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://github.com/henu-wang/keeprule-api",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "KmalServico Gold Price Dataset",
+          "category": "Finance",
+          "description": "Live gold price per gram across 188 countries at six purities, converted from spot price and FX rates",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://www.kmalservico.com/data",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "languagelayer",
+          "category": "Data Validation",
+          "description": "Language detection",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://languagelayer.com",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "Launch Library",
+          "category": "Science & Math",
+          "description": "Upcoming Space Launches",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://launchlibrary.net/docs/1.3/api.html",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "Let's Count",
+          "category": "Tracking",
+          "description": "Create, retrieve, update, increment, and decrement counters",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://letscountapi.com",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "Longevity World Cup",
+          "category": "Health",
+          "description": "Public biological age competition data with biomarkers and rankings",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://longevityworldcup.com/swagger",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "Lorem API",
+          "category": "Test Data",
+          "description": "The Ultimate Lorem Ipsum Generator",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://lorem-api.com/",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "Lorem Picsum",
+          "category": "Photography",
+          "description": "Images from Unsplash",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://picsum.photos/",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "LottoLens PH",
+          "category": "Open Data",
+          "description": "Fixed Philippine PCSO draw results and schedules with row-level provenance",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://remo65588-boop.github.io/lottolens-ph-public-data/api/",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "mailboxlayer",
+          "category": "Data Validation",
+          "description": "Email address validation",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://mailboxlayer.com",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "Mangadex",
+          "category": "Anime",
+          "description": "ad-free manga reader offering high-quality images",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://api.mangadex.org/docs/",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "Markbase",
+          "category": "Business",
+          "description": "Search 14M+ USPTO trademarks with fuzzy search and autocomplete",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://markbase.co",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "markerapi",
+          "category": "Business",
+          "description": "Trademark Search",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "http://www.markerapi.com/",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "Mega.nz",
+          "category": "Cloud Storage & File Sharing",
+          "description": "File Sharing And Storage",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://mega.io/developers",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "Meme",
+          "category": "Personality",
+          "description": "JSON API for a random meme scraped from reddit",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://github.com/D3vd/Meme_Api",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "Memesio",
+          "category": "Personality",
+          "description": "Meme creation API with templates and hosted share links",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://memesio.com/developers/api",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "Meteorologisk Institutt",
+          "category": "Weather",
+          "description": "Weather and climate data",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://api.met.no/weatherapi/documentation",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "Metro Lisboa",
+          "category": "Transportation",
+          "description": "Delays in subway lines",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "http://app.metrolisboa.pt/status/getLinhas.php",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "Metropolitan Museum of Art",
+          "category": "Art & Design",
+          "description": "Art",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://metmuseum.github.io/",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "Micro-Jaymock",
+          "category": "Test Data",
+          "description": "Tiny API mocking microservice for generating fake JSON data",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://micro-jaymock.now.sh/",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "Minor Planet Center",
+          "category": "Science & Math",
+          "description": "Asterank.com Information",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "http://www.asterank.com/mpc",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "MusicBrainz",
+          "category": "Music Metadata",
+          "description": "Candidate API provider added in the September 2026 expansion. Current free-tier details require provider-side verification.",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "not-stated",
+            "details": "Current official free-tier allowance was not established from the available source record; this entry is retained as a research candidate rather than treated as verified.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://musicbrainz.org/doc/MusicBrainz_API",
+          "status": "candidate",
+          "verification_status": "source-identified-not-fully-resolved",
+          "last_verified": null
+        },
+        {
+          "name": "Mydentify",
+          "category": "Business",
+          "description": "Discover software by task through structured product directories and weekly leaderboards",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://mydentify.com/openapi.json",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "Nager.Date",
+          "category": "Calendar",
+          "description": "Public holidays for more than 200 countries",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://nagerholidays.com",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "National Vulnerability Database",
+          "category": "Security",
+          "description": "U.S. National Vulnerability Database",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://nvd.nist.gov/vuln/Data-Feeds/JSON-feed-changelog",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "NationNode",
+          "category": "Education",
+          "description": "Used to fetch the specific details about a country",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://nationnode.vercel.app",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "Nekosia API",
+          "category": "Anime",
+          "description": "Anime API with cute random images",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://nekosia.cat",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "Newton",
+          "category": "Science & Math",
+          "description": "Symbolic and Arithmetic Math Calculator",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://newton.now.sh/",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "NHTSA",
+          "category": "Vehicle",
+          "description": "NHTSA Product Information Catalog and Vehicle Listing",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://vpic.nhtsa.dot.gov/api/",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "Non-working Days",
+          "category": "Calendar",
+          "description": "Simple API for checking working, non-working or short days for Russia, Ukraine, Belarus and Kazakhstan",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://isdayoff.ru",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "Non-Working Days ICS",
+          "category": "Calendar",
+          "description": "Database of ICS files for non working days",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://github.com/gadael/icsdb",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "NPPES",
+          "category": "Health",
+          "description": "National Plan & Provider Enumeration System, info on healthcare providers registered in US",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://npiregistry.cms.hhs.gov/registry/help-api",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "NumValidate",
+          "category": "Data Validation",
+          "description": "Open Source phone number validation",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://numvalidate.com",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "OkSurf",
+          "category": "News",
+          "description": "Free Google News with OG Images",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://ok.surf/",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "Open Brewery DB",
+          "category": "Food & Drink",
+          "description": "Breweries, Cideries and Craft Beer Bottle Shops",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://www.openbrewerydb.org",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "Open Collective",
+          "category": "Social",
+          "description": "Get Open Collective data",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://docs.opencollective.com/help/developers/api",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "Open Notify",
+          "category": "Science & Math",
+          "description": "ISS astronauts, current location, etc",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "http://open-notify.org/Open-Notify-API/",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "Open Skills",
+          "category": "Jobs",
+          "description": "Job titles, skills and related jobs data",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://github.com/workforce-data-initiative/skills-api/wiki/API-Overview",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "Open-Meteo",
+          "category": "Weather (additional)",
+          "description": "Global weather forecast API for non-commercial use",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-free",
+            "details": "No API key, signup, or credit card is required for non-commercial use.",
+            "amount": "Up to 10,000 calls/day; 5,000/hour; 600/minute",
+            "expiry": "Daily/hourly/minute limits"
+          },
+          "authentication": "No",
+          "signup_url": "https://open-meteo.com",
+          "status": "active",
+          "verification_status": "manually-reviewed",
+          "last_verified": "2026-09-25"
+        },
+        {
+          "name": "Open-Meteo Marine",
+          "category": "Environment",
+          "description": "Ocean wave height, swell, sea temperature and marine weather data",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://open-meteo.com/en/docs/marine-weather-api",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "Openwhyd",
+          "category": "Music",
+          "description": "Download curated playlists of streaming tracks (YouTube, SoundCloud, etc...)",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://openwhyd.github.io/openwhyd/API",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "Owen Wilson Wow",
+          "category": "Video",
+          "description": "API for actor Owen Wilson's \"wow\" exclamations in movies",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://owen-wilson-wow-api.onrender.com/",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "PayCrunch",
+          "category": "Jobs",
+          "description": "US wages for 1,008 occupations nationally and by state, from BLS OEWS May 2025, static JSON, CC BY 4.0",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://paycrunch.co/api.html",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "Penguin Publishing",
+          "category": "Books",
+          "description": "Books, book covers and related data",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "http://www.penguinrandomhouse.biz/webservices/rest/",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "Portscan",
+          "category": "Security",
+          "description": "Scans the requesting client's IP for open TCP ports with fast or deep modes on IPv4/IPv6",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://api.portscan.com",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "Postmon",
+          "category": "Tracking",
+          "description": "An API to query Brazilian ZIP codes and orders easily, quickly and free",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "http://postmon.com.br",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "Presend",
+          "category": "Security",
+          "description": "Security and developer utility API -- malware, vulnerability, and domain checks, no signup",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://presend.pages.dev/api",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "ProblemsByVin",
+          "category": "Vehicle",
+          "description": "US NHTSA owner-complaint & recall data as vehicle failure patterns by year, make & model; open CSV/JSON datasets + a machine-readable catalog",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://problemsbyvin.com/data/",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "Profitvana",
+          "category": "Shopping",
+          "description": "Seller fees for 31 marketplaces and payment processors, verified monthly",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://www.profitvana.com/developers",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "PunkAPI",
+          "category": "Food & Drink",
+          "description": "BrewDog's DIY Dog beer catalogue as an API",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://github.com/alxiw/punkapi",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "PurgoMalum",
+          "category": "Data Validation",
+          "description": "Content validator against profanity & obscenity",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "http://www.purgomalum.com",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "ratesapi",
+          "category": "Currency Exchange",
+          "description": "Free exchange rates and historical rates",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://ratesapi.io",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "Rig Veda",
+          "category": "Books",
+          "description": "Gods and poets, their categories, and the verse meters, with the mandal and sukta number",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://aninditabasu.github.io/indica/",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "SCALA Score",
+          "category": "Business",
+          "description": "Search 250M+ company records across 50+ countries with revenue, employees, and credit scores",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://score.get-scala.com",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "ScreenShotLayer",
+          "category": "Photography",
+          "description": "URL 2 Image",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://screenshotlayer.com",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "SearchLy",
+          "category": "Music",
+          "description": "Similarities search based on song lyrics",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://www.github.com/AlbertSuarez/searchly",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "Seed Oil Tracker",
+          "category": "Food & Drink",
+          "description": "Seed-oil/PUFA grades and cooking oil data for 512 US restaurant chains",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://seedoiltracker.com/ai-tool",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "Songsterr",
+          "category": "Music",
+          "description": "Provides guitar, bass and drums tabs and chords",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://www.songsterr.com/a/wa/api/",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "TacoFancy",
+          "category": "Food & Drink",
+          "description": "Community-driven taco database",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://github.com/evz/tacofancy-api",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "The Odin Project",
+          "category": "Open Source Projects",
+          "description": "theodinproject.com",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://github.com/theodinproject",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "The Report of the Week",
+          "category": "Food & Drink",
+          "description": "Food & Drink Reviews",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://github.com/andyklimczak/TheReportOfTheWeek-API",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "UK Carbon Intensity",
+          "category": "Environment",
+          "description": "The Official Carbon Intensity API for Great Britain developed by National Grid",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://carbon-intensity.github.io/api-definitions/#carbon-intensity-api-v1-0-0",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "Urantia Papers",
+          "category": "Books",
+          "description": "Full-text and semantic search across the Urantia Papers, with audio narration, entities and translations",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://urantia.dev",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "Urgences Québec",
+          "category": "Health",
+          "description": "Hourly ER occupancy, patients waiting and mean stay duration for every ER in the Québec health ministry feed, archived since 10 Aug 2026",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://sante.handled.tools/en/donnees",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "urlfy",
+          "category": "URL Shorteners",
+          "description": "A simple and fast URL shortening service",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://urlfy.org/api-doc",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "USPTO",
+          "category": "Patent",
+          "description": "USA patent api services",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://www.uspto.gov/learning-and-resources/open-data-and-mobility",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "vatlayer",
+          "category": "Data Validation",
+          "description": "VAT number validation",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://vatlayer.com",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "Vector Express",
+          "category": "Documents & Productivity",
+          "description": "Free vector file converting API",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "http://vector.express",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "Verified Supplement Data",
+          "category": "Health",
+          "description": "Supplement dosing, form comparisons and drug-nutrient interactions with PubMed citations",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://verifiedsupplementdata.com/api/v1/recommend/index.json",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "WakaTime",
+          "category": "Documents & Productivity",
+          "description": "Automated time tracking leaderboards for programmers",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://wakatime.com/developers",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "WattFigure",
+          "category": "Environment",
+          "description": "US electricity rates by state, with appliance and EV charging running costs",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://api.wattfigure.com/",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "Weather Hacks",
+          "category": "Weather",
+          "description": "Weather, for Japan",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "http://weather.livedoor.com/weather_hacks/",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "WhiskyHunter",
+          "category": "Food & Drink",
+          "description": "Past online whisky auctions statistical data",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://whiskyhunter.net/api/",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "Window Sticker",
+          "category": "Vehicle",
+          "description": "Original factory Monroney label PDF and full spec decode by VIN",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://windowsticker.org/api-docs",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "World Time & Weather",
+          "category": "Weather",
+          "description": "Local time, UTC offset, DST rules, current weather and climate normals for 400 cities",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://worldtimeweather.com/api.html",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "Yomi",
+          "category": "Text Analysis",
+          "description": "Japanese tokenizer and morphological analysis web API",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://github.com/ookii-tsuki/yomi",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "ZipCheckup",
+          "category": "Environment",
+          "description": "U.S. drinking water quality data by ZIP code from EPA and 20+ federal sources",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "keyless-public",
+            "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+            "amount": "Not publicly stated",
+            "expiry": "Not publicly stated"
+          },
+          "authentication": "No",
+          "signup_url": "https://api.zipcheckup.com/v1",
+          "status": "candidate",
+          "verification_status": "secondary-source-only",
           "last_verified": "2026-09-26"
         }
       ]
