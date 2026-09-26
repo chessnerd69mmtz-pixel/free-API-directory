@@ -160,7 +160,9 @@ async function finder() {
     const c = $("#c").value;
     const rows = a.filter(p => {
       const hay = JSON.stringify([p.name,p.category,p.description,p.uses]).toLowerCase();
-      const freeOK = !f || (f === "yes" && p.free_tier?.has_free_tier === true) ||
+      const isCommunity = p.verification_status === "community-free-source" || p.status === "upstream-community";
+      const freeOK = !f || (f === "verified" && p.free_tier?.has_free_tier === true && !isCommunity) ||
+        (f === "community" && isCommunity) ||
         (f === "unknown" && p.free_tier?.has_free_tier == null);
       const cardOK = !c || (c === "no" && p.requires_credit_card === false) ||
         (c === "unknown" && typeof p.requires_credit_card !== "boolean");
