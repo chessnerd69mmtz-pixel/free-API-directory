@@ -1,9 +1,9 @@
-const DATA_VERSION = "20260926-2";
-const COMPACT_URL = new URL("data/providers.json?v=" + DATA_VERSION, document.baseURI).href;
+const DATA_VERSION = "20260926-3";
+const INDEX_URL = new URL("data/catalog-index.json?v=" + DATA_VERSION, document.baseURI).href;
 const PROFILE_URL = new URL("data/provider_profiles.json?v=" + DATA_VERSION, document.baseURI).href;
 const CHANGE_URL = new URL("data/change_log.json?v=" + DATA_VERSION, document.baseURI).href;
 
-let COMPACT_PROMISE = null;
+let INDEX_PROMISE = null;
 let PROFILE_PROMISE = null;
 
 const $ = (s) => document.querySelector(s);
@@ -17,15 +17,23 @@ function link(url, label) {
     : '<span class="muted">Unverified</span>';
 }
 
-function uses(list) {
-  const items = Array.isArray(list) && list.length ? list : ["Not independently specified"];
+function uses(list, fallback) {
+  const items = Array.isArray(list) && list.length ? list : (fallback ? [fallback] : ["Not independently specified"]);
   return "<ul>" + items.map(x => "<li>" + esc(x) + "</li>").join("") + "</ul>";
 }
 
+function freeValue(p) {
+  if (typeof p.free_tier === "boolean") return p.free_tier;
+  return p.free_tier?.has_free_tier;
+}
+
+function isCommunity(p) {
+  return p.verification_status === "community-free-source" || p.status === "upstream-community";
+}
+
 function freeTier(p) {
-  const v = p.free_tier?.has_free_tier;
-  const community = p.verification_status === "community-free-source" || p.status === "upstream-community";
-  if (community) return '<span class="pill good">Community-listed free</span>';
+  const v = freeValue(p);
+  if (isCommunity(p)) return '<span class="pill good">Community-listed free</span>';
   if (v === true) return '<span class="pill good">Free access recorded</span>';
   if (v === false) return '<span class="pill">No free tier recorded</span>';
   return '<span class="pill warn">Unverified</span>';
@@ -34,6 +42,7 @@ function freeTier(p) {
 function status(p) {
   if (p.status === "active") return '<span class="pill good">Active</span>';
   if (p.status === "needs re-verification") return '<span class="pill warn">Needs re-verification</span>';
+  if (p.status === "candidate") return '<span class="pill warn">Candidate</span>';
   return '<span class="pill">' + esc(p.status || "Catalog only") + "</span>";
 }
 
@@ -61,12 +70,11 @@ async function getJson(url) {
   return response.json();
 }
 
-function prepareCompact(list) {
+function prepareIndex(list) {
   return list.map((p) => {
     if (!p._searchText) {
       p._searchText = [
-        p.name, p.category, p.description,
-        Array.isArray(p.uses) ? p.uses.join(" ") : ""
+        p.name, p.category, p.description, p.status
       ].join(" ").toLowerCase();
     }
     return p;
@@ -74,20 +82,20 @@ function prepareCompact(list) {
 }
 
 async function loadApis() {
-  if (!COMPACT_PROMISE) {
-    COMPACT_PROMISE = getJson(COMPACT_URL).then((d) => {
-      if (!Array.isArray(d)) throw new Error("Invalid provider catalog");
-      return prepareCompact(d);
+  if (!INDEX_PROMISE) {
+    INDEX_PROMISE = getJson(INDEX_URL).then((d) => {
+      if (!d || !Array.isArray(d.providers)) throw new Error("Invalid catalog index");
+      return prepareIndex(d.providers);
     });
   }
-  return COMPACT_PROMISE;
+  return INDEX_PROMISE;
 }
 
 async function loadProfiles() {
   if (!PROFILE_PROMISE) {
     PROFILE_PROMISE = getJson(PROFILE_URL).then((d) => {
       if (!Array.isArray(d)) throw new Error("Invalid provider profile catalog");
-      return prepareCompact(d);
+      return d;
     });
   }
   return PROFILE_PROMISE;
@@ -104,10 +112,10 @@ function debounce(fn, wait) {
 async function finder() {
   const a = await loadApis();
   shell(
-    '<section class="hero"><h1>Find an API</h1><p>Search the catalog by provider, category or capability. Results are rendered in small batches so large searches stay responsive.</p></section>' +
+    '<section class="hero"><h1>Find an API</h1><p>Search the lightweight catalog index. Full provider profiles are loaded only when you open a provider.</p></section>' +
     '<div class="card tool"><input id="q" class="input" placeholder="Search APIs…" autocomplete="off">' +
-    '<select id="f" class="select"><option value="">Free status: any</option><option value="yes">Free access recorded</option><option value="community">Community-listed free</option><option value="unknown">Free status unverified</option></select>' +
-    '<select id="c" class="select"><option value="">Card requirement: any</option><option value="no">No card recorded</option><option value="unknown">Unverified</option></select></div>' +
+    '<select id="f" class="select"><option value="">Free status: any</option><option value="yes">Free access recorded</option><option value="unknown">Free status unverified</option><option value="no">No free tier recorded</option></select>' +
+    '<select id="c" class="select"><option value="">Card requirement: any</option><option value="no">No card recorded</option><option value="yes">Card required</option><option value="unknown">Unverified</option></select></div>' +
     '<div id="r"></div>'
   );
 
@@ -118,15 +126,16 @@ async function finder() {
     const f = $("#f").value;
     const c = $("#c").value;
     return a.filter(p => {
-      const community = p.verification_status === "community-free-source" || p.status === "upstream-community";
+      const fv = freeValue(p);
       const freeOK =
         !f ||
-        (f === "yes" && p.free_tier?.has_free_tier === true && !community) ||
-        (f === "community" && community) ||
-        (f === "unknown" && p.free_tier?.has_free_tier == null);
+        (f === "yes" && fv === true) ||
+        (f === "no" && fv === false) ||
+        (f === "unknown" && fv == null);
       const cardOK =
         !c ||
         (c === "no" && p.requires_credit_card === false) ||
+        (c === "yes" && p.requires_credit_card === true) ||
         (c === "unknown" && typeof p.requires_credit_card !== "boolean");
       return (!q || p._searchText.includes(q)) && freeOK && cardOK;
     });
@@ -141,7 +150,7 @@ async function finder() {
       '<th>Provider</th><th>Category</th><th>Free tier</th><th>Functions</th><th>Verification</th></tr></thead><tbody>' +
       shown.map(p => '<tr><td class="provider"><a href="api.html?provider=' + encodeURIComponent(p.name) + '">' + esc(p.name) +
         '</a><br><a class="save-key-link" href="keys.html?provider=' + encodeURIComponent(p.name) + '">🔐 Save key</a></td><td>' + esc(p.category) +
-        '</td><td>' + freeTier(p) + '</td><td class="uses">' + uses(p.uses) +
+        '</td><td>' + freeTier(p) + '</td><td class="uses">' + uses(null, p.description) +
         '</td><td>' + status(p) + '<br>' + esc(p.last_verified || "Not recorded") + '</td></tr>').join("") +
       '</tbody></table></div></div>' +
       '<div class="tool"><p class="muted">' + rows.length + ' matches; showing ' + shown.length + '.</p>' +
@@ -161,7 +170,7 @@ async function finder() {
 async function compare() {
   const a = await loadApis();
   shell(
-    '<section class="hero"><h1>Compare APIs</h1><p>Search for up to four providers. Provider details are loaded only when needed.</p></section>' +
+    '<section class="hero"><h1>Compare APIs</h1><p>Search for up to four providers. Detailed fields are fetched only after you select providers.</p></section>' +
     '<div class="card tool"><input id="compare-q" class="input" placeholder="Search providers to add…" autocomplete="off"><button id="clear" class="btn secondary">Clear</button></div>' +
     '<div id="compare-suggestions"></div><div id="compare-selected"></div><div id="r"></div>'
   );
@@ -216,7 +225,7 @@ async function compare() {
     const profiles = await loadProfiles();
     const ps = chosen.map(n => profiles.find(x => x.name === n)).filter(Boolean);
     const fields = [
-      ["Free tier", p => p.free_tier?.has_free_tier === true ? "Recorded" : p.free_tier?.has_free_tier === false ? "No" : "Unverified"],
+      ["Free tier", p => freeValue(p) === true ? "Recorded" : freeValue(p) === false ? "No" : "Unverified"],
       ["Free amount", p => p.free_tier?.amount || "Unverified"],
       ["Credit card", p => typeof p.requires_credit_card === "boolean" ? String(p.requires_credit_card) : "Unverified"],
       ["Authentication", p => p.authentication || "Unverified"],
@@ -277,8 +286,8 @@ async function apiProfile() {
     shell('<section class="hero"><h1>API not specified</h1><p>Choose a provider from the finder or browse pages.</p></section>');
     return;
   }
-  const a = await loadProfiles();
-  const p = a.find(x => x.name === name);
+  const profiles = await loadProfiles();
+  const p = profiles.find(x => x.name === name);
   if (!p) {
     shell('<section class="hero"><h1>API not found</h1><p>This provider is not currently present in the live catalog.</p></section>');
     return;
@@ -304,7 +313,7 @@ async function apiProfile() {
 async function recommend() {
   const a = await loadApis();
   shell(
-    '<section class="hero"><h1>Project API Recommender</h1><p>Describe what you are building. Matching runs locally; no AI service or API key is required.</p></section>' +
+    '<section class="hero"><h1>Project API Recommender</h1><p>Describe what you are building. Matching runs locally against the lightweight index; no AI service or API key is required.</p></section>' +
     '<div class="card tool"><textarea id="q" class="input" style="min-height:130px" placeholder="Example: weather dashboard with email alerts and maps"></textarea>' +
     '<button id="go" class="btn">Find matching APIs</button></div><div id="r"></div>'
   );
@@ -322,7 +331,7 @@ async function recommend() {
     $("#r").innerHTML = scored.length
       ? '<div class="tablebox"><div class="scroll"><table><thead><tr><th>Provider</th><th>Why it matched</th><th>Free status</th><th>Verification</th></tr></thead><tbody>' +
         scored.map(x => '<tr><td class="provider"><a href="api.html?provider=' + encodeURIComponent(x.p.name) + '">' + esc(x.p.name) +
-          '</a></td><td>' + esc(x.p.uses?.filter(u => terms.some(t => String(u).toLowerCase().includes(t))).join(", ") || x.p.category) +
+          '</a></td><td>' + esc(x.p.description || x.p.category || "Catalog match") +
           '</td><td>' + freeTier(x.p) + '</td><td>' + status(x.p) + '</td></tr>').join("") +
         '</tbody></table></div></div>'
       : '<div class="card">No catalog matches found. Try describing the technologies or functions you need.</div>';
