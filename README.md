@@ -8,14 +8,14 @@ This repository is deliberately conservative:
 
 - API-key/token links point to the provider's key-management or key-minting page, not a generic homepage.
 - Free-tier claims are only recorded when supported by an official provider pricing/docs page.
-- Unknown details are written as `Unverified - check provider page` rather than guessed.
+- Unknown details are written as `Not publicly stated` rather than guessed.
 - Verified providers have `last_verified`, `verified_by`, source URLs, and a status. The September 2026 expansion also contains clearly marked `candidate` entries whose free-tier details still require provider-side verification.
 - Entries older than 90 days are automatically flagged as **Needs re-verification**.
 - A working key page does not imply that API usage is unlimited or that a payment method is unnecessary.
 
 ## Current catalog
 
-The authoritative curated source is [data/providers.json](data/providers.json). The website uses the same committed local catalog on every page: the curated records plus the 1,716-entry public-apis snapshot and 338-entry Public API Lists snapshot. After name/URL deduplication, the canonical catalog contains exactly 2,630 unique providers. No runtime third-party feed adds providers. Upstream records are marked `community-free-source` and are not treated as independently verified provider quotas. Generated category tables are under [docs/providers](docs/providers).
+The authoritative runtime source is [data/providers.json](data/providers.json). The website uses the same committed local catalog on every page. The current catalog contains **669 providers**, supporting the public-facing **650+ API providers** claim. Source-listed records remain distinguishable from independently verified provider facts. Generated category tables are under [docs/providers](docs/providers).
 
 Run locally:
 
@@ -53,7 +53,7 @@ A URL-only catalog of additional providers imported from the supplied source lis
 - [API profiles](api.html) — detailed provider pages with verification status, capabilities and generic code templates.
 - [Verification history](changes.html) — official-source change monitoring and verification records.
 
-The website never requires an API key belonging to the directory owner. Unknown provider facts remain explicitly marked as **Unverified**; candidate expansion entries are not presented as independently verified. The automated monitor uses only public provider pages and GitHub Actions' built-in repository token; it does not call provider APIs on the site's behalf.
+The website never requires an API key belonging to the directory owner. Unknown provider facts remain explicitly marked as **Not publicly stated**; source-listed/candidate expansion entries are not presented as independently verified. The automated monitor uses only public provider pages and GitHub Actions' built-in repository token; it does not call provider APIs on the site's behalf.
 
 
 ## September 2026 expansion
