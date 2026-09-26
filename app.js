@@ -102,9 +102,13 @@ async function loadApis() {
 
 async function loadProfiles() {
   if (!PROFILE_PROMISE) {
-    PROFILE_PROMISE = getJson(PROFILE_URL).then((d) => {
-      if (!Array.isArray(d)) throw new Error("Invalid provider profile catalog");
-      return d;
+    PROFILE_PROMISE = Promise.all([
+      getJson(PROFILE_URL),
+      getJson(new URL("data/providers.json?v=" + DATA_VERSION, document.baseURI).href)
+    ]).then(([profiles, canonical]) => {
+      if (!Array.isArray(profiles) || !Array.isArray(canonical)) throw new Error("Invalid provider profile catalog");
+      const byName = new Map(canonical.map(p => [String(p.name).toLowerCase(), p]));
+      return profiles.map(profile => ({...profile, ...(byName.get(String(profile.name).toLowerCase()) || {})}));
     });
   }
   return PROFILE_PROMISE;
