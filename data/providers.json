@@ -1075,7 +1075,10 @@
       "authentication/integrations",
       "monitoring/automation"
     ],
-    "research_sources": []
+    "research_sources": [
+      "https://support.airtable.com/articles/6292134965-getting-started-with-airtable-s-web-api",
+      "https://support.airtable.com/articles/7735693959-managing-api-call-limits-in-airtable"
+    ]
   },
   {
     "name": "Airtel IP",
@@ -1177,7 +1180,10 @@
       "smart-contract data",
       "on-chain analytics"
     ],
-    "research_sources": []
+    "research_sources": [
+      "https://www.alchemy.com/pricing",
+      "https://support.alchemy.com/articles/5827006872-what-is-included-in-the-free-tier"
+    ]
   },
   {
     "name": "Algolia Search",
@@ -1212,7 +1218,10 @@
       "authentication/integrations",
       "monitoring/automation"
     ],
-    "research_sources": []
+    "research_sources": [
+      "https://www.algolia.com/pricing/free-plan",
+      "https://www.algolia.com/pricing"
+    ]
   },
   {
     "name": "Alibaba DashScope",
@@ -1277,7 +1286,9 @@
       "portfolio/account data where offered",
       "trading/order APIs where offered"
     ],
-    "research_sources": []
+    "research_sources": [
+      "https://docs.alpaca.markets/us/v1.1/docs/about-market-data-api"
+    ]
   },
   {
     "name": "Alpaca Market Data",
@@ -1944,7 +1955,9 @@
     },
     "commercial_use": "No — official Free plan is non-commercial",
     "tier_verification_status": "official-primary-source",
-    "research_sources": []
+    "research_sources": [
+      "https://api-ninjas.com/pricing"
+    ]
   },
   {
     "name": "API Status Check",
@@ -2462,7 +2475,10 @@
       "embeddings/semantic search where offered",
       "model deployment/integration"
     ],
-    "research_sources": []
+    "research_sources": [
+      "https://support.assemblyai.com/articles/5370767329-can-i-sign-up-for-free",
+      "https://www.assemblyai.com/pricing/"
+    ]
   },
   {
     "name": "AssemblyAI Universal",
@@ -2702,7 +2718,10 @@
       "authentication/integrations",
       "monitoring/automation"
     ],
-    "research_sources": []
+    "research_sources": [
+      "https://aws.amazon.com/free/",
+      "https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/free-tier.html"
+    ]
   },
   {
     "name": "Aylien News API",
@@ -4242,7 +4261,10 @@
       "web search"
     ],
     "research_status": "verified-or-resolved-2026-09-26",
-    "research_sources": []
+    "research_sources": [
+      "https://brave.com/search/api/",
+      "https://api-dashboard.search.brave.com/documentation/resources/help-feedback"
+    ]
   },
   {
     "name": "Brazil CNPJ",
@@ -5716,7 +5738,9 @@
     ],
     "rate_limit": "1,200 requests per 5 minutes per user globally; 200 requests/second per IP; GraphQL varies by query cost (max 320/5 min).",
     "rate_limit_source": "official-cloudflare-documentation",
-    "research_sources": []
+    "research_sources": [
+      "https://developers.cloudflare.com/fundamentals/api/reference/limits/"
+    ]
   },
   {
     "name": "Cloudinary",
@@ -5940,7 +5964,10 @@
     },
     "commercial_use": "No — trial keys are not permitted for production/commercial use",
     "tier_verification_status": "official-primary-source",
-    "research_sources": []
+    "research_sources": [
+      "https://cohere.com/pricing",
+      "https://docs.cohere.com/v1/docs/rate-limits"
+    ]
   },
   {
     "name": "CoinAPI",
@@ -9416,7 +9443,10 @@
       "audio generation"
     ],
     "commercial_use": "Non-commercial with attribution on Free plan",
-    "research_sources": []
+    "research_sources": [
+      "https://elevenlabs.io/pricing",
+      "https://elevenlabs.io/docs/help-center/technical/how-much-does-it-cost-to-use-the-api"
+    ]
   },
   {
     "name": "EmailJS",
