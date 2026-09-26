@@ -60,4 +60,4 @@ The website never requires an API key belonging to the directory owner. Unknown 
 
 The public-facing directory now uses a conservative **650+ API providers** claim. The catalog includes independently maintained records plus a researched student-friendly API table. Community/source-listed records remain clearly distinguished from independently verified quotas, card requirements, commercial terms and current uptime.
 
-The student-friendly table is published at [`docs/student-friendly-free-apis.md`](./docs/student-friendly-free-apis.md). It includes 200 provider/key or documentation destinations and a research-notes section for known status changes.
+The student-friendly table is published at [`docs/student-friendly-free-apis.md`](./docs/student-friendly-free-apis.md). A dedicated [`Student Mode`](./student.html) separates free/keyless APIs, free API-key tiers, research/academic APIs, research-key providers, student-project APIs, and records needing verification. It includes 200 provider/key or documentation destinations and a research-notes section for known status changes.
