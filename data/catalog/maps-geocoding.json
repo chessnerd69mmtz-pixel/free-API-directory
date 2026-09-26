@@ -1,0 +1,39 @@
+{
+  "category": "maps-geocoding",
+  "count": 3,
+  "providers": [
+    {
+      "id": 18,
+      "name": "Mapbox",
+      "category": "Maps / Geocoding",
+      "description": "Maps, tiles, search and navigation APIs.",
+      "free_tier": null,
+      "requires_credit_card": null,
+      "signup_url": "https://account.mapbox.com/access-tokens/",
+      "last_verified": "2026-09-25",
+      "status": "active"
+    },
+    {
+      "id": 19,
+      "name": "MapTiler",
+      "category": "Maps / Geocoding",
+      "description": "Cloud maps, geocoding and tile APIs.",
+      "free_tier": null,
+      "requires_credit_card": null,
+      "signup_url": "https://cloud.maptiler.com/account/keys/",
+      "last_verified": "2026-09-25",
+      "status": "active"
+    },
+    {
+      "id": 20,
+      "name": "LocationIQ",
+      "category": "Maps / Geocoding",
+      "description": "Geocoding, reverse geocoding, routing and map APIs.",
+      "free_tier": null,
+      "requires_credit_card": false,
+      "signup_url": "https://my.locationiq.com/dashboard",
+      "last_verified": "2026-09-25",
+      "status": "active"
+    }
+  ]
+}
