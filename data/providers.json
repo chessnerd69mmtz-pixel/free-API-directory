@@ -584,7 +584,7 @@
       "expiry": "Not publicly stated"
     },
     "signup_requires_account": true,
-    "requires_credit_card": "Unavailable; official documentation/pricing does not state that a card is required to create an account",
+    "requires_credit_card": "Not publicly stated; official documentation/pricing does not state that a card is required to create an account",
     "signup_url": "https://account.mapbox.com/access-tokens/",
     "pricing_url": "https://www.mapbox.com/pricing/",
     "verification_urls": [
@@ -619,7 +619,7 @@
       "expiry": "Not publicly stated"
     },
     "signup_requires_account": true,
-    "requires_credit_card": "Unavailable; the official pricing page does not state that a credit card is required for the free plan",
+    "requires_credit_card": "Not publicly stated; the official pricing page does not state that a credit card is required for the free plan",
     "signup_url": "https://cloud.maptiler.com/account/keys/",
     "pricing_url": "https://www.maptiler.com/cloud/pricing/",
     "verification_urls": [
@@ -4234,7 +4234,7 @@
     "last_verified": "2026-09-25",
     "verified_by": "official-source-verification",
     "status": "active",
-    "tier_verification_url": "Unavailable",
+    "tier_verification_url": "Not publicly stated",
     "tier_verification_status": "manually-verified",
     "uses": [
       "market/price data",
@@ -5563,7 +5563,7 @@
     "last_verified": "2026-09-25",
     "verified_by": "official-source-verification",
     "status": "active",
-    "tier_verification_url": "Unavailable",
+    "tier_verification_url": "Not publicly stated",
     "tier_verification_status": "manually-verified",
     "uses": [
       "image search/retrieval",
@@ -5658,7 +5658,7 @@
     "last_verified": "2026-09-25",
     "verified_by": "official-source-verification",
     "status": "active",
-    "tier_verification_url": "Unavailable",
+    "tier_verification_url": "Not publicly stated",
     "tier_verification_status": "manually-verified",
     "uses": [
       "image search/retrieval",
@@ -5904,7 +5904,7 @@
     "last_verified": "2026-09-25",
     "verified_by": "official-source-verification",
     "status": "active",
-    "tier_verification_url": "Unavailable",
+    "tier_verification_url": "Not publicly stated",
     "tier_verification_status": "manually-verified",
     "uses": [
       "job search",
@@ -5935,7 +5935,7 @@
     "last_verified": "2026-09-25",
     "verified_by": "official-source-verification",
     "status": "active",
-    "tier_verification_url": "Unavailable",
+    "tier_verification_url": "Not publicly stated",
     "tier_verification_status": "manually-verified",
     "uses": [
       "job search",
@@ -5966,7 +5966,7 @@
     "last_verified": "2026-09-25",
     "verified_by": "official-source-verification",
     "status": "active",
-    "tier_verification_url": "Unavailable",
+    "tier_verification_url": "Not publicly stated",
     "tier_verification_status": "manually-verified",
     "uses": [
       "job search",
@@ -5997,7 +5997,7 @@
     "last_verified": "2026-09-25",
     "verified_by": "official-source-verification",
     "status": "active",
-    "tier_verification_url": "Unavailable",
+    "tier_verification_url": "Not publicly stated",
     "tier_verification_status": "manually-verified",
     "uses": [
       "job search",
@@ -6810,7 +6810,7 @@
     "last_verified": "2026-09-25",
     "verified_by": "official-source-verification",
     "status": "active",
-    "tier_verification_url": "Unavailable",
+    "tier_verification_url": "Not publicly stated",
     "tier_verification_status": "manually-verified",
     "uses": [
       "Miscellaneous / Utility",
@@ -7104,7 +7104,7 @@
     "last_verified": "2026-09-25",
     "verified_by": "official-source-verification",
     "status": "active",
-    "tier_verification_url": "Unavailable",
+    "tier_verification_url": "Not publicly stated",
     "tier_verification_status": "manually-verified",
     "uses": [
       "Miscellaneous / Utility",
@@ -7573,7 +7573,7 @@
       "expiry": "Not publicly stated"
     },
     "signup_requires_account": true,
-    "requires_credit_card": "A credit card requirement for the current News API plans is Unavailable",
+    "requires_credit_card": "A credit card requirement for the current News API plans is Not publicly stated",
     "signup_url": "https://aylien.com/news-api",
     "pricing_url": "https://aylien.com/pricing/",
     "verification_urls": [
@@ -8412,7 +8412,7 @@
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
-      "details": "Unavailable in the official source reviewed; no free-tier claim is made.",
+      "details": "Not publicly stated in the official source reviewed; no free-tier claim is made.",
       "amount": "Not publicly stated",
       "expiry": "Not publicly stated"
     },
@@ -8443,7 +8443,7 @@
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
-      "details": "Unavailable in the official source reviewed; no free-tier claim is made.",
+      "details": "Not publicly stated in the official source reviewed; no free-tier claim is made.",
       "amount": "Not publicly stated",
       "expiry": "Not publicly stated"
     },
@@ -8506,7 +8506,7 @@
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
-      "details": "Unavailable in the official source reviewed; no free-tier claim is made.",
+      "details": "Not publicly stated in the official source reviewed; no free-tier claim is made.",
       "amount": "Not publicly stated",
       "expiry": "Not publicly stated"
     },
@@ -8537,7 +8537,7 @@
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
-      "details": "Unavailable in the official source reviewed; no free-tier claim is made.",
+      "details": "Not publicly stated in the official source reviewed; no free-tier claim is made.",
       "amount": "Not publicly stated",
       "expiry": "Not publicly stated"
     },
@@ -8568,7 +8568,7 @@
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
-      "details": "Unavailable in the official source reviewed; no free-tier claim is made.",
+      "details": "Not publicly stated in the official source reviewed; no free-tier claim is made.",
       "amount": "Not publicly stated",
       "expiry": "Not publicly stated"
     },
@@ -8631,7 +8631,7 @@
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
-      "details": "Unavailable in the official source reviewed; no free-tier claim is made.",
+      "details": "Not publicly stated in the official source reviewed; no free-tier claim is made.",
       "amount": "Not publicly stated",
       "expiry": "Not publicly stated"
     },
@@ -8662,7 +8662,7 @@
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
-      "details": "Unavailable in the official source reviewed; no free-tier claim is made.",
+      "details": "Not publicly stated in the official source reviewed; no free-tier claim is made.",
       "amount": "Not publicly stated",
       "expiry": "Not publicly stated"
     },
@@ -8693,7 +8693,7 @@
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
-      "details": "Unavailable in the official source reviewed; no free-tier claim is made.",
+      "details": "Not publicly stated in the official source reviewed; no free-tier claim is made.",
       "amount": "Not publicly stated",
       "expiry": "Not publicly stated"
     },
@@ -8756,7 +8756,7 @@
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
-      "details": "Unavailable in the official source reviewed; no free-tier claim is made.",
+      "details": "Not publicly stated in the official source reviewed; no free-tier claim is made.",
       "amount": "Not publicly stated",
       "expiry": "Not publicly stated"
     },
@@ -8818,7 +8818,7 @@
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
-      "details": "Unavailable in the official source reviewed; no free-tier claim is made.",
+      "details": "Not publicly stated in the official source reviewed; no free-tier claim is made.",
       "amount": "Not publicly stated",
       "expiry": "Not publicly stated"
     },
@@ -8849,7 +8849,7 @@
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
-      "details": "Unavailable in the official source reviewed; no free-tier claim is made.",
+      "details": "Not publicly stated in the official source reviewed; no free-tier claim is made.",
       "amount": "Not publicly stated",
       "expiry": "Not publicly stated"
     },
@@ -9041,7 +9041,7 @@
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
-      "details": "Unavailable in the official source reviewed; no free-tier claim is made.",
+      "details": "Not publicly stated in the official source reviewed; no free-tier claim is made.",
       "amount": "Not publicly stated",
       "expiry": "Not publicly stated"
     },
@@ -9072,7 +9072,7 @@
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
-      "details": "Unavailable in the official source reviewed; no free-tier claim is made.",
+      "details": "Not publicly stated in the official source reviewed; no free-tier claim is made.",
       "amount": "Not publicly stated",
       "expiry": "Not publicly stated"
     },
@@ -9261,7 +9261,7 @@
     "category": "Security / Threat Intel",
     "description": "Cataloged API provider.",
     "free_tier": {
-      "has_free_tier": "Unavailable",
+      "has_free_tier": null,
       "type": "account-credits",
       "details": "API access is credit-based; current free allocation is account/plan dependent.",
       "amount": "Not publicly stated",
@@ -9359,7 +9359,7 @@
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
-      "details": "Unavailable in the official source reviewed; no free-tier claim is made.",
+      "details": "Not publicly stated in the official source reviewed; no free-tier claim is made.",
       "amount": "Not publicly stated",
       "expiry": "Not publicly stated"
     },
@@ -9390,7 +9390,7 @@
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
-      "details": "Unavailable in the official source reviewed; no free-tier claim is made.",
+      "details": "Not publicly stated in the official source reviewed; no free-tier claim is made.",
       "amount": "Not publicly stated",
       "expiry": "Not publicly stated"
     },
@@ -9421,7 +9421,7 @@
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
-      "details": "Unavailable in the official source reviewed; no free-tier claim is made.",
+      "details": "Not publicly stated in the official source reviewed; no free-tier claim is made.",
       "amount": "Not publicly stated",
       "expiry": "Not publicly stated"
     },
@@ -9484,7 +9484,7 @@
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
-      "details": "Unavailable in the official source reviewed; no free-tier claim is made.",
+      "details": "Not publicly stated in the official source reviewed; no free-tier claim is made.",
       "amount": "Not publicly stated",
       "expiry": "Not publicly stated"
     },
@@ -9578,7 +9578,7 @@
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
-      "details": "Unavailable in the official source reviewed; no free-tier claim is made.",
+      "details": "Not publicly stated in the official source reviewed; no free-tier claim is made.",
       "amount": "Not publicly stated",
       "expiry": "Not publicly stated"
     },
@@ -9609,7 +9609,7 @@
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
-      "details": "Unavailable in the official source reviewed; no free-tier claim is made.",
+      "details": "Not publicly stated in the official source reviewed; no free-tier claim is made.",
       "amount": "Not publicly stated",
       "expiry": "Not publicly stated"
     },
@@ -9804,7 +9804,7 @@
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
-      "details": "Unavailable in the official source reviewed; no free-tier claim is made.",
+      "details": "Not publicly stated in the official source reviewed; no free-tier claim is made.",
       "amount": "Not publicly stated",
       "expiry": "Not publicly stated"
     },
@@ -9836,7 +9836,7 @@
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
-      "details": "Unavailable in the official source reviewed; no free-tier claim is made.",
+      "details": "Not publicly stated in the official source reviewed; no free-tier claim is made.",
       "amount": "Not publicly stated",
       "expiry": "Not publicly stated"
     },
@@ -9868,7 +9868,7 @@
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
-      "details": "Unavailable in the official source reviewed; no free-tier claim is made.",
+      "details": "Not publicly stated in the official source reviewed; no free-tier claim is made.",
       "amount": "Not publicly stated",
       "expiry": "Not publicly stated"
     },
@@ -9933,7 +9933,7 @@
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
-      "details": "Unavailable in the official source reviewed; no free-tier claim is made.",
+      "details": "Not publicly stated in the official source reviewed; no free-tier claim is made.",
       "amount": "Not publicly stated",
       "expiry": "Not publicly stated"
     },
@@ -9964,7 +9964,7 @@
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
-      "details": "Unavailable in the official source reviewed; no free-tier claim is made.",
+      "details": "Not publicly stated in the official source reviewed; no free-tier claim is made.",
       "amount": "Not publicly stated",
       "expiry": "Not publicly stated"
     },
@@ -9995,7 +9995,7 @@
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
-      "details": "Unavailable in the official source reviewed; no free-tier claim is made.",
+      "details": "Not publicly stated in the official source reviewed; no free-tier claim is made.",
       "amount": "Not publicly stated",
       "expiry": "Not publicly stated"
     },
@@ -10088,7 +10088,7 @@
     "category": "Translation / Language",
     "description": "Cataloged API provider.",
     "free_tier": {
-      "has_free_tier": "Unavailable",
+      "has_free_tier": null,
       "type": "self-hosted",
       "details": "LibreTranslate is open-source and can be self-hosted; hosted service pricing varies by provider.",
       "amount": "Not publicly stated",
@@ -10121,7 +10121,7 @@
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
-      "details": "Unavailable in the official source reviewed; no free-tier claim is made.",
+      "details": "Not publicly stated in the official source reviewed; no free-tier claim is made.",
       "amount": "Not publicly stated",
       "expiry": "Not publicly stated"
     },
@@ -10216,7 +10216,7 @@
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
-      "details": "Unavailable in the official source reviewed; no free-tier claim is made.",
+      "details": "Not publicly stated in the official source reviewed; no free-tier claim is made.",
       "amount": "Not publicly stated",
       "expiry": "Not publicly stated"
     },
@@ -10279,7 +10279,7 @@
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
-      "details": "Unavailable in the official source reviewed; no free-tier claim is made.",
+      "details": "Not publicly stated in the official source reviewed; no free-tier claim is made.",
       "amount": "Not publicly stated",
       "expiry": "Not publicly stated"
     },
@@ -10310,7 +10310,7 @@
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
-      "details": "Unavailable in the official source reviewed; no free-tier claim is made.",
+      "details": "Not publicly stated in the official source reviewed; no free-tier claim is made.",
       "amount": "Not publicly stated",
       "expiry": "Not publicly stated"
     },
@@ -10341,7 +10341,7 @@
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
-      "details": "Unavailable in the official source reviewed; no free-tier claim is made.",
+      "details": "Not publicly stated in the official source reviewed; no free-tier claim is made.",
       "amount": "Not publicly stated",
       "expiry": "Not publicly stated"
     },
@@ -10370,7 +10370,7 @@
     "category": "Travel / Transportation",
     "description": "Cataloged API provider.",
     "free_tier": {
-      "has_free_tier": "Unavailable",
+      "has_free_tier": null,
       "type": "partner-access",
       "details": "API keys require a partnership application and approval; no public free-tier quota is stated in the current docs.",
       "amount": "Not publicly stated",
@@ -10434,7 +10434,7 @@
     "category": "Travel / Transportation",
     "description": "Cataloged API provider.",
     "free_tier": {
-      "has_free_tier": "Unavailable",
+      "has_free_tier": null,
       "type": "restricted-access",
       "details": "Current documentation describes limited/approval-based access for some APIs and a sandbox for development.",
       "amount": "Not publicly stated",
@@ -10501,7 +10501,7 @@
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
-      "details": "Unavailable in the official source reviewed; no free-tier claim is made.",
+      "details": "Not publicly stated in the official source reviewed; no free-tier claim is made.",
       "amount": "Not publicly stated",
       "expiry": "Not publicly stated"
     },
@@ -10533,7 +10533,7 @@
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
-      "details": "Unavailable in the official source reviewed; no free-tier claim is made.",
+      "details": "Not publicly stated in the official source reviewed; no free-tier claim is made.",
       "amount": "Not publicly stated",
       "expiry": "Not publicly stated"
     },
@@ -10565,7 +10565,7 @@
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
-      "details": "Unavailable in the official source reviewed; no free-tier claim is made.",
+      "details": "Not publicly stated in the official source reviewed; no free-tier claim is made.",
       "amount": "Not publicly stated",
       "expiry": "Not publicly stated"
     },
@@ -10630,7 +10630,7 @@
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
-      "details": "Unavailable in the official source reviewed; no free-tier claim is made.",
+      "details": "Not publicly stated in the official source reviewed; no free-tier claim is made.",
       "amount": "Not publicly stated",
       "expiry": "Not publicly stated"
     },
@@ -10662,7 +10662,7 @@
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
-      "details": "Unavailable in the official source reviewed; no free-tier claim is made.",
+      "details": "Not publicly stated in the official source reviewed; no free-tier claim is made.",
       "amount": "Not publicly stated",
       "expiry": "Not publicly stated"
     },
@@ -10694,7 +10694,7 @@
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
-      "details": "Unavailable in the official source reviewed; no free-tier claim is made.",
+      "details": "Not publicly stated in the official source reviewed; no free-tier claim is made.",
       "amount": "Not publicly stated",
       "expiry": "Not publicly stated"
     },
@@ -10726,7 +10726,7 @@
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
-      "details": "Unavailable in the official source reviewed; no free-tier claim is made.",
+      "details": "Not publicly stated in the official source reviewed; no free-tier claim is made.",
       "amount": "Not publicly stated",
       "expiry": "Not publicly stated"
     },
@@ -10857,7 +10857,7 @@
     "free_tier": {
       "has_free_tier": null,
       "type": "unknown",
-      "details": "Unavailable in the official source reviewed; no free-tier claim is made.",
+      "details": "Not publicly stated in the official source reviewed; no free-tier claim is made.",
       "amount": "Not publicly stated",
       "expiry": "Not publicly stated"
     },
