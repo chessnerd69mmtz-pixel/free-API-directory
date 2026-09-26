@@ -1,0 +1,112 @@
+[
+  {
+    "name": "Groq",
+    "documentation_url": "https://console.groq.com/docs",
+    "pricing_url": "https://groq.com/pricing",
+    "signup_url": "https://console.groq.com/keys",
+    "rate_limit": "Model-specific RPM/RPD/TPM/TPD and audio limits; current values are published on the official rate-limit page.",
+    "free_tier_reset": "RPD/TPD and token windows follow the provider's published limits.",
+    "requires_credit_card": "Not publicly stated in the cited official rate-limit/key pages.",
+    "commercial_use": "Check current Groq terms; not established by the cited pages.",
+    "last_verified": "2026-09-26",
+    "sources": [
+      "https://console.groq.com/docs/rate-limits",
+      "https://console.groq.com/keys",
+      "https://console.groq.com/docs/quickstart"
+    ]
+  },
+  {
+    "name": "Google Gemini API",
+    "documentation_url": "https://ai.google.dev/gemini-api/docs/rate-limits",
+    "pricing_url": "https://ai.google.dev/gemini-api/docs/pricing",
+    "signup_url": "https://aistudio.google.com/app/apikey",
+    "rate_limit": "Model- and usage-tier-specific RPM/TPM/RPD; active limits are shown in AI Studio.",
+    "free_tier_reset": "RPD quotas reset at midnight Pacific time.",
+    "requires_credit_card": "Free tier starts without a billing account; card requirement for free-tier key creation is not stated on the cited pages.",
+    "commercial_use": "Free-tier data-use terms differ from paid tiers; review Google's current terms before commercial deployment.",
+    "last_verified": "2026-09-26",
+    "sources": [
+      "https://ai.google.dev/gemini-api/docs/rate-limits",
+      "https://ai.google.dev/gemini-api/docs/pricing",
+      "https://ai.google.dev/gemini-api/docs/billing"
+    ]
+  },
+  {
+    "name": "Brave Search API",
+    "documentation_url": "https://api-dashboard.search.brave.com/documentation",
+    "pricing_url": "https://api-dashboard.search.brave.com/app/plans",
+    "signup_url": "https://api.search.brave.com/app/keys",
+    "free_tier": "$5 free API credits per month; Brave's current plan information says access to the credit without prepaid spend requires a credit card.",
+    "free_tier_reset": "Monthly",
+    "requires_credit_card": true,
+    "last_verified": "2026-09-26",
+    "sources": [
+      "https://api-dashboard.search.brave.com/app/plans",
+      "https://api-dashboard.search.brave.com/documentation"
+    ]
+  },
+  {
+    "name": "AssemblyAI (speech-to-text)",
+    "documentation_url": "https://www.assemblyai.com/docs",
+    "pricing_url": "https://www.assemblyai.com/pricing",
+    "signup_url": "https://www.assemblyai.com/dashboard/signup",
+    "free_tier": "$50 free API credits for supported speech-to-text/Speech Understanding usage; the cited official FAQ says the free credits do not expire.",
+    "free_tier_reset": "Credits are consumed until used; no expiry stated by the cited FAQ.",
+    "requires_credit_card": "No card required for the free tier according to the cited official FAQ.",
+    "last_verified": "2026-09-26",
+    "sources": [
+      "https://www.assemblyai.com/pricing",
+      "https://support.assemblyai.com/articles/5370767329-can-i-sign-up-for-free",
+      "https://www.assemblyai.com/docs/faq/how-to-get-your-api-key"
+    ]
+  },
+  {
+    "name": "OpenRouter",
+    "documentation_url": "https://openrouter.ai/docs",
+    "pricing_url": "https://openrouter.ai/pricing",
+    "signup_url": "https://openrouter.ai/settings/keys",
+    "free_tier": "Free plan exposes free models; current catalog records 25+ free models and 50 requests/day for the Free plan.",
+    "last_verified": "2026-09-26",
+    "sources": [
+      "https://openrouter.ai/pricing",
+      "https://openrouter.ai/docs"
+    ]
+  },
+  {
+    "name": "Mistral AI",
+    "documentation_url": "https://docs.mistral.ai",
+    "pricing_url": "https://mistral.ai/technology/#pricing",
+    "signup_url": "https://console.mistral.ai/api-keys",
+    "free_tier": "Mistral Studio Free mode provides limited API access; current catalog records $10/month API credits and no credit card requirement for the free mode.",
+    "last_verified": "2026-09-26",
+    "sources": [
+      "https://docs.mistral.ai/getting-started/quickstart",
+      "https://mistral.ai/technology/#pricing"
+    ]
+  },
+  {
+    "name": "NVIDIA NIM APIs",
+    "documentation_url": "https://docs.api.nvidia.com",
+    "signup_url": "https://build.nvidia.com/settings/api-keys",
+    "free_tier": "Developer/API Catalog access can provide API keys; exact allowance varies by model and account.",
+    "last_verified": "2026-09-26",
+    "sources": [
+      "https://build.nvidia.com/settings/api-keys",
+      "https://build.nvidia.com/explore/discover",
+      "https://docs.api.nvidia.com"
+    ]
+  },
+  {
+    "name": "Anthropic API",
+    "documentation_url": "https://docs.anthropic.com/en/api/getting-started",
+    "pricing_url": "https://www.anthropic.com/pricing#api",
+    "signup_url": "https://console.anthropic.com/settings/keys",
+    "free_tier": "No free API quota is asserted in the cited API pricing/key documentation.",
+    "last_verified": "2026-09-26",
+    "sources": [
+      "https://console.anthropic.com/settings/keys",
+      "https://www.anthropic.com/pricing#api",
+      "https://docs.anthropic.com/en/api/getting-started"
+    ]
+  }
+]
