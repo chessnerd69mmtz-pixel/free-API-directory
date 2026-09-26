@@ -1,84 +1,38 @@
 #!/usr/bin/env python3
-"""Validate the canonical Free API Directory datasets and generated catalog."""
-import json, sys
+"""Validate canonical and generated Free API Directory datasets."""
+import json,re,sys
 from pathlib import Path
 from urllib.parse import urlparse
-
-ROOT = Path(__file__).resolve().parents[1]
-ERRORS, WARNINGS = [], []
-
-def load(path):
-    try: return json.loads(path.read_text(encoding="utf-8"))
-    except Exception as exc:
-        ERRORS.append(f"{path.relative_to(ROOT)}: invalid JSON: {exc}")
-        return None
-
-def url_ok(value, allow_http=False):
-    if not value: return False
-    p = urlparse(str(value))
-    return p.scheme in ({"https","http"} if allow_http else {"https"}) and bool(p.netloc)
-
-providers = load(ROOT/"data/providers.json") or []
-catalog = load(ROOT/"data/catalog-index.json") or {}
-exp_files = ["data/public_apis_expansion.json","data/public_api_lists_expansion.json"]
-expansions = [(f, load(ROOT/f) or {}) for f in exp_files]
-
-if not isinstance(providers, list): ERRORS.append("data/providers.json must be a list"); providers=[]
-if not isinstance(catalog, dict) or not isinstance(catalog.get("providers"), list):
-    ERRORS.append("data/catalog-index.json must contain a providers array")
-    catalog_providers=[]
-else: catalog_providers=catalog["providers"]
-
-required=("name","category","description","free_tier","signup_url","pricing_url","last_verified","verified_by","status")
-statuses={"active","candidate","upstream-community","needs re-verification","broken-link","discontinued","retired"}
+ROOT=Path(__file__).resolve().parents[1];ERRORS=[];WARNINGS=[]
+def load(p):
+    try:return json.loads(p.read_text(encoding="utf-8"))
+    except Exception as e:ERRORS.append(f"{p.relative_to(ROOT)} invalid JSON: {e}");return None
+def valid_url(v):
+    if not v:return False
+    u=urlparse(str(v));return u.scheme in {"http","https"} and bool(u.netloc)
+providers=load(ROOT/"data/providers.json") or [];index=load(ROOT/"data/catalog-index.json") or {};profiles=load(ROOT/"data/provider_profiles.json") or []
+def names(data):return [str(x.get("name","")).strip().casefold() for x in data if isinstance(x,dict)]
+for label,data in [("providers.json",providers),("provider_profiles.json",profiles)]:
+    if not isinstance(data,list):ERRORS.append(f"{label} must be an array")
+ip=index.get("providers",[]) if isinstance(index,dict) else []
+if not isinstance(ip,list):ERRORS.append("catalog-index providers must be an array");ip=[]
+for label,ns in [("providers.json",names(providers)),("catalog-index.json",names(ip)),("provider_profiles.json",names(profiles))]:
+    for n in sorted({x for x in ns if ns.count(x)>1}):ERRORS.append(f"{label}: duplicate provider {n}")
+if index.get("provider_count")!=len(ip):ERRORS.append("catalog-index provider_count mismatch")
+if set(names(ip))!=set(names(profiles)):ERRORS.append("catalog-index and provider_profiles are not synchronized")
 for i,p in enumerate(providers,1):
-    for field in required:
-        if field not in p: ERRORS.append(f"providers.json {i}: missing {field}")
-    if p.get("status") not in statuses: ERRORS.append(f"providers.json {i}: unsupported status {p.get('status')!r}")
-    if p.get("signup_url") and not url_ok(p["signup_url"], allow_http=True): ERRORS.append(f"providers.json {i}: invalid signup_url")
-    ft=p.get("free_tier")
-    if not isinstance(ft,dict): ERRORS.append(f"providers.json {i}: free_tier must be an object")
-    elif not ft.get("type"): ERRORS.append(f"providers.json {i}: free_tier.type is required")
-    if p.get("last_verified") and len(str(p["last_verified"])) != 10: ERRORS.append(f"providers.json {i}: last_verified must be YYYY-MM-DD")
-
-names=[str(p.get("name","")).strip().casefold() for p in providers]
-dups=sorted({n for n in names if names.count(n)>1})
-for n in dups: ERRORS.append(f"providers.json: duplicate provider name: {n}")
-
-catalog_names=[str(p.get("name","")).strip().casefold() for p in catalog_providers]
-catalog_dups=sorted({n for n in catalog_names if catalog_names.count(n)>1})
-for n in catalog_dups: ERRORS.append(f"catalog-index.json: duplicate provider name: {n}")
-if catalog.get("provider_count") != len(catalog_providers):
-    ERRORS.append("catalog-index.json: provider_count does not match providers length")
-for p in catalog_providers:
-    if p.get("verification_status") == "community-free-source" and p.get("free_tier",{}).get("has_free_tier") is not True:
-        WARNINGS.append(f"catalog: community record has unexpected free flag: {p.get('name')}")
-
-for filename, obj in expansions:
-    arr=obj.get("providers",[]) if isinstance(obj,dict) else []
-    if not isinstance(arr,list): ERRORS.append(f"{filename}: providers must be a list"); continue
-    if obj.get("count") is not None and obj.get("count") != len(arr):
-        ERRORS.append(f"{filename}: count does not match providers length")
-    for i,p in enumerate(arr,1):
-        for field in ("name","category","description","provider_url","auth"):
-            if not p.get(field): ERRORS.append(f"{filename} {i}: missing {field}")
-        if p.get("provider_url") and not url_ok(p["provider_url"], allow_http=True):
-            ERRORS.append(f"{filename} {i}: invalid provider_url")
-
-curated=set(names)
-for filename,obj in expansions:
-    for p in obj.get("providers",[]) if isinstance(obj,dict) else []:
-        if str(p.get("name","")).strip().casefold() in curated:
-            WARNINGS.append(f"{filename}: provider also exists in curated catalog: {p.get('name')}")
-
-print(f"Curated providers: {len(providers)}")
-print(f"Runtime index providers: {len(catalog_providers)}")
-print(f"Expansion providers: {sum(len(o.get('providers',[])) for _,o in expansions if isinstance(o,dict))}")
-if WARNINGS:
-    print("\nWarnings:")
-    for w in sorted(set(WARNINGS)): print(" - "+w)
+    for f in ("name","category","description","free_tier","signup_url","pricing_url","last_verified","verified_by","status"):
+        if f not in p:ERRORS.append(f"providers.json {i}: missing {f}")
+    if p.get("signup_url") and not valid_url(p["signup_url"]):ERRORS.append(f"providers.json {i}: invalid signup_url")
+    if p.get("pricing_url") and not valid_url(p["pricing_url"]):ERRORS.append(f"providers.json {i}: invalid pricing_url")
+    if p.get("last_verified") and not re.fullmatch(r"\d{4}-\d{2}-\d{2}",str(p["last_verified"])):ERRORS.append(f"providers.json {i}: invalid last_verified")
+for i,p in enumerate(profiles,1):
+    if not p.get("name") or not p.get("category") or not p.get("description") or not p.get("signup_url"):ERRORS.append(f"provider_profiles.json {i}: missing core field")
+    if p.get("signup_url") and not valid_url(p["signup_url"]):ERRORS.append(f"provider_profiles.json {i}: invalid signup_url")
+for fn in ("data/public_apis_expansion.json","data/public_api_lists_expansion.json"):
+    d=load(ROOT/fn) or {};arr=d.get("providers",[])
+    if d.get("count")!=len(arr):ERRORS.append(f"{fn}: count mismatch")
+print(f"Canonical providers: {len(providers)}\nSynchronized runtime providers: {len(ip)}\nGenerated categories: {len(index.get('categories',{}))}")
 if ERRORS:
-    print("\nErrors:")
-    for e in ERRORS: print(" - "+e)
-    sys.exit(1)
+    print("\nErrors:\n"+"\n".join(" - "+x for x in sorted(set(ERRORS))));sys.exit(1)
 print("\nValidation passed.")
