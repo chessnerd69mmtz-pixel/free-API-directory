@@ -167,7 +167,7 @@ async function finder() {
     '<section class="hero"><h1>Find an API</h1><p>Search the lightweight catalog index. Full provider profiles are loaded only when you open a provider.</p></section>' +
     '<div class="card tool"><input id="q" class="input" placeholder="Search APIs…" autocomplete="off">' +
     '<select id="f" class="select"><option value="">Free status: any</option><option value="yes">Free access recorded</option><option value="unknown">Free status not publicly stated</option><option value="no">No free tier recorded</option></select>' +
-    '<select id="c" class="select"><option value="">Card requirement: any</option><option value="no">No card recorded</option><option value="yes">Card required</option><option value="unknown">Not publicly stated</option></select><select id="cat" class="select"><option value="">Category: any</option></select><select id="v" class="select"><option value="">Verification: any</option><option value="verified">Verified active</option><option value="candidate">Candidate / needs review</option></select><select id="region" class="select"><option value="">Region: any / not specified</option><option value="explicit">Explicit regional data only</option></select></div>' +
+    '<select id="c" class="select"><option value="">Card requirement: any</option><option value="no">No card recorded</option><option value="yes">Card required</option><option value="unknown">Not publicly stated</option></select><select id="cat" class="select"><option value="">Category: any</option></select><select id="v" class="select"><option value="">Verification: any</option><option value="verified">Verified active</option><option value="candidate">Candidate / needs review</option></select><select id="uq" class="select"><option value="">Usage-quality evidence: any</option><option value="available">Has source-linked evidence</option><option value="official">Official usage evidence</option><option value="community">Community usage evidence</option></select><select id="region" class="select"><option value="">Region: any / not specified</option><option value="explicit">Explicit regional data only</option></select></div>' +
     '<div id="r"></div>'
   );
 
@@ -179,6 +179,7 @@ async function finder() {
     const q = $("#q").value.toLowerCase().trim();
     const f = $("#f").value;
     const c = $("#c").value;
+    const uq = $("#uq").value;
     return a.filter(p => {
       const fv = freeValue(p);
       const freeOK =
@@ -193,7 +194,8 @@ async function finder() {
         (c === "unknown" && typeof p.requires_credit_card !== "boolean");
       const catOK = !$("#cat").value || p.category === $("#cat").value;
       const v = $("#v").value; const verifiedOK = !v || (v === "verified" ? (p.status === "active" && !!p.last_verified) : (p.status === "candidate" || p.status === "needs re-verification" || p.status === "upstream-community"));
-      return (!q || p._searchText.includes(q)) && freeOK && cardOK && catOK && verifiedOK;
+      const usageEvidenceOK = !uq || (uq === "available" ? !!p.usage_quality : uq === "official" ? !!p.usage_quality && p.usage_quality_source_type === "official" : !!p.usage_quality && p.usage_quality_source_type === "community");
+      return (!q || p._searchText.includes(q)) && freeOK && cardOK && catOK && verifiedOK && usageEvidenceOK;
     });
   }
 
@@ -227,6 +229,7 @@ async function finder() {
   $("#q").addEventListener("input", rerender);
   $("#f").addEventListener("change", () => { visible = 100; render(); });
   $("#c").addEventListener("change", () => { visible = 100; render(); });
+  $("#uq").addEventListener("change", () => { visible = 100; render(); });
   render();
 }
 
