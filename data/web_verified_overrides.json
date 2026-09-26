@@ -1,18 +1,98 @@
 [
   {
-    "name": "Groq",
-    "documentation_url": "https://console.groq.com/docs",
-    "pricing_url": "https://groq.com/pricing",
-    "signup_url": "https://console.groq.com/keys",
-    "rate_limit": "Model-specific RPM/RPD/TPM/TPD and audio limits; current values are published on the official rate-limit page.",
-    "free_tier_reset": "RPD/TPD and token windows follow the provider's published limits.",
-    "requires_credit_card": "Not publicly stated in the cited official rate-limit/key pages.",
-    "commercial_use": "Check current Groq terms; not established by the cited pages.",
+    "name": "Anthropic API",
+    "documentation_url": "https://docs.anthropic.com/en/api/getting-started",
+    "pricing_url": "https://www.anthropic.com/pricing#api",
+    "signup_url": "https://console.anthropic.com/settings/keys",
+    "free_tier": "No free API quota is asserted in the cited API pricing/key documentation.",
     "last_verified": "2026-09-26",
     "sources": [
-      "https://console.groq.com/docs/rate-limits",
-      "https://console.groq.com/keys",
-      "https://console.groq.com/docs/quickstart"
+      "https://console.anthropic.com/settings/keys",
+      "https://www.anthropic.com/pricing#api",
+      "https://docs.anthropic.com/en/api/getting-started"
+    ]
+  },
+  {
+    "name": "AssemblyAI (speech-to-text)",
+    "documentation_url": "https://www.assemblyai.com/docs",
+    "pricing_url": "https://www.assemblyai.com/pricing",
+    "signup_url": "https://www.assemblyai.com/dashboard/signup",
+    "free_tier": "$50 free API credits for supported speech-to-text/Speech Understanding usage; the cited official FAQ says the free credits do not expire.",
+    "free_tier_reset": "Credits are consumed until used; no expiry stated by the cited FAQ.",
+    "requires_credit_card": "No card required for the free tier according to the cited official FAQ.",
+    "last_verified": "2026-09-26",
+    "sources": [
+      "https://www.assemblyai.com/pricing",
+      "https://support.assemblyai.com/articles/5370767329-can-i-sign-up-for-free",
+      "https://www.assemblyai.com/docs/faq/how-to-get-your-api-key"
+    ]
+  },
+  {
+    "name": "Brave Search API",
+    "documentation_url": "https://api-dashboard.search.brave.com/documentation",
+    "pricing_url": "https://api-dashboard.search.brave.com/app/plans",
+    "signup_url": "https://api.search.brave.com/app/keys",
+    "free_tier": "$5 free API credits per month; Brave's current plan information says access to the credit without prepaid spend requires a credit card.",
+    "free_tier_reset": "Monthly",
+    "requires_credit_card": true,
+    "last_verified": "2026-09-26",
+    "sources": [
+      "https://api-dashboard.search.brave.com/app/plans",
+      "https://api-dashboard.search.brave.com/documentation"
+    ]
+  },
+  {
+    "name": "Cerebras Inference",
+    "documentation_url": "https://inference-docs.cerebras.ai",
+    "pricing_url": "https://www.cerebras.ai/pricing",
+    "signup_url": "https://cloud.cerebras.ai/",
+    "free_tier": "$5 Free Trial credit; official rate-limit documentation lists 5 RPM, 30K uncached TPM, 90K total TPM and 1M TPD for listed trial models; trial credits expire after 30 days.",
+    "rate_limit": "5 RPM / 30K uncached TPM / 90K total TPM / 1M TPD for listed Free Trial models.",
+    "free_tier_reset": "Token bucket replenishes continuously according to the official rate-limit documentation.",
+    "requires_credit_card": true,
+    "last_verified": "2026-09-26",
+    "sources": [
+      "https://inference-docs.cerebras.ai/support/rate-limits",
+      "https://www.cerebras.ai/pricing"
+    ]
+  },
+  {
+    "name": "Cloudflare Workers AI",
+    "documentation_url": "https://developers.cloudflare.com/workers-ai/",
+    "pricing_url": "https://developers.cloudflare.com/workers-ai/platform/pricing/",
+    "signup_url": "https://dash.cloudflare.com/",
+    "free_tier": "10,000 Neurons/day on Workers Free; the same 10,000-Neuron daily allocation is included on Workers Paid before paid overage.",
+    "free_tier_reset": "Daily at 00:00 UTC.",
+    "rate_limit": "Official documentation and current model/task limits vary by model; free allocation is the primary quota.",
+    "last_verified": "2026-09-26",
+    "sources": [
+      "https://developers.cloudflare.com/workers-ai/platform/pricing/"
+    ]
+  },
+  {
+    "name": "Deepgram",
+    "documentation_url": "https://developers.deepgram.com",
+    "pricing_url": "https://deepgram.com/pricing",
+    "signup_url": "https://console.deepgram.com/signup",
+    "free_tier": "$200 free credit for every new account; official pricing says the credit is available until used.",
+    "free_tier_reset": "No recurring reset; credit is consumed until used.",
+    "rate_limit": "Concurrency limits shown on official pricing page: up to 50 REST STT, 150 WSS STT, 45 REST/WSS TTS, and 10 Audio Intelligence on Pay As You Go.",
+    "requires_credit_card": "Not publicly stated on cited pricing page.",
+    "last_verified": "2026-09-26",
+    "sources": [
+      "https://deepgram.com/pricing"
+    ]
+  },
+  {
+    "name": "ElevenLabs",
+    "documentation_url": "https://elevenlabs.io/docs",
+    "pricing_url": "https://elevenlabs.io/pricing",
+    "signup_url": "https://elevenlabs.io/app/subscription",
+    "free_tier": "Official pricing currently lists a $0 Free plan with 10,000 credits per month.",
+    "free_tier_reset": "Monthly",
+    "last_verified": "2026-09-26",
+    "sources": [
+      "https://elevenlabs.io/pricing"
     ]
   },
   {
@@ -32,44 +112,19 @@
     ]
   },
   {
-    "name": "Brave Search API",
-    "documentation_url": "https://api-dashboard.search.brave.com/documentation",
-    "pricing_url": "https://api-dashboard.search.brave.com/app/plans",
-    "signup_url": "https://api.search.brave.com/app/keys",
-    "free_tier": "$5 free API credits per month; Brave's current plan information says access to the credit without prepaid spend requires a credit card.",
-    "free_tier_reset": "Monthly",
-    "requires_credit_card": true,
+    "name": "Groq",
+    "documentation_url": "https://console.groq.com/docs",
+    "pricing_url": "https://groq.com/pricing",
+    "signup_url": "https://console.groq.com/keys",
+    "rate_limit": "Model-specific RPM/RPD/TPM/TPD and audio limits; current values are published on the official rate-limit page.",
+    "free_tier_reset": "RPD/TPD and token windows follow the provider's published limits.",
+    "requires_credit_card": "Not publicly stated in the cited official rate-limit/key pages.",
+    "commercial_use": "Check current Groq terms; not established by the cited pages.",
     "last_verified": "2026-09-26",
     "sources": [
-      "https://api-dashboard.search.brave.com/app/plans",
-      "https://api-dashboard.search.brave.com/documentation"
-    ]
-  },
-  {
-    "name": "AssemblyAI (speech-to-text)",
-    "documentation_url": "https://www.assemblyai.com/docs",
-    "pricing_url": "https://www.assemblyai.com/pricing",
-    "signup_url": "https://www.assemblyai.com/dashboard/signup",
-    "free_tier": "$50 free API credits for supported speech-to-text/Speech Understanding usage; the cited official FAQ says the free credits do not expire.",
-    "free_tier_reset": "Credits are consumed until used; no expiry stated by the cited FAQ.",
-    "requires_credit_card": "No card required for the free tier according to the cited official FAQ.",
-    "last_verified": "2026-09-26",
-    "sources": [
-      "https://www.assemblyai.com/pricing",
-      "https://support.assemblyai.com/articles/5370767329-can-i-sign-up-for-free",
-      "https://www.assemblyai.com/docs/faq/how-to-get-your-api-key"
-    ]
-  },
-  {
-    "name": "OpenRouter",
-    "documentation_url": "https://openrouter.ai/docs",
-    "pricing_url": "https://openrouter.ai/pricing",
-    "signup_url": "https://openrouter.ai/settings/keys",
-    "free_tier": "Free plan exposes free models; current catalog records 25+ free models and 50 requests/day for the Free plan.",
-    "last_verified": "2026-09-26",
-    "sources": [
-      "https://openrouter.ai/pricing",
-      "https://openrouter.ai/docs"
+      "https://console.groq.com/docs/rate-limits",
+      "https://console.groq.com/keys",
+      "https://console.groq.com/docs/quickstart"
     ]
   },
   {
@@ -97,16 +152,15 @@
     ]
   },
   {
-    "name": "Anthropic API",
-    "documentation_url": "https://docs.anthropic.com/en/api/getting-started",
-    "pricing_url": "https://www.anthropic.com/pricing#api",
-    "signup_url": "https://console.anthropic.com/settings/keys",
-    "free_tier": "No free API quota is asserted in the cited API pricing/key documentation.",
+    "name": "OpenRouter",
+    "documentation_url": "https://openrouter.ai/docs",
+    "pricing_url": "https://openrouter.ai/pricing",
+    "signup_url": "https://openrouter.ai/settings/keys",
+    "free_tier": "Free plan exposes free models; current catalog records 25+ free models and 50 requests/day for the Free plan.",
     "last_verified": "2026-09-26",
     "sources": [
-      "https://console.anthropic.com/settings/keys",
-      "https://www.anthropic.com/pricing#api",
-      "https://docs.anthropic.com/en/api/getting-started"
+      "https://openrouter.ai/pricing",
+      "https://openrouter.ai/docs"
     ]
   }
 ]
