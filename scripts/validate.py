@@ -19,13 +19,13 @@ def url_ok(value, allow_http=False):
     return p.scheme in ({"https","http"} if allow_http else {"https"}) and bool(p.netloc)
 
 providers = load(ROOT/"data/providers.json") or []
-catalog = load(ROOT/"data/catalog-lite.json") or {}
+catalog = load(ROOT/"data/catalog-index.json") or {}
 exp_files = ["data/public_apis_expansion.json","data/public_api_lists_expansion.json"]
 expansions = [(f, load(ROOT/f) or {}) for f in exp_files]
 
 if not isinstance(providers, list): ERRORS.append("data/providers.json must be a list"); providers=[]
 if not isinstance(catalog, dict) or not isinstance(catalog.get("providers"), list):
-    ERRORS.append("data/catalog-lite.json must contain a providers array")
+    ERRORS.append("data/catalog-index.json must contain a providers array")
     catalog_providers=[]
 else: catalog_providers=catalog["providers"]
 
@@ -47,9 +47,9 @@ for n in dups: ERRORS.append(f"providers.json: duplicate provider name: {n}")
 
 catalog_names=[str(p.get("name","")).strip().casefold() for p in catalog_providers]
 catalog_dups=sorted({n for n in catalog_names if catalog_names.count(n)>1})
-for n in catalog_dups: ERRORS.append(f"catalog-lite.json: duplicate provider name: {n}")
+for n in catalog_dups: ERRORS.append(f"catalog-index.json: duplicate provider name: {n}")
 if catalog.get("provider_count") != len(catalog_providers):
-    ERRORS.append("catalog-lite.json: provider_count does not match providers length")
+    ERRORS.append("catalog-index.json: provider_count does not match providers length")
 for p in catalog_providers:
     if p.get("verification_status") == "community-free-source" and p.get("free_tier",{}).get("has_free_tier") is not True:
         WARNINGS.append(f"catalog: community record has unexpected free flag: {p.get('name')}")
@@ -72,7 +72,7 @@ for filename,obj in expansions:
             WARNINGS.append(f"{filename}: provider also exists in curated catalog: {p.get('name')}")
 
 print(f"Curated providers: {len(providers)}")
-print(f"Canonical catalog providers: {len(catalog_providers)}")
+print(f"Runtime index providers: {len(catalog_providers)}")
 print(f"Expansion providers: {sum(len(o.get('providers',[])) for _,o in expansions if isinstance(o,dict))}")
 if WARNINGS:
     print("\nWarnings:")
