@@ -1,0 +1,17 @@
+{
+  "category": "ai-image-video",
+  "count": 1,
+  "providers": [
+    {
+      "id": 16,
+      "name": "fal.ai",
+      "category": "AI / Image / Video",
+      "description": "Hosted generative media models with API access.",
+      "free_tier": null,
+      "requires_credit_card": null,
+      "signup_url": "https://fal.ai/dashboard/keys",
+      "last_verified": "2026-09-25",
+      "status": "active"
+    }
+  ]
+}
