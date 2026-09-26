@@ -1,0 +1,28 @@
+{
+  "category": "speech-audio",
+  "count": 2,
+  "providers": [
+    {
+      "id": 14,
+      "name": "Deepgram",
+      "category": "Speech / Audio",
+      "description": "Speech-to-text and audio intelligence APIs.",
+      "free_tier": null,
+      "requires_credit_card": false,
+      "signup_url": "https://console.deepgram.com/project/keys",
+      "last_verified": "2026-09-25",
+      "status": "active"
+    },
+    {
+      "id": 15,
+      "name": "ElevenLabs",
+      "category": "Speech / Audio",
+      "description": "Text-to-speech, speech-to-text and voice APIs.",
+      "free_tier": null,
+      "requires_credit_card": false,
+      "signup_url": "https://elevenlabs.io/app/developers/api-keys",
+      "last_verified": "2026-09-25",
+      "status": "active"
+    }
+  ]
+}
