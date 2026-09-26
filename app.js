@@ -60,10 +60,10 @@ function nav() {
     '<a class="logo" href="index.html">Free API Directory</a>' +
     '<a href="finder.html">Find an API</a>' +
     '<a href="recommend.html">✨ Find Best API</a>' +
-    '<a href="compare.html">Compare</a>' +
+    '<a href="compare.html">Compare</a><a href="stack.html">🏗️ Stack</a><a href="calculator.html">💰 Free Calculator</a><a href="collections.html">⭐ Collections</a>' +
     '<a href="keys.html">🔐 My API Keys</a>' +
-    '<a href="changes.html">Verified / Changed</a>' +
-    '<a href="criteria.html">Browse</a><a href="student.html">🎓 Student Mode</a><a href="quality.html">Data Quality</a>' +
+    '<a href="changes.html">Verified / Changed</a><a href="health.html">🔄 Health</a><a href="playground.html">🧪 Playground</a><a href="code.html">💻 Code</a>' +
+    '<a href="criteria.html">Browse</a><a href="student.html">🎓 Student Mode</a><a href="security.html">🔐 Security</a><a href="submit.html">📥 Submit API</a><a href="quality.html">Data Quality</a>' +
   "</nav>";
 }
 
