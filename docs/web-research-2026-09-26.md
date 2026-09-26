@@ -51,3 +51,23 @@ This pass enriches the directory using current web sources while preserving expl
 The web does not provide one authoritative source proving every provider's current quota, card requirement, commercial rights, regional availability, uptime, endpoint coverage or permanence of a free tier. Those fields remain unknown where evidence is insufficient rather than being fabricated.
 
 The directory is therefore a research catalog with explicit evidence states, not a guarantee that every listed API is currently free or available.
+
+## First-party evidence override layer — final pass
+
+A separate data/web_verified_overrides.json layer now records current first-party evidence for high-impact providers where the canonical catalog previously lacked sufficiently specific fields. The website merges this layer at runtime without replacing the broader catalog.
+
+Current first-party checks added for:
+- Groq — official rate-limit documentation and API-key page.
+- Google Gemini API — official pricing, billing and rate-limit documentation.
+- Brave Search API — official plan and documentation pages.
+- AssemblyAI — official pricing and free-signup/API-key documentation.
+- OpenRouter — official pricing and documentation.
+- Mistral AI — official quickstart/pricing information.
+- NVIDIA NIM APIs — official API-key/catalog/documentation pages.
+- Anthropic API — official API key, pricing and API documentation.
+
+The override layer is deliberately additive: it never converts an unresolved field into a positive claim merely because a secondary directory lists the provider. Each override carries its source URLs and verification date.
+
+## Important limitation
+
+The broad web contains thousands of APIs and no single source reliably exposes every provider's current quota, card requirement, regional restrictions, commercial license, rate limits and uptime. Where first-party evidence could not be established, the directory continues to display an explicit unknown/unverified state rather than inventing a value.
