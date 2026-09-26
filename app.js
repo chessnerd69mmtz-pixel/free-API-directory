@@ -59,7 +59,7 @@ function nav() {
   return '<nav class="nav">' +
     '<a class="logo" href="index.html">Free API Directory</a>' +
     '<a href="finder.html">Find an API</a>' +
-    '<a href="recommend.html">Build a project</a>' +
+    '<a href="recommend.html">✨ Find Best API</a>' +
     '<a href="compare.html">Compare</a>' +
     '<a href="keys.html">🔐 My API Keys</a>' +
     '<a href="changes.html">Verified / Changed</a>' +
@@ -128,11 +128,11 @@ async function finder() {
     '<section class="hero"><h1>Find an API</h1><p>Search the lightweight catalog index. Full provider profiles are loaded only when you open a provider.</p></section>' +
     '<div class="card tool"><input id="q" class="input" placeholder="Search APIs…" autocomplete="off">' +
     '<select id="f" class="select"><option value="">Free status: any</option><option value="yes">Free access recorded</option><option value="unknown">Free status not publicly stated</option><option value="no">No free tier recorded</option></select>' +
-    '<select id="c" class="select"><option value="">Card requirement: any</option><option value="no">No card recorded</option><option value="yes">Card required</option><option value="unknown">Not publicly stated</option></select></div>' +
+    '<select id="c" class="select"><option value="">Card requirement: any</option><option value="no">No card recorded</option><option value="yes">Card required</option><option value="unknown">Not publicly stated</option></select><select id="cat" class="select"><option value="">Category: any</option></select><select id="v" class="select"><option value="">Verification: any</option><option value="verified">Verified active</option><option value="candidate">Candidate / needs review</option></select></div>' +
     '<div id="r"></div>'
   );
 
-  let visible = 100;
+  let visible = 100;\n  const categories = [...new Set(a.map(p => p.category).filter(Boolean))].sort();\n  $("#cat").innerHTML += categories.map(x => "<option value=\"" + esc(x) + "\">" + esc(x) + "</option>").join("");
 
   function getRows() {
     const q = $("#q").value.toLowerCase().trim();
@@ -150,7 +150,7 @@ async function finder() {
         (c === "no" && p.requires_credit_card === false) ||
         (c === "yes" && p.requires_credit_card === true) ||
         (c === "unknown" && typeof p.requires_credit_card !== "boolean");
-      return (!q || p._searchText.includes(q)) && freeOK && cardOK;
+      const catOK = !cat || p.category === cat;\n      const verifiedOK = !v || (v === "verified" ? (p.status === "active" && !!p.last_verified) : (p.status === "candidate" || p.status === "needs re-verification"));\n      return (!q || p._searchText.includes(q)) && freeOK && cardOK && catOK && verifiedOK;
     });
   }
 
