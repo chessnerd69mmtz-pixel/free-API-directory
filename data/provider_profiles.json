@@ -13131,6 +13131,38 @@
     "research_status": "verified-or-resolved-2026-09-26"
   },
   {
+    "name": "Cerebras Inference",
+    "category": "AI / ML",
+    "description": "Fast inference API for Cerebras hardware and supported open models.",
+    "free_tier": {
+      "has_free_tier": true,
+      "type": "free-trial",
+      "details": "Current official rate-limit documentation describes a Free Trial with listed model limits; trial access is not treated as a permanent free tier.",
+      "amount": "$5 trial credit",
+      "expiry": "30 days"
+    },
+    "signup_requires_account": true,
+    "requires_credit_card": true,
+    "signup_url": "https://cloud.cerebras.ai/",
+    "pricing_url": "https://www.cerebras.ai/pricing",
+    "verification_urls": [
+      "https://inference-docs.cerebras.ai/support/rate-limits",
+      "https://www.cerebras.ai/pricing"
+    ],
+    "last_verified": "2026-09-26",
+    "verified_by": "official-source-review",
+    "status": "active",
+    "tier_verification_status": "official-rate-limit-docs",
+    "authentication": "API key",
+    "protocols": [
+      "HTTPS"
+    ],
+    "uses": [
+      "LLM inference",
+      "fast model serving"
+    ]
+  },
+  {
     "name": "Chainlink",
     "category": "Blockchain",
     "description": "Build hybrid smart contracts with Chainlink",
@@ -15575,6 +15607,39 @@
       "source_checked_at": "2026-09-26"
     },
     "research_status": "community-listed-needs-primary-verification"
+  },
+  {
+    "name": "Cloudflare Workers AI",
+    "category": "AI / ML",
+    "description": "Serverless AI inference integrated with Cloudflare Workers.",
+    "free_tier": {
+      "has_free_tier": true,
+      "type": "daily-allocation",
+      "details": "Workers AI is included in Workers Free and provides 10,000 Neurons per day at no charge.",
+      "amount": "10,000 Neurons/day",
+      "expiry": "Daily reset"
+    },
+    "signup_requires_account": true,
+    "requires_credit_card": "Not publicly stated",
+    "signup_url": "https://dash.cloudflare.com/",
+    "pricing_url": "https://developers.cloudflare.com/workers-ai/platform/pricing/",
+    "verification_urls": [
+      "https://developers.cloudflare.com/workers-ai/platform/pricing/"
+    ],
+    "last_verified": "2026-09-26",
+    "verified_by": "official-source-review",
+    "status": "active",
+    "tier_verification_status": "official-pricing-page",
+    "authentication": "Cloudflare account/token",
+    "protocols": [
+      "HTTPS"
+    ],
+    "uses": [
+      "LLM inference",
+      "embeddings",
+      "speech/audio models",
+      "image generation where offered"
+    ]
   },
   {
     "name": "Cloudinary",
