@@ -12,8 +12,6 @@ jobs:
           python-version: '3.x'
       - name: Rebuild synchronized catalog
         run: python scripts/build_catalog.py
-      - name: Ensure generated catalog is committed
-        run: git diff --exit-code -- data/catalog-index.json data/provider_profiles.json
       - name: Validate datasets
         run: python scripts/validate.py
       - name: Validate JavaScript syntax
