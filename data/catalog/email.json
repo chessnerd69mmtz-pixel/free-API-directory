@@ -1,0 +1,28 @@
+{
+  "category": "email",
+  "count": 2,
+  "providers": [
+    {
+      "id": 21,
+      "name": "Resend",
+      "category": "Email",
+      "description": "Transactional email API.",
+      "free_tier": null,
+      "requires_credit_card": false,
+      "signup_url": "https://resend.com/api-keys",
+      "last_verified": "2026-09-25",
+      "status": "active"
+    },
+    {
+      "id": 22,
+      "name": "SendGrid",
+      "category": "Email",
+      "description": "Transactional and marketing email API.",
+      "free_tier": null,
+      "requires_credit_card": false,
+      "signup_url": "https://app.sendgrid.com/settings/api_keys",
+      "last_verified": "2026-09-25",
+      "status": "active"
+    }
+  ]
+}
