@@ -504,13 +504,13 @@ async function playgroundPage(){
 }
 async function codePage(){
  var a=await loadApis();
- shell('<section class="hero"><h1>💻 API Code Generator</h1><p>Starter templates only; replace endpoint and authentication details with the provider documentation.</p></section><div class="card tool"><select id="codep" class="select">'+providerOptions(a)+'</select><input id="codeurl" class="input" placeholder="HTTPS endpoint"><input id="codetoken" class="input" placeholder="ENVIRONMENT_VARIABLE_NAME"><button id="codego" class="btn">Generate</button></div><div id="coder"></div>');
+ shell('<section class="hero"><h1>💻 API Code Generator</h1><p>Generic starter templates. Replace the endpoint and authentication scheme with the provider documentation.</p></section><div class="card tool"><select id="codep" class="select">'+providerOptions(a)+'</select><input id="codeurl" class="input" placeholder="HTTPS endpoint"><button id="codego" class="btn">Generate</button></div><div id="coder"></div>');
  $("#codego").onclick=function(){
-   var url=$("#codeurl").value||"https://api.example.com/v1/resource",env=$("#codetoken").value||"API_KEY";
-   var py='import os, requests\\n\\nurl = '+JSON.stringify(url)+'\\nheaders = {"Authorization": "Bearer " + os.environ.get("'+env+'", "")}\\nresponse = requests.get(url, headers=headers, timeout=30)\\nprint(response.json())';
-   var js='const response = await fetch('+JSON.stringify(url)+', { headers: { Authorization: "Bearer " + (process.env.'+env+' || "") } });\\nconsole.log(await response.json());';
-   var curl='curl -H "Authorization: Bearer $'+env+'" '+JSON.stringify(url);
-   $("#coder").innerHTML='<div class="grid"><div class="card"><h2>Python</h2><pre class="code">'+esc(py)+'</pre></div><div class="card"><h2>JavaScript</h2><pre class="code">'+esc(js)+'</pre></div><div class="card"><h2>cURL</h2><pre class="code">'+esc(curl)+'</pre></div></div><div class="notice">Generic template: it does not claim this provider uses Bearer authentication.</div>';
+   var url=$("#codeurl").value||"https://api.example.com/v1/resource";
+   var py="import os, requests\\n\\nurl = "+JSON.stringify(url)+"\\nheaders = {\"Authorization\": \"Bearer \" + os.environ.get(\"API_KEY\", \"\")}\\nresponse = requests.get(url, headers=headers, timeout=30)\\nprint(response.json())";
+   var js="const response = await fetch("+JSON.stringify(url)+", { headers: { Authorization: \"Bearer \" + (process.env.API_KEY || \"\") } });\\nconsole.log(await response.json());";
+   var curl="curl -H \"Authorization: Bearer $API_KEY\" "+JSON.stringify(url);
+   $("#coder").innerHTML='<div class="grid"><div class="card"><h2>Python</h2><pre class="code">'+esc(py)+'</pre></div><div class="card"><h2>JavaScript</h2><pre class="code">'+esc(js)+'</pre></div><div class="card"><h2>cURL</h2><pre class="code">'+esc(curl)+'</pre></div></div><div class="notice">Generic template only; verify the selected provider's actual authentication requirements before use.</div>';
  };
 }
 
