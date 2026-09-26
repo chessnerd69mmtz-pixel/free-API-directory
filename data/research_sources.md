@@ -59,3 +59,32 @@ The live site deduplicates names and then fills the catalog up to 2,500 entries.
   - Source entries: 837
   - New entries after deduplication against the curated catalog and first expansion: **338**
   - These records are also labeled community-sourced and are not treated as independently verified provider quotas.
+
+
+## Deep verification pass — 2026-09-26
+
+This pass audited the canonical provider dataset for literal **Unverified**, **Unavailable**, and unresolved free-tier placeholders. Current first-party research was used to resolve a subset of high-confidence records and to distinguish three states: verified free/paid status, explicitly not-stated provider information, and entries requiring deeper provider review.
+
+### First-party sources reviewed in this pass
+- Cerebras Inference: https://www.cerebras.ai/inference and https://inference-docs.cerebras.ai/support/pricing
+- Stability AI Developer Platform: https://platform.stability.ai/docs and https://platform.stability.ai/pricing
+- AssemblyAI: https://support.assemblyai.com/articles/5370767329-can-i-sign-up-for-free and https://www.assemblyai.com/docs/faq/how-to-get-your-api-key
+- Cartesia: https://www.cartesia.ai/pricing
+- Weights & Biases: https://wandb.ai/site/pricing/
+- Comet: https://www.comet.com/site/pricing/
+- Turso: https://turso.tech/pricing
+- Upstash QStash: https://upstash.com/pricing/qstash
+- MongoDB Atlas: https://www.mongodb.com/docs/atlas/tutorial/deploy-free-tier-cluster/ and https://www.mongodb.com/docs/atlas/reference/free-shared-limitations/
+- Brave Search API: https://api-dashboard.search.brave.com/app/plans and https://api-dashboard.search.brave.com/documentation/resources/help-feedback
+- NASA APIs: https://api.nasa.gov/assets/html/authentication.html
+- USGS APIs: https://www.usgs.gov/products/web-tools/apis and https://www.usgs.gov/faqs/what-usgs-policy-release-scientific-data-are-any-usgs-products-restricted
+- NOAA NCEI APIs: https://www.ncei.noaa.gov/cdo-web/faq and https://www.ncei.noaa.gov/cdo-web/webservices/v2
+- KEGG API: https://www.kegg.jp/kegg/rest/
+- Leonardo AI API: https://www.leonardo.ai/api and https://docs.leonardo.ai/docs/getting-started
+- Luma API: https://lumalabs.ai/api and https://lumalabs.ai/learning-hub/dream-machine-credit-system
+- FriendliAI: https://friendli.ai/pricing
+- WRITER: https://writer.com/plans/
+- SambaNova Cloud: https://cloud.sambanova.ai/plans
+
+### Important interpretation rule
+A missing provider statement is no longer treated as evidence that a service is free, paid, card-free, or unlimited. Where the current official source does not state the value, the canonical record uses **Not publicly stated**; where the provider itself is not sufficiently resolved, it remains a research candidate.
