@@ -1,8 +1,10 @@
-const DATA_URL = new URL("data/provider_profiles.json", document.baseURI).href;
-const CHANGE_URL = new URL("data/change_log.json", document.baseURI).href;
-const HASH_URL = new URL("data/source_hashes.json", document.baseURI).href;
+const DATA_VERSION = "20260926-2";
+const COMPACT_URL = new URL("data/providers.json?v=" + DATA_VERSION, document.baseURI).href;
+const PROFILE_URL = new URL("data/provider_profiles.json?v=" + DATA_VERSION, document.baseURI).href;
+const CHANGE_URL = new URL("data/change_log.json?v=" + DATA_VERSION, document.baseURI).href;
 
-let APIS = [];
+let COMPACT_PROMISE = null;
+let PROFILE_PROMISE = null;
 
 const $ = (s) => document.querySelector(s);
 const esc = (s) => String(s ?? "").replace(/[&<>"]/g, (m) => ({
@@ -22,7 +24,8 @@ function uses(list) {
 
 function freeTier(p) {
   const v = p.free_tier?.has_free_tier;
-  if (p.verification_status === "community-free-source") return '<span class="pill good">Community-listed free</span>';
+  const community = p.verification_status === "community-free-source" || p.status === "upstream-community";
+  if (community) return '<span class="pill good">Community-listed free</span>';
   if (v === true) return '<span class="pill good">Free access recorded</span>';
   if (v === false) return '<span class="pill">No free tier recorded</span>';
   return '<span class="pill warn">Unverified</span>';
@@ -53,161 +56,165 @@ function shell(html) {
 }
 
 async function getJson(url) {
-  const response = await fetch(url, {cache:"no-store"});
-  if (!response.ok) throw new Error("Could not load " + url + " (HTTP " + response.status + ")");
+  const response = await fetch(url, {cache:"force-cache"});
+  if (!response.ok) throw new Error("Could not load data (HTTP " + response.status + ")");
   return response.json();
 }
 
-function normalizeExpansionEntry(x) {
-  if (!x || !x.name || !x.provider_url) return null;
-  const auth = String(x.auth || "No");
-  return {
-    name: String(x.name),
-    category: String(x.category || "General"),
-    description: String(x.description || "Community-listed public API."),
-    signup_url: String(x.provider_url),
-    pricing_url: null,
-    documentation_url: String(x.provider_url),
-    free_tier: {
-      has_free_tier: true,
-      type: "community-listed-free",
-      details: "Listed in the September 2026 public-apis expansion as a free public API. Current provider quota, card requirement, expiry, commercial terms, and availability have not been independently verified by this directory.",
-      amount: "Not independently quantified",
-      expiry: "Not independently verified"
-    },
-    requires_credit_card: "Unverified",
-    authentication: auth,
-    protocols: [String(x.https || "").toLowerCase() === "yes" ? "HTTPS" : "HTTP/HTTPS"],
-    sdk_languages: [],
-    commercial_use: "Unverified; check provider terms.",
-    self_hostable: "Unverified",
-    webhooks: "Unverified",
-    rate_limit: "Unverified",
-    free_tier_reset: "Unverified",
-    uses: [String(x.category || "General"), String(x.description || "Community-listed public API.")],
-    last_verified: null,
-    verified_by: "public-apis-community-source",
-    status: "upstream-community",
-    verification_status: "community-free-source",
-    verification_sources: { provider: String(x.provider_url), source_1: "https://github.com/public-apis/public-apis/blob/master/README.md" }
-  };
+function prepareCompact(list) {
+  return list.map((p) => {
+    if (!p._searchText) {
+      p._searchText = [
+        p.name, p.category, p.description,
+        Array.isArray(p.uses) ? p.uses.join(" ") : ""
+      ].join(" ").toLowerCase();
+    }
+    return p;
+  });
 }
 
-function normalizeExternalEntry(x, source, categoryHint) {
-  const name = x.name || x.API || x.title;
-  const description = x.description || x.Description || "Community-listed public API.";
-  const url = x.url || x.Link || x.link || x.provider_url || "";
-  if (!name || !url) return null;
-  const auth = x.auth || x.Auth || "No";
-  const category = x.category || x.Category || categoryHint || "General";
-  const requiresKey = auth && String(auth).toLowerCase() !== "no";
-  return {
-    name: String(name),
-    category: String(category),
-    description: String(description),
-    signup_url: requiresKey ? url : url,
-    pricing_url: null,
-    documentation_url: url,
-    free_tier: {
-      has_free_tier: true,
-      type: "community-listed-free",
-      details: "Listed by a community-maintained directory as a free public API. Exact provider quota, card requirement, commercial-use terms, and current availability should be confirmed on the official provider site.",
-      amount: "Not independently quantified",
-      expiry: "Not independently verified"
-    },
-    requires_credit_card: "Unverified",
-    authentication: String(auth),
-    protocols: [String(x.https || x.HTTPS || "").toLowerCase() === "yes" ? "HTTPS" : "HTTP/HTTPS"],
-    sdk_languages: [],
-    commercial_use: "Unverified; check provider terms.",
-    self_hostable: "Unverified",
-    webhooks: "Unverified",
-    rate_limit: "Unverified",
-    free_tier_reset: "Unverified",
-    uses: [String(category), String(description)],
-    last_verified: null,
-    verified_by: source,
-    status: "upstream-community",
-    verification_status: "community-free-source",
-    verification_sources: { provider: url }
-  };
-}
-
-let CATALOG_PROMISE=null;
-async function loadApis(){
-  if (Array.isArray(window.API_CATALOG) && window.API_CATALOG.length) return window.API_CATALOG;
-  if (!CATALOG_PROMISE){
-    CATALOG_PROMISE=fetch(new URL("data/catalog-lite.json",document.baseURI).href,{cache:"force-cache"})
-      .then(r=>{if(!r.ok)throw new Error("Catalog HTTP "+r.status);return r.json();})
-      .then(d=>{if(!Array.isArray(d.providers))throw new Error("Invalid catalog");return d.providers;});
+async function loadApis() {
+  if (!COMPACT_PROMISE) {
+    COMPACT_PROMISE = getJson(COMPACT_URL).then((d) => {
+      if (!Array.isArray(d)) throw new Error("Invalid provider catalog");
+      return prepareCompact(d);
+    });
   }
-  return CATALOG_PROMISE;
+  return COMPACT_PROMISE;
+}
+
+async function loadProfiles() {
+  if (!PROFILE_PROMISE) {
+    PROFILE_PROMISE = getJson(PROFILE_URL).then((d) => {
+      if (!Array.isArray(d)) throw new Error("Invalid provider profile catalog");
+      return prepareCompact(d);
+    });
+  }
+  return PROFILE_PROMISE;
+}
+
+function debounce(fn, wait) {
+  let timer = 0;
+  return (...args) => {
+    clearTimeout(timer);
+    timer = setTimeout(() => fn(...args), wait);
+  };
 }
 
 async function finder() {
   const a = await loadApis();
   shell(
-    '<section class="hero"><h1>Find an API</h1><p>Search the 2,630-provider catalog by provider, category or capability. Curated records and upstream community-free records are clearly distinguished.</p></section>' +
-    '<div class="card tool"><input id="q" class="input" placeholder="Search APIs…">' +
-    '<select id="f" class="select"><option value="">Free status: any</option><option value="yes">Free access recorded</option><option value="unknown">Free status unverified</option></select>' +
+    '<section class="hero"><h1>Find an API</h1><p>Search the catalog by provider, category or capability. Results are rendered in small batches so large searches stay responsive.</p></section>' +
+    '<div class="card tool"><input id="q" class="input" placeholder="Search APIs…" autocomplete="off">' +
+    '<select id="f" class="select"><option value="">Free status: any</option><option value="yes">Free access recorded</option><option value="community">Community-listed free</option><option value="unknown">Free status unverified</option></select>' +
     '<select id="c" class="select"><option value="">Card requirement: any</option><option value="no">No card recorded</option><option value="unknown">Unverified</option></select></div>' +
     '<div id="r"></div>'
   );
 
-  const render = () => {
+  let visible = 100;
+
+  function getRows() {
     const q = $("#q").value.toLowerCase().trim();
     const f = $("#f").value;
     const c = $("#c").value;
-    const rows = a.filter(p => {
-      const hay = JSON.stringify([p.name,p.category,p.description,p.uses]).toLowerCase();
-      const isCommunity = p.verification_status === "community-free-source" || p.status === "upstream-community";
-      const freeOK = !f || (f === "verified" && p.free_tier?.has_free_tier === true && !isCommunity) ||
-        (f === "community" && isCommunity) ||
+    return a.filter(p => {
+      const community = p.verification_status === "community-free-source" || p.status === "upstream-community";
+      const freeOK =
+        !f ||
+        (f === "yes" && p.free_tier?.has_free_tier === true && !community) ||
+        (f === "community" && community) ||
         (f === "unknown" && p.free_tier?.has_free_tier == null);
-      const cardOK = !c || (c === "no" && p.requires_credit_card === false) ||
+      const cardOK =
+        !c ||
+        (c === "no" && p.requires_credit_card === false) ||
         (c === "unknown" && typeof p.requires_credit_card !== "boolean");
-      return (!q || hay.includes(q)) && freeOK && cardOK;
+      return (!q || p._searchText.includes(q)) && freeOK && cardOK;
     });
+  }
 
-    $("#r").innerHTML = '<div class="tablebox"><div class="scroll"><table><thead><tr>' +
+  function render() {
+    const rows = getRows();
+    const shown = rows.slice(0, visible);
+    const more = rows.length > shown.length;
+    $("#r").innerHTML =
+      '<div class="tablebox"><div class="scroll"><table><thead><tr>' +
       '<th>Provider</th><th>Category</th><th>Free tier</th><th>Functions</th><th>Verification</th></tr></thead><tbody>' +
-      rows.map(p => '<tr><td class="provider"><a href="api.html?provider=' + encodeURIComponent(p.name) + '">' + esc(p.name) +
-        '</a><br><a class="save-key-link" href="keys.html?provider=' + encodeURIComponent(p.name) + '">🔐 Save key</a></td><td>' + esc(p.category) + '</td><td>' + freeTier(p) + '</td><td class="uses">' + uses(p.uses) +
+      shown.map(p => '<tr><td class="provider"><a href="api.html?provider=' + encodeURIComponent(p.name) + '">' + esc(p.name) +
+        '</a><br><a class="save-key-link" href="keys.html?provider=' + encodeURIComponent(p.name) + '">🔐 Save key</a></td><td>' + esc(p.category) +
+        '</td><td>' + freeTier(p) + '</td><td class="uses">' + uses(p.uses) +
         '</td><td>' + status(p) + '<br>' + esc(p.last_verified || "Not recorded") + '</td></tr>').join("") +
-      '</tbody></table></div></div><p class="muted">' + rows.length + " matches</p>";
-  };
+      '</tbody></table></div></div>' +
+      '<div class="tool"><p class="muted">' + rows.length + ' matches; showing ' + shown.length + '.</p>' +
+      (more ? '<button id="more" class="btn secondary">Load 100 more</button>' : '') + '</div>';
 
-  $("#q").addEventListener("input", render);
-  $("#f").addEventListener("change", render);
-  $("#c").addEventListener("change", render);
+    const moreButton = $("#more");
+    if (moreButton) moreButton.onclick = () => { visible += 100; render(); };
+  }
+
+  const rerender = debounce(() => { visible = 100; render(); }, 120);
+  $("#q").addEventListener("input", rerender);
+  $("#f").addEventListener("change", () => { visible = 100; render(); });
+  $("#c").addEventListener("change", () => { visible = 100; render(); });
   render();
 }
 
 async function compare() {
   const a = await loadApis();
   shell(
-    '<section class="hero"><h1>Compare APIs</h1><p>Compare up to four providers using the catalog data.</p></section>' +
-    '<div class="card tool"><select id="p" class="select"><option value="">Add provider…</option>' +
-    a.map(x => '<option value="' + esc(x.name) + '">' + esc(x.name) + "</option>").join("") +
-    '</select><button id="clear" class="btn secondary">Clear</button></div><div id="r"></div>'
+    '<section class="hero"><h1>Compare APIs</h1><p>Search for up to four providers. Provider details are loaded only when needed.</p></section>' +
+    '<div class="card tool"><input id="compare-q" class="input" placeholder="Search providers to add…" autocomplete="off"><button id="clear" class="btn secondary">Clear</button></div>' +
+    '<div id="compare-suggestions"></div><div id="compare-selected"></div><div id="r"></div>'
   );
 
   const chosen = [];
-  const select = $("#p");
+  const query = $("#compare-q");
+  const suggestions = $("#compare-suggestions");
 
-  select.addEventListener("change", () => {
-    if (select.value && !chosen.includes(select.value) && chosen.length < 4) chosen.push(select.value);
-    select.value = "";
-    render();
-  });
-  $("#clear").addEventListener("click", () => { chosen.length = 0; render(); });
+  function renderSuggestions() {
+    const q = query.value.toLowerCase().trim();
+    if (!q) {
+      suggestions.innerHTML = '<p class="muted">Start typing a provider name. Up to 15 matches will appear.</p>';
+      return;
+    }
+    const rows = a.filter(p => !chosen.includes(p.name) && p._searchText.includes(q)).slice(0, 15);
+    suggestions.innerHTML = rows.length
+      ? '<div class="grid">' + rows.map(p =>
+          '<button class="card provider-pick" data-name="' + esc(p.name) + '" type="button"><b>' + esc(p.name) +
+          '</b><br><span class="muted">' + esc(p.category || "") + '</span></button>').join("") + '</div>'
+      : '<p class="muted">No providers found.</p>';
+  }
 
-  function render() {
+  async function add(name) {
+    if (!name || chosen.includes(name) || chosen.length >= 4) return;
+    chosen.push(name);
+    query.value = "";
+    renderSuggestions();
+    renderSelected();
+    await renderComparison();
+  }
+
+  function renderSelected() {
+    $("#compare-selected").innerHTML = chosen.length
+      ? '<div class="card"><b>Selected:</b> ' + chosen.map(n =>
+          '<button class="btn secondary" data-remove="' + esc(n) + '" type="button" style="margin:4px">' + esc(n) + ' ×</button>'
+        ).join("") + '</div>'
+      : "";
+    document.querySelectorAll("[data-remove]").forEach(b => b.onclick = () => {
+      const i = chosen.indexOf(b.dataset.remove);
+      if (i >= 0) chosen.splice(i, 1);
+      renderSelected();
+      renderComparison();
+    });
+  }
+
+  async function renderComparison() {
     if (!chosen.length) {
       $("#r").innerHTML = '<div class="card">Select up to four providers above.</div>';
       return;
     }
-    const ps = chosen.map(n => a.find(x => x.name === n)).filter(Boolean);
+    $("#r").innerHTML = '<div class="card">Loading provider details…</div>';
+    const profiles = await loadProfiles();
+    const ps = chosen.map(n => profiles.find(x => x.name === n)).filter(Boolean);
     const fields = [
       ["Free tier", p => p.free_tier?.has_free_tier === true ? "Recorded" : p.free_tier?.has_free_tier === false ? "No" : "Unverified"],
       ["Free amount", p => p.free_tier?.amount || "Unverified"],
@@ -227,7 +234,16 @@ async function compare() {
         ps.map(p => "<td>" + esc(f[1](p)) + "</td>").join("") + "</tr>").join("") +
       "</tbody></table></div></div>";
   }
-  render();
+
+  query.addEventListener("input", debounce(renderSuggestions, 100));
+  suggestions.addEventListener("click", e => {
+    const button = e.target.closest("[data-name]");
+    if (button) add(button.dataset.name);
+  });
+  $("#clear").onclick = () => { chosen.length = 0; query.value = ""; renderSelected(); renderSuggestions(); renderComparison(); };
+  renderSuggestions();
+  renderSelected();
+  renderComparison();
 }
 
 async function changes() {
@@ -256,8 +272,12 @@ async function changes() {
 }
 
 async function apiProfile() {
-  const a = await loadApis();
   const name = new URLSearchParams(location.search).get("provider");
+  if (!name) {
+    shell('<section class="hero"><h1>API not specified</h1><p>Choose a provider from the finder or browse pages.</p></section>');
+    return;
+  }
+  const a = await loadProfiles();
   const p = a.find(x => x.name === name);
   if (!p) {
     shell('<section class="hero"><h1>API not found</h1><p>This provider is not currently present in the live catalog.</p></section>');
@@ -291,10 +311,9 @@ async function recommend() {
 
   $("#go").addEventListener("click", () => {
     const q = $("#q").value.toLowerCase();
-    const terms = q.split(/[^a-z0-9]+/).filter(x => x.length > 2);
+    const terms = [...new Set(q.split(/[^a-z0-9]+/).filter(x => x.length > 2))];
     const scored = a.map(p => {
-      const text = (p.name + " " + p.category + " " + p.description + " " + (p.uses || []).join(" ")).toLowerCase();
-      const score = terms.reduce((n,t) => n + (text.includes(t) ? 1 : 0), 0);
+      const score = terms.reduce((n,t) => n + (p._searchText.includes(t) ? 1 : 0), 0);
       return {p,score};
     }).filter(x => x.score > 0)
       .sort((x,y) => y.score - x.score || x.p.name.localeCompare(y.p.name))
@@ -303,7 +322,7 @@ async function recommend() {
     $("#r").innerHTML = scored.length
       ? '<div class="tablebox"><div class="scroll"><table><thead><tr><th>Provider</th><th>Why it matched</th><th>Free status</th><th>Verification</th></tr></thead><tbody>' +
         scored.map(x => '<tr><td class="provider"><a href="api.html?provider=' + encodeURIComponent(x.p.name) + '">' + esc(x.p.name) +
-          '</a></td><td>' + esc(x.p.uses?.filter(u => terms.some(t => u.toLowerCase().includes(t))).join(", ") || x.p.category) +
+          '</a></td><td>' + esc(x.p.uses?.filter(u => terms.some(t => String(u).toLowerCase().includes(t))).join(", ") || x.p.category) +
           '</td><td>' + freeTier(x.p) + '</td><td>' + status(x.p) + '</td></tr>').join("") +
         '</tbody></table></div></div>'
       : '<div class="card">No catalog matches found. Try describing the technologies or functions you need.</div>';
