@@ -1261,7 +1261,7 @@
       "JavaScript/TypeScript."
     ],
     "commercial_use": "Unavailable",
-    "self_hostable": "No — the AI21 API is a hosted service; the API documentation does not provide a self-deployment option for the API.",
+    "self_hostable": "No \u2014 the AI21 API is a hosted service; the API documentation does not provide a self-deployment option for the API.",
     "webhooks": "Unavailable",
     "rate_limit": "Unavailable",
     "free_tier_reset": "Unavailable",
@@ -1307,10 +1307,10 @@
       "Python, JavaScript/TypeScript, Ruby, and Go SDKs are documented by AssemblyAI."
     ],
     "commercial_use": "AssemblyAI's terms permit customers to use the service for their business/commercial purposes, subject to the Terms of Service and applicable use restrictions.",
-    "self_hostable": "No — AssemblyAI documents a hosted API service and does not publish a downloadable or self-deployable version of its speech-to-text API.",
-    "webhooks": "Yes — the API supports webhook URLs for asynchronous transcription completion and related events.",
-    "rate_limit": "Unavailable — the official pages reviewed do not provide a single generally applicable request-rate limit for the API.",
-    "free_tier_reset": "Unavailable — AssemblyAI publishes free credits, but the official pricing page reviewed does not state a recurring daily or monthly reset schedule.",
+    "self_hostable": "No \u2014 AssemblyAI documents a hosted API service and does not publish a downloadable or self-deployable version of its speech-to-text API.",
+    "webhooks": "Yes \u2014 the API supports webhook URLs for asynchronous transcription completion and related events.",
+    "rate_limit": "Unavailable \u2014 the official pages reviewed do not provide a single generally applicable request-rate limit for the API.",
+    "free_tier_reset": "Unavailable \u2014 AssemblyAI publishes free credits, but the official pricing page reviewed does not state a recurring daily or monthly reset schedule.",
     "uses": [
       "model inference",
       "text/chat or multimodal AI",
@@ -1352,7 +1352,7 @@
       "Official Clarifai SDKs are documented for Python, JavaScript/Node.js, Java, Go, PHP, Ruby, and C#/.NET."
     ],
     "commercial_use": "Unavailable",
-    "self_hostable": "Yes — Clarifai documents a separately deployable Clarifai Community platform; the hosted API is a distinct service.",
+    "self_hostable": "Yes \u2014 Clarifai documents a separately deployable Clarifai Community platform; the hosted API is a distinct service.",
     "webhooks": "Unavailable",
     "rate_limit": "Unavailable",
     "free_tier_reset": "monthly",
@@ -1395,13 +1395,13 @@
       "supports streamed responses over server-sent events (SSE)."
     ],
     "sdk_languages": [
-      "Unavailable — the official documentation describes an OpenAI-compatible API and examples, but does not publish an official provider SDK language list."
+      "Unavailable \u2014 the official documentation describes an OpenAI-compatible API and examples, but does not publish an official provider SDK language list."
     ],
     "commercial_use": "Permitted subject to Perplexity's API Terms of Service and Acceptable Use Policy; users must comply with those terms and applicable law.",
-    "self_hostable": "No — the documentation describes Perplexity-hosted API endpoints and does not offer a downloadable or self-deployable Perplexity API service.",
-    "webhooks": "Unavailable — no webhook feature is documented in the official API documentation.",
+    "self_hostable": "No \u2014 the documentation describes Perplexity-hosted API endpoints and does not offer a downloadable or self-deployable Perplexity API service.",
+    "webhooks": "Unavailable \u2014 no webhook feature is documented in the official API documentation.",
     "rate_limit": "Officially documented rate limits vary by API usage/billing tier; the API rate-limits requests and returns HTTP 429 when a limit is exceeded. See the official rate-limits documentation for the current tier limits.",
-    "free_tier_reset": "credits — the official API billing documentation describes promotional/free API credits rather than a recurring daily or monthly reset.",
+    "free_tier_reset": "credits \u2014 the official API billing documentation describes promotional/free API credits rather than a recurring daily or monthly reset.",
     "uses": [
       "model inference",
       "text/chat or multimodal AI",
@@ -1445,10 +1445,10 @@
       "the official hosted API can also be called directly over HTTP."
     ],
     "commercial_use": "Commercial use is governed by Roboflow's Terms of Service and the applicable subscription/order terms; use of the hosted service is subject to those terms and plan limits.",
-    "self_hostable": "Yes — separately from the hosted API, Roboflow publishes the open-source Inference server/software for deployment on your own infrastructure. The hosted API itself is managed by Roboflow.",
-    "webhooks": "Yes — Roboflow documents webhooks as an integration capability for receiving events/results from Roboflow services.",
-    "rate_limit": "Unavailable — the reviewed official hosted-inference documentation does not publish a single concrete request-per-minute/second limit applicable to this API; limits may vary by plan/service.",
-    "free_tier_reset": "Monthly — the pricing page expresses free-plan usage as a monthly allowance/credits that refreshes monthly.",
+    "self_hostable": "Yes \u2014 separately from the hosted API, Roboflow publishes the open-source Inference server/software for deployment on your own infrastructure. The hosted API itself is managed by Roboflow.",
+    "webhooks": "Yes \u2014 Roboflow documents webhooks as an integration capability for receiving events/results from Roboflow services.",
+    "rate_limit": "Unavailable \u2014 the reviewed official hosted-inference documentation does not publish a single concrete request-per-minute/second limit applicable to this API; limits may vary by plan/service.",
+    "free_tier_reset": "Monthly \u2014 the pricing page expresses free-plan usage as a monthly allowance/credits that refreshes monthly.",
     "uses": [
       "model inference",
       "text/chat or multimodal AI",
@@ -1490,7 +1490,7 @@
       "Unavailable"
     ],
     "commercial_use": "Use is governed by Stability AI's API Terms of Service and any applicable model-specific license; the official terms should be consulted for commercial-use conditions.",
-    "self_hostable": "Yes — Stability AI publishes downloadable model software/weights under model-specific licenses; this is distinct from the hosted Stability AI API.",
+    "self_hostable": "Yes \u2014 Stability AI publishes downloadable model software/weights under model-specific licenses; this is distinct from the hosted Stability AI API.",
     "webhooks": "Unavailable",
     "rate_limit": "Unavailable",
     "free_tier_reset": "Unavailable",
@@ -1535,7 +1535,7 @@
       "Python and JavaScript/TypeScript (official client examples/documentation)."
     ],
     "commercial_use": "Use of the service is governed by Together AI's Terms of Service; the terms and any applicable model license govern permitted commercial use. See the official terms and model pages for applicable restrictions.",
-    "self_hostable": "No — the documented Together API is a hosted service; the official API documentation does not present the API itself as downloadable or self-deployable.",
+    "self_hostable": "No \u2014 the documented Together API is a hosted service; the official API documentation does not present the API itself as downloadable or self-deployable.",
     "webhooks": "Unavailable",
     "rate_limit": "Unavailable",
     "free_tier_reset": "Unavailable",
@@ -1626,10 +1626,10 @@
       "C++, Go, Java, JavaScript, Kotlin, .NET, PHP, Python (Boto3), Ruby, Rust, and Swift."
     ],
     "commercial_use": "AWS service terms apply; customers may use Amazon Polly as an AWS service for business purposes, subject to the AWS Customer Agreement and applicable service terms. Generated speech is governed by AWS terms and the applicable Polly pricing/terms.",
-    "self_hostable": "No — Amazon Polly is documented and sold as an AWS cloud service/API; the official documentation does not provide downloadable or self-deployable Polly software.",
+    "self_hostable": "No \u2014 Amazon Polly is documented and sold as an AWS cloud service/API; the official documentation does not provide downloadable or self-deployable Polly software.",
     "webhooks": "Unavailable",
     "rate_limit": "Service quotas document SynthesizeSpeech request rates of 80 transactions/second for Standard voices and 8 transactions/second for Neural voices (regional service quotas; quotas can be requested for increase).",
-    "free_tier_reset": "Monthly — the Polly free tier includes 5 million characters per month for the first 12 months for Standard voices and 1 million characters per month for Neural voices (new AWS customers; subject to AWS Free Tier terms).",
+    "free_tier_reset": "Monthly \u2014 the Polly free tier includes 5 million characters per month for the first 12 months for Standard voices and 1 million characters per month for Neural voices (new AWS customers; subject to AWS Free Tier terms).",
     "uses": [
       "model inference",
       "text/chat or multimodal AI",
@@ -1672,10 +1672,10 @@
       "C++, Go, Java, JavaScript, .NET, PHP, Python (Boto3), Ruby, and Rust (AWS SDKs)."
     ],
     "commercial_use": "Commercial use is permitted subject to the AWS Customer Agreement, AWS Service Terms, and applicable Amazon Rekognition service terms and restrictions; AWS bills usage under the published pricing terms.",
-    "self_hostable": "No — Amazon Rekognition is provided as an AWS cloud service/API; AWS does not publish a downloadable or self-deployable Rekognition server in the official service documentation.",
+    "self_hostable": "No \u2014 Amazon Rekognition is provided as an AWS cloud service/API; AWS does not publish a downloadable or self-deployable Rekognition server in the official service documentation.",
     "webhooks": "Unavailable",
     "rate_limit": "Service quotas are operation-specific. The published default quotas include 50 transactions per second (TPS) for DetectLabels and 50 TPS for DetectFaces; quotas may vary by Region/operation and some are adjustable by requesting a quota increase.",
-    "free_tier_reset": "monthly — the Rekognition pricing page publishes a Free Tier allowance of 5,000 images per month and 1,000 minutes of video per month for the first 12 months (subject to AWS Free Tier terms).",
+    "free_tier_reset": "monthly \u2014 the Rekognition pricing page publishes a Free Tier allowance of 5,000 images per month and 1,000 minutes of video per month for the first 12 months (subject to AWS Free Tier terms).",
     "uses": [
       "model inference",
       "text/chat or multimodal AI",
@@ -2944,7 +2944,7 @@
       "expiry": "Unavailable"
     },
     "requires_credit_card": "Yes; AWS requires a valid payment method to create an account (with limited exceptions in some regions/programs).",
-    "authentication": "AWS Signature Version 4 using access keys, or temporary credentials from IAM roles/ST​S; AWS also supports IAM Identity Center and SDK credential providers.",
+    "authentication": "AWS Signature Version 4 using access keys, or temporary credentials from IAM roles/ST\u200bS; AWS also supports IAM Identity Center and SDK credential providers.",
     "protocols": [
       "HTTPS",
       "REST",
@@ -4334,7 +4334,7 @@
       "Ruby",
       ".NET"
     ],
-    "commercial_use": "Yes; Sanity’s pricing page offers paid commercial plans",
+    "commercial_use": "Yes; Sanity\u2019s pricing page offers paid commercial plans",
     "self_hostable": "No (Sanity is a hosted Content Operating System; the open-source Studio is deployable separately)",
     "webhooks": true,
     "rate_limit": "Unavailable",
@@ -9935,7 +9935,7 @@
     }
   },
   {
-    "name": "PokéAPI",
+    "name": "Pok\u00e9API",
     "category": "Miscellaneous / Utility",
     "description": "Cataloged API provider.",
     "signup_url": "https://pokeapi.co",
@@ -12475,7 +12475,7 @@
     "free_tier": {
       "has_free_tier": true,
       "type": "daily-credit",
-      "details": "Free API access; a free API key raises the daily budget 10×.",
+      "details": "Free API access; a free API key raises the daily budget 10\u00d7.",
       "amount": "$1/day free usage with a free key",
       "expiry": "Daily; resets at midnight UTC"
     },

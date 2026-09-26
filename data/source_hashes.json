@@ -1,1 +1,3368 @@
-{}
+{
+  "500px API": {
+    "checked": "2026-09-26",
+    "hash": "6ce3acd0def4508c76144d7a633c511e65e569ad09edad8159a1f41c1a107cd5",
+    "host": "500px.com",
+    "url": "https://500px.com/p/api#pricing"
+  },
+  "AI21 Labs": {
+    "checked": "2026-09-26",
+    "hash": "dca51f590072f24c524d1f70cfa662518385282c26d19af88064f0f40112966a",
+    "host": "www.ai21.com",
+    "url": "https://www.ai21.com/pricing"
+  },
+  "AI21 Labs Studio": {
+    "checked": "2026-09-26",
+    "hash": "b2a08696407e9c400bc71e2f0a1f728ededce7668178cbc5079577a5614b1041",
+    "host": "studio.ai21.com",
+    "url": "https://studio.ai21.com/account/api-key"
+  },
+  "API-Baseball": {
+    "checked": "2026-09-26",
+    "hash": "c23035872e4de2b6367e3eed06c3ae5577fc4fd77a22bcbded55236e1a59d750",
+    "host": "www.api-baseball.com",
+    "url": "https://www.api-baseball.com"
+  },
+  "API-Basketball": {
+    "checked": "2026-09-26",
+    "error": "URLError",
+    "url": "https://www.api-basketball.com"
+  },
+  "API-Football": {
+    "checked": "2026-09-26",
+    "error": "HTTPError",
+    "url": "https://www.api-football.com/pricing"
+  },
+  "ATTOM Data": {
+    "checked": "2026-09-26",
+    "hash": "bd06f2d05f31504d0a24b49a2bc588b43f390924126e1838b9b42f288b4cff0e",
+    "host": "api.developer.attomdata.com",
+    "url": "https://api.developer.attomdata.com"
+  },
+  "AWS (free tier)": {
+    "checked": "2026-09-26",
+    "hash": "23f311d460604b15ecf32e4514db4c2caf92c69157169a6fb251cb633eb681a9",
+    "host": "aws.amazon.com",
+    "url": "https://aws.amazon.com/free/"
+  },
+  "Ably (realtime)": {
+    "checked": "2026-09-26",
+    "hash": "14c5509ecf432aab47a180f43846b13289e867236fd0adbfce92dcba14364967",
+    "host": "ably.com",
+    "url": "https://ably.com/pricing"
+  },
+  "Abstract API (geolocation)": {
+    "checked": "2026-09-26",
+    "hash": "1e5a14c56d20c3ffd33663d8905530b9f1e3e997f5d1425b7fb839a977388c31",
+    "host": "www.abstractapi.com",
+    "url": "https://www.abstractapi.com/pricing"
+  },
+  "Abstract IP Geolocation": {
+    "checked": "2026-09-26",
+    "hash": "d609b026904e0c2ba69dc06ab272bda67af4e8404a4739ef732b78a807ae9c70",
+    "host": "app.abstractapi.com",
+    "url": "https://app.abstractapi.com/api/ip-geolocation/"
+  },
+  "AbuseIPDB": {
+    "checked": "2026-09-26",
+    "hash": "005598aa2cad344abc29721631a94075c8ea0694882a23f0fb4e29b35297060e",
+    "host": "www.abuseipdb.com",
+    "url": "https://www.abuseipdb.com/pricing"
+  },
+  "AccuWeather API": {
+    "checked": "2026-09-26",
+    "hash": "2adb8e8cf94a6ed6c36473d3c89b42f67e8eec58b8cd0c63d4a463f1ecf0c330",
+    "host": "developer.accuweather.com",
+    "url": "https://developer.accuweather.com/documentation/overview"
+  },
+  "Adobe Stock API": {
+    "checked": "2026-09-26",
+    "hash": "93a8bc3faf4b48c31254873179c120db61ac4bc849c43b5a306b3d94601a6991",
+    "host": "stock.adobe.com",
+    "url": "https://stock.adobe.com/plans"
+  },
+  "Adyen API": {
+    "checked": "2026-09-26",
+    "hash": "2c051bc59a6fad8bdea3c2cf76b6ef38c278c5601033b244ba3e54e9097bf494",
+    "host": "www.adyen.com",
+    "url": "https://www.adyen.com/pricing"
+  },
+  "Adzuna API": {
+    "checked": "2026-09-26",
+    "hash": "1ebda167bac62d030c68f8901eacc41ffb82d386921d84e4e4b998e2d1c584b0",
+    "host": "developer.adzuna.com",
+    "url": "https://developer.adzuna.com#pricing"
+  },
+  "AeroDataBox": {
+    "checked": "2026-09-26",
+    "hash": "0362b2cefd9bbb8a807cccbf1aa5f10d5994d52ccd790253ef740a0124b4b50d",
+    "host": "aerodatabox.com",
+    "url": "https://aerodatabox.com/pricing/"
+  },
+  "AgentOps": {
+    "checked": "2026-09-26",
+    "hash": "8784a7d738047fdb019968880fe39b9f25d056147636f132a4d2b1b4db5e9900",
+    "host": "app.agentops.ai",
+    "url": "https://app.agentops.ai/"
+  },
+  "Airtable API": {
+    "checked": "2026-09-26",
+    "hash": "4f5ea596118b37856d26dede0bda6a72832cad6b325d3713dc7b5f20d585a80c",
+    "host": "www.airtable.com",
+    "url": "https://www.airtable.com/pricing"
+  },
+  "Aiven": {
+    "checked": "2026-09-26",
+    "hash": "6b3d2532f4ba7d528d5096050e8668968a8523bf9e692fe415b55032860fb384",
+    "host": "console.aiven.io",
+    "url": "https://console.aiven.io/"
+  },
+  "Alchemy API": {
+    "checked": "2026-09-26",
+    "hash": "7cdbe860ee1d6fe89f4212e6d6145ab0491788d7e511d30a0bc5996f7f53e74a",
+    "host": "www.alchemy.com",
+    "url": "https://www.alchemy.com/pricing"
+  },
+  "Algolia Search": {
+    "checked": "2026-09-26",
+    "hash": "505a43dfe4dfad4cc98db34684964015f8b8160e1f6e8bb76f399425f9353fbe",
+    "host": "www.algolia.com",
+    "url": "https://www.algolia.com/pricing/"
+  },
+  "Alibaba DashScope": {
+    "checked": "2026-09-26",
+    "hash": "ce2db026ea82300292d661e46bec15edb385d3f4dcc104255f9b7016d1ac830c",
+    "host": "dashscope.console.aliyun.com",
+    "url": "https://dashscope.console.aliyun.com/apiKey"
+  },
+  "Alpaca (trading)": {
+    "checked": "2026-09-26",
+    "hash": "5e1414295f1c354854a2914e3fb2a042831613c70f32942362caf72612a8db5c",
+    "host": "alpaca.markets",
+    "url": "https://alpaca.markets/pricing"
+  },
+  "Alpaca Market Data": {
+    "checked": "2026-09-26",
+    "hash": "734ec75e6a350a996b2d1428ee47b86d0b39c3cbb46eb628cd6c2b708aaf3ab9",
+    "host": "app.alpaca.markets",
+    "url": "https://app.alpaca.markets/paper/dashboard/overview"
+  },
+  "Alpha Vantage": {
+    "checked": "2026-09-26",
+    "hash": "3cd8df18b6a2200d3a7e985acbaced5f65e00845b34594953615b0a0dc8a0283",
+    "host": "www.alphavantage.co",
+    "url": "https://www.alphavantage.co/premium/"
+  },
+  "AlphaQuery": {
+    "checked": "2026-09-26",
+    "hash": "85df0d626d6c48e2d6e56eea970a3b66a571b12013db6c1f68f8fd0453510f72",
+    "host": "www.alphaquery.com",
+    "url": "https://www.alphaquery.com/"
+  },
+  "Amadeus for Developers": {
+    "checked": "2026-09-26",
+    "hash": "a7235728ab086a441b643a8307b24ba5b589544a86bef24f8d3a835917b0301a",
+    "host": "developers.amadeus.com",
+    "url": "https://developers.amadeus.com"
+  },
+  "Amazon Comprehend": {
+    "checked": "2026-09-26",
+    "hash": "ad61711bd173f66a794888c0b91e3925f5aa96c1669ec705113a2ea0e27d9afa",
+    "host": "aws.amazon.com",
+    "url": "https://aws.amazon.com/comprehend/pricing/"
+  },
+  "Amazon Polly": {
+    "checked": "2026-09-26",
+    "hash": "30ce8da81680f2365580f3b5e7e32a14589ce5ea82a42c22f679aafb5989f3e4",
+    "host": "aws.amazon.com",
+    "url": "https://aws.amazon.com/polly/pricing/"
+  },
+  "Amazon Product Advertising API": {
+    "checked": "2026-09-26",
+    "error": "HTTPError",
+    "url": "https://affiliate-program.amazon.com/help/node/topic/GQ6JH4K8C3C7N5ZK"
+  },
+  "Amazon Rekognition": {
+    "checked": "2026-09-26",
+    "hash": "a41f9adae52e9abd93f4084591a312512a4ea681489b2f760ce2d2670e5f1d51",
+    "host": "aws.amazon.com",
+    "url": "https://aws.amazon.com/rekognition/pricing/"
+  },
+  "Amazon Transcribe": {
+    "checked": "2026-09-26",
+    "hash": "8cd6534a3cb91fd760eb9e3464f650f6b9ab368ffb5f0545a693ffd8993687e3",
+    "host": "aws.amazon.com",
+    "url": "https://aws.amazon.com/transcribe/pricing/"
+  },
+  "Amazon Translate": {
+    "checked": "2026-09-26",
+    "hash": "d27afe85bc8733840e6c028a85e627be7f8273af42816a29b8087ec4312950be",
+    "host": "aws.amazon.com",
+    "url": "https://aws.amazon.com/translate/"
+  },
+  "Ambee (environment)": {
+    "checked": "2026-09-26",
+    "hash": "d71bb63fb72f17b6e7a5a2cebf8674a6a9553b5dfd06fff8e8e06a90e7dd0082",
+    "host": "www.getambee.com",
+    "url": "https://www.getambee.com"
+  },
+  "Amplitude API": {
+    "checked": "2026-09-26",
+    "hash": "fc89b26945c3cc5c7ff9fbdf058ce4c0b6da5fda55ccd65ee1bbbe0984b94e4c",
+    "host": "amplitude.com",
+    "url": "https://amplitude.com/pricing"
+  },
+  "Anthropic API": {
+    "checked": "2026-09-26",
+    "hash": "33138d28f0195e3178148248c5a95f2bb441b779c878e70ea72b6e47bec595a5",
+    "host": "www.anthropic.com",
+    "url": "https://www.anthropic.com/pricing#api"
+  },
+  "Apify": {
+    "checked": "2026-09-26",
+    "hash": "c174b4e98338476fe41b8e676032ab6821c42f3aa2e7be21fdfe2a5dcb934942",
+    "host": "console.apify.com",
+    "url": "https://console.apify.com/account/integrations"
+  },
+  "Apple Music API": {
+    "checked": "2026-09-26",
+    "hash": "3081d527f3a008357d6f36c2525b52d539303f1443914a00d14bdfe7329fb5bb",
+    "host": "developer.apple.com",
+    "url": "https://developer.apple.com/programs/whats-included/"
+  },
+  "Appwrite Cloud": {
+    "checked": "2026-09-26",
+    "hash": "ee4ea712822d07942772b047977fe14a9ae7965ee4c632815ec7cb7a47dc50df",
+    "host": "cloud.appwrite.io",
+    "url": "https://cloud.appwrite.io/"
+  },
+  "Arize Phoenix": {
+    "checked": "2026-09-26",
+    "hash": "60fe6b7121b0b0760d7fb19c034b3375e0b4a12d277d503893d45b35e81af67b",
+    "host": "phoenix.arize.com",
+    "url": "https://phoenix.arize.com/"
+  },
+  "AssemblyAI (speech-to-text)": {
+    "checked": "2026-09-26",
+    "hash": "fab445178486ec256f217a4d8a9a9fd2531592c74a10f8635e654462f5de8e7d",
+    "host": "www.assemblyai.com",
+    "url": "https://www.assemblyai.com/pricing"
+  },
+  "AssemblyAI Universal": {
+    "checked": "2026-09-26",
+    "hash": "4068f149a08f4b2cce65c44b2c6f8eb7590f44af1aeed6a1e88fda1e03501cda",
+    "host": "www.assemblyai.com",
+    "url": "https://www.assemblyai.com/dashboard/signup"
+  },
+  "Auth0": {
+    "checked": "2026-09-26",
+    "hash": "e3a3e33c9a3d0d4e31fea97a84b7ea12f306efd03a851475024391d603654680",
+    "host": "auth0.com",
+    "url": "https://auth0.com/pricing"
+  },
+  "Aviationstack": {
+    "checked": "2026-09-26",
+    "hash": "f06ac18b7b083fe0b0c41325b8d69516d0861bf24f0cef5c361f3d1b0d4ca8f0",
+    "host": "aviationstack.com",
+    "url": "https://aviationstack.com/pricing"
+  },
+  "Aylien News API": {
+    "checked": "2026-09-26",
+    "error": "URLError",
+    "url": "https://aylien.com/pricing/"
+  },
+  "BEA API": {
+    "checked": "2026-09-26",
+    "hash": "4e2ee0fc40c0558292657aa80dcc9a69a82430fb7ecf287edbebca897d4f6044",
+    "host": "apps.bea.gov",
+    "url": "https://apps.bea.gov/API/signup/"
+  },
+  "BIS Statistics API": {
+    "checked": "2026-09-26",
+    "error": "HTTPError",
+    "url": "https://www.bis.org/statistics/api.htm"
+  },
+  "BLS API": {
+    "checked": "2026-09-26",
+    "hash": "a741e3ede3cf01ce6c8085042094497841b6b6282f7f6013a3e9a43c0ada7fc3",
+    "host": "data.bls.gov",
+    "url": "https://data.bls.gov/registrationEngine/"
+  },
+  "Baichuan AI": {
+    "checked": "2026-09-26",
+    "hash": "f3ee3f8e121f0cb2580fc9a25636ffbbce1c174b6b8c9a895451cc3e002a0965",
+    "host": "platform.baichuan-ai.com",
+    "url": "https://platform.baichuan-ai.com/"
+  },
+  "Baidu Qianfan": {
+    "checked": "2026-09-26",
+    "hash": "d6c6969401c5d5bfacac20aaf7b64b5070fde5a5a76a6bb591a63454b653d753",
+    "host": "console.bce.baidu.com",
+    "url": "https://console.bce.baidu.com/qianfan/"
+  },
+  "Banana.dev": {
+    "checked": "2026-09-26",
+    "error": "HTTPError",
+    "url": "https://app.banana.dev/"
+  },
+  "Bandwidth": {
+    "checked": "2026-09-26",
+    "hash": "ce760f71e694c1ef3c23f0884c9a4450467b9ece67dcd0456b1375d63a30c0b6",
+    "host": "www.bandwidth.com",
+    "url": "https://www.bandwidth.com/pricing/"
+  },
+  "Baseten": {
+    "checked": "2026-09-26",
+    "hash": "f158af76c2ca6f8e9b6084bafdd5098d9aecd10238c7e7dc0c6f375bc75d6a7d",
+    "host": "www.baseten.co",
+    "url": "https://www.baseten.co/pricing/"
+  },
+  "Baseten Truss": {
+    "checked": "2026-09-26",
+    "hash": "bd0d9fb7823a2bc0870eeb943628f45aa972d45937bc279e0570f6747e643365",
+    "host": "www.baseten.co",
+    "url": "https://www.baseten.co/"
+  },
+  "Battle.net API": {
+    "checked": "2026-09-26",
+    "hash": "4085a803a5ac922946ad39e66c00f1ddfccf35c844a823264ec6034ab3bb2c97",
+    "host": "develop.battle.net",
+    "url": "https://develop.battle.net/documentation"
+  },
+  "Beam Cloud": {
+    "checked": "2026-09-26",
+    "hash": "9f05d947ed93a52428915b78f706a2434fa7c127b477e0d04d759cb8a48cbafe",
+    "host": "www.beam.cloud",
+    "url": "https://www.beam.cloud/"
+  },
+  "BigCommerce API": {
+    "checked": "2026-09-26",
+    "hash": "26bb71396f0449d9302fbc59c50b14afda750fe693daec13d7f0eff33df17fcc",
+    "host": "www.bigcommerce.com",
+    "url": "https://www.bigcommerce.com/essentials/pricing/"
+  },
+  "BigDataCloud": {
+    "checked": "2026-09-26",
+    "hash": "2c608adbc1e6a556a6edc783f2c621f4828773187691f99626d0969d49aef17a",
+    "host": "www.bigdatacloud.com",
+    "url": "https://www.bigdatacloud.com/"
+  },
+  "Binance API": {
+    "checked": "2026-09-26",
+    "hash": "f2269083a61a5e9e91595d7f9b48409ad349dbedf60e74a0c3b71c9b747919b5",
+    "host": "www.binance.com",
+    "url": "https://www.binance.com/en/fee/trading"
+  },
+  "Bing Maps API": {
+    "checked": "2026-09-26",
+    "hash": "d5ce5f7074088bb4cf99f4c6696048ffd21d7af4a1248c2285fd1e8f4e153f4d",
+    "host": "www.microsoft.com",
+    "url": "https://www.microsoft.com/en-us/maps/licensing"
+  },
+  "Bing News Search API": {
+    "checked": "2026-09-26",
+    "error": "HTTPError",
+    "url": "https://azure.microsoft.com/en-us/pricing/details/cognitive-services/search-api/"
+  },
+  "Bing Web Search API": {
+    "checked": "2026-09-26",
+    "hash": "64c989d09844bb560321e2fa726e0aa30f8275febfce8b852ae554915bb3ddc4",
+    "host": "learn.microsoft.com",
+    "url": "https://learn.microsoft.com/en-us/lifecycle/announcements/bing-search-api-retirement"
+  },
+  "Bitbucket Cloud API": {
+    "checked": "2026-09-26",
+    "hash": "8a830adf11a293f2c753d1dd9cf52a6b920692ba8b31f50794c8d2aba5892b40",
+    "host": "bitbucket.org",
+    "url": "https://bitbucket.org/account/settings/app-passwords/"
+  },
+  "Bitly API": {
+    "checked": "2026-09-26",
+    "hash": "7875e7463c9d9916254e341331e68526b56e28ff958190455f4e0679c6c90cf9",
+    "host": "bitly.com",
+    "url": "https://bitly.com/pages/pricing"
+  },
+  "Black Forest Labs": {
+    "checked": "2026-09-26",
+    "hash": "be11f54b26a5fc006e610de6798e951acb893235769d1155ed06574520cbea18",
+    "host": "api.bfl.ai",
+    "url": "https://api.bfl.ai/"
+  },
+  "Blizzard API": {
+    "checked": "2026-09-26",
+    "hash": "4085a803a5ac922946ad39e66c00f1ddfccf35c844a823264ec6034ab3bb2c97",
+    "host": "develop.battle.net",
+    "url": "https://develop.battle.net/"
+  },
+  "Blynk API": {
+    "checked": "2026-09-26",
+    "hash": "2e621cbd6bd6896cfb75fd4430b6453c6d429fd5d6218ad00301882f7ad9cfe8",
+    "host": "blynk.io",
+    "url": "https://blynk.io/pricing"
+  },
+  "Board Game Atlas": {
+    "checked": "2026-09-26",
+    "error": "URLError",
+    "url": "https://www.boardgameatlas.com/api/docs"
+  },
+  "Booking.com API": {
+    "checked": "2026-09-26",
+    "hash": "7b576fb2c0ecd47a7160b67983bf1ea3a08155e07adc5a47842701ad0d6edf87",
+    "host": "developers.booking.com",
+    "url": "https://developers.booking.com"
+  },
+  "Braintree API": {
+    "checked": "2026-09-26",
+    "hash": "4045c8d6840225fe71501be2ce6d92faf1c9be7666fd5f05ddc261bdfedbb85c",
+    "host": "www.braintreepayments.com",
+    "url": "https://www.braintreepayments.com/pricing"
+  },
+  "Braintrust": {
+    "checked": "2026-09-26",
+    "hash": "640906da6a29e6974bb3c11b5266af68999e29dd142bc748f3ceee11295021bd",
+    "host": "www.braintrust.dev",
+    "url": "https://www.braintrust.dev/"
+  },
+  "Brave Search API": {
+    "checked": "2026-09-26",
+    "error": "HTTPError",
+    "url": "https://api.search.brave.com/app/keys"
+  },
+  "Brevo (Sendinblue)": {
+    "checked": "2026-09-26",
+    "hash": "990a04b88a377bb88d5746dd69659d1480400f71c9d29427ee8521c430f81e26",
+    "host": "www.brevo.com",
+    "url": "https://www.brevo.com/pricing/"
+  },
+  "Bridge Interactive (Zillow data)": {
+    "checked": "2026-09-26",
+    "hash": "fb713511c5766b8d927af98a2e3f1f693825c8e6f5b6dcfe1870fd4a8652b613",
+    "host": "www.bridgedataoutput.com",
+    "url": "https://www.bridgedataoutput.com"
+  },
+  "Bright Data": {
+    "checked": "2026-09-26",
+    "hash": "aff29b40c27b073963734601e0f7208aa826af7c01e11777f53e3314995b61f1",
+    "host": "brightdata.com",
+    "url": "https://brightdata.com/pricing"
+  },
+  "BrowserCat": {
+    "checked": "2026-09-26",
+    "hash": "df9946d2ee3454b4f9f33a6cfa36e59db7b835323665f6f713f1629871657108",
+    "host": "www.browsercat.com",
+    "url": "https://www.browsercat.com/"
+  },
+  "Browserless": {
+    "checked": "2026-09-26",
+    "hash": "a1169875afb8236c37aa8a62df4c54594b5a507be9b12f3677836dd5ea8a00fc",
+    "host": "www.browserless.io",
+    "url": "https://www.browserless.io/"
+  },
+  "BscScan": {
+    "checked": "2026-09-26",
+    "error": "HTTPError",
+    "url": "https://bscscan.com/apis"
+  },
+  "Buddy API": {
+    "checked": "2026-09-26",
+    "hash": "d45a92e8fecfc5e121f515afc93d9b26b624f1bf56d4f01e5aca980d87fe5ba8",
+    "host": "buddy.works",
+    "url": "https://buddy.works/"
+  },
+  "Buildkite API": {
+    "checked": "2026-09-26",
+    "error": "HTTPError",
+    "url": "https://buildkite.com/user/api-access-tokens"
+  },
+  "CDC Data API": {
+    "checked": "2026-09-26",
+    "hash": "f48f253593d27626c8d3cb7f1a1d81c7d5abad8d0a8859f52e46aced386b7436",
+    "host": "data.cdc.gov",
+    "url": "https://data.cdc.gov"
+  },
+  "CMS.gov Data API": {
+    "checked": "2026-09-26",
+    "error": "HTTPError",
+    "url": "https://developer.cms.gov/data-api/"
+  },
+  "CORE API": {
+    "checked": "2026-09-26",
+    "hash": "67404e1cbc8e7558cb219a1675904c4dd3e0955aa7098eede9adedd87936a91e",
+    "host": "core.ac.uk",
+    "url": "https://core.ac.uk/services/api"
+  },
+  "Calendarific (holidays)": {
+    "checked": "2026-09-26",
+    "hash": "5608480c8a057a06d0079da8b91a795b68c49df0747f1e9eced4d321db4297b3",
+    "host": "calendarific.com",
+    "url": "https://calendarific.com/pricing"
+  },
+  "Canada Open Government": {
+    "checked": "2026-09-26",
+    "hash": "827254a692f7bd84c3dbc0e3e66f86d5466d4f6360a81ea79e7ca277350db4b6",
+    "host": "open.canada.ca",
+    "url": "https://open.canada.ca/"
+  },
+  "Cartesia": {
+    "checked": "2026-09-26",
+    "error": "HTTPError",
+    "url": "https://play.cartesia.ai/"
+  },
+  "Census API": {
+    "checked": "2026-09-26",
+    "hash": "7193fdb5fabbee6f8c1f8d4186ca9dcd07c56f30860afc1ab00a14819fec6466",
+    "host": "api.census.gov",
+    "url": "https://api.census.gov/data/key_signup.html"
+  },
+  "Censys API": {
+    "checked": "2026-09-26",
+    "hash": "8c46464237cc6747798b901c71a906337013cab1d1195e590c79d4885309d114",
+    "host": "docs.censys.com",
+    "url": "https://docs.censys.com/docs/platform-credits-free-starter"
+  },
+  "Cerebras": {
+    "checked": "2026-09-26",
+    "hash": "2119f24a64cd7c45c46fd088fe85bd81120094080444a5ff58a0e0f0fe3af070",
+    "host": "cloud.cerebras.ai",
+    "url": "https://cloud.cerebras.ai/"
+  },
+  "Chess.com API": {
+    "checked": "2026-09-26",
+    "hash": "2d324cbf30bf058ce9812b3c395cf9eebbe71b7307efa2b927d3a6ad258229e6",
+    "host": "www.chess.com",
+    "url": "https://www.chess.com/news/view/published-data-api"
+  },
+  "Chicago Data Portal": {
+    "checked": "2026-09-26",
+    "hash": "229a117be54b573f605068fb8a7c76d0df13a0e9b279c61756f534a8730ff2ae",
+    "host": "data.cityofchicago.org",
+    "url": "https://data.cityofchicago.org/"
+  },
+  "CircleCI API": {
+    "checked": "2026-09-26",
+    "hash": "fc33f5c6e378cf2aedb96805a60d3b24cc799e04e25fd1e037f760c71a74d3d7",
+    "host": "app.circleci.com",
+    "url": "https://app.circleci.com/settings/user/tokens"
+  },
+  "CircleCI Insights": {
+    "checked": "2026-09-26",
+    "hash": "c83277b122ae9f7c63dd1c50bba9ac76c67dd6653a27288a5108f7da4703c495",
+    "host": "circleci.com",
+    "url": "https://circleci.com/"
+  },
+  "Clarifai (vision)": {
+    "checked": "2026-09-26",
+    "error": "URLError",
+    "url": "https://www.clarifai.com/pricing"
+  },
+  "Clarifai Workflows": {
+    "checked": "2026-09-26",
+    "error": "URLError",
+    "url": "https://clarifai.com/settings/security"
+  },
+  "ClearML": {
+    "checked": "2026-09-26",
+    "hash": "24dde2db2e96481c8737286e43e48fbf7988f5a6e490fb8496f226f8a9b50af1",
+    "host": "app.clear.ml",
+    "url": "https://app.clear.ml/"
+  },
+  "Clearbit": {
+    "checked": "2026-09-26",
+    "hash": "3d42ef263178a881e076808d760817e53af5273ca12e3ac368ae805ae9d45bc3",
+    "host": "clearbit.com",
+    "url": "https://clearbit.com/pricing"
+  },
+  "Clearout (email verification)": {
+    "checked": "2026-09-26",
+    "hash": "2aabb69676d5fe970357559f02f2087cde4f0f51978c6698e22d676573c28d97",
+    "host": "clearout.io",
+    "url": "https://clearout.io/pricing-guide/"
+  },
+  "ClickSend": {
+    "checked": "2026-09-26",
+    "hash": "db30969cbe7f4f89935bb12ed9714247e23b0a3b60e29495d3b310b639e1e333",
+    "host": "www.clicksend.com",
+    "url": "https://www.clicksend.com/us/pricing/"
+  },
+  "Cloudflare API": {
+    "checked": "2026-09-26",
+    "hash": "aff6bb57a0bbbf99920c4e612603860438921beac8654b7ebb7d51a8cd400db9",
+    "host": "www.cloudflare.com",
+    "url": "https://www.cloudflare.com/plans/"
+  },
+  "Cloudinary": {
+    "checked": "2026-09-26",
+    "hash": "3f1c64c52a70ac712902e2f7f48bffbccdee9fad80f66844ec8288b18cf8fe4d",
+    "host": "cloudinary.com",
+    "url": "https://cloudinary.com/pricing"
+  },
+  "CockroachDB Cloud": {
+    "checked": "2026-09-26",
+    "hash": "dd0ced1f6c13c213b92dc8fe055dea801f65fa72bbc17ac98f701d0bbd0abd49",
+    "host": "cockroachlabs.cloud",
+    "url": "https://cockroachlabs.cloud/"
+  },
+  "CockroachDB SQL API": {
+    "checked": "2026-09-26",
+    "hash": "dd0ced1f6c13c213b92dc8fe055dea801f65fa72bbc17ac98f701d0bbd0abd49",
+    "host": "cockroachlabs.cloud",
+    "url": "https://cockroachlabs.cloud/"
+  },
+  "Codeberg API": {
+    "checked": "2026-09-26",
+    "hash": "5522801dd026ca50fa9f7285293643032b1cde6df6cc4fc7e4d7dbc5b7cd556c",
+    "host": "codeberg.org",
+    "url": "https://codeberg.org/user/settings/applications"
+  },
+  "Cohere": {
+    "checked": "2026-09-26",
+    "hash": "cf9738eb7e4229f0235e2400c581afbd0e7c0194822e1994eccb75c0f629fa76",
+    "host": "cohere.com",
+    "url": "https://cohere.com/pricing"
+  },
+  "CoinAPI": {
+    "checked": "2026-09-26",
+    "error": "HTTPError",
+    "url": "https://www.coinapi.io/pricing"
+  },
+  "CoinGecko API": {
+    "checked": "2026-09-26",
+    "hash": "82b3cb63d9d15756399aa2151885500c81b58a827d1375d30b40fbbbc1e94300",
+    "host": "www.coingecko.com",
+    "url": "https://www.coingecko.com/en/api/pricing"
+  },
+  "CoinMarketCap API": {
+    "checked": "2026-09-26",
+    "hash": "156a7c5a0f6865991c0d0e74dc817804da0170e5a89711aab3d4a648f91cc91f",
+    "host": "coinmarketcap.com",
+    "url": "https://coinmarketcap.com/api/pricing"
+  },
+  "Coinbase API": {
+    "checked": "2026-09-26",
+    "error": "HTTPError",
+    "url": "https://www.coinbase.com/pricing"
+  },
+  "Comet ML": {
+    "checked": "2026-09-26",
+    "hash": "adfc957f9b1234be24c4405de0e524ea2430bb450bd652e88e039542475fbb8c",
+    "host": "www.comet.com",
+    "url": "https://www.comet.com/"
+  },
+  "Congress.gov API": {
+    "checked": "2026-09-26",
+    "hash": "a63f4004ba1f7425895f3ab4dd7e195df644b3ee6210d5e8f9e157e55966f6d7",
+    "host": "api.congress.gov",
+    "url": "https://api.congress.gov/"
+  },
+  "Consul API": {
+    "checked": "2026-09-26",
+    "hash": "fd6e64876fb4cd4ea1bb6917ab517856502b4f8a1bff06e4647e66eedcea0816",
+    "host": "developer.hashicorp.com",
+    "url": "https://developer.hashicorp.com/consul"
+  },
+  "Contentful": {
+    "checked": "2026-09-26",
+    "error": "HTTPError",
+    "url": "https://www.contentful.com/pricing/"
+  },
+  "Convex": {
+    "checked": "2026-09-26",
+    "hash": "132a30de03fd942fb338dd496a17f248835a8c6cb387f9081708c297a1c70e02",
+    "host": "dashboard.convex.dev",
+    "url": "https://dashboard.convex.dev/"
+  },
+  "Coverr": {
+    "checked": "2026-09-26",
+    "hash": "b42701808a3150a385f61d8452b7d1e59a353c541404ced0abe3b78a314273fe",
+    "host": "coverr.co",
+    "url": "https://coverr.co/"
+  },
+  "Crawlbase": {
+    "checked": "2026-09-26",
+    "hash": "ffa4ee4e5e71d52c75c36c2d15c277af32cea1b6837a010c5080371da6f45f3b",
+    "host": "crawlbase.com",
+    "url": "https://crawlbase.com/"
+  },
+  "CrossRef API": {
+    "checked": "2026-09-26",
+    "hash": "722b23c20a6285b5a46583e2ea1c30378981711c0621279070ac6778e0cbfdbe",
+    "host": "www.crossref.org",
+    "url": "https://www.crossref.org/documentation/retrieve-metadata/rest-api/access-and-authentication"
+  },
+  "Crossref REST API": {
+    "checked": "2026-09-26",
+    "hash": "d759a9b2fda9326536b2349fec8e62979b5d6b0ee6ef96ea924f54449d4025a3",
+    "host": "api.crossref.org",
+    "url": "https://api.crossref.org/"
+  },
+  "CryptoCompare": {
+    "checked": "2026-09-26",
+    "error": "HTTPError",
+    "url": "https://www.cryptocompare.com/enterprise/"
+  },
+  "CurrencyBeacon": {
+    "checked": "2026-09-26",
+    "hash": "314c863eb45c6fb55a764959b0f0ff0c82382b12f573e35245d0c417706836ea",
+    "host": "currencybeacon.com",
+    "url": "https://currencybeacon.com/"
+  },
+  "CurrencyFreaks": {
+    "checked": "2026-09-26",
+    "hash": "6dbc4ce936e6b248c51ec121e9431607879ccd7e2890205d3985c0dde9bf18e9",
+    "host": "currencyfreaks.com",
+    "url": "https://currencyfreaks.com/"
+  },
+  "Currencyapi.com": {
+    "checked": "2026-09-26",
+    "hash": "f0cfb5174ce2b52afe7edf0a5bd2e38395a60dc014336b0f2512f62220f556a5",
+    "host": "app.currencyapi.com",
+    "url": "https://app.currencyapi.com/"
+  },
+  "Currencylayer": {
+    "checked": "2026-09-26",
+    "hash": "953ce56ec060b10196b2f73edc6b6eb26d58e407f59747e159d15c143cd3404a",
+    "host": "currencylayer.com",
+    "url": "https://currencylayer.com/product"
+  },
+  "Currents API": {
+    "checked": "2026-09-26",
+    "hash": "ee960fe12f52d1313bfea707f8ecedf8c1dfb6cefb933342a4a1ded8f7b645d8",
+    "host": "currentsapi.services",
+    "url": "https://currentsapi.services/en/pricing/"
+  },
+  "Data.gov.sg": {
+    "checked": "2026-09-26",
+    "hash": "8f1b59c0f28738afb913f8229a50074d3725f6de89b8873b1dbf446773ddb74a",
+    "host": "data.gov.sg",
+    "url": "https://data.gov.sg/"
+  },
+  "DataCite API": {
+    "checked": "2026-09-26",
+    "hash": "d6454a21c2f7605209cd6f0d9470b30858a6ca6aa0b5e57870d23d001cc8a351",
+    "host": "api.datacite.org",
+    "url": "https://api.datacite.org/"
+  },
+  "DataForSEO": {
+    "checked": "2026-09-26",
+    "hash": "bcc11f97205a5b10b41cb372dfc291e9476b483f1fbc1cf9048e26f5ab0b3647",
+    "host": "app.dataforseo.com",
+    "url": "https://app.dataforseo.com/"
+  },
+  "DeepAI": {
+    "checked": "2026-09-26",
+    "hash": "5fab1efe1fb175d9d3ba9fc790ca6e2eb5feec9599cd25d954e93bb8bac60965",
+    "host": "deepai.org",
+    "url": "https://deepai.org/pricing"
+  },
+  "DeepInfra": {
+    "checked": "2026-09-26",
+    "hash": "5293529f00a5db0146c2e74b3a0a5195d8c85d8272a7bfe5f0ee5d057d43b697",
+    "host": "deepinfra.com",
+    "url": "https://deepinfra.com/pricing"
+  },
+  "DeepL API": {
+    "checked": "2026-09-26",
+    "error": "HTTPError",
+    "url": "https://support.deepl.com/hc/en-us/articles/360020685720-Usage-count-and-billing-in-DeepL-API"
+  },
+  "DeepSeek API": {
+    "checked": "2026-09-26",
+    "hash": "299b159d7215924106d36b3590bccfaa1aa3a4cd8dd5d1efac789600d7e0d818",
+    "host": "api-docs.deepseek.com",
+    "url": "https://api-docs.deepseek.com/quick_start/pricing"
+  },
+  "Deepgram": {
+    "checked": "2026-09-26",
+    "hash": "98ed51de4e9a343e67bacbc55269ad529c237591a3e06f50150bd6911d48a4cf",
+    "host": "deepgram.com",
+    "url": "https://deepgram.com/pricing"
+  },
+  "Deezer API": {
+    "checked": "2026-09-26",
+    "hash": "26950fc5b7837cf0262ad5ab85d5a55a6142ece9d64ff2e7a2e7567b825c6d35",
+    "host": "developers.deezer.com",
+    "url": "https://developers.deezer.com/"
+  },
+  "Dependabot": {
+    "checked": "2026-09-26",
+    "hash": "cda23030b9a56be31b856f6ff17c6c5aeaa6cbc5dff3adc277ba645c0daa8745",
+    "host": "github.com",
+    "url": "https://github.com/dependabot"
+  },
+  "Dialogflow (Google)": {
+    "checked": "2026-09-26",
+    "hash": "5e04fc004a6d5b744e17a21c842adcde34772e87b970422579c29c2c6f2d638e",
+    "host": "cloud.google.com",
+    "url": "https://cloud.google.com/dialogflow/pricing"
+  },
+  "Diffbot": {
+    "checked": "2026-09-26",
+    "hash": "6e0ac4cc95655ba045d8333fe17c011e2aa71a306f30e4b36a98197ba7996764",
+    "host": "www.diffbot.com",
+    "url": "https://www.diffbot.com/pricing/"
+  },
+  "DigitalOcean API": {
+    "checked": "2026-09-26",
+    "hash": "2c5a2dfbc2dc9388ca16d3b92c0bd8be7ea170eb06448ee1c799542b0d0a2ef7",
+    "host": "www.digitalocean.com",
+    "url": "https://www.digitalocean.com/pricing/"
+  },
+  "Discogs": {
+    "checked": "2026-09-26",
+    "error": "HTTPError",
+    "url": "https://www.discogs.com/settings/developers"
+  },
+  "Discogs API": {
+    "checked": "2026-09-26",
+    "error": "HTTPError",
+    "url": "https://www.discogs.com/developers"
+  },
+  "Discord API": {
+    "checked": "2026-09-26",
+    "hash": "5e8dcbd7478b15320c134b6d44d7c66e0197552dc260941aaa3b431d89404c72",
+    "host": "discord.com",
+    "url": "https://discord.com/developers/docs/intro"
+  },
+  "Docker Hub API": {
+    "checked": "2026-09-26",
+    "error": "HTTPError",
+    "url": "https://hub.docker.com/settings/security"
+  },
+  "Drone CI": {
+    "checked": "2026-09-26",
+    "hash": "856c123611d08c762f21407f0a8b7448aebafbef0fa12699b8dcff12dc2f0662",
+    "host": "docs.drone.io",
+    "url": "https://docs.drone.io/api/"
+  },
+  "ECB Data API": {
+    "checked": "2026-09-26",
+    "hash": "ae759b99e633708d9119e6c12d29448f1622614b185a877d6013a64804bfe802",
+    "host": "data-api.ecb.europa.eu",
+    "url": "https://data-api.ecb.europa.eu/"
+  },
+  "EIA API": {
+    "checked": "2026-09-26",
+    "hash": "648e92f42630244877f505976fadb578d30afa79f81d5b3b84e1faaacab23127",
+    "host": "www.eia.gov",
+    "url": "https://www.eia.gov/opendata/register.php"
+  },
+  "EMBL-EBI APIs": {
+    "checked": "2026-09-26",
+    "hash": "1952b8d205927735239f31f9c71ab3215bab0425b9e40a7ea0bb44aed332e51c",
+    "host": "www.ebi.ac.uk",
+    "url": "https://www.ebi.ac.uk/services"
+  },
+  "EODHD": {
+    "checked": "2026-09-26",
+    "hash": "4b920689d2f3928960f52008f381bd471230e56e009a736eace64a7f23980761",
+    "host": "eodhd.com",
+    "url": "https://eodhd.com/financial-apis/"
+  },
+  "ESA Open Data": {
+    "checked": "2026-09-26",
+    "hash": "737918b3c74154930d6a6226ebdded12b1dd0f24fd26e433fac6d2f0d4a06576",
+    "host": "www.esa.int",
+    "url": "https://www.esa.int/"
+  },
+  "ESPN API": {
+    "checked": "2026-09-26",
+    "hash": "2bca7edf73911c91709c52d6cb4b637de8bbb199e7175e944fdc22d9767887f4",
+    "host": "www.espn.com",
+    "url": "https://www.espn.com/"
+  },
+  "Edamam (nutrition/recipes)": {
+    "checked": "2026-09-26",
+    "error": "HTTPError",
+    "url": "https://www.edamam.com/pricing"
+  },
+  "Elasticsearch Cloud": {
+    "checked": "2026-09-26",
+    "hash": "0494cf8754287d2bba7b96ef236bea2e0a76319fac0a4c468c67c90d575fbe4b",
+    "host": "cloud.elastic.co",
+    "url": "https://cloud.elastic.co/"
+  },
+  "ElevenLabs": {
+    "checked": "2026-09-26",
+    "hash": "7d8a682af4187ca8977cc536ea8531174e50354fbaf098bacb99c5819da1391e",
+    "host": "elevenlabs.io",
+    "url": "https://elevenlabs.io/pricing"
+  },
+  "EmailJS": {
+    "checked": "2026-09-26",
+    "hash": "c16292d9e0412a4b4ae2c9588df48faba02118fd3866e2cca3290fc9ec18c72e",
+    "host": "www.emailjs.com",
+    "url": "https://www.emailjs.com/pricing/"
+  },
+  "Ensembl REST": {
+    "checked": "2026-09-26",
+    "hash": "4e45916d447a1d5a3228d57a9d145322ec6bd5e7e29f0e4f6fb09c8bd2f4d32c",
+    "host": "rest.ensembl.org",
+    "url": "https://rest.ensembl.org/"
+  },
+  "Estated": {
+    "checked": "2026-09-26",
+    "error": "HTTPError",
+    "url": "https://estated.com/pdfs/api-pricing.pdf"
+  },
+  "Etherscan": {
+    "checked": "2026-09-26",
+    "error": "HTTPError",
+    "url": "https://etherscan.io/apis"
+  },
+  "Etsy API": {
+    "checked": "2026-09-26",
+    "error": "HTTPError",
+    "url": "https://www.etsy.com/legal/api/"
+  },
+  "Europe PMC": {
+    "checked": "2026-09-26",
+    "error": "HTTPError",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/"
+  },
+  "Europe PMC Annotations": {
+    "checked": "2026-09-26",
+    "error": "HTTPError",
+    "url": "https://www.ebi.ac.uk/europepmc/"
+  },
+  "Eurostat API": {
+    "checked": "2026-09-26",
+    "error": "HTTPError",
+    "url": "https://ec.europa.eu/eurostat/about-us/policies/copyright"
+  },
+  "Exa": {
+    "checked": "2026-09-26",
+    "error": "HTTPError",
+    "url": "https://dashboard.exa.ai/"
+  },
+  "ExchangeRate-API": {
+    "checked": "2026-09-26",
+    "error": "HTTPError",
+    "url": "https://www.exchangerate-api.com/pricing"
+  },
+  "Facebook Graph API": {
+    "checked": "2026-09-26",
+    "hash": "90f3eeb774672c15cb920b30101505933cb3b8840beef221dcdbb4fada17d51f",
+    "host": "developers.facebook.com",
+    "url": "https://developers.facebook.com"
+  },
+  "Fauna": {
+    "checked": "2026-09-26",
+    "error": "URLError",
+    "url": "https://fauna.com/pricing"
+  },
+  "Fauna FQL": {
+    "checked": "2026-09-26",
+    "error": "URLError",
+    "url": "https://dashboard.fauna.com/"
+  },
+  "Federal Register API": {
+    "checked": "2026-09-26",
+    "hash": "da3dbd6046629761906794af52f93cab57b07c398ac4860b945dd4f0af8e00f8",
+    "host": "www.federalregister.gov",
+    "url": "https://www.federalregister.gov/developers/documentation/api/v1"
+  },
+  "Federal Reserve (FRED)": {
+    "checked": "2026-09-26",
+    "hash": "0d4c437de5c4ba37ba8124d1411ae53330a317b6c3da8e2f3d822520b0e952ad",
+    "host": "fred.stlouisfed.org",
+    "url": "https://fred.stlouisfed.org/docs/api/api_key.html"
+  },
+  "Figshare API": {
+    "checked": "2026-09-26",
+    "hash": "a881fc4dc149f30c561ea2a9a40bac6c5e84435175471465d087d528aaa80f07",
+    "host": "info.figshare.com",
+    "url": "https://info.figshare.com/"
+  },
+  "Financial Modeling Prep": {
+    "checked": "2026-09-26",
+    "error": "HTTPError",
+    "url": "https://site.financialmodelingprep.com/pricing-plans"
+  },
+  "Finnhub": {
+    "checked": "2026-09-26",
+    "hash": "a6d7429412de78e751c68453d83cce11ff1ccafa0983660aadf665ba5a11198d",
+    "host": "finnhub.io",
+    "url": "https://finnhub.io/pricing"
+  },
+  "Firebase": {
+    "checked": "2026-09-26",
+    "hash": "1a4916968f234d6cc535add45d305893144fcbccba812d54417aee584e707172",
+    "host": "firebase.google.com",
+    "url": "https://firebase.google.com/pricing"
+  },
+  "Firecrawl": {
+    "checked": "2026-09-26",
+    "hash": "0859a2aaa3f0fe0f1271f4f18cf2525d3193d9baa6ef868006d31443f39a08bc",
+    "host": "www.firecrawl.dev",
+    "url": "https://www.firecrawl.dev/app"
+  },
+  "Fireworks AI": {
+    "checked": "2026-09-26",
+    "hash": "c4a11dee616c4cead85badf9ffd27b5cf7c30d253567589019864531536890d2",
+    "host": "fireworks.ai",
+    "url": "https://fireworks.ai/pricing"
+  },
+  "Fitbit API": {
+    "checked": "2026-09-26",
+    "error": "HTTPError",
+    "url": "https://dev.fitbit.com/legal/"
+  },
+  "Fixer.io": {
+    "checked": "2026-09-26",
+    "error": "HTTPError",
+    "url": "https://fixer.io/plans"
+  },
+  "Flickr": {
+    "checked": "2026-09-26",
+    "hash": "2d89ca933c3cad72611b4e9a90bd0cae3d2efe16efd7791542511987b196ef06",
+    "host": "www.flickr.com",
+    "url": "https://www.flickr.com/services/api/"
+  },
+  "Flickr API": {
+    "checked": "2026-09-26",
+    "hash": "dd6a521860c1b742bd2f5a6bad00be81a08cc07563e71294abdf53c942ef52e3",
+    "host": "www.flickr.com",
+    "url": "https://www.flickr.com/services/api/#pricing"
+  },
+  "FloatRates": {
+    "checked": "2026-09-26",
+    "hash": "c312694e16b5e2aa98a28f8ebb468adacee05a64bc8eeba07cf8af5188db8689",
+    "host": "www.floatrates.com",
+    "url": "https://www.floatrates.com/"
+  },
+  "Foreca": {
+    "checked": "2026-09-26",
+    "hash": "9077d7d3f28895da2a0affa1b7b6e8823c3138a656cd1c4c1d5925293f72fabf",
+    "host": "business.foreca.com",
+    "url": "https://business.foreca.com/weather-api/pricing"
+  },
+  "Forgejo API": {
+    "checked": "2026-09-26",
+    "hash": "59e206b9e7a9a98c7526f3a4c14d5243202538e695e16aae1240325f64a7d228",
+    "host": "forgejo.org",
+    "url": "https://forgejo.org/docs/latest/user/api-usage/"
+  },
+  "Foursquare Places API": {
+    "checked": "2026-09-26",
+    "hash": "f8d876c5bf050cb35cbc085825a0ed95c4ffe0d04d7d0180089532e71c8212a8",
+    "host": "foursquare.com",
+    "url": "https://foursquare.com/products/places-api"
+  },
+  "Frankfurter": {
+    "checked": "2026-09-26",
+    "hash": "01a03b655c4580d83da606e552a46343f486c485d1cc88a91a3fd535e30f876d",
+    "host": "www.frankfurter.app",
+    "url": "https://www.frankfurter.app/"
+  },
+  "Freesound": {
+    "checked": "2026-09-26",
+    "hash": "1dcebdd6f9f64b7ba2cdaf7658c1bf5708ad4455cdbc8eeef7344bdad32b1dc3",
+    "host": "freesound.org",
+    "url": "https://freesound.org/apiv2/apply/"
+  },
+  "FriendliAI": {
+    "checked": "2026-09-26",
+    "hash": "a862cb37ae72331b70dfa77241cc25e1559a0f68d116ad1480ea4f508f207a22",
+    "host": "friendli.ai",
+    "url": "https://friendli.ai/"
+  },
+  "GBIF (biodiversity)": {
+    "checked": "2026-09-26",
+    "error": "HTTPError",
+    "url": "https://www.gbif.org/developer/summary"
+  },
+  "GBIF API": {
+    "checked": "2026-09-26",
+    "error": "HTTPError",
+    "url": "https://www.gbif.org/developer/summary"
+  },
+  "GNews": {
+    "checked": "2026-09-26",
+    "hash": "9130b0ad1878ee5936992f445695711be1a1e6ae22f29479a6dcdb7277f4f63e",
+    "host": "gnews.io",
+    "url": "https://gnews.io/pricing"
+  },
+  "Genius API": {
+    "checked": "2026-09-26",
+    "error": "HTTPError",
+    "url": "https://docs.genius.com/"
+  },
+  "GeoJS": {
+    "checked": "2026-09-26",
+    "hash": "a09242e0b80c837c28e9442e42cce955a2b48f01212fac335ede2db68ff161a3",
+    "host": "www.geojs.io",
+    "url": "https://www.geojs.io/"
+  },
+  "GeoNames": {
+    "checked": "2026-09-26",
+    "hash": "517d6308c7169c56cc7bfad6998057f3f8bd68c6e4cc10821cf9a2fb8bdc92ad",
+    "host": "www.geonames.org",
+    "url": "https://www.geonames.org/export/"
+  },
+  "Geoapify": {
+    "checked": "2026-09-26",
+    "hash": "d7966d3aa4547765eed76164c178c8f0a86c2954c87e2d8829631a96d4cf0c81",
+    "host": "www.geoapify.com",
+    "url": "https://www.geoapify.com/pricing"
+  },
+  "Geoapify Geocoding": {
+    "checked": "2026-09-26",
+    "hash": "0c1d824335e2fdcb0bede16d5c9fb52c5f337f2cac4457ea65bb0cb5ed56c5ac",
+    "host": "myprojects.geoapify.com",
+    "url": "https://myprojects.geoapify.com/"
+  },
+  "Geoapify Places": {
+    "checked": "2026-09-26",
+    "hash": "0c1d824335e2fdcb0bede16d5c9fb52c5f337f2cac4457ea65bb0cb5ed56c5ac",
+    "host": "myprojects.geoapify.com",
+    "url": "https://myprojects.geoapify.com/"
+  },
+  "Geoapify Routing": {
+    "checked": "2026-09-26",
+    "hash": "0c1d824335e2fdcb0bede16d5c9fb52c5f337f2cac4457ea65bb0cb5ed56c5ac",
+    "host": "myprojects.geoapify.com",
+    "url": "https://myprojects.geoapify.com/"
+  },
+  "Geocode.maps.co": {
+    "checked": "2026-09-26",
+    "hash": "015446519ebb00ad1b9995a5d0e55b44573232582d625e0203b22238b50df963",
+    "host": "geocode.maps.co",
+    "url": "https://geocode.maps.co/"
+  },
+  "Geocodio": {
+    "checked": "2026-09-26",
+    "hash": "6c25a768642b40d60e0ae0b90691ad4a2d5fefd35bc2ef3d423b727a81337ce3",
+    "host": "www.geocod.io",
+    "url": "https://www.geocod.io/pricing/"
+  },
+  "Getty Images API": {
+    "checked": "2026-09-26",
+    "hash": "bf7be79777497d9647c17b5b2980641ef1f760141ad3044d9840c584c69c9f6e",
+    "host": "www.gettyimages.com",
+    "url": "https://www.gettyimages.com/plans-and-pricing"
+  },
+  "Giphy": {
+    "checked": "2026-09-26",
+    "hash": "387c631f9b8a80a26ef5f7252f756e83536916f4472da559f01b7c9e4d29e04c",
+    "host": "developers.giphy.com",
+    "url": "https://developers.giphy.com/dashboard/"
+  },
+  "Giphy API": {
+    "checked": "2026-09-26",
+    "error": "HTTPError",
+    "url": "https://developers.giphy.com/terms/"
+  },
+  "GitHub API": {
+    "checked": "2026-09-26",
+    "hash": "2f7b3696459b925cf8f3af01915d5b49287390dc5e6087f49b889c14d28579d5",
+    "host": "github.com",
+    "url": "https://github.com/pricing"
+  },
+  "GitLab API": {
+    "checked": "2026-09-26",
+    "hash": "708850d5db6d91d48cf2283ee48c355d383fed34917357532e840d07a4492f76",
+    "host": "about.gitlab.com",
+    "url": "https://about.gitlab.com/pricing/"
+  },
+  "Gitea API": {
+    "checked": "2026-09-26",
+    "hash": "c9e6b54ed18d4e1601c96f24da6ed4593df6d0039bef98cdee03c95c2917b904",
+    "host": "docs.gitea.com",
+    "url": "https://docs.gitea.com/api/"
+  },
+  "Google Analytics API": {
+    "checked": "2026-09-26",
+    "error": "HTTPError",
+    "url": "https://marketingplatform.google.com/about/analytics-360/pricing/"
+  },
+  "Google Cloud Natural Language": {
+    "checked": "2026-09-26",
+    "hash": "bd655780d1b1371278a397b36203cbc8afa77a1e27b686f322260ef468270213",
+    "host": "cloud.google.com",
+    "url": "https://cloud.google.com/natural-language/pricing"
+  },
+  "Google Cloud Translation": {
+    "checked": "2026-09-26",
+    "hash": "fc3705a084fea0e4be2ee5e1bf2a883c6f0ec8f56d3a8c6b4972a02703a20ba5",
+    "host": "cloud.google.com",
+    "url": "https://cloud.google.com/products/translate/pricing"
+  },
+  "Google Cloud Vision API": {
+    "checked": "2026-09-26",
+    "hash": "dd0b8ab909afbedd332b4f69cbefef14583c13614d24b93161151590c80b2c5c",
+    "host": "cloud.google.com",
+    "url": "https://cloud.google.com/vision/pricing"
+  },
+  "Google Custom Search API": {
+    "checked": "2026-09-26",
+    "hash": "9fffae8f70cb9f06440d0937201e4416ed21cc6aa04115d1df4243f6f5ec7a0f",
+    "host": "developers.google.com",
+    "url": "https://developers.google.com/custom-search/v1/overview"
+  },
+  "Google Gemini API": {
+    "checked": "2026-09-26",
+    "error": "HTTPError",
+    "url": "https://ai.google.dev/gemini-api/pricing"
+  },
+  "Google Maps Platform": {
+    "checked": "2026-09-26",
+    "hash": "31fbea58bcbb65d5c014502a804702f2218e8bf4f8dc2dd550e88a322eb27aa1",
+    "host": "developers.google.com",
+    "url": "https://developers.google.com/maps/billing-and-pricing/pricing"
+  },
+  "GovInfo API": {
+    "checked": "2026-09-26",
+    "hash": "c476d58a27a508637b1310955c4c396bb56adcd68d324bb97a0df1189a0991dc",
+    "host": "www.govinfo.gov",
+    "url": "https://www.govinfo.gov/developers"
+  },
+  "GraphHopper": {
+    "checked": "2026-09-26",
+    "hash": "3302704e67dce03e12ab763366dc3f493db27cb1df9d04a1f2a92cb5ac787873",
+    "host": "www.graphhopper.com",
+    "url": "https://www.graphhopper.com/"
+  },
+  "Groq": {
+    "checked": "2026-09-26",
+    "hash": "9b2767cc85084ff1f01773c182dddba831ae1d491da762d4fa10e13c69bfddbd",
+    "host": "groq.com",
+    "url": "https://groq.com/pricing"
+  },
+  "HERE API": {
+    "checked": "2026-09-26",
+    "hash": "1d1e5d657e1b14c70cb215463318bf7fb5dc52fe210b9696deb53fc6bf35fa54",
+    "host": "www.here.com",
+    "url": "https://www.here.com/get-started/pricing"
+  },
+  "HERE Geocoding": {
+    "checked": "2026-09-26",
+    "hash": "a296527683b45896456010b21da9242f1f98bd94185605403560b225f564940f",
+    "host": "developer.here.com",
+    "url": "https://developer.here.com/"
+  },
+  "HERE Routing": {
+    "checked": "2026-09-26",
+    "hash": "a296527683b45896456010b21da9242f1f98bd94185605403560b225f564940f",
+    "host": "developer.here.com",
+    "url": "https://developer.here.com/"
+  },
+  "HashiCorp Vault API": {
+    "checked": "2026-09-26",
+    "hash": "00bcea88983d93850fc8c1a49d5c387ec45b259b68db3793e2b0b6a05f3cff35",
+    "host": "developer.hashicorp.com",
+    "url": "https://developer.hashicorp.com/vault"
+  },
+  "Hasura Cloud": {
+    "checked": "2026-09-26",
+    "hash": "e58c7ed5e4a6733a67c4dafb54d788394c30ce730949d383b5dfb58566f393ac",
+    "host": "cloud.hasura.io",
+    "url": "https://cloud.hasura.io/"
+  },
+  "Have I Been Pwned API": {
+    "checked": "2026-09-26",
+    "hash": "b9365aadc90a42a7ef7bc68d05de855914bdfddf64ea7f44a340712d6e5b80b7",
+    "host": "haveibeenpwned.com",
+    "url": "https://haveibeenpwned.com/API/v3"
+  },
+  "Helicone": {
+    "checked": "2026-09-26",
+    "hash": "ae3e0d8093339812c40bf3d0235b70e929799aee88d193694451d0347ba9998e",
+    "host": "helicone.ai",
+    "url": "https://helicone.ai/"
+  },
+  "Heroku Platform API": {
+    "checked": "2026-09-26",
+    "hash": "5d2bf9dff23ec78873982e6ea53af06942f67e072aafefef9fbfbdd53ac9a0c6",
+    "host": "www.heroku.com",
+    "url": "https://www.heroku.com/pricing"
+  },
+  "Hugging Face": {
+    "checked": "2026-09-26",
+    "hash": "62d180bcf109660776935410fccafaf253cb1c31ad838e89d133ef748a19d72f",
+    "host": "huggingface.co",
+    "url": "https://huggingface.co/pricing"
+  },
+  "Human API": {
+    "checked": "2026-09-26",
+    "hash": "2652be138f436e15b32b32b3a9907bd1a93d5c14d5693880dc467aa0e36ad85b",
+    "host": "www.humanapi.co",
+    "url": "https://www.humanapi.co/"
+  },
+  "Hunter.io": {
+    "checked": "2026-09-26",
+    "hash": "7edaac6e57b79ee0fc5a9de23d86be2d6de21fccb09f60ac4c5bebd1d802a247",
+    "host": "hunter.io",
+    "url": "https://hunter.io/pricing"
+  },
+  "IBM Watson (Cloud)": {
+    "checked": "2026-09-26",
+    "hash": "c6d6f514921160b49fba3ac2e61d7f02cb5957ae56fbff86d57b22d2e9fb13b7",
+    "host": "www.ibm.com",
+    "url": "https://www.ibm.com/products/watsonx-assistant/pricing"
+  },
+  "IBM Watson Language Translator": {
+    "checked": "2026-09-26",
+    "hash": "6aa0fa51441786d62d82d199bd358e7b0a04191e27b97abb49c8b54fcb5fef68",
+    "host": "www.ibm.com",
+    "url": "https://www.ibm.com/products/natural-language-understanding"
+  },
+  "IEX Cloud": {
+    "checked": "2026-09-26",
+    "error": "URLError",
+    "url": "https://iexcloud.io/pricing/"
+  },
+  "IGDB (games)": {
+    "checked": "2026-09-26",
+    "hash": "9a2df1f7387075d727cf35d41c8b37301b4cf5e21ec1fe36393a8728e331777b",
+    "host": "api-docs.igdb.com",
+    "url": "https://api-docs.igdb.com/"
+  },
+  "IGDB API": {
+    "checked": "2026-09-26",
+    "hash": "a3b3ceb60570d6d735d67aaa8f3b6203d099da1fe72be2fee0f9066d79c82d66",
+    "host": "api-docs.igdb.com",
+    "url": "https://api-docs.igdb.com/"
+  },
+  "IMF Data API": {
+    "checked": "2026-09-26",
+    "error": "HTTPError",
+    "url": "https://www.imf.org/en/Data"
+  },
+  "IP2Location": {
+    "checked": "2026-09-26",
+    "hash": "1e3cf5767c8e41273617c64cfa55ce015a6263c25f5714cbe2b32b35c9d6c7fd",
+    "host": "www.ip2location.com",
+    "url": "https://www.ip2location.com/"
+  },
+  "IPGeolocation.io": {
+    "checked": "2026-09-26",
+    "hash": "b61f4d8af3009431adb3ebd7cb5783bcce486abf4dcef45cacf2e10bae17309a",
+    "host": "ipgeolocation.io",
+    "url": "https://ipgeolocation.io/pricing.html"
+  },
+  "IPQualityScore": {
+    "checked": "2026-09-26",
+    "error": "HTTPError",
+    "url": "https://www.ipqualityscore.com/pricing"
+  },
+  "IPinfo": {
+    "checked": "2026-09-26",
+    "hash": "25e0430862854b47095bb9137e51d9f260b150e3365b14f6ac9f2fdaedf07301",
+    "host": "ipinfo.io",
+    "url": "https://ipinfo.io/pricing"
+  },
+  "IPinfo Lite": {
+    "checked": "2026-09-26",
+    "hash": "7c90982bf64c7f765e11e03c32e8a40d9a65d1d819901f69ad3f52abc7649500",
+    "host": "ipinfo.io",
+    "url": "https://ipinfo.io/signup"
+  },
+  "Ideogram API": {
+    "checked": "2026-09-26",
+    "error": "HTTPError",
+    "url": "https://ideogram.ai/"
+  },
+  "Imagga": {
+    "checked": "2026-09-26",
+    "error": "HTTPError",
+    "url": "https://imagga.com/pricing.html"
+  },
+  "Indeed Publisher API": {
+    "checked": "2026-09-26",
+    "error": "HTTPError",
+    "url": "https://www.indeed.com/publisher#pricing"
+  },
+  "InfluxDB Cloud": {
+    "checked": "2026-09-26",
+    "hash": "0bceb418ea1c281259329b51329dc6a6ab7f9282f0c4085139eb9d2ff25730fa",
+    "host": "cloud2.influxdata.com",
+    "url": "https://cloud2.influxdata.com/"
+  },
+  "Infobip": {
+    "checked": "2026-09-26",
+    "hash": "33209d3aafa3207f99df8ad08597f171a291362296e635aa9679dbfec7cf216c",
+    "host": "www.infobip.com",
+    "url": "https://www.infobip.com/pricing"
+  },
+  "Infura API": {
+    "checked": "2026-09-26",
+    "hash": "341e174f7b8559430193da857bce32a2f35137c6ebf6e5775e636f94bafadbe1",
+    "host": "www.infura.io",
+    "url": "https://www.infura.io/pricing"
+  },
+  "Instagram Graph API": {
+    "checked": "2026-09-26",
+    "hash": "b785c64695bde74dbe5dccb08d26e598a1cb2574b17a1fb43630f1f4029185d6",
+    "host": "developers.facebook.com",
+    "url": "https://developers.facebook.com/docs/instagram-api/"
+  },
+  "Interactive Brokers API": {
+    "checked": "2026-09-26",
+    "hash": "d79281be577946e1d36ebd156fcbc49b46d2efd37661e6e8391f64bf52989878",
+    "host": "www.interactivebrokers.com",
+    "url": "https://www.interactivebrokers.com/"
+  },
+  "Internet Archive": {
+    "checked": "2026-09-26",
+    "hash": "8fd4c3abf769e19f3ca9f678db56f4657087c8e273d6904e9fb16f95ba279bc5",
+    "host": "archive.org",
+    "url": "https://archive.org/developers/"
+  },
+  "JSONPlaceholder (fake data)": {
+    "checked": "2026-09-26",
+    "hash": "defff12869a7eaa7d8941d1e0c0f85c77043a7337137eeddfeba364693b6ca27",
+    "host": "jsonplaceholder.typicode.com",
+    "url": "https://jsonplaceholder.typicode.com#pricing"
+  },
+  "Jamendo": {
+    "checked": "2026-09-26",
+    "hash": "6b4c644f748d98253eda6ec43cf47f10d75795c17fb6674b3a8c0bf064f79552",
+    "host": "developer.jamendo.com",
+    "url": "https://developer.jamendo.com/"
+  },
+  "Jamendo API": {
+    "checked": "2026-09-26",
+    "hash": "a17031fea6cb331f292318f660e168c0840f674deaa995aaf05cbe8ba34a29a7",
+    "host": "www.jamendo.com",
+    "url": "https://www.jamendo.com/start"
+  },
+  "Jikan": {
+    "checked": "2026-09-26",
+    "hash": "2e361c97a48899d30bc8ded328586634604b95085f3ebe5208dde4eeea2b53f6",
+    "host": "jikan.moe",
+    "url": "https://jikan.moe/"
+  },
+  "Jina AI": {
+    "checked": "2026-09-26",
+    "error": "HTTPError",
+    "url": "https://jina.ai/pricing"
+  },
+  "Jolpica F1": {
+    "checked": "2026-09-26",
+    "hash": "b77d843a13a9c26b16264a9e230dc874cc8e7af8e4ca84d6b5c9ce999b717565",
+    "host": "api.jolpi.ca",
+    "url": "https://api.jolpi.ca/ergast/f1/"
+  },
+  "Jooble API": {
+    "checked": "2026-09-26",
+    "error": "HTTPError",
+    "url": "https://jooble.org/api/about#pricing"
+  },
+  "KEGG API": {
+    "checked": "2026-09-26",
+    "hash": "30a173b8d9a8a47700f48a1ed3dda51908d417deadcb9ded7f3d14945b8afc0c",
+    "host": "www.kegg.jp",
+    "url": "https://www.kegg.jp/kegg/rest/"
+  },
+  "Kaggle API": {
+    "checked": "2026-09-26",
+    "hash": "0d8f1d26a405099ae71a67b3b8e677cdd3904d0f9b5066b05d3d9022f7e8926c",
+    "host": "www.kaggle.com",
+    "url": "https://www.kaggle.com/terms"
+  },
+  "Kickbox (email verification)": {
+    "checked": "2026-09-26",
+    "hash": "00364e79e0da101263a9faae02cc255e98e8051eaf85ce236a50d3209592f848",
+    "host": "kickbox.com",
+    "url": "https://kickbox.com"
+  },
+  "Kraken API": {
+    "checked": "2026-09-26",
+    "hash": "62ef14af1b75a6535c0c5ae9d7e451f2b0e1643c6f0f516c121e220553036878",
+    "host": "www.kraken.com",
+    "url": "https://www.kraken.com/features/api#pricing"
+  },
+  "Kubeflow": {
+    "checked": "2026-09-26",
+    "hash": "9bb9982be541e6648649fc2728dd1b51c1a137bef0dd3958da69d03982329db9",
+    "host": "www.kubeflow.org",
+    "url": "https://www.kubeflow.org/"
+  },
+  "LangSmith": {
+    "checked": "2026-09-26",
+    "hash": "3c9a2da8cb04969cd9eee20d8c1b108155e6fd2655f4c6b2542b57eab77215eb",
+    "host": "smith.langchain.com",
+    "url": "https://smith.langchain.com/"
+  },
+  "Langfuse Cloud": {
+    "checked": "2026-09-26",
+    "hash": "531a43a66df3358514f8139662b5c2ce0220eb37d7ab7a2f6d6861865789d74d",
+    "host": "cloud.langfuse.com",
+    "url": "https://cloud.langfuse.com/"
+  },
+  "Last.fm API": {
+    "checked": "2026-09-26",
+    "hash": "4a40d5858c3428b2234ed55a6be30c1d55b657fb9bb3c0855736a13b30b16f5f",
+    "host": "www.last.fm",
+    "url": "https://www.last.fm/api"
+  },
+  "Last.fm Extended": {
+    "checked": "2026-09-26",
+    "hash": "7233afe054a63d9050d3961f294b0dff4c6cfe581443ca401c8ad61288332998",
+    "host": "www.last.fm",
+    "url": "https://www.last.fm/api/account/create"
+  },
+  "Lens API": {
+    "checked": "2026-09-26",
+    "error": "HTTPError",
+    "url": "https://www.lens.org/lens/user/subscriptions"
+  },
+  "Leonardo AI API": {
+    "checked": "2026-09-26",
+    "error": "HTTPError",
+    "url": "https://app.leonardo.ai/"
+  },
+  "Lepton AI": {
+    "checked": "2026-09-26",
+    "error": "URLError",
+    "url": "https://dashboard.lepton.ai/"
+  },
+  "LibreTranslate": {
+    "checked": "2026-09-26",
+    "hash": "c89352a30358d4df949c1c033adac334b3c092097e0241a0383b5b7576210d44",
+    "host": "portal.libretranslate.com",
+    "url": "https://portal.libretranslate.com"
+  },
+  "Lichess API": {
+    "checked": "2026-09-26",
+    "hash": "cbb5a91a84dc9b444cf804c588f714d82120d7387f56ad27c62eb35c22c26fa9",
+    "host": "lichess.org",
+    "url": "https://lichess.org/api"
+  },
+  "Lingva/Yandex Translate": {
+    "checked": "2026-09-26",
+    "hash": "f17909be87f39f40aebf31e95fd85ae176d6f54b4327faa0f99bd6719d183796",
+    "host": "yandex.com",
+    "url": "https://yandex.com/dev/translate/"
+  },
+  "LinkedIn API": {
+    "checked": "2026-09-26",
+    "hash": "01eec93a1e7e5d3a3e2f3932260c234926baa33a99ca4a43c1b8b015aa99a2a0",
+    "host": "www.linkedin.com",
+    "url": "https://www.linkedin.com/legal/l/api-terms-of-use"
+  },
+  "Linode API": {
+    "checked": "2026-09-26",
+    "hash": "d75cae524faeae66205d56b5e55be32f9c9d56e779be84c02bdc7a4f1095d5bd",
+    "host": "www.linode.com",
+    "url": "https://www.linode.com/pricing/"
+  },
+  "Listen Notes": {
+    "checked": "2026-09-26",
+    "error": "HTTPError",
+    "url": "https://www.listennotes.com/api/"
+  },
+  "LiteLLM": {
+    "checked": "2026-09-26",
+    "hash": "e055127eff1b28e7be83a77d0608faf45278c79004f72489a0e13bb791e36df1",
+    "host": "github.com",
+    "url": "https://github.com/BerriAI/litellm"
+  },
+  "LocationIQ": {
+    "checked": "2026-09-26",
+    "hash": "5f48fb2b33975890ee078c37617aa95c1733d59c6dcbf0f47cbe5f686f55ff7b",
+    "host": "locationiq.com",
+    "url": "https://locationiq.com/pricing"
+  },
+  "London Datastore": {
+    "checked": "2026-09-26",
+    "hash": "0f1cbba147df18e26443a8f7686448da0cfc761e1258d788d1158090ed3115ad",
+    "host": "data.london.gov.uk",
+    "url": "https://data.london.gov.uk/"
+  },
+  "Luma AI": {
+    "checked": "2026-09-26",
+    "hash": "618af3d5490d75697849419b0cafa544cb2d30e1992b0bd53a8035e048db3aef",
+    "host": "lumalabs.ai",
+    "url": "https://lumalabs.ai/dream-machine/api"
+  },
+  "Lyft API": {
+    "checked": "2026-09-26",
+    "error": "URLError",
+    "url": "https://developer.lyft.com"
+  },
+  "Mailgun": {
+    "checked": "2026-09-26",
+    "hash": "d2fb89ec78d7674d24e6267d6582b96dd022f39547f072dc3e3b4e0c5325a97c",
+    "host": "www.mailgun.com",
+    "url": "https://www.mailgun.com/pricing/"
+  },
+  "Mailjet": {
+    "checked": "2026-09-26",
+    "hash": "c800ba5773cfa4a6eadf36af05306fd9b74eea75933c50d388f632372b91af33",
+    "host": "www.mailjet.com",
+    "url": "https://www.mailjet.com/pricing/"
+  },
+  "Mailtrap": {
+    "checked": "2026-09-26",
+    "hash": "24bf59117c6e09ed31088420097164f260904a54fb336e627930f79dd18f4799",
+    "host": "mailtrap.io",
+    "url": "https://mailtrap.io/pricing/"
+  },
+  "MapTiler": {
+    "checked": "2026-09-26",
+    "hash": "147b694e0aaf081b39978d2f6ec25f96c768bf516c191698c4d938a14a02b8a2",
+    "host": "www.maptiler.com",
+    "url": "https://www.maptiler.com/cloud/pricing/"
+  },
+  "MapTiler Geocoding": {
+    "checked": "2026-09-26",
+    "hash": "1aff82b923bdc249f26e035abff7a1aee2799f19597cd146651e90820ee4e656",
+    "host": "cloud.maptiler.com",
+    "url": "https://cloud.maptiler.com/account/keys/"
+  },
+  "Mapbox": {
+    "checked": "2026-09-26",
+    "hash": "97b11b1df637940975abc95012e2a8fb25a5a4a1fe8f093a92f38ee7b38614f4",
+    "host": "www.mapbox.com",
+    "url": "https://www.mapbox.com/pricing/"
+  },
+  "Marketstack": {
+    "checked": "2026-09-26",
+    "hash": "489592fcc1d7ea908ac99de4097c17dafb07efcee81b17113339e408b0a7edd0",
+    "host": "marketstack.com",
+    "url": "https://marketstack.com/product"
+  },
+  "Mastodon API": {
+    "checked": "2026-09-26",
+    "hash": "8796fb10506b329322c1f6f8b3f900f522e0815565b84257c9cbb24384baaa25",
+    "host": "docs.joinmastodon.org",
+    "url": "https://docs.joinmastodon.org/api/"
+  },
+  "Maven Central": {
+    "checked": "2026-09-26",
+    "hash": "0e0eaae451ea278428320216e158cca15d47a176cd68614e89fc4e909a8c4fff",
+    "host": "central.sonatype.org",
+    "url": "https://central.sonatype.org/"
+  },
+  "Mediastack": {
+    "checked": "2026-09-26",
+    "hash": "834ba9dfb317d63c9c3bfe81e6e009fd1d35aca8e889003bed641a5f8c7fc657",
+    "host": "mediastack.com",
+    "url": "https://mediastack.com/product"
+  },
+  "Meilisearch Cloud": {
+    "checked": "2026-09-26",
+    "hash": "1a5964e594e4ca8c8a097db51afc8172e2863950a6a19b47d821e3bc15545c8c",
+    "host": "cloud.meilisearch.com",
+    "url": "https://cloud.meilisearch.com/"
+  },
+  "MessageBird": {
+    "checked": "2026-09-26",
+    "hash": "5ce993fd932cd4598ffa28a337e9ef8d03a9ba4f93eb34fcb9aab542c446021c",
+    "host": "messagebird.com",
+    "url": "https://messagebird.com/pricing"
+  },
+  "Messari": {
+    "checked": "2026-09-26",
+    "error": "HTTPError",
+    "url": "https://messari.io/pricing"
+  },
+  "Meteoblue": {
+    "checked": "2026-09-26",
+    "hash": "b8a4312e9f05b38665295cb8344cbeb3aa7a9c553c246d37a04b3afb98e63fee",
+    "host": "business.meteoblue.com",
+    "url": "https://business.meteoblue.com/products/weather-apis/free-weather-api"
+  },
+  "Meteomatics": {
+    "checked": "2026-09-26",
+    "error": "HTTPError",
+    "url": "https://www.meteomatics.com/en/sign-up"
+  },
+  "Microlink": {
+    "checked": "2026-09-26",
+    "hash": "e2a1b1e7cc4c6a278ba3e1227c2d1f4ce37e8bd042e86ae0124b6fd8838cee04",
+    "host": "microlink.io",
+    "url": "https://microlink.io/"
+  },
+  "Microsoft Azure AI Services": {
+    "checked": "2026-09-26",
+    "hash": "18d8da1784f24199309c06e5c95897b06d0849d8183ce6314413d2ccb63982da",
+    "host": "azure.microsoft.com",
+    "url": "https://azure.microsoft.com/en-us/pricing/details/cognitive-services/"
+  },
+  "Microsoft Translator": {
+    "checked": "2026-09-26",
+    "hash": "a4fe9ff9c396153d088a6bb9ec318a80f177d3a5c21de0841bc6a9dafb94a2f8",
+    "host": "azure.microsoft.com",
+    "url": "https://azure.microsoft.com/en-in/pricing/details/translator/"
+  },
+  "MiniMax": {
+    "checked": "2026-09-26",
+    "hash": "175e26edbf95497d3f8c9dfe3a3c70a13bf4c4f28436f29890516d0d72d3df12",
+    "host": "platform.minimaxi.com",
+    "url": "https://platform.minimaxi.com/"
+  },
+  "Mistral AI": {
+    "checked": "2026-09-26",
+    "hash": "6ab319d9d435f37019226afb8f42f2a6831ced216b0d51e0f05a5f4568924825",
+    "host": "mistral.ai",
+    "url": "https://mistral.ai/technology/#pricing"
+  },
+  "Mixpanel API": {
+    "checked": "2026-09-26",
+    "hash": "194c4756eac30c66a13aff40b1b06b52e09853993b14d113b4bb99d76fa49b35",
+    "host": "mixpanel.com",
+    "url": "https://mixpanel.com/pricing/"
+  },
+  "Mockaroo": {
+    "checked": "2026-09-26",
+    "hash": "d45ee08f257f752d69788cd16f0f873e180114099acfd7d2a081e6ffc096698d",
+    "host": "mockaroo.com",
+    "url": "https://mockaroo.com/pricing"
+  },
+  "Modal": {
+    "checked": "2026-09-26",
+    "hash": "d4b8c79535b91f9348e32256dacf0bb1f17d99f815971849916819981c5bc870",
+    "host": "modal.com",
+    "url": "https://modal.com/pricing"
+  },
+  "ModelScope": {
+    "checked": "2026-09-26",
+    "hash": "bc0763e95844a78487cd197ca686e7a1c10c2cc6a73724e2238aacfc75ab1bae",
+    "host": "modelscope.cn",
+    "url": "https://modelscope.cn/"
+  },
+  "MongoDB Atlas": {
+    "checked": "2026-09-26",
+    "hash": "041b5a433fb6135186b2a4084701d923fbd84b0829d10223a5833c304a210d46",
+    "host": "www.mongodb.com",
+    "url": "https://www.mongodb.com/pricing/"
+  },
+  "MongoDB Atlas Search": {
+    "checked": "2026-09-26",
+    "hash": "f48245b0c66ab5e322f17b866262987cf62d2510e8c7c09bb93b32d2341881f1",
+    "host": "account.mongodb.com",
+    "url": "https://account.mongodb.com/account/login"
+  },
+  "Moonshot AI": {
+    "checked": "2026-09-26",
+    "hash": "d4ba5fb5f67d466180ae358999db1078720e415921e699575d1d1803a610ea47",
+    "host": "platform.moonshot.cn",
+    "url": "https://platform.moonshot.cn/console/api-keys"
+  },
+  "Moralis API": {
+    "checked": "2026-09-26",
+    "hash": "c12a67031679086a1a6139b0de28ecef2002f6a0e2d730423a8de135aa88b405",
+    "host": "moralis.io",
+    "url": "https://moralis.io/pricing/"
+  },
+  "MusicBrainz": {
+    "checked": "2026-09-26",
+    "hash": "b18356bc6633583779b5b23e833c1a6e69ff548768960cd202bf3609f559cc67",
+    "host": "musicbrainz.org",
+    "url": "https://musicbrainz.org/doc/MusicBrainz_API"
+  },
+  "Musixmatch API": {
+    "checked": "2026-09-26",
+    "error": "HTTPError",
+    "url": "https://developer.musixmatch.com/pricing"
+  },
+  "Mux API": {
+    "checked": "2026-09-26",
+    "hash": "fd3a69c9812757eaa25e269b39760383fc274650fe95ed28fd84f8e1ae50709b",
+    "host": "www.mux.com",
+    "url": "https://www.mux.com/pricing"
+  },
+  "MySportsFeeds": {
+    "checked": "2026-09-26",
+    "hash": "33703ef67ef32a8e2b28a66cc297431acb65bc176a0e9ba101a0357c7b1eefb9",
+    "host": "www.mysportsfeeds.com",
+    "url": "https://www.mysportsfeeds.com"
+  },
+  "NASA APIs": {
+    "checked": "2026-09-26",
+    "hash": "35c0e3c19b7f96faa9bfa8987c9b2720e338605ace3bd62e2edc758b61a74194",
+    "host": "api.nasa.gov",
+    "url": "https://api.nasa.gov/"
+  },
+  "NASA Exoplanet Archive": {
+    "checked": "2026-09-26",
+    "hash": "6c545032fb96cf21f1c4003e06e2f8f6977afc8da57961c59f2566ddc0d6fc0b",
+    "host": "exoplanetarchive.ipac.caltech.edu",
+    "url": "https://exoplanetarchive.ipac.caltech.edu"
+  },
+  "NASA Open APIs": {
+    "checked": "2026-09-26",
+    "hash": "35c0e3c19b7f96faa9bfa8987c9b2720e338605ace3bd62e2edc758b61a74194",
+    "host": "api.nasa.gov",
+    "url": "https://api.nasa.gov/"
+  },
+  "NCBI E-utilities": {
+    "checked": "2026-09-26",
+    "hash": "16844de3b1feb63523bd7a75200f6c41317699b6ae90ebf401bde03c53837138",
+    "host": "www.ncbi.nlm.nih.gov",
+    "url": "https://www.ncbi.nlm.nih.gov/home/develop/api/"
+  },
+  "NOAA APIs": {
+    "checked": "2026-09-26",
+    "hash": "4e88a8e4501d93379abc4ae74a1c89d344ca3f3e663a2cd353457b8b22a80f87",
+    "host": "www.ncei.noaa.gov",
+    "url": "https://www.ncei.noaa.gov/support/access-data-service-api-user-documentation"
+  },
+  "NOAA Weather API": {
+    "checked": "2026-09-26",
+    "hash": "ea21dc738ad50f4627ce0ef9826b7e6c3c35075462cddd97c78b05fea13fb01c",
+    "host": "www.weather.gov",
+    "url": "https://www.weather.gov/documentation/services-web-api"
+  },
+  "NPM Registry API": {
+    "checked": "2026-09-26",
+    "error": "HTTPError",
+    "url": "https://www.npmjs.com/settings/tokens"
+  },
+  "NVIDIA NIM APIs": {
+    "checked": "2026-09-26",
+    "hash": "301ccf612f0c0ce6a4c905943b3b0cee4fd0f46b3b4a2ac5fc50ec3ed68054b5",
+    "host": "build.nvidia.com",
+    "url": "https://build.nvidia.com/explore/discover"
+  },
+  "NYC Open Data": {
+    "checked": "2026-09-26",
+    "hash": "be6ee77de46f51cb88153aeb11d7f9ab36ceaebb8e3212705804174b5775f7c3",
+    "host": "data.cityofnewyork.us",
+    "url": "https://data.cityofnewyork.us/"
+  },
+  "Nasdaq Data Link (Quandl)": {
+    "checked": "2026-09-26",
+    "hash": "9240e120a077bc5a90d00f33ec96f3c31df5585667b168060da07194a04dabac",
+    "host": "data.nasdaq.com",
+    "url": "https://data.nasdaq.com/publishers"
+  },
+  "Neon (Postgres)": {
+    "checked": "2026-09-26",
+    "hash": "af4a92f5e6c32f2a8b147e949d822c3575fb9a986f0300ed45655a22b19de8a0",
+    "host": "neon.tech",
+    "url": "https://neon.tech/pricing"
+  },
+  "Neon Serverless": {
+    "checked": "2026-09-26",
+    "hash": "243faf2fbf236866175939be292915dc1c3469d71ec87caaf2def97f830cc021",
+    "host": "console.neon.tech",
+    "url": "https://console.neon.tech/"
+  },
+  "Neptune AI": {
+    "checked": "2026-09-26",
+    "error": "URLError",
+    "url": "https://app.neptune.ai/"
+  },
+  "Netlify API": {
+    "checked": "2026-09-26",
+    "hash": "4425b13debc60388c9d9785f2a9fbb6fd8db63197e9e928bc7c6428d04652dcf",
+    "host": "www.netlify.com",
+    "url": "https://www.netlify.com/pricing/"
+  },
+  "New York Times API": {
+    "checked": "2026-09-26",
+    "hash": "780a5fd1dca88f62abd1483888331e20efd612cfc3b8c1c7ac559e39b4399448",
+    "host": "developer.nytimes.com",
+    "url": "https://developer.nytimes.com/get-started"
+  },
+  "NewsAPI.org": {
+    "checked": "2026-09-26",
+    "hash": "c75f0762bd71b7fe47e4bc61f129d1b4c421d5328528ed1e1460ce3fb3bb45be",
+    "host": "newsapi.org",
+    "url": "https://newsapi.org/pricing"
+  },
+  "Nhost": {
+    "checked": "2026-09-26",
+    "hash": "538e6da1d41921821b0fe032d6e1b0ee015cb62b09f97db27d3c079c89ab6f80",
+    "host": "app.nhost.io",
+    "url": "https://app.nhost.io/"
+  },
+  "Nomad API": {
+    "checked": "2026-09-26",
+    "hash": "f30c974631219f8e3f5ade5c582a0de83f7b3fdc665c38b35b83468358bf5900",
+    "host": "developer.hashicorp.com",
+    "url": "https://developer.hashicorp.com/nomad"
+  },
+  "Nominatim (OpenStreetMap)": {
+    "checked": "2026-09-26",
+    "hash": "21b6c82cec42b02ed45b66541595042caa05f800a72976a2948f2490fa32cd14",
+    "host": "operations.osmfoundation.org",
+    "url": "https://operations.osmfoundation.org/policies/nominatim/"
+  },
+  "Notion API": {
+    "checked": "2026-09-26",
+    "hash": "25342a4d56b6e1f72b82ae6eea84b5c468584c1da0746dfe0844faa9e80f9cc3",
+    "host": "www.notion.com",
+    "url": "https://www.notion.com/pricing"
+  },
+  "Novita AI": {
+    "checked": "2026-09-26",
+    "hash": "ea18063e93d49c009a2ed709e8daac41d66bb156790e0a5a879b658520f30271",
+    "host": "novita.ai",
+    "url": "https://novita.ai/settings/key-management"
+  },
+  "NumVerify (phone validation)": {
+    "checked": "2026-09-26",
+    "hash": "ac8bc31b764a95f41a5f6bec973c57dff6fd10ceea959dd2e8c413ca45c03ee7",
+    "host": "numverify.com",
+    "url": "https://numverify.com"
+  },
+  "Nutritionix API": {
+    "checked": "2026-09-26",
+    "hash": "2f3605ad45d0851ee2bfae9175c5c21c1e9e697001c5f76c45e2f5dc01b8240d",
+    "host": "www.nutritionix.com",
+    "url": "https://www.nutritionix.com/business/api"
+  },
+  "OANDA v20": {
+    "checked": "2026-09-26",
+    "hash": "b5825847452139853828584fad21ceb4312d4a0a39d0bb6af009875a04733a88",
+    "host": "developer.oanda.com",
+    "url": "https://developer.oanda.com/"
+  },
+  "OCR.space": {
+    "checked": "2026-09-26",
+    "hash": "25710d5bfd9c799d5da9d4b22a8adfecf4bdfe5b9a3433b7551a2c9cb6d77bf1",
+    "host": "ocr.space",
+    "url": "https://ocr.space/ocrapi"
+  },
+  "OECD SDMX API": {
+    "checked": "2026-09-26",
+    "hash": "24174f76b53f8d541cd61bb3cb1228655526c0d7632ba12df9fdb9382c34845f",
+    "host": "data-explorer.oecd.org",
+    "url": "https://data-explorer.oecd.org/"
+  },
+  "OECD SDMX-JSON": {
+    "checked": "2026-09-26",
+    "error": "HTTPError",
+    "url": "https://data.oecd.org/"
+  },
+  "OMDb API": {
+    "checked": "2026-09-26",
+    "hash": "55b7a9fcd241bb8ebf9c167ee11f1d1975bd6dd54dba26eec0ebc57bf4d59cde",
+    "host": "www.omdbapi.com",
+    "url": "https://www.omdbapi.com/"
+  },
+  "ORCID API": {
+    "checked": "2026-09-26",
+    "hash": "23961473fd92d241f295741c6973ea193c6024b3bd672c3d820fd10fdfb9ec06",
+    "host": "orcid.org",
+    "url": "https://orcid.org/developer-tools"
+  },
+  "OSM Nominatim": {
+    "checked": "2026-09-26",
+    "hash": "da27ba0934a2ad0f1864ecf5debb34090695edf0f7cf6e136c2256e0ea0d9782",
+    "host": "nominatim.org",
+    "url": "https://nominatim.org/"
+  },
+  "OSM Overpass": {
+    "checked": "2026-09-26",
+    "hash": "00951420f28eda4aa2430aad8e9d929edf609c9e22d1bbc1866b9c83732dacda",
+    "host": "overpass-api.de",
+    "url": "https://overpass-api.de/"
+  },
+  "OSRM": {
+    "checked": "2026-09-26",
+    "hash": "3977bd4aef671402a6598aa88c7f5c9988cb63d713fdf3b71b7383d951868489",
+    "host": "project-osrm.org",
+    "url": "https://project-osrm.org/"
+  },
+  "OctoAI": {
+    "checked": "2026-09-26",
+    "hash": "731284b08935da8338db34a534a0fbf4e8a62c880276948543a3b2bc436bef5c",
+    "host": "octo.ai",
+    "url": "https://octo.ai/"
+  },
+  "Open Exchange Rates": {
+    "checked": "2026-09-26",
+    "hash": "85c505739c841bc5daf6d0def1af99d9ef42f7724f5eba984911155356489e58",
+    "host": "openexchangerates.org",
+    "url": "https://openexchangerates.org/signup/free"
+  },
+  "Open Food Facts API": {
+    "checked": "2026-09-26",
+    "hash": "222808c1ac235673ce47f110a6eec69cf18aaa5b234dc07ef3a22b210352aee4",
+    "host": "world.openfoodfacts.org",
+    "url": "https://world.openfoodfacts.org/terms-of-use"
+  },
+  "Open Targets": {
+    "checked": "2026-09-26",
+    "hash": "90ed770468668db7ba7ac9779ae26de28b7147a7e1392ee41688c1b5214d9103",
+    "host": "platform.opentargets.org",
+    "url": "https://platform.opentargets.org/"
+  },
+  "Open Trivia DB": {
+    "checked": "2026-09-26",
+    "hash": "d8fc3e1cdd00bac6df49d8235d086c2abd85f589bc41c71690b7c6a4443bf973",
+    "host": "opentdb.com",
+    "url": "https://opentdb.com/api_config.php"
+  },
+  "Open-Meteo": {
+    "checked": "2026-09-26",
+    "hash": "afe0b30f4b63637478f5a33ef5629856fbebc65cc89c286901ba446ee365449e",
+    "host": "open-meteo.com",
+    "url": "https://open-meteo.com/"
+  },
+  "OpenAI API": {
+    "checked": "2026-09-26",
+    "error": "HTTPError",
+    "url": "https://openai.com/api/pricing/"
+  },
+  "OpenAQ (air quality)": {
+    "checked": "2026-09-26",
+    "hash": "be1417a8dc3e398a3d396b6d14638752bbede33c39b136f9f9a7ff167c589a2e",
+    "host": "openaq.org",
+    "url": "https://openaq.org/"
+  },
+  "OpenAlex": {
+    "checked": "2026-09-26",
+    "hash": "b0f6d24a63f70f1cb4233a7e0ffc4c496321b8d226c9dcc43b2597bc49814cfc",
+    "host": "help.openalex.org",
+    "url": "https://help.openalex.org/api/authentication/"
+  },
+  "OpenCage Geocoding": {
+    "checked": "2026-09-26",
+    "hash": "168b4fbf6bca62cb78fe0ee9d9a73e91083a66abc269514b1418f2a6c62271bf",
+    "host": "opencagedata.com",
+    "url": "https://opencagedata.com/pricing"
+  },
+  "OpenCitations": {
+    "checked": "2026-09-26",
+    "hash": "74f87bdb5209e35228df238d28a4bb3beda6dc52bdf49692424e8b3c6063c420",
+    "host": "opencitations.net",
+    "url": "https://opencitations.net/"
+  },
+  "OpenCorporates": {
+    "checked": "2026-09-26",
+    "error": "HTTPError",
+    "url": "https://opencorporates.com/api/pricing"
+  },
+  "OpenLigaDB": {
+    "checked": "2026-09-26",
+    "hash": "f245329192e5e97ca91cb3e155e873e7083d9d38ee34cb5e1ab28febbda53eb6",
+    "host": "www.openligadb.de",
+    "url": "https://www.openligadb.de/"
+  },
+  "OpenRouteService": {
+    "checked": "2026-09-26",
+    "hash": "83136640fd7f3623bc23a91fe1c7de5f41f682f6fb9328f4992e15731187ffe2",
+    "host": "openrouteservice.org",
+    "url": "https://openrouteservice.org/dev/#/signup"
+  },
+  "OpenRouter": {
+    "checked": "2026-09-26",
+    "hash": "9cfb187da48b4c84cd480e915231e7f22852d1d17c6a97c4805c1ad2881290aa",
+    "host": "openrouter.ai",
+    "url": "https://openrouter.ai/pricing"
+  },
+  "OpenWeather": {
+    "checked": "2026-09-26",
+    "hash": "54af3504a6de2e17ab6010f690c9aa2d406c5e9d01ebccffbc6c280dbfb9f835",
+    "host": "openweathermap.org",
+    "url": "https://openweathermap.org/price"
+  },
+  "OpenWeatherMap": {
+    "checked": "2026-09-26",
+    "hash": "5bb63273401ccbf7d8e55d6259b2f9f334a1a931bfe36818b0f2b6afb700c364",
+    "host": "home.openweathermap.org",
+    "url": "https://home.openweathermap.org/users/sign_up"
+  },
+  "Oxylabs": {
+    "checked": "2026-09-26",
+    "hash": "a0a8b31ba395f4a13f8705bea042b70ac6fced74d38f17cb31d44d5c5167b90c",
+    "host": "dashboard.oxylabs.io",
+    "url": "https://dashboard.oxylabs.io/"
+  },
+  "PDB REST API": {
+    "checked": "2026-09-26",
+    "hash": "c29619c380a0184d00c2880eee6e14065ba2e258b91536982b4d993316e6d6a6",
+    "host": "www.rcsb.org",
+    "url": "https://www.rcsb.org/docs/programmatic-access"
+  },
+  "Particle.io API": {
+    "checked": "2026-09-26",
+    "hash": "62f263c1f02de70819dd5ec2dcc1fa3b1037e5f109c1123ffc4ac14bfb2ea01b",
+    "host": "www.particle.io",
+    "url": "https://www.particle.io/pricing/"
+  },
+  "PayPal API": {
+    "checked": "2026-09-26",
+    "hash": "3bb549e7a8e9d0914edaf97e3b0095c12ca948b6afe217e820644468fd8b52ea",
+    "host": "www.paypal.com",
+    "url": "https://www.paypal.com/us/business/pricing"
+  },
+  "Perplexity API": {
+    "checked": "2026-09-26",
+    "hash": "a4782be6cbb48e9f74cf809e116bc22d37e7d2a31b3c01155f8a668913ad801a",
+    "host": "docs.perplexity.ai",
+    "url": "https://docs.perplexity.ai/getting-started/pricing"
+  },
+  "Pexels": {
+    "checked": "2026-09-26",
+    "error": "HTTPError",
+    "url": "https://www.pexels.com/api/"
+  },
+  "Pexels API": {
+    "checked": "2026-09-26",
+    "error": "HTTPError",
+    "url": "https://www.pexels.com/api/"
+  },
+  "Pinterest API": {
+    "checked": "2026-09-26",
+    "hash": "7ea1471fd5d79ef27b5821e6e9c53b24da020ec71b8e1f9d8705ced16e2a9630",
+    "host": "developers.pinterest.com",
+    "url": "https://developers.pinterest.com/docs/key-concepts/access-tiers/"
+  },
+  "Pixabay": {
+    "checked": "2026-09-26",
+    "hash": "56e0dc50ac52084f0756c73c7ad1fd2451da719b705e3a625f74d0624c9558ec",
+    "host": "pixabay.com",
+    "url": "https://pixabay.com/api/docs/"
+  },
+  "Pixabay API": {
+    "checked": "2026-09-26",
+    "hash": "c26902ab24384703a207bc1fda2ed652ed826eb12bde92b0726b13b8aa2b49e0",
+    "host": "pixabay.com",
+    "url": "https://pixabay.com/api/docs/"
+  },
+  "Pixabay Video": {
+    "checked": "2026-09-26",
+    "hash": "ef868001c5716cf1f6bf62d623e3cdd4091e21afe0f06cadd37f53d0234fdec9",
+    "host": "pixabay.com",
+    "url": "https://pixabay.com/api/docs/"
+  },
+  "Plaid (banking)": {
+    "checked": "2026-09-26",
+    "hash": "03c74da498f931124c7d3d44eec2af3d2efdf54dfc32c8bf1508482c272a8871",
+    "host": "plaid.com",
+    "url": "https://plaid.com/pricing/"
+  },
+  "PlanetScale": {
+    "checked": "2026-09-26",
+    "hash": "2a33727d4ba1dd1b29a8af28ad6d36ae1e22cc15d93f8a6dfa5fee9bba237a15",
+    "host": "planetscale.com",
+    "url": "https://planetscale.com/pricing"
+  },
+  "PlanetScale MySQL": {
+    "checked": "2026-09-26",
+    "hash": "39611e5ce8824ec2e88b78a6f3b9636f835b04c9380ea724f12fe2d71bb167ce",
+    "host": "app.planetscale.com",
+    "url": "https://app.planetscale.com/"
+  },
+  "PlayHT": {
+    "checked": "2026-09-26",
+    "error": "URLError",
+    "url": "https://play.ht/"
+  },
+  "Plivo": {
+    "checked": "2026-09-26",
+    "hash": "e5a56122e01b3de41858a305ac98e4c2abd6ef84b5682a264634b922c44337c6",
+    "host": "www.plivo.com",
+    "url": "https://www.plivo.com/pricing/"
+  },
+  "PocketBase": {
+    "checked": "2026-09-26",
+    "hash": "70ffe1e8b318c0bdf1471d1edf0b5132e4f669811969c7873a1dfb238863e1b7",
+    "host": "pocketbase.io",
+    "url": "https://pocketbase.io/"
+  },
+  "Podcast Index": {
+    "checked": "2026-09-26",
+    "hash": "e0a67184d979178eed2392c509b3d047485cf834a94c4dd6366c66114b0921a8",
+    "host": "podcastindex-org.github.io",
+    "url": "https://podcastindex-org.github.io/docs-api/"
+  },
+  "Pok\u00e9API": {
+    "checked": "2026-09-26",
+    "hash": "f87e29084a884faae07183b5286eeaf9b8b5e3ad8816f0d40a1fc5edc3ae134e",
+    "host": "pokeapi.co",
+    "url": "https://pokeapi.co/"
+  },
+  "Polygon.io": {
+    "checked": "2026-09-26",
+    "hash": "39a20f3c059d7fa58a4db2a4097eded71d84c5ceb390b022a84156b7689ff005",
+    "host": "polygon.io",
+    "url": "https://polygon.io/pricing"
+  },
+  "Polygon/Massive": {
+    "checked": "2026-09-26",
+    "error": "HTTPError",
+    "url": "https://polygon.io/dashboard/api-keys"
+  },
+  "Portkey": {
+    "checked": "2026-09-26",
+    "hash": "fbd84d2cea42c71c687314b0279fe575dc0b2f01407e2f36a5be96c04711e4d5",
+    "host": "app.portkey.ai",
+    "url": "https://app.portkey.ai/"
+  },
+  "Positionstack": {
+    "checked": "2026-09-26",
+    "hash": "46a84a7185715033ac52e0ab5e17bb19333b47c7b1b899d0267957585b87b634",
+    "host": "positionstack.com",
+    "url": "https://positionstack.com/product"
+  },
+  "PostHog": {
+    "checked": "2026-09-26",
+    "hash": "b48e33fade43fd29964539f12bc56503b1eff7ba7cbcf840a0e5a7018f995e82",
+    "host": "posthog.com",
+    "url": "https://posthog.com/pricing"
+  },
+  "Postman API Platform": {
+    "checked": "2026-09-26",
+    "hash": "437fb5bcfc3effe1fd44de022bc1aab5d8868af122076242f2b28e8c461dc9ea",
+    "host": "www.postman.com",
+    "url": "https://www.postman.com/pricing/"
+  },
+  "Postmark": {
+    "checked": "2026-09-26",
+    "hash": "989aa39aeb7debbfccb1972359b6ea96a4ed52ab8740783d6bf8cd3510f17f8d",
+    "host": "postmarkapp.com",
+    "url": "https://postmarkapp.com/pricing"
+  },
+  "PubMed E-utilities": {
+    "checked": "2026-09-26",
+    "hash": "dd816d50d6b3cde5c9cc5c5d78cc94106d792ccc7b6a940c79a7ab9093546922",
+    "host": "www.ncbi.nlm.nih.gov",
+    "url": "https://www.ncbi.nlm.nih.gov/books/NBK25501/"
+  },
+  "Pulumi Cloud API": {
+    "checked": "2026-09-26",
+    "hash": "31b2cb78b763c3bd343d371f8c7da5eee5a002ed61e0cdb3f510bb1cf013845d",
+    "host": "app.pulumi.com",
+    "url": "https://app.pulumi.com/account/tokens"
+  },
+  "Pusher": {
+    "checked": "2026-09-26",
+    "hash": "c96e84f8a7ea69a7386df53bc299d210d591bc68547c86d4c5737bf3875845aa",
+    "host": "pusher.com",
+    "url": "https://pusher.com/channels/pricing/"
+  },
+  "PyPI API": {
+    "checked": "2026-09-26",
+    "hash": "ee1e524cf9452cbd8e5a19bb1df3ceb6d3a1eb05118a1595ebaf287745ecdb0c",
+    "host": "pypi.org",
+    "url": "https://pypi.org/manage/account/token/"
+  },
+  "QR Code API (goqr.me)": {
+    "checked": "2026-09-26",
+    "hash": "7f02288be56c130c9789914edef62273cd3bf7b16dc8efb45281e7fb630567da",
+    "host": "goqr.me",
+    "url": "https://goqr.me/api/"
+  },
+  "Qdrant Cloud": {
+    "checked": "2026-09-26",
+    "hash": "22145fc9349d3a0e4da64085489ebe9d2c223982da7c08e3ab1102bf5d91c34a",
+    "host": "cloud.qdrant.io",
+    "url": "https://cloud.qdrant.io/"
+  },
+  "QuickNode": {
+    "checked": "2026-09-26",
+    "hash": "e32110aee945c49a58813e07b5ee95d5c38a898cceabb311d93d8c3ccb60438c",
+    "host": "www.quicknode.com",
+    "url": "https://www.quicknode.com/pricing"
+  },
+  "RAWG (video games)": {
+    "checked": "2026-09-26",
+    "hash": "b0a94046d0ca7db2b5f93ae68da17e0f4ec3b1cc8a286fa94ff19689fd15bd5a",
+    "host": "rawg.io",
+    "url": "https://rawg.io/apidocs"
+  },
+  "RAWG API": {
+    "checked": "2026-09-26",
+    "hash": "b29e628846af2cede86121515edb9503b5f155a686214d3a9a958fd8b083d96d",
+    "host": "rawg.io",
+    "url": "https://rawg.io/apidocs"
+  },
+  "REST Countries": {
+    "checked": "2026-09-26",
+    "hash": "49b052db020e951f50dd84ba4b4393a98b56559c688c4297ff95fd2fd2bcf2ea",
+    "host": "restcountries.com",
+    "url": "https://restcountries.com/"
+  },
+  "Radar Maps": {
+    "checked": "2026-09-26",
+    "hash": "8cc2e112f52be6b019f059151c7fdd5563490674586dbbe96ba75a58c7b6c6c7",
+    "host": "radar.com",
+    "url": "https://radar.com/"
+  },
+  "Radar.io": {
+    "checked": "2026-09-26",
+    "hash": "9a9d69936df07b6125a8048e9954ab462f42eaa190ba2b1a930309de840706ee",
+    "host": "radar.com",
+    "url": "https://radar.com/pricing"
+  },
+  "Radio Browser": {
+    "checked": "2026-09-26",
+    "hash": "f5095c00eea63a049e806c470599d4f07d04de005c9b7f330861c55126b284a6",
+    "host": "www.radio-browser.info",
+    "url": "https://www.radio-browser.info/"
+  },
+  "Railway": {
+    "checked": "2026-09-26",
+    "hash": "1f1947454694310f9d9dfcf63cfb6354c28002dd8dd47a3e2099c4c4badbc00e",
+    "host": "railway.com",
+    "url": "https://railway.com/pricing"
+  },
+  "Random.org API": {
+    "checked": "2026-09-26",
+    "hash": "8d9666c2e93e2d0fe7745177b1531fc3218c542488a3cbc05a680f4f0f39b351",
+    "host": "api.random.org",
+    "url": "https://api.random.org/pricing"
+  },
+  "RandomUser.me": {
+    "checked": "2026-09-26",
+    "hash": "3663854f1df8d2a3505ca18c311725853a39e1acb3d3cdcfaeb1077422be16e2",
+    "host": "randomuser.me",
+    "url": "https://randomuser.me/"
+  },
+  "RapidAPI Marketplace": {
+    "checked": "2026-09-26",
+    "hash": "f17497aad24023cae92ad492b1fa9ecb70ff2a3e11c908bc1f1e7a31799b7463",
+    "host": "rapidapi.com",
+    "url": "https://rapidapi.com/pricing"
+  },
+  "Razorpay API": {
+    "checked": "2026-09-26",
+    "hash": "1b0b74521872ed5f654e48398e21588696d821dda7fd5cf3785f1e2a770c7715",
+    "host": "razorpay.com",
+    "url": "https://razorpay.com/pricing/"
+  },
+  "Reddit API": {
+    "checked": "2026-09-26",
+    "error": "HTTPError",
+    "url": "https://www.reddit.com/wiki/api-terms/"
+  },
+  "Redis Cloud": {
+    "checked": "2026-09-26",
+    "hash": "92412cf4508a94873a83586df0374dd45ca439d4c410e4d10b99b9d6115c026c",
+    "host": "redis.io",
+    "url": "https://redis.io/pricing/"
+  },
+  "Render": {
+    "checked": "2026-09-26",
+    "hash": "418143e6def6c7634e2a0d31a3792d206b7bc0abca1ff560a19034d817804fc7",
+    "host": "render.com",
+    "url": "https://render.com/pricing"
+  },
+  "Replicate": {
+    "checked": "2026-09-26",
+    "hash": "3da8cdcd84da0c5cff7609da3afad745991e78b53f3fe335a2dd8042e124367f",
+    "host": "replicate.com",
+    "url": "https://replicate.com/pricing"
+  },
+  "Replicate Webhooks": {
+    "checked": "2026-09-26",
+    "hash": "b5d7b78065862f0f042cb649a9bb5e8e9ae9d0268f1455957bd8f08ae16058c3",
+    "host": "replicate.com",
+    "url": "https://replicate.com/account/api-tokens"
+  },
+  "Resemble AI": {
+    "checked": "2026-09-26",
+    "hash": "4cf658fc8977add54ee343ca0003b11a18d78bada6cbca220abd985da8c50e54",
+    "host": "app.resemble.ai",
+    "url": "https://app.resemble.ai/"
+  },
+  "Resend": {
+    "checked": "2026-09-26",
+    "hash": "aef9a6e9c99f83a66ec66c9e8cafea25079011033694d28eef6f309f0adfd821",
+    "host": "resend.com",
+    "url": "https://resend.com/pricing"
+  },
+  "Riot Games API": {
+    "checked": "2026-09-26",
+    "hash": "e79a73a55840251ef4144d89586a5c17f7fba50cfbbae2567e08cb5a60445be6",
+    "host": "developer.riotgames.com",
+    "url": "https://developer.riotgames.com/policies/general"
+  },
+  "Roboflow (vision)": {
+    "checked": "2026-09-26",
+    "hash": "48d1244399bb3886f39e307b927dfea52639e99241ce498ea1c9a610d531c1a8",
+    "host": "roboflow.com",
+    "url": "https://roboflow.com/pricing"
+  },
+  "Rome2Rio API": {
+    "checked": "2026-09-26",
+    "error": "HTTPError",
+    "url": "https://www.rome2rio.com/documentation"
+  },
+  "RunPod": {
+    "checked": "2026-09-26",
+    "hash": "10cdedd4e8eac61d8f79de999f892d4bdc7873d690794b6f867f1cc0944969c9",
+    "host": "www.runpod.io",
+    "url": "https://www.runpod.io/pricing"
+  },
+  "Runway API": {
+    "checked": "2026-09-26",
+    "hash": "d32ebb9d03859d66f2385af27bfece31d9e63e4677c2b295d49b906794875ea4",
+    "host": "dev.runwayml.com",
+    "url": "https://dev.runwayml.com/"
+  },
+  "SEC EDGAR API": {
+    "checked": "2026-09-26",
+    "hash": "6410f4705d13e97c6a59b0e5f30308a7a90c3140328d2fd19f215307a000cccd",
+    "host": "www.sec.gov",
+    "url": "https://www.sec.gov/edgar/sec-api-documentation"
+  },
+  "SEOData.io": {
+    "checked": "2026-09-26",
+    "hash": "24aa6c3f2d1655710add6e5be10caac11121d02732de79f7db56dc24adef18da",
+    "host": "seodata.io",
+    "url": "https://seodata.io/"
+  },
+  "SambaNova Cloud": {
+    "checked": "2026-09-26",
+    "hash": "cc76ab2a8fc8925e7bcb46423a2b8ecc9d4179b18d4883d414e5b2fa93d90569",
+    "host": "cloud.sambanova.ai",
+    "url": "https://cloud.sambanova.ai/"
+  },
+  "Sanity.io": {
+    "checked": "2026-09-26",
+    "hash": "fe72be1c3811f1e5df5494c165556abb8141a91a3b263fefb7d192ee82cb14aa",
+    "host": "www.sanity.io",
+    "url": "https://www.sanity.io/pricing"
+  },
+  "Scale SERP": {
+    "checked": "2026-09-26",
+    "hash": "a6596b1999907b8fbb5ac852b7553c2123381627344ea909b07c63b8589d3333",
+    "host": "scaleserp.com",
+    "url": "https://scaleserp.com/"
+  },
+  "Scrape.do": {
+    "checked": "2026-09-26",
+    "error": "HTTPError",
+    "url": "https://dashboard.scrape.do/"
+  },
+  "ScrapeStack": {
+    "checked": "2026-09-26",
+    "hash": "48e3c1a15bdf1b563d6b394028379a77a2007d932ede3e9bde760bc024136bf7",
+    "host": "apilayer.com",
+    "url": "https://apilayer.com/marketplace/scrapestack-api"
+  },
+  "ScraperAPI": {
+    "checked": "2026-09-26",
+    "hash": "7c2c6cdaa9883762db391d20fd7e4930913a7893c28f53a5420dbdb9ec32da33",
+    "host": "www.scraperapi.com",
+    "url": "https://www.scraperapi.com/pricing/"
+  },
+  "ScrapingAnt": {
+    "checked": "2026-09-26",
+    "hash": "746a59cbc65cff78ac05108e8ac046ff1bec6b4c245937c44d739e0e4ed96a3a",
+    "host": "scrapingant.com",
+    "url": "https://scrapingant.com/"
+  },
+  "ScrapingBee": {
+    "checked": "2026-09-26",
+    "hash": "1b8f42887393bd6fe76be159e4d5fe3467fe0ba107bc670d99c409aae46d3761",
+    "host": "www.scrapingbee.com",
+    "url": "https://www.scrapingbee.com/pricing/"
+  },
+  "ScreenshotOne": {
+    "checked": "2026-09-26",
+    "hash": "e404391a1785bb298ecc3b000bd3b6e6765e17be2947b8d96f24755d5fee0484",
+    "host": "dash.screenshotone.com",
+    "url": "https://dash.screenshotone.com/"
+  },
+  "SearchApi": {
+    "checked": "2026-09-26",
+    "hash": "60d5190d80aac45f23f1e71dca90f1cb7ba9f0f0aeae744994e0cc84ebe9f0a9",
+    "host": "www.searchapi.io",
+    "url": "https://www.searchapi.io/"
+  },
+  "Segment API": {
+    "checked": "2026-09-26",
+    "hash": "5e4775ec2ce8961387e551cfb49e9b400f825d65104765ea62b8c2aea86bc7ce",
+    "host": "segment.com",
+    "url": "https://segment.com/pricing/"
+  },
+  "Semantic Scholar API": {
+    "checked": "2026-09-26",
+    "hash": "30f0ac2832353f2d7afb48e2033e07a4b5a578f22167633c96a820f35fd4b71b",
+    "host": "www.semanticscholar.org",
+    "url": "https://www.semanticscholar.org/product/api"
+  },
+  "Semantic Scholar Graph": {
+    "checked": "2026-09-26",
+    "hash": "30f0ac2832353f2d7afb48e2033e07a4b5a578f22167633c96a820f35fd4b71b",
+    "host": "www.semanticscholar.org",
+    "url": "https://www.semanticscholar.org/product/api"
+  },
+  "Semaphore CI": {
+    "checked": "2026-09-26",
+    "hash": "9295024926ad03459d79b7aaf4dcd964ff544c7f2b2a2277a95e3769f99dd35c",
+    "host": "semaphoreci.com",
+    "url": "https://semaphoreci.com/"
+  },
+  "SendGrid": {
+    "checked": "2026-09-26",
+    "hash": "279e1db70cebbdf4ca6ee9be7088f36e8d6b1b7472c9e2eb6e9dd2a9115c0ec3",
+    "host": "sendgrid.com",
+    "url": "https://sendgrid.com/en-us/pricing"
+  },
+  "Sentry": {
+    "checked": "2026-09-26",
+    "hash": "4fbbf7bfc5bf0c845bd464e56ebec9a4dd9c706cb9264b6e7d1b4fb8f87d8833",
+    "host": "sentry.io",
+    "url": "https://sentry.io/pricing/"
+  },
+  "SerpApi": {
+    "checked": "2026-09-26",
+    "hash": "c72e90d9c579d9d7ff1384eebbea4982d2f67520cc6cd145a820ad82591f64f7",
+    "host": "serpapi.com",
+    "url": "https://serpapi.com/pricing"
+  },
+  "Serper.dev": {
+    "checked": "2026-09-26",
+    "error": "HTTPError",
+    "url": "https://serper.dev/api-key"
+  },
+  "Shodan API": {
+    "checked": "2026-09-26",
+    "hash": "b94632a8fcc98b18b09bb139ba2f20adbc93a509aa854b1df3fc98465cb86e78",
+    "host": "help.shodan.io",
+    "url": "https://help.shodan.io/the-basics/credit-types-explained"
+  },
+  "Shopify Admin API": {
+    "checked": "2026-09-26",
+    "hash": "2a8e7b33397ce7a4fa1cedb3980f5b8887eb6d0f8ae05a7aed8e6f2edc488232",
+    "host": "www.shopify.com",
+    "url": "https://www.shopify.com/pricing"
+  },
+  "Shutterstock API": {
+    "checked": "2026-09-26",
+    "error": "HTTPError",
+    "url": "https://www.shutterstock.com/developer/api"
+  },
+  "SiliconFlow": {
+    "checked": "2026-09-26",
+    "hash": "bea2024abff1bf8606f8a01e950219ed4f79ae1aee6ff0a1d714ed8f35ab4da4",
+    "host": "cloud.siliconflow.cn",
+    "url": "https://cloud.siliconflow.cn/account/ak"
+  },
+  "Sinch": {
+    "checked": "2026-09-26",
+    "hash": "57db3410aa59151de71e94ea0fef7adf499f11260ff10d19098078f46719248e",
+    "host": "www.sinch.com",
+    "url": "https://www.sinch.com/pricing/"
+  },
+  "Skyscanner API": {
+    "checked": "2026-09-26",
+    "hash": "21bfe18c5137af429a10608a96c008982255c1df78fda30909080ffa9566aacd",
+    "host": "developers.skyscanner.net",
+    "url": "https://developers.skyscanner.net/docs/getting-started/authentication"
+  },
+  "SmartyStreets": {
+    "checked": "2026-09-26",
+    "hash": "10d9289a2b550cf3fd7b3938f9be9e35462d0fff4daec7c4e5c258622cd51f15",
+    "host": "www.smartystreets.com",
+    "url": "https://www.smartystreets.com/pricing"
+  },
+  "Snyk API": {
+    "checked": "2026-09-26",
+    "hash": "aee6c6132b2c0a1cdfb8f54537e4691d4cc2a8990a1500e574b27fda1c563704",
+    "host": "app.snyk.io",
+    "url": "https://app.snyk.io/account/"
+  },
+  "SonarCloud API": {
+    "checked": "2026-09-26",
+    "hash": "4bd96cfa8e587049126834404af78f391c3f45efb29ecacb0b7a64148862d539",
+    "host": "sonarcloud.io",
+    "url": "https://sonarcloud.io/account/security/"
+  },
+  "Soniox": {
+    "checked": "2026-09-26",
+    "hash": "6e03e22e41bf0567d27c98eee911acb12da277a604cf1378711749b3e45ab0e9",
+    "host": "soniox.com",
+    "url": "https://soniox.com/"
+  },
+  "SoundCloud API": {
+    "checked": "2026-09-26",
+    "hash": "883955d4c219f0b753884f756f14d7b913ee60b9505647a9ac8960201be27754",
+    "host": "developers.soundcloud.com",
+    "url": "https://developers.soundcloud.com/docs/api/rate-limits"
+  },
+  "Sourcegraph API": {
+    "checked": "2026-09-26",
+    "error": "HTTPError",
+    "url": "https://sourcegraph.com/.api-keys"
+  },
+  "SparkPost": {
+    "checked": "2026-09-26",
+    "hash": "4a5b182957d4bde902d00eeb54055caa2c8485802af26b94d7ef8637fce83a33",
+    "host": "www.sparkpost.com",
+    "url": "https://www.sparkpost.com/pricing/"
+  },
+  "Speechmatics": {
+    "checked": "2026-09-26",
+    "hash": "a8e2a9fca511b5514518246b3761312c3286fafaba019935ac5ce920a297c447",
+    "host": "portal.speechmatics.com",
+    "url": "https://portal.speechmatics.com/"
+  },
+  "Spoonacular (recipes)": {
+    "checked": "2026-09-26",
+    "hash": "60e5ca57aabe23b5ef769caad70674713817af84b320c3ba9e72cd2928c2b1dd",
+    "host": "spoonacular.com",
+    "url": "https://spoonacular.com/food-api/pricing"
+  },
+  "Sportradar": {
+    "checked": "2026-09-26",
+    "hash": "1823d5e953075a6829d202906b6021cd06321eb1f06dd9f6010f72785623ce03",
+    "host": "developer.sportradar.com",
+    "url": "https://developer.sportradar.com/getting-started/docs/your-account"
+  },
+  "Sportradar Developer": {
+    "checked": "2026-09-26",
+    "hash": "14739e805edafb6d5f1a4b6564b6b39ed3b4e4e227d1b0adaac188805a3b3bc7",
+    "host": "developer.sportradar.com",
+    "url": "https://developer.sportradar.com/"
+  },
+  "SportsDB": {
+    "checked": "2026-09-26",
+    "hash": "93a4a63a6e4be7fd174bc57da5d788c56fab37e4b947edce4ece5d5db6ecf76f",
+    "host": "www.thesportsdb.com",
+    "url": "https://www.thesportsdb.com/api.php"
+  },
+  "SportsDataIO": {
+    "checked": "2026-09-26",
+    "hash": "9a7322945ea5ee2540da6baa114279bd4b89cc99559a1376dc88ce192350316b",
+    "host": "sportsdata.io",
+    "url": "https://sportsdata.io/developers/apis"
+  },
+  "Spotify Web API": {
+    "checked": "2026-09-26",
+    "hash": "ab729784cafddeef59aa6dfd4e4ce95c67397e9ff2378bc8be05ff4c54f83ce5",
+    "host": "developer.spotify.com",
+    "url": "https://developer.spotify.com/terms"
+  },
+  "Square API": {
+    "checked": "2026-09-26",
+    "hash": "0073976ef5827c2a1e24d2091c9ce4b19e538b908909616e4cef49531ab66e6e",
+    "host": "squareup.com",
+    "url": "https://squareup.com/us/en/pricing"
+  },
+  "Stability AI": {
+    "checked": "2026-09-26",
+    "hash": "89c538b2d51b43fc5a969d5f3ec3c5aabb20802c71273d528db9264f214b24f5",
+    "host": "platform.stability.ai",
+    "url": "https://platform.stability.ai/pricing"
+  },
+  "Stability AI Platform": {
+    "checked": "2026-09-26",
+    "hash": "c6725b1dc180c187128d8549b2aacfc7ba9020fd7668b035be85610460f54f04",
+    "host": "platform.stability.ai",
+    "url": "https://platform.stability.ai/account/keys"
+  },
+  "Steam Web API": {
+    "checked": "2026-09-26",
+    "hash": "92aace124a981d81f9b98d25b4c121c8a922ab745c94856dd5ac19c9c29d520c",
+    "host": "partner.steamgames.com",
+    "url": "https://partner.steamgames.com/doc/webapi_overview"
+  },
+  "Steel.dev": {
+    "checked": "2026-09-26",
+    "hash": "f39c643b362dba6e1c4b4bb68e456cd9318c84e2c19bfd2db8947230dc88111f",
+    "host": "steel.dev",
+    "url": "https://steel.dev/"
+  },
+  "Stooq": {
+    "checked": "2026-09-26",
+    "hash": "f78ecaa8ce3123db481016255642a2e719544121059a8e56bc1e41291779fcf8",
+    "host": "stooq.com",
+    "url": "https://stooq.com/q/d/?s=aapl.us"
+  },
+  "StormGlass (marine)": {
+    "checked": "2026-09-26",
+    "hash": "93e6cb53a5f4b3e923596096dfb16bc28b19b8e2f7ed5444e841f22a8f28b57e",
+    "host": "stormglass.io",
+    "url": "https://stormglass.io/pricing/"
+  },
+  "Strapi Cloud": {
+    "checked": "2026-09-26",
+    "hash": "bee51617fb92b80cdaef65e1d4462c8cf1de612c3c2ff7394d388699b4cd6248",
+    "host": "strapi.io",
+    "url": "https://strapi.io/pricing"
+  },
+  "Strava API": {
+    "checked": "2026-09-26",
+    "hash": "dc29afdf8e4609c58024486707b08f539d99e632834810dba17b6fbbf16d3574",
+    "host": "developers.strava.com",
+    "url": "https://developers.strava.com/docs/"
+  },
+  "Stripe (test keys)": {
+    "checked": "2026-09-26",
+    "hash": "4c150f8e99a60dc0bf44e56957a7da852c2e6c29e0d4ebced3dc578737a9a40f",
+    "host": "stripe.com",
+    "url": "https://stripe.com/pricing"
+  },
+  "Supabase": {
+    "checked": "2026-09-26",
+    "hash": "785ae3a86c6318ced6138def3f942736651075e742f5b686e850215666d48ee6",
+    "host": "supabase.com",
+    "url": "https://supabase.com/pricing"
+  },
+  "Systran": {
+    "checked": "2026-09-26",
+    "hash": "46a748842db100825dc11c18645d1d420d0b78177471f9d548397861b1ea8062",
+    "host": "www.systran.net",
+    "url": "https://www.systran.net"
+  },
+  "TMDB (movies)": {
+    "checked": "2026-09-26",
+    "hash": "b15b01ed5e43283d74bc507a515eebb0a66adea7a280bc09d96e33001e9aa876",
+    "host": "developer.themoviedb.org",
+    "url": "https://developer.themoviedb.org/docs/faq"
+  },
+  "Tavily": {
+    "checked": "2026-09-26",
+    "hash": "e61d40c71e891749282f9516d75a291cd5dc795810216a003d6fb8fde9696550",
+    "host": "tavily.com",
+    "url": "https://tavily.com/pricing"
+  },
+  "Telegram Bot API": {
+    "checked": "2026-09-26",
+    "hash": "433b176a1495af07d05fba94f51c202b544f6a060846f7938588504e5205b54b",
+    "host": "core.telegram.org",
+    "url": "https://core.telegram.org/bots/api"
+  },
+  "Telnyx": {
+    "checked": "2026-09-26",
+    "hash": "ce99dfa6a2aa08e2c46718ecff9c9382047010346a102556503f7ddbc6f9d90b",
+    "host": "telnyx.com",
+    "url": "https://telnyx.com/pricing"
+  },
+  "Tencent Hunyuan": {
+    "checked": "2026-09-26",
+    "hash": "34662f5dd735499346f4ef4c1df61dcc447ea1004bbbc95b40038c282692b71c",
+    "host": "console.cloud.tencent.com",
+    "url": "https://console.cloud.tencent.com/hunyuan"
+  },
+  "Tenor": {
+    "checked": "2026-09-26",
+    "hash": "8c38ab313e5893eb2ee432c1253b0a81dac7f4be4bca28b92458d9228efc00c7",
+    "host": "developers.google.com",
+    "url": "https://developers.google.com/tenor"
+  },
+  "Terraform Cloud API": {
+    "checked": "2026-09-26",
+    "hash": "9d73c8b26a8ecbd78107da736bf46fd78a1c07270e85dfd3e9cc38f54998ebb9",
+    "host": "app.terraform.io",
+    "url": "https://app.terraform.io/app/settings/tokens"
+  },
+  "TextMagic": {
+    "checked": "2026-09-26",
+    "hash": "014aa9fe48fd50f15210a9b609b6eab8fabaf98c42ea635e6ca9068348e86fd3",
+    "host": "www.textmagic.com",
+    "url": "https://www.textmagic.com/pricing/"
+  },
+  "The Graph": {
+    "checked": "2026-09-26",
+    "error": "HTTPError",
+    "url": "https://thegraph.com/pricing/"
+  },
+  "The Guardian Open Platform": {
+    "checked": "2026-09-26",
+    "hash": "fe75ffe9670db4a3c0f510fbcb50d5f3466ebe1e66ca12e6dce14fdcc2cade0a",
+    "host": "open-platform.theguardian.com",
+    "url": "https://open-platform.theguardian.com/access/"
+  },
+  "TheAudioDB": {
+    "checked": "2026-09-26",
+    "error": "HTTPError",
+    "url": "https://www.theaudiodb.com/pricing.php"
+  },
+  "TheAudioDB Extended": {
+    "checked": "2026-09-26",
+    "error": "HTTPError",
+    "url": "https://www.theaudiodb.com/api_guide.php"
+  },
+  "TheCocktailDB": {
+    "checked": "2026-09-26",
+    "error": "HTTPError",
+    "url": "https://www.thecocktaildb.com/premium.php"
+  },
+  "TheMealDB": {
+    "checked": "2026-09-26",
+    "error": "HTTPError",
+    "url": "https://www.themealdb.com/premium.php"
+  },
+  "TheSportsDB": {
+    "checked": "2026-09-26",
+    "hash": "f738758cab33283c66bdc493badcee4ffa898330fd4c7a4f21a902cd0a18b53f",
+    "host": "www.thesportsdb.com",
+    "url": "https://www.thesportsdb.com/api.php"
+  },
+  "ThingSpeak API": {
+    "checked": "2026-09-26",
+    "hash": "ff1876a56bb08b299ad258290224c4fdf0a434083035da50ff4bf9daf9d74303",
+    "host": "thingspeak.com",
+    "url": "https://thingspeak.com/prices/thingspeak_standard"
+  },
+  "TiDB Cloud": {
+    "checked": "2026-09-26",
+    "hash": "2b4006433161c58cfa7eb792afaf87c57c9916a3da68753c49b5a73e9d8904cc",
+    "host": "tidbcloud.com",
+    "url": "https://tidbcloud.com/"
+  },
+  "Tiingo": {
+    "checked": "2026-09-26",
+    "hash": "39e4478e842e77a2b46e780ac503bfe1b256703b773d657cb3965d1196d048a8",
+    "host": "api.tiingo.com",
+    "url": "https://api.tiingo.com/"
+  },
+  "TikTok for Developers": {
+    "checked": "2026-09-26",
+    "hash": "6b898823f947b9d1d4bd3750ead610e9ce7079099dcac44d8d58af3b8e904548",
+    "host": "developers.tiktok.com",
+    "url": "https://developers.tiktok.com"
+  },
+  "Timescale Cloud": {
+    "checked": "2026-09-26",
+    "hash": "b7262cfe4c66294a100bc9142d88eb6c92a0a5f6aac782a63c49eb5effcafa98",
+    "host": "console.cloud.timescale.com",
+    "url": "https://console.cloud.timescale.com/"
+  },
+  "TinyPNG API": {
+    "checked": "2026-09-26",
+    "hash": "4770a1c5ba7b74f8456f859d22efd8893da5acf2e4cfa1dde5af93cc523ec67a",
+    "host": "tinypng.com",
+    "url": "https://tinypng.com/developers#pricing"
+  },
+  "TinyURL API": {
+    "checked": "2026-09-26",
+    "hash": "96e358edc46428ad58af9ff1a01e9f244e0885511ac0fef3ea4cf55bf4414434",
+    "host": "tinyurl.com",
+    "url": "https://tinyurl.com/app/dev"
+  },
+  "Together AI": {
+    "checked": "2026-09-26",
+    "hash": "c8a7f2cd25b4bc960b8c8d7e2325948c2654d4ad40f3d0b3648a3f2e7f5a5d7f",
+    "host": "www.together.ai",
+    "url": "https://www.together.ai/pricing"
+  },
+  "TomTom Maps": {
+    "checked": "2026-09-26",
+    "hash": "d29f05dc265fd32e86ca20c8197e801fc7976fb25ca8bdaa7339ebb15dd8b62d",
+    "host": "developer.tomtom.com",
+    "url": "https://developer.tomtom.com/pricing"
+  },
+  "Tomorrow\\.io": {
+    "checked": "2026-09-26",
+    "hash": "edaf5332ee88722248fa362c59da6824b8f96615df9758c8f42833c10621f663",
+    "host": "app.tomorrow.io",
+    "url": "https://app.tomorrow.io/signup"
+  },
+  "Tradier": {
+    "checked": "2026-09-26",
+    "hash": "39acdc1f587b38ffd8fac54041fa28bf94ce925ebf7266bf573cbb67aeb62b18",
+    "host": "tradier.com",
+    "url": "https://tradier.com/individuals/pricing"
+  },
+  "Travis CI API": {
+    "checked": "2026-09-26",
+    "hash": "15b78e79614ba72b3268ada5cece69d8f0998155ca5f93f68798e47756cd1c2e",
+    "host": "app.travis-ci.com",
+    "url": "https://app.travis-ci.com/account/preferences"
+  },
+  "Treasury Fiscal Data": {
+    "checked": "2026-09-26",
+    "error": "HTTPError",
+    "url": "https://fiscaldata.treasury.gov/api/fiscal_service/"
+  },
+  "TripAdvisor Content API": {
+    "checked": "2026-09-26",
+    "hash": "c39a6a13ca35bb723134fd85db9c86520d1c137e5620a9e8c6021c034c33f6ee",
+    "host": "tripadvisor-content-api.readme.io",
+    "url": "https://tripadvisor-content-api.readme.io/reference/overview"
+  },
+  "Turso": {
+    "checked": "2026-09-26",
+    "hash": "dc4f258dad0cf5e8666d1ce9e72d790d2b9a24e729e98f5e82afcf887c43dd65",
+    "host": "turso.tech",
+    "url": "https://turso.tech/app"
+  },
+  "Twelve Data": {
+    "checked": "2026-09-26",
+    "hash": "550ab924cd618ad7ade3ca3f3f8eea210d456dfbb67088c82227bcd2e18efdf3",
+    "host": "twelvedata.com",
+    "url": "https://twelvedata.com/pricing"
+  },
+  "Twelve Data Forex": {
+    "checked": "2026-09-26",
+    "hash": "085e96d551526bcfbe9b0f151adbaec410205f782ee823f457e40f4274344edf",
+    "host": "twelvedata.com",
+    "url": "https://twelvedata.com/apikey"
+  },
+  "Twilio": {
+    "checked": "2026-09-26",
+    "hash": "259892a6f5636259a92d45140621a6687323b34858b26a018e84ff44c4ca308c",
+    "host": "www.twilio.com",
+    "url": "https://www.twilio.com/en-us/pricing"
+  },
+  "Twitch API": {
+    "checked": "2026-09-26",
+    "hash": "932915e4adcb5a75e2cd5ed5c3bfa4875822cd3e536e787cd35572f016596052",
+    "host": "dev.twitch.tv",
+    "url": "https://dev.twitch.tv"
+  },
+  "Typesense Cloud": {
+    "checked": "2026-09-26",
+    "hash": "6a9a9bc346cf5fc14fd09b12e668c0686be0d77a2afac54be9c6efc7836b2ba3",
+    "host": "cloud.typesense.org",
+    "url": "https://cloud.typesense.org/"
+  },
+  "UK Parliament API": {
+    "checked": "2026-09-26",
+    "error": "HTTPError",
+    "url": "https://developer.parliament.uk/"
+  },
+  "UK data.gov.uk": {
+    "checked": "2026-09-26",
+    "hash": "5c9e5469e8147f3abd2551cc02c0cc572189e59ec2db34af3c5d8a159197db0f",
+    "host": "www.data.gov.uk",
+    "url": "https://www.data.gov.uk"
+  },
+  "UN Data API": {
+    "checked": "2026-09-26",
+    "hash": "c5fa7fff2d8cf9b7761874b7df47a155d89ac1d4b7ebfaaa117298e159fb186d",
+    "host": "data.un.org",
+    "url": "https://data.un.org/"
+  },
+  "URLScan.io": {
+    "checked": "2026-09-26",
+    "hash": "7c9df96d73ca24c3b5f50022f72669e142ddeb26fdbf1a04d5386ff272299be1",
+    "host": "urlscan.io",
+    "url": "https://urlscan.io/docs/api/"
+  },
+  "US Census Bureau API": {
+    "checked": "2026-09-26",
+    "hash": "570ddd85c2568625ae10e41a3ae950097c837bdd2e76008924a23793ef8908b4",
+    "host": "www.census.gov",
+    "url": "https://www.census.gov/data/developers/guidance/api-user-guide.API_Key.html"
+  },
+  "USAJobs API": {
+    "checked": "2026-09-26",
+    "hash": "798d909b3e74fe3cdc91788c5965196bd5401ecf3d207a6d71b8cd037b970fde",
+    "host": "developer.usajobs.gov",
+    "url": "https://developer.usajobs.gov#pricing"
+  },
+  "USGS APIs": {
+    "checked": "2026-09-26",
+    "error": "TimeoutError",
+    "url": "https://www.usgs.gov/products/data-and-tools"
+  },
+  "USGS Earthquake API": {
+    "checked": "2026-09-26",
+    "hash": "9b5224e389d1d9323298dd24e0b818d42976a3811d755bd3c0045c1c97b8a4ec",
+    "host": "earthquake.usgs.gov",
+    "url": "https://earthquake.usgs.gov/data/comcat/"
+  },
+  "Uber API": {
+    "checked": "2026-09-26",
+    "hash": "f9f80d2c0c3612435767d8abbb959a07a0a3bcc0beca0d71ec153030cf7159d0",
+    "host": "developer.uber.com",
+    "url": "https://developer.uber.com/docs/drivers/references/api"
+  },
+  "UniProt REST API": {
+    "checked": "2026-09-26",
+    "hash": "30e809c8709a3e21c7dacff5a0b6ef2388ac1667739cf257b5987e0e94644404",
+    "host": "www.uniprot.org",
+    "url": "https://www.uniprot.org/help/api"
+  },
+  "Unpaywall API": {
+    "checked": "2026-09-26",
+    "hash": "0445953f2b1255c157c7fb0aa91d60f75298895086bded982c89e46d6c5d5b01",
+    "host": "unpaywall.org",
+    "url": "https://unpaywall.org/products/api"
+  },
+  "Unsplash": {
+    "checked": "2026-09-26",
+    "hash": "b790adf41cd7e030d92f79dc5727f98009d3b94a4b54e2a6a4a1376ef4a681ba",
+    "host": "unsplash.com",
+    "url": "https://unsplash.com/developers"
+  },
+  "Unsplash API": {
+    "checked": "2026-09-26",
+    "hash": "b7d3f44c6f83984f270b2da00d7f6041312fc3b9dd8cb310b357ba6193a910d1",
+    "host": "unsplash.com",
+    "url": "https://unsplash.com/developers"
+  },
+  "Upstash": {
+    "checked": "2026-09-26",
+    "hash": "b6cb0780a9e7ea72ae6efae683ccdf43fd7e2f866915488c895fd4671dd550c1",
+    "host": "upstash.com",
+    "url": "https://upstash.com/pricing"
+  },
+  "Upstash Kafka": {
+    "checked": "2026-09-26",
+    "hash": "1c37d2d6c142109819cbd7e254da805d3e709dfeaa74f9270f9df653763ece9b",
+    "host": "console.upstash.com",
+    "url": "https://console.upstash.com/"
+  },
+  "Upstash QStash": {
+    "checked": "2026-09-26",
+    "hash": "1c37d2d6c142109819cbd7e254da805d3e709dfeaa74f9270f9df653763ece9b",
+    "host": "console.upstash.com",
+    "url": "https://console.upstash.com/"
+  },
+  "Urlbox": {
+    "checked": "2026-09-26",
+    "hash": "3b36f8aab3a8375fd23cfdc681ef39011892cd5cb9da4961b4b357c310d7a896",
+    "host": "urlbox.com",
+    "url": "https://urlbox.com/"
+  },
+  "Valhalla": {
+    "checked": "2026-09-26",
+    "hash": "d1b59f22c106c0f38c2cf888b1bf75c8784e047ca7a81ad778da193c2a59a41f",
+    "host": "valhalla.github.io",
+    "url": "https://valhalla.github.io/valhalla/"
+  },
+  "Vercel API": {
+    "checked": "2026-09-26",
+    "error": "HTTPError",
+    "url": "https://vercel.com/pricing"
+  },
+  "Vimeo API": {
+    "checked": "2026-09-26",
+    "hash": "61c411750663e56309362d6aa1a3398fe3977c6505b9eb72126dbcb3a8b08cfc",
+    "host": "developer.vimeo.com",
+    "url": "https://developer.vimeo.com"
+  },
+  "VirusTotal API": {
+    "checked": "2026-09-26",
+    "hash": "fd610b135788bcffd45a819d75cee8bbb12813c4712e467d83d4ce9100c28891",
+    "host": "docs.virustotal.com",
+    "url": "https://docs.virustotal.com/reference/public-vs-premium-api"
+  },
+  "Visual Crossing": {
+    "checked": "2026-09-26",
+    "hash": "f3fa3af3ba9ada911cbc392c725b53af2e3ba871058fdc241022c6e5e9286653",
+    "host": "www.visualcrossing.com",
+    "url": "https://www.visualcrossing.com/weather-api/"
+  },
+  "Vonage (Nexmo)": {
+    "checked": "2026-09-26",
+    "hash": "a2a9b84f7b81ae7fa3ef22d701be10f035df937168d0c6a8bf211756d7fd8760",
+    "host": "www.vonage.com",
+    "url": "https://www.vonage.com/communications-apis/pricing/"
+  },
+  "Voyage AI (embeddings)": {
+    "checked": "2026-09-26",
+    "hash": "c4b76aac397bfcce094396d449ccc7bf0b09ef120612ac45baabb775af7be147",
+    "host": "docs.voyageai.com",
+    "url": "https://docs.voyageai.com/docs/pricing"
+  },
+  "WHO API": {
+    "checked": "2026-09-26",
+    "hash": "06e83f7362201903f7ba6c9b11b2ece3671df0b0440e63fa8d3a546f856e68d7",
+    "host": "www.who.int",
+    "url": "https://www.who.int/data/gho/info/gho-odata-api"
+  },
+  "WeatherAPI.com": {
+    "checked": "2026-09-26",
+    "hash": "7f1ecc5a9d19eb7a608691b5a8d127de24523bc8d3586f184c67d5375f8871c0",
+    "host": "www.weatherapi.com",
+    "url": "https://www.weatherapi.com/pricing.aspx"
+  },
+  "Weatherbit": {
+    "checked": "2026-09-26",
+    "hash": "48f36b250108a0d88ac76ce49555c3fc440ecb4f17f5f92673a931884a5eebd5",
+    "host": "cdn.weatherbit.io",
+    "url": "https://cdn.weatherbit.io/pricing"
+  },
+  "Weatherstack": {
+    "checked": "2026-09-26",
+    "hash": "ca0b3892064b0976ed40376311672dc7b1fbe92387c2d23517a51e9f2b943548",
+    "host": "weatherstack.com",
+    "url": "https://weatherstack.com/pricing"
+  },
+  "Weaviate Cloud": {
+    "checked": "2026-09-26",
+    "hash": "675a5e01c9cff5989e983d9a0752154b500b7adffe49da4795aae16da02a9065",
+    "host": "console.weaviate.cloud",
+    "url": "https://console.weaviate.cloud/"
+  },
+  "Webz.io News API": {
+    "checked": "2026-09-26",
+    "hash": "cd70faeef119d14a3884786c91e3de42a9dfa449036b91e6dd7dee6901cb64be",
+    "host": "webz.io",
+    "url": "https://webz.io/pricing/"
+  },
+  "Weights & Biases": {
+    "checked": "2026-09-26",
+    "hash": "3bb6d477e9fe2e871a9f854ace06ee19a928c7db3d5a4400ad5598bf107c7c93",
+    "host": "wandb.ai",
+    "url": "https://wandb.ai/authorize"
+  },
+  "Wikidata API": {
+    "checked": "2026-09-26",
+    "hash": "18aa63a4adbb779b3317ea480c6c1a0d70accdf55f91f7fa9d065df4047ba9e1",
+    "host": "www.wikidata.org",
+    "url": "https://www.wikidata.org/wiki/Wikidata:Data_access"
+  },
+  "Wikimedia APIs": {
+    "checked": "2026-09-26",
+    "hash": "31c4ca2bc9e468c24f20b7aa23acec5ffef0f8aa5544d02207c0504310722105",
+    "host": "api.wikimedia.org",
+    "url": "https://api.wikimedia.org/"
+  },
+  "Wikimedia Commons": {
+    "checked": "2026-09-26",
+    "hash": "66dac7bc4f95859c99142c373bd9b99519148f50ef419fd6980d19934c8395fb",
+    "host": "commons.wikimedia.org",
+    "url": "https://commons.wikimedia.org/w/api.php"
+  },
+  "Wikipedia API": {
+    "checked": "2026-09-26",
+    "hash": "aa0168863b1bdc8aa530da67acb9e72ad9edb40013429907ace06ba99d55b502",
+    "host": "www.mediawiki.org",
+    "url": "https://www.mediawiki.org/wiki/API:Main_page"
+  },
+  "Wit.ai (Meta)": {
+    "checked": "2026-09-26",
+    "hash": "a7b53c4120fc38d270039267c2812d61ca09b1467aa283a8cdca2047dcbd1178",
+    "host": "wit.ai",
+    "url": "https://wit.ai/faq"
+  },
+  "Withings API": {
+    "checked": "2026-09-26",
+    "hash": "da3340b08e3309c63256e5662052b72c233e6af446dc4d8cd799166add638721",
+    "host": "developer.withings.com",
+    "url": "https://developer.withings.com/"
+  },
+  "Wolfram Alpha API": {
+    "checked": "2026-09-26",
+    "hash": "584e1ca7493bfa51bbe6347bf48b989f298000c1444c1a1d83505e5c029c7480",
+    "host": "products.wolframalpha.com",
+    "url": "https://products.wolframalpha.com/api/"
+  },
+  "WooCommerce REST API": {
+    "checked": "2026-09-26",
+    "hash": "8dc7fe8c749e2581836be387991bc1c20966e4494c30a206eacb198436dd4c67",
+    "host": "woocommerce.com",
+    "url": "https://woocommerce.com/products/woocommerce/"
+  },
+  "World Air Quality Index": {
+    "checked": "2026-09-26",
+    "hash": "18b61c11e558f2af793790463139db8397c17676ba65e0f63ccd1367df68179d",
+    "host": "aqicn.org",
+    "url": "https://aqicn.org/api/"
+  },
+  "World Bank API": {
+    "checked": "2026-09-26",
+    "hash": "6695d4f23226007517b6690cd642e117748da2d036ddfd6c7b3efd21dd5e2bc2",
+    "host": "data.worldbank.org",
+    "url": "https://data.worldbank.org/summary-terms-of-use"
+  },
+  "World Bank Indicators": {
+    "checked": "2026-09-26",
+    "hash": "9647409689202fb9df7512601f7b26464443c23b555a658c6fdf1f348251f4a2",
+    "host": "datahelpdesk.worldbank.org",
+    "url": "https://datahelpdesk.worldbank.org/knowledgebase/articles/889392-about-the-indicators-api-documentation"
+  },
+  "Writer API": {
+    "checked": "2026-09-26",
+    "hash": "37acadf651f1aaf26f33992a61b2f2607ed90d120afb06bb25f7ced16f6fab07",
+    "host": "dev.writer.com",
+    "url": "https://dev.writer.com/"
+  },
+  "X (Twitter) API": {
+    "checked": "2026-09-26",
+    "hash": "39384e22eac7ad2f146491cb579c40bde2b7d36ec0557da8ce178b94d61a5c05",
+    "host": "developer.twitter.com",
+    "url": "https://developer.twitter.com"
+  },
+  "Xata": {
+    "checked": "2026-09-26",
+    "hash": "b15aedef8f9b89224d81bace027bdae62ed31ea454bece6152ad6b827e3a8302",
+    "host": "app.xata.io",
+    "url": "https://app.xata.io/"
+  },
+  "Xweather (Aeris)": {
+    "checked": "2026-09-26",
+    "hash": "881efd14f26f32f25b2e8e121ac8d89c0ec1c2e81fcac0e4a9bc719a61c7e2e0",
+    "host": "www.xweather.com",
+    "url": "https://www.xweather.com/products/weather-api"
+  },
+  "Yelp Fusion API": {
+    "checked": "2026-09-26",
+    "error": "HTTPError",
+    "url": "https://terms.yelp.com/tos/en_us/20240101_en_us.html"
+  },
+  "Yi/01.AI": {
+    "checked": "2026-09-26",
+    "hash": "174043c85c3e5e95ac1640a7b2c75459fb9a36fa0c330d429f648691b3ea98ec",
+    "host": "platform.lingyiwanwu.com",
+    "url": "https://platform.lingyiwanwu.com/"
+  },
+  "YouTube Data API": {
+    "checked": "2026-09-26",
+    "error": "HTTPError",
+    "url": "https://console.cloud.google.com/apis/library/youtube.googleapis.com"
+  },
+  "YugabyteDB Managed": {
+    "checked": "2026-09-26",
+    "hash": "175c2f704956427d8870e0b01f769c4e3ec3bd64dde28da80333692bdb74a50b",
+    "host": "cloud.yugabyte.com",
+    "url": "https://cloud.yugabyte.com/"
+  },
+  "ZenRows": {
+    "checked": "2026-09-26",
+    "error": "HTTPError",
+    "url": "https://app.zenrows.com/"
+  },
+  "Zenodo API": {
+    "checked": "2026-09-26",
+    "hash": "57f098957e85bc616fdb6843e7dc5d2bab14d33ff050f97704d373f16ddd42bf",
+    "host": "about.zenodo.org",
+    "url": "https://about.zenodo.org/"
+  },
+  "Zenserp": {
+    "checked": "2026-09-26",
+    "hash": "f8e688d9a041fed0864ca692c93dabf1b884971c1431592af6ea9e4749f8c4d8",
+    "host": "app.zenserp.com",
+    "url": "https://app.zenserp.com/"
+  },
+  "ZeroBounce": {
+    "checked": "2026-09-26",
+    "hash": "5dbe84f53413ffca566b1e8c0fbe733350840efd857b43e4efd3831aa757425f",
+    "host": "www.zerobounce.net",
+    "url": "https://www.zerobounce.net/pricing.html"
+  },
+  "Zhipu AI/Z.ai": {
+    "checked": "2026-09-26",
+    "hash": "54cd98aa1fce84de8346d934b762f2323350d66ab148c0eac018aa17a47e9ca6",
+    "host": "open.bigmodel.cn",
+    "url": "https://open.bigmodel.cn/"
+  },
+  "Zhipu CogView": {
+    "checked": "2026-09-26",
+    "hash": "54cd98aa1fce84de8346d934b762f2323350d66ab148c0eac018aa17a47e9ca6",
+    "host": "open.bigmodel.cn",
+    "url": "https://open.bigmodel.cn/"
+  },
+  "Zippopotam.us (zip codes)": {
+    "checked": "2026-09-26",
+    "hash": "abfc8ec2c5147429a1bb8b39d1185633e5cbfb4c940bdd45020208b3dc099720",
+    "host": "zippopotam.us",
+    "url": "https://zippopotam.us#pricing"
+  },
+  "Zoho ZeptoMail": {
+    "checked": "2026-09-26",
+    "hash": "d74a41bc14fba4251872bde0278ab8a9668933c026486bd9bd373c9cc0a6a0d0",
+    "host": "www.zoho.com",
+    "url": "https://www.zoho.com/zeptomail/pricing.html"
+  },
+  "Zyte API": {
+    "checked": "2026-09-26",
+    "hash": "2bb0033de6c94f8399975fe8bd0bc3f8904fe59039a8342afff00e07f6dbe16a",
+    "host": "app.zyte.com",
+    "url": "https://app.zyte.com/"
+  },
+  "arXiv API": {
+    "checked": "2026-09-26",
+    "hash": "65f02b849a893890dcfe4104fd8347414dffbb5f152017bba95e85553033839d",
+    "host": "arxiv.org",
+    "url": "https://arxiv.org/help/api"
+  },
+  "balldontlie (NBA)": {
+    "checked": "2026-09-26",
+    "hash": "541db6a8ce370ea2f99fd01336c52d915f0e1279e3221758108dc5d40aae0672",
+    "host": "docs.balldontlie.io",
+    "url": "https://docs.balldontlie.io/"
+  },
+  "balldontlie NFL": {
+    "checked": "2026-09-26",
+    "hash": "096069c2be5998f6a80caefe5de987767b04a975dd51fccbeb9a61e92899e4d5",
+    "host": "www.balldontlie.io",
+    "url": "https://www.balldontlie.io/"
+  },
+  "crates.io API": {
+    "checked": "2026-09-26",
+    "hash": "58e6fc97391301d6d00a9295ed32c4d09ddbd977e678dc7e0085dd2c4d583a24",
+    "host": "crates.io",
+    "url": "https://crates.io/settings/tokens"
+  },
+  "data.europa.eu": {
+    "checked": "2026-09-26",
+    "hash": "60c43d69ba9a65ebd5a0aeddecc42b2c7b6d3341c2727db3a5937e76e57267d5",
+    "host": "data.europa.eu",
+    "url": "https://data.europa.eu/en"
+  },
+  "data.gov": {
+    "checked": "2026-09-26",
+    "error": "HTTPError",
+    "url": "https://api.data.gov/docs/"
+  },
+  "data.gov.au": {
+    "checked": "2026-09-26",
+    "hash": "58ac3dccd95c40af6db507350601292cc357457189907ab46fc29ff6cc3d18d0",
+    "host": "www.data.gov.au",
+    "url": "https://www.data.gov.au/"
+  },
+  "data.gov.in": {
+    "checked": "2026-09-26",
+    "hash": "bdca22b67af58f4a95370bd7edf54b6cf931163110aa8d3611151d6dd5d6784e",
+    "host": "www.data.gov.in",
+    "url": "https://www.data.gov.in/"
+  },
+  "data.gov.uk": {
+    "checked": "2026-09-26",
+    "hash": "5c9e5469e8147f3abd2551cc02c0cc572189e59ec2db34af3c5d8a159197db0f",
+    "host": "www.data.gov.uk",
+    "url": "https://www.data.gov.uk/"
+  },
+  "data.world": {
+    "checked": "2026-09-26",
+    "error": "HTTPError",
+    "url": "https://data.world/pricing"
+  },
+  "eBay API": {
+    "checked": "2026-09-26",
+    "error": "HTTPError",
+    "url": "https://developer.ebay.com/develop/get-started/api-call-limits"
+  },
+  "fal.ai": {
+    "checked": "2026-09-26",
+    "hash": "fb7a3857ab01ca8c09486c07f5eb7648d22bd40db86fc092aa07352a7bd6a6b6",
+    "host": "fal.ai",
+    "url": "https://fal.ai/pricing"
+  },
+  "football-data.org": {
+    "checked": "2026-09-26",
+    "hash": "36614e2a70ef8a3fc86902434405d66c03224f50b37d6fad1c9c62ed7557dc7f",
+    "host": "www.football-data.org",
+    "url": "https://www.football-data.org/pricing"
+  },
+  "iNaturalist API": {
+    "checked": "2026-09-26",
+    "error": "HTTPError",
+    "url": "https://www.inaturalist.org/pages/api+reference"
+  },
+  "imgix": {
+    "checked": "2026-09-26",
+    "hash": "5d50a21c1b118a4065c0e8f108bb0faadb3b8ff1975eb1a503a3be0f94f96316",
+    "host": "www.imgix.com",
+    "url": "https://www.imgix.com/pricing"
+  },
+  "ip-api.com": {
+    "checked": "2026-09-26",
+    "hash": "13da0aec38f780b8f9858546d285b42be4ebd1d581f207426236c9328f360570",
+    "host": "ip-api.com",
+    "url": "https://ip-api.com/#pricing"
+  },
+  "ipstack": {
+    "checked": "2026-09-26",
+    "hash": "393291c30b80215a8d6c5b1f31a67cddc2cd4cf8277b3150802b281d4ee8b03b",
+    "host": "ipstack.com",
+    "url": "https://ipstack.com/product"
+  },
+  "openFDA API": {
+    "checked": "2026-09-26",
+    "hash": "33cd922a3d2854f43b6491da42bab3fa4a81b235d9140ce792398d0af4f9ac9f",
+    "host": "open.fda.gov",
+    "url": "https://open.fda.gov/apis/authentication/"
+  },
+  "remove.bg": {
+    "checked": "2026-09-26",
+    "hash": "3780050ca1da1e885fd51ba48c111ae266bc24a6b31595b7da07e54fdb325cf5",
+    "host": "www.remove.bg",
+    "url": "https://www.remove.bg/pricing"
+  },
+  "xAI API": {
+    "checked": "2026-09-26",
+    "hash": "33083a06b00fda14dbfd10ab60045f629131e3edac54179a529086b5f2ca5006",
+    "host": "docs.x.ai",
+    "url": "https://docs.x.ai/docs/models"
+  }
+}
