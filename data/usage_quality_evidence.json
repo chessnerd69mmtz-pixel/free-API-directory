@@ -341,9 +341,12 @@
       "data_transfer": "10 GB in + 10 GB out in a rolling 7-day period.",
       "connections": "Maximum 500 connections.",
       "region_limits": "Free clusters are available only in a subset of AWS, Google Cloud and Azure regions.",
-      "lifecycle": "Free clusters can automatically pause after 30 days of inactivity with zero connections.",
+      "lifecycle": "Free clusters auto-pause after 30 days of inactivity with zero connections.",
       "cluster_count": "One Free cluster per project.",
-      "endpoint_dependency": "Yes"
+      "endpoint_dependency": "Yes",
+      "free_cluster": "0.5 GB storage, 100 operations/sec, 10 GB inbound and 10 GB outbound over rolling 7 days, 500 connections.",
+      "deployment": "At most one Free cluster per Atlas project.",
+      "constraints": "Free clusters have additional command, database/collection, and performance restrictions."
     }
   },
   {
@@ -351,14 +354,17 @@
     "source_type": "official",
     "verified_at": "2026-09-26",
     "source_urls": [
-      "https://firebase.google.com/pricing"
+      "https://firebase.google.com/pricing",
+      "https://firebase.google.com/docs/database/usage/billing"
     ],
     "usage_quality": {
       "free_access": "Spark (no-cost) plan.",
       "payment_method": "No payment method needed for Spark plan.",
       "scope": "Many no-cost quotas are project-level rather than app-level.",
-      "examples": "Realtime Database includes up to 1 GB stored and 360 MB/day download; Hosting includes 10 GB storage and 360 MB/day data transfer; other products have product-specific quotas.",
-      "quota_dependency": "Product-specific"
+      "examples": "50K Auth MAU; Realtime Database 1 GB storage and 10 GB/month download; Hosting 10 GB storage and 360 MB/day transfer; Remote Config 100,000 fetches/day per project from Sep 1 2026.",
+      "quota_dependency": "Product-specific",
+      "spark_plan": "No payment method needed.",
+      "product_dependency": "Quotas are product-specific and often project-level."
     }
   },
   {
@@ -371,10 +377,12 @@
     "usage_quality": {
       "free_access": "Free instances for supported service types.",
       "monthly_allowance": "750 Free instance hours per workspace per calendar month.",
-      "reset": "Monthly.",
+      "reset": "Monthly; unused hours do not roll over.",
       "database": "Free Postgres is 1 GB and expires 30 days after creation, with a 14-day upgrade grace period before deletion.",
-      "networking": "Free web services cannot send outbound traffic on SMTP ports 25, 465 or 587.",
-      "storage": "Free web-service filesystem changes are not persistent."
+      "networking": "Free web services cannot send outbound SMTP traffic on ports 25, 465 or 587; local filesystem is not persistent.",
+      "storage": "Free web-service filesystem changes are not persistent.",
+      "free_plan": "750 Free instance hours per workspace per calendar month.",
+      "postgres": "Free Postgres is 1 GB and expires 30 days after creation; expired database has a 14-day upgrade grace period before deletion."
     }
   },
   {
@@ -389,8 +397,9 @@
       "free_access": "$0 Free plan.",
       "monthly_allowance": "300 credits/month with a hard limit.",
       "reset": "Monthly billing period.",
-      "overage": "Free plan has no automatic recharge.",
-      "deployment": "Git/API/AI deployment, deploy previews and CDN included."
+      "overage": "Free plan does not automatically recharge; reaching the hard limit blocks further billable usage.",
+      "deployment": "Git/API/AI deployment, deploy previews and CDN included.",
+      "free_plan": "$0 plan with 300 credits/month and a hard limit."
     }
   },
   {
@@ -407,7 +416,11 @@
       "monthly_allowance": "1,000,000 function invocations; 100 GB/month Fast Data Transfer; 4 CPU-hours active compute; 360 GB-hours provisioned memory.",
       "execution": "Hobby Functions support up to 300s max duration with Fluid Compute; legacy/non-fluid behavior differs.",
       "limits": "Project and deployment limits also apply.",
-      "commercial_scope": "The cited Hobby documentation describes it as intended for personal projects; commercial suitability should be checked against current Vercel terms."
+      "commercial_scope": "The cited Hobby documentation describes it as intended for personal projects; commercial suitability should be checked against current Vercel terms.",
+      "hobby_plan": "Free; documented primarily for personal/non-commercial projects.",
+      "included_usage": "1M function invocations, 100 GB Fast Data Transfer, 4 CPU-hours active compute, 360 GB-hours provisioned memory.",
+      "functions": "Current Hobby function execution limits depend on Fluid Compute/legacy behavior; project/deployment limits also apply.",
+      "commercial_note": "Commercial use should be checked against the current Hobby plan terms rather than assumed from the $0 price."
     }
   },
   {
@@ -416,7 +429,8 @@
     "verified_at": "2026-09-26",
     "source_urls": [
       "https://upstash.com/docs/redis/help/faq",
-      "https://upstash.com/docs/redis/troubleshooting/max_request_size_exceeded"
+      "https://upstash.com/docs/redis/troubleshooting/max_request_size_exceeded",
+      "https://upstash.com/pricing/redis"
     ],
     "usage_quality": {
       "free_access": "Free Redis database tier.",
@@ -424,7 +438,10 @@
       "max_request_size": "10 MB per request.",
       "max_record_size": "100 MB per record.",
       "upgrade": "Adding a payment method upgrades the database to a paid plan.",
-      "failure_behavior": "Commands above free request limits return an exception."
+      "failure_behavior": "Commands above free request limits return an exception.",
+      "free_plan": "256 MB data, 10 GB monthly bandwidth, 500K monthly commands, maximum 10,000 commands/sec, one free database.",
+      "request_constraints": "10 MB maximum request size and 100 MB maximum record size on the Free plan.",
+      "ephemeral": "An ephemeral free Redis can be created without signup, card or API key, but is deleted after 3 days unless claimed."
     }
   },
   {
@@ -469,6 +486,107 @@
       "academic_credits": "Graduate students, labs and researchers can receive up to $10,000 in free compute credits through the academic program.",
       "startup_credits": "Early-stage startups can apply for free compute credits.",
       "distinction": "Programmatic credits are separate from the standard free tier."
+    }
+  },
+  {
+    "name": "Spotify Web API",
+    "source_type": "official",
+    "verified_at": "2026-09-26",
+    "source_urls": [
+      "https://developer.spotify.com/documentation/web-api/concepts/rate-limits",
+      "https://developer.spotify.com/documentation/web-api/concepts/quota-modes",
+      "https://developer.spotify.com/documentation/web-api/tutorials/february-2026-migration-guide",
+      "https://developer.spotify.com/blog/2026-07-23-web-api-quota-updates"
+    ],
+    "usage_quality": {
+      "rate_limit": "Rolling 30-second window; exact limit depends on development vs extended quota mode.",
+      "quota": "Development-mode quota is distinct from technical rate limit and, since July 2026, is counted per developer account across its Development Mode apps.",
+      "development_mode": "App owner must have Spotify Premium; up to 5 authenticated Spotify users per app.",
+      "app_limit": "Up to 25 Client IDs per developer account under current Development Mode rules."
+    }
+  },
+  {
+    "name": "NASA Open APIs",
+    "source_type": "official",
+    "verified_at": "2026-09-26",
+    "source_urls": [
+      "https://api.nasa.gov/"
+    ],
+    "usage_quality": {
+      "rate_limit": "DEMO_KEY: 30 requests/hour/IP and 50/day/IP. Signed-up keys have higher defaults and current limits are exposed in X-RateLimit-Limit and X-RateLimit-Remaining headers.",
+      "temporary_block": "Exceeding the limit temporarily blocks the key; the block is lifted after waiting an hour.",
+      "operational_note": "Quota is aggregated across api.nasa.gov requests for the key."
+    }
+  },
+  {
+    "name": "YouTube Data API",
+    "source_type": "official",
+    "verified_at": "2026-09-26",
+    "source_urls": [
+      "https://developers.google.com/youtube/v3/getting-started",
+      "https://developers.google.com/youtube/v3/determine_quota_cost",
+      "https://developers.google.com/youtube/v3/docs/search/list"
+    ],
+    "usage_quality": {
+      "daily_quota_units": 10000,
+      "method_specific": "search.list has a quota cost of 100 per call and default 100 calls/day; videos.insert has a separate 100 calls/day default allocation and high unit cost.",
+      "invalid_requests_cost": "Every request, including invalid requests, costs at least 1 quota unit.",
+      "quota_extension": "Additional quota requires a quota-extension process."
+    }
+  },
+  {
+    "name": "Airtable API",
+    "source_type": "official",
+    "verified_at": "2026-09-26",
+    "source_urls": [
+      "https://support.airtable.com/articles/7735693959-managing-api-call-limits-in-airtable"
+    ],
+    "usage_quality": {
+      "free_plan": "1,000 API calls/month per workspace.",
+      "rate_limit": "5 requests/second on Free and Team plans.",
+      "scope": "Monthly call allowance is workspace-level; API usage analytics are available to Free plan workspace owners."
+    }
+  },
+  {
+    "name": "Supabase",
+    "source_type": "official",
+    "verified_at": "2026-09-26",
+    "source_urls": [
+      "https://supabase.com/pricing",
+      "https://supabase.com/docs/guides/platform/free-project-pausing"
+    ],
+    "usage_quality": {
+      "free_plan": "Unlimited API requests, 50,000 MAU, 500 MB database, 5 GB egress, 5 GB cached egress, 1 GB file storage.",
+      "lifecycle": "Free projects can auto-pause after 7 days of low activity; at most 2 active Free projects.",
+      "payment_method": "Free plan starts without a payment method."
+    }
+  },
+  {
+    "name": "TMDB (movies)",
+    "source_type": "official",
+    "verified_at": "2026-09-26",
+    "source_urls": [
+      "https://developer.themoviedb.org/docs/faq"
+    ],
+    "usage_quality": {
+      "commercial_use": "API is free for non-commercial purposes with attribution; commercial projects require a separate license.",
+      "attribution": "TMDB branding/logo attribution requirements apply.",
+      "change_policy": "API can change; official documentation should be checked for updates."
+    }
+  },
+  {
+    "name": "Cloudflare Workers",
+    "source_type": "official",
+    "verified_at": "2026-09-26",
+    "source_urls": [
+      "https://developers.cloudflare.com/workers/platform/limits/",
+      "https://developers.cloudflare.com/workers/platform/pricing/"
+    ],
+    "usage_quality": {
+      "free_plan": "100,000 requests/day, 10 ms CPU/request, 128 MB memory, 50 subrequests/request, 100 Workers/account.",
+      "reset": "Daily limits reset at midnight UTC.",
+      "request_body": "Free request body limit 100 MB.",
+      "rps": "No general request-per-second limit is imposed; daily quota is the main Free request constraint."
     }
   }
 ]
