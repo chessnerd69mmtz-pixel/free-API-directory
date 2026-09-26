@@ -29,11 +29,18 @@ def main():
         if not isinstance(ft, dict) or isinstance(ft, list): p["free_tier"] = {"has_free_tier": None, "type": "unknown", "details": "Unverified", "amount": "Unverified", "expiry": "Unverified"}
         elif ft.get("has_free_tier") not in (True, False, None): p["free_tier"] = dict(ft, has_free_tier=None)
         if not p.get("status"): p["status"] = "catalog-only"
+    for p in providers:
+        if p.get("verified_by") == "community-source" or p.get("status") == "upstream-community":
+            if isinstance(p.get("free_tier"), dict):
+                p["free_tier"] = dict(p["free_tier"], has_free_tier=None, type="community-listed")
+            p["verification_status"] = "community-listed"
+        p["key_url_type"] = p.get("key_url_type") or ("signup" if p.get("signup_url") else "unknown")
+        p["provenance"] = p.get("provenance") or {"primary_source": p.get("verified_by") or "unknown", "provider_url": p.get("signup_url")}
     providers.sort(key=lambda p:p["name"].casefold())
     cats={}
     for p in providers:
         k=slug(p.get("category","General"));cats.setdefault(k,{"label":p.get("category","General"),"count":0});cats[k]["count"]+=1
-    index={"schema_version":"4.0.0","generated_at":"2026-09-26","provider_count":len(providers),"categories":cats,"providers":[{"id":i+1,"name":p["name"],"category":p.get("category","General"),"description":p.get("description",""),"free_tier":p.get("free_tier",{}).get("has_free_tier") if isinstance(p.get("free_tier"),dict) else None,"requires_credit_card":p.get("requires_credit_card") if isinstance(p.get("requires_credit_card"),bool) else None,"signup_url":p.get("signup_url"),"pricing_url":p.get("pricing_url"),"last_verified":p.get("last_verified"),"status":p.get("status","catalog-only")} for i,p in enumerate(providers)]}
+    index={"schema_version":"4.0.0","generated_at":"2026-09-26","provider_count":len(providers),"categories":cats,"providers":[{"id":i+1,"name":p["name"],"category":p.get("category","General"),"description":p.get("description",""),"free_tier":p.get("free_tier",{}).get("has_free_tier") if isinstance(p.get("free_tier"),dict) else None,"requires_credit_card":p.get("requires_credit_card") if isinstance(p.get("requires_credit_card"),bool) else None,"signup_url":p.get("signup_url"),"pricing_url":p.get("pricing_url"),"last_verified":p.get("last_verified"),"status":p.get("status","catalog-only"),"verification_status":p.get("verification_status"),"key_url_type":p.get("key_url_type","unknown")} for i,p in enumerate(providers)]}
     (DATA/"catalog-index.json").write_text(json.dumps(index,indent=2,ensure_ascii=False)+"\n",encoding="utf-8")
     (DATA/"provider_profiles.json").write_text(json.dumps(providers,indent=2,ensure_ascii=False)+"\n",encoding="utf-8")
     print(f"Built synchronized catalog: {len(providers)} providers, {len(cats)} categories.")
