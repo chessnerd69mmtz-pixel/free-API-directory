@@ -2,7 +2,7 @@
   "generated_at": "2026-09-26",
   "catalog_count": 669,
   "student_provider_count": 391,
-  "methodology": "Includes active catalog records with recorded free access and/or research relevance. Candidate records are visible but explicitly marked for verification.",
+  "methodology": "Includes active catalog records with recorded free access and/or research relevance. Candidate records remain visible but explicitly marked as needing current verification.",
   "categories": {
     "Free / Keyless": {
       "count": 27,
@@ -2963,18 +2963,21 @@
         },
         {
           "name": "OpenAlex",
-          "category": "Public / Scientific Data (additional)",
-          "description": "Cataloged API provider.",
+          "category": "Scientific Research",
+          "description": "Scholarly metadata and research graph API for works, authors, sources, institutions, topics and funders.",
           "free_tier": {
             "has_free_tier": true,
-            "type": "daily-credit",
-            "details": "Free API access; a free API key raises the daily budget 10×.",
-            "amount": "$1/day free usage with a free key",
-            "expiry": "Daily; resets at midnight UTC"
+            "type": "free daily API budget",
+            "details": "Free account provides $1/day of API usage with no payment method required; casual use is also possible without a key at a lower anonymous budget.",
+            "amount": "$1/day free usage with API key",
+            "expiry": "Daily reset at midnight UTC"
           },
-          "signup_url": "https://openalex.org",
+          "authentication": "API key optional for casual use; free API key recommended",
+          "signup_url": "https://openalex.org/settings/api",
+          "documentation_url": "https://help.openalex.org/api/",
           "status": "active",
-          "last_verified": "2026-09-25"
+          "verification_status": "officially-verified",
+          "last_verified": "2026-09-26"
         },
         {
           "name": "OpenCitations",
@@ -6309,18 +6312,21 @@
         },
         {
           "name": "OpenAlex",
-          "category": "Public / Scientific Data (additional)",
-          "description": "Cataloged API provider.",
+          "category": "Scientific Research",
+          "description": "Scholarly metadata and research graph API for works, authors, sources, institutions, topics and funders.",
           "free_tier": {
             "has_free_tier": true,
-            "type": "daily-credit",
-            "details": "Free API access; a free API key raises the daily budget 10×.",
-            "amount": "$1/day free usage with a free key",
-            "expiry": "Daily; resets at midnight UTC"
+            "type": "free daily API budget",
+            "details": "Free account provides $1/day of API usage with no payment method required; casual use is also possible without a key at a lower anonymous budget.",
+            "amount": "$1/day free usage with API key",
+            "expiry": "Daily reset at midnight UTC"
           },
-          "signup_url": "https://openalex.org",
+          "authentication": "API key optional for casual use; free API key recommended",
+          "signup_url": "https://openalex.org/settings/api",
+          "documentation_url": "https://help.openalex.org/api/",
           "status": "active",
-          "last_verified": "2026-09-25"
+          "verification_status": "officially-verified",
+          "last_verified": "2026-09-26"
         },
         {
           "name": "OpenAQ API",
@@ -7325,7 +7331,7 @@
       ]
     },
     "Research API Key": {
-      "count": 66,
+      "count": 67,
       "providers": [
         {
           "name": "Abstract API",
@@ -8056,6 +8062,24 @@
           "signup_url": "https://open.umn.edu/opentextbooks",
           "status": "catalog-only",
           "verification_status": "source-checked-table",
+          "last_verified": "2026-09-26"
+        },
+        {
+          "name": "OpenAlex",
+          "category": "Scientific Research",
+          "description": "Scholarly metadata and research graph API for works, authors, sources, institutions, topics and funders.",
+          "free_tier": {
+            "has_free_tier": true,
+            "type": "free daily API budget",
+            "details": "Free account provides $1/day of API usage with no payment method required; casual use is also possible without a key at a lower anonymous budget.",
+            "amount": "$1/day free usage with API key",
+            "expiry": "Daily reset at midnight UTC"
+          },
+          "authentication": "API key optional for casual use; free API key recommended",
+          "signup_url": "https://openalex.org/settings/api",
+          "documentation_url": "https://help.openalex.org/api/",
+          "status": "active",
+          "verification_status": "officially-verified",
           "last_verified": "2026-09-26"
         },
         {
