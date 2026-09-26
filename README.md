@@ -79,3 +79,11 @@ The site also loads `data/web_verified_overrides.json`, a source-linked evidence
 The calculator uses a separate [`data/free_limit_evidence.json`](data/free_limit_evidence.json) layer so a provider can have multiple independent limits without forcing them into one misleading monthly number. Evidence records identify the source type and verification date. Official documentation is marked **Official source**; information inherited from community/source lists is marked **From community / source-listed**. A missing numeric value is deliberately shown as **Not publicly stated** rather than converted into zero or an estimate.
 
 For quota research, the directory distinguishes recurring allowances (for example requests/day or credits/month), one-time introductory credits, throughput limits (RPM/TPM), and provider-specific units. Where a provider publishes model- or account-dependent limits, the directory records that dependency instead of applying one number to every model.
+
+### Usage-quality evidence layer
+
+The catalog now has a second, source-linked evidence layer at `data/usage_quality_evidence.json`. It records practical constraints that are often missing from simple API directories: rate limits, model/plan dependency, payment requirements, free-credit semantics, regional availability, operational limits, data-use statements, lifecycle/deprecation notes, and other provider-specific constraints. These records supplement the canonical catalog rather than silently replacing unknown fields.
+
+The directory distinguishes **official** evidence from **community/forum** evidence. Community evidence is useful for discovering current behavior or provider announcements, but it is never silently promoted to a provider-confirmed fact. This is especially important when a provider changes a free tier or requires a payment method that older lists still describe differently.
+
+Examples of current evidence corrections include providers whose old “free” claims no longer hold, plan-specific rather than universal rate limits, one-time credits versus recurring quotas, hard database/storage/compute limits, and region or lifecycle restrictions. The provider profile and Data Quality pages expose these distinctions so users can judge practical usability instead of relying on a single green “free” label.
