@@ -3,12 +3,14 @@ const INDEX_URL = new URL("data/catalog-index.json?v=" + DATA_VERSION, document.
 const PROFILE_URL = new URL("data/provider_profiles.json?v=" + DATA_VERSION, document.baseURI).href;
 const CHANGE_URL = new URL("data/change_log.json?v=" + DATA_VERSION, document.baseURI).href;
 const EVIDENCE_URL = new URL("data/web_verified_overrides.json?v=" + DATA_VERSION, document.baseURI).href;
+const QUALITY_EVIDENCE_URL = new URL("data/usage_quality_evidence.json?v=" + DATA_VERSION, document.baseURI).href;
 const LIMIT_EVIDENCE_URL = new URL("data/free_limit_evidence.json?v=" + DATA_VERSION, document.baseURI).href;
 
 let INDEX_PROMISE = null;
 let PROFILE_PROMISE = null;
 let EVIDENCE_PROMISE = null;
 let LIMIT_EVIDENCE_PROMISE = null;
+let QUALITY_EVIDENCE_PROMISE = null;
 
 const $ = (s) => document.querySelector(s);
 const esc = (s) => String(s ?? "").replace(/[&<>"]/g, (m) => ({
@@ -98,7 +100,7 @@ async function loadApis() {
   if (!INDEX_PROMISE) {
     INDEX_PROMISE = getJson(INDEX_URL).then((d) => {
       if (!d || !Array.isArray(d.providers)) throw new Error("Invalid catalog index");
-      return loadEvidence().then(evidence => { const byName = new Map((Array.isArray(evidence)?evidence:[]).map(x => [String(x.name).toLowerCase(), x])); return prepareIndex(d.providers.map(p => { const e=byName.get(String(p.name).toLowerCase()); return e ? {...p, ...e, evidence_sources:e.sources||[]} : p; })); });
+      return Promise.all([loadEvidence(), loadQualityEvidence()]).then(([evidence, quality]) => { const byName = new Map((Array.isArray(evidence)?evidence:[]).map(x => [String(x.name).toLowerCase(), x])); const qByName = new Map((Array.isArray(quality)?quality:[]).map(x => [String(x.name).toLowerCase(), x])); return prepareIndex(d.providers.map(p => { const e=byName.get(String(p.name).toLowerCase()); const q=qByName.get(String(p.name).toLowerCase()); return {...p, ...(e||{}), ...(q?{usage_quality:q.usage_quality,usage_quality_source_type:q.source_type,usage_quality_verified_at:q.verified_at,usage_quality_sources:q.source_urls,usage_quality_community_note:q.community_note}:{}), evidence_sources:e?.sources||p.evidence_sources||[]}; })); });
     });
   }
   return INDEX_PROMISE;
@@ -114,6 +116,11 @@ async function loadLimitEvidence() {
   return LIMIT_EVIDENCE_PROMISE;
 }
 
+async function loadQualityEvidence() {
+  if (!QUALITY_EVIDENCE_PROMISE) QUALITY_EVIDENCE_PROMISE = getJson(QUALITY_EVIDENCE_URL).catch(() => []);
+  return QUALITY_EVIDENCE_PROMISE;
+}
+
 function limitEvidenceFor(name, evidence) {
   const key = String(name || "").toLowerCase();
   return (Array.isArray(evidence) ? evidence : []).find(x => String(x.name || "").toLowerCase() === key) || null;
@@ -124,15 +131,19 @@ async function loadProfiles() {
     PROFILE_PROMISE = Promise.all([
       getJson(PROFILE_URL),
       getJson(new URL("data/providers.json?v=" + DATA_VERSION, document.baseURI).href),
-      loadEvidence()
-    ]).then(([profiles, canonical, evidence]) => {
+      loadEvidence(),
+      loadQualityEvidence()
+    ]).then(([profiles, canonical, evidence, quality]) => {
       if (!Array.isArray(profiles) || !Array.isArray(canonical)) throw new Error("Invalid provider profile catalog");
       const byName = new Map(canonical.map(p => [String(p.name).toLowerCase(), p]));
       const evidenceByName = new Map((Array.isArray(evidence) ? evidence : []).map(p => [String(p.name).toLowerCase(), p]));
+      const qualityByName = new Map((Array.isArray(quality) ? quality : []).map(p => [String(p.name).toLowerCase(), p]));
       return profiles.map(profile => {
         const base = {...profile, ...(byName.get(String(profile.name).toLowerCase()) || {})};
         const e = evidenceByName.get(String(profile.name).toLowerCase());
-        return e ? {...base, ...e, evidence_sources:e.sources || []} : base;
+        const q = qualityByName.get(String(profile.name).toLowerCase());
+        const merged = e ? {...base, ...e, evidence_sources:e.sources || []} : base;
+        return q ? {...merged, usage_quality:q.usage_quality, usage_quality_source_type:q.source_type, usage_quality_verified_at:q.verified_at, usage_quality_sources:q.source_urls, usage_quality_community_note:q.community_note} : merged;
       });
     });
   }
@@ -350,12 +361,19 @@ async function apiProfile() {
     '<b>Authentication</b><span>' + esc(p.authentication || "Not publicly stated") + '</span>' +
     '<b>Credit card</b><span>' + esc(typeof p.requires_credit_card === "boolean" ? (p.requires_credit_card ? "Required" : "Not required") : String(p.requires_credit_card || "Not publicly stated")) + '</span>' +
     '<b>Rate limit</b><span>' + esc(p.rate_limit || "Not publicly stated") + '</span>' +
-    '<b>Commercial use</b><span>' + esc(p.commercial_use || "Not publicly stated") + '</span>' +
+    '<b>Commercial use</b><span>' + esc(p.commercial_use || p.usage_quality?.commercial_use || "Not publicly stated") + '</span>' +
     '<b>Functions</b><span>' + uses(p.uses) + '</span>' +
     '<b>Provider</b><span>' + link(source, "Official / source page") + '</span>' +
     '<b>API key</b><span><a class="save-key-link" href="keys.html?provider=' + encodeURIComponent(p.name) + '">🔐 Save key locally</a></span>' +
     '<b>Verification</b><span>' + status(p) + ' ' + esc(p.last_verified || "Not independently verified") + '</span>' +
-    '</div></div>'
+    '</div></div>' +
+    (p.usage_quality ? '<div class="card"><h2>Usage-quality evidence</h2><div class="grid">' +
+      Object.entries(p.usage_quality).map(([k,v]) => '<div class="card"><b>' + esc(k.replace(/_/g," ")) + '</b><p>' + esc(typeof v==="string" ? v : JSON.stringify(v)) + '</p></div>').join("") +
+      '</div><p class="muted">Evidence source: ' + esc(p.usage_quality_source_type || "source") + ' · Verified: ' + esc(p.usage_quality_verified_at || "Not recorded") + '</p>' +
+      (Array.isArray(p.usage_quality_sources) ? '<p>' + p.usage_quality_sources.map(u=>link(u,"Open source")).join(" · ") + '</p>' : '') +
+      (p.usage_quality_community_note ? '<div class="notice"><b>Community note:</b> This supplementary information comes from a community/forum source and is not treated as a primary provider claim.</div>' : '') +
+      '</div>' : '') +
+    (p.usage_quality ? '' : '<div class="card notice"><b>Usage-quality evidence:</b> No structured source-linked usage-quality record is available yet for this provider. Unknown values are intentionally not guessed.</div>')
   );
 }
 
