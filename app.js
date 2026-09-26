@@ -18,7 +18,7 @@ function link(url, label) {
   const safe = safeUrl(url);
   return safe
     ? '<a href="' + esc(safe) + '" target="_blank" rel="noopener noreferrer nofollow">' + esc(label || safe) + '</a>'
-    : '<span class="muted">Unverified</span>';
+    : '<span class="muted">Not publicly stated</span>';
 }
 
 function uses(list, fallback) {
@@ -40,7 +40,7 @@ function freeTier(p) {
   if (isCommunity(p)) return '<span class="pill good">Community-listed free</span>';
   if (v === true) return '<span class="pill good">Free access recorded</span>';
   if (v === false) return '<span class="pill">No free tier recorded</span>';
-  return '<span class="pill warn">Unverified</span>';
+  return '<span class="pill warn">Not publicly stated</span>';
 }
 
 function status(p) {
@@ -124,7 +124,7 @@ async function finder() {
     '<section class="hero"><h1>Find an API</h1><p>Search the lightweight catalog index. Full provider profiles are loaded only when you open a provider.</p></section>' +
     '<div class="card tool"><input id="q" class="input" placeholder="Search APIs…" autocomplete="off">' +
     '<select id="f" class="select"><option value="">Free status: any</option><option value="yes">Free access recorded</option><option value="unknown">Free status unverified</option><option value="no">No free tier recorded</option></select>' +
-    '<select id="c" class="select"><option value="">Card requirement: any</option><option value="no">No card recorded</option><option value="yes">Card required</option><option value="unknown">Unverified</option></select></div>' +
+    '<select id="c" class="select"><option value="">Card requirement: any</option><option value="no">No card recorded</option><option value="yes">Card required</option><option value="unknown">Not publicly stated</option></select></div>' +
     '<div id="r"></div>'
   );
 
@@ -241,16 +241,16 @@ async function compare() {
     const profiles = await loadProfiles();
     const ps = chosen.map(n => profiles.find(x => x.name === n)).filter(Boolean);
     const fields = [
-      ["Free tier", p => freeValue(p) === true ? "Recorded" : freeValue(p) === false ? "No" : "Unverified"],
-      ["Free amount", p => p.free_tier?.amount || "Unverified"],
-      ["Credit card", p => typeof p.requires_credit_card === "boolean" ? String(p.requires_credit_card) : "Unverified"],
-      ["Authentication", p => p.authentication || "Unverified"],
-      ["Rate limit", p => p.rate_limit || "Unverified"],
-      ["SDKs", p => p.sdk_languages?.length ? p.sdk_languages.join(", ") : "Unverified"],
-      ["Protocols", p => p.protocols?.length ? p.protocols.join(", ") : "Unverified"],
-      ["Commercial use", p => p.commercial_use || "Unverified"],
-      ["Self-hostable", p => p.self_hostable || "Unverified"],
-      ["Webhooks", p => p.webhooks || "Unverified"],
+      ["Free tier", p => freeValue(p) === true ? "Recorded" : freeValue(p) === false ? "No" : "Not publicly stated"],
+      ["Free amount", p => p.free_tier?.amount || "Not publicly stated"],
+      ["Credit card", p => typeof p.requires_credit_card === "boolean" ? String(p.requires_credit_card) : "Not publicly stated"],
+      ["Authentication", p => p.authentication || "Not publicly stated"],
+      ["Rate limit", p => p.rate_limit || "Not publicly stated"],
+      ["SDKs", p => p.sdk_languages?.length ? p.sdk_languages.join(", ") : "Not publicly stated"],
+      ["Protocols", p => p.protocols?.length ? p.protocols.join(", ") : "Not publicly stated"],
+      ["Commercial use", p => p.commercial_use || "Not publicly stated"],
+      ["Self-hostable", p => p.self_hostable || "Not publicly stated"],
+      ["Webhooks", p => p.webhooks || "Not publicly stated"],
       ["Last verified", p => p.last_verified || "Not recorded"]
     ];
     $("#r").innerHTML = '<div class="tablebox"><div class="scroll"><table><thead><tr><th>Field</th>' +
@@ -314,10 +314,10 @@ async function apiProfile() {
     '<div class="card"><div class="kv">' +
     '<b>Category</b><span>' + esc(p.category) + '</span>' +
     '<b>Free tier</b><span>' + freeTier(p) + ' ' + esc(p.free_tier?.details || "") + '</span>' +
-    '<b>Authentication</b><span>' + esc(p.authentication || "Unverified") + '</span>' +
-    '<b>Credit card</b><span>' + esc(typeof p.requires_credit_card === "boolean" ? (p.requires_credit_card ? "Required" : "Not required") : String(p.requires_credit_card || "Unverified")) + '</span>' +
-    '<b>Rate limit</b><span>' + esc(p.rate_limit || "Unverified") + '</span>' +
-    '<b>Commercial use</b><span>' + esc(p.commercial_use || "Unverified") + '</span>' +
+    '<b>Authentication</b><span>' + esc(p.authentication || "Not publicly stated") + '</span>' +
+    '<b>Credit card</b><span>' + esc(typeof p.requires_credit_card === "boolean" ? (p.requires_credit_card ? "Required" : "Not required") : String(p.requires_credit_card || "Not publicly stated")) + '</span>' +
+    '<b>Rate limit</b><span>' + esc(p.rate_limit || "Not publicly stated") + '</span>' +
+    '<b>Commercial use</b><span>' + esc(p.commercial_use || "Not publicly stated") + '</span>' +
     '<b>Functions</b><span>' + uses(p.uses) + '</span>' +
     '<b>Provider</b><span>' + link(source, "Official / source page") + '</span>' +
     '<b>API key</b><span><a class="save-key-link" href="keys.html?provider=' + encodeURIComponent(p.name) + '">🔐 Save key locally</a></span>' +
