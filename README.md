@@ -51,7 +51,7 @@ A URL-only catalog of additional providers imported from the supplied source lis
 - [Find an API](finder.html) — search providers with free-tier, card, category, verification and explicit-region filters.
 - [Find the Best API Provider](recommend.html) — describe role, objective and constraints and receive up to 10 explainable matches.
 - [Build an API Stack](stack.html) — assemble a multi-category starting stack for a project.
-- [Free-Tier Calculator](calculator.html) — compare requested volume with documented allowance information without inventing unknown quotas.
+- [Free-Tier Calculator](calculator.html) — compare requests, token throughput, provider units and credit balances against structured, source-linked allowance evidence. Model-specific/account-specific limits remain explicitly unknown, and community/source-listed records are visibly marked rather than treated as official facts.
 - [Compare APIs](compare.html) — compare providers without sending keys to the directory.
 - [API profiles](api.html) — inspect provider capabilities, source links and verification.
 - [API Playground](playground.html) — prepare browser HTTP requests where provider CORS permits them.
@@ -73,3 +73,9 @@ The student-friendly table is published at [`docs/student-friendly-free-apis.md`
 ### Current first-party evidence layer
 
 The site also loads `data/web_verified_overrides.json`, a source-linked evidence layer for high-impact providers. It supplements (rather than silently overwrites) the broad catalog with current first-party pricing, quota, rate-limit and access information where directly documented. Each record carries its source URLs and verification date. Unresolved fields remain explicitly unverified.
+
+### Free-limit evidence standard
+
+The calculator uses a separate [`data/free_limit_evidence.json`](data/free_limit_evidence.json) layer so a provider can have multiple independent limits without forcing them into one misleading monthly number. Evidence records identify the source type and verification date. Official documentation is marked **Official source**; information inherited from community/source lists is marked **From community / source-listed**. A missing numeric value is deliberately shown as **Not publicly stated** rather than converted into zero or an estimate.
+
+For quota research, the directory distinguishes recurring allowances (for example requests/day or credits/month), one-time introductory credits, throughput limits (RPM/TPM), and provider-specific units. Where a provider publishes model- or account-dependent limits, the directory records that dependency instead of applying one number to every model.
