@@ -132,7 +132,9 @@ async function finder() {
     '<div id="r"></div>'
   );
 
-  let visible = 100;\n  const categories = [...new Set(a.map(p => p.category).filter(Boolean))].sort();\n  $("#cat").innerHTML += categories.map(x => "<option value=\"" + esc(x) + "\">" + esc(x) + "</option>").join("");
+  let visible = 100;
+  const categories = [...new Set(a.map(p => p.category).filter(Boolean))].sort();
+  $("#cat").innerHTML += categories.map(x => "<option value=\"" + esc(x) + "\">" + esc(x) + "</option>").join("");
 
   function getRows() {
     const q = $("#q").value.toLowerCase().trim();
@@ -150,7 +152,9 @@ async function finder() {
         (c === "no" && p.requires_credit_card === false) ||
         (c === "yes" && p.requires_credit_card === true) ||
         (c === "unknown" && typeof p.requires_credit_card !== "boolean");
-      const catOK = !cat || p.category === cat;\n      const verifiedOK = !v || (v === "verified" ? (p.status === "active" && !!p.last_verified) : (p.status === "candidate" || p.status === "needs re-verification"));\n      return (!q || p._searchText.includes(q)) && freeOK && cardOK && catOK && verifiedOK;
+      const catOK = !cat || p.category === cat;
+      const verifiedOK = !v || (v === "verified" ? (p.status === "active" && !!p.last_verified) : (p.status === "candidate" || p.status === "needs re-verification"));
+      return (!q || p._searchText.includes(q)) && freeOK && cardOK && catOK && verifiedOK;
     });
   }
 
