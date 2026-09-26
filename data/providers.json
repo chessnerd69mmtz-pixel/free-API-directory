@@ -13170,35 +13170,42 @@
   },
   {
     "name": "OpenAlex",
-    "category": "Public / Scientific Data (additional)",
-    "description": "Cataloged API provider.",
+    "category": "Scientific Research",
+    "description": "Scholarly metadata and research graph API for works, authors, sources, institutions, topics and funders.",
     "free_tier": {
       "has_free_tier": true,
-      "type": "daily-credit",
-      "details": "Free API access; a free API key raises the daily budget 10×.",
-      "amount": "$1/day free usage with a free key",
-      "expiry": "Daily; resets at midnight UTC"
+      "type": "free daily API budget",
+      "details": "Free account provides $1/day of API usage with no payment method required; casual use is also possible without a key at a lower anonymous budget.",
+      "amount": "$1/day free usage with API key",
+      "expiry": "Daily reset at midnight UTC"
     },
     "signup_requires_account": true,
     "requires_credit_card": false,
-    "signup_url": "https://openalex.org",
-    "pricing_url": "https://help.openalex.org/api/authentication/",
+    "signup_url": "https://openalex.org/settings/api",
+    "pricing_url": "https://help.openalex.org/access/pricing/",
     "verification_urls": [
-      "https://openalex.org",
-      "https://help.openalex.org/api/authentication/"
+      "https://help.openalex.org/api/",
+      "https://help.openalex.org/api/authentication/",
+      "https://help.openalex.org/access/pricing/"
     ],
-    "last_verified": "2026-09-25",
-    "verified_by": "manual-official-source-review",
+    "last_verified": "2026-09-26",
+    "verified_by": "official-source-review",
     "status": "active",
     "tier_verification_url": "https://help.openalex.org/api/authentication/",
     "tier_verification_status": "manually-reviewed",
     "uses": [
-      "dataset search",
-      "structured data retrieval",
-      "metadata/records",
-      "historical time series",
-      "research/statistical analysis"
-    ]
+      "Academic research",
+      "Bibliometrics",
+      "Literature discovery",
+      "Citation analysis",
+      "Open-access research"
+    ],
+    "documentation_url": "https://help.openalex.org/api/",
+    "verification_status": "officially-verified",
+    "authentication": "API key optional for casual use; free API key recommended",
+    "rate_limit": "Daily usage budget; >100 requests/sec limited",
+    "free_tier_reset": "Daily at midnight UTC",
+    "key_url_type": "api-key"
   },
   {
     "name": "OpenAQ (air quality)",
