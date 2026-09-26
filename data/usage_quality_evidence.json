@@ -154,7 +154,8 @@
       "rate_limit": "Per-model RPS and TPM limits vary by spend tier; Tier 0 is $0 spend and current examples include 37 RPS / 10M TPM for listed Grok text models.",
       "regions": "US regional endpoint is available at https://us.api.x.ai/v1 and currently serves only listed models such as grok-4.7 and grok-4.6; US endpoint pricing carries a 10% premium.",
       "model_dependency": "Yes",
-      "note": "Community reports should only supplement, not replace, the provider's current Console limits; exact team limits are account-specific."
+      "note": "Community reports should only supplement, not replace, the provider's current Console limits; exact team limits are account-specific.",
+      "free_access_status": "no-api-free-quota"
     },
     "community_note": {
       "note": "Community reports should only supplement, not replace, the provider's current Console limits; exact team limits are account-specific."
@@ -222,7 +223,8 @@
     "usage_quality": {
       "free_access": "No free API quota is asserted in the cited API pricing/key documentation.",
       "api_billing": "Usage is paid API billing.",
-      "free_account_vs_api": "A consumer Claude account should not be treated as an API free tier."
+      "free_account_vs_api": "A consumer Claude account should not be treated as an API free tier.",
+      "free_access_status": "no-api-free-quota"
     }
   },
   {
