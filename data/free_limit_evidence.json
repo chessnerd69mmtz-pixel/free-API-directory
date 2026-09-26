@@ -1,0 +1,152 @@
+[
+  {
+    "name": "Google Gemini API",
+    "source_type": "official",
+    "verified_at": "2026-09-26",
+    "source_url": "https://ai.google.dev/gemini-api/docs/rate-limits",
+    "notes": "Limits are model- and tier-specific; Google states RPM, input TPM and RPD are evaluated independently and RPD resets at midnight Pacific time.",
+    "quota": {
+      "type": "model-dependent",
+      "rpd": null,
+      "rpm": null,
+      "tpm": null
+    }
+  },
+  {
+    "name": "Groq",
+    "source_type": "official",
+    "verified_at": "2026-09-26",
+    "source_url": "https://console.groq.com/docs/rate-limits",
+    "notes": "Free-plan limits are model-specific. Official documentation exposes RPM, RPD, TPM, TPD and audio limits; exact values can differ by model and account.",
+    "quota": {
+      "type": "model-dependent",
+      "rpm": null,
+      "rpd": null,
+      "tpm": null,
+      "tpd": null
+    }
+  },
+  {
+    "name": "Cohere",
+    "source_type": "official",
+    "verified_at": "2026-09-26",
+    "source_url": "https://docs.cohere.com/v1/docs/rate-limits",
+    "notes": "Trial keys are limited to 1,000 API calls/month. Chat trial rate limit is 20 requests/minute per model for the listed chat models; other endpoints have endpoint-specific limits.",
+    "quota": {
+      "type": "requests",
+      "monthly_requests": 1000,
+      "rpm": 20
+    }
+  },
+  {
+    "name": "OpenRouter",
+    "source_type": "official",
+    "verified_at": "2026-09-26",
+    "source_url": "https://openrouter.ai/blog/tutorials/how-to-get-the-lowest-cost-llm-inference-on-openrouter/",
+    "notes": "OpenRouter states a free account gets 50 requests/day and 20 requests/minute for free models; adding at least $10 in credits raises the free-model daily ceiling to 1,000 while retaining 20 RPM.",
+    "quota": {
+      "type": "requests",
+      "daily_requests": 50,
+      "rpm": 20,
+      "alternate_tier": {
+        "condition": "$10+ credits",
+        "daily_requests": 1000,
+        "rpm": 20
+      }
+    }
+  },
+  {
+    "name": "Cloudflare Workers AI",
+    "source_type": "official",
+    "verified_at": "2026-09-26",
+    "source_url": "https://developers.cloudflare.com/workers-ai/platform/pricing/",
+    "notes": "Free allocation is 10,000 Neurons/day; allocation resets daily at 00:00 UTC.",
+    "quota": {
+      "type": "units",
+      "unit": "neurons",
+      "daily_units": 10000,
+      "reset": "00:00 UTC"
+    }
+  },
+  {
+    "name": "Cloudflare Workers",
+    "source_type": "official",
+    "verified_at": "2026-09-26",
+    "source_url": "https://developers.cloudflare.com/workers/platform/limits/",
+    "notes": "Workers Free allows 100,000 requests/day and resets at midnight UTC. This is a platform quota, not an AI-model quota.",
+    "quota": {
+      "type": "requests",
+      "daily_requests": 100000,
+      "reset": "00:00 UTC"
+    }
+  },
+  {
+    "name": "GitHub API",
+    "source_type": "official",
+    "verified_at": "2026-09-26",
+    "source_url": "https://docs.github.com/en/rest/using-the-rest-api/rate-limits-for-the-rest-api",
+    "notes": "Unauthenticated REST requests are limited to 60/hour per originating IP. Authenticated user requests generally have a 5,000/hour primary limit; search and secondary limits are separate.",
+    "quota": {
+      "type": "requests",
+      "hourly_requests_unauthenticated": 60,
+      "hourly_requests_authenticated": 5000
+    }
+  },
+  {
+    "name": "Mistral AI",
+    "source_type": "official",
+    "verified_at": "2026-09-26",
+    "source_url": "https://docs.mistral.ai/admin/billing-usage/usage-limits",
+    "notes": "Mistral Free mode includes monthly usage, while requests/second and tokens/minute are model-specific and shown on the account Limits page.",
+    "quota": {
+      "type": "model-dependent",
+      "monthly_usage": "included monthly usage",
+      "rps": null,
+      "tpm": null
+    }
+  },
+  {
+    "name": "Deepgram",
+    "source_type": "official",
+    "verified_at": "2026-09-26",
+    "source_url": "https://deepgram.com/pricing",
+    "notes": "Current catalog evidence records $200 introductory credit; concurrency limits are product/plan-specific and should not be treated as a monthly request quota.",
+    "quota": {
+      "type": "credit",
+      "credits_usd": 200
+    }
+  },
+  {
+    "name": "ElevenLabs",
+    "source_type": "official",
+    "verified_at": "2026-09-26",
+    "source_url": "https://elevenlabs.io/pricing",
+    "notes": "Official pricing lists a $0 Free plan with 10,000 credits per month.",
+    "quota": {
+      "type": "credits",
+      "monthly_credits": 10000
+    }
+  },
+  {
+    "name": "Brave Search API",
+    "source_type": "official",
+    "verified_at": "2026-09-26",
+    "source_url": "https://api-dashboard.search.brave.com/app/plans",
+    "notes": "Current plan information records $5 in free API credits per month; credit-based allowance cannot be converted to requests without endpoint pricing.",
+    "quota": {
+      "type": "credit",
+      "monthly_credits_usd": 5
+    }
+  },
+  {
+    "name": "AssemblyAI (speech-to-text)",
+    "source_type": "official",
+    "verified_at": "2026-09-26",
+    "source_url": "https://www.assemblyai.com/pricing",
+    "notes": "Current official pricing/FAQ evidence records $50 free API credits for supported usage; credits are consumed rather than reset on a monthly schedule.",
+    "quota": {
+      "type": "credit",
+      "credits_usd": 50
+    }
+  }
+]
