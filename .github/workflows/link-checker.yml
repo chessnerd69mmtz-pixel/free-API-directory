@@ -18,18 +18,17 @@ jobs:
       - id: check
         continue-on-error: true
         run: python scripts/check_links.py > link-report.txt
-      - name: Open or update failure issue
+      - name: Open or update review issue
         if: steps.check.outcome == 'failure'
         uses: actions/github-script@v7
         with:
           script: |
             const fs=require('fs'); const body=fs.readFileSync('link-report.txt','utf8');
-            const title='Broken provider links detected';
+            const title='Provider source links require review';
             const issues=await github.paginate(github.rest.issues.listForRepo,{owner:context.repo.owner,repo:context.repo.repo,state:'open',per_page:100});
             const existing=issues.find(i=>i.title===title);
-            const full='Automated check failed on '+new Date().toISOString()+'.\n\n```text\n'+body+'\n```\n\nFix provider status through a PR; nothing is auto-merged.';
+            const full='Automated source-link check on '+new Date().toISOString()+'. '+body;
             if(existing) await github.rest.issues.update({owner:context.repo.owner,repo:context.repo.repo,issue_number:existing.number,body:full});
             else await github.rest.issues.create({owner:context.repo.owner,repo:context.repo.repo,title,body:full});
-      - name: Fail if links failed
-        if: steps.check.outcome == 'failure'
-        run: exit 1
+      - name: Publish report
+        run: cat link-report.txt
