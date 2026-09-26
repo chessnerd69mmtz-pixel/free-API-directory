@@ -509,8 +509,8 @@ async function codePage(){
    var url=$("#codeurl").value||"https://api.example.com/v1/resource";
    var py="import os, requests\\n\\nurl = "+JSON.stringify(url)+"\\nheaders = {\"Authorization\": \"Bearer \" + os.environ.get(\"API_KEY\", \"\")}\\nresponse = requests.get(url, headers=headers, timeout=30)\\nprint(response.json())";
    var js="const response = await fetch("+JSON.stringify(url)+", { headers: { Authorization: \"Bearer \" + (process.env.API_KEY || \"\") } });\\nconsole.log(await response.json());";
-   var curl="curl -H \"Authorization: Bearer $API_KEY\" "+JSON.stringify(url);
-   $("#coder").innerHTML='<div class="grid"><div class="card"><h2>Python</h2><pre class="code">'+esc(py)+'</pre></div><div class="card"><h2>JavaScript</h2><pre class="code">'+esc(js)+'</pre></div><div class="card"><h2>cURL</h2><pre class="code">'+esc(curl)+'</pre></div></div><div class="notice">Generic template only; verify the selected provider actual authentication requirements before use.</div>';
+   var ts=js;\n   var curl="curl -H \"Authorization: Bearer $API_KEY\" "+JSON.stringify(url);
+   $("#coder").innerHTML='<div class="grid"><div class="card"><h2>Python</h2><pre class="code">'+esc(py)+'</pre></div><div class="card"><h2>JavaScript</h2><pre class="code">'+esc(js)+'</pre></div><div class="card"><h2>TypeScript</h2><pre class="code">'+esc(ts)+'</pre></div><div class="card"><h2>cURL</h2><pre class="code">'+esc(curl)+'</pre></div></div><div class="notice">Generic template only; verify the selected provider actual authentication requirements before use.</div>';
  };
 }
 
