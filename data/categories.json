@@ -2,148 +2,48 @@
   "version": "2026-09-26",
   "categories": [
     {
-      "label": "AI & Machine Learning",
-      "slug": "ai-and-machine-learning"
+      "label": "AI / Generative Media",
+      "slug": "ai-generative-media"
     },
     {
-      "label": "Blockchain & Web3",
-      "slug": "blockchain-and-web3"
+      "label": "AI / Image / Video",
+      "slug": "ai-image-video"
     },
     {
-      "label": "Coding & Developer Tools",
-      "slug": "coding-and-developer-tools"
+      "label": "AI / LLM",
+      "slug": "ai-llm"
     },
     {
-      "label": "Communication, Email & SMS",
-      "slug": "communication-email-and-sms"
+      "label": "AI / ML",
+      "slug": "ai-ml"
     },
     {
-      "label": "Data, Research & Public Data",
-      "slug": "data-research-and-public-data"
+      "label": "AI / ML (additional)",
+      "slug": "ai-ml-additional"
     },
     {
-      "label": "E-commerce & Shopping",
-      "slug": "e-commerce-and-shopping"
+      "label": "AI / Models",
+      "slug": "ai-models"
     },
     {
-      "label": "Finance, Crypto & Economics",
-      "slug": "finance-crypto-and-economics"
+      "label": "AI / Speech",
+      "slug": "ai-speech"
     },
     {
-      "label": "Food & Nutrition",
-      "slug": "food-and-nutrition"
-    },
-    {
-      "label": "Gaming",
-      "slug": "gaming"
-    },
-    {
-      "label": "Geospatial, Maps & Location",
-      "slug": "geospatial-maps-and-location"
-    },
-    {
-      "label": "Health & Fitness",
-      "slug": "health-and-fitness"
-    },
-    {
-      "label": "Images, Media & Video",
-      "slug": "images-media-and-video"
-    },
-    {
-      "label": "IoT",
-      "slug": "iot"
-    },
-    {
-      "label": "Jobs & Recruiting",
-      "slug": "jobs-and-recruiting"
-    },
-    {
-      "label": "Miscellaneous & Utilities",
-      "slug": "miscellaneous-and-utilities"
-    },
-    {
-      "label": "Music & Entertainment",
-      "slug": "music-and-entertainment"
-    },
-    {
-      "label": "News & Content",
-      "slug": "news-and-content"
-    },
-    {
-      "label": "Payments",
-      "slug": "payments"
-    },
-    {
-      "label": "Real Estate",
-      "slug": "real-estate"
-    },
-    {
-      "label": "Search, Web & Scraping",
-      "slug": "search-web-and-scraping"
-    },
-    {
-      "label": "Security & Threat Intelligence",
-      "slug": "security-and-threat-intelligence"
-    },
-    {
-      "label": "Social Media",
-      "slug": "social-media"
-    },
-    {
-      "label": "Sports",
-      "slug": "sports"
-    },
-    {
-      "label": "Translation & Language",
-      "slug": "translation-and-language"
-    },
-    {
-      "label": "Travel & Transportation",
-      "slug": "travel-and-transportation"
-    },
-    {
-      "label": "Weather & Environment",
-      "slug": "weather-and-environment"
-    },
-    {
-      "label": "AI Observability & Evaluation",
-      "slug": "ai-observability-and-evaluation"
+      "label": "AI Agents & Infrastructure",
+      "slug": "ai-agents-and-infrastructure"
     },
     {
       "label": "AI Compute & GPU",
       "slug": "ai-compute-and-gpu"
     },
     {
-      "label": "Databases & Backend",
-      "slug": "databases-and-backend"
+      "label": "AI Observability & Evaluation",
+      "slug": "ai-observability-and-evaluation"
     },
     {
-      "label": "Vector Databases",
-      "slug": "vector-databases"
-    },
-    {
-      "label": "CI/CD & DevOps",
-      "slug": "ci-cd-and-devops"
-    },
-    {
-      "label": "Web Scraping & Browser Automation",
-      "slug": "web-scraping-and-browser-automation"
-    },
-    {
-      "label": "Geospatial & Routing",
-      "slug": "geospatial-and-routing"
-    },
-    {
-      "label": "Scientific Research",
-      "slug": "scientific-research"
-    },
-    {
-      "label": "Bioinformatics",
-      "slug": "bioinformatics"
-    },
-    {
-      "label": "Government & Civic Data",
-      "slug": "government-and-civic-data"
+      "label": "Analytics",
+      "slug": "analytics"
     },
     {
       "label": "Animals",
@@ -154,6 +54,10 @@
       "slug": "anime"
     },
     {
+      "label": "Anime & Manga",
+      "slug": "anime-and-manga"
+    },
+    {
       "label": "Anti-Malware",
       "slug": "anti-malware"
     },
@@ -162,11 +66,31 @@
       "slug": "art-and-design"
     },
     {
+      "label": "Audio & Sound",
+      "slug": "audio-and-sound"
+    },
+    {
       "label": "Authentication & Authorization",
       "slug": "authentication-and-authorization"
     },
     {
-      "label": "Books & Literature",
+      "label": "Biodiversity & Life Science",
+      "slug": "biodiversity-and-life-science"
+    },
+    {
+      "label": "Bioinformatics",
+      "slug": "bioinformatics"
+    },
+    {
+      "label": "Blockchain",
+      "slug": "blockchain"
+    },
+    {
+      "label": "Blockchain / Web3",
+      "slug": "blockchain-web3"
+    },
+    {
+      "label": "Books",
       "slug": "books"
     },
     {
@@ -174,28 +98,292 @@
       "slug": "business"
     },
     {
-      "label": "Calendar & Time",
+      "label": "Calendar",
       "slug": "calendar"
+    },
+    {
+      "label": "Chess & Board Games",
+      "slug": "chess-and-board-games"
+    },
+    {
+      "label": "CI/CD & DevOps",
+      "slug": "ci-cd-and-devops"
     },
     {
       "label": "Cloud Storage & File Sharing",
       "slug": "cloud-storage-and-file-sharing"
     },
     {
+      "label": "Code Quality & Security",
+      "slug": "code-quality-and-security"
+    },
+    {
+      "label": "Coding & Developer Tools",
+      "slug": "coding-and-developer-tools"
+    },
+    {
+      "label": "Computer Vision & AI",
+      "slug": "computer-vision-and-ai"
+    },
+    {
+      "label": "Continuous Integration",
+      "slug": "continuous-integration"
+    },
+    {
+      "label": "Cryptocurrency",
+      "slug": "cryptocurrency"
+    },
+    {
+      "label": "Currency Exchange",
+      "slug": "currency-exchange"
+    },
+    {
+      "label": "Data Validation",
+      "slug": "data-validation"
+    },
+    {
+      "label": "Databases & Backend",
+      "slug": "databases-and-backend"
+    },
+    {
+      "label": "Databases & Infrastructure",
+      "slug": "databases-and-infrastructure"
+    },
+    {
+      "label": "Dev Tools / Infra",
+      "slug": "dev-tools-infra"
+    },
+    {
+      "label": "Dev Tools / Infra (additional)",
+      "slug": "dev-tools-infra-additional"
+    },
+    {
+      "label": "Developer Packages",
+      "slug": "developer-packages"
+    },
+    {
+      "label": "Development",
+      "slug": "development"
+    },
+    {
+      "label": "DevOps & Containers",
+      "slug": "devops-and-containers"
+    },
+    {
+      "label": "DevOps & Infrastructure",
+      "slug": "devops-and-infrastructure"
+    },
+    {
       "label": "Dictionaries",
       "slug": "dictionaries"
+    },
+    {
+      "label": "Disasters",
+      "slug": "disasters"
     },
     {
       "label": "Documents & Productivity",
       "slug": "documents-and-productivity"
     },
     {
+      "label": "E-commerce / Shopping",
+      "slug": "e-commerce-shopping"
+    },
+    {
+      "label": "Economic & Statistical Data",
+      "slug": "economic-and-statistical-data"
+    },
+    {
+      "label": "Education",
+      "slug": "education"
+    },
+    {
+      "label": "Email",
+      "slug": "email"
+    },
+    {
+      "label": "Email / SMS (additional)",
+      "slug": "email-sms-additional"
+    },
+    {
+      "label": "Email / SMS / Communication",
+      "slug": "email-sms-communication"
+    },
+    {
+      "label": "Energy & Climate Data",
+      "slug": "energy-and-climate-data"
+    },
+    {
       "label": "Entertainment",
       "slug": "entertainment"
     },
     {
+      "label": "Environment",
+      "slug": "environment"
+    },
+    {
       "label": "Events",
       "slug": "events"
+    },
+    {
+      "label": "Finance",
+      "slug": "finance"
+    },
+    {
+      "label": "Finance / Crypto (additional)",
+      "slug": "finance-crypto-additional"
+    },
+    {
+      "label": "Finance / Crypto / Economics",
+      "slug": "finance-crypto-economics"
+    },
+    {
+      "label": "Finance / Market Data",
+      "slug": "finance-market-data"
+    },
+    {
+      "label": "Food",
+      "slug": "food"
+    },
+    {
+      "label": "Food & Drink",
+      "slug": "food-and-drink"
+    },
+    {
+      "label": "Foreign Exchange",
+      "slug": "foreign-exchange"
+    },
+    {
+      "label": "Fraud Prevention",
+      "slug": "fraud-prevention"
+    },
+    {
+      "label": "Games & Comics",
+      "slug": "games-and-comics"
+    },
+    {
+      "label": "Gaming",
+      "slug": "gaming"
+    },
+    {
+      "label": "Gaming & Entertainment",
+      "slug": "gaming-and-entertainment"
+    },
+    {
+      "label": "Geocoding",
+      "slug": "geocoding"
+    },
+    {
+      "label": "Geospatial & Routing",
+      "slug": "geospatial-and-routing"
+    },
+    {
+      "label": "Government",
+      "slug": "government"
+    },
+    {
+      "label": "Government & Civic Data",
+      "slug": "government-and-civic-data"
+    },
+    {
+      "label": "Health",
+      "slug": "health"
+    },
+    {
+      "label": "Health / Fitness",
+      "slug": "health-fitness"
+    },
+    {
+      "label": "Images / Media",
+      "slug": "images-media"
+    },
+    {
+      "label": "Images / Media (additional)",
+      "slug": "images-media-additional"
+    },
+    {
+      "label": "Images & Stock Media",
+      "slug": "images-and-stock-media"
+    },
+    {
+      "label": "IoT",
+      "slug": "iot"
+    },
+    {
+      "label": "IP Intelligence",
+      "slug": "ip-intelligence"
+    },
+    {
+      "label": "Jobs",
+      "slug": "jobs"
+    },
+    {
+      "label": "Jobs / Recruiting",
+      "slug": "jobs-recruiting"
+    },
+    {
+      "label": "Machine Learning",
+      "slug": "machine-learning"
+    },
+    {
+      "label": "Maps / Geocoding",
+      "slug": "maps-geocoding"
+    },
+    {
+      "label": "Maps / Geocoding / Location",
+      "slug": "maps-geocoding-location"
+    },
+    {
+      "label": "Maps / Location (additional)",
+      "slug": "maps-location-additional"
+    },
+    {
+      "label": "Media & Archives",
+      "slug": "media-and-archives"
+    },
+    {
+      "label": "Messaging & Queues",
+      "slug": "messaging-and-queues"
+    },
+    {
+      "label": "Miscellaneous / Utility",
+      "slug": "miscellaneous-utility"
+    },
+    {
+      "label": "ML & Data Science",
+      "slug": "ml-and-data-science"
+    },
+    {
+      "label": "Motorsport",
+      "slug": "motorsport"
+    },
+    {
+      "label": "Music",
+      "slug": "music"
+    },
+    {
+      "label": "Music / Entertainment",
+      "slug": "music-entertainment"
+    },
+    {
+      "label": "Music / Entertainment (additional)",
+      "slug": "music-entertainment-additional"
+    },
+    {
+      "label": "Music Metadata",
+      "slug": "music-metadata"
+    },
+    {
+      "label": "News",
+      "slug": "news"
+    },
+    {
+      "label": "News (additional)",
+      "slug": "news-additional"
+    },
+    {
+      "label": "News / Content",
+      "slug": "news-content"
     },
     {
       "label": "Open Data",
@@ -206,15 +394,19 @@
       "slug": "open-source-projects"
     },
     {
-      "label": "Patent & Intellectual Property",
+      "label": "Patent",
       "slug": "patent"
+    },
+    {
+      "label": "Payments (additional)",
+      "slug": "payments-additional"
     },
     {
       "label": "Personality",
       "slug": "personality"
     },
     {
-      "label": "Phone & SMS Utilities",
+      "label": "Phone",
       "slug": "phone"
     },
     {
@@ -222,16 +414,124 @@
       "slug": "photography"
     },
     {
+      "label": "Podcasts & Radio",
+      "slug": "podcasts-and-radio"
+    },
+    {
       "label": "Programming",
       "slug": "programming"
+    },
+    {
+      "label": "Public / General Data",
+      "slug": "public-general-data"
+    },
+    {
+      "label": "Public / Scientific Data (additional)",
+      "slug": "public-scientific-data-additional"
+    },
+    {
+      "label": "Real Estate",
+      "slug": "real-estate"
+    },
+    {
+      "label": "Science & Climate Data",
+      "slug": "science-and-climate-data"
+    },
+    {
+      "label": "Science & Earth Data",
+      "slug": "science-and-earth-data"
     },
     {
       "label": "Science & Math",
       "slug": "science-and-math"
     },
     {
+      "label": "Science & Space",
+      "slug": "science-and-space"
+    },
+    {
+      "label": "Scientific Research",
+      "slug": "scientific-research"
+    },
+    {
+      "label": "Search / Research",
+      "slug": "search-research"
+    },
+    {
+      "label": "Search / Scraping / Misc Utility",
+      "slug": "search-scraping-misc-utility"
+    },
+    {
+      "label": "Search / Web Data",
+      "slug": "search-web-data"
+    },
+    {
+      "label": "Search & Vector Databases",
+      "slug": "search-and-vector-databases"
+    },
+    {
+      "label": "Search & Web Intelligence",
+      "slug": "search-and-web-intelligence"
+    },
+    {
+      "label": "Security",
+      "slug": "security"
+    },
+    {
+      "label": "Security / Threat Intel",
+      "slug": "security-threat-intel"
+    },
+    {
+      "label": "Security & Secrets",
+      "slug": "security-and-secrets"
+    },
+    {
+      "label": "SEO & Search Intelligence",
+      "slug": "seo-and-search-intelligence"
+    },
+    {
       "label": "Shopping",
       "slug": "shopping"
+    },
+    {
+      "label": "SMS / Communications",
+      "slug": "sms-communications"
+    },
+    {
+      "label": "Social",
+      "slug": "social"
+    },
+    {
+      "label": "Social Media",
+      "slug": "social-media"
+    },
+    {
+      "label": "Speech / Audio",
+      "slug": "speech-audio"
+    },
+    {
+      "label": "Sports",
+      "slug": "sports"
+    },
+    {
+      "label": "Sports (additional)",
+      "slug": "sports-additional"
+    },
+    {
+      "label": "Sports & Fitness",
+      "slug": "sports-and-fitness"
+    },
+    {
+      "label": "Sports Data",
+      "slug": "sports-data"
+    },
+    {
+      "label": "Stock & Market Data",
+      "slug": "stock-and-market-data"
+    },
+    {
+      "label": "Student / Education & General",
+      "slug": "student-education-and-general"
     },
     {
       "label": "Test Data",
@@ -242,20 +542,64 @@
       "slug": "text-analysis"
     },
     {
-      "label": "Tracking & Logistics",
+      "label": "Tracking",
       "slug": "tracking"
+    },
+    {
+      "label": "Trading & Brokerage",
+      "slug": "trading-and-brokerage"
+    },
+    {
+      "label": "Translation (additional)",
+      "slug": "translation-additional"
+    },
+    {
+      "label": "Translation / Language",
+      "slug": "translation-language"
+    },
+    {
+      "label": "Transportation",
+      "slug": "transportation"
+    },
+    {
+      "label": "Travel / Transportation",
+      "slug": "travel-transportation"
     },
     {
       "label": "URL Shorteners",
       "slug": "url-shorteners"
     },
     {
-      "label": "Vehicle & Auto",
+      "label": "Vector Databases",
+      "slug": "vector-databases"
+    },
+    {
+      "label": "Vehicle",
       "slug": "vehicle"
     },
     {
       "label": "Video",
       "slug": "video"
+    },
+    {
+      "label": "Video / Streaming",
+      "slug": "video-streaming"
+    },
+    {
+      "label": "Video & Streaming",
+      "slug": "video-and-streaming"
+    },
+    {
+      "label": "Weather",
+      "slug": "weather"
+    },
+    {
+      "label": "Weather (additional)",
+      "slug": "weather-additional"
+    },
+    {
+      "label": "Web Scraping & Browser Automation",
+      "slug": "web-scraping-and-browser-automation"
     }
   ]
 }
