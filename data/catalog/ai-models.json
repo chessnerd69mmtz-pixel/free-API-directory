@@ -1,0 +1,17 @@
+{
+  "category": "ai-models",
+  "count": 1,
+  "providers": [
+    {
+      "id": 8,
+      "name": "Replicate",
+      "category": "AI / Models",
+      "description": "API for running open models and creating model predictions.",
+      "free_tier": null,
+      "requires_credit_card": null,
+      "signup_url": "https://replicate.com/account/api-tokens",
+      "last_verified": "2026-09-25",
+      "status": "active"
+    }
+  ]
+}
