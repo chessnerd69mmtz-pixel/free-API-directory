@@ -1,4 +1,4 @@
-const DATA_VERSION = "20260926-5";
+const DATA_VERSION = "20260926-6";
 const INDEX_URL = new URL("data/catalog-index.json?v=" + DATA_VERSION, document.baseURI).href;
 const PROFILE_URL = new URL("data/provider_profiles.json?v=" + DATA_VERSION, document.baseURI).href;
 const CHANGE_URL = new URL("data/change_log.json?v=" + DATA_VERSION, document.baseURI).href;
@@ -44,6 +44,11 @@ function freeTier(p) {
 }
 
 function status(p) {
+  if (p.last_verified) {
+    const age=(Date.now()-Date.parse(p.last_verified+"T00:00:00Z"))/86400000;
+    if (Number.isFinite(age) && age > 365) return '<span class="pill warn">Needs re-verification</span>';
+    if (Number.isFinite(age) && age > 180 && p.status !== "active") return '<span class="pill warn">Needs re-verification</span>';
+  }
   if (p.status === "active") return '<span class="pill good">Active</span>';
   if (p.status === "needs re-verification") return '<span class="pill warn">Needs re-verification</span>';
   if (p.status === "candidate") return '<span class="pill warn">Candidate</span>';
@@ -146,7 +151,14 @@ async function finder() {
   }
 
   function render() {
-    const rows = getRows();
+    let rows = getRows();
+    const q = $("#q").value.toLowerCase().trim();
+    if (q) rows = rows.map(p => {
+      const n=p.name.toLowerCase(), d=(p.description||"").toLowerCase(), cat=(p.category||"").toLowerCase();
+      let score=n===q?100:n.startsWith(q)?60:n.includes(q)?40:0;
+      if(cat.includes(q))score+=15;if(d.includes(q))score+=5;
+      return {p,score};
+    }).sort((a,b)=>b.score-a.score).map(x=>x.p);
     const shown = rows.slice(0, visible);
     const more = rows.length > shown.length;
     $("#r").innerHTML =
