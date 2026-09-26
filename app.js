@@ -1,4 +1,4 @@
-const DATA_VERSION = "20260926-3";
+const DATA_VERSION = "20260926-5";
 const INDEX_URL = new URL("data/catalog-index.json?v=" + DATA_VERSION, document.baseURI).href;
 const PROFILE_URL = new URL("data/provider_profiles.json?v=" + DATA_VERSION, document.baseURI).href;
 const CHANGE_URL = new URL("data/change_log.json?v=" + DATA_VERSION, document.baseURI).href;
@@ -147,7 +147,7 @@ async function finder() {
     const more = rows.length > shown.length;
     $("#r").innerHTML =
       '<div class="tablebox"><div class="scroll"><table><thead><tr>' +
-      '<th>Provider</th><th>Category</th><th>Free tier</th><th>Functions</th><th>Verification</th></tr></thead><tbody>' +
+      '<th>Provider</th><th>Category</th><th>Free tier</th><th>Description</th><th>Verification</th></tr></thead><tbody>' +
       shown.map(p => '<tr><td class="provider"><a href="api.html?provider=' + encodeURIComponent(p.name) + '">' + esc(p.name) +
         '</a><br><a class="save-key-link" href="keys.html?provider=' + encodeURIComponent(p.name) + '">🔐 Save key</a></td><td>' + esc(p.category) +
         '</td><td>' + freeTier(p) + '</td><td class="uses">' + uses(null, p.description) +
