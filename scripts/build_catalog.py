@@ -8,6 +8,15 @@ EXPANSIONS=["public_apis_expansion.json","public_api_lists_expansion.json"]
 def slug(s):
     s=str(s).lower().replace("&","and")
     return "-".join(filter(None,"".join(c if c.isalnum() else " " for c in s).split())) or "general"
+def key_type(url):
+    u=str(url or "").lower()
+    if any(k in u for k in ("/api-keys","/api_key","/apikey","/settings/api","/keys","/tokens")): return "api-key-page"
+    if "dashboard" in u and any(k in u for k in ("api","developer","token","key")): return "dashboard"
+    if any(k in u for k in ("signup","register","create-account")): return "signup"
+    if "docs" in u or "documentation" in u: return "documentation"
+    if "pricing" in u: return "pricing"
+    return "provider-page"
+
 def normalize(x):
     name=str(x.get("name") or x.get("API") or x.get("title") or "").strip()
     url=x.get("signup_url") or x.get("provider_url") or x.get("url") or x.get("Link") or x.get("link")
@@ -37,7 +46,7 @@ def main():
             if isinstance(p.get("free_tier"), dict):
                 p["free_tier"] = dict(p["free_tier"], has_free_tier=None, type="community-listed")
             p["verification_status"] = "community-listed"
-        p["key_url_type"] = p.get("key_url_type") or ("signup" if p.get("signup_url") else "unknown")
+        p["key_url_type"] = p.get("key_url_type") or key_type(p.get("signup_url"))
         p["provenance"] = p.get("provenance") or {"primary_source": p.get("verified_by") or "unknown", "provider_url": p.get("signup_url")}
     providers.sort(key=lambda p:p["name"].casefold())
     cats={}
