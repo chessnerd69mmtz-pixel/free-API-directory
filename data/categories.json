@@ -1,0 +1,261 @@
+{
+  "version": "2026-09-26",
+  "categories": [
+    {
+      "label": "AI & Machine Learning",
+      "slug": "ai-and-machine-learning"
+    },
+    {
+      "label": "Blockchain & Web3",
+      "slug": "blockchain-and-web3"
+    },
+    {
+      "label": "Coding & Developer Tools",
+      "slug": "coding-and-developer-tools"
+    },
+    {
+      "label": "Communication, Email & SMS",
+      "slug": "communication-email-and-sms"
+    },
+    {
+      "label": "Data, Research & Public Data",
+      "slug": "data-research-and-public-data"
+    },
+    {
+      "label": "E-commerce & Shopping",
+      "slug": "e-commerce-and-shopping"
+    },
+    {
+      "label": "Finance, Crypto & Economics",
+      "slug": "finance-crypto-and-economics"
+    },
+    {
+      "label": "Food & Nutrition",
+      "slug": "food-and-nutrition"
+    },
+    {
+      "label": "Gaming",
+      "slug": "gaming"
+    },
+    {
+      "label": "Geospatial, Maps & Location",
+      "slug": "geospatial-maps-and-location"
+    },
+    {
+      "label": "Health & Fitness",
+      "slug": "health-and-fitness"
+    },
+    {
+      "label": "Images, Media & Video",
+      "slug": "images-media-and-video"
+    },
+    {
+      "label": "IoT",
+      "slug": "iot"
+    },
+    {
+      "label": "Jobs & Recruiting",
+      "slug": "jobs-and-recruiting"
+    },
+    {
+      "label": "Miscellaneous & Utilities",
+      "slug": "miscellaneous-and-utilities"
+    },
+    {
+      "label": "Music & Entertainment",
+      "slug": "music-and-entertainment"
+    },
+    {
+      "label": "News & Content",
+      "slug": "news-and-content"
+    },
+    {
+      "label": "Payments",
+      "slug": "payments"
+    },
+    {
+      "label": "Real Estate",
+      "slug": "real-estate"
+    },
+    {
+      "label": "Search, Web & Scraping",
+      "slug": "search-web-and-scraping"
+    },
+    {
+      "label": "Security & Threat Intelligence",
+      "slug": "security-and-threat-intelligence"
+    },
+    {
+      "label": "Social Media",
+      "slug": "social-media"
+    },
+    {
+      "label": "Sports",
+      "slug": "sports"
+    },
+    {
+      "label": "Translation & Language",
+      "slug": "translation-and-language"
+    },
+    {
+      "label": "Travel & Transportation",
+      "slug": "travel-and-transportation"
+    },
+    {
+      "label": "Weather & Environment",
+      "slug": "weather-and-environment"
+    },
+    {
+      "label": "AI Observability & Evaluation",
+      "slug": "ai-observability-and-evaluation"
+    },
+    {
+      "label": "AI Compute & GPU",
+      "slug": "ai-compute-and-gpu"
+    },
+    {
+      "label": "Databases & Backend",
+      "slug": "databases-and-backend"
+    },
+    {
+      "label": "Vector Databases",
+      "slug": "vector-databases"
+    },
+    {
+      "label": "CI/CD & DevOps",
+      "slug": "ci-cd-and-devops"
+    },
+    {
+      "label": "Web Scraping & Browser Automation",
+      "slug": "web-scraping-and-browser-automation"
+    },
+    {
+      "label": "Geospatial & Routing",
+      "slug": "geospatial-and-routing"
+    },
+    {
+      "label": "Scientific Research",
+      "slug": "scientific-research"
+    },
+    {
+      "label": "Bioinformatics",
+      "slug": "bioinformatics"
+    },
+    {
+      "label": "Government & Civic Data",
+      "slug": "government-and-civic-data"
+    },
+    {
+      "label": "Animals",
+      "slug": "animals"
+    },
+    {
+      "label": "Anime",
+      "slug": "anime"
+    },
+    {
+      "label": "Anti-Malware",
+      "slug": "anti-malware"
+    },
+    {
+      "label": "Art & Design",
+      "slug": "art-and-design"
+    },
+    {
+      "label": "Authentication & Authorization",
+      "slug": "authentication-and-authorization"
+    },
+    {
+      "label": "Books & Literature",
+      "slug": "books"
+    },
+    {
+      "label": "Business",
+      "slug": "business"
+    },
+    {
+      "label": "Calendar & Time",
+      "slug": "calendar"
+    },
+    {
+      "label": "Cloud Storage & File Sharing",
+      "slug": "cloud-storage-and-file-sharing"
+    },
+    {
+      "label": "Dictionaries",
+      "slug": "dictionaries"
+    },
+    {
+      "label": "Documents & Productivity",
+      "slug": "documents-and-productivity"
+    },
+    {
+      "label": "Entertainment",
+      "slug": "entertainment"
+    },
+    {
+      "label": "Events",
+      "slug": "events"
+    },
+    {
+      "label": "Open Data",
+      "slug": "open-data"
+    },
+    {
+      "label": "Open Source Projects",
+      "slug": "open-source-projects"
+    },
+    {
+      "label": "Patent & Intellectual Property",
+      "slug": "patent"
+    },
+    {
+      "label": "Personality",
+      "slug": "personality"
+    },
+    {
+      "label": "Phone & SMS Utilities",
+      "slug": "phone"
+    },
+    {
+      "label": "Photography",
+      "slug": "photography"
+    },
+    {
+      "label": "Programming",
+      "slug": "programming"
+    },
+    {
+      "label": "Science & Math",
+      "slug": "science-and-math"
+    },
+    {
+      "label": "Shopping",
+      "slug": "shopping"
+    },
+    {
+      "label": "Test Data",
+      "slug": "test-data"
+    },
+    {
+      "label": "Text Analysis",
+      "slug": "text-analysis"
+    },
+    {
+      "label": "Tracking & Logistics",
+      "slug": "tracking"
+    },
+    {
+      "label": "URL Shorteners",
+      "slug": "url-shorteners"
+    },
+    {
+      "label": "Vehicle & Auto",
+      "slug": "vehicle"
+    },
+    {
+      "label": "Video",
+      "slug": "video"
+    }
+  ]
+}
