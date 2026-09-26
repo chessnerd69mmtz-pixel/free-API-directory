@@ -469,6 +469,45 @@ async function recommend() {
 }
 
 
+function providerOptions(a){return '<option value="">Select a provider</option>'+a.map(function(p){return '<option value="'+esc(p.name)+'">'+esc(p.name)+'</option>';}).join('');}
+async function stackBuilder(){
+ const a=await loadApis();
+ shell('<section class="hero"><h1>🏗️ Build My API Stack</h1><p>Describe a project and get a multi-category starting stack using documented catalog data.</p></section><div class="card tool"><textarea id="stackq" class="input" style="min-height:120px;width:100%" placeholder="Example: free bird-monitoring app using weather, biodiversity data, maps and AI"></textarea><select id="stackfree" class="select"><option value="strict">Prefer documented free access</option><option value="any">Any documented access</option></select><button id="stackgo" class="btn">Build stack</button></div><div id="stackr"></div>');
+ $("#stackgo").onclick=function(){var q=$("#stackq").value.toLowerCase(),strict=$("#stackfree").value==="strict";var groups=[["AI / ML",["ai","llm","machine learning","model","language"]],["Weather",["weather","forecast","climate","meteorological"]],["Maps / Geo",["map","geocod","geo","location","places"]],["Research / Data",["research","academic","scientific","dataset","data"]],["Images / Media",["image","photo","media","video","audio"]],["Finance",["finance","financial","stock","currency","payment"]],["Database / Infra",["database","storage","realtime","cloud","infra"]],["Developer Tools",["developer","api","webhook","automation","software"]]];var html=groups.map(function(g){var ranked=a.map(function(p){return {p:p,s:g[1].reduce(function(n,t){return n+((p._searchText||"").includes(t)?1:0);},0)+(strict&&freeValue(p)===true?5:0)};}).filter(function(x){return x.s>0;}).sort(function(x,y){return y.s-x.s;}).slice(0,3);if(!ranked.length)return "";return '<div class="card"><h2>'+g[0]+'</h2>'+ranked.map(function(x){return '<p><b><a href="api.html?provider='+encodeURIComponent(x.p.name)+'">'+esc(x.p.name)+'</a></b> '+freeTier(x.p)+'<br><span class="muted">'+esc(x.p.description||"Cataloged provider.")+'</span></p>';}).join("")+'</div>';}).join("");$("#stackr").innerHTML=html||'<div class="card">No matching stack components found.</div>';};
+}
+async function freeCalculator(){
+ var a=await loadApis();
+ shell('<section class="hero"><h1>💰 Free-Tier Calculator</h1><p>Compare your requested volume with documented quota information. Unknown quotas remain unknown.</p></section><div class="card tool"><select id="calcprovider" class="select">'+providerOptions(a)+'</select><input id="calcreq" class="input" type="number" min="1" placeholder="Requests per month"><button id="calcgo" class="btn">Calculate</button></div><div id="calcr"></div>');
+ $("#calcgo").onclick=function(){var p=a.find(function(x){return x.name===$("#calcprovider").value;}),req=Number($("#calcreq").value);if(!p||!req){$("#calcr").innerHTML='<div class="card notice">Choose a provider and enter a positive request count.</div>';return;}$("#calcr").innerHTML='<div class="card"><h2>'+esc(p.name)+'</h2><p><b>Your requirement:</b> '+req.toLocaleString()+' requests/month</p><p><b>Free allowance:</b> '+esc(p.free_tier&&p.free_tier.amount||"Not publicly stated")+'</p><p><b>Details:</b> '+esc(p.free_tier&&p.free_tier.details||"Not publicly stated")+'</p><p><b>Rate limit:</b> '+esc(p.rate_limit||"Not publicly stated")+'</p><div class="notice">The directory will not invent a numeric quota when the provider's documented allowance is not present in the catalog.</div></div>';};
+}
+async function healthPage(){
+ var a=await loadApis(),fresh=a.filter(function(p){return p.last_verified&&(Date.now()-Date.parse(p.last_verified+"T00:00:00Z"))<30*86400000;}).length,stale=a.filter(function(p){return p.last_verified&&(Date.now()-Date.parse(p.last_verified+"T00:00:00Z"))>180*86400000;}).length;
+ shell('<section class="hero"><h1>🔄 API Health & Verification</h1><p>Verification freshness is separate from live endpoint uptime. Browser checks can be blocked by CORS, authentication or provider policy.</p></section><div class="stats"><span class="pill good">'+fresh+' verified in last 30 days</span><span class="pill warn">'+stale+' older than 180 days</span><span class="pill">'+a.length+' catalog records</span></div><div class="card"><h2>Verification monitor</h2><p>Inspect official documentation, pricing and source URLs from each provider profile.</p><a class="btn" href="changes.html">View verification history</a></div>');
+}
+async function securityPage(){
+ shell('<section class="hero"><h1>🔐 API Key Security Center</h1><p>Keep provider credentials out of source code and public repositories.</p></section><div class="grid">'+["Never commit secrets to GitHub or frontend source.","Prefer environment variables for server-side applications.","Never expose private server keys in browser JavaScript.","Rotate a key immediately if it is exposed.","Use least-privilege scopes where supported.","Browser local storage is convenience storage, not a production secrets vault.","Use a backend proxy when a provider requires a secret key.","Check provider terms before sending sensitive data."].map(function(x,i){return '<div class="card"><h2>'+(i+1)+'.</h2><p>'+x+'</p></div>';}).join("")+'</div><div class="card"><a class="btn" href="keys.html">Open local key storage</a></div>');
+}
+async function submitPage(){
+ shell('<section class="hero"><h1>📥 Submit an API</h1><p>Create a local submission draft for review. Submitting never automatically marks a provider as verified.</p></section><div class="card tool"><input id="sn" class="input" placeholder="Provider name"><input id="su" class="input" placeholder="Official website"><input id="sd" class="input" placeholder="Documentation URL"><input id="sp" class="input" placeholder="Pricing URL"><textarea id="ss" class="input" style="min-height:100px" placeholder="Free-tier details, authentication, limits and evidence"></textarea><button id="submitgo" class="btn">Create submission</button></div><div id="submitr"></div>');
+ $("#submitgo").onclick=function(){var d={name:$("#sn").value,website:$("#su").value,documentation:$("#sd").value,pricing:$("#sp").value,notes:$("#ss").value,created_at:new Date().toISOString()};if(!d.name||!d.website){$("#submitr").innerHTML='<div class="card notice">Provider name and official website are required.</div>';return;}var list=JSON.parse(localStorage.getItem("freeApiSubmissions")||"[]");list.push(d);localStorage.setItem("freeApiSubmissions",JSON.stringify(list));$("#submitr").innerHTML='<div class="card"><h2>Saved as a local draft</h2><p>This has not been added to the verified catalog.</p></div>';};
+}
+async function collectionsPage(){
+ var a=await loadApis(),list=JSON.parse(localStorage.getItem("freeApiFavorites")||"[]");
+ shell('<section class="hero"><h1>⭐ My API Collections</h1><p>Save providers locally without creating an account.</p></section><div class="card tool"><select id="fav" class="select">'+providerOptions(a)+'</select><input id="col" class="input" value="My APIs"><button id="savefav" class="btn">Save provider</button></div><div id="favr"></div>');
+ function render(){if(!list.length){$("#favr").innerHTML='<div class="card">No saved providers yet.</div>';return;}$("#favr").innerHTML=list.map(function(x,i){return '<div class="card"><h2>'+esc(x.collection)+'</h2><p><a href="api.html?provider='+encodeURIComponent(x.name)+'">'+esc(x.name)+'</a> <button class="btn secondary" data-i="'+i+'">Remove</button></p></div>';}).join("");document.querySelectorAll("[data-i]").forEach(function(b){b.onclick=function(){list.splice(Number(b.dataset.i),1);localStorage.setItem("freeApiFavorites",JSON.stringify(list));render();};});}
+ $("#savefav").onclick=function(){if(!$("#fav").value)return;list.push({name:$("#fav").value,collection:$("#col").value||"My APIs"});localStorage.setItem("freeApiFavorites",JSON.stringify(list));render();};render();
+}
+async function playgroundPage(){
+ var a=await loadApis();
+ shell('<section class="hero"><h1>🧪 API Playground</h1><p>Browser execution may be blocked by CORS or authentication policy.</p></section><div class="card tool"><select id="pgp" class="select">'+providerOptions(a)+'</select><input id="pgu" class="input" placeholder="HTTPS endpoint"><input id="pgm" class="input" value="GET"><textarea id="pgh" class="input" style="min-height:100px" placeholder="Optional JSON headers"></textarea><button id="pggo" class="btn">Send request</button></div><div id="pgr"></div>');
+ $("#pggo").onclick=async function(){var url=safeUrl($("#pgu").value),headers={};if(!url){$("#pgr").innerHTML='<div class="card notice">Enter a valid HTTP(S) endpoint.</div>';return;}try{headers=JSON.parse($("#pgh").value||"{}");}catch(e){$("#pgr").innerHTML='<div class="card notice">Headers must be valid JSON.</div>';return;}try{var res=await fetch(url,{method:$("#pgm").value.toUpperCase(),headers:headers}),body=await res.text();$("#pgr").innerHTML='<div class="card"><h2>HTTP '+res.status+'</h2><pre class="code">'+esc(body.slice(0,20000))+'</pre></div>';}catch(e){$("#pgr").innerHTML='<div class="card notice">Request blocked or unavailable. Common causes: CORS, authentication or provider policy. '+esc(e.message)+'</div>';}}; 
+}
+async function codePage(){
+ var a=await loadApis();
+ shell('<section class="hero"><h1>💻 API Code Generator</h1><p>Starter templates only; replace endpoint and authentication details with the provider documentation.</p></section><div class="card tool"><select id="codep" class="select">'+providerOptions(a)+'</select><input id="codeurl" class="input" placeholder="HTTPS endpoint"><input id="codetoken" class="input" placeholder="ENVIRONMENT_VARIABLE_NAME"><button id="codego" class="btn">Generate</button></div><div id="coder"></div>');
+ $("#codego").onclick=function(){var url=$("#codeurl").value||"https://api.example.com/v1/resource",env=$("#codetoken").value||"API_KEY";var py="import os, requests\\n\\nurl = "+JSON.stringify(url)+"\\nheaders = {\\"Authorization\\": \\"Bearer \\" + os.environ.get(\\""+env+"\\", \\"\\")}\\nresponse = requests.get(url, headers=headers, timeout=30)\\nprint(response.json())";var js="const response = await fetch("+JSON.stringify(url)+", { headers: { Authorization: \\"Bearer \\" + (process.env."+env+" || \\"\\") } });\\nconsole.log(await response.json());";var curl="curl -H \\"Authorization: Bearer $"+env+"\\" "+JSON.stringify(url);$("#coder").innerHTML='<div class="grid"><div class="card"><h2>Python</h2><pre class="code">'+esc(py)+'</pre></div><div class="card"><h2>JavaScript</h2><pre class="code">'+esc(js)+'</pre></div><div class="card"><h2>cURL</h2><pre class="code">'+esc(curl)+'</pre></div></div><div class="notice">Generic template: it does not claim this provider uses Bearer authentication.</div>';};
+}
+
 async function boot() {
   try {
     const page = document.body.dataset.page;
@@ -476,6 +515,14 @@ async function boot() {
     if (page === "compare") return await compare();
     if (page === "changes") return await changes();
     if (page === "recommend") return await recommend();
+    if (page === "stack") return await stackBuilder();
+    if (page === "calculator") return await freeCalculator();
+    if (page === "health") return await healthPage();
+    if (page === "security") return await securityPage();
+    if (page === "submit") return await submitPage();
+    if (page === "collections") return await collectionsPage();
+    if (page === "playground") return await playgroundPage();
+    if (page === "code") return await codePage();
     if (page === "api") return await apiProfile();
   } catch (error) {
     const message = error instanceof Error ? error.message : String(error);
