@@ -11,9 +11,13 @@ const esc = (s) => String(s ?? "").replace(/[&<>"]/g, (m) => ({
   "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"
 }[m]));
 
+function safeUrl(url) {
+  try { const u = new URL(String(url), document.baseURI); return (u.protocol === "https:" || u.protocol === "http:") ? u.href : null; } catch (_) { return null; }
+}
 function link(url, label) {
-  return url
-    ? '<a href="' + esc(url) + '" target="_blank" rel="noopener noreferrer">' + esc(label || url) + '</a>'
+  const safe = safeUrl(url);
+  return safe
+    ? '<a href="' + esc(safe) + '" target="_blank" rel="noopener noreferrer nofollow">' + esc(label || safe) + '</a>'
     : '<span class="muted">Unverified</span>';
 }
 
