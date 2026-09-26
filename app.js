@@ -33,6 +33,9 @@ function uses(list, fallback) {
 }
 
 function freeValue(p) {
+  const qs = p.usage_quality?.free_access_status;
+  if (qs === "not-free-currently" || qs === "no-api-free-quota") return false;
+  if (qs === "free") return true;
   if (typeof p.free_tier === "boolean") return p.free_tier;
   return p.free_tier?.has_free_tier;
 }
@@ -287,12 +290,12 @@ async function compare() {
     const fields = [
       ["Free tier", p => freeValue(p) === true ? "Recorded" : freeValue(p) === false ? "No" : "Not publicly stated"],
       ["Free amount", p => p.free_tier?.amount || "Not publicly stated"],
-      ["Credit card", p => typeof p.requires_credit_card === "boolean" ? String(p.requires_credit_card) : "Not publicly stated"],
+      ["Credit card", p => typeof p.requires_credit_card === "boolean" ? String(p.requires_credit_card) : (p.usage_quality?.payment_method || "Not publicly stated")],
       ["Authentication", p => p.authentication || "Not publicly stated"],
-      ["Rate limit", p => p.rate_limit || "Not publicly stated"],
+      ["Rate limit", p => p.rate_limit || p.usage_quality?.rate_limit || "Not publicly stated"],
       ["SDKs", p => p.sdk_languages?.length ? p.sdk_languages.join(", ") : "Not publicly stated"],
       ["Protocols", p => p.protocols?.length ? p.protocols.join(", ") : "Not publicly stated"],
-      ["Commercial use", p => p.commercial_use || "Not publicly stated"],
+      ["Commercial use", p => p.commercial_use || p.usage_quality?.commercial_use || "Not publicly stated"],
       ["Self-hostable", p => p.self_hostable || "Not publicly stated"],
       ["Webhooks", p => p.webhooks || "Not publicly stated"],
       ["Last verified", p => p.last_verified || "Not recorded"]
