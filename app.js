@@ -3,10 +3,12 @@ const INDEX_URL = new URL("data/catalog-index.json?v=" + DATA_VERSION, document.
 const PROFILE_URL = new URL("data/provider_profiles.json?v=" + DATA_VERSION, document.baseURI).href;
 const CHANGE_URL = new URL("data/change_log.json?v=" + DATA_VERSION, document.baseURI).href;
 const EVIDENCE_URL = new URL("data/web_verified_overrides.json?v=" + DATA_VERSION, document.baseURI).href;
+const LIMIT_EVIDENCE_URL = new URL("data/free_limit_evidence.json?v=" + DATA_VERSION, document.baseURI).href;
 
 let INDEX_PROMISE = null;
 let PROFILE_PROMISE = null;
 let EVIDENCE_PROMISE = null;
+let LIMIT_EVIDENCE_PROMISE = null;
 
 const $ = (s) => document.querySelector(s);
 const esc = (s) => String(s ?? "").replace(/[&<>"]/g, (m) => ({
@@ -105,6 +107,16 @@ async function loadApis() {
 async function loadEvidence() {
   if (!EVIDENCE_PROMISE) EVIDENCE_PROMISE = getJson(EVIDENCE_URL).catch(() => []);
   return EVIDENCE_PROMISE;
+}
+
+async function loadLimitEvidence() {
+  if (!LIMIT_EVIDENCE_PROMISE) LIMIT_EVIDENCE_PROMISE = getJson(LIMIT_EVIDENCE_URL).catch(() => []);
+  return LIMIT_EVIDENCE_PROMISE;
+}
+
+function limitEvidenceFor(name, evidence) {
+  const key = String(name || "").toLowerCase();
+  return (Array.isArray(evidence) ? evidence : []).find(x => String(x.name || "").toLowerCase() === key) || null;
 }
 
 async function loadProfiles() {
@@ -489,9 +501,36 @@ async function stackBuilder(){
  $("#stackgo").onclick=function(){var q=$("#stackq").value.toLowerCase(),strict=$("#stackfree").value==="strict";var groups=[["AI / ML",["ai","llm","machine learning","model","language"]],["Weather",["weather","forecast","climate","meteorological"]],["Maps / Geo",["map","geocod","geo","location","places"]],["Research / Data",["research","academic","scientific","dataset","data"]],["Images / Media",["image","photo","media","video","audio"]],["Finance",["finance","financial","stock","currency","payment"]],["Database / Infra",["database","storage","realtime","cloud","infra"]],["Developer Tools",["developer","api","webhook","automation","software"]]];var html=groups.map(function(g){var ranked=a.map(function(p){return {p:p,s:g[1].reduce(function(n,t){return n+((p._searchText||"").includes(t)?1:0);},0)+(strict&&freeValue(p)===true?5:0)};}).filter(function(x){return x.s>0;}).sort(function(x,y){return y.s-x.s;}).slice(0,3);if(!ranked.length)return "";return '<div class="card"><h2>'+g[0]+'</h2>'+ranked.map(function(x){return '<p><b><a href="api.html?provider='+encodeURIComponent(x.p.name)+'">'+esc(x.p.name)+'</a></b> '+freeTier(x.p)+'<br><span class="muted">'+esc(x.p.description||"Cataloged provider.")+'</span></p>';}).join("")+'</div>';}).join("");$("#stackr").innerHTML=html||'<div class="card">No matching stack components found.</div>';};
 }
 async function freeCalculator(){
- var a=await loadApis();
- shell('<section class="hero"><h1>💰 Free-Tier Calculator</h1><p>Compare your requested volume with documented quota information. Unknown quotas remain unknown.</p></section><div class="card tool"><select id="calcprovider" class="select">'+providerOptions(a)+'</select><input id="calcreq" class="input" type="number" min="1" placeholder="Requests per month"><button id="calcgo" class="btn">Calculate</button></div><div id="calcr"></div>');
- $("#calcgo").onclick=function(){var p=a.find(function(x){return x.name===$("#calcprovider").value;}),req=Number($("#calcreq").value);if(!p||!req){$("#calcr").innerHTML='<div class="card notice">Choose a provider and enter a positive request count.</div>';return;}$("#calcr").innerHTML='<div class="card"><h2>'+esc(p.name)+'</h2><p><b>Your requirement:</b> '+req.toLocaleString()+' requests/month</p><p><b>Free allowance:</b> '+esc(p.free_tier&&p.free_tier.amount||"Not publicly stated")+'</p><p><b>Details:</b> '+esc(p.free_tier&&p.free_tier.details||"Not publicly stated")+'</p><p><b>Rate limit:</b> '+esc(p.rate_limit||"Not publicly stated")+'</p><div class="notice">The directory will not invent a numeric quota when the provider documented allowance is not present in the catalog.</div></div>';};
+ const a=await loadApis();
+ const evidence=await loadLimitEvidence();
+ shell('<section class="hero"><h1>💰 Free-Tier Calculator</h1><p>Check documented free allowances against your workload. The calculator distinguishes official evidence, community-listed information and genuinely unknown limits.</p></section>'+
+ '<div class="card tool">'+
+ '<select id="calcprovider" class="select">'+providerOptions(a)+'</select>'+
+ '<select id="calcmetric" class="select"><option value="monthly_requests">Requests / month</option><option value="daily_requests">Requests / day</option><option value="rpm">Peak requests / minute</option><option value="monthly_tokens">Tokens / month</option><option value="daily_tokens">Tokens / day</option><option value="tpm">Peak tokens / minute</option><option value="monthly_credits_usd">Credits / month (USD)</option><option value="daily_units">Provider units / day</option></select>'+
+ '<input id="calcreq" class="input" type="number" min="0" step="any" placeholder="Enter expected usage">'+
+ '<button id="calcgo" class="btn">Calculate</button></div><div id="calcr"></div>');
+ function fmt(v){return Number.isFinite(v)?v.toLocaleString(undefined,{maximumFractionDigits:2}):"Not publicly stated";}
+ function compare(value,limit){if(!Number.isFinite(limit))return {state:"unknown",text:"No numeric allowance is published in the directory evidence layer."};return {state:value<=limit?"within":"exceeds",text:value<=limit?"Within documented allowance":"Exceeds documented allowance"};}
+ $("#calcgo").onclick=function(){
+   const p=a.find(x=>x.name===$("#calcprovider").value), metric=$("#calcmetric").value, value=Number($("#calcreq").value), e=limitEvidenceFor(p&&p.name,evidence);
+   if(!p||!Number.isFinite(value)||value<0){$("#calcr").innerHTML='<div class="card notice">Choose a provider and enter a non-negative usage value.</div>';return;}
+   const q=e&&e.quota||null, map={monthly_requests:"monthly_requests",daily_requests:"daily_requests",rpm:"rpm",monthly_tokens:"monthly_tokens",daily_tokens:"daily_tokens",tpm:"tpm",monthly_credits_usd:"monthly_credits_usd",daily_units:"daily_units"};
+   const key=map[metric], result=compare(value,q&&q[key]);
+   const community=isCommunity(p)||String(p.verification_status||"").includes("community");
+   const source=e&&e.source_url ? link(e.source_url,"Source") : (p.evidence_sources&&p.evidence_sources.length?link(p.evidence_sources[0],"Catalog source"):"");
+   let alt="";
+   if(q&&q.alternate_tier) alt='<p class="muted"><b>Alternate documented tier:</b> '+esc(JSON.stringify(q.alternate_tier))+'</p>';
+   $("#calcr").innerHTML='<div class="card"><h2>'+esc(p.name)+'</h2>'+
+     '<p><b>Your requirement:</b> '+fmt(value)+' '+esc($("#calcmetric option:checked").textContent)+'</p>'+
+     '<p><b>Result:</b> <span class="pill '+(result.state==="within"?"good":result.state==="exceeds"?"warn":"")+'">'+esc(result.text)+'</span></p>'+
+     '<p><b>Documented free allowance:</b> '+esc(q&&q[key]!==undefined?fmt(q[key]):"Not publicly stated")+'</p>'+
+     '<p><b>Provider rate-limit context:</b> '+esc(p.rate_limit||q&&q.type||"Not publicly stated")+'</p>'+
+     (q&&q.reset?'<p><b>Reset:</b> '+esc(q.reset)+'</p>':"")+
+     (e&&e.notes?'<p>'+esc(e.notes)+'</p>':"")+
+     alt+
+     '<p><b>Evidence:</b> '+(community?'<span class="pill">From community / source-listed</span> ':e?'<span class="pill good">Official source</span> ': '<span class="pill warn">No structured evidence yet</span> ')+(source||"")+'</p>'+
+     '<div class="notice"><b>Important:</b> A provider can have several independent limits (for example RPM + RPD + TPM). This calculator only evaluates the metric selected above. Model-specific or account-specific limits remain unknown unless the provider publishes a single numeric value applicable to the relevant tier/model.</div></div>';
+ };
 }
 async function healthPage(){
  var a=await loadApis(),fresh=a.filter(function(p){return p.last_verified&&(Date.now()-Date.parse(p.last_verified+"T00:00:00Z"))<30*86400000;}).length,stale=a.filter(function(p){return p.last_verified&&(Date.now()-Date.parse(p.last_verified+"T00:00:00Z"))>180*86400000;}).length;
