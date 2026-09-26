@@ -149,5 +149,29 @@
       "type": "credit",
       "credit_balance_usd": 50
     }
+  },
+  {
+    "name": "Together AI",
+    "source_type": "official",
+    "verified_at": "2026-09-26",
+    "source_url": "https://support.together.ai/articles/1862638756-changes-to-free-tier-and-billing-july-2025",
+    "free_access_status": "not-free-currently",
+    "notes": "Current support documentation says Together AI does not offer free trials and requires a minimum $5 credit purchase."
+  },
+  {
+    "name": "Anthropic API",
+    "source_type": "official",
+    "verified_at": "2026-09-26",
+    "source_url": "https://www.anthropic.com/pricing#api",
+    "free_access_status": "no-api-free-quota",
+    "notes": "Current API pricing documentation does not provide a free API quota."
+  },
+  {
+    "name": "xAI API",
+    "source_type": "official",
+    "verified_at": "2026-09-26",
+    "source_url": "https://docs.x.ai/developers/pricing",
+    "free_access_status": "no-api-free-quota",
+    "notes": "Current pricing/billing documentation describes prepaid/invoiced API usage and does not state a free API allowance."
   }
 ]
