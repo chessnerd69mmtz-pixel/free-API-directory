@@ -37,61 +37,8 @@ for p in PRIMARY + ADDITIONAL + EXPANSION + [{
     _seen.add(key)
     PROVIDERS.append(p)
 
-PUBLIC_EXTRA = [
-    ("Animals", "animals"), ("Anime", "anime"), ("Anti-Malware", "anti-malware"),
-    ("Art & Design", "art-and-design"), ("Authentication & Authorization", "authentication-and-authorization"),
-    ("Books & Literature", "books"), ("Business", "business"), ("Calendar & Time", "calendar"),
-    ("Cloud Storage & File Sharing", "cloud-storage-and-file-sharing"), ("Dictionaries", "dictionaries"),
-    ("Documents & Productivity", "documents-and-productivity"), ("Entertainment", "entertainment"),
-    ("Events", "events"), ("Open Data", "open-data"), ("Open Source Projects", "open-source-projects"),
-    ("Patent & Intellectual Property", "patent"), ("Personality", "personality"),
-    ("Phone & SMS Utilities", "phone"), ("Photography", "photography"), ("Programming", "programming"),
-    ("Science & Math", "science-and-math"), ("Shopping", "shopping"), ("Test Data", "test-data"),
-    ("Text Analysis", "text-analysis"), ("Tracking & Logistics", "tracking"),
-    ("URL Shorteners", "url-shorteners"), ("Vehicle & Auto", "vehicle"), ("Video", "video")
-]
-
-CRITERIA = [
-    ("AI & Machine Learning", "ai-and-machine-learning"),
-    ("Blockchain & Web3", "blockchain-and-web3"),
-    ("Coding & Developer Tools", "coding-and-developer-tools"),
-    ("Communication, Email & SMS", "communication-email-and-sms"),
-    ("Data, Research & Public Data", "data-research-and-public-data"),
-    ("E-commerce & Shopping", "e-commerce-and-shopping"),
-    ("Finance, Crypto & Economics", "finance-crypto-and-economics"),
-    ("Food & Nutrition", "food-and-nutrition"),
-    ("Gaming", "gaming"),
-    ("Geospatial, Maps & Location", "geospatial-maps-and-location"),
-    ("Health & Fitness", "health-and-fitness"),
-    ("Images, Media & Video", "images-media-and-video"),
-    ("IoT", "iot"),
-    ("Jobs & Recruiting", "jobs-and-recruiting"),
-    ("Miscellaneous & Utilities", "miscellaneous-and-utilities"),
-    ("Music & Entertainment", "music-and-entertainment"),
-    ("News & Content", "news-and-content"),
-    ("Payments", "payments"),
-    ("Real Estate", "real-estate"),
-    ("Search, Web & Scraping", "search-web-and-scraping"),
-    ("Security & Threat Intelligence", "security-and-threat-intelligence"),
-    ("Social Media", "social-media"),
-    ("Sports", "sports"),
-    ("Translation & Language", "translation-and-language"),
-    ("Travel & Transportation", "travel-and-transportation"),
-    ("Weather & Environment", "weather-and-environment"),
-]
-CRITERIA.extend(PUBLIC_EXTRA)
-CRITERIA.extend([
-    ("AI Observability & Evaluation", "ai-observability-and-evaluation"),
-    ("AI Compute & GPU", "ai-compute-and-gpu"),
-    ("Databases & Backend", "databases-and-backend"),
-    ("Vector Databases", "vector-databases"),
-    ("CI/CD & DevOps", "ci-cd-and-devops"),
-    ("Web Scraping & Browser Automation", "web-scraping-and-browser-automation"),
-    ("Geospatial & Routing", "geospatial-and-routing"),
-    ("Scientific Research", "scientific-research"),
-    ("Bioinformatics", "bioinformatics"),
-    ("Government & Civic Data", "government-and-civic-data"),
-])
+CATEGORY_DATA = json.loads((ROOT / "data/categories.json").read_text(encoding="utf-8"))["categories"]
+CRITERIA = [(x["label"], x["slug"]) for x in CATEGORY_DATA]
 
 AI_CROSS = {"OpenAI API","Anthropic API","Google Gemini API","Groq","Mistral AI","DeepSeek API","xAI API","OpenRouter","Hugging Face","Cohere","NVIDIA NIM APIs","Replicate","DeepInfra","Perplexity API","Together AI","Fireworks AI","AI21 Labs","AssemblyAI (speech-to-text)","Clarifai (vision)","Roboflow (vision)","Stability AI","Jina AI","Baseten","Modal","RunPod","Voyage AI (embeddings)","Wit.ai (Meta)","Dialogflow (Google)","Google Cloud Natural Language","Google Cloud Vision API","Amazon Comprehend","Amazon Polly","Amazon Rekognition","Amazon Transcribe","IBM Watson (Cloud)"}
 CODING_CROSS = {"OpenAI API","Anthropic API","Google Gemini API","Groq","Mistral AI","DeepSeek API","xAI API","OpenRouter","Hugging Face","Cohere","NVIDIA NIM APIs","Replicate","DeepInfra","Perplexity API","Together AI","Fireworks AI","AI21 Labs","Jina AI","Baseten","Modal","RunPod","Voyage AI (embeddings)"}
