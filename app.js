@@ -301,6 +301,7 @@ async function compare() {
       ["Commercial use", p => p.commercial_use || p.usage_quality?.commercial_use || "Not publicly stated"],
       ["Self-hostable", p => p.self_hostable || "Not publicly stated"],
       ["Webhooks", p => p.webhooks || "Not publicly stated"],
+      ["Usage-quality evidence", p => p.usage_quality ? ((p.usage_quality_source_type || "source") + " · " + (p.usage_quality_verified_at || "date not recorded")) : "Not yet structured"],
       ["Last verified", p => p.last_verified || "Not recorded"]
     ];
     $("#r").innerHTML = '<div class="tablebox"><div class="scroll"><table><thead><tr><th>Field</th>' +
