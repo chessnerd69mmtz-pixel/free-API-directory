@@ -1,0 +1,105 @@
+{
+  "category": "weather",
+  "count": 9,
+  "providers": [
+    {
+      "id": 17,
+      "name": "OpenWeather",
+      "category": "Weather",
+      "description": "Weather and forecast APIs.",
+      "free_tier": true,
+      "requires_credit_card": false,
+      "signup_url": "https://home.openweathermap.org/api_keys",
+      "last_verified": "2026-09-25",
+      "status": "active"
+    },
+    {
+      "id": 325,
+      "name": "AccuWeather API",
+      "category": "Weather",
+      "description": "Cataloged API provider.",
+      "free_tier": true,
+      "requires_credit_card": null,
+      "signup_url": "https://developer.accuweather.com",
+      "last_verified": "2026-09-25",
+      "status": "active"
+    },
+    {
+      "id": 326,
+      "name": "Meteomatics",
+      "category": "Weather",
+      "description": "Cataloged API provider.",
+      "free_tier": null,
+      "requires_credit_card": null,
+      "signup_url": "https://www.meteomatics.com/en/sign-up",
+      "last_verified": "2026-09-25",
+      "status": "active"
+    },
+    {
+      "id": 327,
+      "name": "NOAA Weather API",
+      "category": "Weather",
+      "description": "Cataloged API provider.",
+      "free_tier": null,
+      "requires_credit_card": null,
+      "signup_url": "https://www.weather.gov/documentation/services-web-api",
+      "last_verified": "2026-09-25",
+      "status": "active"
+    },
+    {
+      "id": 328,
+      "name": "OpenWeatherMap",
+      "category": "Weather",
+      "description": "Cataloged API provider.",
+      "free_tier": null,
+      "requires_credit_card": null,
+      "signup_url": "https://home.openweathermap.org/users/sign_up",
+      "last_verified": "2026-09-25",
+      "status": "active"
+    },
+    {
+      "id": 329,
+      "name": "Tomorrow\\.io",
+      "category": "Weather",
+      "description": "Cataloged API provider.",
+      "free_tier": null,
+      "requires_credit_card": null,
+      "signup_url": "https://app.tomorrow.io/signup",
+      "last_verified": "2026-09-25",
+      "status": "active"
+    },
+    {
+      "id": 330,
+      "name": "Visual Crossing",
+      "category": "Weather",
+      "description": "Cataloged API provider.",
+      "free_tier": true,
+      "requires_credit_card": false,
+      "signup_url": "https://www.visualcrossing.com/sign-up",
+      "last_verified": "2026-09-25",
+      "status": "active"
+    },
+    {
+      "id": 331,
+      "name": "WeatherAPI.com",
+      "category": "Weather",
+      "description": "Cataloged API provider.",
+      "free_tier": true,
+      "requires_credit_card": null,
+      "signup_url": "https://www.weatherapi.com/signup.aspx",
+      "last_verified": "2026-09-25",
+      "status": "active"
+    },
+    {
+      "id": 332,
+      "name": "Weatherbit",
+      "category": "Weather",
+      "description": "Cataloged API provider.",
+      "free_tier": true,
+      "requires_credit_card": false,
+      "signup_url": "https://www.weatherbit.io/account/create",
+      "last_verified": "2026-09-25",
+      "status": "active"
+    }
+  ]
+}
