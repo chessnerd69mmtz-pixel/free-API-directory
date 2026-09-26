@@ -80,6 +80,18 @@ CRITERIA = [
     ("Weather & Environment", "weather-and-environment"),
 ]
 CRITERIA.extend(PUBLIC_EXTRA)
+CRITERIA.extend([
+    ("AI Observability & Evaluation", "ai-observability-and-evaluation"),
+    ("AI Compute & GPU", "ai-compute-and-gpu"),
+    ("Databases & Backend", "databases-and-backend"),
+    ("Vector Databases", "vector-databases"),
+    ("CI/CD & DevOps", "ci-cd-and-devops"),
+    ("Web Scraping & Browser Automation", "web-scraping-and-browser-automation"),
+    ("Geospatial & Routing", "geospatial-and-routing"),
+    ("Scientific Research", "scientific-research"),
+    ("Bioinformatics", "bioinformatics"),
+    ("Government & Civic Data", "government-and-civic-data"),
+])
 
 AI_CROSS = {"OpenAI API","Anthropic API","Google Gemini API","Groq","Mistral AI","DeepSeek API","xAI API","OpenRouter","Hugging Face","Cohere","NVIDIA NIM APIs","Replicate","DeepInfra","Perplexity API","Together AI","Fireworks AI","AI21 Labs","AssemblyAI (speech-to-text)","Clarifai (vision)","Roboflow (vision)","Stability AI","Jina AI","Baseten","Modal","RunPod","Voyage AI (embeddings)","Wit.ai (Meta)","Dialogflow (Google)","Google Cloud Natural Language","Google Cloud Vision API","Amazon Comprehend","Amazon Polly","Amazon Rekognition","Amazon Transcribe","IBM Watson (Cloud)"}
 CODING_CROSS = {"OpenAI API","Anthropic API","Google Gemini API","Groq","Mistral AI","DeepSeek API","xAI API","OpenRouter","Hugging Face","Cohere","NVIDIA NIM APIs","Replicate","DeepInfra","Perplexity API","Together AI","Fireworks AI","AI21 Labs","Jina AI","Baseten","Modal","RunPod","Voyage AI (embeddings)"}
