@@ -15,3 +15,12 @@ jobs:
           python-version: "3.x"
       - name: Check public verification sources
         run: python scripts/check_sources.py
+      - name: Detect source content changes
+        run: python scripts/source_fingerprint.py
+      - name: Commit fingerprint updates
+        run: |
+          git config user.name "free-api-directory-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/source-fingerprints.json
+          git diff --cached --quiet || git commit -m "chore: update source fingerprints"
+          git push
