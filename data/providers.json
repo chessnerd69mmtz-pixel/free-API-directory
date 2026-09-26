@@ -1861,14 +1861,15 @@
     "signup_url": "https://console.anthropic.com/settings/keys",
     "pricing_url": "https://www.anthropic.com/pricing#api",
     "verification_urls": [
-      "https://docs.anthropic.com/en/api/getting-started",
-      "https://docs.anthropic.com/en/api/client-sdks"
+      "https://console.anthropic.com/settings/keys",
+      "https://www.anthropic.com/pricing#api",
+      "https://docs.anthropic.com/en/api/getting-started"
     ],
-    "last_verified": "2026-09-25",
+    "last_verified": "2026-09-26",
     "verified_by": "manual-official-doc-review",
     "status": "active",
     "tier_verification_url": "https://www.anthropic.com/pricing#api",
-    "tier_verification_status": "manually-verified",
+    "tier_verification_status": "official-pricing-and-docs",
     "uses": [
       "LLM text generation",
       "chat",
@@ -1876,7 +1877,19 @@
       "vision",
       "tool use",
       "structured outputs"
-    ]
+    ],
+    "documentation_url": "https://docs.anthropic.com/en/api/getting-started",
+    "verification_status": "official-primary-source",
+    "research_status": "official-source-reviewed",
+    "provenance": {
+      "primary_source": "official-provider-documentation",
+      "source_checked_at": "2026-09-26"
+    },
+    "verification_sources": {
+      "official_0": "https://console.anthropic.com/settings/keys",
+      "official_1": "https://www.anthropic.com/pricing#api",
+      "official_2": "https://docs.anthropic.com/en/api/getting-started"
+    }
   },
   {
     "name": "AOT quotes",
@@ -2459,15 +2472,14 @@
     "pricing_url": "https://www.assemblyai.com/pricing",
     "verification_urls": [
       "https://www.assemblyai.com/pricing",
-      "https://www.assemblyai.com/docs/api-reference/overview",
-      "https://www.assemblyai.com/docs/api-reference/streaming",
-      "https://www.assemblyai.com/docs/sdks"
+      "https://support.assemblyai.com/articles/5370767329-can-i-sign-up-for-free",
+      "https://www.assemblyai.com/docs/faq/how-to-get-your-api-key"
     ],
     "last_verified": "2026-09-26",
     "verified_by": "official-source-research-2026-09-26",
     "status": "active",
     "tier_verification_url": "https://www.assemblyai.com/pricing",
-    "tier_verification_status": "official-primary-source",
+    "tier_verification_status": "official-pricing-and-FAQ",
     "uses": [
       "model inference",
       "text/chat or multimodal AI",
@@ -2478,7 +2490,21 @@
     "research_sources": [
       "https://support.assemblyai.com/articles/5370767329-can-i-sign-up-for-free",
       "https://www.assemblyai.com/pricing/"
-    ]
+    ],
+    "documentation_url": "https://www.assemblyai.com/docs",
+    "rate_limit": "Not publicly stated in the cited pricing/FAQ pages.",
+    "free_tier_reset": "Free credits are consumed until used; the cited official FAQ states the free credits do not expire.",
+    "verification_status": "official-primary-source",
+    "research_status": "official-source-reviewed",
+    "provenance": {
+      "primary_source": "official-provider-documentation",
+      "source_checked_at": "2026-09-26"
+    },
+    "verification_sources": {
+      "official_0": "https://www.assemblyai.com/pricing",
+      "official_1": "https://support.assemblyai.com/articles/5370767329-can-i-sign-up-for-free",
+      "official_2": "https://www.assemblyai.com/docs/faq/how-to-get-your-api-key"
+    }
   },
   {
     "name": "AssemblyAI Universal",
@@ -4248,23 +4274,34 @@
     "signup_url": "https://api.search.brave.com/app/keys",
     "pricing_url": "https://api.search.brave.com/app/keys",
     "verification_urls": [
-      "https://api.search.brave.com/app/keys",
       "https://api-dashboard.search.brave.com/app/plans",
-      "https://api-dashboard.search.brave.com/documentation/resources/help-feedback"
+      "https://api-dashboard.search.brave.com/documentation"
     ],
     "last_verified": "2026-09-26",
     "verified_by": "official-source-research-2026-09-26",
     "status": "candidate",
     "tier_verification_url": "https://api-dashboard.search.brave.com/app/plans",
-    "tier_verification_status": "official-primary-source",
+    "tier_verification_status": "official-plan-page",
     "uses": [
       "web search"
     ],
-    "research_status": "verified-or-resolved-2026-09-26",
+    "research_status": "official-source-reviewed",
     "research_sources": [
       "https://brave.com/search/api/",
       "https://api-dashboard.search.brave.com/documentation/resources/help-feedback"
-    ]
+    ],
+    "documentation_url": "https://api-dashboard.search.brave.com/documentation",
+    "rate_limit": "Plan-specific; current limits are exposed by the Brave API dashboard.",
+    "free_tier_reset": "$5 free API credits renew monthly.",
+    "verification_status": "official-primary-source",
+    "provenance": {
+      "primary_source": "official-provider-documentation",
+      "source_checked_at": "2026-09-26"
+    },
+    "verification_sources": {
+      "official_0": "https://api-dashboard.search.brave.com/app/plans",
+      "official_1": "https://api-dashboard.search.brave.com/documentation"
+    }
   },
   {
     "name": "Brazil CNPJ",
@@ -12489,16 +12526,15 @@
     "signup_url": "https://aistudio.google.com/app/apikey",
     "pricing_url": "https://ai.google.dev/gemini-api/pricing",
     "verification_urls": [
-      "https://ai.google.dev/gemini-api",
-      "https://ai.google.dev/gemini-api/docs/billing",
-      "https://ai.google.dev/gemini-api/docs/quickstart",
-      "https://ai.google.dev/gemini-api/docs/text-generation"
+      "https://ai.google.dev/gemini-api/docs/rate-limits",
+      "https://ai.google.dev/gemini-api/docs/pricing",
+      "https://ai.google.dev/gemini-api/docs/billing"
     ],
-    "last_verified": "2026-09-25",
+    "last_verified": "2026-09-26",
     "verified_by": "official-source-verification",
     "status": "active",
     "tier_verification_url": "https://ai.google.dev/gemini-api/pricing",
-    "tier_verification_status": "manually-verified",
+    "tier_verification_status": "official-pricing-and-rate-limit-pages",
     "uses": [
       "multimodal generation",
       "text generation/chat",
@@ -12507,7 +12543,21 @@
       "function calling",
       "embeddings",
       "long-context applications"
-    ]
+    ],
+    "documentation_url": "https://ai.google.dev/gemini-api/docs/rate-limits",
+    "rate_limit": "Model- and usage-tier-specific RPM/TPM/RPD; active limits are shown in AI Studio. Free-tier RPD quotas reset at midnight Pacific time.",
+    "free_tier_reset": "Requests-per-day quotas reset at midnight Pacific time.",
+    "verification_status": "official-primary-source",
+    "research_status": "official-source-reviewed",
+    "provenance": {
+      "primary_source": "official-provider-documentation",
+      "source_checked_at": "2026-09-26"
+    },
+    "verification_sources": {
+      "official_0": "https://ai.google.dev/gemini-api/docs/rate-limits",
+      "official_1": "https://ai.google.dev/gemini-api/docs/pricing",
+      "official_2": "https://ai.google.dev/gemini-api/docs/billing"
+    }
   },
   {
     "name": "Google Maps Platform",
@@ -12632,16 +12682,15 @@
     "signup_url": "https://console.groq.com/keys",
     "pricing_url": "https://groq.com/pricing",
     "verification_urls": [
-      "https://groq.com/",
-      "https://console.groq.com/docs/overview",
-      "https://console.groq.com/docs/quickstart",
-      "https://console.groq.com/docs/openai"
+      "https://console.groq.com/docs/rate-limits",
+      "https://console.groq.com/keys",
+      "https://console.groq.com/docs/quickstart"
     ],
-    "last_verified": "2026-09-25",
+    "last_verified": "2026-09-26",
     "verified_by": "official-source-verification",
     "status": "active",
     "tier_verification_url": "https://groq.com/pricing",
-    "tier_verification_status": "manually-verified",
+    "tier_verification_status": "official-rate-limit-page",
     "uses": [
       "LLM inference",
       "text generation/chat",
@@ -12649,7 +12698,21 @@
       "tool/function calling",
       "vision-capable model inference where offered",
       "open-model serving"
-    ]
+    ],
+    "documentation_url": "https://console.groq.com/docs",
+    "rate_limit": "Model-specific RPM/RPD/TPM/TPD and audio limits; current free-plan values are published on the official rate-limit page and vary by model.",
+    "free_tier_reset": "RPD/TPD limits reset according to the provider's published rate-limit windows; inspect current account/model limits.",
+    "verification_status": "official-primary-source",
+    "research_status": "official-source-reviewed",
+    "provenance": {
+      "primary_source": "official-provider-documentation",
+      "source_checked_at": "2026-09-26"
+    },
+    "verification_sources": {
+      "official_0": "https://console.groq.com/docs/rate-limits",
+      "official_1": "https://console.groq.com/keys",
+      "official_2": "https://console.groq.com/docs/quickstart"
+    }
   },
   {
     "name": "HackerNews",
@@ -17884,16 +17947,14 @@
     "signup_url": "https://console.mistral.ai/api-keys",
     "pricing_url": "https://mistral.ai/technology/#pricing",
     "verification_urls": [
-      "https://mistral.ai/",
-      "https://docs.mistral.ai/getting-started/plans/",
-      "https://docs.mistral.ai/getting-started/quickstart/",
-      "https://docs.mistral.ai/api/"
+      "https://docs.mistral.ai/getting-started/quickstart",
+      "https://mistral.ai/technology/#pricing"
     ],
-    "last_verified": "2026-09-25",
+    "last_verified": "2026-09-26",
     "verified_by": "official-source-verification",
     "status": "active",
     "tier_verification_url": "https://mistral.ai/technology/#pricing",
-    "tier_verification_status": "manually-verified",
+    "tier_verification_status": "official-pricing-and-docs",
     "uses": [
       "LLM inference",
       "text generation/chat",
@@ -17902,7 +17963,18 @@
       "moderation",
       "agents/tool calling",
       "speech/audio models where offered"
-    ]
+    ],
+    "documentation_url": "https://docs.mistral.ai",
+    "verification_status": "official-primary-source",
+    "research_status": "official-source-reviewed",
+    "provenance": {
+      "primary_source": "official-provider-documentation",
+      "source_checked_at": "2026-09-26"
+    },
+    "verification_sources": {
+      "official_0": "https://docs.mistral.ai/getting-started/quickstart",
+      "official_1": "https://mistral.ai/technology/#pricing"
+    }
   },
   {
     "name": "MIT OpenCourseWare",
@@ -19749,23 +19821,34 @@
     "signup_url": "https://build.nvidia.com/settings/api-keys",
     "pricing_url": "https://build.nvidia.com/explore/discover",
     "verification_urls": [
-      "https://build.nvidia.com/",
+      "https://build.nvidia.com/settings/api-keys",
       "https://build.nvidia.com/explore/discover",
-      "https://docs.api.nvidia.com/nim/reference/authentication",
-      "https://docs.nvidia.com/nim/large-language-models/latest/getting-started.html"
+      "https://docs.api.nvidia.com"
     ],
-    "last_verified": "2026-09-25",
+    "last_verified": "2026-09-26",
     "verified_by": "official-source-verification",
     "status": "active",
     "tier_verification_url": "https://build.nvidia.com/explore/discover",
-    "tier_verification_status": "manually-verified",
+    "tier_verification_status": "official-provider-platform",
     "uses": [
       "LLM inference",
       "vision/language models",
       "embeddings",
       "reranking",
       "GPU-accelerated inference"
-    ]
+    ],
+    "documentation_url": "https://docs.api.nvidia.com",
+    "verification_status": "official-primary-source",
+    "research_status": "official-source-reviewed",
+    "provenance": {
+      "primary_source": "official-provider-documentation",
+      "source_checked_at": "2026-09-26"
+    },
+    "verification_sources": {
+      "official_0": "https://build.nvidia.com/settings/api-keys",
+      "official_1": "https://build.nvidia.com/explore/discover",
+      "official_2": "https://docs.api.nvidia.com"
+    }
   },
   {
     "name": "NYC Open Data",
@@ -20907,16 +20990,14 @@
     "signup_url": "https://openrouter.ai/settings/keys",
     "pricing_url": "https://openrouter.ai/pricing",
     "verification_urls": [
-      "https://openrouter.ai/",
-      "https://openrouter.ai/docs/faq",
-      "https://openrouter.ai/docs/quickstart",
-      "https://openrouter.ai/docs/api-reference/overview"
+      "https://openrouter.ai/pricing",
+      "https://openrouter.ai/docs"
     ],
-    "last_verified": "2026-09-25",
+    "last_verified": "2026-09-26",
     "verified_by": "official-source-verification",
     "status": "active",
     "tier_verification_url": "https://openrouter.ai/pricing",
-    "tier_verification_status": "manually-verified",
+    "tier_verification_status": "official-pricing-and-docs",
     "uses": [
       "multi-provider LLM routing",
       "text generation/chat",
@@ -20925,7 +21006,18 @@
       "structured outputs",
       "tool calling",
       "access to free and paid models"
-    ]
+    ],
+    "documentation_url": "https://openrouter.ai/docs",
+    "verification_status": "official-primary-source",
+    "research_status": "official-source-reviewed",
+    "provenance": {
+      "primary_source": "official-provider-documentation",
+      "source_checked_at": "2026-09-26"
+    },
+    "verification_sources": {
+      "official_0": "https://openrouter.ai/pricing",
+      "official_1": "https://openrouter.ai/docs"
+    }
   },
   {
     "name": "OpenRouteService",
