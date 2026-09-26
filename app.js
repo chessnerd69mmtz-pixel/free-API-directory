@@ -2,9 +2,11 @@ const DATA_VERSION = "20260926-11";
 const INDEX_URL = new URL("data/catalog-index.json?v=" + DATA_VERSION, document.baseURI).href;
 const PROFILE_URL = new URL("data/provider_profiles.json?v=" + DATA_VERSION, document.baseURI).href;
 const CHANGE_URL = new URL("data/change_log.json?v=" + DATA_VERSION, document.baseURI).href;
+const EVIDENCE_URL = new URL("data/web_verified_overrides.json?v=" + DATA_VERSION, document.baseURI).href;
 
 let INDEX_PROMISE = null;
 let PROFILE_PROMISE = null;
+let EVIDENCE_PROMISE = null;
 
 const $ = (s) => document.querySelector(s);
 const esc = (s) => String(s ?? "").replace(/[&<>"]/g, (m) => ({
@@ -100,15 +102,26 @@ async function loadApis() {
   return INDEX_PROMISE;
 }
 
+async function loadEvidence() {
+  if (!EVIDENCE_PROMISE) EVIDENCE_PROMISE = getJson(EVIDENCE_URL).catch(() => []);
+  return EVIDENCE_PROMISE;
+}
+
 async function loadProfiles() {
   if (!PROFILE_PROMISE) {
     PROFILE_PROMISE = Promise.all([
       getJson(PROFILE_URL),
-      getJson(new URL("data/providers.json?v=" + DATA_VERSION, document.baseURI).href)
-    ]).then(([profiles, canonical]) => {
+      getJson(new URL("data/providers.json?v=" + DATA_VERSION, document.baseURI).href),
+      loadEvidence()
+    ]).then(([profiles, canonical, evidence]) => {
       if (!Array.isArray(profiles) || !Array.isArray(canonical)) throw new Error("Invalid provider profile catalog");
       const byName = new Map(canonical.map(p => [String(p.name).toLowerCase(), p]));
-      return profiles.map(profile => ({...profile, ...(byName.get(String(profile.name).toLowerCase()) || {})}));
+      const evidenceByName = new Map((Array.isArray(evidence) ? evidence : []).map(p => [String(p.name).toLowerCase(), p]));
+      return profiles.map(profile => {
+        const base = {...profile, ...(byName.get(String(profile.name).toLowerCase()) || {})};
+        const e = evidenceByName.get(String(profile.name).toLowerCase());
+        return e ? {...base, ...e, evidence_sources:e.sources || []} : base;
+      });
     });
   }
   return PROFILE_PROMISE;
