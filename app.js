@@ -1,4 +1,4 @@
-const DATA_VERSION = "20260926-9";
+const DATA_VERSION = "20260926-10";
 const INDEX_URL = new URL("data/catalog-index.json?v=" + DATA_VERSION, document.baseURI).href;
 const PROFILE_URL = new URL("data/provider_profiles.json?v=" + DATA_VERSION, document.baseURI).href;
 const CHANGE_URL = new URL("data/change_log.json?v=" + DATA_VERSION, document.baseURI).href;
@@ -333,30 +333,137 @@ async function apiProfile() {
 async function recommend() {
   const a = await loadApis();
   shell(
-    '<section class="hero"><h1>Project API Recommender</h1><p>Describe what you are building. Matching runs locally against the lightweight index; no AI service or API key is required.</p></section>' +
-    '<div class="card tool"><textarea id="q" class="input" style="min-height:130px" placeholder="Example: weather dashboard with email alerts and maps"></textarea>' +
-    '<button id="go" class="btn">Find matching APIs</button></div><div id="r"></div>'
+    '<section class="hero"><h1>Find the Best API Provider</h1><p>Describe your role, objective and technical constraints. The directory scores catalog providers for fit and returns up to 10 matches. No API key or external AI service is required.</p></section>' +
+    '<div class="card tool recommend-form">' +
+      '<label><b>Your role</b><select id="role" class="select"><option value="">Any role</option><option>Student</option><option>Developer</option><option>Researcher</option><option>Data scientist</option><option>Founder / startup</option><option>Teacher / educator</option><option>Product / business</option><option>Hobbyist</option></select></label>' +
+      '<label><b>What are you building?</b><textarea id="objective" class="input" style="min-height:95px;width:100%" placeholder="Example: I am a student building a bird-population dashboard that combines species data, weather and maps."></textarea></label>' +
+      '<label><b>Required capabilities</b><input id="needs" class="input" placeholder="weather, maps, biodiversity, analytics"></label>' +
+      '<label><b>Free-access preference</b><select id="free" class="select"><option value="any">Any</option><option value="strict">Free only / no paid commitment</option><option value="tier">Free tier is acceptable</option><option value="keyless">Prefer no API key</option></select></label>' +
+      '<label><b>Account / card</b><select id="access" class="select"><option value="any">Any</option><option value="noaccount">Prefer no account</option><option value="nocard">No credit card</option><option value="both">No account and no card</option></select></label>' +
+      '<label><b>Commercial use</b><select id="commercial" class="select"><option value="any">Any</option><option value="required">Commercial use required</option><option value="preferred">Prefer commercial use</option></select></label>' +
+      '<label><b>Scale</b><select id="scale" class="select"><option value="any">Any</option><option value="small">Small project / learning</option><option value="medium">Growing project</option><option value="large">Higher-volume production</option></select></label>' +
+      '<button id="go" class="btn">Find my best matches</button>' +
+    '</div>' +
+    '<div id="method" class="notice">Ranking is based on documented catalog fields: capability match, role/use-case match, free-access fit, authentication/account constraints, commercial-use information, scale indicators and verification status. Unknown fields do not receive a positive score.</div>' +
+    '<div id="r"></div>'
   );
 
-  $("#go").addEventListener("click", () => {
-    const q = $("#q").value.toLowerCase();
-    const terms = [...new Set(q.split(/[^a-z0-9]+/).filter(x => x.length > 2))];
-    const scored = a.map(p => {
-      const score = terms.reduce((n,t) => n + (p._searchText.includes(t) ? 1 : 0), 0);
-      return {p,score};
-    }).filter(x => x.score > 0)
-      .sort((x,y) => y.score - x.score || x.p.name.localeCompare(y.p.name))
-      .slice(0,15);
+  const val = id => ($("#" + id)?.value || "").trim();
+  const words = s => [...new Set(String(s || "").toLowerCase().split(/[^a-z0-9]+/).filter(x => x.length > 2))];
 
-    $("#r").innerHTML = scored.length
-      ? '<div class="tablebox"><div class="scroll"><table><thead><tr><th>Provider</th><th>Why it matched</th><th>Free status</th><th>Verification</th></tr></thead><tbody>' +
-        scored.map(x => '<tr><td class="provider"><a href="api.html?provider=' + encodeURIComponent(x.p.name) + '">' + esc(x.p.name) +
-          '</a></td><td>' + esc(x.p.description || x.p.category || "Catalog match") +
-          '</td><td>' + freeTier(x.p) + '</td><td>' + status(x.p) + '</td></tr>').join("") +
-        '</tbody></table></div></div>'
-      : '<div class="card">No catalog matches found. Try describing the technologies or functions you need.</div>';
-  });
+  function scoreProvider(p, profile, form) {
+    const text = [
+      p.name,p.category,p.description,
+      ...(p.uses || []),
+      ...(p.protocols || []),
+      ...(p.sdk_languages || [])
+    ].join(" ").toLowerCase();
+    const requested = words(form.objective + " " + form.needs);
+    const roleTerms = {
+      "Student":["student","education","learning","research","academic","project"],
+      "Developer":["developer","coding","api","sdk","webhook","backend","software"],
+      "Researcher":["research","academic","scientific","metadata","dataset","literature"],
+      "Data scientist":["data","analytics","statistics","dataset","machine learning"],
+      "Founder / startup":["startup","production","commercial","scalable","business"],
+      "Teacher / educator":["education","teaching","learning","academic"],
+      "Product / business":["business","analytics","commercial","automation"],
+      "Hobbyist":["free","public","simple","open"]
+    };
+    let score=0, reasons=[];
+    const matched=requested.filter(t=>text.includes(t));
+    score += Math.min(48, matched.length*8);
+    if (matched.length) reasons.push("matches "+matched.slice(0,4).join(", "));
+    const role=roleTerms[form.role]||[];
+    const roleHits=role.filter(t=>text.includes(t));
+    score += Math.min(14, roleHits.length*3);
+    if(roleHits.length) reasons.push("fits "+form.role+" use cases");
+
+    const free=freeValue(profile);
+    if(form.free==="strict") {
+      if(free===true) { score+=16; reasons.push("free access recorded"); }
+      else if(free===false) score-=35;
+      else score-=8;
+    } else if(form.free==="tier") {
+      if(free===true) score+=12;
+      else if(free===false) score-=12;
+    } else if(form.free==="keyless") {
+      const auth=String(profile.authentication||"").toLowerCase();
+      if(/none|no key|keyless|public/.test(auth)) { score+=14; reasons.push("keyless/public access"); }
+      else if(/api key|bearer|oauth/.test(auth)) score-=4;
+    }
+
+    const noCard = profile.requires_credit_card === false;
+    const noAccount = profile.signup_requires_account === false;
+    if(form.access==="nocard" || form.access==="both") {
+      if(noCard) {score+=10; reasons.push("no card recorded");}
+      else if(profile.requires_credit_card === true) score-=25;
+      else score-=3;
+    }
+    if(form.access==="noaccount" || form.access==="both") {
+      if(noAccount) {score+=10; reasons.push("no account recorded");}
+      else if(profile.signup_requires_account === true) score-=12;
+      else score-=2;
+    }
+
+    const commercial=String(profile.commercial_use||"").toLowerCase();
+    if(form.commercial!=="any") {
+      if(/allow|yes|permitted|commercial/.test(commercial)) {score+=8; reasons.push("commercial-use information supports the request");}
+      else if(/no|prohibited|not allowed/.test(commercial)) score-=20;
+      else score-=2;
+    }
+
+    if(form.scale==="large") {
+      const rate=String(profile.rate_limit||"").toLowerCase();
+      if(/high|unlimited|1000|10k|10,000|million/.test(rate)) {score+=7; reasons.push("documented higher-scale signal");}
+    } else if(form.scale==="small") {
+      if(free===true) score+=4;
+    }
+
+    if(profile.status==="active" && profile.last_verified) score+=6;
+    if(profile.status==="candidate" || profile.research_status==="needs-deeper-provider-review") score-=10;
+    if(profile.last_verified) {
+      const age=(Date.now()-Date.parse(profile.last_verified+"T00:00:00Z"))/86400000;
+      if(Number.isFinite(age) && age>365) score-=5;
+    }
+
+    return {score, reasons: reasons.slice(0,4)};
+  }
+
+  $("#go").onclick = async () => {
+    const form={role:val("role"),objective:val("objective"),needs:val("needs"),free:val("free"),access:val("access"),commercial:val("commercial"),scale:val("scale")};
+    if(!form.objective && !form.needs) {
+      $("#r").innerHTML='<div class="card notice">Describe your objective or at least one required capability so the matcher has something to evaluate.</div>';
+      return;
+    }
+    $("#r").innerHTML='<div class="card">Analyzing the catalog and verification fields…</div>';
+    const profiles=await loadProfiles();
+    const byName=new Map(profiles.map(p=>[p.name,p]));
+    const ranked=a.map(p=>{
+      const profile=byName.get(p.name)||p;
+      const s=scoreProvider(p,profile,form);
+      return {p,profile,score:s.score,reasons:s.reasons};
+    }).filter(x=>x.score>0)
+      .sort((x,y)=>y.score-x.score || String(y.profile.last_verified||"").localeCompare(String(x.profile.last_verified||"")) || x.p.name.localeCompare(y.p.name))
+      .slice(0,10);
+
+    if(!ranked.length) {
+      $("#r").innerHTML='<div class="card"><h2>No strong catalog matches</h2><p>Try broader capability terms or relax one of the access constraints.</p></div>';
+      return;
+    }
+
+    $("#r").innerHTML='<section class="recommend-results"><div class="notice"><b>'+ranked.length+' provider'+(ranked.length===1?"":"s")+' matched.</b> Results are ordered by the directory fit score; the score is not a universal quality rating.</div>' +
+      '<div class="grid">'+ranked.map((x,i)=>{
+        const p=x.profile, f=freeValue(p);
+        return '<article class="card best-card"><div class="rank">#'+(i+1)+'</div><h2><a href="api.html?provider='+encodeURIComponent(p.name)+'">'+esc(p.name)+'</a></h2>' +
+          '<p class="muted">'+esc(p.category||"API provider")+'</p><p>'+esc(p.description||"Cataloged provider.")+'</p>' +
+          '<div class="stats"><span class="pill '+(f===true?"good":"warn")+'">'+(f===true?"Free access recorded":f===false?"No free tier recorded":"Free status not publicly stated")+'</span>'+status(p)+'</div>' +
+          '<p><b>Why it matched:</b> '+esc(x.reasons.length?x.reasons.join("; "):"capability and catalog fit")+'</p>' +
+          '<p class="muted">Fit score: '+x.score+' · Last verified: '+esc(p.last_verified||"Not recorded")+'</p>' +
+          '<a class="btn secondary" href="api.html?provider='+encodeURIComponent(p.name)+'">View provider</a></article>';
+      }).join("")+'</div></section>';
+  };
 }
+
 
 async function boot() {
   try {
