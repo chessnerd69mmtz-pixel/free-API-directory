@@ -96,7 +96,7 @@ async function loadApis() {
   if (!INDEX_PROMISE) {
     INDEX_PROMISE = getJson(INDEX_URL).then((d) => {
       if (!d || !Array.isArray(d.providers)) throw new Error("Invalid catalog index");
-      return prepareIndex(d.providers);
+      return loadEvidence().then(evidence => { const byName = new Map((Array.isArray(evidence)?evidence:[]).map(x => [String(x.name).toLowerCase(), x])); return prepareIndex(d.providers.map(p => { const e=byName.get(String(p.name).toLowerCase()); return e ? {...p, ...e, evidence_sources:e.sources||[]} : p; })); });
     });
   }
   return INDEX_PROMISE;
@@ -165,8 +165,8 @@ async function finder() {
         (c === "no" && p.requires_credit_card === false) ||
         (c === "yes" && p.requires_credit_card === true) ||
         (c === "unknown" && typeof p.requires_credit_card !== "boolean");
-      const catOK = !cat || p.category === cat;
-      const verifiedOK = !v || (v === "verified" ? (p.status === "active" && !!p.last_verified) : (p.status === "candidate" || p.status === "needs re-verification"));
+      const catOK = !$("#cat").value || p.category === $("#cat").value;
+      const v = $("#v").value; const verifiedOK = !v || (v === "verified" ? (p.status === "active" && !!p.last_verified) : (p.status === "candidate" || p.status === "needs re-verification" || p.status === "upstream-community"));
       return (!q || p._searchText.includes(q)) && freeOK && cardOK && catOK && verifiedOK;
     });
   }
