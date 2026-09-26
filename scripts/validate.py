@@ -29,7 +29,13 @@ for i,p in enumerate(providers,1):
 for i,p in enumerate(profiles,1):
     if not p.get("name") or not p.get("category") or not p.get("description") or not p.get("signup_url"):ERRORS.append(f"provider_profiles.json {i}: missing core field")
     if p.get("signup_url") and not valid_url(p["signup_url"]):ERRORS.append(f"provider_profiles.json {i}: invalid signup_url")
+# Ensure every source dataset is represented in the synchronized runtime catalog.
+catalog_names=set(names(ip))
 for fn in ("data/public_apis_expansion.json","data/public_api_lists_expansion.json"):
+    d=load(ROOT/fn) or {};arr=d.get("providers",[])
+    for x in arr:
+        n=str(x.get("name") or x.get("API") or x.get("title") or "").strip().casefold()
+        if n and n not in catalog_names: ERRORS.append(f"{fn}: provider missing from catalog: {n}")
     d=load(ROOT/fn) or {};arr=d.get("providers",[])
     if d.get("count")!=len(arr):ERRORS.append(f"{fn}: count mismatch")
 print(f"Canonical providers: {len(providers)}\nSynchronized runtime providers: {len(ip)}\nGenerated categories: {len(index.get('categories',{}))}")
