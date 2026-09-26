@@ -69,3 +69,7 @@ A URL-only catalog of additional providers imported from the supplied source lis
 The public-facing directory now uses a conservative **850+ API providers** claim. The catalog includes independently maintained records plus a researched student-friendly API table. Community/source-listed records remain clearly distinguished from independently verified quotas, card requirements, commercial terms and current uptime.
 
 The student-friendly table is published at [`docs/student-friendly-free-apis.md`](./docs/student-friendly-free-apis.md). A dedicated [`Student Mode`](./student.html) separates free/keyless APIs, free API-key tiers, research/academic APIs, research-key providers, student-project APIs, and records needing verification. It includes 200 provider/key or documentation destinations and a research-notes section for known status changes.
+
+### Current first-party evidence layer
+
+The site also loads `data/web_verified_overrides.json`, a source-linked evidence layer for high-impact providers. It supplements (rather than silently overwrites) the broad catalog with current first-party pricing, quota, rate-limit and access information where directly documented. Each record carries its source URLs and verification date. Unresolved fields remain explicitly unverified.
