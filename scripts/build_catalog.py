@@ -22,13 +22,6 @@ def main():
         for x in json.loads((DATA/fn).read_text(encoding="utf-8")).get("providers",[]):
             p=normalize(x)
             if p and p["name"].casefold() not in seen:seen.add(p["name"].casefold());providers.append(p)
-    enrich={x.get("name","").strip().casefold():x for x in json.loads(URLS.read_text(encoding="utf-8"))}
-    for p in providers:
-        e=enrich.get(p["name"].strip().casefold())
-        if e:
-            p["signup_url"]=p.get("signup_url") or e.get("url")
-            p["pricing_url"]=p.get("pricing_url") or e.get("tier_verification_url")
-            if not p.get("uses"):p["uses"]=e.get("uses") or []
     providers.sort(key=lambda p:p["name"].casefold())
     cats={}
     for p in providers:
