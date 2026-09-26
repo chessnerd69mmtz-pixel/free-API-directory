@@ -48,7 +48,8 @@ A URL-only catalog of additional providers imported from the supplied source lis
 
 ## Developer tools
 
-- [Find an API](finder.html) — search providers with free-tier, card, category and verification filters.\n- [Find the Best API Provider](recommend.html) — describe your role, objective and constraints and receive up to 10 explainable provider matches ordered by documented fit.
+- [Find an API](finder.html) — search providers with free-tier, card, category and verification filters.
+- [Find the Best API Provider](recommend.html) — describe your role, objective and constraints and receive up to 10 explainable provider matches ordered by documented fit.
 - [Compare APIs](compare.html) — compare up to four providers without sending keys anywhere.
 - [API profiles](api.html) — detailed provider pages with verification status, capabilities and generic code templates.
 - [Verification history](changes.html) — official-source change monitoring and verification records.
