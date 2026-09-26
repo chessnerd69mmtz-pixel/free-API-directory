@@ -38,6 +38,22 @@ for fn in ("data/public_apis_expansion.json","data/public_api_lists_expansion.js
         if n and n not in catalog_names: ERRORS.append(f"{fn}: provider missing from catalog: {n}")
     d=load(ROOT/fn) or {};arr=d.get("providers",[])
     if d.get("count")!=len(arr):ERRORS.append(f"{fn}: count mismatch")
+
+# Validate supplemental evidence layers without requiring complete coverage for every provider.
+for fn in ("data/free_limit_evidence.json", "data/usage_quality_evidence.json"):
+    fp=ROOT/fn
+    d=load(fp) or []
+    if not isinstance(d,list): ERRORS.append(f"{fn} must be an array")
+    else:
+        seen=set()
+        for i,x in enumerate(d,1):
+            if not isinstance(x,dict) or not x.get("name"): ERRORS.append(f"{fn} {i}: missing name")
+            else:
+                n=str(x["name"]).strip().casefold()
+                if n in seen: ERRORS.append(f"{fn}: duplicate provider {n}")
+                seen.add(n)
+                for u in x.get("source_urls",[]) or []:
+                    if not valid_url(u): ERRORS.append(f"{fn} {i}: invalid source URL")
 print(f"Canonical providers: {len(providers)}\nSynchronized runtime providers: {len(ip)}\nGenerated categories: {len(index.get('categories',{}))}")
 if ERRORS:
     print("\nErrors:\n"+"\n".join(" - "+x for x in sorted(set(ERRORS))));sys.exit(1)
