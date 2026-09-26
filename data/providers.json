@@ -11158,7 +11158,7 @@
       "https://studio.ai21.com/account/api-key"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://studio.ai21.com/account/api-key",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -11245,7 +11245,7 @@
       "https://dashboard.lepton.ai/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://dashboard.lepton.ai/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -11273,7 +11273,7 @@
       "https://novita.ai/settings/key-management"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://novita.ai/settings/key-management",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -11302,7 +11302,7 @@
       "https://cloud.siliconflow.cn/account/ak"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://cloud.siliconflow.cn/account/ak",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -11330,7 +11330,7 @@
       "https://modelscope.cn/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://modelscope.cn/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -11359,7 +11359,7 @@
       "https://open.bigmodel.cn/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://open.bigmodel.cn/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -11387,7 +11387,7 @@
       "https://platform.baichuan-ai.com/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://platform.baichuan-ai.com/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -11415,7 +11415,7 @@
       "https://platform.moonshot.cn/console/api-keys"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://platform.moonshot.cn/console/api-keys",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -11443,7 +11443,7 @@
       "https://platform.minimaxi.com/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://platform.minimaxi.com/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -11472,7 +11472,7 @@
       "https://platform.lingyiwanwu.com/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://platform.lingyiwanwu.com/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -11500,7 +11500,7 @@
       "https://console.bce.baidu.com/qianfan/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://console.bce.baidu.com/qianfan/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -11528,7 +11528,7 @@
       "https://dashscope.console.aliyun.com/apiKey"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://dashscope.console.aliyun.com/apiKey",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -11557,7 +11557,7 @@
       "https://console.cloud.tencent.com/hunyuan"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://console.cloud.tencent.com/hunyuan",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -11585,7 +11585,7 @@
       "https://open.bigmodel.cn/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://open.bigmodel.cn/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -11613,7 +11613,7 @@
       "https://ideogram.ai/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://ideogram.ai/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -11703,7 +11703,7 @@
       "https://api.bfl.ai/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://api.bfl.ai/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -11761,7 +11761,7 @@
       "https://dev.runwayml.com/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://dev.runwayml.com/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -11818,7 +11818,7 @@
       "https://play.ht/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://play.ht/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -11846,7 +11846,7 @@
       "https://app.resemble.ai/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://app.resemble.ai/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -11904,7 +11904,7 @@
       "https://portal.speechmatics.com/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://portal.speechmatics.com/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -11932,7 +11932,7 @@
       "https://soniox.com/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://soniox.com/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -11960,7 +11960,7 @@
       "https://smith.langchain.com/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://smith.langchain.com/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -11988,7 +11988,7 @@
       "https://cloud.langfuse.com/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://cloud.langfuse.com/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -12016,7 +12016,7 @@
       "https://helicone.ai/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://helicone.ai/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -12044,7 +12044,7 @@
       "https://app.portkey.ai/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://app.portkey.ai/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -12072,7 +12072,7 @@
       "https://github.com/BerriAI/litellm"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://github.com/BerriAI/litellm",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -12100,7 +12100,7 @@
       "https://app.agentops.ai/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://app.agentops.ai/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -12128,7 +12128,7 @@
       "https://www.braintrust.dev/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://www.braintrust.dev/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -12156,7 +12156,7 @@
       "https://phoenix.arize.com/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://phoenix.arize.com/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -12243,7 +12243,7 @@
       "https://app.neptune.ai/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://app.neptune.ai/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -12271,7 +12271,7 @@
       "https://app.clear.ml/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://app.clear.ml/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -12299,7 +12299,7 @@
       "https://www.kubeflow.org/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://www.kubeflow.org/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -12327,7 +12327,7 @@
       "https://replicate.com/account/api-tokens"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://replicate.com/account/api-tokens",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -12355,7 +12355,7 @@
       "https://www.beam.cloud/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://www.beam.cloud/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -12383,7 +12383,7 @@
       "https://www.baseten.co/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://www.baseten.co/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -12411,7 +12411,7 @@
       "https://app.banana.dev/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://app.banana.dev/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -12439,7 +12439,7 @@
       "https://octo.ai/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://octo.ai/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -12467,7 +12467,7 @@
       "https://clarifai.com/settings/security"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://clarifai.com/settings/security",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -12496,7 +12496,7 @@
       "https://bitbucket.org/account/settings/app-passwords/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://bitbucket.org/account/settings/app-passwords/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -12524,7 +12524,7 @@
       "https://sourcegraph.com/.api-keys"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://sourcegraph.com/.api-keys",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -12552,7 +12552,7 @@
       "https://codeberg.org/user/settings/applications"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://codeberg.org/user/settings/applications",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -12580,7 +12580,7 @@
       "https://docs.gitea.com/api/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://docs.gitea.com/api/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -12608,7 +12608,7 @@
       "https://forgejo.org/docs/latest/user/api-usage/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://forgejo.org/docs/latest/user/api-usage/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -12636,7 +12636,7 @@
       "https://hub.docker.com/settings/security"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://hub.docker.com/settings/security",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -12664,7 +12664,7 @@
       "https://www.npmjs.com/settings/tokens"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://www.npmjs.com/settings/tokens",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -12692,7 +12692,7 @@
       "https://pypi.org/manage/account/token/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://pypi.org/manage/account/token/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -12720,7 +12720,7 @@
       "https://crates.io/settings/tokens"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://crates.io/settings/tokens",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -12748,7 +12748,7 @@
       "https://central.sonatype.org/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://central.sonatype.org/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -12776,7 +12776,7 @@
       "https://sonarcloud.io/account/security/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://sonarcloud.io/account/security/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -12804,7 +12804,7 @@
       "https://app.snyk.io/account/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://app.snyk.io/account/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -12832,7 +12832,7 @@
       "https://github.com/dependabot"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://github.com/dependabot",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -12860,7 +12860,7 @@
       "https://app.circleci.com/settings/user/tokens"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://app.circleci.com/settings/user/tokens",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -12888,7 +12888,7 @@
       "https://app.travis-ci.com/account/preferences"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://app.travis-ci.com/account/preferences",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -12916,7 +12916,7 @@
       "https://docs.drone.io/api/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://docs.drone.io/api/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -12944,7 +12944,7 @@
       "https://semaphoreci.com/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://semaphoreci.com/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -12972,7 +12972,7 @@
       "https://buildkite.com/user/api-access-tokens"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://buildkite.com/user/api-access-tokens",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -13000,7 +13000,7 @@
       "https://buddy.works/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://buddy.works/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -13028,7 +13028,7 @@
       "https://circleci.com/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://circleci.com/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -13056,7 +13056,7 @@
       "https://app.pulumi.com/account/tokens"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://app.pulumi.com/account/tokens",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -13084,7 +13084,7 @@
       "https://app.terraform.io/app/settings/tokens"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://app.terraform.io/app/settings/tokens",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -13112,7 +13112,7 @@
       "https://developer.hashicorp.com/vault"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://developer.hashicorp.com/vault",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -13140,7 +13140,7 @@
       "https://developer.hashicorp.com/consul"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://developer.hashicorp.com/consul",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -13168,7 +13168,7 @@
       "https://developer.hashicorp.com/nomad"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://developer.hashicorp.com/nomad",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -13196,7 +13196,7 @@
       "https://cockroachlabs.cloud/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://cockroachlabs.cloud/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -13254,7 +13254,7 @@
       "https://dashboard.convex.dev/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://dashboard.convex.dev/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -13283,7 +13283,7 @@
       "https://cloud.appwrite.io/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://cloud.appwrite.io/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -13311,7 +13311,7 @@
       "https://pocketbase.io/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://pocketbase.io/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -13339,7 +13339,7 @@
       "https://cloud.hasura.io/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://cloud.hasura.io/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -13367,7 +13367,7 @@
       "https://app.nhost.io/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://app.nhost.io/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -13395,7 +13395,7 @@
       "https://app.xata.io/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://app.xata.io/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -13423,7 +13423,7 @@
       "https://dashboard.fauna.com/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://dashboard.fauna.com/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -13451,7 +13451,7 @@
       "https://app.planetscale.com/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://app.planetscale.com/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -13479,7 +13479,7 @@
       "https://cockroachlabs.cloud/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://cockroachlabs.cloud/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -13507,7 +13507,7 @@
       "https://console.upstash.com/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://console.upstash.com/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -13564,7 +13564,7 @@
       "https://console.aiven.io/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://console.aiven.io/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -13592,7 +13592,7 @@
       "https://console.neon.tech/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://console.neon.tech/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -13620,7 +13620,7 @@
       "https://tidbcloud.com/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://tidbcloud.com/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -13648,7 +13648,7 @@
       "https://cloud.yugabyte.com/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://cloud.yugabyte.com/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -13676,7 +13676,7 @@
       "https://console.cloud.timescale.com/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://console.cloud.timescale.com/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -13704,7 +13704,7 @@
       "https://cloud2.influxdata.com/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://cloud2.influxdata.com/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -13763,7 +13763,7 @@
       "https://cloud.elastic.co/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://cloud.elastic.co/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -13791,7 +13791,7 @@
       "https://cloud.meilisearch.com/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://cloud.meilisearch.com/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -13819,7 +13819,7 @@
       "https://cloud.typesense.org/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://cloud.typesense.org/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -13847,7 +13847,7 @@
       "https://cloud.qdrant.io/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://cloud.qdrant.io/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -13875,7 +13875,7 @@
       "https://console.weaviate.cloud/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://console.weaviate.cloud/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -13933,7 +13933,7 @@
       "https://dashboard.exa.ai/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://dashboard.exa.ai/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -13961,7 +13961,7 @@
       "https://www.firecrawl.dev/app"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://www.firecrawl.dev/app",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -13989,7 +13989,7 @@
       "https://crawlbase.com/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://crawlbase.com/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -14017,7 +14017,7 @@
       "https://scrapingant.com/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://scrapingant.com/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -14045,7 +14045,7 @@
       "https://app.zenrows.com/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://app.zenrows.com/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -14073,7 +14073,7 @@
       "https://dashboard.oxylabs.io/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://dashboard.oxylabs.io/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -14102,7 +14102,7 @@
       "https://app.zyte.com/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://app.zyte.com/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -14130,7 +14130,7 @@
       "https://console.apify.com/account/integrations"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://console.apify.com/account/integrations",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -14159,7 +14159,7 @@
       "https://www.browserless.io/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://www.browserless.io/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -14187,7 +14187,7 @@
       "https://www.browsercat.com/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://www.browsercat.com/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -14215,7 +14215,7 @@
       "https://steel.dev/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://steel.dev/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -14243,7 +14243,7 @@
       "https://dashboard.scrape.do/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://dashboard.scrape.do/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -14271,7 +14271,7 @@
       "https://serper.dev/api-key"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://serper.dev/api-key",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -14299,7 +14299,7 @@
       "https://app.dataforseo.com/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://app.dataforseo.com/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -14328,7 +14328,7 @@
       "https://seodata.io/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://seodata.io/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -14356,7 +14356,7 @@
       "https://scaleserp.com/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://scaleserp.com/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -14384,7 +14384,7 @@
       "https://app.zenserp.com/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://app.zenserp.com/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -14412,7 +14412,7 @@
       "https://www.searchapi.io/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://www.searchapi.io/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -14440,7 +14440,7 @@
       "https://apilayer.com/marketplace/scrapestack-api"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://apilayer.com/marketplace/scrapestack-api",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -14468,7 +14468,7 @@
       "https://dash.screenshotone.com/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://dash.screenshotone.com/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -14496,7 +14496,7 @@
       "https://urlbox.com/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://urlbox.com/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -14524,7 +14524,7 @@
       "https://microlink.io/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://microlink.io/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -14553,7 +14553,7 @@
       "https://developer.here.com/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://developer.here.com/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -14581,7 +14581,7 @@
       "https://developer.here.com/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://developer.here.com/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -14609,7 +14609,7 @@
       "https://myprojects.geoapify.com/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://myprojects.geoapify.com/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -14637,7 +14637,7 @@
       "https://myprojects.geoapify.com/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://myprojects.geoapify.com/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -14665,7 +14665,7 @@
       "https://myprojects.geoapify.com/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://myprojects.geoapify.com/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -14693,7 +14693,7 @@
       "https://geocode.maps.co/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://geocode.maps.co/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -14721,7 +14721,7 @@
       "https://www.geojs.io/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://www.geojs.io/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -14749,7 +14749,7 @@
       "https://www.bigdatacloud.com/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://www.bigdatacloud.com/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -14777,7 +14777,7 @@
       "https://www.ip2location.com/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://www.ip2location.com/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -14805,7 +14805,7 @@
       "https://ipinfo.io/signup"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://ipinfo.io/signup",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -14833,7 +14833,7 @@
       "https://app.abstractapi.com/api/ip-geolocation/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://app.abstractapi.com/api/ip-geolocation/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -14861,7 +14861,7 @@
       "https://radar.com/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://radar.com/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -14890,7 +14890,7 @@
       "https://cloud.maptiler.com/account/keys/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://cloud.maptiler.com/account/keys/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -14918,7 +14918,7 @@
       "https://openrouteservice.org/dev/#/signup"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://openrouteservice.org/dev/#/signup",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -14946,7 +14946,7 @@
       "https://www.graphhopper.com/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://www.graphhopper.com/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -14974,7 +14974,7 @@
       "https://valhalla.github.io/valhalla/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://valhalla.github.io/valhalla/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -15002,7 +15002,7 @@
       "https://project-osrm.org/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://project-osrm.org/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -15030,7 +15030,7 @@
       "https://nominatim.org/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://nominatim.org/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -15058,7 +15058,7 @@
       "https://overpass-api.de/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://overpass-api.de/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -15086,7 +15086,7 @@
       "https://stooq.com/q/d/?s=aapl.us"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://stooq.com/q/d/?s=aapl.us",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -15114,7 +15114,7 @@
       "https://eodhd.com/financial-apis/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://eodhd.com/financial-apis/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -15142,7 +15142,7 @@
       "https://www.alphaquery.com/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://www.alphaquery.com/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -15170,7 +15170,7 @@
       "https://api.tiingo.com/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://api.tiingo.com/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -15198,7 +15198,7 @@
       "https://polygon.io/dashboard/api-keys"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://polygon.io/dashboard/api-keys",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -15226,7 +15226,7 @@
       "https://app.alpaca.markets/paper/dashboard/overview"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://app.alpaca.markets/paper/dashboard/overview",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -15255,7 +15255,7 @@
       "https://www.interactivebrokers.com/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://www.interactivebrokers.com/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -15283,7 +15283,7 @@
       "https://developer.oanda.com/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://developer.oanda.com/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -15311,7 +15311,7 @@
       "https://twelvedata.com/apikey"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://twelvedata.com/apikey",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -15339,7 +15339,7 @@
       "https://www.frankfurter.app/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://www.frankfurter.app/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -15367,7 +15367,7 @@
       "https://currencybeacon.com/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://currencybeacon.com/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -15395,7 +15395,7 @@
       "https://currencyfreaks.com/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://currencyfreaks.com/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -15423,7 +15423,7 @@
       "https://app.currencyapi.com/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://app.currencyapi.com/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -15451,7 +15451,7 @@
       "https://www.floatrates.com/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://www.floatrates.com/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -15479,7 +15479,7 @@
       "https://data-explorer.oecd.org/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://data-explorer.oecd.org/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -15507,7 +15507,7 @@
       "https://www.imf.org/en/Data"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://www.imf.org/en/Data",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -15535,7 +15535,7 @@
       "https://data-api.ecb.europa.eu/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://data-api.ecb.europa.eu/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -15564,7 +15564,7 @@
       "https://www.bis.org/statistics/api.htm"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://www.bis.org/statistics/api.htm",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -15592,7 +15592,7 @@
       "https://data.un.org/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://data.un.org/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -15620,7 +15620,7 @@
       "https://data.oecd.org/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://data.oecd.org/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -15648,7 +15648,7 @@
       "https://www.ebi.ac.uk/europepmc/webservices/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://www.ebi.ac.uk/europepmc/webservices/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -15676,7 +15676,7 @@
       "https://www.ncbi.nlm.nih.gov/home/develop/api/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://www.ncbi.nlm.nih.gov/home/develop/api/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -15705,7 +15705,7 @@
       "https://www.semanticscholar.org/product/api"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://www.semanticscholar.org/product/api",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -15733,7 +15733,7 @@
       "https://api.crossref.org/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://api.crossref.org/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -15761,7 +15761,7 @@
       "https://api.datacite.org/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://api.datacite.org/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -15789,7 +15789,7 @@
       "https://orcid.org/developer-tools"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://orcid.org/developer-tools",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -15817,7 +15817,7 @@
       "https://core.ac.uk/services/api"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://core.ac.uk/services/api",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -15845,7 +15845,7 @@
       "https://unpaywall.org/products/api"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://unpaywall.org/products/api",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -15873,7 +15873,7 @@
       "https://opencitations.net/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://opencitations.net/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -15901,7 +15901,7 @@
       "https://www.lens.org/lens/user/subscriptions"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://www.lens.org/lens/user/subscriptions",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -15959,7 +15959,7 @@
       "https://www.esa.int/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://www.esa.int/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -16047,7 +16047,7 @@
       "https://www.gbif.org/developer/summary"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://www.gbif.org/developer/summary",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -16075,7 +16075,7 @@
       "https://www.inaturalist.org/pages/api+reference"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://www.inaturalist.org/pages/api+reference",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -16103,7 +16103,7 @@
       "https://www.ebi.ac.uk/services"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://www.ebi.ac.uk/services",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -16131,7 +16131,7 @@
       "https://www.uniprot.org/help/api"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://www.uniprot.org/help/api",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -16159,7 +16159,7 @@
       "https://www.rcsb.org/docs/programmatic-access"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://www.rcsb.org/docs/programmatic-access",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -16216,7 +16216,7 @@
       "https://rest.ensembl.org/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://rest.ensembl.org/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -16244,7 +16244,7 @@
       "https://www.ebi.ac.uk/europepmc/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://www.ebi.ac.uk/europepmc/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -16272,7 +16272,7 @@
       "https://platform.opentargets.org/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://platform.opentargets.org/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -16300,7 +16300,7 @@
       "https://www.data.gov.au/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://www.data.gov.au/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -16328,7 +16328,7 @@
       "https://www.data.gov.in/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://www.data.gov.in/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -16356,7 +16356,7 @@
       "https://www.data.gov.uk/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://www.data.gov.uk/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -16384,7 +16384,7 @@
       "https://data.gov.sg/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://data.gov.sg/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -16412,7 +16412,7 @@
       "https://open.canada.ca/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://open.canada.ca/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -16440,7 +16440,7 @@
       "https://data.cityofnewyork.us/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://data.cityofnewyork.us/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -16468,7 +16468,7 @@
       "https://data.cityofchicago.org/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://data.cityofchicago.org/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -16496,7 +16496,7 @@
       "https://data.london.gov.uk/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://data.london.gov.uk/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -16524,7 +16524,7 @@
       "https://developer.parliament.uk/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://developer.parliament.uk/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -16552,7 +16552,7 @@
       "https://api.congress.gov/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://api.congress.gov/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -16580,7 +16580,7 @@
       "https://www.sec.gov/edgar/sec-api-documentation"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://www.sec.gov/edgar/sec-api-documentation",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -16608,7 +16608,7 @@
       "https://www.federalregister.gov/developers/documentation/api/v1"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://www.federalregister.gov/developers/documentation/api/v1",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -16636,7 +16636,7 @@
       "https://www.govinfo.gov/developers"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://www.govinfo.gov/developers",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -16664,7 +16664,7 @@
       "https://api.census.gov/data/key_signup.html"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://api.census.gov/data/key_signup.html",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -16692,7 +16692,7 @@
       "https://data.bls.gov/registrationEngine/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://data.bls.gov/registrationEngine/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -16720,7 +16720,7 @@
       "https://apps.bea.gov/API/signup/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://apps.bea.gov/API/signup/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -16748,7 +16748,7 @@
       "https://www.eia.gov/opendata/register.php"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://www.eia.gov/opendata/register.php",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -16776,7 +16776,7 @@
       "https://fiscaldata.treasury.gov/api/fiscal_service/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://fiscaldata.treasury.gov/api/fiscal_service/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -16804,7 +16804,7 @@
       "https://datahelpdesk.worldbank.org/knowledgebase/articles/889392-about-the-indicators-api-documentation"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://datahelpdesk.worldbank.org/knowledgebase/articles/889392-about-the-indicators-api-documentation",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -16832,7 +16832,7 @@
       "https://pixabay.com/api/docs/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://pixabay.com/api/docs/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -16860,7 +16860,7 @@
       "https://www.pexels.com/api/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://www.pexels.com/api/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -16889,7 +16889,7 @@
       "https://unsplash.com/developers"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://unsplash.com/developers",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -16917,7 +16917,7 @@
       "https://developers.giphy.com/dashboard/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://developers.giphy.com/dashboard/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -16945,7 +16945,7 @@
       "https://developers.google.com/tenor"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://developers.google.com/tenor",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -16973,7 +16973,7 @@
       "https://www.flickr.com/services/api/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://www.flickr.com/services/api/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -17001,7 +17001,7 @@
       "https://commons.wikimedia.org/w/api.php"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://commons.wikimedia.org/w/api.php",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -17029,7 +17029,7 @@
       "https://api.wikimedia.org/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://api.wikimedia.org/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -17057,7 +17057,7 @@
       "https://coverr.co/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://coverr.co/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -17085,7 +17085,7 @@
       "https://pixabay.com/api/docs/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://pixabay.com/api/docs/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -17113,7 +17113,7 @@
       "https://freesound.org/apiv2/apply/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://freesound.org/apiv2/apply/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -17141,7 +17141,7 @@
       "https://archive.org/developers/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://archive.org/developers/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -17169,7 +17169,7 @@
       "https://www.listennotes.com/api/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://www.listennotes.com/api/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -17197,7 +17197,7 @@
       "https://podcastindex-org.github.io/docs-api/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://podcastindex-org.github.io/docs-api/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -17225,7 +17225,7 @@
       "https://www.radio-browser.info/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://www.radio-browser.info/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -17253,7 +17253,7 @@
       "https://developer.jamendo.com/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://developer.jamendo.com/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -17281,7 +17281,7 @@
       "https://musicbrainz.org/doc/MusicBrainz_API"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://musicbrainz.org/doc/MusicBrainz_API",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -17309,7 +17309,7 @@
       "https://www.last.fm/api/account/create"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://www.last.fm/api/account/create",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -17337,7 +17337,7 @@
       "https://www.discogs.com/settings/developers"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://www.discogs.com/settings/developers",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -17365,7 +17365,7 @@
       "https://www.theaudiodb.com/api_guide.php"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://www.theaudiodb.com/api_guide.php",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -17394,7 +17394,7 @@
       "https://www.espn.com/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://www.espn.com/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -17422,7 +17422,7 @@
       "https://developer.sportradar.com/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://developer.sportradar.com/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -17450,7 +17450,7 @@
       "https://www.thesportsdb.com/api.php"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://www.thesportsdb.com/api.php",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -17478,7 +17478,7 @@
       "https://www.balldontlie.io/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://www.balldontlie.io/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -17506,7 +17506,7 @@
       "https://www.openligadb.de/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://www.openligadb.de/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -17534,7 +17534,7 @@
       "https://api.jolpi.ca/ergast/f1/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://api.jolpi.ca/ergast/f1/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -17562,7 +17562,7 @@
       "https://www.chess.com/news/view/published-data-api"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://www.chess.com/news/view/published-data-api",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -17590,7 +17590,7 @@
       "https://lichess.org/api"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://lichess.org/api",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -17618,7 +17618,7 @@
       "https://develop.battle.net/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://develop.battle.net/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -17646,7 +17646,7 @@
       "https://api-docs.igdb.com/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://api-docs.igdb.com/",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -17674,7 +17674,7 @@
       "https://rawg.io/apidocs"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://rawg.io/apidocs",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -17702,7 +17702,7 @@
       "https://www.boardgameatlas.com/api/docs"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://www.boardgameatlas.com/api/docs",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -17730,7 +17730,7 @@
       "https://opentdb.com/api_config.php"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://opentdb.com/api_config.php",
     "tier_verification_status": "source-identified-not-fully-resolved",
@@ -17758,7 +17758,7 @@
       "https://jikan.moe/"
     ],
     "last_verified": null,
-    "verified_by": "expansion-shortlist-unverified",
+    "verified_by": "research-candidate",
     "status": "candidate",
     "tier_verification_url": "https://jikan.moe/",
     "tier_verification_status": "source-identified-not-fully-resolved",
