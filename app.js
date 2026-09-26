@@ -536,15 +536,17 @@ async function freeCalculator(){
    const p=a.find(x=>x.name===$("#calcprovider").value), metric=$("#calcmetric").value, value=Number($("#calcreq").value), e=limitEvidenceFor(p&&p.name,evidence);
    if(!p||!Number.isFinite(value)||value<0){$("#calcr").innerHTML='<div class="card notice">Choose a provider and enter a non-negative usage value.</div>';return;}
    const q=e&&e.quota||null, map={monthly_requests:"monthly_requests",daily_requests:"daily_requests",hourly_requests:"hourly_requests",rpm:"rpm",monthly_tokens:"monthly_tokens",daily_tokens:"daily_tokens",tpm:"tpm",monthly_credits_usd:"monthly_credits_usd",credit_balance_usd:"credit_balance_usd",daily_units:"daily_units"};
-   const key=map[metric], result=compare(value,q&&q[key]);
+   const key=map[metric];
+   const noFree=e&&((e.free_access_status==="not-free-currently")||(e.free_access_status==="no-api-free-quota"));
+   const result=noFree?{state:"no-free",text:"No current free API allowance documented"}:compare(value,q&&q[key]);
    const community=isCommunity(p)||String(p.verification_status||"").includes("community");
    const source=e&&e.source_url ? link(e.source_url,"Source") : (p.evidence_sources&&p.evidence_sources.length?link(p.evidence_sources[0],"Catalog source"):"");
    let alt="";
    if(q&&q.alternate_tier) alt='<p class="muted"><b>Alternate documented tier:</b> '+esc(JSON.stringify(q.alternate_tier))+'</p>';
    $("#calcr").innerHTML='<div class="card"><h2>'+esc(p.name)+'</h2>'+
      '<p><b>Your requirement:</b> '+fmt(value)+' '+esc($("#calcmetric option:checked").textContent)+'</p>'+
-     '<p><b>Result:</b> <span class="pill '+(result.state==="within"?"good":result.state==="exceeds"?"warn":"")+'">'+esc(result.text)+'</span></p>'+
-     '<p><b>Documented free allowance:</b> '+esc(q&&q[key]!==undefined?fmt(q[key]):"Not publicly stated")+'</p>'+
+     '<p><b>Result:</b> <span class="pill '+(result.state==="within"?"good":result.state==="exceeds"||result.state==="no-free"?"warn":"")+'">'+esc(result.text)+'</span></p>'+
+     '<p><b>Documented free allowance:</b> '+esc(noFree?"No current free API allowance documented":q&&q[key]!==undefined?fmt(q[key]):"Not publicly stated")+'</p>'+
      '<p><b>Provider rate-limit context:</b> '+esc(p.rate_limit||q&&q.type||"Not publicly stated")+'</p>'+
      (q&&q.reset?'<p><b>Reset:</b> '+esc(q.reset)+'</p>':"")+
      (e&&e.notes?'<p>'+esc(e.notes)+'</p>':"")+
