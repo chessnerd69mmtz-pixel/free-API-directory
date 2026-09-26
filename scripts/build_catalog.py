@@ -18,6 +18,9 @@ def main():
     for p in json.loads(PRIMARY.read_text(encoding="utf-8")):
         k=p["name"].strip().casefold()
         if k not in seen:seen.add(k);providers.append(p)
+    for x in json.loads(URLS.read_text(encoding="utf-8")) if URLS.exists() else []:
+        p=normalize(x)
+        if p and p["name"].casefold() not in seen: seen.add(p["name"].casefold()); providers.append(p)
     for fn in EXPANSIONS:
         for x in json.loads((DATA/fn).read_text(encoding="utf-8")).get("providers",[]):
             p=normalize(x)
