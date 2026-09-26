@@ -1,6 +1,13 @@
 [
   {
     "provider": "Directory-wide catalog",
+    "date": "2026-09-26",
+    "type": "deep-synchronization",
+    "status": "Expanded the live canonical catalog from 869 curated records to 2,715 unique providers by merging the repository's maintained 1,716-record and 338-record expansion sources; added first-party evidence for Cerebras Inference, Deepgram, ElevenLabs and Cloudflare Workers AI; regenerated profiles, index, URLs and categories.",
+    "source_url": "https://github.com/chessnerd69mmtz-pixel/free-API-directory"
+  },
+  {
+    "provider": "Directory-wide catalog",
     "date": "2026-09-25",
     "type": "2750-provider expansion",
     "status": "Added 338 additional community-sourced providers from Public API Lists and raised the live discovery pool from 2500 to 2750.",
