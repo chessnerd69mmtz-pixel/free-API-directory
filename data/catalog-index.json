@@ -5853,15 +5853,16 @@
     {
       "id": 416,
       "name": "OpenAlex",
-      "category": "Public / Scientific Data (additional)",
-      "description": "Cataloged API provider.",
+      "category": "Scientific Research",
+      "description": "Scholarly metadata and research graph API for works, authors, sources, institutions, topics and funders.",
       "free_tier": true,
       "requires_credit_card": false,
-      "signup_url": "https://openalex.org",
-      "pricing_url": "https://help.openalex.org/api/authentication/",
-      "last_verified": "2026-09-25",
+      "signup_url": "https://openalex.org/settings/api",
+      "pricing_url": "https://help.openalex.org/access/pricing/",
+      "last_verified": "2026-09-26",
       "status": "active",
-      "key_url_type": "unknown"
+      "key_url_type": "unknown",
+      "verification_status": "officially-verified"
     },
     {
       "id": 417,
