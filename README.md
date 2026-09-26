@@ -15,7 +15,7 @@ This repository is deliberately conservative:
 
 ## Current catalog
 
-The authoritative runtime source is [data/providers.json](data/providers.json). The website uses the same committed local catalog on every page. The current catalog contains **669 providers**, supporting the public-facing **650+ API providers** claim. Source-listed records remain distinguishable from independently verified provider facts. Generated category tables are under [docs/providers](docs/providers).
+The authoritative runtime source is [data/providers.json](data/providers.json). The website uses the same committed local catalog on every page. The current catalog contains **869 providers**, supporting the public-facing **850+ API providers** claim. Source-listed records remain distinguishable from independently verified provider facts. Generated category tables are under [docs/providers](docs/providers).
 
 Run locally:
 
@@ -66,6 +66,6 @@ A URL-only catalog of additional providers imported from the supplied source lis
 
 ## September 2026 expansion
 
-The public-facing directory now uses a conservative **650+ API providers** claim. The catalog includes independently maintained records plus a researched student-friendly API table. Community/source-listed records remain clearly distinguished from independently verified quotas, card requirements, commercial terms and current uptime.
+The public-facing directory now uses a conservative **850+ API providers** claim. The catalog includes independently maintained records plus a researched student-friendly API table. Community/source-listed records remain clearly distinguished from independently verified quotas, card requirements, commercial terms and current uptime.
 
 The student-friendly table is published at [`docs/student-friendly-free-apis.md`](./docs/student-friendly-free-apis.md). A dedicated [`Student Mode`](./student.html) separates free/keyless APIs, free API-key tiers, research/academic APIs, research-key providers, student-project APIs, and records needing verification. It includes 200 provider/key or documentation destinations and a research-notes section for known status changes.
