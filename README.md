@@ -29,7 +29,7 @@ No API keys are stored in this repository.
 
 ## Directory by criterion
 
-The provider catalog is split into **63 browse criteria** including AI & Machine Learning, Coding & Developer Tools, Geospatial, Health, Finance, Data & Research, Jobs & Recruiting, Communication, Media, Weather, and more. Providers may appear in multiple criteria when their capabilities span several use cases.
+The provider catalog is split into **149 generated browse categories** including AI & Machine Learning, Coding & Developer Tools, Geospatial, Health, Finance, Data & Research, Jobs & Recruiting, Communication, Media, Weather, and more. Providers may appear in multiple criteria when their capabilities span several use cases.
 
 **[Browse all criteria and tables →](docs/providers/criteria.md)**
 
