@@ -1047,11 +1047,11 @@
     "category": "Dev Tools / Infra",
     "description": "Cataloged API provider.",
     "free_tier": {
-      "has_free_tier": null,
-      "type": "unknown",
-      "details": "Not independently verified in the primary catalog.",
-      "amount": "Not publicly stated",
-      "expiry": "Not publicly stated"
+      "has_free_tier": true,
+      "type": "free-forever",
+      "details": "Official Free plan includes 1,000 Web API calls per workspace/month; API rate limit is 5 requests/second per base.",
+      "amount": "1,000 API calls/workspace/month; 5 req/s/base",
+      "expiry": "Free plan; ongoing"
     },
     "signup_requires_account": true,
     "requires_credit_card": "Not publicly stated",
@@ -1063,18 +1063,19 @@
       "https://airtable.com/developers/web/api/introduction",
       "https://airtable.com/developers/web/api/client-libraries"
     ],
-    "last_verified": "2026-09-25",
-    "verified_by": "manual-official-doc-review",
+    "last_verified": "2026-09-26",
+    "verified_by": "official-source-research-2026-09-26",
     "status": "active",
     "tier_verification_url": "https://www.airtable.com/pricing",
-    "tier_verification_status": "manually-verified",
+    "tier_verification_status": "official-primary-source",
     "uses": [
       "API/resource management",
       "deployment/infrastructure control",
       "data/storage operations where supported",
       "authentication/integrations",
       "monitoring/automation"
-    ]
+    ],
+    "research_sources": []
   },
   {
     "name": "Airtel IP",
@@ -1148,11 +1149,11 @@
     "category": "Blockchain / Web3",
     "description": "Cataloged API provider.",
     "free_tier": {
-      "has_free_tier": null,
-      "type": "unknown",
-      "details": "Not independently verified in the primary catalog.",
-      "amount": "Not publicly stated",
-      "expiry": "Not publicly stated"
+      "has_free_tier": true,
+      "type": "free-forever",
+      "details": "Official Free tier: 30 million Compute Units/month, 25 requests/second, 5 apps and 5 webhooks.",
+      "amount": "30M CU/month; 25 req/s; 5 apps; 5 webhooks",
+      "expiry": "Free tier; ongoing"
     },
     "signup_requires_account": true,
     "requires_credit_card": false,
@@ -1164,32 +1165,33 @@
       "https://www.alchemy.com/docs/reference/api-overview",
       "https://www.alchemy.com/docs"
     ],
-    "last_verified": "2026-09-25",
-    "verified_by": "manual-official-doc-review",
+    "last_verified": "2026-09-26",
+    "verified_by": "official-source-research-2026-09-26",
     "status": "active",
     "tier_verification_url": "https://www.alchemy.com/pricing",
-    "tier_verification_status": "manually-verified",
+    "tier_verification_status": "official-primary-source",
     "uses": [
       "blockchain RPC/node access",
       "wallet/transaction data",
       "token/NFT data",
       "smart-contract data",
       "on-chain analytics"
-    ]
+    ],
+    "research_sources": []
   },
   {
     "name": "Algolia Search",
     "category": "Dev Tools / Infra",
     "description": "Cataloged API provider.",
     "free_tier": {
-      "has_free_tier": null,
-      "type": "unknown",
-      "details": "Not independently verified in the primary catalog.",
-      "amount": "Not publicly stated",
-      "expiry": "Not publicly stated"
+      "has_free_tier": true,
+      "type": "free-forever",
+      "details": "Official Free plan: 10,000 search requests/month, 50,000 records, 5,000 recommendation requests/month and 5,000 crawls/month; no credit card required.",
+      "amount": "10K search req/mo; 50K records; 5K recommendation req/mo; 5K crawls/mo",
+      "expiry": "Free plan; ongoing"
     },
     "signup_requires_account": true,
-    "requires_credit_card": "A credit card is not required for the Build plan trial; billing details are required to continue on a paid plan.",
+    "requires_credit_card": false,
     "signup_url": "https://www.algolia.com/users/sign_up",
     "pricing_url": "https://www.algolia.com/pricing/",
     "verification_urls": [
@@ -1198,18 +1200,19 @@
       "https://www.algolia.com/doc/rest-api/search/",
       "https://www.algolia.com/developers/sdks/"
     ],
-    "last_verified": "2026-09-25",
-    "verified_by": "manual-official-doc-review",
+    "last_verified": "2026-09-26",
+    "verified_by": "official-source-research-2026-09-26",
     "status": "active",
     "tier_verification_url": "https://www.algolia.com/pricing/",
-    "tier_verification_status": "manually-verified",
+    "tier_verification_status": "official-primary-source",
     "uses": [
       "API/resource management",
       "deployment/infrastructure control",
       "data/storage operations where supported",
       "authentication/integrations",
       "monitoring/automation"
-    ]
+    ],
+    "research_sources": []
   },
   {
     "name": "Alibaba DashScope",
@@ -1245,11 +1248,11 @@
     "category": "Finance / Crypto (additional)",
     "description": "Cataloged API provider.",
     "free_tier": {
-      "has_free_tier": null,
-      "type": "unknown",
-      "details": "Not independently verified in the primary catalog.",
-      "amount": "Not publicly stated",
-      "expiry": "Not publicly stated"
+      "has_free_tier": true,
+      "type": "free-forever",
+      "details": "Official Basic market-data plan is free for Paper and Live trading accounts. Equity real-time coverage is IEX-only; historical API calls are limited to 200/min on Basic.",
+      "amount": "Free Basic plan; 200 historical API calls/min; 30 websocket symbols",
+      "expiry": "Ongoing"
     },
     "signup_requires_account": true,
     "requires_credit_card": false,
@@ -1261,11 +1264,11 @@
       "https://docs.alpaca.markets/docs/authentication",
       "https://docs.alpaca.markets/docs/streaming-market-data"
     ],
-    "last_verified": "2026-09-25",
-    "verified_by": "official-source-verification",
+    "last_verified": "2026-09-26",
+    "verified_by": "official-source-research-2026-09-26",
     "status": "active",
     "tier_verification_url": "https://alpaca.markets/pricing",
-    "tier_verification_status": "manually-verified",
+    "tier_verification_status": "official-primary-source",
     "uses": [
       "market/price data",
       "historical time series",
@@ -1273,7 +1276,8 @@
       "economic or FX data",
       "portfolio/account data where offered",
       "trading/order APIs where offered"
-    ]
+    ],
+    "research_sources": []
   },
   {
     "name": "Alpaca Market Data",
@@ -1907,21 +1911,21 @@
     "category": "Student / Education & General",
     "description": "Student-friendly API from the supplied research table; current access limits and terms are recorded conservatively.",
     "free_tier": {
-      "has_free_tier": null,
-      "type": "source-listed",
-      "details": "Listed as student-friendly/free-access in the supplied table; current quota and payment terms are not inferred.",
-      "amount": "Not publicly stated",
-      "expiry": "Not publicly stated"
+      "has_free_tier": true,
+      "type": "free-forever",
+      "details": "Official Free plan: 3,000 API calls/month, evaluation/demo purposes only, no payment information required and no commercial use.",
+      "amount": "3,000 calls/month",
+      "expiry": "Ongoing free plan"
     },
     "signup_requires_account": true,
-    "requires_credit_card": null,
+    "requires_credit_card": false,
     "signup_url": "https://api-ninjas.com/register",
     "pricing_url": null,
     "verification_urls": [
       "https://api-ninjas.com/register"
     ],
     "last_verified": "2026-09-26",
-    "verified_by": "official-source-review",
+    "verified_by": "official-source-research-2026-09-26",
     "status": "catalog-only",
     "verification_status": "source-checked-table",
     "authentication": "API key/account or provider-defined",
@@ -1937,7 +1941,10 @@
     "provenance": {
       "primary_source": "user-supplied-student-api-table",
       "provider_url": "https://api-ninjas.com/register"
-    }
+    },
+    "commercial_use": "No — official Free plan is non-commercial",
+    "tier_verification_status": "official-primary-source",
+    "research_sources": []
   },
   {
     "name": "API Status Check",
@@ -2427,11 +2434,11 @@
     "category": "AI / ML",
     "description": "Cataloged API provider.",
     "free_tier": {
-      "has_free_tier": null,
-      "type": "unknown",
-      "details": "Not independently verified in the primary catalog.",
-      "amount": "Not publicly stated",
-      "expiry": "Not publicly stated"
+      "has_free_tier": true,
+      "type": "free-trial",
+      "details": "Official free tier provides up to $50 in audio processing; free tier supports pre-recorded transcription and Speech Understanding plus streaming STT. LLM Gateway is excluded.",
+      "amount": "$50 free API credits",
+      "expiry": "Until credits are used"
     },
     "signup_requires_account": true,
     "requires_credit_card": false,
@@ -2443,18 +2450,19 @@
       "https://www.assemblyai.com/docs/api-reference/streaming",
       "https://www.assemblyai.com/docs/sdks"
     ],
-    "last_verified": "2026-09-25",
-    "verified_by": "manual-official-doc-review",
+    "last_verified": "2026-09-26",
+    "verified_by": "official-source-research-2026-09-26",
     "status": "active",
     "tier_verification_url": "https://www.assemblyai.com/pricing",
-    "tier_verification_status": "manually-verified",
+    "tier_verification_status": "official-primary-source",
     "uses": [
       "model inference",
       "text/chat or multimodal AI",
       "classification/extraction",
       "embeddings/semantic search where offered",
       "model deployment/integration"
-    ]
+    ],
+    "research_sources": []
   },
   {
     "name": "AssemblyAI Universal",
@@ -2666,11 +2674,11 @@
     "category": "Dev Tools / Infra",
     "description": "Cataloged API provider.",
     "free_tier": {
-      "has_free_tier": null,
-      "type": "unknown",
-      "details": "Not independently verified in the primary catalog.",
-      "amount": "Not publicly stated",
-      "expiry": "Not publicly stated"
+      "has_free_tier": true,
+      "type": "free-trial",
+      "details": "Current AWS Free Tier: new customers receive $100 in credits and can earn up to another $100; Free account plan lasts up to six months or until credits are exhausted. AWS also lists 30+ always-free services with monthly allowances.",
+      "amount": "Up to $200 credits for new customers; 30+ always-free services",
+      "expiry": "Up to 6 months for Free account plan; some services always free"
     },
     "signup_requires_account": true,
     "requires_credit_card": true,
@@ -2682,18 +2690,19 @@
       "https://docs.aws.amazon.com/general/latest/gr/signature-version-4.html",
       "https://aws.amazon.com/developer/tools/"
     ],
-    "last_verified": "2026-09-25",
-    "verified_by": "manual-official-doc-review",
+    "last_verified": "2026-09-26",
+    "verified_by": "official-source-research-2026-09-26",
     "status": "active",
     "tier_verification_url": "https://aws.amazon.com/free/",
-    "tier_verification_status": "manually-verified",
+    "tier_verification_status": "official-primary-source",
     "uses": [
       "API/resource management",
       "deployment/infrastructure control",
       "data/storage operations where supported",
       "authentication/integrations",
       "monitoring/automation"
-    ]
+    ],
+    "research_sources": []
   },
   {
     "name": "Aylien News API",
@@ -4210,10 +4219,10 @@
     "description": "Candidate API provider added in the September 2026 expansion. Current free-tier details require provider-side verification.",
     "free_tier": {
       "has_free_tier": true,
-      "type": "monthly-credits",
-      "details": "Official Brave API documentation says each plan includes $5 in monthly free credits; a card can be required to access the credit without a prepaid balance.",
-      "amount": "$5 free credits/month on each Search API plan",
-      "expiry": "Monthly reset"
+      "type": "monthly-credit",
+      "details": "Official API plans include $5 in free credits every month. Brave states there is no standalone free plan; accessing the $5 credit without prepaid spend requires a credit card at signup.",
+      "amount": "$5 free credits/month per plan",
+      "expiry": "Monthly renewal"
     },
     "signup_requires_account": true,
     "requires_credit_card": true,
@@ -4225,14 +4234,15 @@
       "https://api-dashboard.search.brave.com/documentation/resources/help-feedback"
     ],
     "last_verified": "2026-09-26",
-    "verified_by": "official-source-research",
+    "verified_by": "official-source-research-2026-09-26",
     "status": "candidate",
     "tier_verification_url": "https://api-dashboard.search.brave.com/app/plans",
-    "tier_verification_status": "official-source-researched",
+    "tier_verification_status": "official-primary-source",
     "uses": [
       "web search"
     ],
-    "research_status": "verified-or-resolved-2026-09-26"
+    "research_status": "verified-or-resolved-2026-09-26",
+    "research_sources": []
   },
   {
     "name": "Brazil CNPJ",
@@ -5692,18 +5702,21 @@
       "https://developers.cloudflare.com/fundamentals/api/get-started/create-token/",
       "https://developers.cloudflare.com/api/"
     ],
-    "last_verified": "2026-09-25",
-    "verified_by": "manual-official-doc-review",
+    "last_verified": "2026-09-26",
+    "verified_by": "official-source-research-2026-09-26",
     "status": "active",
     "tier_verification_url": "https://www.cloudflare.com/plans/",
-    "tier_verification_status": "manually-verified",
+    "tier_verification_status": "official-primary-source",
     "uses": [
       "API/resource management",
       "deployment/infrastructure control",
       "data/storage operations where supported",
       "authentication/integrations",
       "monitoring/automation"
-    ]
+    ],
+    "rate_limit": "1,200 requests per 5 minutes per user globally; 200 requests/second per IP; GraphQL varies by query cost (max 320/5 min).",
+    "rate_limit_source": "official-cloudflare-documentation",
+    "research_sources": []
   },
   {
     "name": "Cloudinary",
@@ -5894,11 +5907,11 @@
     "category": "Student / Education & General",
     "description": "Student-friendly API from the supplied research table; current access limits and terms are recorded conservatively.",
     "free_tier": {
-      "has_free_tier": null,
-      "type": "source-listed",
-      "details": "Listed as student-friendly/free-access in the supplied table; current quota and payment terms are not inferred.",
-      "amount": "Not publicly stated",
-      "expiry": "Not publicly stated"
+      "has_free_tier": true,
+      "type": "free-trial",
+      "details": "Every account receives a free, rate-limited Trial API key. Official docs state trial keys are limited to 1,000 API calls/month; trial Chat endpoints are generally 20 requests/minute and trial keys are not for production/commercial use.",
+      "amount": "1,000 API calls/month; endpoint-specific trial rate limits",
+      "expiry": "While trial key remains available"
     },
     "signup_requires_account": true,
     "requires_credit_card": null,
@@ -5908,7 +5921,7 @@
       "https://dashboard.cohere.com/welcome/register"
     ],
     "last_verified": "2026-09-26",
-    "verified_by": "official-source-review",
+    "verified_by": "official-source-research-2026-09-26",
     "status": "catalog-only",
     "verification_status": "source-checked-table",
     "authentication": "API key/account or provider-defined",
@@ -5924,7 +5937,10 @@
     "provenance": {
       "primary_source": "user-supplied-student-api-table",
       "provider_url": "https://dashboard.cohere.com/welcome/register"
-    }
+    },
+    "commercial_use": "No — trial keys are not permitted for production/commercial use",
+    "tier_verification_status": "official-primary-source",
+    "research_sources": []
   },
   {
     "name": "CoinAPI",
@@ -9371,11 +9387,11 @@
     "category": "Speech / Audio",
     "description": "Text-to-speech, speech-to-text and voice APIs.",
     "free_tier": {
-      "has_free_tier": null,
-      "type": "unknown",
-      "details": "API-key page verified; current free allowance is not asserted here.",
-      "amount": "Not publicly stated",
-      "expiry": "Not publicly stated"
+      "has_free_tier": true,
+      "type": "free-forever",
+      "details": "Current Free plan is $0 and includes 10,000 credits/month. Official API documentation states most API endpoints are available on the free plan; free-plan content is non-commercial with attribution.",
+      "amount": "10,000 credits/month",
+      "expiry": "Monthly"
     },
     "signup_requires_account": true,
     "requires_credit_card": false,
@@ -9387,18 +9403,20 @@
       "https://elevenlabs.io/docs/api-reference/text-to-speech",
       "https://elevenlabs.io/docs/libraries"
     ],
-    "last_verified": "2026-09-25",
-    "verified_by": "manual-official-doc-review",
+    "last_verified": "2026-09-26",
+    "verified_by": "official-source-research-2026-09-26",
     "status": "active",
     "tier_verification_url": "https://elevenlabs.io/pricing",
-    "tier_verification_status": "manually-verified",
+    "tier_verification_status": "official-primary-source",
     "uses": [
       "text-to-speech",
       "voice cloning",
       "speech-to-speech",
       "voice design",
       "audio generation"
-    ]
+    ],
+    "commercial_use": "Non-commercial with attribution on Free plan",
+    "research_sources": []
   },
   {
     "name": "EmailJS",
