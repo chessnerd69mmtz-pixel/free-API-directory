@@ -5,6 +5,7 @@ from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]; DATA=ROOT/"data"
 PRIMARY=DATA/"providers.json"; URLS=DATA/"provider_urls.json"
 EXPANSIONS=["public_apis_expansion.json","public_api_lists_expansion.json"]
+OVERRIDES=DATA/"web_verified_overrides.json"
 def slug(s):
     s=str(s).lower().replace("&","and")
     return "-".join(filter(None,"".join(c if c.isalnum() else " " for c in s).split())) or "general"
@@ -34,7 +35,26 @@ def main():
         for x in json.loads((DATA/fn).read_text(encoding="utf-8")).get("providers",[]):
             p=normalize(x)
             if p and p["name"].casefold() not in seen:seen.add(p["name"].casefold());providers.append(p)
+    overrides={}
+    if OVERRIDES.exists():
+        for o in json.loads(OVERRIDES.read_text(encoding="utf-8")):
+            overrides[str(o.get("name","")).strip().casefold()] = o
     for p in providers:
+        o=overrides.get(p["name"].strip().casefold())
+        if o:
+            for field in ("documentation_url","pricing_url","signup_url","rate_limit","free_tier_reset","requires_credit_card","commercial_use"):
+                if field in o and o[field] is not None:
+                    p[field]=o[field]
+            if o.get("free_tier"):
+                if isinstance(p.get("free_tier"),dict):
+                    p["free_tier"]=dict(p["free_tier"],details=o["free_tier"])
+                else:
+                    p["free_tier"]={"has_free_tier":True,"type":"official-source","details":o["free_tier"],"amount":o["free_tier"],"expiry":"See provider terms"}
+            p["verification_sources"]={"official":o.get("sources",[])}
+            p["last_verified"]=o.get("last_verified") or p.get("last_verified")
+            p["verified_by"]="official-source-review"
+            p["tier_verification_status"]="official-primary-source"
+            p["research_status"]="official-source-reviewed"
         if not p.get("verification_status"): p["verification_status"] = "provider-verified" if p.get("status") == "active" else "source-identified-not-fully-resolved"
         if not isinstance(p.get("requires_credit_card"), bool): p["requires_credit_card"] = None
         ft = p.get("free_tier")
