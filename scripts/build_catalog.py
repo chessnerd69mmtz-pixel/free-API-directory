@@ -22,6 +22,13 @@ def main():
         for x in json.loads((DATA/fn).read_text(encoding="utf-8")).get("providers",[]):
             p=normalize(x)
             if p and p["name"].casefold() not in seen:seen.add(p["name"].casefold());providers.append(p)
+    for p in providers:
+        if not p.get("verification_status"): p["verification_status"] = "provider-verified" if p.get("status") == "active" else "not-independently-verified"
+        if not isinstance(p.get("requires_credit_card"), bool): p["requires_credit_card"] = None
+        ft = p.get("free_tier")
+        if not isinstance(ft, dict) or isinstance(ft, list): p["free_tier"] = {"has_free_tier": None, "type": "unknown", "details": "Unverified", "amount": "Unverified", "expiry": "Unverified"}
+        elif ft.get("has_free_tier") not in (True, False, None): p["free_tier"] = dict(ft, has_free_tier=None)
+        if not p.get("status"): p["status"] = "catalog-only"
     providers.sort(key=lambda p:p["name"].casefold())
     cats={}
     for p in providers:
