@@ -736,5 +736,6 @@ function setCertificateName(){const current=localStorage.getItem(NAME_KEY)||"",n
 function printCertificate(type){if(!document.getElementById(type+"-certificate").classList.contains("show"))return;setCertificateName();window.print()}
 for(let n=1;n<=10;n++){["api","vibe"].forEach(t=>{const el=document.getElementById(lessonId(t,n));if(el&&done.includes(t+"-"+n)){const b=el.querySelector(".btn");if(b){b.textContent="✓ Lesson complete";b.disabled=true}}})}
 for(let n=11;n<=30;n++){["api","vibe"].forEach(t=>{const el=document.getElementById(lessonId(t,n));if(el&&done.includes(t+"-"+n)){const b=el.querySelector(".btn");if(b){b.textContent="✓ Lesson complete";b.disabled=true}}})}
+document.querySelectorAll(".practice-quiz,.final-assessment").forEach(q=>{if(!q.querySelector(".quiz-integrity-note"))q.insertAdjacentHTML("beforeend",`<p class="quiz-integrity-note">We encourage you to do this independently, using proper syntax and your own reasoning, before checking the answers.</p>`)});
 updateProgress();
 </script></body></html>
