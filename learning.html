@@ -32,7 +32,7 @@ table{width:100%;border-collapse:collapse;margin:12px 0}th,td{text-align:left;bo
 .course-card .course-action{display:inline-block;margin-top:12px;background:var(--blue);color:#fff;padding:10px 15px;border-radius:9px;font-weight:800}
 .course-card.active{border-color:var(--blue);box-shadow:0 0 0 3px rgba(30,90,220,.10)}
 .course-status{font-size:13px;font-weight:700;color:#53627a;margin-top:10px}
-.course-panel{display:none}.course-panel.active,.course-panel:target{display:block}
+.course-panel{display:none!important}.course-panel.active{display:block!important}
 .course-select-note{text-align:center;color:#53627a;margin:5px 0 18px}
 .course-switch{display:flex;justify-content:space-between;align-items:center;gap:12px;margin:18px 0}
 .course-switch button{border:1px solid var(--line);background:#fff;color:var(--ink);border-radius:9px;padding:9px 13px;cursor:pointer;font-weight:700}
@@ -783,10 +783,22 @@ function updateLocks(){
    if(quizResults[type]!==undefined){const s=quizResults[type],r=document.getElementById(type+"-quiz-result");if(r){r.className="exam-result "+(s>=7?"pass":"fail");r.innerHTML=s>=7?"🎉 <b>Passed — "+s+"/10.</b> Your certificate is unlocked.":"You previously scored <b>"+s+"/10</b>. You need at least 7/10 to pass. You can retake the quiz."}if(s>=7&&ready)unlockCertificate(type,s)}
  });
 }
-function selectCourse(type){const api=document.getElementById("api-course"),vibe=document.getElementById("vibe-course"),ac=document.getElementById("api-card"),vc=document.getElementById("vibe-card"),panel=type==="api"?api:vibe,other=type==="api"?vibe:api;if(!panel||!other)return;panel.classList.add("active");other.classList.remove("active");if(ac)ac.classList.toggle("active",type==="api");if(vc)vc.classList.toggle("active",type==="vibe");updateProgress();window.setTimeout(()=>panel.scrollIntoView({behavior:"smooth",block:"start"}),0)}
+function selectCourse(type){
+  type=type==="vibe"?"vibe":"api";
+  const api=document.getElementById("api-course"),vibe=document.getElementById("vibe-course"),ac=document.getElementById("api-card"),vc=document.getElementById("vibe-card");
+  const panel=type==="api"?api:vibe,other=type==="api"?vibe:api;
+  if(!panel||!other)return;
+  api.classList.remove("active");
+  vibe.classList.remove("active");
+  api.setAttribute("aria-hidden",type==="api"?"false":"true");
+  vibe.setAttribute("aria-hidden",type==="vibe"?"false":"true");
+  panel.classList.add("active");
+  if(ac)ac.classList.toggle("active",type==="api");
+  if(vc)vc.classList.toggle("active",type==="vibe");
+  updateProgress();
+  window.setTimeout(function(){panel.scrollIntoView({behavior:"smooth",block:"start"})},0);
+}
 window.selectCourse=selectCourse;
-window.addEventListener("hashchange",function(){const h=location.hash;if(h==="#vibe-course")selectCourse("vibe");else if(h==="#api-course")selectCourse("api")});
-if(location.hash==="#vibe-course")selectCourse("vibe");else if(location.hash==="#api-course")selectCourse("api");
 function toggle(id){document.getElementById(id).classList.toggle("show")}
 function quiz(btn,correct){const r=btn.parentElement.querySelector(".result");r.textContent=correct?"✓ Correct — good reasoning.":"✗ Not quite — review the lesson and try again.";r.style.color=correct?"#087443":"#b42318"}
 function submitPractice(id,correctAnswers){let score=0,total=correctAnswers.length;correctAnswers.forEach((ans,i)=>{const x=document.querySelector('input[name="'+id+'q'+i+'"]:checked');if(x&&Number(x.value)===ans)score++});const r=document.getElementById(id+"-result");if(!r)return;r.className="practice-result "+(score===total?"pass":"info");r.textContent="Score: "+score+"/"+total+(score===total?" — excellent.":" — review the related lessons and try again.");const pr=JSON.parse(localStorage.getItem(PRACTICE_KEY)||"{}");pr[id]=score;localStorage.setItem(PRACTICE_KEY,JSON.stringify(pr))}
