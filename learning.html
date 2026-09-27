@@ -41,7 +41,141 @@ const key = process.env.API_KEY;</code></pre><p>Production apps should use the h
   temperature: data.temperature_c,
   summary: data.conditions
 };</code></pre></div><div class="step"><h3>Step 5 — Add failure handling</h3><p>Handle network errors, non-2xx responses, malformed data, timeouts, and rate limits.</p></div><div class="step"><h3>Step 6 — Isolate provider-specific code</h3><p>Keep provider calls inside a small adapter so changing providers later is easier.</p></div><div class="do"><b>Exercise:</b> Pick a keyless public API from the directory and make one page with one input, one button, one loading state, one result, and one error message.</div><button class="btn" onclick="complete(7)">Mark lesson complete</button></article><article class="lesson" id="l8"><span class="tag">Builder</span><span class="tag">25 min</span><h2>8. Debugging: Find the Broken Layer</h2><p class="goal">Use evidence instead of random edits.</p><div class="step"><h3>Step 1 — Check the URL</h3><p>Verify protocol, host, version, path, parameters, and resource IDs.</p></div><div class="step"><h3>Step 2 — Check authentication</h3><p>Confirm whether a credential is needed, whether it is active, and whether it is placed correctly.</p></div><div class="step"><h3>Step 3 — Read the exact status code</h3><p>401, 403, 404, 429, and 500+ suggest different investigations.</p></div><div class="step"><h3>Step 4 — Compare against the provider example</h3><p>Run the smallest documented example and compare it with your request line by line.</p></div><div class="step"><h3>Step 5 — Check the environment</h3><p>Browser CORS, DNS, proxies, firewall rules, environment variables, and deployment configuration can affect results.</p></div><table><tr><th>Error</th><th>Start here</th></tr><tr><td>401</td><td>Credential and auth format</td></tr><tr><td>403</td><td>Permissions/plan/restrictions</td></tr><tr><td>404</td><td>URL/path/version/resource</td></tr><tr><td>429</td><td>Rate limit/quota/concurrency</td></tr><tr><td>5xx</td><td>Provider status/transient failure</td></tr><tr><td>CORS</td><td>Browser policy/provider browser support</td></tr></table><div class="do"><b>Exercise:</b> For a fake 429 error, write three possible causes before changing code. This builds evidence-based debugging habits.</div><button class="btn" onclick="complete(8)">Mark lesson complete</button></article><article class="lesson" id="l9"><span class="tag">Security</span><span class="tag">20 min</span><h2>9. Security: Protect Keys and User Data</h2><p class="goal">Learn the minimum security habits every API beginner should adopt.</p><div class="step"><h3>Step 1 — Classify the credential</h3><p>Determine whether it is intentionally browser-safe or a private server secret.</p></div><div class="step"><h3>Step 2 — Keep private secrets server-side</h3><pre><code>Browser → Your backend → Provider API
-          ↑ secret lives here</code></pre></div><div class="step"><h3>Step 3 — Control logging</h3><p>Do not log tokens, Authorization headers, passwords, or unnecessary personal data.</p></div><div class="step"><h3>Step 4 — Validate user input</h3><p>Check size, type, format, and allowed values before forwarding data to another service.</p></div><div class="step"><h3>Step 5 — Plan for exposure</h3><p>Have a rotation/revocation process before a leak occurs.</p></div><div class="mistake"><b>Common mistake:</b> Base64 encoding, minifying, or renaming a frontend key does not make it secret.</div><div class="do"><b>Exercise:</b> Draw your request path and circle where the private credential lives. If it is inside browser-delivered code, reconsider the architecture.</div><button class="btn" onclick="complete(9)">Mark lesson complete</button></article><article class="lesson" id="l10"><span class="tag">Project</span><span class="tag">45–90 min</span><h2>10. Final Guided Project: Build an API-Powered Mini App</h2><p class="goal">Discover, verify, test, integrate, debug, and document one API.</p><div class="step"><h3>Step 1 — Choose a tiny idea</h3><p>Try a weather card, quote generator, country lookup, public-data search, simple AI helper, or image search.</p></div><div class="step"><h3>Step 2 — Define success</h3><p>Write: “When I enter X, my application should request Y and display Z.”</p></div><div class="step"><h3>Step 3 — Find three candidates</h3><p>Use the <a href="usecases.html">Use Case Explorer</a> and <a href="finder.html">Finder</a>. Record why each candidate fits.</p></div><div class="step"><h3>Step 4 — Verify evidence</h3><p>Check official authentication, free allowance, limits, terms, and endpoint documentation.</p></div><div class="step"><h3>Step 5 — Make one real request</h3><p>Get a successful response before building a large UI.</p></div><div class="step"><h3>Step 6 — Build the smallest UI</h3><p>One input, button, loading state, result, and error message are enough for version one.</p></div><div class="step"><h3>Step 7 — Test failure deliberately</h3><p>Try an invalid parameter or simulated failure and confirm the app responds clearly.</p></div><div class="step"><h3>Step 8 — Document it</h3><p>Explain what it does, which API it uses, authentication, limits, setup, limitations, and official documentation.</p></div><div class="callout good"><b>Graduation test:</b> Another beginner should be able to follow your README, obtain their own credentials when needed, run the project, understand the limits, and recover from a common error.</div><button class="btn" onclick="complete(10)">Mark lesson complete</button></article><div class="lesson"><h2>🧠 Knowledge check</h2><p>These questions test reasoning rather than memorization.</p>
+          ↑ secret lives here</code></pre></div><div class="step"><h3>Step 3 — Control logging</h3><p>Do not log tokens, Authorization headers, passwords, or unnecessary personal data.</p></div><div class="step"><h3>Step 4 — Validate user input</h3><p>Check size, type, format, and allowed values before forwarding data to another service.</p></div><div class="step"><h3>Step 5 — Plan for exposure</h3><p>Have a rotation/revocation process before a leak occurs.</p></div><div class="mistake"><b>Common mistake:</b> Base64 encoding, minifying, or renaming a frontend key does not make it secret.</div><div class="do"><b>Exercise:</b> Draw your request path and circle where the private credential lives. If it is inside browser-delivered code, reconsider the architecture.</div><button class="btn" onclick="complete(9)">Mark lesson complete</button></article><article class="lesson" id="l10"><span class="tag">Project</span><span class="tag">45–90 min</span><h2>10. Final Guided Project: Build an API-Powered Mini App</h2><p class="goal">Discover, verify, test, integrate, debug, and document one API.</p><div class="step"><h3>Step 1 — Choose a tiny idea</h3><p>Try a weather card, quote generator, country lookup, public-data search, simple AI helper, or image search.</p></div><div class="step"><h3>Step 2 — Define success</h3><p>Write: “When I enter X, my application should request Y and display Z.”</p></div><div class="step"><h3>Step 3 — Find three candidates</h3><p>Use the <a href="usecases.html">Use Case Explorer</a> and <a href="finder.html">Finder</a>. Record why each candidate fits.</p></div><div class="step"><h3>Step 4 — Verify evidence</h3><p>Check official authentication, free allowance, limits, terms, and endpoint documentation.</p></div><div class="step"><h3>Step 5 — Make one real request</h3><p>Get a successful response before building a large UI.</p></div><div class="step"><h3>Step 6 — Build the smallest UI</h3><p>One input, button, loading state, result, and error message are enough for version one.</p></div><div class="step"><h3>Step 7 — Test failure deliberately</h3><p>Try an invalid parameter or simulated failure and confirm the app responds clearly.</p></div><div class="step"><h3>Step 8 — Document it</h3><p>Explain what it does, which API it uses, authentication, limits, setup, limitations, and official documentation.</p></div><div class="callout good"><b>Graduation test:</b> Another beginner should be able to follow your README, obtain their own credentials when needed, run the project, understand the limits, and recover from a common error.</div><button class="btn" onclick="complete(10)">Mark lesson complete</button></article><section id="vibecoding" class="course-section">
+<div class="course-header"><span class="tag">Absolute Beginner</span><span class="tag">Start from zero</span><h1>💻 Vibecoding From Scratch</h1>
+<p class="goal">A slow, friendly introduction to building things with AI. This course assumes you have <b>never written code before</b>. You do not need to know what HTML, JavaScript, GitHub, a terminal, or a framework is.</p>
+<div class="callout"><b>Important:</b> Vibecoding does not mean “ask AI for an app and hope it works.” It means using AI as a coding partner while you gradually learn what the pieces mean, how to give useful instructions, how to test the result, and how to fix mistakes.</div></div>
+
+<article class="lesson" id="v1"><span class="tag">Absolute beginner</span><span class="tag">15 min</span>
+<h2>V1. What Even Is Code?</h2><p class="goal">Understand the basic idea of code before touching an AI coding tool.</p>
+<div class="step"><h3>Step 1 — Think about instructions</h3><p>Imagine telling a robot: “Make me a sandwich.” A human can fill in missing details. A computer cannot. You would need instructions such as: get bread, put bread on a plate, add filling, put the second slice on top.</p></div>
+<div class="step"><h3>Step 2 — Code is instructions</h3><p><b>Code is a set of instructions written in a language a computer can process.</b> Different languages are designed for different jobs. You do not need to memorize a language to begin vibecoding.</p></div>
+<div class="step"><h3>Step 3 — A program is a collection of instructions</h3><p>A tiny program might say “show this message.” A larger program might contain thousands or millions of instructions that work together.</p></div>
+<div class="step"><h3>Step 4 — Code is stored in files</h3><p>Code usually lives in text files. For example, <code>index.html</code> can contain the structure of a webpage and <code>app.js</code> can contain JavaScript instructions.</p></div>
+<div class="do"><b>Say this aloud:</b> “Code is instructions. A program is code working together. A file is where some of that code is stored.” If those three sentences make sense, you are ready for the next lesson.</div>
+<div class="mistake"><b>Do not worry about this yet:</b> variables, functions, classes, frameworks, APIs, Git, npm, deployment, and databases. We will introduce concepts only when we need them.</div>
+<button class="btn" onclick="complete(11)">Mark lesson complete</button></article>
+
+<article class="lesson" id="v2"><span class="tag">Absolute beginner</span><span class="tag">15–20 min</span>
+<h2>V2. What Are Files, Folders, and a Website?</h2><p class="goal">Understand where your code lives and what you are actually building.</p>
+<div class="step"><h3>Step 1 — A folder is a container</h3><p>Think of a folder like a physical project box. Your project can contain many files inside it.</p></div>
+<div class="step"><h3>Step 2 — A file has a job</h3><p>A project might contain <code>index.html</code>, <code>style.css</code>, and <code>app.js</code>. They are simply different files containing different kinds of instructions.</p></div>
+<div class="step"><h3>Step 3 — HTML is the structure</h3><p>HTML tells the browser what things exist: headings, paragraphs, buttons, images, forms, and other elements.</p><pre><code>&lt;h1&gt;My First Website&lt;/h1&gt;
+&lt;p&gt;Hello!&lt;/p&gt;</code></pre></div>
+<div class="step"><h3>Step 4 — CSS controls appearance</h3><pre><code>h1 {
+  font-size: 40px;
+}</code></pre><p>CSS can control spacing, sizes, fonts, layouts, borders, and many other visual properties.</p></div>
+<div class="step"><h3>Step 5 — JavaScript adds behavior</h3><pre><code>button.addEventListener("click", () => {
+  alert("Hello!");
+});</code></pre><p>JavaScript can respond to clicks, change the page, request data, calculate things, and much more.</p></div>
+<div class="do"><b>Beginner exercise:</b> Open any webpage and right-click → Inspect if your browser offers that option. You do not need to understand the panel. Just notice that a webpage is made from inspectable pieces.</div>
+<button class="btn" onclick="complete(12)">Mark lesson complete</button></article>
+
+<article class="lesson" id="v3"><span class="tag">Absolute beginner</span><span class="tag">15 min</span>
+<h2>V3. What Is Vibecoding?</h2><p class="goal">Understand the basic AI-assisted coding loop without getting overwhelmed.</p>
+<div class="step"><h3>Step 1 — You describe the goal</h3><p>Instead of writing every instruction yourself, you can tell an AI coding assistant what you want.</p><pre><code>“Make a webpage with a large title,
+a text box, and a button.
+When I click the button, show
+the text I entered below it.”</code></pre></div>
+<div class="step"><h3>Step 2 — AI turns the description into code</h3><p>The AI may create HTML, CSS, and JavaScript. Your job is not to pretend you understand every line immediately.</p></div>
+<div class="step"><h3>Step 3 — You run it</h3><p>Open the page or run the project. Look at what actually happened.</p></div>
+<div class="step"><h3>Step 4 — You describe the problem</h3><p>If the button does nothing, tell the AI exactly that. Do not randomly rewrite everything.</p></div>
+<div class="step"><h3>Step 5 — Repeat</h3><p>This creates the basic vibecoding loop:</p><pre><code>Describe → Generate → Run → Observe → Explain problem → Fix → Repeat</code></pre></div>
+<div class="mistake"><b>Important:</b> “Vibecoding” should not mean blindly accepting code you do not understand. The goal of this course is to help you understand a little more after every iteration.</div>
+<button class="btn" onclick="complete(13)">Mark lesson complete</button></article>
+
+<article class="lesson" id="v4"><span class="tag">Absolute beginner</span><span class="tag">20 min</span>
+<h2>V4. Your First Vibecoding Prompt</h2><p class="goal">Learn how to ask an AI coding assistant for something small enough to succeed.</p>
+<div class="step"><h3>Step 1 — Start tiny</h3><p>Do not begin with “Build me the next Instagram.” Begin with one visible feature.</p></div>
+<div class="step"><h3>Step 2 — Say what you want</h3><pre><code>Build a simple webpage.
+Put a heading saying “My First App”.
+Add a button saying “Click me”.
+When the button is clicked,
+show “It works!” underneath it.</code></pre></div>
+<div class="step"><h3>Step 3 — Tell the AI your skill level</h3><pre><code>I am a complete beginner.
+Keep the code simple.
+Explain what each file does.
+Do not introduce frameworks yet.</code></pre></div>
+<div class="step"><h3>Step 4 — Ask for instructions, not just code</h3><p>A good beginner prompt asks the AI to tell you which files to create, where to put them, how to run the result, and what each file is doing.</p></div>
+<div class="step"><h3>Step 5 — Build one thing at a time</h3><p>Once the button works, ask for the next feature. This is much easier to debug than asking for 30 features at once.</p></div>
+<div class="do"><b>Copy this mental template:</b> “I am a beginner. I want to build ____. First help me make the smallest working version. Tell me what each file does and how to test it. Do not add extra features yet.”</div>
+<button class="btn" onclick="complete(14)">Mark lesson complete</button></article>
+
+<article class="lesson" id="v5"><span class="tag">Absolute beginner</span><span class="tag">20 min</span>
+<h2>V5. How to Tell AI What You Actually Want</h2><p class="goal">Learn the simplest form of a useful coding specification.</p>
+<div class="step"><h3>Step 1 — Describe the screen</h3><p>Example: “I want a white page with a heading at the top, a centered card, a text input, and a blue button.”</p></div>
+<div class="step"><h3>Step 2 — Describe the behavior</h3><p>Example: “When the button is clicked, read the text and display it underneath.”</p></div>
+<div class="step"><h3>Step 3 — Describe restrictions</h3><p>Example: “Keep it mobile friendly. Do not use external libraries. Keep the existing design.”</p></div>
+<div class="step"><h3>Step 4 — Describe what must not change</h3><p>This becomes especially important when editing an existing project: “Do not remove the current navigation, data, or working features.”</p></div>
+<div class="step"><h3>Step 5 — Ask for a plan before a large change</h3><p>For bigger projects, ask: “First explain which files need changing and why. Wait for me before making unrelated changes.”</p></div>
+<div class="do"><b>Practice:</b> Rewrite “Make my website cooler” into three concrete instructions: what should appear, what should happen, and what should stay unchanged.</div>
+<button class="btn" onclick="complete(15)">Mark lesson complete</button></article>
+
+<article class="lesson" id="v6"><span class="tag">Absolute beginner</span><span class="tag">20 min</span>
+<h2>V6. Your First Three Coding Ideas</h2><p class="goal">Understand only three concepts that will appear constantly: variables, functions, and conditions.</p>
+<div class="step"><h3>Step 1 — A variable is a named box</h3><pre><code>let name = "Aryan";</code></pre><p>Think: “Create a box called <code>name</code> and put this value inside.”</p></div>
+<div class="step"><h3>Step 2 — A function is a reusable instruction</h3><pre><code>function sayHello() {
+  alert("Hello!");
+}</code></pre><p>Think: “Give this group of instructions a name so I can run it later.”</p></div>
+<div class="step"><h3>Step 3 — An if statement is a decision</h3><pre><code>if (score &gt; 10) {
+  console.log("High score");
+}</code></pre><p>Think: “Only do this if the condition is true.”</p></div>
+<div class="step"><h3>Step 4 — Do not memorize syntax</h3><p>At this stage, your goal is recognition, not memorization. When you see these concepts in AI-generated code, you should roughly know what they mean.</p></div>
+<div class="do"><b>Beginner test:</b> Can you explain these three ideas using ordinary language? Variable = named box. Function = reusable instructions. If = decision.</div>
+<button class="btn" onclick="complete(16)">Mark lesson complete</button></article>
+
+<article class="lesson" id="v7"><span class="tag">Absolute beginner</span><span class="tag">20 min</span>
+<h2>V7. How to Make AI Change Existing Code Safely</h2><p class="goal">Learn the safest beginner workflow for modifying a project.</p>
+<div class="step"><h3>Step 1 — Save the working version</h3><p>Before a big change, make sure you can return to the version that currently works.</p></div>
+<div class="step"><h3>Step 2 — Describe the current behavior</h3><p>Tell the AI what already works. Example: “The search works and the navigation works. Keep both unchanged.”</p></div>
+<div class="step"><h3>Step 3 — Request one change</h3><p>Ask for one feature or one fix at a time.</p></div>
+<div class="step"><h3>Step 4 — Test immediately</h3><p>Do not stack five untested changes. If something breaks, you want to know which change caused it.</p></div>
+<div class="step"><h3>Step 5 — Ask the AI to explain the change</h3><p>Useful question: “Which files did you change, what did you change in each one, and why?”</p></div>
+<div class="mistake"><b>Common mistake:</b> Saying “fix everything” when you cannot yet tell what changed. Large uncontrolled edits make learning and debugging much harder.</div>
+<button class="btn" onclick="complete(17)">Mark lesson complete</button></article>
+
+<article class="lesson" id="v8"><span class="tag">Absolute beginner</span><span class="tag">20–30 min</span>
+<h2>V8. When Your AI-Coded App Breaks</h2><p class="goal">Learn what to do when the screen is blank, a button fails, or an error appears.</p>
+<div class="step"><h3>Step 1 — Do not panic</h3><p>Breaking code is normal. Professional developers break things too. The skill is learning how to locate the problem.</p></div>
+<div class="step"><h3>Step 2 — Describe exactly what happened</h3><p>Bad: “It doesn't work.” Better: “The page loads, but clicking Search does nothing. Before my last change, Search displayed results.”</p></div>
+<div class="step"><h3>Step 3 — Copy the exact error</h3><p>If the browser or terminal shows an error, give the AI the exact message. Do not paraphrase technical errors if you can avoid it.</p></div>
+<div class="step"><h3>Step 4 — Tell AI the last change</h3><p>The last known change is valuable evidence.</p></div>
+<div class="step"><h3>Step 5 — Ask for the smallest fix</h3><p>Say: “Identify the likely cause, explain it in beginner terms, and make the smallest change that fixes it. Do not rewrite unrelated files.”</p></div>
+<div class="do"><b>Golden debugging prompt:</b><pre><code>I am a beginner. This worked before my last change.
+Now [describe exact behavior].
+The exact error is: [paste error].
+Please explain the likely cause simply,
+then make the smallest safe fix.
+Do not remove working features.</code></pre></div>
+<button class="btn" onclick="complete(18)">Mark lesson complete</button></article>
+
+<article class="lesson" id="v9"><span class="tag">Beginner</span><span class="tag">20 min</span>
+<h2>V9. GitHub Without the Confusing Words</h2><p class="goal">Understand just enough GitHub to save and share a vibecoded project.</p>
+<div class="step"><h3>Step 1 — What is GitHub?</h3><p>GitHub is a platform where code projects can be stored, shared, reviewed, and changed over time.</p></div>
+<div class="step"><h3>Step 2 — What is a repository?</h3><p>A repository, often called a <b>repo</b>, is a project space containing your files and their history.</p></div>
+<div class="step"><h3>Step 3 — What is a commit?</h3><p>A commit is like a named checkpoint saying, “This is what my project looked like at this moment.”</p></div>
+<div class="step"><h3>Step 4 — What is GitHub Pages?</h3><p>For compatible static projects, GitHub Pages can publish website files so other people can open the site through a web address.</p></div>
+<div class="step"><h3>Step 5 — Keep the beginner workflow simple</h3><p>For now, remember only: <b>edit → test → save checkpoint → publish</b>. You can learn branches, merges, pull requests, and advanced Git later.</p></div>
+<div class="mistake"><b>Security warning:</b> Never put private API keys, passwords, or other secrets into a public repository.</div>
+<button class="btn" onclick="complete(19)">Mark lesson complete</button></article>
+
+<article class="lesson" id="v10"><span class="tag">Beginner</span><span class="tag">30 min</span>
+<h2>V10. Your First Complete Vibecoding Project</h2><p class="goal">Follow the entire beginner loop from an idea to a working tiny application.</p>
+<div class="step"><h3>Step 1 — Choose one tiny idea</h3><p>Build a counter, to-do list, quote viewer, calculator, simple quiz, or greeting page. Pick something with one main purpose.</p></div>
+<div class="step"><h3>Step 2 — Ask AI for the smallest version</h3><p>Tell it your skill level and ask for a plain HTML/CSS/JavaScript version unless you have a reason to use something more complicated.</p></div>
+<div class="step"><h3>Step 3 — Create the files</h3><p>Let the AI explain which files you need. Create them exactly where instructed.</p></div>
+<div class="step"><h3>Step 4 — Run it</h3><p>Open the page or use the project's documented run command. Your first goal is simply to see something working.</p></div>
+<div class="step"><h3>Step 5 — Add one feature</h3><p>Ask for exactly one improvement. Test it.</p></div>
+<div class="step"><h3>Step 6 — Break and fix something</h3><p>Use the debugging lesson. Give the AI the exact symptom and error.</p></div>
+<div class="step"><h3>Step 7 — Ask AI to explain your own project</h3><p>Ask: “Explain my project as if I am completely new. What does every file do? How does clicking the main button travel through the code?”</p></div>
+<div class="step"><h3>Step 8 — Save a checkpoint</h3><p>Keep a known-working version. This gives you confidence to experiment.</p></div>
+<div class="callout good"><b>You are not expected to become a programmer in one day.</b> The first goal is simply to understand the loop: <b>idea → prompt → code → run → observe → explain → improve → save</b>.</div>
+<button class="btn" onclick="complete(20)">Mark lesson complete</button></article>
+
+<div class="callout"><h2>🎯 Vibecoding beginner checklist</h2><ol><li>I understand that code is instructions.</li><li>I know what a file and folder are.</li><li>I roughly understand HTML, CSS, and JavaScript.</li><li>I can describe one tiny feature clearly.</li><li>I can ask AI to explain its changes.</li><li>I can test one change at a time.</li><li>I can report an error precisely.</li><li>I understand that public code must not contain private secrets.</li><li>I know what a GitHub repository is.</li><li>I can follow the idea → prompt → test → fix → repeat loop.</li></ol></div>
+</section>
+
+<div class="lesson"><h2>🧠 Knowledge check</h2><p>These questions test reasoning rather than memorization.</p>
 <div class="quiz"><div class="question"><b>1. A provider says “free credits,” but does not say they recur. What should you record?</b><button onclick="quiz(this,true)">Treat them as credits and verify whether they are recurring before assuming a permanent free tier</button><button onclick="quiz(this,false)">Assume the quota resets forever</button><button onclick="quiz(this,false)">Assume there is no limit</button><div class="result"></div></div>
 <div class="question"><b>2. Which design makes a provider easier to replace?</b><button onclick="quiz(this,false)">Put provider-specific calls throughout every UI component</button><button onclick="quiz(this,true)">Wrap provider calls behind a small adapter/interface</button><button onclick="quiz(this,false)">Hard-code provider response fields everywhere</button><div class="result"></div></div>
 <div class="question"><b>3. What is the correct response to a leaked API key?</b><button onclick="quiz(this,false)">Only delete the line from the latest commit</button><button onclick="quiz(this,true)">Revoke/rotate it, remove exposure, and replace it with a safer credential flow</button><button onclick="quiz(this,false)">Rename the variable and keep using the same key</button><div class="result"></div></div></div></div>
