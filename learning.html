@@ -1,1 +1,138 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Learning Hub — Free API Directory</title><style>body{font-family:system-ui,-apple-system,Segoe UI,sans-serif;margin:0;background:#f4f7fb;color:#142033}main{max-width:1100px;margin:auto;padding:32px 20px}a{color:#1d4ed8}.hero,.card{background:#fff;border:1px solid #e4e9f1;border-radius:16px;padding:22px;margin:14px 0}.hero{background:linear-gradient(135deg,#101828,#1d4ed8);color:#fff}.hero a{color:#dbeafe}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px}.card p{color:#667085;line-height:1.55}.pill{display:inline-block;padding:6px 10px;border-radius:999px;background:#eef4ff;color:#1d4ed8;font-size:13px}</style></head><body><main><p>← <a href="index.html">Free API Directory</a></p><section class="hero"><h1>📚 Learning Hub</h1><p>Practical guides for vibecoders learning how to discover, evaluate and use APIs.</p></section><div class="grid"><div class="card"><span class="pill">Beginner</span><h2>What is an API?</h2><p>Understand endpoints, requests, responses, authentication, parameters, headers and JSON.</p></div><div class="card"><span class="pill">Beginner</span><h2>API keys & security</h2><p>Learn where keys belong, why they should not be committed to public repositories, and how to rotate them.</p></div><div class="card"><span class="pill">Builder</span><h2>Choose a free API</h2><p>Compare limits, authentication, reliability, commercial-use terms and documentation before choosing a dependency.</p></div><div class="card"><span class="pill">Builder</span><h2>Build your first integration</h2><p>Start with the Finder, inspect the provider documentation, then test requests before connecting your application.</p></div><div class="card"><span class="pill">Vibecoder</span><h2>Build with multiple APIs</h2><p>Combine specialized services for AI, data, maps, email, images and automation instead of rebuilding every component.</p></div><div class="card"><span class="pill">Research</span><h2>Verify before shipping</h2><p>Free tiers, quotas and endpoints change. Treat directory data as a discovery aid and confirm critical details with providers.</p></div></div></main></body></html>
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Learning Hub — Free API Directory</title>
+<style>
+:root{--bg:#f5f7fb;--card:#fff;--ink:#172033;--muted:#667085;--line:#dfe5ee;--blue:#2563eb;--soft:#eff6ff;--green:#087443;--greenbg:#ecfdf3;--amber:#9a6700;--amberbg:#fff8e1}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.65}
+main{max-width:1180px;margin:auto;padding:24px 18px 70px}a{color:var(--blue)}.back{margin-bottom:18px}
+.hero{background:linear-gradient(135deg,#111827,#2563eb);color:white;border-radius:20px;padding:34px;margin-bottom:20px}.hero h1{font-size:clamp(30px,5vw,48px);margin:0 0 8px}.hero p{max-width:850px;margin:0;color:#e5efff;font-size:17px}
+.layout{display:grid;grid-template-columns:245px 1fr;gap:18px;align-items:start}.toc{position:sticky;top:16px;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:15px}.toc a{display:block;padding:8px 10px;text-decoration:none;border-radius:9px}.toc a:hover{background:var(--soft)}
+.lesson{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:25px;margin-bottom:18px;scroll-margin-top:15px}.lesson h2{margin-top:0;font-size:27px}.lesson h3{margin-top:24px}.tag{display:inline-block;border-radius:999px;background:var(--soft);color:#1d4ed8;padding:4px 10px;font-size:12px;font-weight:700;margin-right:5px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:13px}.mini{border:1px solid var(--line);border-radius:13px;padding:15px;background:#fbfcfe}.mini h3{margin:0 0 6px}.mini p{margin:0;color:var(--muted)}
+pre{background:#101828;color:#e6edf7;border-radius:12px;padding:16px;overflow:auto;font-size:13px;line-height:1.55}code{font-family:ui-monospace,SFMono-Regular,Consolas,monospace}
+.callout{border-left:4px solid var(--blue);background:var(--soft);padding:14px 16px;border-radius:9px;margin:15px 0}.good{border-left-color:#16a34a;background:var(--greenbg)}.warn{border-left-color:#d99b00;background:var(--amberbg)}
+table{width:100%;border-collapse:collapse;margin:12px 0}th,td{text-align:left;border-bottom:1px solid var(--line);padding:10px;vertical-align:top}th{background:#f8fafc}
+.question{border:1px solid var(--line);border-radius:12px;padding:15px;margin:12px 0}.question button,.btn{border:0;background:var(--blue);color:#fff;border-radius:9px;padding:9px 13px;cursor:pointer;font-weight:700}.answer{display:none;margin-top:10px}.answer.show{display:block}.quiz button{display:block;background:#fff;color:var(--ink);border:1px solid var(--line);margin:8px 0;width:100%;text-align:left}.quiz button:hover{border-color:var(--blue);background:var(--soft)}.result{font-weight:700;margin-top:10px}.progress{height:8px;background:#e6eaf0;border-radius:99px;overflow:hidden;margin:15px 0}.progress span{display:block;height:100%;width:0;background:#fff;transition:.2s}
+@media(max-width:800px){.layout{grid-template-columns:1fr}.toc{position:static}.hero{padding:25px}.lesson{padding:19px}}
+</style></head>
+<body><main>
+<div class="back">← <a href="index.html">Free API Directory</a></div>
+<section class="hero"><h1>📚 Learning Hub</h1><p>A hands-on course for understanding APIs, choosing free tiers, making requests, debugging failures, protecting credentials, and turning a provider into a real application feature.</p><div class="progress"><span id="progress"></span></div><small id="progressText">0 of 10 lessons completed</small></section>
+<div class="layout"><aside class="toc"><strong>Course map</strong>
+<a href="#l1">1. API fundamentals</a><a href="#l2">2. HTTP requests</a><a href="#l3">3. JSON & responses</a><a href="#l4">4. Authentication</a><a href="#l5">5. Free tiers & quotas</a><a href="#l6">6. Choosing an API</a><a href="#l7">7. Build an integration</a><a href="#l8">8. Debugging</a><a href="#l9">9. Security</a><a href="#l10">10. Ship a project</a><a href="finder.html">🔎 Practice in Finder</a><a href="usecases.html">🧩 Explore Use Cases</a></aside>
+<section>
+
+<article class="lesson" id="l1"><span class="tag">Beginner</span><span class="tag">10 min</span><h2>1. What is an API?</h2>
+<p>An API (Application Programming Interface) is a defined way for one program to ask another program for data or an action. Think of it as a contract: the client sends a request in an accepted format, and the server returns a response.</p>
+<div class="grid"><div class="mini"><h3>Client</h3><p>Your website, script, mobile app, or backend that makes the request.</p></div><div class="mini"><h3>Endpoint</h3><p>A URL representing a particular operation or resource, such as <code>/users</code> or <code>/weather</code>.</p></div><div class="mini"><h3>Request</h3><p>Method + URL + optional query/body + headers.</p></div><div class="mini"><h3>Response</h3><p>Status code + headers + usually a JSON body.</p></div></div>
+<h3>Example: a weather request</h3><pre><code>GET https://api.example.com/weather?city=Bengaluru</code></pre>
+<p>The server might respond with JSON containing temperature, humidity, and a forecast. Your application can then turn that raw data into a card, chart, alert, or recommendation.</p>
+<div class="callout"><b>Key idea:</b> An API is not the same thing as a website. A website is designed for humans to read; an API is designed for software to exchange structured data or trigger actions.</div>
+<div class="question"><b>Check yourself:</b> Which part tells a server which operation you want?<br><button onclick="toggle('a1')">Show answer</button><div id="a1" class="answer">Usually the HTTP method plus the endpoint. For example, <code>GET /users</code> asks to retrieve users, while <code>POST /users</code> commonly asks to create one.</div></div>
+<button class="btn" onclick="complete(1)">Mark lesson complete</button></article>
+
+<article class="lesson" id="l2"><span class="tag">Beginner</span><span class="tag">12 min</span><h2>2. How HTTP requests work</h2>
+<p>Most web APIs use HTTP. The method communicates intent. The URL identifies the target. Headers carry metadata, and a body can carry data for methods such as POST, PUT, or PATCH.</p>
+<table><thead><tr><th>Method</th><th>Typical purpose</th><th>Example</th></tr></thead><tbody><tr><td><code>GET</code></td><td>Read data</td><td><code>GET /books/42</code></td></tr><tr><td><code>POST</code></td><td>Create or trigger an operation</td><td><code>POST /messages</code></td></tr><tr><td><code>PUT</code></td><td>Replace/update a resource</td><td><code>PUT /users/42</code></td></tr><tr><td><code>PATCH</code></td><td>Partially update a resource</td><td><code>PATCH /users/42</code></td></tr><tr><td><code>DELETE</code></td><td>Remove a resource</td><td><code>DELETE /users/42</code></td></tr></tbody></table>
+<h3>Query parameters vs request body</h3><p>Query parameters commonly refine a request, such as <code>?page=2&amp;limit=20</code>. A JSON body is commonly used when sending structured data to POST/PUT/PATCH endpoints.</p>
+<pre><code>curl "https://api.example.com/books?limit=10" \
+  -H "Accept: application/json"</code></pre>
+<div class="callout"><b>Practice:</b> Open the <a href="playground.html">API Playground</a> and try a documented public endpoint. Browser requests can fail because of CORS, authentication, or provider policy; that failure itself is useful debugging information.</div>
+<button class="btn" onclick="complete(2)">Mark lesson complete</button></article>
+
+<article class="lesson" id="l3"><span class="tag">Beginner</span><span class="tag">12 min</span><h2>3. JSON, status codes, and responses</h2>
+<p>JSON is a common format for API responses because it represents objects, arrays, strings, numbers, booleans, and null in a machine-readable form.</p>
+<pre><code>{
+  "city": "Bengaluru",
+  "temperature_c": 27.4,
+  "conditions": "Cloudy",
+  "alerts": []
+}</code></pre>
+<h3>Read the status code before trusting the body</h3><div class="grid"><div class="mini"><h3>2xx</h3><p>Success. 200 is common for a successful GET; 201 commonly means created.</p></div><div class="mini"><h3>4xx</h3><p>Client/request problem. 401 often means authentication is missing or invalid; 429 commonly means rate limiting.</p></div><div class="mini"><h3>5xx</h3><p>Server-side failure. The provider may be temporarily unable to complete a valid request.</p></div></div>
+<h3>Robust client logic</h3><pre><code>const response = await fetch(url);
+if (!response.ok) throw new Error("API returned HTTP " + response.status);
+const data = await response.json();
+console.log(data);</code></pre>
+<div class="callout good"><b>Habit:</b> Do not blindly assume a response has every field. APIs evolve. Validate important fields and handle missing, null, or unexpected values.</div>
+<button class="btn" onclick="complete(3)">Mark lesson complete</button></article>
+
+<article class="lesson" id="l4"><span class="tag">Beginner</span><span class="tag">15 min</span><h2>4. Authentication and API keys</h2>
+<p>Authentication tells a provider who or what is making a request. Common patterns include API keys, bearer tokens, OAuth access tokens, signed requests, and completely keyless endpoints.</p>
+<h3>Three common patterns</h3><pre><code>// API key in a custom header
+X-API-Key: YOUR_KEY
+
+// Bearer token
+Authorization: Bearer YOUR_TOKEN
+
+// Query parameter (only when explicitly documented)
+?api_key=YOUR_KEY</code></pre>
+<div class="callout warn"><b>Security rule:</b> Never paste a real secret into source code, screenshots, public issues, or a public Git repository. A frontend application cannot safely hide a private server credential from its users.</div>
+<h3>Server-side credentials</h3><pre><code># .env
+API_KEY=replace-with-your-secret
+
+# application code
+const key = process.env.API_KEY;</code></pre>
+<p>For a browser-only application, prefer a key specifically designed for public/browser use, provider-supported domain restrictions, or a backend proxy. Follow the provider's current documentation.</p>
+<div class="question"><b>Scenario:</b> Your public GitHub repository contains <code>const API_KEY = "sk-..."</code>. What should you do?<br><button onclick="toggle('a4')">Reveal answer</button><div id="a4" class="answer"><div class="callout warn">Remove the exposed key from the code/history where appropriate, revoke or rotate it with the provider, and replace it with a safer credential flow. Deleting the visible line alone does not make an exposed secret safe.</div></div></div>
+<button class="btn" onclick="complete(4)">Mark lesson complete</button></article>
+
+<article class="lesson" id="l5"><span class="tag">Builder</span><span class="tag">15 min</span><h2>5. Understanding free tiers, quotas, and limits</h2>
+<p>“Free API” can mean a permanently free quota, a temporary trial, free credits, a community endpoint, or a limited free plan with conditions.</p>
+<table><thead><tr><th>Term</th><th>What to investigate</th></tr></thead><tbody><tr><td>Requests/month</td><td>How many calls are included over the billing period?</td></tr><tr><td>Requests/day</td><td>Is there a daily cap even when monthly capacity remains?</td></tr><tr><td>Rate limit</td><td>How many requests can be made per second/minute?</td></tr><tr><td>Tokens</td><td>For AI APIs, is quota measured in input/output tokens rather than requests?</td></tr><tr><td>Credits</td><td>Are credits recurring, one-time, promotional, or tied to a payment method?</td></tr></tbody></table>
+<h3>Do the math</h3><p>If your app makes 20 requests per user per day and you expect 100 active users:</p><pre><code>20 × 100 × 30 = 60,000 requests/month</code></pre>
+<p>A “100,000 requests/month” allowance could cover that workload in raw request count, but you still need to check rate limits, endpoint-specific quotas, authentication, data restrictions, and terms.</p>
+<div class="callout"><b>Directory principle:</b> Treat “free” as a claim that needs evidence. Open the provider's current official pricing/limits page before designing around a critical quota.</div>
+<a class="btn" href="calculator.html" style="display:inline-block;text-decoration:none">Open Free-Tier Calculator</a> <button class="btn" onclick="complete(5)">Mark lesson complete</button></article>
+
+<article class="lesson" id="l6"><span class="tag">Builder</span><span class="tag">15 min</span><h2>6. How to choose an API</h2>
+<p>Do not choose solely because a provider is free. Start with the requirements of the feature you are building.</p>
+<div class="grid"><div class="mini"><h3>1. Capability</h3><p>Does the API provide the operation and data you need?</p></div><div class="mini"><h3>2. Access</h3><p>Key, OAuth, account, card, IP restrictions, CORS, or keyless?</p></div><div class="mini"><h3>3. Limits</h3><p>Will quota and rate limits cover your expected workload?</p></div><div class="mini"><h3>4. Terms</h3><p>Check commercial use, attribution, redistribution, retention, and data restrictions.</p></div><div class="mini"><h3>5. Reliability</h3><p>Look for documentation quality, status information, change history, and evidence freshness.</p></div><div class="mini"><h3>6. Exit plan</h3><p>Can you replace the provider if pricing, limits, or availability changes?</p></div></div>
+<h3>Selection workflow</h3><ol><li>Describe the feature in one sentence.</li><li>Use <a href="usecases.html">Use Cases</a> to discover relevant providers.</li><li>Use <a href="finder.html">Finder</a> to narrow authentication, free-tier, card, and verification constraints.</li><li>Open the provider profile and read evidence/source links.</li><li>Read the provider's own docs and pricing.</li><li>Prototype one real request before committing your architecture.</li></ol>
+<button class="btn" onclick="complete(6)">Mark lesson complete</button></article>
+
+<article class="lesson" id="l7"><span class="tag">Builder</span><span class="tag">20 min</span><h2>7. Build your first integration</h2>
+<p>Start small: one endpoint, one successful response, one useful transformation. Then add retries, validation, caching, logging, and user-facing error handling.</p>
+<h3>JavaScript example</h3><pre><code>async function getWeather(city) {
+  const url = "https://api.example.com/weather?city=" + encodeURIComponent(city);
+  const response = await fetch(url);
+  if (!response.ok) throw new Error("Weather API failed: HTTP " + response.status);
+  const data = await response.json();
+  if (typeof data.temperature_c !== "number") throw new Error("Unexpected API response");
+  return { city, temperature: data.temperature_c };
+}</code></pre>
+<h3>What production code adds</h3><ul><li>Timeouts so a hung request does not freeze your UI forever.</li><li>Retries only where retrying makes sense, often with exponential backoff.</li><li>Rate-limit handling for HTTP 429.</li><li>Input and output validation.</li><li>Logging that excludes secrets and sensitive payloads.</li><li>Caching where stale data is acceptable.</li><li>A fallback provider if the feature is business-critical.</li></ul>
+<div class="callout good"><b>Build rule:</b> Keep provider-specific code behind a small adapter function. Changing providers should not require rewriting your entire application.</div>
+<button class="btn" onclick="complete(7)">Mark lesson complete</button></article>
+
+<article class="lesson" id="l8"><span class="tag">Builder</span><span class="tag">15 min</span><h2>8. Debug API failures systematically</h2>
+<p>When an API call fails, identify which layer failed instead of randomly changing code.</p>
+<table><thead><tr><th>Symptom</th><th>First things to check</th></tr></thead><tbody><tr><td>401 Unauthorized</td><td>Key/token exists, correct header format, correct environment, expired/revoked credential.</td></tr><tr><td>403 Forbidden</td><td>Permissions, plan restrictions, domain/IP restrictions, endpoint access, account status.</td></tr><tr><td>404 Not Found</td><td>Base URL, endpoint path, API version, resource identifier.</td></tr><tr><td>409 Conflict</td><td>State conflict or duplicate resource; read the endpoint documentation.</td></tr><tr><td>429 Too Many Requests</td><td>Rate limit, Retry-After header, concurrency, quota window.</td></tr><tr><td>5xx</td><td>Provider outage or transient server failure; check provider status/docs.</td></tr><tr><td>Browser CORS error</td><td>The browser may be blocked before your code can read the response. Test from a permitted backend or documented browser flow.</td></tr></tbody></table>
+<div class="quiz"><div class="question"><b>Quick quiz:</b> cURL works but the browser fails with a CORS error. Which conclusion is safest?<button onclick="quiz(this,false)">The API key is definitely wrong</button><button onclick="quiz(this,true)">The browser's cross-origin policy may be blocking the request</button><button onclick="quiz(this,false)">The provider is definitely offline</button><div class="result"></div></div></div>
+<button class="btn" onclick="complete(8)">Mark lesson complete</button></article>
+
+<article class="lesson" id="l9"><span class="tag">Security</span><span class="tag">12 min</span><h2>9. API security checklist</h2>
+<ul><li>Keep server secrets in environment/secret management systems.</li><li>Rotate credentials after suspected exposure.</li><li>Use least-privilege permissions where supported.</li><li>Do not log Authorization headers or full sensitive request bodies.</li><li>Validate untrusted user input before sending it to an API.</li><li>Set request timeouts and sensible size limits.</li><li>Use HTTPS and follow provider security requirements.</li><li>Review data retention and privacy terms for sensitive workloads.</li></ul>
+<div class="callout warn"><b>Important:</b> Browser local storage can be useful for a personal convenience tool, but it should not be presented as a production-grade secret vault. Anyone with access to the browser profile may be able to access stored data.</div>
+<a class="btn" href="security.html" style="display:inline-block;text-decoration:none">Open Security Center</a> <button class="btn" onclick="complete(9)">Mark lesson complete</button></article>
+
+<article class="lesson" id="l10"><span class="tag">Project</span><span class="tag">30–60 min</span><h2>10. Final project: build something real</h2>
+<p>Choose one project and apply the course from discovery through a working request.</p>
+<div class="grid"><div class="mini"><h3>Weather dashboard</h3><p>Search a city, call a weather API, validate the response, and display current conditions.</p></div><div class="mini"><h3>AI study helper</h3><p>Send a prompt through a documented AI API and show the response with usage/error handling.</p></div><div class="mini"><h3>Image utility</h3><p>Use an image API to search, transform, or classify images and build a simple result gallery.</p></div><div class="mini"><h3>Research dashboard</h3><p>Combine a data API with charts, caching, and clear source attribution.</p></div></div>
+<h3>Project checklist</h3><ol><li>Define the feature and expected workload.</li><li>Find at least three candidate APIs.</li><li>Record authentication, free allowance, rate limits, and terms from provider sources.</li><li>Test a real request.</li><li>Keep secrets out of public source.</li><li>Handle non-2xx responses.</li><li>Validate returned data.</li><li>Document the provider/version you integrated.</li><li>Create a fallback or replacement plan if the feature matters.</li></ol>
+<div class="callout good"><b>You are finished when:</b> another developer can understand the integration, obtain their own credentials when required, run it safely, and understand its current limits.</div>
+<button class="btn" onclick="complete(10)">Mark lesson complete</button></article>
+
+<div class="lesson"><h2>🧠 Knowledge check</h2><p>These questions test reasoning rather than memorization.</p>
+<div class="quiz"><div class="question"><b>1. A provider says “free credits,” but does not say they recur. What should you record?</b><button onclick="quiz(this,true)">Treat them as credits and verify whether they are recurring before assuming a permanent free tier</button><button onclick="quiz(this,false)">Assume the quota resets forever</button><button onclick="quiz(this,false)">Assume there is no limit</button><div class="result"></div></div>
+<div class="question"><b>2. Which design makes a provider easier to replace?</b><button onclick="quiz(this,false)">Put provider-specific calls throughout every UI component</button><button onclick="quiz(this,true)">Wrap provider calls behind a small adapter/interface</button><button onclick="quiz(this,false)">Hard-code provider response fields everywhere</button><div class="result"></div></div>
+<div class="question"><b>3. What is the correct response to a leaked API key?</b><button onclick="quiz(this,false)">Only delete the line from the latest commit</button><button onclick="quiz(this,true)">Revoke/rotate it, remove exposure, and replace it with a safer credential flow</button><button onclick="quiz(this,false)">Rename the variable and keep using the same key</button><div class="result"></div></div></div></div>
+</section></div></main>
+<script>
+const KEY="freeApiLearningProgress",done=JSON.parse(localStorage.getItem(KEY)||"[]");
+function save(){localStorage.setItem(KEY,JSON.stringify(done));updateProgress()}
+function complete(n){if(!done.includes(n))done.push(n);save();const el=document.querySelector("#l"+n+" .btn");if(el){el.textContent="✓ Lesson complete";el.disabled=true}}
+function updateProgress(){const n=done.length;document.getElementById("progress").style.width=(n/10*100)+"%";document.getElementById("progressText").textContent=n+" of 10 lessons completed"}
+function toggle(id){document.getElementById(id).classList.toggle("show")}
+function quiz(btn,correct){const r=btn.parentElement.querySelector(".result");r.textContent=correct?"✓ Correct — good reasoning.":"✗ Not quite — review the lesson and try again.";r.style.color=correct?"#087443":"#b42318"}
+done.forEach(complete);updateProgress();
+</script></body></html>
