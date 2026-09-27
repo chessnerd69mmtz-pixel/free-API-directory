@@ -153,8 +153,20 @@ tr:hover td{background:color-mix(in srgb,var(--surface2) 74%, transparent)}
   let catalog=new Map();
   let allCatalog=[];
 
+  const DIRECT_OVERRIDES={
+    "solar system opendata":"https://api.le-systeme-solaire.net/en/",
+    "systembolaget":"https://api-portal.systembolaget.se/",
+    "agentic engineering jobs":"https://agentic-engineering-jobs.com/api-reference",
+    "ais hub":"https://www.aishub.net/api",
+    "apimetro":"https://www.apimetro.dev/swagger/",
+    "asana":"https://developers.asana.com/reference/rest-api-reference",
+    "clockify":"https://docs.developer.clockify.me/",
+    "dungeons and dragons (alternate)":"https://open5e.com/"
+  };
   function providerDestination(p, fallback){
+    const override=DIRECT_OVERRIDES[String(p&&p.name||"").trim().toLowerCase()];
     const candidates=[
+      override,
       fallback,
       p.signup_url,
       p.documentation_url,
@@ -198,7 +210,7 @@ tr:hover td{background:color-mix(in srgb,var(--surface2) 74%, transparent)}
 
   function openDirect(result){
     const url=providerDestination(result.p,result.student&&result.student.url);
-    if(url) window.location.href=url;
+    if(url) window.open(url,"_blank","noopener,noreferrer");
     else showSearchPanel(result);
   }
 
