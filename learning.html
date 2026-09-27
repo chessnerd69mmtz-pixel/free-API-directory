@@ -89,12 +89,12 @@ document.addEventListener("DOMContentLoaded",function(){
 <div class="course-card" id="api-card" onclick="selectCourse('api')" role="button" tabindex="0">
 <span class="tag">API course</span><h2>🌐 API Fundamentals</h2>
 <p>Learn APIs from zero: how apps ask for information, how keys work, how free limits work, how to fix common problems, and how to build a small connection.</p>
-<div class="course-status" id="api-card-progress">0 of 10 lessons completed</div><a class="course-action" href="#api-course" data-start-course="api">Start API course →</a><button type="button" class="course-download" onclick="event.stopPropagation();downloadCourseDoc('api')">⬇ Download Word course</button>
+<div class="course-status" id="api-card-progress">0 of 10 lessons completed</div><button type="button" class="course-action" onclick="startCourseNow('api')">Start API course →</button><button type="button" class="course-download" onclick="event.stopPropagation();downloadCourseDoc('api')">⬇ Download Word course</button>
 </div>
 <div class="course-card" id="vibe-card" onclick="selectCourse('vibe')" role="button" tabindex="0">
 <span class="tag">Absolute beginner</span><h2>💻 Vibecoding From Scratch</h2>
 <p>Start with no coding knowledge. Learn what code and files are, how to give AI clear instructions, how to test what it makes, and how to build a small project step by step.</p>
-<div class="course-status" id="vibe-card-progress">0 of 10 lessons completed</div><a class="course-action" href="#vibe-course" data-start-course="vibe">Start Vibecoding →</a><button type="button" class="course-download" onclick="event.stopPropagation();downloadCourseDoc('vibe')">⬇ Download Word course</button>
+<div class="course-status" id="vibe-card-progress">0 of 10 lessons completed</div><button type="button" class="course-action" onclick="startCourseNow('vibe')">Start Vibecoding →</button><button type="button" class="course-download" onclick="event.stopPropagation();downloadCourseDoc('vibe')">⬇ Download Word course</button>
 </div>
 </div>
 <div class="layout"><aside class="toc"><strong>Course map</strong>
@@ -783,6 +783,7 @@ function updateLocks(){
    if(quizResults[type]!==undefined){const s=quizResults[type],r=document.getElementById(type+"-quiz-result");if(r){r.className="exam-result "+(s>=7?"pass":"fail");r.innerHTML=s>=7?"🎉 <b>Passed — "+s+"/10.</b> Your certificate is unlocked.":"You previously scored <b>"+s+"/10</b>. You need at least 7/10 to pass. You can retake the quiz."}if(s>=7&&ready)unlockCertificate(type,s)}
  });
 }
+function startCourseNow(type){selectCourse(type);return false;}
 function selectCourse(type){const api=document.getElementById("api-course"),vibe=document.getElementById("vibe-course"),ac=document.getElementById("api-card"),vc=document.getElementById("vibe-card"),panel=type==="api"?api:vibe,other=type==="api"?vibe:api;if(!panel||!other)return;panel.classList.add("active");other.classList.remove("active");if(ac)ac.classList.toggle("active",type==="api");if(vc)vc.classList.toggle("active",type==="vibe");updateProgress();window.setTimeout(()=>panel.scrollIntoView({behavior:"smooth",block:"start"}),0)}
 window.selectCourse=selectCourse;
 window.addEventListener("hashchange",function(){const h=location.hash;if(h==="#vibe-course")selectCourse("vibe");else if(h==="#api-course")selectCourse("api")});
