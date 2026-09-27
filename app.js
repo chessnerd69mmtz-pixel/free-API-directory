@@ -1,4 +1,4 @@
-const DATA_VERSION = "20260927-02";
+const DATA_VERSION = "20260927-03";
 const INDEX_URL = new URL("data/catalog-index.json?v=" + DATA_VERSION, document.baseURI).href;
 const PROFILE_URL = new URL("data/provider_profiles.json?v=" + DATA_VERSION, document.baseURI).href;
 const CHANGE_URL = new URL("data/change_log.json?v=" + DATA_VERSION, document.baseURI).href;
@@ -650,7 +650,7 @@ async function recommend() {
       const s=scoreProvider(p,profile,form);
       return {p,profile,score:s.score,reasons:s.reasons,relevanceRatio:s.relevanceRatio,matched:s.matched};
     })
-    .filter(x=>x.relevanceRatio>0 || (form.free!=="any" || form.access!=="any" || form.commercial!=="any" || form.scale!=="any"))
+    .filter(x=>x.relevanceRatio>0)
     .sort((x,y)=>y.score-x.score || y.relevanceRatio-x.relevanceRatio || String(y.profile.last_verified||"").localeCompare(String(x.profile.last_verified||"")) || x.p.name.localeCompare(y.p.name))
     .slice(0,10);
 
