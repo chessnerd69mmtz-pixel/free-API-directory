@@ -625,7 +625,7 @@ async function freeCalculator(){
    if(monthlyReqLimit!==null) freeCoverage=requests<=monthlyReqLimit?"Within documented monthly request allowance":Math.max(0,monthlyReqLimit).toLocaleString()+" free requests/month; "+Math.max(0,requests-monthlyReqLimit).toLocaleString()+" requests above it";
    else if(monthlyTokenLimit!==null) freeCoverage=(totalInput+totalOutput)<=monthlyTokenLimit?"Within documented monthly token allowance":"Above documented monthly token allowance";
    else if(dailyReqLimit!==null) freeCoverage=Math.ceil(requests/30)<=dailyReqLimit?"Approx. within daily allowance at a 30-day average":"Average daily workload exceeds documented daily allowance";
-   else if(b&&b.usage_quality) freeCoverage="Free-tier access may exist, but the numeric free quota is model/tier-specific in the evidence layer.";
+   else if(p.usage_quality) freeCoverage="Free-tier access may exist, but the numeric free quota is model/tier-specific in the evidence layer.";
 
    const pricingSource=b&&b.source_urls?b.source_urls:[]; 
    const evidenceLabel=sourceType==="official"?"Directory-verified official pricing":sourceType==="user"?"User-supplied pricing":"Provider-specific pricing not machine-readable";
