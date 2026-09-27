@@ -87,3 +87,9 @@ The catalog now has a second, source-linked evidence layer at `data/usage_qualit
 The directory distinguishes **official** evidence from **community/forum** evidence. Community evidence is useful for discovering current behavior or provider announcements, but it is never silently promoted to a provider-confirmed fact. This is especially important when a provider changes a free tier or requires a payment method that older lists still describe differently.
 
 Examples of current evidence corrections include providers whose old “free” claims no longer hold, plan-specific rather than universal rate limits, one-time credits versus recurring quotas, hard database/storage/compute limits, and region or lifecycle restrictions. The provider profile and Data Quality pages expose these distinctions so users can judge practical usability instead of relying on a single green “free” label.
+
+### Billing cost estimation
+
+The Free-Tier Calculator also estimates monthly paid cost when source-linked pricing is available. It supports token pricing (input, cached input and output), per-request charges, monthly base fees, and documented monthly credits. Current machine-readable pricing includes selected OpenAI, Gemini and Mistral models; Hugging Face and OpenRouter are treated as provider/model pass-through pricing where an exact model rate is not stored. A custom-pricing mode is available for any provider whose current pricing cannot be represented safely in the directory.
+
+Billing estimates are explicitly labeled as provider-verified or user-supplied. They are estimates, not invoices, and may exclude taxes, discounts, enterprise commitments, tool-specific charges, region/service-tier premiums and pricing changes after the evidence verification date.
