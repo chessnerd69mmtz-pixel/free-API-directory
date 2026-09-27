@@ -239,7 +239,6 @@ tr:hover td{background:color-mix(in srgb,var(--surface2) 74%, transparent)}
     const hits=searchProviders(q);
     if(hits.length){
       showSearchPanel(hits[0]);
-      const exact=/^\s*$/; // keeps search operation deterministic without redirects on non-matches
       const url=providerDestination(hits[0].p,hits[0].student&&hits[0].student.url);
       if(url && hits[0].score>=500){
         window.location.href=url;
