@@ -61,6 +61,8 @@ table{width:100%;border-collapse:collapse;margin:12px 0}th,td{text-align:left;bo
 .course-panel.slide-mode .stage-banner{display:none}
 .course-panel.slide-mode .lesson{display:none}
 .course-panel.slide-mode .lesson.current-slide{display:block}
+.course-panel.slide-mode .practice-area,.course-panel.slide-mode .final-assessment,.course-panel.slide-mode .certificate{display:none}
+.course-panel.slide-mode.show-extras .practice-area,.course-panel.slide-mode.show-extras .final-assessment,.course-panel.slide-mode.show-extras .certificate{display:block}
 @media(max-width:650px){.slide-controls{position:static;flex-wrap:wrap}.slide-counter{order:-1;width:100%}.course-download{margin-left:0}}
 \n</style><script>
 document.addEventListener("DOMContentLoaded",function(){
@@ -734,8 +736,8 @@ function buildCourseSlides(type){
  first.parentNode.insertBefore(controls,first);
  const help=document.createElement("p");help.className="slide-help";help.textContent="One lesson at a time. Use Previous and Next to move through the course.";controls.parentNode.insertBefore(help,controls.nextSibling);
  const prev=controls.querySelector(".slide-prev"),next=controls.querySelector(".slide-next"),counter=controls.querySelector(".slide-counter");let current=0;
- function maxUnlocked(){const n=typeof count==="function"?count(type,1,30):0;return n>=20?20:10}
- function render(){const max=maxUnlocked();if(current>max-1)current=max-1;lessons.forEach((lesson,i)=>lesson.classList.toggle("current-slide",i===current));counter.textContent="Lesson "+(current+1)+" of "+lessons.length;prev.disabled=current===0;next.disabled=current>=max-1;next.textContent=current>=max-1?(max<30?"Complete this stage to unlock more →":"Course complete ✓"):"Next →";}
+ function maxUnlocked(){const n=typeof count==="function"?count(type,1,30):0;return n>=20?30:n>=10?20:10}
+ function render(){const max=maxUnlocked();if(current>max-1)current=max-1;lessons.forEach((lesson,i)=>lesson.classList.toggle("current-slide",i===current));counter.textContent="Lesson "+(current+1)+" of "+lessons.length;prev.disabled=current===0;next.disabled=current>=max-1;next.textContent=current>=max-1?(max<30?"Complete this stage to unlock more →":"Course complete ✓"):"Next →";if(max>=30){panel.classList.add("show-extras")}else{panel.classList.remove("show-extras")}}
  prev.addEventListener("click",function(){if(current>0){current--;render();window.scrollTo({top:panel.offsetTop-10,behavior:"smooth"})}});
  next.addEventListener("click",function(){if(current<maxUnlocked()-1){current++;render();window.scrollTo({top:panel.offsetTop-10,behavior:"smooth"})}});
  panel._slideRender=render;render();
