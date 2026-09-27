@@ -560,7 +560,7 @@ async function freeCalculator(){
  '<label>Request fee $ / 1K requests<input id="customreq" class="input" type="number" min="0" step="any" value="0"></label>' +
  '<label>Monthly base fee $<input id="custombase" class="input" type="number" min="0" step="any" value="0"></label>' +
  '<label>Monthly free credit $<input id="customfree" class="input" type="number" min="0" step="any" value="0"></label>' +
- '</div><p class="muted">Use the provider's current pricing page. These values are treated as user-supplied, not directory-verified.</p></div>' +
+ '</div><p class="muted">Use the provider\'s current pricing page. These values are treated as user-supplied, not directory-verified.</p></div>' +
  '<button id="calcgo" class="btn">Calculate free coverage & bill</button></div><div id="calcr"></div>');
 
  const $v=id=>document.getElementById(id)?.value;
