@@ -39,6 +39,28 @@ for fn in ("data/public_apis_expansion.json","data/public_api_lists_expansion.js
     d=load(ROOT/fn) or {};arr=d.get("providers",[])
     if d.get("count")!=len(arr):ERRORS.append(f"{fn}: count mismatch")
 
+# Validate billing evidence as source-linked pricing records.
+fp=ROOT/"data/billing_evidence.json"
+d=load(fp) or []
+if not isinstance(d,list): ERRORS.append("data/billing_evidence.json must be an array")
+else:
+    seen=set()
+    for i,x in enumerate(d,1):
+        if not isinstance(x,dict) or not x.get("name"): ERRORS.append(f"data/billing_evidence.json {i}: missing name")
+        else:
+            n=str(x["name"]).strip().casefold()
+            if n in seen: ERRORS.append(f"data/billing_evidence.json: duplicate provider {n}")
+            seen.add(n)
+            for u in x.get("source_urls",[]) or []:
+                if not valid_url(u): ERRORS.append(f"data/billing_evidence.json {i}: invalid source URL")
+            models=x.get("models",{}) or {}
+            if isinstance(models,dict):
+                for model,price in models.items():
+                    if not isinstance(price,dict): ERRORS.append(f"data/billing_evidence.json {i}: invalid model price {model}")
+                    else:
+                        for key in ("input_per_1m","cached_input_per_1m","output_per_1m","request_fee_per_1k","monthly_base_fee","free_monthly_credit"):
+                            if key in price and price[key] is not None and (not isinstance(price[key],(int,float)) or price[key] < 0): ERRORS.append(f"data/billing_evidence.json {i}: invalid {key} for {model}")
+            if "free_monthly_credit" in x and x["free_monthly_credit"] is not None and (not isinstance(x["free_monthly_credit"],(int,float)) or x["free_monthly_credit"] < 0): ERRORS.append(f"data/billing_evidence.json {i}: invalid free_monthly_credit")
 # Validate supplemental evidence layers without requiring complete coverage for every provider.
 for fn in ("data/free_limit_evidence.json", "data/usage_quality_evidence.json"):
     fp=ROOT/fn
