@@ -704,6 +704,7 @@ const answers={api:["A","A","A","A","C","A","A","A","A","A"],vibe:["A","A","A","
 function save(){localStorage.setItem(KEY,JSON.stringify([...new Set(done)]));updateProgress()}
 function lessonId(type,n){return type==="api"?(n<=10?"l"+n:n<=20?"ai"+(n-10):"aa"+(n-10)):(n<=10?"v"+n:n<=20?"vi"+(n-10):"va"+(n-10))}
 function completeLesson(type,n){const id=type+"-"+n;if(!done.includes(id))done.push(id);save();const el=document.querySelector("#"+lessonId(type,n)+" .btn");if(el){el.textContent="✓ Lesson complete";el.disabled=true}updateProgress()}
+function complete(oldNumber){if(oldNumber>=1&&oldNumber<=10)completeLesson("api",oldNumber);else if(oldNumber>=11&&oldNumber<=20)completeLesson("vibe",oldNumber-10);}
 function count(type,from=1,to=30){return done.filter(x=>{if(!x.startsWith(type+"-"))return false;const n=Number(x.split("-")[1]);return n>=from&&n<=to}).length}
 function updateProgress(){
  const api=count("api"),vibe=count("vibe"),active=document.querySelector(".course-panel.active"),type=active&&active.id==="vibe-course"?"vibe":"api",n=type==="api"?api:vibe;
