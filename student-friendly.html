@@ -27,6 +27,7 @@ a{color:inherit}
 .nav a{text-decoration:none;font-weight:750;padding:8px 10px;border-radius:10px}
 .nav a:hover{background:var(--surface2)}
 .theme{border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:10px;padding:9px 12px;font:inherit;font-weight:800;cursor:pointer}
+.global-search{position:relative;max-width:920px;margin:0 auto 22px}.google-search{display:flex;align-items:center;gap:10px;background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:7px 10px 7px 18px;box-shadow:0 8px 28px rgba(16,24,40,.10)}html[data-theme="dark"] .google-search{box-shadow:0 10px 28px rgba(0,0,0,.28)}.search-icon{font-size:20px;color:var(--muted);flex:0 0 auto}.global-input{flex:1;border:0;outline:0;background:transparent;color:var(--ink);font:17px/1.4 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;min-width:0}.global-input::placeholder{color:var(--muted)}.search-go{border:0;border-radius:999px;padding:10px 17px;background:var(--blue);color:#fff;font-weight:850;cursor:pointer}.search-suggestions{position:absolute;left:0;right:0;top:calc(100% - 12px);background:var(--surface);border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow);overflow:hidden;z-index:20;display:none}.search-suggestions.open{display:block}.search-result{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:13px 16px;border-bottom:1px solid var(--line);cursor:pointer}.search-result:last-child{border-bottom:0}.search-result:hover,.search-result.active{background:var(--surface2)}.search-result-main{min-width:0}.search-result-name{font-weight:850}.search-result-meta{font-size:12px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.search-result-action{color:var(--blue);font-weight:800;font-size:13px;white-space:nowrap}.search-help{font-size:12px;color:var(--muted);text-align:center;margin:8px 0 0}.search-panel{display:none;margin:0 auto 18px;max-width:920px}.search-panel.show{display:block}.search-card{background:var(--surface);border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow);padding:18px}.search-card h2{margin:0 0 4px}.search-card-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px}.search-link{display:inline-flex;align-items:center;justify-content:center;text-decoration:none;padding:10px 14px;border-radius:10px;background:var(--blue);color:#fff;font-weight:850}.search-link.secondary{background:var(--surface2);color:var(--ink);border:1px solid var(--line)}
 .hero{background:linear-gradient(135deg,var(--hero1),var(--hero2));color:#fff;border-radius:24px;padding:30px;box-shadow:var(--shadow);margin-bottom:18px}
 .hero h1{font-size:clamp(30px,4vw,46px);line-height:1.06;margin:0 0 12px}
 .hero p{max-width:1000px;margin:0;color:#dbeafe}
@@ -69,9 +70,21 @@ tr:hover td{background:color-mix(in srgb,var(--surface2) 74%, transparent)}
     <a href="finder.html">Find an API</a>
     <a href="recommend.html">Best API</a>
     <a href="calculator.html">Calculator</a>
-    <a href="student.html">Student Mode</a>
+    <a href="student-friendly.html">Student APIs</a>
     <button id="theme" class="theme" type="button" aria-label="Toggle dark mode">🌙 Dark mode</button>
   </nav>
+
+  <section class="global-search" aria-label="API provider search">
+    <div class="google-search">
+      <span class="search-icon" aria-hidden="true">⌕</span>
+      <input id="globalSearch" class="global-input" type="search" placeholder="Search API providers, e.g. OpenAI, weather, maps, OCR…" autocomplete="off" spellcheck="false">
+      <button id="globalGo" class="search-go" type="button">Search</button>
+    </div>
+    <div id="globalSuggestions" class="search-suggestions" role="listbox"></div>
+    <div class="search-help">Search the provider name or what the API does. Press Enter to open the strongest direct provider link.</div>
+  </section>
+
+  <section id="searchPanel" class="search-panel" aria-live="polite"></section>
 
   <section class="hero">
     <h1>🎓 200 Student-Friendly Free APIs</h1>
@@ -138,6 +151,105 @@ tr:hover td{background:color-mix(in srgb,var(--surface2) 74%, transparent)}
 
   let rows=[];
   let catalog=new Map();
+  let allCatalog=[];
+
+  function providerDestination(p, fallback){
+    const candidates=[
+      fallback,
+      p.signup_url,
+      p.documentation_url,
+      p.website_url,
+      p.homepage,
+      p.api_key_url,
+      p.url
+    ];
+    return candidates.map(safe).find(Boolean)||null;
+  }
+
+  function normalizedSearchText(p){
+    return [
+      p.name,p.category,p.description,p.authentication,
+      p.signup_url,p.documentation_url
+    ].filter(Boolean).join(" ").toLowerCase();
+  }
+
+  function searchProviders(query){
+    const q=String(query||"").toLowerCase().trim();
+    if(!q) return [];
+    const terms=q.split(/[^a-z0-9]+/).filter(Boolean);
+    return allCatalog.map(p=>{
+      const name=String(p.name||"").toLowerCase();
+      const hay=normalizedSearchText(p);
+      let score=0;
+      if(name===q) score+=1000;
+      if(name.startsWith(q)) score+=500;
+      if(name.includes(q)) score+=320;
+      if(hay.includes(q)) score+=180;
+      for(const term of terms){
+        if(name===term) score+=220;
+        else if(name.includes(term)) score+=100;
+        else if(hay.includes(term)) score+=35;
+      }
+      const student=rows.find(r=>normalizeName(r.name)===normalizeName(p.name));
+      if(student && student.name.toLowerCase().replace(/\s*\(no key\)\s*$/,"")===q) score+=180;
+      return {p,score,student};
+    }).filter(x=>x.score>0).sort((a,b)=>b.score-a.score||String(a.p.name).localeCompare(String(b.p.name))).slice(0,8);
+  }
+
+  function openDirect(result){
+    const url=providerDestination(result.p,result.student&&result.student.url);
+    if(url) window.location.href=url;
+    else showSearchPanel(result);
+  }
+
+  function showSearchPanel(result){
+    const p=result.p||{};
+    const student=result.student||{};
+    const direct=providerDestination(p,student.url);
+    const name=p.name||student.name||"Provider";
+    const category=p.category||"API provider";
+    const detailUrl="api.html?provider="+encodeURIComponent(name);
+    document.getElementById("searchPanel").innerHTML='<div class="search-card"><h2>'+esc(name)+'</h2><div class="muted">'+esc(category)+'</div><p>'+esc(p.description||student.raw||"Provider found in the directory.")+'</p><div class="search-card-actions">'+
+      (direct?'<a class="search-link" href="'+esc(direct)+'" target="_blank" rel="noopener noreferrer nofollow">Open direct provider link ↗</a>':"")+
+      '<a class="search-link secondary" href="'+detailUrl+'">View directory details</a></div></div>';
+    document.getElementById("searchPanel").classList.add("show");
+  }
+
+  function renderSuggestions(){
+    const input=document.getElementById("globalSearch");
+    const box=document.getElementById("globalSuggestions");
+    const q=input.value.trim();
+    if(!q){box.classList.remove("open");box.innerHTML="";return;}
+    const hits=searchProviders(q);
+    box.innerHTML=hits.length?hits.map((x,i)=>{
+      const p=x.p, student=x.student, direct=providerDestination(p,student&&student.url);
+      return '<div class="search-result" data-index="'+i+'" role="option" tabindex="0"><div class="search-result-main"><div class="search-result-name">'+esc(p.name||student&&student.name||"Provider")+'</div><div class="search-result-meta">'+esc(p.category||"API provider")+(direct?" · direct link available":"")+'</div></div><div class="search-result-action">Open ↗</div></div>';
+    }).join(""):'<div class="search-result"><div class="search-result-main"><div class="search-result-name">No directory match</div><div class="search-result-meta">Press Enter to search the web instead.</div></div></div>';
+    box.classList.add("open");
+    box.querySelectorAll(".search-result[data-index]").forEach(el=>{
+      el.onclick=()=>openDirect(hits[Number(el.dataset.index)]);
+      el.onkeydown=e=>{if(e.key==="Enter")openDirect(hits[Number(el.dataset.index)])};
+    });
+  }
+
+  function submitGlobalSearch(){
+    const input=document.getElementById("globalSearch");
+    const q=input.value.trim();
+    if(!q) return;
+    const hits=searchProviders(q);
+    if(hits.length){
+      showSearchPanel(hits[0]);
+      const exact=/^\s*$/; // keeps search operation deterministic without redirects on non-matches
+      const url=providerDestination(hits[0].p,hits[0].student&&hits[0].student.url);
+      if(url && hits[0].score>=500){
+        window.location.href=url;
+        return;
+      }
+      document.getElementById("searchPanel").scrollIntoView({behavior:"smooth",block:"start"});
+      return;
+    }
+    window.location.href="https://www.google.com/search?q="+encodeURIComponent(q+" API");
+  }
 
   function parseMarkdown(md){
     return md.split("\n").map(line=>{
@@ -198,7 +310,8 @@ tr:hover td{background:color-mix(in srgb,var(--surface2) 74%, transparent)}
     const md=await mdRes.text();
     const cat=await catRes.json();
     rows=parseMarkdown(md);
-    for(const p of (cat.providers||[])) catalog.set(normalizeName(p.name),p);
+    allCatalog=Array.isArray(cat.providers)?cat.providers:[];
+    for(const p of allCatalog) catalog.set(normalizeName(p.name),p);
     document.getElementById("total").textContent=rows.length;
     document.getElementById("keyless").textContent=rows.filter(x=>x.keyless).length;
     buildCategories();
@@ -208,6 +321,20 @@ tr:hover td{background:color-mix(in srgb,var(--surface2) 74%, transparent)}
   ["search","access","category","sort"].forEach(id=>{
     const el=document.getElementById(id);
     el.addEventListener(id==="search"?"input":"change",render);
+  });
+
+  const globalInput=document.getElementById("globalSearch");
+  const globalBox=document.getElementById("globalSuggestions");
+  const globalGo=document.getElementById("globalGo");
+  globalInput.addEventListener("input",renderSuggestions);
+  globalInput.addEventListener("focus",renderSuggestions);
+  globalInput.addEventListener("keydown",e=>{
+    if(e.key==="Escape"){globalBox.classList.remove("open");return}
+    if(e.key==="Enter"){e.preventDefault();submitGlobalSearch();}
+  });
+  globalGo.onclick=submitGlobalSearch;
+  document.addEventListener("click",e=>{
+    if(!e.target.closest(".global-search")) globalBox.classList.remove("open");
   });
   document.getElementById("clear").onclick=()=>{
     document.getElementById("search").value="";
