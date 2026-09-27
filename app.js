@@ -4,6 +4,7 @@ const PROFILE_URL = new URL("data/provider_profiles.json?v=" + DATA_VERSION, doc
 const CHANGE_URL = new URL("data/change_log.json?v=" + DATA_VERSION, document.baseURI).href;
 const EVIDENCE_URL = new URL("data/web_verified_overrides.json?v=" + DATA_VERSION, document.baseURI).href;
 const QUALITY_EVIDENCE_URL = new URL("data/usage_quality_evidence.json?v=" + DATA_VERSION, document.baseURI).href;
+const BILLING_EVIDENCE_URL = new URL("data/billing_evidence.json?v=" + DATA_VERSION, document.baseURI).href;
 const LIMIT_EVIDENCE_URL = new URL("data/free_limit_evidence.json?v=" + DATA_VERSION, document.baseURI).href;
 
 let INDEX_PROMISE = null;
@@ -11,6 +12,7 @@ let PROFILE_PROMISE = null;
 let EVIDENCE_PROMISE = null;
 let LIMIT_EVIDENCE_PROMISE = null;
 let QUALITY_EVIDENCE_PROMISE = null;
+let BILLING_EVIDENCE_PROMISE = null;
 
 const $ = (s) => document.querySelector(s);
 const esc = (s) => String(s ?? "").replace(/[&<>"]/g, (m) => ({
@@ -122,6 +124,16 @@ async function loadLimitEvidence() {
 async function loadQualityEvidence() {
   if (!QUALITY_EVIDENCE_PROMISE) QUALITY_EVIDENCE_PROMISE = getJson(QUALITY_EVIDENCE_URL).catch(() => []);
   return QUALITY_EVIDENCE_PROMISE;
+}
+
+async function loadBillingEvidence() {
+  if (!BILLING_EVIDENCE_PROMISE) BILLING_EVIDENCE_PROMISE = getJson(BILLING_EVIDENCE_URL).catch(() => []);
+  return BILLING_EVIDENCE_PROMISE;
+}
+
+function billingEvidenceFor(name, evidence) {
+  const key = String(name || "").toLowerCase();
+  return (Array.isArray(evidence) ? evidence : []).find(x => String(x.name || "").toLowerCase() === key) || null;
 }
 
 function limitEvidenceFor(name, evidence) {
@@ -527,36 +539,116 @@ async function stackBuilder(){
 }
 async function freeCalculator(){
  const a=await loadApis();
- const evidence=await loadLimitEvidence();
- shell('<section class="hero"><h1>💰 Free-Tier Calculator</h1><p>Check documented free allowances against your workload. The calculator distinguishes official evidence, community-listed information and genuinely unknown limits.</p></section>'+
- '<div class="card tool">'+
- '<select id="calcprovider" class="select">'+providerOptions(a)+'</select>'+
- '<select id="calcmetric" class="select"><option value="monthly_requests">Requests / month</option><option value="daily_requests">Requests / day</option><option value="hourly_requests">Requests / hour</option><option value="rpm">Peak requests / minute</option><option value="monthly_tokens">Tokens / month</option><option value="daily_tokens">Tokens / day</option><option value="tpm">Peak tokens / minute</option><option value="monthly_credits_usd">Recurring credits / month (USD)</option><option value="credit_balance_usd">One-time credit balance (USD)</option><option value="daily_units">Provider units / day</option></select>'+
- '<input id="calcreq" class="input" type="number" min="0" step="any" placeholder="Enter expected usage">'+
- '<button id="calcgo" class="btn">Calculate</button></div><div id="calcr"></div>');
- function fmt(v){return Number.isFinite(v)?v.toLocaleString(undefined,{maximumFractionDigits:2}):"Not publicly stated";}
- function compare(value,limit){if(!Number.isFinite(limit))return {state:"unknown",text:"No numeric allowance is published in the directory evidence layer."};return {state:value<=limit?"within":"exceeds",text:value<=limit?"Within documented allowance":"Exceeds documented allowance"};}
- $("#calcgo").onclick=function(){
-   const p=a.find(x=>x.name===$("#calcprovider").value), metric=$("#calcmetric").value, value=Number($("#calcreq").value), e=limitEvidenceFor(p&&p.name,evidence);
-   if(!p||!Number.isFinite(value)||value<0){$("#calcr").innerHTML='<div class="card notice">Choose a provider and enter a non-negative usage value.</div>';return;}
-   const q=e&&e.quota||null, map={monthly_requests:"monthly_requests",daily_requests:"daily_requests",hourly_requests:"hourly_requests",rpm:"rpm",monthly_tokens:"monthly_tokens",daily_tokens:"daily_tokens",tpm:"tpm",monthly_credits_usd:"monthly_credits_usd",credit_balance_usd:"credit_balance_usd",daily_units:"daily_units"};
-   const key=map[metric];
-   const noFree=e&&((e.free_access_status==="not-free-currently")||(e.free_access_status==="no-api-free-quota"));
-   const result=noFree?{state:"no-free",text:"No current free API allowance documented"}:compare(value,q&&q[key]);
-   const community=isCommunity(p)||String(p.verification_status||"").includes("community");
-   const source=e&&e.source_url ? link(e.source_url,"Source") : (p.evidence_sources&&p.evidence_sources.length?link(p.evidence_sources[0],"Catalog source"):"");
-   let alt="";
-   if(q&&q.alternate_tier) alt='<p class="muted"><b>Alternate documented tier:</b> '+esc(JSON.stringify(q.alternate_tier))+'</p>';
-   $("#calcr").innerHTML='<div class="card"><h2>'+esc(p.name)+'</h2>'+
-     '<p><b>Your requirement:</b> '+fmt(value)+' '+esc($("#calcmetric option:checked").textContent)+'</p>'+
-     '<p><b>Result:</b> <span class="pill '+(result.state==="within"?"good":result.state==="exceeds"||result.state==="no-free"?"warn":"")+'">'+esc(result.text)+'</span></p>'+
-     '<p><b>Documented free allowance:</b> '+esc(noFree?"No current free API allowance documented":q&&q[key]!==undefined?fmt(q[key]):"Not publicly stated")+'</p>'+
-     '<p><b>Provider rate-limit context:</b> '+esc(p.rate_limit||q&&q.type||"Not publicly stated")+'</p>'+
-     (q&&q.reset?'<p><b>Reset:</b> '+esc(q.reset)+'</p>':"")+
-     (e&&e.notes?'<p>'+esc(e.notes)+'</p>':"")+
-     alt+
-     '<p><b>Evidence:</b> '+(community?'<span class="pill">From community / source-listed</span> ':e?'<span class="pill good">Official source</span> ': '<span class="pill warn">No structured evidence yet</span> ')+(source||"")+'</p>'+
-     '<div class="notice"><b>Important:</b> A provider can have several independent limits (for example RPM + RPD + TPM). This calculator only evaluates the metric selected above. Model-specific or account-specific limits remain unknown unless the provider publishes a single numeric value applicable to the relevant tier/model.</div></div>';
+ const limitEvidence=await loadLimitEvidence();
+ const billingEvidence=await loadBillingEvidence();
+
+ shell('<section class="hero"><h1>💰 Free-Tier & Billing Calculator</h1><p>Enter the workload you expect to run. The calculator checks documented free limits first, then estimates the paid bill when a current source-linked price exists. You can also enter your own rate when a provider/model is not machine-readable.</p></section>' +
+ '<div class="card tool">' +
+ '<label><b>Provider</b><select id="calcprovider" class="select">'+providerOptions(a)+'</select></label>' +
+ '<label><b>Pricing source</b><select id="calcsource" class="select"><option value="auto">Use directory-verified pricing</option><option value="custom">Enter my own pricing</option></select></label>' +
+ '<label id="modelwrap"><b>Model / price tier</b><select id="calcmodel" class="select"></select></label>' +
+ '<label><b>Requests per month</b><input id="calcreq" class="input" type="number" min="0" step="1" value="1000"></label>' +
+ '<div class="grid">' +
+ '<label><b>Input tokens / request</b><input id="calcinput" class="input" type="number" min="0" step="1" value="1000"></label>' +
+ '<label><b>Output tokens / request</b><input id="calcoutput" class="input" type="number" min="0" step="1" value="500"></label>' +
+ '<label><b>Cached input tokens / request</b><input id="calccached" class="input" type="number" min="0" step="1" value="0"></label>' +
+ '</div>' +
+ '<div id="custompricing" class="card" style="display:none"><h3>Custom pricing</h3><div class="grid">' +
+ '<label>Input $ / 1M tokens<input id="customin" class="input" type="number" min="0" step="any" value="0"></label>' +
+ '<label>Cached input $ / 1M tokens<input id="customcache" class="input" type="number" min="0" step="any" value="0"></label>' +
+ '<label>Output $ / 1M tokens<input id="customout" class="input" type="number" min="0" step="any" value="0"></label>' +
+ '<label>Request fee $ / 1K requests<input id="customreq" class="input" type="number" min="0" step="any" value="0"></label>' +
+ '<label>Monthly base fee $<input id="custombase" class="input" type="number" min="0" step="any" value="0"></label>' +
+ '<label>Monthly free credit $<input id="customfree" class="input" type="number" min="0" step="any" value="0"></label>' +
+ '</div><p class="muted">Use the provider's current pricing page. These values are treated as user-supplied, not directory-verified.</p></div>' +
+ '<button id="calcgo" class="btn">Calculate free coverage & bill</button></div><div id="calcr"></div>');
+
+ const $v=id=>document.getElementById(id)?.value;
+ const num=id=>{const n=Number($v(id));return Number.isFinite(n)&&n>=0?n:0;};
+ const money=n=>Number.isFinite(n)?n.toLocaleString(undefined,{style:"currency",currency:"USD",minimumFractionDigits:2,maximumFractionDigits:6}):"—";
+ const fmt=n=>Number.isFinite(n)?n.toLocaleString(undefined,{maximumFractionDigits:2}):"—";
+
+ function renderModels(){
+   const p=a.find(x=>x.name===$v("calcprovider")), b=billingEvidenceFor(p&&p.name,billingEvidence), sel=document.getElementById("calcmodel");
+   if(!sel)return;
+   const models=b&&b.models?Object.keys(b.models):[];
+   sel.innerHTML=models.length?models.map(m=>'<option value="'+esc(m)+'">'+esc(m)+'</option>').join(""):'<option value="">No directory pricing model</option>';
+   document.getElementById("modelwrap").style.display=$v("calcsource")==="auto"&&models.length?"block":"none";
+ }
+
+ function renderPricingSource(){
+   const custom=$v("calcsource")==="custom";
+   document.getElementById("custompricing").style.display=custom?"block":"none";
+   renderModels();
+ }
+
+ document.getElementById("calcprovider").addEventListener("change",renderModels);
+ document.getElementById("calcsource").addEventListener("change",renderPricingSource);
+ renderPricingSource();
+
+ document.getElementById("calcgo").onclick=()=>{
+   const p=a.find(x=>x.name===$v("calcprovider")), b=billingEvidenceFor(p&&p.name,billingEvidence);
+   if(!p){document.getElementById("calcr").innerHTML='<div class="card notice">Choose a provider.</div>';return;}
+   const requests=num("calcreq"), inputPerRequest=num("calcinput"), outputPerRequest=num("calcoutput"), cachedPerRequest=num("calccached");
+   const totalInput=inputPerRequest*requests, totalOutput=outputPerRequest*requests, totalCached=cachedPerRequest*requests;
+   let inputRate=null, cacheRate=null, outputRate=null, requestRate=0, baseFee=0, freeCredit=0, pricingLabel="", sourceType="custom";
+   if($v("calcsource")==="auto"){
+     const model=$v("calcmodel");
+     const price=b&&b.models&&b.models[model];
+     if(price){
+       inputRate=Number(price.input_per_1m); cacheRate=price.cached_input_per_1m==null?inputRate:Number(price.cached_input_per_1m); outputRate=Number(price.output_per_1m);
+       requestRate=Number(price.request_fee_per_1k||0); baseFee=Number(price.monthly_base_fee||0);
+       freeCredit=Number(b.free_monthly_credit||0); pricingLabel=(model?model+" · ":"")+(b.pricing_basis||"documented pricing"); sourceType=b.source_type||"official";
+     } else {
+       freeCredit=Number(b&&b.free_monthly_credit||0);
+       pricingLabel=b?("Provider pricing is model-specific; no machine-readable model price is stored for this provider."):"No directory pricing evidence is available.";
+     }
+   } else {
+     inputRate=num("customin"); cacheRate=num("customcache"); outputRate=num("customout"); requestRate=num("customreq"); baseFee=num("custombase"); freeCredit=num("customfree"); pricingLabel="User-supplied rates"; sourceType="user";
+   }
+
+   const hasRates=[inputRate,cacheRate,outputRate].some(v=>Number.isFinite(v)&&v>0)||requestRate>0||baseFee>0;
+   const grossTokenCost=Number.isFinite(inputRate)?(totalInput/1e6)*inputRate:0;
+   const cachedCost=Number.isFinite(cacheRate)?(totalCached/1e6)*cacheRate:0;
+   const uncachedInput=Math.max(0,totalInput-totalCached);
+   const correctedInputCost=Number.isFinite(inputRate)?(uncachedInput/1e6)*inputRate:0;
+   const outputCost=Number.isFinite(outputRate)?(totalOutput/1e6)*outputRate:0;
+   const requestCost=(requests/1000)*requestRate;
+   const gross=baseFee+correctedInputCost+cachedCost+outputCost+requestCost;
+   const net=Math.max(0,gross-freeCredit);
+
+   const q=limitEvidenceFor(p.name,limitEvidence);
+   const monthlyReqLimit=q&&q.quota&&Number.isFinite(Number(q.quota.monthly_requests))?Number(q.quota.monthly_requests):null;
+   const dailyReqLimit=q&&q.quota&&Number.isFinite(Number(q.quota.daily_requests))?Number(q.quota.daily_requests):null;
+   const monthlyTokenLimit=q&&q.quota&&Number.isFinite(Number(q.quota.monthly_tokens))?Number(q.quota.monthly_tokens):null;
+   let freeCoverage="Not numerically determined";
+   if(monthlyReqLimit!==null) freeCoverage=requests<=monthlyReqLimit?"Within documented monthly request allowance":Math.max(0,monthlyReqLimit).toLocaleString()+" free requests/month; "+Math.max(0,requests-monthlyReqLimit).toLocaleString()+" requests above it";
+   else if(monthlyTokenLimit!==null) freeCoverage=(totalInput+totalOutput)<=monthlyTokenLimit?"Within documented monthly token allowance":"Above documented monthly token allowance";
+   else if(dailyReqLimit!==null) freeCoverage=Math.ceil(requests/30)<=dailyReqLimit?"Approx. within daily allowance at a 30-day average":"Average daily workload exceeds documented daily allowance";
+   else if(b&&b.usage_quality) freeCoverage="Free-tier access may exist, but the numeric free quota is model/tier-specific in the evidence layer.";
+
+   const pricingSource=b&&b.source_urls?b.source_urls:[]; 
+   const evidenceLabel=sourceType==="official"?"Directory-verified official pricing":sourceType==="user"?"User-supplied pricing":"Provider-specific pricing not machine-readable";
+   const canShowEstimate=hasRates;
+   document.getElementById("calcr").innerHTML=
+     '<div class="grid">'+
+       '<div class="card"><h2>Workload</h2><p><b>'+fmt(requests)+'</b> requests/month</p><p>'+fmt(totalInput+totalCached)+' input tokens/month</p><p>'+fmt(totalOutput)+' output tokens/month</p></div>'+
+       '<div class="card"><h2>Free coverage</h2><p>'+esc(freeCoverage)+'</p><p class="muted">'+esc((q&&q.notes)||"No compatible numeric free allowance is stored.")+'</p></div>'+
+       '<div class="card"><h2>Estimated paid cost</h2><p class="big"><b>'+ (canShowEstimate?money(net):"Not calculable from verified rates") +'</b> / month</p><p>Gross priced usage: '+money(gross)+'</p><p>Documented/custom credit offset: −'+money(Math.min(gross,freeCredit))+'</p></div>'+
+     '</div>'+
+     '<div class="card"><h2>Cost breakdown</h2><div class="kv">'+
+       '<b>Input cost</b><span>'+ (Number.isFinite(inputRate)?money(correctedInputCost):"Rate not available")+'</span>'+
+       '<b>Cached input cost</b><span>'+ (Number.isFinite(cacheRate)&&totalCached?money(cachedCost):"—")+'</span>'+
+       '<b>Output cost</b><span>'+ (Number.isFinite(outputRate)?money(outputCost):"Rate not available")+'</span>'+
+       '<b>Request charges</b><span>'+money(requestCost)+'</span>'+
+       '<b>Base monthly fee</b><span>'+money(baseFee)+'</span>'+
+       '<b>Free credit applied</b><span>'+money(Math.min(gross,freeCredit))+'</span>'+
+       '<b>Estimated final monthly bill</b><span><b>'+ (canShowEstimate?money(net):"Not calculable") +'</b></span>'+
+       '</div></div>'+
+     '<div class="card"><h2>Pricing provenance</h2><p><span class="pill '+(sourceType==="official"?"good":"warn")+'">'+esc(evidenceLabel)+'</span> '+esc(pricingLabel)+'</p>'+
+       (pricingSource.length?'<p>'+pricingSource.map(u=>link(u,"Open pricing source")).join(" · ")+'</p>':"")+
+       (canShowEstimate?"<p class=\"muted\">Estimate assumes the entered average token/request pattern is stable for the month and excludes taxes, discounts, enterprise commitments, overage rules, provider-specific tool charges and model-specific fees not represented in this evidence.</p>":"<div class=\"notice\"><b>No machine-readable rate is stored for this provider/model.</b> Enter current provider pricing in the custom-pricing section and the calculator will still produce a transparent estimate without pretending the rate is verified.</div>")+
+     '</div>';
  };
 }
 async function healthPage(){
