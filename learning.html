@@ -49,7 +49,26 @@ table{width:100%;border-collapse:collapse;margin:12px 0}th,td{text-align:left;bo
 .practice-quiz label:hover{background:var(--soft);border-color:var(--line)}.practice-quiz button{margin-top:10px}
 .practice-result{margin-top:12px;padding:12px;border-radius:10px;font-weight:700}.practice-result.pass{background:#eaf8f1;color:#087443}.practice-result.info{background:#eef5ff;color:#184da1}
 .stage-progress{font-size:13px;font-weight:700;color:#53627a}
-.stage-content{display:block}.stage-content.stage-locked{display:none}\n.plain-note{margin:0 0 14px;padding:11px 13px;border-radius:10px;background:#f8fafc;border:1px solid var(--line);color:#53627a;font-size:14px;line-height:1.5}.quiz-integrity-note{margin:14px 0 0;color:#667085;font-size:12px;line-height:1.5;text-align:center;font-style:italic}.course-action{border:0;cursor:pointer;font:inherit}\n</style></head>
+.stage-content{display:block}.stage-content.stage-locked{display:none}\n.plain-note{margin:0 0 14px;padding:11px 13px;border-radius:10px;background:#f8fafc;border:1px solid var(--line);color:#53627a;font-size:14px;line-height:1.5}.quiz-integrity-note{margin:14px 0 0;color:#667085;font-size:12px;line-height:1.5;text-align:center;font-style:italic}.course-action{border:0;cursor:pointer;font:inherit}\n</style><script>
+document.addEventListener("DOMContentLoaded",function(){
+  document.querySelectorAll("[data-start-course]").forEach(function(btn){
+    btn.addEventListener("click",function(e){
+      e.preventDefault();
+      e.stopPropagation();
+      var type=btn.getAttribute("data-start-course");
+      var api=document.getElementById("api-course"),vibe=document.getElementById("vibe-course");
+      var panel=type==="vibe"?vibe:api,other=type==="vibe"?api:vibe;
+      if(!panel||!other)return;
+      panel.classList.add("active");
+      other.classList.remove("active");
+      var ac=document.getElementById("api-card"),vc=document.getElementById("vibe-card");
+      if(ac)ac.classList.toggle("active",type==="api");
+      if(vc)vc.classList.toggle("active",type==="vibe");
+      setTimeout(function(){panel.scrollIntoView({behavior:"smooth",block:"start"});},0);
+    });
+  });
+});
+</script></head>
 <body><main>
 <div class="back">← <a href="index.html">Free API Directory</a></div>
 <section class="hero"><h1>📚 Learning Hub</h1><p>A hands-on, beginner-friendly course for understanding how apps talk to services, choosing free APIs, making requests, fixing problems, protecting keys, and turning an API into a useful feature.</p><div class="progress"><span id="progress"></span></div><small id="progressText">0 of 30 API lessons completed</small></section>
@@ -58,12 +77,12 @@ table{width:100%;border-collapse:collapse;margin:12px 0}th,td{text-align:left;bo
 <div class="course-card" id="api-card" onclick="selectCourse('api')" role="button" tabindex="0">
 <span class="tag">API course</span><h2>🌐 API Fundamentals</h2>
 <p>Learn APIs from zero: how apps ask for information, how keys work, how free limits work, how to fix common problems, and how to build a small connection.</p>
-<div class="course-status" id="api-card-progress">0 of 10 lessons completed</div><button type="button" class="course-action" onclick="event.stopPropagation();selectCourse('api')">Start API course →</button>
+<div class="course-status" id="api-card-progress">0 of 10 lessons completed</div><button type="button" class="course-action" data-start-course="api" onclick="event.stopPropagation();selectCourse('api')">Start API course →</button>
 </div>
 <div class="course-card" id="vibe-card" onclick="selectCourse('vibe')" role="button" tabindex="0">
 <span class="tag">Absolute beginner</span><h2>💻 Vibecoding From Scratch</h2>
 <p>Start with no coding knowledge. Learn what code and files are, how to give AI clear instructions, how to test what it makes, and how to build a small project step by step.</p>
-<div class="course-status" id="vibe-card-progress">0 of 10 lessons completed</div><button type="button" class="course-action" onclick="event.stopPropagation();selectCourse('vibe')">Start Vibecoding →</button>
+<div class="course-status" id="vibe-card-progress">0 of 10 lessons completed</div><button type="button" class="course-action" data-start-course="vibe" onclick="event.stopPropagation();selectCourse('vibe')">Start Vibecoding →</button>
 </div>
 </div>
 <div class="layout"><aside class="toc"><strong>Course map</strong>
@@ -696,10 +715,10 @@ Do not remove working features.</code></pre></div>
 </section></div></main>
 <script>
 const KEY="freeApiLearningProgress",QUIZ_KEY="freeApiCourseResults",NAME_KEY="freeApiCertificateName",PRACTICE_KEY="freeApiPracticeResults";
-const rawDone=JSON.parse(localStorage.getItem(KEY)||"[]");
+let rawDone=[];try{rawDone=JSON.parse(localStorage.getItem(KEY)||"[]");if(!Array.isArray(rawDone))rawDone=[]}catch(e){localStorage.removeItem(KEY);rawDone=[]}
 const done=[];
 rawDone.forEach(x=>{if(typeof x==="string"){done.push(x)}else if(typeof x==="number"){if(x>=1&&x<=10)done.push("api-"+x);else if(x>=11&&x<=20)done.push("vibe-"+(x-10))}});
-const quizResults=JSON.parse(localStorage.getItem(QUIZ_KEY)||"{}");
+let quizResults={};try{quizResults=JSON.parse(localStorage.getItem(QUIZ_KEY)||"{}");if(!quizResults||typeof quizResults!=="object")quizResults={}}catch(e){localStorage.removeItem(QUIZ_KEY);quizResults={}}
 const answers={api:["A","A","A","A","C","A","A","A","A","A"],vibe:["A","A","A","A","A","A","A","A","A","A"]};
 function save(){localStorage.setItem(KEY,JSON.stringify([...new Set(done)]));updateProgress()}
 function lessonId(type,n){return type==="api"?(n<=10?"l"+n:n<=20?"ai"+(n-10):"aa"+(n-10)):(n<=10?"v"+n:n<=20?"vi"+(n-10):"va"+(n-10))}
