@@ -1,3 +1,5 @@
+> **Interactive version:** [Open the polished Student-Friendly API browser](../student-friendly.html) — searchable, filterable, responsive, and includes light/dark mode.
+
 # 200 Student-Friendly Free APIs — Provider & Signup/Key URL
 
 This table is based on the supplied 200-provider list. It is a discovery table: **keyless/public access, free API keys, trials, and free tiers are not interchangeable**, so the main directory records uncertainty instead of inventing quotas or payment requirements.
