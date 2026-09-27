@@ -179,7 +179,7 @@ async function finder() {
     '<section class="hero"><h1>Find an API</h1><p>Search the lightweight catalog index. Full provider profiles are loaded only when you open a provider.</p></section>' +
     '<div class="card tool"><input id="q" class="input" placeholder="Search APIs…" autocomplete="off">' +
     '<select id="f" class="select"><option value="">Free status: any</option><option value="yes">Free access recorded</option><option value="unknown">Free status not publicly stated</option><option value="no">No free tier recorded</option></select>' +
-    '<select id="c" class="select"><option value="">Card requirement: any</option><option value="no">No card recorded</option><option value="yes">Card required</option><option value="unknown">Not publicly stated</option></select><select id="cat" class="select"><option value="">Category: any</option></select><select id="v" class="select"><option value="">Verification: any</option><option value="verified">Verified active</option><option value="candidate">Candidate / needs review</option></select><select id="uq" class="select"><option value="">Usage-quality evidence: any</option><option value="available">Has source-linked evidence</option><option value="official">Official usage evidence</option><option value="community">Community usage evidence</option></select><select id="region" class="select"><option value="">Region: any / not specified</option><option value="explicit">Explicit regional data only</option></select></div>' +
+    '<select id="c" class="select"><option value="">Card requirement: any</option><option value="no">No card recorded</option><option value="yes">Card required</option><option value="unknown">Not publicly stated</option></select><select id="cat" class="select"><option value="">Category: any</option></select><select id="v" class="select"><option value="">Verification: any</option><option value="verified">Verified active</option><option value="candidate">Candidate / needs review</option></select><select id="uq" class="select"><option value="">Usage-quality evidence: any</option><option value="available">Has source-linked evidence</option><option value="official">Official usage evidence</option><option value="community">Community usage evidence</option></select><select id="region" class="select"><option value="">Region: any / not specified</option><option value="explicit">Explicit regional data only</option></select><select id="auth" class="select"><option value="">Authentication: any</option><option value="key">API key/token</option><option value="none">No authentication recorded</option></select><select id="commercial" class="select"><option value="">Commercial use: any</option><option value="yes">Commercial use recorded</option><option value="unknown">Not publicly stated</option></select><select id="age" class="select"><option value="">Verification age: any</option><option value="30">Verified ≤30 days</option><option value="90">Verified ≤90 days</option><option value="180">Verified ≤180 days</option></select><select id="access" class="select"><option value="">Access: any</option><option value="keyless">Prefer keyless</option><option value="nocard">No card recorded</option><option value="noaccount">No account evidence</option></select></div>' +
     '<div id="r"></div>'
   );
 
@@ -191,7 +191,7 @@ async function finder() {
     const q = $("#q").value.toLowerCase().trim();
     const f = $("#f").value;
     const c = $("#c").value;
-    const uq = $("#uq").value;
+    const uq = $("#uq").value; const auth=$("#auth").value; const commercial=$("#commercial").value; const age=Number($("#age").value||0); const access=$("#access").value;
     return a.filter(p => {
       const fv = freeValue(p);
       const freeOK =
@@ -206,8 +206,7 @@ async function finder() {
         (c === "unknown" && typeof p.requires_credit_card !== "boolean");
       const catOK = !$("#cat").value || p.category === $("#cat").value;
       const v = $("#v").value; const verifiedOK = !v || (v === "verified" ? (p.status === "active" && !!p.last_verified) : (p.status === "candidate" || p.status === "needs re-verification" || p.status === "upstream-community"));
-      const usageEvidenceOK = !uq || (uq === "available" ? !!p.usage_quality : uq === "official" ? !!p.usage_quality && p.usage_quality_source_type === "official" : !!p.usage_quality && p.usage_quality_source_type === "community");
-      return (!q || p._searchText.includes(q)) && freeOK && cardOK && catOK && verifiedOK && usageEvidenceOK;
+      const usageEvidenceOK = !uq || (uq === "available" ? !!p.usage_quality : uq === "official" ? !!p.usage_quality && p.usage_quality_source_type === "official" : !!p.usage_quality && p.usage_quality_source_type === "community"); const authText=String(p.authentication||"").toLowerCase(); const authOK=!auth || (auth==="key" ? /key|token|oauth|bearer/.test(authText) : /none|not required|keyless|no auth/.test(authText)); const commText=String(p.commercial_use||p.usage_quality?.commercial_use||"").toLowerCase(); const commercialOK=!commercial || (commercial==="yes" ? commText && !/not publicly stated|unknown|unclear/.test(commText) : /not publicly stated|unknown|unclear/.test(commText)); const verifiedDate=p.last_verified?Date.parse(String(p.last_verified).slice(0,10)+"T00:00:00Z"):NaN; const days=Number.isFinite(verifiedDate)?(Date.now()-verifiedDate)/86400000:Infinity; const ageOK=!age || days<=age; const accessText=String(p.access_requirements||p.usage_quality?.access||"").toLowerCase(); const accessOK=!access || (access==="keyless" ? /none|not required|keyless|no auth/.test(authText) : access==="nocard" ? p.requires_credit_card===false : /no account|without account/.test(accessText)); return (!q || p._searchText.includes(q)) && freeOK && cardOK && catOK && verifiedOK && usageEvidenceOK && authOK && commercialOK && ageOK && accessOK;
     });
   }
 
@@ -241,7 +240,7 @@ async function finder() {
   $("#q").addEventListener("input", rerender);
   $("#f").addEventListener("change", () => { visible = 100; render(); });
   $("#c").addEventListener("change", () => { visible = 100; render(); });
-  $("#uq").addEventListener("change", () => { visible = 100; render(); });
+  $("#uq").addEventListener("change", () => { visible = 100; render(); }); $("#auth").addEventListener("change",()=>{visible=100;render();}); $("#commercial").addEventListener("change",()=>{visible=100;render();}); $("#age").addEventListener("change",()=>{visible=100;render();}); $("#access").addEventListener("change",()=>{visible=100;render();});
   render();
 }
 
@@ -359,6 +358,8 @@ async function changes() {
   }).join("") || '<tr><td colspan="4">No verification records available.</td></tr>';
 }
 
+async function useCasesPage(){const a=await loadApis();const cases=[["🤖 AI & Chatbots","chatbot, conversational AI, language model, text generation, embeddings, agents"],["📷 Images & Vision","image recognition, OCR, computer vision, image generation, image analysis"],["🎙 Audio & Speech","speech to text, text to speech, transcription, voice, audio"],["🗺 Maps & Location","maps, geocoding, routing, directions, places, location"],["🌦 Weather & Climate","weather, forecast, climate, temperature, meteorology"],["🧬 Science & Research","research, scientific, biology, chemistry, astronomy, biodiversity"],["💰 Finance & Markets","finance, stocks, markets, currency, banking, payments"],["📰 News & Content","news, articles, search, content, RSS, publishing"],["💻 Developer Tools","code, GitHub, development, testing, package, developer"],["🎮 Games & Entertainment","games, gaming, sports, music, movies, entertainment"],["📊 Data & Analytics","data, analytics, statistics, datasets, visualization"],["📱 Communication","email, SMS, messaging, notifications, communication"]];shell('<section class="hero"><h1>🧩 API Use Case Explorer</h1><p>Start with what you are building instead of knowing an API name. Choose a use case to find matching providers from the same catalog used everywhere else.</p></section><div class="grid" id="usecase-grid"></div><div id="usecase-results"></div>');const grid=$("#usecase-grid"),results=$("#usecase-results");function render(label,terms){const ts=terms.split(", ").map(x=>x.toLowerCase());const rows=a.map(p=>{const hay=(p._searchText+" "+(p.description||"")+" "+(p.category||"")+" "+(Array.isArray(p.uses)?p.uses.join(" "):"")).toLowerCase();const score=ts.reduce((n,t)=>n+(hay.includes(t)?1:0),0);return {p,score};}).filter(x=>x.score>0).sort((x,y)=>y.score-x.score||String(x.p.name).localeCompare(String(y.p.name))).slice(0,30);results.innerHTML='<div class="card"><h2>'+esc(label)+'</h2><p class="muted">'+rows.length+' matching providers shown.</p><div class="tablebox"><div class="scroll"><table><thead><tr><th>Provider</th><th>Category</th><th>Free</th><th>Verification</th><th></th></tr></thead><tbody>'+rows.map(x=>'<tr><td class="provider"><a href="api.html?provider='+encodeURIComponent(x.p.name)+'">'+esc(x.p.name)+'</a></td><td>'+esc(x.p.category||"Not stated")+'</td><td>'+freeTier(x.p)+'</td><td>'+status(x.p)+'</td><td><a class="btn secondary" href="api.html?provider='+encodeURIComponent(x.p.name)+'">Explain</a></td></tr>').join("")+'</tbody></table></div></div></div>';results.scrollIntoView({behavior:"smooth",block:"start"});}grid.innerHTML=cases.map((c,i)=>'<button class="card" type="button" data-usecase="'+i+'" style="text-align:left;cursor:pointer"><h2>'+c[0]+'</h2><p class="muted">'+c[1].split(", ").slice(0,4).join(" · ")+'</p></button>').join("");document.querySelectorAll("[data-usecase]").forEach(b=>b.onclick=()=>{const c=cases[Number(b.dataset.usecase)];render(c[0],c[1]);});}
+
 async function apiProfile() {
   const name = new URLSearchParams(location.search).get("provider");
   if (!name) {
@@ -392,6 +393,7 @@ async function apiProfile() {
       (Array.isArray(p.usage_quality_sources) ? '<p>' + p.usage_quality_sources.map(u=>link(u,"Open source")).join(" · ") + '</p>' : '') +
       (p.usage_quality_community_note ? '<div class="notice"><b>Community note:</b> This supplementary information comes from a community/forum source and is not treated as a primary provider claim.</div>' : '') +
       '</div>' : '') +
+    '<div class="card"><h2>🧠 Explain this API</h2><p><b>What is it?</b> '+esc(p.description || "This provider offers an API service; consult the linked provider documentation for exact scope.")+'</p><p><b>What can I build?</b> '+esc((Array.isArray(p.uses)&&p.uses.length?p.uses.join(", "):p.category||"Projects in this provider category"))+'</p><p><b>Do I need an API key?</b> '+esc(p.authentication || "Authentication is not publicly stated in the catalog.")+'</p><p><b>Is it free?</b> '+esc(freeValue(p)===true ? "A free-access option is recorded." : freeValue(p)===false ? "No free tier is currently recorded." : "The catalog does not have enough public evidence to state this.")+'</p><p><b>How much can I use?</b> '+esc(p.free_tier?.details || p.rate_limit || "A machine-readable allowance is not publicly stated for this provider.")+'</p><p><b>Do I need a card?</b> '+esc(typeof p.requires_credit_card==="boolean" ? (p.requires_credit_card ? "A card requirement is recorded." : "No card requirement is recorded.") : "Not publicly stated.")+'</p><p><b>Can I use it commercially?</b> '+esc(p.commercial_use || p.usage_quality?.commercial_use || "Not publicly stated; check provider terms before commercial use.")+'</p><p><b>How do I start?</b> Open the provider documentation or API-key destination above, then follow its authentication and first-request instructions. The directory does not guess undocumented setup steps.</p></div>',
     (p.usage_quality ? '' : '<div class="card notice"><b>Usage-quality evidence:</b> No structured source-linked usage-quality record is available yet for this provider. Unknown values are intentionally not guessed.</div>')
   );
 }
@@ -834,6 +836,7 @@ async function boot() {
   try {
     const page = document.body.dataset.page;
     if (page === "finder") return await finder();
+    if (page === "usecases") return await useCasesPage();
     if (page === "compare") return await compare();
     if (page === "changes") return await changes();
     if (page === "recommend") return await recommend();
