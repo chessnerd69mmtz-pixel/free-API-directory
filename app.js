@@ -1,4 +1,4 @@
-const DATA_VERSION = "20260927-03";
+const DATA_VERSION = "20260927-04";
 const INDEX_URL = new URL("data/catalog-index.json?v=" + DATA_VERSION, document.baseURI).href;
 const PROFILE_URL = new URL("data/provider_profiles.json?v=" + DATA_VERSION, document.baseURI).href;
 const CHANGE_URL = new URL("data/change_log.json?v=" + DATA_VERSION, document.baseURI).href;
@@ -74,7 +74,7 @@ function nav() {
     '<a href="compare.html">Compare</a><a href="stack.html">🏗️ Stack</a><a href="calculator.html">💰 Free Calculator</a><a href="collections.html">⭐ Collections</a>' +
     '<a href="keys.html">🔐 My API Keys</a>' +
     '<a href="changes.html">Verified / Changed</a><a href="health.html">🔄 Health</a><a href="playground.html">🧪 Playground</a><a href="code.html">💻 Code</a>' +
-    '<a href="criteria.html">Browse</a><a href="student.html">🎓 Student Mode</a><a href="security.html">🔐 Security</a><a href="submit.html">📥 Submit API</a><a href="quality.html">Data Quality</a>' +
+    '<a href="criteria.html">Browse</a><a href="student-friendly.html">🎓 Student APIs</a><a href="security.html">🔐 Security</a><a href="submit.html">📥 Submit API</a><a href="quality.html">Data Quality</a>' +
   "</nav>";
 }
 
