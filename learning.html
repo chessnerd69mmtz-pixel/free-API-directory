@@ -49,7 +49,20 @@ table{width:100%;border-collapse:collapse;margin:12px 0}th,td{text-align:left;bo
 .practice-quiz label:hover{background:var(--soft);border-color:var(--line)}.practice-quiz button{margin-top:10px}
 .practice-result{margin-top:12px;padding:12px;border-radius:10px;font-weight:700}.practice-result.pass{background:#eaf8f1;color:#087443}.practice-result.info{background:#eef5ff;color:#184da1}
 .stage-progress{font-size:13px;font-weight:700;color:#53627a}
-.stage-content{display:block}.stage-content.stage-locked{display:none}\n.plain-note{margin:0 0 14px;padding:11px 13px;border-radius:10px;background:#f8fafc;border:1px solid var(--line);color:#53627a;font-size:14px;line-height:1.5}.quiz-integrity-note{margin:14px 0 0;color:#667085;font-size:12px;line-height:1.5;text-align:center;font-style:italic}.course-action{border:0;cursor:pointer;font:inherit}\n</style><script>
+.stage-content{display:block}.stage-content.stage-locked{display:none}\n.plain-note{margin:0 0 14px;padding:11px 13px;border-radius:10px;background:#f8fafc;border:1px solid var(--line);color:#53627a;font-size:14px;line-height:1.5}.quiz-integrity-note{margin:14px 0 0;color:#667085;font-size:12px;line-height:1.5;text-align:center;font-style:italic}.course-action{border:0;cursor:pointer;font:inherit}
+.course-download{display:inline-block;margin:12px 0 0 8px;background:#fff;color:var(--blue);border:1px solid var(--blue);padding:10px 15px;border-radius:9px;font-weight:800;cursor:pointer;font:inherit}
+.course-download:hover{background:var(--soft)}
+.slide-controls{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:0 0 18px;padding:14px 16px;background:#fff;border:1px solid var(--line);border-radius:14px;position:sticky;top:10px;z-index:5;box-shadow:0 5px 18px rgba(20,40,80,.07)}
+.slide-controls button{border:1px solid var(--line);background:#fff;color:var(--ink);border-radius:9px;padding:9px 14px;cursor:pointer;font-weight:800}
+.slide-controls button:not(:disabled):hover{border-color:var(--blue);background:var(--soft)}
+.slide-controls button:disabled{opacity:.45;cursor:not-allowed}
+.slide-counter{font-weight:800;text-align:center;min-width:150px}
+.slide-help{font-size:13px;color:var(--muted);margin:0 0 14px;text-align:center}
+.course-panel.slide-mode .stage-banner{display:none}
+.course-panel.slide-mode .lesson{display:none}
+.course-panel.slide-mode .lesson.current-slide{display:block}
+@media(max-width:650px){.slide-controls{position:static;flex-wrap:wrap}.slide-counter{order:-1;width:100%}.course-download{margin-left:0}}
+\n</style><script>
 document.addEventListener("DOMContentLoaded",function(){
   document.querySelectorAll("[data-start-course]").forEach(function(link){
     link.addEventListener("click",function(){
@@ -74,12 +87,12 @@ document.addEventListener("DOMContentLoaded",function(){
 <div class="course-card" id="api-card" onclick="selectCourse('api')" role="button" tabindex="0">
 <span class="tag">API course</span><h2>🌐 API Fundamentals</h2>
 <p>Learn APIs from zero: how apps ask for information, how keys work, how free limits work, how to fix common problems, and how to build a small connection.</p>
-<div class="course-status" id="api-card-progress">0 of 10 lessons completed</div><a class="course-action" href="#api-course" data-start-course="api">Start API course →</a>
+<div class="course-status" id="api-card-progress">0 of 10 lessons completed</div><a class="course-action" href="#api-course" data-start-course="api">Start API course →</a><button type="button" class="course-download" onclick="event.stopPropagation();downloadCourseDoc('api')">⬇ Download Word course</button>
 </div>
 <div class="course-card" id="vibe-card" onclick="selectCourse('vibe')" role="button" tabindex="0">
 <span class="tag">Absolute beginner</span><h2>💻 Vibecoding From Scratch</h2>
 <p>Start with no coding knowledge. Learn what code and files are, how to give AI clear instructions, how to test what it makes, and how to build a small project step by step.</p>
-<div class="course-status" id="vibe-card-progress">0 of 10 lessons completed</div><a class="course-action" href="#vibe-course" data-start-course="vibe">Start Vibecoding →</a>
+<div class="course-status" id="vibe-card-progress">0 of 10 lessons completed</div><a class="course-action" href="#vibe-course" data-start-course="vibe">Start Vibecoding →</a><button type="button" class="course-download" onclick="event.stopPropagation();downloadCourseDoc('vibe')">⬇ Download Word course</button>
 </div>
 </div>
 <div class="layout"><aside class="toc"><strong>Course map</strong>
@@ -711,6 +724,32 @@ Do not remove working features.</code></pre></div>
 <div class="certificate" id="vibe-certificate"><div class="cert-title">Certificate of Completion</div><h2>Vibecoding From Scratch</h2><div>This certifies that</div><div class="cert-name" id="vibe-cert-name">Learner</div><div>has successfully completed the course and passed the final assessment.</div><div class="cert-course">Free API Directory Learning Hub</div><div class="cert-score" id="vibe-cert-score"></div><div class="cert-date" id="vibe-cert-date"></div><button class="print-cert" onclick="setCertificateName()">Set certificate name</button> <button class="print-cert" onclick="printCertificate('vibe')">Print / Save Certificate</button></div>
 </section></div></main>
 <script>
+function getCourseLessons(type){const panel=document.getElementById(type+"-course");return panel?Array.from(panel.querySelectorAll(".lesson")):[]}
+function buildCourseSlides(type){
+ const panel=document.getElementById(type+"-course");if(!panel||panel.dataset.slidesReady==="1")return;
+ const lessons=getCourseLessons(type);if(!lessons.length)return;
+ panel.classList.add("slide-mode");panel.dataset.slidesReady="1";
+ const first=lessons[0],controls=document.createElement("div");controls.className="slide-controls";
+ controls.innerHTML='<button type="button" class="slide-prev">← Previous</button><div class="slide-counter"></div><button type="button" class="slide-next">Next →</button>';
+ first.parentNode.insertBefore(controls,first);
+ const help=document.createElement("p");help.className="slide-help";help.textContent="One lesson at a time. Use Previous and Next to move through the course.";controls.parentNode.insertBefore(help,controls.nextSibling);
+ const prev=controls.querySelector(".slide-prev"),next=controls.querySelector(".slide-next"),counter=controls.querySelector(".slide-counter");let current=0;
+ function maxUnlocked(){const n=typeof count==="function"?count(type,1,30):0;return n>=20?20:10}
+ function render(){const max=maxUnlocked();if(current>max-1)current=max-1;lessons.forEach((lesson,i)=>lesson.classList.toggle("current-slide",i===current));counter.textContent="Lesson "+(current+1)+" of "+lessons.length;prev.disabled=current===0;next.disabled=current>=max-1;next.textContent=current>=max-1?(max<30?"Complete this stage to unlock more →":"Course complete ✓"):"Next →";}
+ prev.addEventListener("click",function(){if(current>0){current--;render();window.scrollTo({top:panel.offsetTop-10,behavior:"smooth"})}});
+ next.addEventListener("click",function(){if(current<maxUnlocked()-1){current++;render();window.scrollTo({top:panel.offsetTop-10,behavior:"smooth"})}});
+ panel._slideRender=render;render();
+}
+function refreshCourseSlides(){["api","vibe"].forEach(function(t){const p=document.getElementById(t+"-course");if(p&&p._slideRender)p._slideRender()})}
+function downloadCourseDoc(type){
+ const title=type==="api"?"API Fundamentals":"Vibecoding From Scratch",lessons=getCourseLessons(type);if(!lessons.length)return;
+ const body=lessons.map(function(lesson,i){const clone=lesson.cloneNode(true);clone.querySelectorAll("button,input,.question .answer,.result,.quiz,.quiz-integrity-note").forEach(function(el){el.remove()});return '<section><h1>Lesson '+(i+1)+': '+(clone.querySelector("h2")?clone.querySelector("h2").textContent:"")+'</h1>'+clone.innerHTML+'</section>'}).join("<hr>");
+ const html='<!doctype html><html><head><meta charset="utf-8"><title>'+title+'</title><style>body{font-family:Arial,sans-serif;line-height:1.6;color:#172033;margin:40px}h1{color:#174ea6}pre{background:#f3f4f6;padding:12px;white-space:pre-wrap}section{page-break-after:always}.key-fact{background:#eef5ff;border-left:4px solid #2563eb;padding:12px;margin:14px 0}.do{background:#f0fdf4;padding:12px}.mistake{background:#fff7ed;padding:12px}</style></head><body><h1>'+title+'</h1><p>Free API Directory Learning Hub — complete course guide.</p>'+body+'</body></html>';
+ const blob=new Blob([html],{type:"application/msword"}),url=URL.createObjectURL(blob),a=document.createElement("a");a.href=url;a.download=(type==="api"?"API-Fundamentals":"Vibecoding-From-Scratch")+".doc";document.body.appendChild(a);a.click();a.remove();setTimeout(function(){URL.revokeObjectURL(url)},1000);
+}
+document.addEventListener("DOMContentLoaded",function(){buildCourseSlides("api");buildCourseSlides("vibe")});
+</script>
+<script>
 const KEY="freeApiLearningProgress",QUIZ_KEY="freeApiCourseResults",NAME_KEY="freeApiCertificateName",PRACTICE_KEY="freeApiPracticeResults";
 let rawDone=[];try{rawDone=JSON.parse(localStorage.getItem(KEY)||"[]");if(!Array.isArray(rawDone))rawDone=[]}catch(e){localStorage.removeItem(KEY);rawDone=[]}
 const done=[];
@@ -728,6 +767,7 @@ function updateProgress(){
  const ac=document.getElementById("api-card-progress"),vc=document.getElementById("vibe-card-progress");if(ac)ac.textContent=api+" of 30 lessons completed";if(vc)vc.textContent=vibe+" of 30 lessons completed";
  ["api","vibe"].forEach(t=>{const inter=count(t,11,20),adv=count(t,21,30);const i=document.getElementById(t+"-intermediate-progress"),a=document.getElementById(t+"-advanced-progress");if(i)i.textContent=inter+" of 10 intermediate lessons completed";if(a)a.textContent=adv+" of 10 advanced lessons completed"});
  updateLocks();
+  refreshCourseSlides();
 }
 function updateLocks(){
  ["api","vibe"].forEach(type=>{
