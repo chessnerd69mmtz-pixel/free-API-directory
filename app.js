@@ -69,7 +69,7 @@ function status(p) {
 function nav() {
   return '<nav class="nav">' +
     '<a class="logo" href="index.html">Free API Directory</a>' +
-    '<a href="finder.html">Find an API</a><a href="usecases.html">🧩 Use Cases</a>' +
+    '<a href="finder.html">Find an API</a><a href="usecases.html">🧩 Use Cases</a><a href="learning.html">📚 Learning Hub</a>' +
     '<a href="recommend.html">✨ Find Best API</a>' +
     '<a href="compare.html">Compare</a><a href="stack.html">🏗️ Stack</a><a href="calculator.html">💰 Free Calculator</a><a href="collections.html">⭐ Collections</a>' +
     '<a href="keys.html">🔐 My API Keys</a>' +
