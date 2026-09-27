@@ -1,0 +1,118 @@
+[
+  {
+    "name": "OpenAI API",
+    "source_type": "official",
+    "verified_at": "2026-09-27",
+    "source_urls": [
+      "https://developers.openai.com/api/docs/pricing?tab=suite"
+    ],
+    "currency": "USD",
+    "billing_model": "token",
+    "pricing_basis": "standard-short-context-per-1M-tokens",
+    "models": {
+      "gpt-6-luna": {
+        "input_per_1m": 0.05,
+        "output_per_1m": 0.25,
+        "cached_input_per_1m": 0.005,
+        "cache_write_per_1m": 0.0625
+      },
+      "gpt-6-sol": {
+        "input_per_1m": 1,
+        "output_per_1m": 5,
+        "cached_input_per_1m": 0.1,
+        "cache_write_per_1m": 1.25
+      },
+      "gpt-6-astra": {
+        "input_per_1m": 5,
+        "output_per_1m": 25,
+        "cached_input_per_1m": 0.5,
+        "cache_write_per_1m": 6.25
+      }
+    },
+    "notes": "Published prices are per 1M tokens. Long-context, Fast mode, regional processing, Batch/Flex and specialized services can have different rates; this calculator uses Standard short-context rates when selected."
+  },
+  {
+    "name": "Google Gemini API",
+    "source_type": "official",
+    "verified_at": "2026-09-27",
+    "source_urls": [
+      "https://ai.google.dev/gemini-api/docs/pricing"
+    ],
+    "currency": "USD",
+    "billing_model": "token",
+    "pricing_basis": "standard-per-1M-tokens",
+    "models": {
+      "gemini-3.6-flash": {
+        "input_per_1m": 1.5,
+        "output_per_1m": 7.5,
+        "cached_input_per_1m": 0.15
+      },
+      "gemini-3.5-flash": {
+        "input_per_1m": 1.5,
+        "output_per_1m": 9,
+        "cached_input_per_1m": 0.15
+      },
+      "gemini-3.5-flash-lite": {
+        "input_per_1m": 0.3,
+        "output_per_1m": 2.5,
+        "cached_input_per_1m": 0.03
+      },
+      "gemini-3.1-flash-lite": {
+        "input_per_1m": 0.25,
+        "output_per_1m": 1.5,
+        "cached_input_per_1m": 0.025
+      }
+    },
+    "notes": "Google lists a free tier with free input/output tokens for eligible models but also applies model/tier-specific rate limits. Paid prices above are Standard rates. Batch/Flex/Priority pricing differs."
+  },
+  {
+    "name": "Mistral AI",
+    "source_type": "official",
+    "verified_at": "2026-09-27",
+    "source_urls": [
+      "https://docs.mistral.ai/getting-started/models/compare?models=mistral-small-4-0-26-03",
+      "https://docs.mistral.ai/getting-started/models/compare?models=mistral-medium-3-5"
+    ],
+    "currency": "USD",
+    "billing_model": "token",
+    "pricing_basis": "per-1M-tokens",
+    "models": {
+      "mistral-small-4": {
+        "input_per_1m": 0.15,
+        "output_per_1m": 0.6
+      },
+      "mistral-medium-3.5": {
+        "input_per_1m": 1.5,
+        "output_per_1m": 7.5
+      }
+    },
+    "notes": "Model pricing is published individually and can change by model/version. This calculator uses the listed model prices."
+  },
+  {
+    "name": "Hugging Face Inference Providers",
+    "source_type": "official",
+    "verified_at": "2026-09-27",
+    "source_urls": [
+      "https://huggingface.co/docs/inference-providers/pricing"
+    ],
+    "currency": "USD",
+    "billing_model": "pass-through",
+    "free_monthly_credit": 0.1,
+    "pricing_basis": "provider-rate-pass-through",
+    "notes": "Hugging Face says routed inference is billed at provider rates with no markup and Free users receive $0.10/month in Inference Provider credits. Exact inference cost depends on the selected provider/model, so the calculator requires custom provider rates for an exact estimate."
+  },
+  {
+    "name": "OpenRouter",
+    "source_type": "official",
+    "verified_at": "2026-09-27",
+    "source_urls": [
+      "https://openrouter.ai/pricing/",
+      "https://openrouter.ai/support/"
+    ],
+    "currency": "USD",
+    "billing_model": "pass-through",
+    "pricing_basis": "per-model-provider-rate",
+    "free_monthly_credit": 0,
+    "notes": "OpenRouter says model inference pricing is passed through from providers without markup; exact prices are model-specific. The Free plan currently has 50 requests/day. For exact cost estimation, use a selected model's current rate or the custom-rate fields."
+  }
+]
