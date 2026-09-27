@@ -1,4 +1,4 @@
-const DATA_VERSION = "20260927-01";
+const DATA_VERSION = "20260927-02";
 const INDEX_URL = new URL("data/catalog-index.json?v=" + DATA_VERSION, document.baseURI).href;
 const PROFILE_URL = new URL("data/provider_profiles.json?v=" + DATA_VERSION, document.baseURI).href;
 const CHANGE_URL = new URL("data/change_log.json?v=" + DATA_VERSION, document.baseURI).href;
@@ -399,7 +399,7 @@ async function apiProfile() {
 async function recommend() {
   const a = await loadApis();
   shell(
-    '<section class="hero"><h1>Find the Best API Provider</h1><p>Describe your role, objective and technical constraints. The directory scores catalog providers for fit and returns up to 10 matches. No API key or external AI service is required.</p></section>' +
+    '<section class="hero"><h1>Find the Best API Provider</h1><p>Describe exactly what you need. Specific words from your request drive relevance; generic terms such as “API”, “key”, “tool” and “product” are ignored instead of boosting unrelated providers.</p></section>' +
     '<div class="card tool recommend-form">' +
       '<label><b>Your role</b><select id="role" class="select"><option value="">Any role</option><option>Student</option><option>Developer</option><option>Researcher</option><option>Data scientist</option><option>Founder / startup</option><option>Teacher / educator</option><option>Product / business</option><option>Hobbyist</option></select></label>' +
       '<label><b>What are you building?</b><textarea id="objective" class="input" style="min-height:95px;width:100%" placeholder="Example: I am a student building a bird-population dashboard that combines species data, weather and maps."></textarea></label>' +
@@ -410,126 +410,270 @@ async function recommend() {
       '<label><b>Scale</b><select id="scale" class="select"><option value="any">Any</option><option value="small">Small project / learning</option><option value="medium">Growing project</option><option value="large">Higher-volume production</option></select></label>' +
       '<button id="go" class="btn">Find my best matches</button>' +
     '</div>' +
-    '<div id="method" class="notice">Ranking is based on documented catalog fields: capability match, role/use-case match, free-access fit, authentication/account constraints, commercial-use information, scale indicators and verification status. Unknown fields do not receive a positive score.</div>' +
+    '<div id="method" class="notice">Specific capability terms carry the majority of the score. Common filler, generic API terminology and broad words are filtered out. Scores are proportional to how much of the user’s specific request each provider actually matches, with access constraints and verification used as secondary fit signals.</div>' +
     '<div id="r"></div>'
   );
 
   const val = id => ($("#" + id)?.value || "").trim();
-  const words = s => [...new Set(String(s || "").toLowerCase().split(/[^a-z0-9]+/).filter(x => x.length > 2))];
+
+  // These words are intentionally excluded from capability matching. They
+  // describe the delivery mechanism or general intent, not the thing the
+  // user actually needs the provider to do.
+  const GENERIC_TERMS = new Set([
+    "api","apis","key","keys","apikey","token","tokens","auth","authentication",
+    "tool","tools","product","products","service","services","platform","provider",
+    "providers","solution","solutions","software","application","applications","app",
+    "system","systems","technology","tech","resource","resources","project","projects",
+    "thing","things","stuff","assistant","assist","assistance","help","helper",
+    "use","uses","using","used","need","needs","needed","want","wants","wanted",
+    "looking","look","find","finding","best","good","great","make","making","create",
+    "build","building","provide","provides","support","supports","work","working",
+    "free","cheap","cheapest","paid","price","pricing","cost","costs","keyless",
+    "student","developer","developers","researcher","researchers","founder",
+    "startup","startups","teacher","educator","education","business","commercial",
+    "production","small","medium","large","high","volume","project"
+  ]);
+
+  const STOP_WORDS = new Set([
+    "a","an","and","are","as","at","be","by","can","do","for","from","how","i","if",
+    "in","into","is","it","its","me","my","of","on","or","so","that","the","this",
+    "to","up","we","with","you","your","our","their","they","them","than","then",
+    "also","about","after","before","between","over","under","via","want","would"
+  ]);
+
+  function normalizeTerm(term) {
+    let t = String(term || "").toLowerCase().replace(/[^a-z0-9]+/g, "").trim();
+    if (!t) return "";
+    // Light normalization only; avoid aggressive stemming that could merge
+    // unrelated technical terms.
+    if (t.length > 5 && t.endsWith("ies")) t = t.slice(0,-3) + "y";
+    else if (t.length > 5 && t.endsWith("ing")) t = t.slice(0,-3);
+    else if (t.length > 4 && t.endsWith("es")) t = t.slice(0,-2);
+    else if (t.length > 4 && t.endsWith("s")) t = t.slice(0,-1);
+    return t;
+  }
+
+  function specificTerms(text) {
+    return [...new Set(String(text || "").toLowerCase()
+      .split(/[^a-z0-9]+/)
+      .map(normalizeTerm)
+      .filter(t => t.length >= 3 && !STOP_WORDS.has(t) && !GENERIC_TERMS.has(t)))];
+  }
+
+  function phraseList(text) {
+    return [...new Set(String(text || "").toLowerCase()
+      .split(/[,.!?;:(){}\[\]"']/)
+      .map(x => x.trim())
+      .filter(x => {
+        const terms = specificTerms(x);
+        return terms.length >= 2;
+      }))];
+  }
+
+  const corpusTerms = a.map(p => new Set(specificTerms([
+    p.name,p.category,p.description,
+    ...(p.uses || []), ...(p.protocols || []), ...(p.sdk_languages || [])
+  ].join(" "))));
+
+  const documentFrequency = new Map();
+  corpusTerms.forEach(set => set.forEach(term => {
+    documentFrequency.set(term, (documentFrequency.get(term) || 0) + 1);
+  }));
+
+  function termWeight(term) {
+    const df = documentFrequency.get(term) || 0;
+    const n = Math.max(1, a.length);
+    // Rare, specific terms count more; common terms count less.
+    return 1 + Math.min(3.5, Math.log((n + 1) / (df + 1)));
+  }
+
+  function queryTerms(form) {
+    const needsTerms = specificTerms(form.needs);
+    const objectiveTerms = specificTerms(form.objective);
+    const weighted = new Map();
+
+    needsTerms.forEach(t => weighted.set(t, (weighted.get(t) || 0) + 1.8));
+    objectiveTerms.forEach(t => weighted.set(t, (weighted.get(t) || 0) + 1));
+
+    return [...weighted.entries()].map(([term, sourceWeight]) => ({
+      term,
+      weight: sourceWeight * termWeight(term)
+    }));
+  }
 
   function scoreProvider(p, profile, form) {
-    const text = [
+    const searchText = [
       p.name,p.category,p.description,
-      ...(p.uses || []),
-      ...(p.protocols || []),
-      ...(p.sdk_languages || [])
+      ...(p.uses || []), ...(p.protocols || []), ...(p.sdk_languages || [])
     ].join(" ").toLowerCase();
-    const requested = words(form.objective + " " + form.needs);
-    const roleTerms = {
-      "Student":["student","education","learning","research","academic","project"],
-      "Developer":["developer","coding","api","sdk","webhook","backend","software"],
-      "Researcher":["research","academic","scientific","metadata","dataset","literature"],
-      "Data scientist":["data","analytics","statistics","dataset","machine learning"],
-      "Founder / startup":["startup","production","commercial","scalable","business"],
-      "Teacher / educator":["education","teaching","learning","academic"],
-      "Product / business":["business","analytics","commercial","automation"],
-      "Hobbyist":["free","public","simple","open"]
-    };
-    let score=0, reasons=[];
-    const matched=requested.filter(t=>text.includes(t));
-    score += Math.min(48, matched.length*8);
-    if (matched.length) reasons.push("matches "+matched.slice(0,4).join(", "));
-    const role=roleTerms[form.role]||[];
-    const roleHits=role.filter(t=>text.includes(t));
-    score += Math.min(14, roleHits.length*3);
-    if(roleHits.length) reasons.push("fits "+form.role+" use cases");
+    const providerTerms = new Set(specificTerms(searchText));
+    const requested = queryTerms(form);
+    const totalQueryWeight = requested.reduce((n,x) => n + x.weight, 0);
 
-    const free=freeValue(profile);
-    if(form.free==="strict") {
-      if(free===true) { score+=16; reasons.push("free access recorded"); }
-      else if(free===false) score-=35;
-      else score-=8;
-    } else if(form.free==="tier") {
-      if(free===true) score+=12;
-      else if(free===false) score-=12;
-    } else if(form.free==="keyless") {
-      const auth=String(profile.authentication||"").toLowerCase();
-      if(/none|no key|keyless|public/.test(auth)) { score+=14; reasons.push("keyless/public access"); }
-      else if(/api key|bearer|oauth/.test(auth)) score-=4;
+    let relevance = 0;
+    const matched = [];
+    requested.forEach(q => {
+      if (providerTerms.has(q.term)) {
+        relevance += q.weight;
+        matched.push(q.term);
+      } else {
+        // Small fallback for a direct substring only when the full normalized
+        // term is visibly present in a provider field.
+        const raw = q.term.length >= 6 && searchText.includes(q.term);
+        if (raw) {
+          relevance += q.weight * 0.85;
+          matched.push(q.term);
+        }
+      }
+    });
+
+    const relevanceRatio = totalQueryWeight ? Math.min(1, relevance / totalQueryWeight) : 0;
+    const phrases = [...new Set([
+      ...phraseList(form.needs),
+      ...phraseList(form.objective)
+    ])];
+    const phraseHits = phrases.filter(phrase => {
+      const terms = specificTerms(phrase);
+      return terms.length >= 2 && terms.every(t => providerTerms.has(t)) &&
+        searchText.includes(terms.join(" "));
+    }).length;
+    const phraseRatio = phrases.length ? phraseHits / phrases.length : 0;
+
+    const roleTerms = {
+      "Student":["education","learning","academic","research"],
+      "Developer":["coding","sdk","webhook","backend","software"],
+      "Researcher":["scientific","metadata","dataset","literature"],
+      "Data scientist":["data","analytics","statistics","dataset","machine","learning"],
+      "Founder / startup":["startup","production","scalable","business"],
+      "Teacher / educator":["teaching","learning","academic"],
+      "Product / business":["business","analytics","automation"],
+      "Hobbyist":["public","simple","open"]
+    };
+    const rolePool = roleTerms[form.role] || [];
+    const roleSpecific = rolePool.map(normalizeTerm).filter(t => t && !GENERIC_TERMS.has(t));
+    const roleHits = roleSpecific.filter(t => providerTerms.has(t)).length;
+    const roleFit = roleSpecific.length ? roleHits / roleSpecific.length : 0;
+
+    let constraintTotal = 0;
+    let constraintMatched = 0;
+    const reasons = [];
+    const addConstraint = (weight, ok, label) => {
+      constraintTotal += weight;
+      if (ok) {
+        constraintMatched += weight;
+        if (label) reasons.push(label);
+      }
+    };
+
+    const free = freeValue(profile);
+    if (form.free === "strict") addConstraint(16, free === true, free === true ? "free access recorded" : "free requirement not fully documented");
+    else if (form.free === "tier") addConstraint(10, free === true, free === true ? "free tier recorded" : "free-tier fit uncertain");
+    else if (form.free === "keyless") {
+      const auth = String(profile.authentication || "").toLowerCase();
+      const keyless = /none|no key|keyless|public/.test(auth);
+      addConstraint(10, keyless, keyless ? "keyless/public access" : "key required or not documented");
     }
 
     const noCard = profile.requires_credit_card === false;
     const noAccount = profile.signup_requires_account === false;
-    if(form.access==="nocard" || form.access==="both") {
-      if(noCard) {score+=10; reasons.push("no card recorded");}
-      else if(profile.requires_credit_card === true) score-=25;
-      else score-=3;
+    if (form.access === "nocard" || form.access === "both") {
+      addConstraint(8, noCard, noCard ? "no card recorded" : profile.requires_credit_card === true ? "card requirement conflicts" : "card requirement unknown");
     }
-    if(form.access==="noaccount" || form.access==="both") {
-      if(noAccount) {score+=10; reasons.push("no account recorded");}
-      else if(profile.signup_requires_account === true) score-=12;
-      else score-=2;
+    if (form.access === "noaccount" || form.access === "both") {
+      addConstraint(8, noAccount, noAccount ? "no account recorded" : profile.signup_requires_account === true ? "account requirement conflicts" : "account requirement unknown");
     }
 
-    const commercial=String(profile.commercial_use||"").toLowerCase();
-    if(form.commercial!=="any") {
-      if(/allow|yes|permitted|commercial/.test(commercial)) {score+=8; reasons.push("commercial-use information supports the request");}
-      else if(/no|prohibited|not allowed/.test(commercial)) score-=20;
-      else score-=2;
+    if (form.commercial !== "any") {
+      const commercial = String(profile.commercial_use || "").toLowerCase();
+      const allowed = /allow|yes|permitted|commercial/.test(commercial);
+      const prohibited = /no|prohibited|not allowed/.test(commercial);
+      addConstraint(10, form.commercial === "preferred" ? allowed : allowed, allowed ? "commercial-use information supports the request" : prohibited ? "commercial use conflicts" : "commercial use unknown");
     }
 
-    if(form.scale==="large") {
-      const rate=String(profile.rate_limit||"").toLowerCase();
-      if(/high|unlimited|1000|10k|10,000|million/.test(rate)) {score+=7; reasons.push("documented higher-scale signal");}
-    } else if(form.scale==="small") {
-      if(free===true) score+=4;
+    if (form.scale === "large") {
+      const rate = String(profile.rate_limit || "").toLowerCase();
+      const highScale = /high|unlimited|1000|10k|10,000|million/.test(rate);
+      addConstraint(8, highScale, highScale ? "documented higher-scale signal" : "higher-scale capacity not documented");
+    } else if (form.scale === "small") {
+      addConstraint(6, free === true, free === true ? "appropriate for a smaller free project" : "small-project free fit uncertain");
     }
 
-    if(profile.status==="active" && profile.last_verified) score+=6;
-    if(profile.status==="candidate" || profile.research_status==="needs-deeper-provider-review") score-=10;
-    if(profile.last_verified) {
+    let verificationFit = 0.45;
+    if (profile.status === "active" && profile.last_verified) verificationFit = 1;
+    else if (profile.status === "candidate" || profile.research_status === "needs-deeper-provider-review") verificationFit = 0.2;
+    else if (profile.last_verified) {
       const age=(Date.now()-Date.parse(profile.last_verified+"T00:00:00Z"))/86400000;
-      if(Number.isFinite(age) && age>365) score-=5;
+      if (Number.isFinite(age) && age > 365) verificationFit = 0.25;
+      else verificationFit = 0.65;
     }
 
-    return {score, reasons: reasons.slice(0,4)};
+    // Dynamic normalization keeps the result proportional to the information
+    // the user actually supplied instead of awarding a fixed arbitrary bonus.
+    const components = [
+      [0.70, relevanceRatio],
+      [0.10, phraseRatio],
+      [0.05, roleSpecific.length && form.role ? roleFit : null],
+      [0.10, constraintTotal ? (constraintMatched / constraintTotal) : null],
+      [0.05, verificationFit]
+    ].filter(x => x[1] !== null);
+
+    const totalWeight = components.reduce((n,x) => n + x[0], 0);
+    const score = Math.round(100 * components.reduce((n,x) => n + x[0] * x[1], 0) / totalWeight);
+
+    const reasonText = matched.length
+      ? "specific match: " + matched.slice(0,8).join(", ")
+      : "no specific capability term matched";
+    reasons.unshift(reasonText);
+
+    return {
+      score,
+      relevanceRatio,
+      matched,
+      reasons: [...new Set(reasons)].slice(0,5)
+    };
   }
 
   $("#go").onclick = async () => {
     const form={role:val("role"),objective:val("objective"),needs:val("needs"),free:val("free"),access:val("access"),commercial:val("commercial"),scale:val("scale")};
-    if(!form.objective && !form.needs) {
-      $("#r").innerHTML='<div class="card notice">Describe your objective or at least one required capability so the matcher has something to evaluate.</div>';
+    const requestedTerms=queryTerms(form);
+    if(!requestedTerms.length) {
+      $("#r").innerHTML='<div class="card notice"><h2>Enter a specific requirement</h2><p>Use concrete terms such as “weather”, “geocoding”, “bird species”, “satellite imagery”, “OCR”, “speech transcription” or “stock prices”. Generic words such as API, key, tool, assistant and product are ignored.</p></div>';
       return;
     }
-    $("#r").innerHTML='<div class="card">Analyzing the catalog and verification fields…</div>';
+
+    const ignored = [...specificTerms(form.objective + " " + form.needs)];
+    $("#r").innerHTML='<div class="card">Analyzing the catalog against your specific requirements…</div>';
     const profiles=await loadProfiles();
     const byName=new Map(profiles.map(p=>[p.name,p]));
     const ranked=a.map(p=>{
       const profile=byName.get(p.name)||p;
       const s=scoreProvider(p,profile,form);
-      return {p,profile,score:s.score,reasons:s.reasons};
-    }).filter(x=>x.score>0)
-      .sort((x,y)=>y.score-x.score || String(y.profile.last_verified||"").localeCompare(String(x.profile.last_verified||"")) || x.p.name.localeCompare(y.p.name))
-      .slice(0,10);
+      return {p,profile,score:s.score,reasons:s.reasons,relevanceRatio:s.relevanceRatio,matched:s.matched};
+    })
+    .filter(x=>x.relevanceRatio>0 || (form.free!=="any" || form.access!=="any" || form.commercial!=="any" || form.scale!=="any"))
+    .sort((x,y)=>y.score-x.score || y.relevanceRatio-x.relevanceRatio || String(y.profile.last_verified||"").localeCompare(String(x.profile.last_verified||"")) || x.p.name.localeCompare(y.p.name))
+    .slice(0,10);
 
     if(!ranked.length) {
-      $("#r").innerHTML='<div class="card"><h2>No strong catalog matches</h2><p>Try broader capability terms or relax one of the access constraints.</p></div>';
+      $("#r").innerHTML='<div class="card"><h2>No matching providers found</h2><p>None of the catalog records contains your specific requirement terms. Try adding a more concrete capability or synonym.</p></div>';
       return;
     }
 
-    $("#r").innerHTML='<section class="recommend-results"><div class="notice"><b>'+ranked.length+' provider'+(ranked.length===1?"":"s")+' matched.</b> Results are ordered by the directory fit score; the score is not a universal quality rating.</div>' +
+    const termList=requestedTerms.map(x=>x.term).join(", ");
+    $("#method").innerHTML='<b>Specific terms used:</b> '+esc(termList)+'<br><span class="muted">Scoring uses weighted term coverage, rarer terms carry more weight, multi-word phrase matches receive additional weight, and generic API/assistant/tool/product language is excluded.</span>';
+
+    $("#r").innerHTML='<section class="recommend-results"><div class="notice"><b>'+ranked.length+' provider'+(ranked.length===1?"":"s")+' matched.</b> Scores are fit percentages for this request, not universal provider quality ratings.</div>' +
       '<div class="grid">'+ranked.map((x,i)=>{
         const p=x.profile, f=freeValue(p);
         return '<article class="card best-card"><div class="rank">#'+(i+1)+'</div><h2><a href="api.html?provider='+encodeURIComponent(p.name)+'">'+esc(p.name)+'</a></h2>' +
           '<p class="muted">'+esc(p.category||"API provider")+'</p><p>'+esc(p.description||"Cataloged provider.")+'</p>' +
           '<div class="stats"><span class="pill '+(f===true?"good":"warn")+'">'+(f===true?"Free access recorded":f===false?"No free tier recorded":"Free status not publicly stated")+'</span>'+status(p)+'</div>' +
-          '<p><b>Why it matched:</b> '+esc(x.reasons.length?x.reasons.join("; "):"capability and catalog fit")+'</p>' +
-          '<p class="muted">Fit score: '+x.score+' · Last verified: '+esc(p.last_verified||"Not recorded")+'</p>' +
+          '<p><b>Why it matched:</b> '+esc(x.reasons.length?x.reasons.join("; "):"specific capability and catalog fit")+'</p>' +
+          '<p class="muted"><b>Fit score: '+x.score+'%</b> · Specific-term coverage: '+Math.round(x.relevanceRatio*100)+'% · Last verified: '+esc(p.last_verified||"Not recorded")+'</p>' +
           '<a class="btn secondary" href="api.html?provider='+encodeURIComponent(p.name)+'">View provider</a></article>';
       }).join("")+'</div></section>';
   };
 }
-
 
 function providerOptions(a){return '<option value="">Select a provider</option>'+a.map(function(p){return '<option value="'+esc(p.name)+'">'+esc(p.name)+'</option>';}).join('');}
 async function stackBuilder(){
