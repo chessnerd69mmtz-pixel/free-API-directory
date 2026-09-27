@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Browse 200 student-friendly free and low-cost API resources with direct provider and documentation links.">
+<title>200 Student-Friendly Free APIs — Free API Directory</title>
+<style>
+:root{
+  --bg:#f4f7fb;--surface:#fff;--surface2:#f8fafc;--ink:#142033;--muted:#667085;
+  --line:#e4e9f1;--blue:#2563eb;--blue2:#1d4ed8;--green:#15803d;--amber:#b45309;
+  --shadow:0 14px 40px rgba(16,24,40,.08);--hero1:#0f172a;--hero2:#1d4ed8;
+}
+html[data-theme="dark"]{
+  --bg:#0b1120;--surface:#111827;--surface2:#172033;--ink:#f3f4f6;--muted:#aab4c4;
+  --line:#283548;--blue:#60a5fa;--blue2:#3b82f6;--green:#4ade80;--amber:#fbbf24;
+  --shadow:0 16px 42px rgba(0,0,0,.28);--hero1:#111827;--hero2:#1e3a8a;
+}
+*{box-sizing:border-box}
+html{color-scheme:light}
+html[data-theme="dark"]{color-scheme:dark}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.55 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+a{color:inherit}
+.page{max-width:1500px;margin:auto;padding:22px}
+.nav{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:20px}
+.logo{font-weight:900;font-size:20px;margin-right:auto;text-decoration:none}
+.nav a{text-decoration:none;font-weight:750;padding:8px 10px;border-radius:10px}
+.nav a:hover{background:var(--surface2)}
+.theme{border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:10px;padding:9px 12px;font:inherit;font-weight:800;cursor:pointer}
+.hero{background:linear-gradient(135deg,var(--hero1),var(--hero2));color:#fff;border-radius:24px;padding:30px;box-shadow:var(--shadow);margin-bottom:18px}
+.hero h1{font-size:clamp(30px,4vw,46px);line-height:1.06;margin:0 0 12px}
+.hero p{max-width:1000px;margin:0;color:#dbeafe}
+.hero-row{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
+.stat{display:inline-flex;align-items:center;gap:7px;padding:8px 12px;border-radius:999px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.18);font-weight:800}
+.toolbar{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:14px;box-shadow:var(--shadow);margin-bottom:16px}
+.controls{display:grid;grid-template-columns:minmax(250px,1.8fr) repeat(3,minmax(150px,1fr));gap:10px}
+.input,.select{width:100%;padding:12px 13px;border:1px solid var(--line);border-radius:11px;background:var(--surface);color:var(--ink);font:inherit}
+.meta{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-top:10px}
+.muted{color:var(--muted)}
+.notice{margin-top:10px;padding:11px 13px;border-radius:12px;background:color-mix(in srgb,var(--surface2) 82%,#f59e0b 18%);border:1px solid var(--line);color:var(--ink)}
+.table-card{background:var(--surface);border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow);overflow:hidden}
+.scroll{overflow:auto;max-height:calc(100vh - 320px)}
+table{width:100%;min-width:960px;border-collapse:separate;border-spacing:0}
+th{position:sticky;top:0;z-index:2;text-align:left;padding:13px 14px;background:var(--surface2);border-bottom:1px solid var(--line);font-size:12px;text-transform:uppercase;letter-spacing:.04em;color:var(--muted)}
+td{padding:14px;border-bottom:1px solid var(--line);vertical-align:top}
+tr:last-child td{border-bottom:0}
+tr:hover td{background:color-mix(in srgb,var(--surface2) 74%, transparent)}
+.num{width:58px;color:var(--muted);font-weight:800}
+.provider{font-weight:850;min-width:210px}
+.provider a{text-decoration:none}
+.provider a:hover{text-decoration:underline}
+.description{min-width:360px}
+.badge{display:inline-flex;align-items:center;padding:4px 9px;border-radius:999px;background:var(--surface2);border:1px solid var(--line);font-size:12px;font-weight:800}
+.badge.good{color:var(--green)}
+.badge.warn{color:var(--amber)}
+.action{white-space:nowrap}
+.action a{display:inline-flex;align-items:center;gap:6px;text-decoration:none;font-weight:850;color:var(--blue)}
+.action a:hover{text-decoration:underline}
+.footer{padding:18px 4px 8px;color:var(--muted);font-size:13px}
+.empty{padding:34px;text-align:center;color:var(--muted)}
+@media(max-width:980px){.controls{grid-template-columns:1fr 1fr}.controls .search{grid-column:1/-1}}
+@media(max-width:700px){.page{padding:14px}.nav{gap:6px}.nav a{font-size:13px}.logo{width:100%;margin-right:0}.controls{grid-template-columns:1fr}.hero{padding:24px}.scroll{max-height:none}}
+</style>
+</head>
+<body>
+<div class="page">
+  <nav class="nav">
+    <a class="logo" href="index.html">Free API Directory</a>
+    <a href="finder.html">Find an API</a>
+    <a href="recommend.html">Best API</a>
+    <a href="calculator.html">Calculator</a>
+    <a href="student.html">Student Mode</a>
+    <button id="theme" class="theme" type="button" aria-label="Toggle dark mode">🌙 Dark mode</button>
+  </nav>
+
+  <section class="hero">
+    <h1>🎓 200 Student-Friendly Free APIs</h1>
+    <p>Direct provider and documentation links for learning, coursework, experiments and student projects. Keyless access, free API keys, trials and free tiers are shown as different access patterns rather than being treated as interchangeable.</p>
+    <div class="hero-row">
+      <span class="stat"><span id="total">200</span> providers</span>
+      <span class="stat"><span id="visible">200</span> shown</span>
+      <span class="stat"><span id="keyless">0</span> keyless/public</span>
+    </div>
+  </section>
+
+  <section class="toolbar">
+    <div class="controls">
+      <input id="search" class="input search" type="search" placeholder="Search the provider name or URL…" autocomplete="off">
+      <select id="access" class="select">
+        <option value="all">Access: all</option>
+        <option value="keyless">No key / public</option>
+        <option value="key">Key / signup involved</option>
+      </select>
+      <select id="category" class="select">
+        <option value="all">Category: all</option>
+      </select>
+      <select id="sort" class="select">
+        <option value="number">Sort: original list</option>
+        <option value="provider">Sort: provider A–Z</option>
+      </select>
+    </div>
+    <div class="meta">
+      <span id="count" class="muted">Loading providers…</span>
+      <button id="clear" class="theme" type="button">Clear filters</button>
+    </div>
+    <div class="notice">The list preserves the supplied 200-provider discovery table. A listing does not by itself guarantee a current quota, no-card signup, commercial permission or permanent availability.</div>
+  </section>
+
+  <section class="table-card">
+    <div class="scroll">
+      <table>
+        <thead><tr><th>#</th><th>Provider</th><th>Access</th><th>Category</th><th>Description</th><th>Provider / docs</th></tr></thead>
+        <tbody id="rows"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <div class="footer">Source list: <a href="docs/student-friendly-free-apis.md">docs/student-friendly-free-apis.md</a>. Additional category and description metadata comes from the directory catalog when available.</div>
+</div>
+
+<script>
+(function(){
+  const esc=s=>String(s??"").replace(/[&<>"]/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[m]));
+  const safe=u=>{try{const x=new URL(String(u),document.baseURI);return /^https?:$/.test(x.protocol)?x.href:null}catch(e){return null}};
+  const normalizeName=n=>String(n||"").replace(/\s*\(no key\)\s*$/i,"").trim().toLowerCase();
+  const themeButton=document.getElementById("theme");
+  const saved=localStorage.getItem("freeApiTheme");
+  if(saved==="dark") document.documentElement.dataset.theme="dark";
+  function updateThemeButton(){themeButton.textContent=document.documentElement.dataset.theme==="dark"?"☀️ Light mode":"🌙 Dark mode"}
+  updateThemeButton();
+  themeButton.onclick=()=>{
+    const dark=document.documentElement.dataset.theme==="dark";
+    if(dark) delete document.documentElement.dataset.theme;
+    else document.documentElement.dataset.theme="dark";
+    localStorage.setItem("freeApiTheme",dark?"light":"dark");
+    updateThemeButton();
+  };
+
+  let rows=[];
+  let catalog=new Map();
+
+  function parseMarkdown(md){
+    return md.split("\n").map(line=>{
+      const m=line.match(/^\|\s*(\d+)\s*\|\s*(.*?)\s*\|\s*(https?:\/\/[^|\s]+)\s*\|\s*$/);
+      if(!m) return null;
+      const num=Number(m[1]), raw=String(m[2]).trim();
+      const keyless=/\(no key\)/i.test(raw);
+      const name=raw.replace(/\s*\(no key\)\s*/ig,"").trim();
+      return {num,name,url:m[3].trim(),keyless,raw};
+    }).filter(Boolean).slice(0,200);
+  }
+
+  function buildCategories(){
+    const seen=new Set();
+    rows.forEach(r=>{const c=(catalog.get(normalizeName(r.name))||{}).category; if(c) seen.add(c)});
+    const select=document.getElementById("category");
+    select.innerHTML='<option value="all">Category: all</option>'+[...seen].sort().map(c=>'<option value="'+esc(c)+'">'+esc(c)+'</option>').join("");
+  }
+
+  function filtered(){
+    const q=document.getElementById("search").value.toLowerCase().trim();
+    const access=document.getElementById("access").value;
+    const category=document.getElementById("category").value;
+    const sort=document.getElementById("sort").value;
+    let out=rows.filter(r=>{
+      const p=catalog.get(normalizeName(r.name))||{};
+      const hay=[r.name,r.url,p.description,p.category].join(" ").toLowerCase();
+      const accessOk=access==="all"||(access==="keyless"&&r.keyless)||(access==="key"&&!r.keyless);
+      const categoryOk=category==="all"||p.category===category;
+      return (!q||hay.includes(q))&&accessOk&&categoryOk;
+    });
+    if(sort==="provider") out.sort((a,b)=>a.name.localeCompare(b.name));
+    else out.sort((a,b)=>a.num-b.num);
+    return out;
+  }
+
+  function render(){
+    const out=filtered();
+    document.getElementById("visible").textContent=out.length;
+    document.getElementById("count").textContent=out.length+" provider"+(out.length===1?"":"s")+" shown";
+    document.getElementById("rows").innerHTML=out.length?out.map(r=>{
+      const p=catalog.get(normalizeName(r.name))||{};
+      const category=p.category||"Student / Education & General";
+      const desc=p.description||"Direct provider or documentation entry from the supplied student-friendly research list.";
+      const url=safe(r.url);
+      const action=url?'<a href="'+esc(url)+'" target="_blank" rel="noopener noreferrer nofollow">Open provider ↗</a>':"Unavailable";
+      return '<tr><td class="num">'+r.num+'</td><td class="provider"><a href="api.html?provider='+encodeURIComponent(p.name||r.name)+'">'+esc(r.name)+'</a></td><td><span class="badge '+(r.keyless?"good":"warn")+'">'+(r.keyless?"No key / public":"Key / signup")+'</span></td><td>'+esc(category)+'</td><td class="description">'+esc(desc)+'</td><td class="action">'+action+'</td></tr>';
+    }).join(""):'<tr><td colspan="6" class="empty">No providers match those filters.</td></tr>';
+  }
+
+  async function init(){
+    const [mdRes,catRes]=await Promise.all([
+      fetch("docs/student-friendly-free-apis.md",{cache:"no-store"}),
+      fetch("data/catalog-index.json?v=20260927-04",{cache:"force-cache"})
+    ]);
+    if(!mdRes.ok) throw new Error("Student list HTTP "+mdRes.status);
+    if(!catRes.ok) throw new Error("Catalog HTTP "+catRes.status);
+    const md=await mdRes.text();
+    const cat=await catRes.json();
+    rows=parseMarkdown(md);
+    for(const p of (cat.providers||[])) catalog.set(normalizeName(p.name),p);
+    document.getElementById("total").textContent=rows.length;
+    document.getElementById("keyless").textContent=rows.filter(x=>x.keyless).length;
+    buildCategories();
+    render();
+  }
+
+  ["search","access","category","sort"].forEach(id=>{
+    const el=document.getElementById(id);
+    el.addEventListener(id==="search"?"input":"change",render);
+  });
+  document.getElementById("clear").onclick=()=>{
+    document.getElementById("search").value="";
+    document.getElementById("access").value="all";
+    document.getElementById("category").value="all";
+    document.getElementById("sort").value="number";
+    render();
+  };
+  init().catch(err=>{
+    document.getElementById("count").textContent="Could not load the student list";
+    document.getElementById("rows").innerHTML='<tr><td colspan="6" class="empty">'+esc(err.message)+'</td></tr>';
+  });
+})();
+</script>
+</body>
+</html>
