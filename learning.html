@@ -793,6 +793,13 @@ function selectCourse(type){
   type=type==="vibe"?"vibe":"api";
   const radio=document.getElementById(type==="vibe"?"course-vibe":"course-api");
   if(radio)radio.checked=true;
+  const api=document.getElementById("api-course"),vibe=document.getElementById("vibe-course");
+  if(api)api.classList.toggle("active",type==="api");
+  if(vibe)vibe.classList.toggle("active",type==="vibe");
+  updateProgress();
+  const panel=type==="vibe"?vibe:api;
+  if(panel)window.setTimeout(function(){panel.scrollIntoView({behavior:"smooth",block:"start"})},0);
+}
 window.selectCourse=selectCourse;
 document.getElementById("course-api").checked=true;
 function toggle(id){document.getElementById(id).classList.toggle("show")}
