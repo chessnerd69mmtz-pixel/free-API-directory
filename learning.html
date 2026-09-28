@@ -33,11 +33,11 @@ table{width:100%;border-collapse:collapse;margin:12px 0}th,td{text-align:left;bo
 .course-card.active{border-color:var(--blue);box-shadow:0 0 0 3px rgba(30,90,220,.10)}
 .course-status{font-size:13px;font-weight:700;color:#53627a;margin-top:10px}
 .native-course-tab{position:absolute;opacity:0;pointer-events:none;width:1px;height:1px}
-.course-panel{display:none!important}
-#course-api:checked~.layout #api-course{display:block!important}
-#course-vibe:checked~.layout #vibe-course{display:block!important}
+.course-panel{display:none}
+#course-api:checked~.layout #api-course{display:block}
+#course-vibe:checked~.layout #vibe-course{display:block}
 .course-action{display:inline-block;cursor:pointer;text-decoration:none}
-.course-panel.active{display:block!important}
+.course-panel.active{display:block}
 .course-select-note{text-align:center;color:#53627a;margin:5px 0 18px}
 .course-switch{display:flex;justify-content:space-between;align-items:center;gap:12px;margin:18px 0}
 .course-switch button{border:1px solid var(--line);background:#fff;color:var(--ink);border-radius:9px;padding:9px 13px;cursor:pointer;font-weight:700}
@@ -95,12 +95,12 @@ document.addEventListener("DOMContentLoaded",function(){
 <div class="course-card" id="api-card" onclick="selectCourse('api')" role="button" tabindex="0">
 <span class="tag">API course</span><h2>🌐 API Fundamentals</h2>
 <p>Learn APIs from zero: how apps ask for information, how keys work, how free limits work, how to fix common problems, and how to build a small connection.</p>
-<div class="course-status" id="api-card-progress">0 of 10 lessons completed</div><label class="course-action" for="course-api">Start API course →</label><button type="button" class="course-download" onclick="event.stopPropagation();downloadCourseDoc('api')">⬇ Download Word course</button>
+<div class="course-status" id="api-card-progress">0 of 10 lessons completed</div><button type="button" class="course-action" onclick="event.preventDefault();event.stopPropagation();document.getElementById('course-api').checked=true;document.getElementById('api-course').classList.add('active');document.getElementById('vibe-course').classList.remove('active');document.getElementById('api-course').scrollIntoView({behavior:'smooth',block:'start'});">Start API course →</button><button type="button" class="course-download" onclick="event.stopPropagation();downloadCourseDoc('api')">⬇ Download Word course</button>
 </div>
 <div class="course-card" id="vibe-card" onclick="selectCourse('vibe')" role="button" tabindex="0">
 <span class="tag">Absolute beginner</span><h2>💻 Vibecoding From Scratch</h2>
 <p>Start with no coding knowledge. Learn what code and files are, how to give AI clear instructions, how to test what it makes, and how to build a small project step by step.</p>
-<div class="course-status" id="vibe-card-progress">0 of 10 lessons completed</div><label class="course-action" for="course-vibe">Start Vibecoding →</label><button type="button" class="course-download" onclick="event.stopPropagation();downloadCourseDoc('vibe')">⬇ Download Word course</button>
+<div class="course-status" id="vibe-card-progress">0 of 10 lessons completed</div><button type="button" class="course-action" onclick="event.preventDefault();event.stopPropagation();document.getElementById('course-vibe').checked=true;document.getElementById('vibe-course').classList.add('active');document.getElementById('api-course').classList.remove('active');document.getElementById('vibe-course').scrollIntoView({behavior:'smooth',block:'start'});">Start Vibecoding →</button><button type="button" class="course-download" onclick="event.stopPropagation();downloadCourseDoc('vibe')">⬇ Download Word course</button>
 </div>
 </div>
 <div class="layout"><aside class="toc"><strong>Course map</strong>
