@@ -68,7 +68,14 @@ table{width:100%;border-collapse:collapse;margin:12px 0}th,td{text-align:left;bo
 .course-panel.slide-mode .lesson.current-slide{display:block}
 .course-panel.slide-mode .practice-area,.course-panel.slide-mode .final-assessment,.course-panel.slide-mode .certificate{display:none}
 .course-panel.slide-mode.show-extras .practice-area,.course-panel.slide-mode.show-extras .final-assessment{display:block}
-@media(max-width:650px){.slide-controls{position:static;flex-wrap:wrap}.slide-counter{order:-1;width:100%}.course-download{margin-left:0}}
+@media(max-width:650px){.slide-controls{position:static;flex-wrap:wrap}.slide-counter{order:-1;width:100%}.course-download{margin-left:0}}.vibe-playground{margin:26px 0;padding:24px;border:2px solid var(--blue);border-radius:18px;background:linear-gradient(135deg,#f5f9ff,#fff);box-shadow:0 8px 24px rgba(30,80,180,.08)}
+.vibe-playground-head h2{margin:8px 0 6px;font-size:29px}.vibe-playground-head p{margin:6px 0 16px}
+.vibe-tool-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:18px 0}
+.vibe-tool{display:flex;flex-direction:column;gap:6px;padding:16px;border:1px solid var(--line);border-radius:14px;background:#fff;text-decoration:none;color:var(--ink);transition:.18s;box-shadow:0 4px 12px rgba(20,40,80,.04)}
+.vibe-tool:hover{border-color:var(--blue);transform:translateY(-2px);background:var(--soft)}.vibe-tool strong{font-size:17px}.vibe-tool span{font-size:13px;color:var(--muted);line-height:1.5;flex:1}.vibe-tool b{color:var(--blue);font-size:13px}
+.vibe-challenge{margin-top:20px;padding:20px;border-radius:16px;background:#fff;border:1px solid var(--line)}.vibe-challenge h3{margin-top:0}.vibe-before-after{display:grid;grid-template-columns:1fr 1.4fr;gap:16px;margin-top:16px}.vibe-before-after>div{border:1px solid var(--line);border-radius:13px;padding:16px;background:#fbfcff}.vibe-before-after ul{padding-left:20px}
+@media(max-width:900px){.vibe-tool-grid{grid-template-columns:repeat(2,1fr)}}@media(max-width:650px){.vibe-tool-grid,.vibe-before-after{grid-template-columns:1fr}}
+
 \n</style><script>
 document.addEventListener("DOMContentLoaded",function(){
   document.querySelectorAll("[data-start-course]").forEach(function(link){
@@ -408,6 +415,53 @@ document.addEventListener("DOMContentLoaded",function(){
 <button class="btn" onclick="complete(20)">Mark lesson complete</button></article>
 
 <div class="callout"><h2>🎯 Vibecoding beginner checklist</h2><ol><li>I understand that code is instructions.</li><li>I know what a file and folder are.</li><li>I roughly understand HTML, CSS, and JavaScript.</li><li>I can describe one tiny feature clearly.</li><li>I can ask AI to explain its changes.</li><li>I can test one change at a time.</li><li>I can report an error precisely.</li><li>I understand that public code must not contain private secrets.</li><li>I know what a GitHub repository is.</li><li>I can follow the idea → prompt → test → fix → repeat loop.</li></ol></div>
+</section>
+
+<section class="vibe-playground" id="vibe-playground">
+  <div class="vibe-playground-head">
+    <span class="tag">🧪 Practice outside the course</span>
+    <h2>🚀 Your Vibecoding Playground</h2>
+    <p>You have learned the beginner foundations. Now try the same ideas in a real AI tool. Pick <b>any one</b> of the options below, open it, and give it a prompt. You do not need to know how to code.</p>
+  </div>
+  <div class="vibe-tool-grid">
+    <a class="vibe-tool" href="https://chatgpt.com/" target="_blank" rel="noopener noreferrer"><strong>🤖 ChatGPT</strong><span>Ask AI to plan, create, improve, or explain a project.</span><b>Open ChatGPT →</b></a>
+    <a class="vibe-tool" href="https://claude.ai/" target="_blank" rel="noopener noreferrer"><strong>🧠 Claude</strong><span>Use a conversational AI to refine ideas and build with detailed instructions.</span><b>Open Claude →</b></a>
+    <a class="vibe-tool" href="https://gemini.google.com/" target="_blank" rel="noopener noreferrer"><strong>✨ Gemini</strong><span>Try prompts for planning, creating, improving, and exploring ideas.</span><b>Open Gemini →</b></a>
+    <a class="vibe-tool" href="https://copilot.microsoft.com/" target="_blank" rel="noopener noreferrer"><strong>🪟 Microsoft Copilot</strong><span>Practice giving an AI clear instructions and asking for revisions.</span><b>Open Copilot →</b></a>
+    <a class="vibe-tool" href="https://replit.com/" target="_blank" rel="noopener noreferrer"><strong>🛠️ Replit</strong><span>Vibe-code websites and apps by describing what you want in natural language.</span><b>Open Replit →</b></a>
+    <a class="vibe-tool" href="https://bolt.new/" target="_blank" rel="noopener noreferrer"><strong>⚡ Bolt</strong><span>Describe an app or website and iterate on it through conversation.</span><b>Open Bolt →</b></a>
+    <a class="vibe-tool" href="https://lovable.dev/" target="_blank" rel="noopener noreferrer"><strong>💜 Lovable</strong><span>Turn a plain-language idea into an app and refine it with follow-up prompts.</span><b>Open Lovable →</b></a>
+    <a class="vibe-tool" href="https://cursor.com/" target="_blank" rel="noopener noreferrer"><strong>⌨️ Cursor</strong><span>Try an AI coding workspace once you are ready to experiment with a real project.</span><b>Open Cursor →</b></a>
+  </div>
+  <div class="vibe-challenge">
+    <h3>🎯 The Prompt Improvement Challenge</h3>
+    <p><b>Do this now:</b> Pick one tool above and start with a deliberately simple prompt such as:</p>
+    <div class="sample-prompt"><b>💬 First attempt</b><pre><code>Build me a study app for biology.</code></pre></div>
+    <p>Then send this follow-up prompt:</p>
+    <div class="sample-prompt"><b>💬 Ask the AI to improve your prompt</b><pre><code>Before building anything, improve my original prompt. Show me:
+1. What was unclear or missing.
+2. What assumptions you would have had to make.
+3. A much better version of my prompt.
+4. A short explanation of what I could have done better.
+Do not build the app yet. Wait for my approval.</code></pre></div>
+    <div class="vibe-before-after">
+      <div><b>What the AI should help you notice</b><ul><li>Who the app is for.</li><li>What the user should actually be able to do.</li><li>Which screens or features matter.</li><li>What style or behavior you want.</li><li>What should be left out of the first version.</li></ul></div>
+      <div><b>Example of a stronger prompt</b><pre><code>I am a beginner student. Build a simple biology study app for one person.
+
+Goal: help me revise biology topics quickly.
+Include:
+- a home screen with 5 topic cards;
+- a quiz for each topic;
+- a score after each quiz;
+- a simple progress indicator;
+- a clean, light design that works on a laptop and phone.
+
+Start with the smallest working version. Do not add accounts, payments, or unnecessary features. Before making major changes, explain what you are changing and why.</code></pre></div>
+    </div>
+    <div class="callout good"><b>🧠 The lesson:</b> Vibecoding is not about writing the fanciest prompt. It is about giving the AI enough useful direction, seeing what it does, and then improving your instructions based on the result.</div>
+    <div class="key-fact"><b>🔑 Key Fact</b>A prompt can be improved after you see what the AI misunderstood or had to guess.</div>
+    <div class="key-fact"><b>🔑 Key Fact</b>Asking the AI to explain what was missing turns a first attempt into a learning exercise.</div>
+  </div>
 </section>
 
 <div class="stage-banner" id="vibe-intermediate"><div class="plain-note"><b>💡 Plain-English approach:</b> We are still learning by doing. Start with the example prompt, try it, and then come back to the explanation.</div><h2>📘 Intermediate Vibecoding — 10 lessons</h2><p>Unlocked after all 10 beginner Vibecoding lessons. You will start combining prompts, context, examples, tools, and feedback instead of only asking for single features.</p><div class="stage-progress" id="vibe-intermediate-progress"></div><div class="stage-content stage-locked" id="vibe-intermediate-content"><section class="safety-slide" data-safety-slide="vibe" aria-label="Vibecoding course beginner safety slide">
