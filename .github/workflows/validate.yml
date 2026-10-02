@@ -16,5 +16,7 @@ jobs:
         run: python scripts/validate.py
       - name: Strict provider schema validation
         run: python scripts/validate_provider_schema.py
+      - name: Validate profile metadata
+        run: python scripts/validate_profiles.py
       - name: Validate JavaScript syntax
         run: node --check app.js && node --check vault.js && node --check catalog.js

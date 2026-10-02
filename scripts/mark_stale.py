@@ -10,3 +10,4 @@ for p in providers:
     except ValueError:continue
     if verified<cutoff and p.get("status")=="active":p["status"]="needs re-verification";changed=True
 if changed:path.write_text(json.dumps(providers,indent=2,ensure_ascii=False)+"\n",encoding="utf-8")
+print(f"Updated stale provider statuses: {sum(1 for p in providers if p.get("status")=="needs re-verification")}")
