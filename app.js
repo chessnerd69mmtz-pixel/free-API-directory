@@ -87,10 +87,22 @@ function shell(html) {
   root.innerHTML = '<div class="wrap">' + nav() + html + "</div>";
 }
 
-async function getJson(url) {
-  const response = await fetch(url, {cache:"force-cache"});
-  if (!response.ok) throw new Error("Could not load data (HTTP " + response.status + ")");
-  return response.json();
+async function getJson(url, options = {}) {
+  const timeoutMs = Number(options.timeoutMs || 12000);
+  const controller = new AbortController();
+  const timer = setTimeout(() => controller.abort(), timeoutMs);
+  try {
+    const response = await fetch(url, {cache:"no-store", signal:controller.signal});
+    if (!response.ok) throw new Error("Could not load data (HTTP " + response.status + ")");
+    return await response.json();
+  } catch (error) {
+    if (error && error.name === "AbortError") {
+      throw new Error("Catalog request timed out");
+    }
+    throw error;
+  } finally {
+    clearTimeout(timer);
+  }
 }
 
 function prepareIndex(list) {
@@ -108,7 +120,27 @@ async function loadApis() {
   if (!INDEX_PROMISE) {
     INDEX_PROMISE = getJson(INDEX_URL).then((d) => {
       if (!d || !Array.isArray(d.providers)) throw new Error("Invalid catalog index");
-      return Promise.all([loadEvidence(), loadQualityEvidence()]).then(([evidence, quality]) => { const byName = new Map((Array.isArray(evidence)?evidence:[]).map(x => [String(x.name).toLowerCase(), x])); const qByName = new Map((Array.isArray(quality)?quality:[]).map(x => [String(x.name).toLowerCase(), x])); return prepareIndex(d.providers.map(p => { const e=byName.get(String(p.name).toLowerCase()); const q=qByName.get(String(p.name).toLowerCase()); return {...p, ...(e||{}), ...(q?{usage_quality:q.usage_quality,usage_quality_source_type:q.source_type,usage_quality_verified_at:q.verified_at,usage_quality_sources:q.source_urls,usage_quality_community_note:q.community_note}:{}), evidence_sources:e?.sources||p.evidence_sources||[]}; })); });
+      const base = prepareIndex(d.providers);
+      // The catalog is the critical path. Evidence files are optional enrichment
+      // and must never prevent the page from rendering.
+      Promise.all([loadEvidence(), loadQualityEvidence()]).then(([evidence, quality]) => {
+        const byName = new Map((Array.isArray(evidence) ? evidence : []).map(x => [String(x.name).toLowerCase(), x]));
+        const qByName = new Map((Array.isArray(quality) ? quality : []).map(x => [String(x.name).toLowerCase(), x]));
+        base.forEach(p => {
+          const e = byName.get(String(p.name).toLowerCase());
+          const q = qByName.get(String(p.name).toLowerCase());
+          if (e) Object.assign(p, e);
+          if (q) Object.assign(p, {
+            usage_quality:q.usage_quality,
+            usage_quality_source_type:q.source_type,
+            usage_quality_verified_at:q.verified_at,
+            usage_quality_sources:q.source_urls,
+            usage_quality_community_note:q.community_note
+          });
+          if (e?.sources) p.evidence_sources = e.sources;
+        });
+      }).catch(() => {});
+      return base;
     });
   }
   return INDEX_PROMISE;
@@ -847,7 +879,7 @@ async function codePage(){
    var headerLine=noauth?'const headers = {};':bearer?'const headers = { Authorization: "Bearer " + process.env.API_KEY };':key?'const headers = { "X-API-Key": process.env.API_KEY };':'const headers = {}; // Authentication not standardized in catalog';
    var pyAuth=noauth?'headers = {}':bearer?'headers = {"Authorization": "Bearer " + os.environ.get("API_KEY", "")}':key?'headers = {"X-API-Key": os.environ.get("API_KEY", "")}':'headers = {} # Authentication not standardized in catalog';
    var py="import os, requests\\n\\nurl = "+JSON.stringify(url)+"\\n"+pyAuth+"\\nresponse = requests.get(url, headers=headers, timeout=30)\\nprint(response.status_code)\\nprint(response.text)";
-   var js="const response = await fetch("+JSON.stringify(url)+", { headers: "+headerExpr+" });\\nconsole.log(response.status, await response.text());";
+   var js="const headers = "+(noauth?"{}":bearer?"{ Authorization: \"Bearer \" + process.env.API_KEY }":key?"{ \"YOUR_API_KEY_HEADER\": process.env.API_KEY }":"{}")+";\\nconst response = await fetch("+JSON.stringify(url)+", { headers });\\nconsole.log(response.status, await response.text());";
    var ts=js;
    var curl=noauth?"curl "+JSON.stringify(url):bearer?"curl -H \\"Authorization: Bearer $API_KEY\\" "+JSON.stringify(url):key?"curl -H \\"X-API-Key: $API_KEY\\" "+JSON.stringify(url):"curl "+JSON.stringify(url);
    $("#coder").innerHTML='<div class="grid"><div class="card"><h2>Python</h2><pre class="code">'+esc(py)+'</pre></div><div class="card"><h2>Node.js JavaScript</h2><pre class="code">'+esc(js)+'</pre></div><div class="card"><h2>TypeScript</h2><pre class="code">'+esc(ts)+'</pre></div><div class="card"><h2>cURL</h2><pre class="code">'+esc(curl)+'</pre></div></div><div class="notice">Provider: '+esc(p.name||"not selected")+' · Catalog authentication: '+esc(p.authentication||"Not publicly stated")+'. Endpoint and authentication should be confirmed against the provider documentation.</div>';
