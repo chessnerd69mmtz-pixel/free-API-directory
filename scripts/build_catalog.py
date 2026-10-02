@@ -76,5 +76,15 @@ def main():
     index={"schema_version":"4.1.0","generated_at":datetime.now(timezone.utc).date().isoformat(),"provider_count":len(providers),"categories":cats,"providers":[{"id":i+1,"name":p["name"],"category":p.get("category","General"),"description":p.get("description",""),"free_tier":p.get("free_tier",{}).get("has_free_tier") if isinstance(p.get("free_tier"),dict) else None,"free_tier_details":p.get("free_tier",{}).get("details") if isinstance(p.get("free_tier"),dict) else None,"free_tier_amount":p.get("free_tier",{}).get("amount") if isinstance(p.get("free_tier"),dict) else None,"free_tier_reset":p.get("free_tier_reset"),"requires_credit_card":p.get("requires_credit_card") if isinstance(p.get("requires_credit_card"),bool) else None,"signup_url":p.get("signup_url"),"pricing_url":p.get("pricing_url"),"documentation_url":p.get("documentation_url"),"rate_limit":p.get("rate_limit"),"authentication":p.get("authentication"),"commercial_use":p.get("commercial_use"),"last_verified":p.get("last_verified"),"status":p.get("status","catalog-only"),"verification_status":p.get("verification_status"),"tier_verification_status":p.get("tier_verification_status"),"key_url_type":p.get("key_url_type","unknown"),"uses":p.get("uses",[]),"protocols":p.get("protocols",[]),"sdk_languages":p.get("sdk_languages",[]),"self_hostable":p.get("self_hostable"),"webhooks":p.get("webhooks"),"verification_sources":p.get("verification_sources",{})} for i,p in enumerate(providers)]}
     (DATA/"catalog-index.json").write_text(json.dumps(index,indent=2,ensure_ascii=False)+"\n",encoding="utf-8")
     (DATA/"provider_profiles.json").write_text(json.dumps(providers,indent=2,ensure_ascii=False)+"\n",encoding="utf-8")
+    profiles_dir=DATA/"profiles"
+    profiles_dir.mkdir(exist_ok=True)
+    expected=set()
+    for p in providers:
+        filename=slug(p["name"])+".json"
+        expected.add(filename)
+        (profiles_dir/filename).write_text(json.dumps(p,indent=2,ensure_ascii=False)+"\n",encoding="utf-8")
+    for stale in profiles_dir.glob("*.json"):
+        if stale.name not in expected:
+            stale.unlink()
     print(f"Built synchronized catalog: {len(providers)} providers, {len(cats)} categories.")
 if __name__=="__main__":main()
