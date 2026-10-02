@@ -40,7 +40,34 @@ def main():
     if OVERRIDES.exists():
         for o in json.loads(OVERRIDES.read_text(encoding="utf-8")):
             overrides[str(o.get("name","")).strip().casefold()] = o
+    # Apply the same explicit runtime schema to every source, including the
+    # original providers.json records. Older primary records may omit fields
+    # that newer expansion records already carry.
     for p in providers:
+        p.setdefault("category", "General")
+        p.setdefault("description", "Not publicly stated")
+        p.setdefault("signup_url", p.get("provider_url") or p.get("url"))
+        p.setdefault("pricing_url", None)
+        p.setdefault("documentation_url", p.get("signup_url"))
+        p.setdefault("endpoint_url", None)
+        p.setdefault("region", None)
+        p.setdefault("data_region", None)
+        p.setdefault("regions", [])
+        p.setdefault("requires_credit_card", None)
+        p.setdefault("authentication", "Not publicly stated")
+        p.setdefault("protocols", ["HTTPS"])
+        p.setdefault("sdk_languages", [])
+        p.setdefault("commercial_use", "Not publicly stated; check provider terms.")
+        p.setdefault("self_hostable", "Not publicly stated")
+        p.setdefault("webhooks", "Not publicly stated")
+        p.setdefault("rate_limit", "Not publicly stated")
+        p.setdefault("free_tier_reset", "Not publicly stated")
+        p.setdefault("uses", [p.get("category", "General")])
+        p.setdefault("last_verified", None)
+        p.setdefault("verified_by", "unknown")
+        p.setdefault("status", "catalog-only")
+        p.setdefault("verification_status", "source-identified-not-fully-resolved")
+        p.setdefault("verification_sources", {})
         o=overrides.get(p["name"].strip().casefold())
         if o:
             for field in ("documentation_url","pricing_url","signup_url","rate_limit","free_tier_reset","requires_credit_card","commercial_use"):
