@@ -826,7 +826,7 @@ async function codePage(){
    var url=$("#codeurl").value.trim();
    if(!url){$("#coder").innerHTML='<div class="card notice">No API endpoint is recorded for this provider. Add the endpoint from its documentation instead of using a guessed URL.</div>';return;}
    var auth=String(p.authentication||"").toLowerCase();
-   var bearer=/bearer|oauth|token/.test(auth), key=/api key|apikey|key/.test(auth), noauth=/none|no auth|not required|public/.test(auth);
+   var bearer=/bearer|oauth|access token|token/.test(auth), key=/api key|apikey|api-key/.test(auth), noauth=/none|no auth|not required|public/.test(auth);
    var headerLine=noauth?'const headers = {};':bearer?'const headers = { Authorization: "Bearer " + process.env.API_KEY };':key?'const headers = { "X-API-Key": process.env.API_KEY };':'const headers = {}; // Authentication not standardized in catalog';
    var pyAuth=noauth?'headers = {}':bearer?'headers = {"Authorization": "Bearer " + os.environ.get("API_KEY", "")}':key?'headers = {"X-API-Key": os.environ.get("API_KEY", "")}':'headers = {} # Authentication not standardized in catalog';
    var py="import os, requests\\n\\nurl = "+JSON.stringify(url)+"\\n"+pyAuth+"\\nresponse = requests.get(url, headers=headers, timeout=30)\\nprint(response.status_code)\\nprint(response.text)";
