@@ -1,4 +1,4 @@
-const DATA_VERSION = "20260927-04";
+const DATA_VERSION = "20261002-01";
 const INDEX_URL = new URL("data/catalog-index.json?v=" + DATA_VERSION, document.baseURI).href;
 const PROFILE_URL = new URL("data/provider_profiles.json?v=" + DATA_VERSION, document.baseURI).href;
 const CHANGE_URL = new URL("data/change_log.json?v=" + DATA_VERSION, document.baseURI).href;
@@ -6,6 +6,7 @@ const EVIDENCE_URL = new URL("data/web_verified_overrides.json?v=" + DATA_VERSIO
 const QUALITY_EVIDENCE_URL = new URL("data/usage_quality_evidence.json?v=" + DATA_VERSION, document.baseURI).href;
 const BILLING_EVIDENCE_URL = new URL("data/billing_evidence.json?v=" + DATA_VERSION, document.baseURI).href;
 const LIMIT_EVIDENCE_URL = new URL("data/free_limit_evidence.json?v=" + DATA_VERSION, document.baseURI).href;
+const PROFILE_SHARD_BASE = "data/profiles/";
 
 let INDEX_PROMISE = null;
 let PROFILE_PROMISE = null;
@@ -18,6 +19,8 @@ const $ = (s) => document.querySelector(s);
 const esc = (s) => String(s ?? "").replace(/[&<>"]/g, (m) => ({
   "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"
 }[m]));
+
+function providerSlug(name) { return String(name || "").toLowerCase().replace(/&/g,"and").replace(/[^a-z0-9]+/g," ").trim().split(/\s+/).filter(Boolean).join("-") || "general"; }
 
 function safeUrl(url) {
   try { const u = new URL(String(url), document.baseURI); return (u.protocol === "https:" || u.protocol === "http:") ? u.href : null; } catch (_) { return null; }
@@ -142,27 +145,19 @@ function limitEvidenceFor(name, evidence) {
 }
 
 async function loadProfiles() {
-  if (!PROFILE_PROMISE) {
-    PROFILE_PROMISE = Promise.all([
-      getJson(PROFILE_URL),
-      getJson(new URL("data/providers.json?v=" + DATA_VERSION, document.baseURI).href),
-      loadEvidence(),
-      loadQualityEvidence()
-    ]).then(([profiles, canonical, evidence, quality]) => {
-      if (!Array.isArray(profiles) || !Array.isArray(canonical)) throw new Error("Invalid provider profile catalog");
-      const byName = new Map(canonical.map(p => [String(p.name).toLowerCase(), p]));
-      const evidenceByName = new Map((Array.isArray(evidence) ? evidence : []).map(p => [String(p.name).toLowerCase(), p]));
-      const qualityByName = new Map((Array.isArray(quality) ? quality : []).map(p => [String(p.name).toLowerCase(), p]));
-      return profiles.map(profile => {
-        const base = {...profile, ...(byName.get(String(profile.name).toLowerCase()) || {})};
-        const e = evidenceByName.get(String(profile.name).toLowerCase());
-        const q = qualityByName.get(String(profile.name).toLowerCase());
-        const merged = e ? {...base, ...e, evidence_sources:e.sources || []} : base;
-        return q ? {...merged, usage_quality:q.usage_quality, usage_quality_source_type:q.source_type, usage_quality_verified_at:q.verified_at, usage_quality_sources:q.source_urls, usage_quality_community_note:q.community_note} : merged;
-      });
-    });
+  // Kept as a compatibility API for older callers. Runtime pages now use the
+  // lightweight catalog index and load one profile shard only when needed.
+  return loadApis();
+}
+
+async function loadProfileShard(name) {
+  const url = new URL(PROFILE_SHARD_BASE + providerSlug(name) + ".json?v=" + DATA_VERSION, document.baseURI).href;
+  try {
+    const profile = await getJson(url);
+    return profile && profile.name ? profile : null;
+  } catch (_) {
+    return null;
   }
-  return PROFILE_PROMISE;
 }
 
 function debounce(fn, wait) {
@@ -205,8 +200,9 @@ async function finder() {
         (c === "yes" && p.requires_credit_card === true) ||
         (c === "unknown" && typeof p.requires_credit_card !== "boolean");
       const catOK = !$("#cat").value || p.category === $("#cat").value;
+      const regionValue=$("#region").value; const regions=[p.region,p.data_region,...(Array.isArray(p.regions)?p.regions:[]),...(Array.isArray(p.data_regions)?p.data_regions:[])].filter(Boolean).map(String).join(" ").toLowerCase(); const regionOK=!regionValue || (regionValue==="explicit" && regions.length>0);
       const v = $("#v").value; const verifiedOK = !v || (v === "verified" ? (p.status === "active" && !!p.last_verified) : (p.status === "candidate" || p.status === "needs re-verification" || p.status === "upstream-community"));
-      const usageEvidenceOK = !uq || (uq === "available" ? !!p.usage_quality : uq === "official" ? !!p.usage_quality && p.usage_quality_source_type === "official" : !!p.usage_quality && p.usage_quality_source_type === "community"); const authText=String(p.authentication||"").toLowerCase(); const authOK=!auth || (auth==="key" ? /key|token|oauth|bearer/.test(authText) : /none|not required|keyless|no auth/.test(authText)); const commText=String(p.commercial_use||p.usage_quality?.commercial_use||"").toLowerCase(); const commercialOK=!commercial || (commercial==="yes" ? commText && !/not publicly stated|unknown|unclear/.test(commText) : /not publicly stated|unknown|unclear/.test(commText)); const verifiedDate=p.last_verified?Date.parse(String(p.last_verified).slice(0,10)+"T00:00:00Z"):NaN; const days=Number.isFinite(verifiedDate)?(Date.now()-verifiedDate)/86400000:Infinity; const ageOK=!age || days<=age; const accessText=String(p.access_requirements||p.usage_quality?.access||"").toLowerCase(); const accessOK=!access || (access==="keyless" ? /none|not required|keyless|no auth/.test(authText) : access==="nocard" ? p.requires_credit_card===false : /no account|without account/.test(accessText)); return (!q || p._searchText.includes(q)) && freeOK && cardOK && catOK && verifiedOK && usageEvidenceOK && authOK && commercialOK && ageOK && accessOK;
+      const usageEvidenceOK = !uq || (uq === "available" ? !!p.usage_quality : uq === "official" ? !!p.usage_quality && p.usage_quality_source_type === "official" : !!p.usage_quality && p.usage_quality_source_type === "community"); const authText=String(p.authentication||"").toLowerCase(); const authOK=!auth || (auth==="key" ? /key|token|oauth|bearer/.test(authText) : /none|not required|keyless|no auth/.test(authText)); const commText=String(p.commercial_use||p.usage_quality?.commercial_use||"").toLowerCase(); const commercialOK=!commercial || (commercial==="yes" ? commText && !/not publicly stated|unknown|unclear/.test(commText) : /not publicly stated|unknown|unclear/.test(commText)); const verifiedDate=p.last_verified?Date.parse(String(p.last_verified).slice(0,10)+"T00:00:00Z"):NaN; const days=Number.isFinite(verifiedDate)?(Date.now()-verifiedDate)/86400000:Infinity; const ageOK=!age || days<=age; const accessText=String(p.access_requirements||p.usage_quality?.access||"").toLowerCase(); const accessOK=!access || (access==="keyless" ? /none|not required|keyless|no auth/.test(authText) : access==="nocard" ? p.requires_credit_card===false : /no account|without account/.test(accessText)); return (!q || p._searchText.includes(q)) && freeOK && cardOK && catOK && regionOK && verifiedOK && usageEvidenceOK && authOK && commercialOK && ageOK && accessOK;
     });
   }
 
@@ -240,7 +236,7 @@ async function finder() {
   $("#q").addEventListener("input", rerender);
   $("#f").addEventListener("change", () => { visible = 100; render(); });
   $("#c").addEventListener("change", () => { visible = 100; render(); });
-  $("#uq").addEventListener("change", () => { visible = 100; render(); }); $("#auth").addEventListener("change",()=>{visible=100;render();}); $("#commercial").addEventListener("change",()=>{visible=100;render();}); $("#age").addEventListener("change",()=>{visible=100;render();}); $("#access").addEventListener("change",()=>{visible=100;render();});
+  $("#uq").addEventListener("change", () => { visible = 100; render(); }); $("#cat").addEventListener("change",()=>{visible=100;render();}); $("#v").addEventListener("change",()=>{visible=100;render();}); $("#region").addEventListener("change",()=>{visible=100;render();}); $("#auth").addEventListener("change",()=>{visible=100;render();}); $("#commercial").addEventListener("change",()=>{visible=100;render();}); $("#age").addEventListener("change",()=>{visible=100;render();}); $("#access").addEventListener("change",()=>{visible=100;render();});
   render();
 }
 
@@ -299,8 +295,7 @@ async function compare() {
       return;
     }
     $("#r").innerHTML = '<div class="card">Loading provider details…</div>';
-    const profiles = await loadProfiles();
-    const ps = chosen.map(n => profiles.find(x => x.name === n)).filter(Boolean);
+    const ps = chosen.map(n => a.find(x => x.name === n)).filter(Boolean);
     const fields = [
       ["Free tier", p => freeValue(p) === true ? "Recorded" : freeValue(p) === false ? "No" : "Not publicly stated"],
       ["Free amount", p => p.free_tier?.amount || "Not publicly stated"],
@@ -366,8 +361,10 @@ async function apiProfile() {
     shell('<section class="hero"><h1>API not specified</h1><p>Choose a provider from the finder or browse pages.</p></section>');
     return;
   }
-  const profiles = await loadProfiles();
-  const p = profiles.find(x => x.name === name);
+  const index = await loadApis();
+  const base = index.find(x => x.name === name);
+  const shard = base ? await loadProfileShard(base.name) : null;
+  const p = base ? {...base, ...(shard || {})} : null;
   if (!p) {
     shell('<section class="hero"><h1>API not found</h1><p>This provider is not currently present in the live catalog.</p></section>');
     return;
@@ -645,7 +642,7 @@ async function recommend() {
 
     const ignored = [...specificTerms(form.objective + " " + form.needs)];
     $("#r").innerHTML='<div class="card">Analyzing the catalog against your specific requirements…</div>';
-    const profiles=await loadProfiles();
+    const profiles=a;
     const byName=new Map(profiles.map(p=>[p.name,p]));
     const ranked=a.map(p=>{
       const profile=byName.get(p.name)||p;
@@ -816,23 +813,29 @@ async function collectionsPage(){
 }
 async function playgroundPage(){
  var a=await loadApis();
- shell('<section class="hero"><h1>🧪 API Playground</h1><p>Browser execution may be blocked by CORS or authentication policy.</p></section><div class="card tool"><select id="pgp" class="select">'+providerOptions(a)+'</select><input id="pgu" class="input" placeholder="HTTPS endpoint"><input id="pgm" class="input" value="GET"><textarea id="pgh" class="input" style="min-height:100px" placeholder="Optional JSON headers"></textarea><button id="pggo" class="btn">Send request</button></div><div id="pgr"></div>');
- $("#pggo").onclick=async function(){var url=safeUrl($("#pgu").value),headers={};if(!url){$("#pgr").innerHTML='<div class="card notice">Enter a valid HTTP(S) endpoint.</div>';return;}try{headers=JSON.parse($("#pgh").value||"{}");}catch(e){$("#pgr").innerHTML='<div class="card notice">Headers must be valid JSON.</div>';return;}try{var res=await fetch(url,{method:$("#pgm").value.toUpperCase(),headers:headers}),body=await res.text();$("#pgr").innerHTML='<div class="card"><h2>HTTP '+res.status+'</h2><pre class="code">'+esc(body.slice(0,20000))+'</pre></div>';}catch(e){$("#pgr").innerHTML='<div class="card notice">Request blocked or unavailable. Common causes: CORS, authentication or provider policy. '+esc(e.message)+'</div>';}}; 
+ shell('<section class="hero"><h1>🧪 API Playground</h1><p>Select a provider to preload its documented endpoint when one is recorded. Browser execution may still be blocked by CORS or authentication policy.</p></section><div class="card tool"><select id="pgp" class="select">'+providerOptions(a)+'</select><input id="pgu" class="input" placeholder="HTTPS API endpoint"><input id="pgm" class="input" value="GET"><textarea id="pgh" class="input" style="min-height:100px" placeholder="Optional JSON headers"></textarea><div id="pginfo" class="muted"></div><button id="pggo" class="btn">Send request</button></div><div id="pgr"></div>');
+ $("#pgp").addEventListener("change",function(){var p=a.find(x=>x.name===this.value);$("#pgu").value=p?.endpoint_url||"";$("#pginfo").innerHTML=p?(p.endpoint_url?'Endpoint loaded from catalog.':'No API endpoint is independently recorded; use the provider documentation link on its profile.'):"";});
+ $("#pggo").onclick=async function(){var url=safeUrl($("#pgu").value),headers={};if(!url){$("#pgr").innerHTML='<div class="card notice">Enter a valid HTTP(S) API endpoint. A documentation URL is not automatically treated as an API endpoint.</div>';return;}try{headers=JSON.parse($("#pgh").value||"{}");}catch(e){$("#pgr").innerHTML='<div class="card notice">Headers must be valid JSON.</div>';return;}try{var res=await fetch(url,{method:$("#pgm").value.toUpperCase(),headers:headers}),body=await res.text();$("#pgr").innerHTML='<div class="card"><h2>HTTP '+res.status+'</h2><pre class="code">'+esc(body.slice(0,20000))+'</pre></div>';}catch(e){$("#pgr").innerHTML='<div class="card notice">Request blocked or unavailable. Common causes: CORS, authentication or provider policy. '+esc(e.message)+'</div>';}}; 
 }
 async function codePage(){
  var a=await loadApis();
- shell('<section class="hero"><h1>💻 API Code Generator</h1><p>Generic starter templates. Replace the endpoint and authentication scheme with the provider documentation.</p></section><div class="card tool"><select id="codep" class="select">'+providerOptions(a)+'</select><input id="codeurl" class="input" placeholder="HTTPS endpoint"><button id="codego" class="btn">Generate</button></div><div id="coder"></div>');
+ shell('<section class="hero"><h1>💻 API Code Generator</h1><p>Provider-aware starter templates. The catalog never invents an endpoint or authentication method; verify provider-specific requirements before sending real credentials.</p></section><div class="card tool"><select id="codep" class="select">'+providerOptions(a)+'</select><input id="codeurl" class="input" placeholder="HTTPS API endpoint (optional)"><button id="codego" class="btn">Generate</button></div><div id="coder"></div>');
+ $("#codep").addEventListener("change",function(){var p=a.find(x=>x.name===this.value);$("#codeurl").value=p?.endpoint_url||"";});
  $("#codego").onclick=function(){
-   var url=$("#codeurl").value||"https://api.example.com/v1/resource";
-   var py="import os, requests\\n\\nurl = "+JSON.stringify(url)+"\\nheaders = {\"Authorization\": \"Bearer \" + os.environ.get(\"API_KEY\", \"\")}\\nresponse = requests.get(url, headers=headers, timeout=30)\\nprint(response.json())";
-   var js="const response = await fetch("+JSON.stringify(url)+", { headers: { Authorization: \"Bearer \" + (process.env.API_KEY || \"\") } });\\nconsole.log(await response.json());";
+   var p=a.find(x=>x.name===$("#codep").value)||{};
+   var url=$("#codeurl").value.trim();
+   if(!url){$("#coder").innerHTML='<div class="card notice">No API endpoint is recorded for this provider. Add the endpoint from its documentation instead of using a guessed URL.</div>';return;}
+   var auth=String(p.authentication||"").toLowerCase();
+   var bearer=/bearer|oauth|token/.test(auth), key=/api key|apikey|key/.test(auth), noauth=/none|no auth|not required|public/.test(auth);
+   var headerLine=noauth?'const headers = {};':bearer?'const headers = { Authorization: "Bearer " + process.env.API_KEY };':key?'const headers = { "X-API-Key": process.env.API_KEY };':'const headers = {}; // Authentication not standardized in catalog';
+   var pyAuth=noauth?'headers = {}':bearer?'headers = {"Authorization": "Bearer " + os.environ.get("API_KEY", "")}':key?'headers = {"X-API-Key": os.environ.get("API_KEY", "")}':'headers = {} # Authentication not standardized in catalog';
+   var py="import os, requests\\n\\nurl = "+JSON.stringify(url)+"\\n"+pyAuth+"\\nresponse = requests.get(url, headers=headers, timeout=30)\\nprint(response.status_code)\\nprint(response.text)";
+   var js="const response = await fetch("+JSON.stringify(url)+", { headers: ("+headerLine+") });\\nconsole.log(response.status, await response.text());";
    var ts=js;
-   var curl="curl -H \"Authorization: Bearer $API_KEY\" "+JSON.stringify(url);
-   $("#coder").innerHTML='<div class="grid"><div class="card"><h2>Python</h2><pre class="code">'+esc(py)+'</pre></div><div class="card"><h2>JavaScript</h2><pre class="code">'+esc(js)+'</pre></div><div class="card"><h2>TypeScript</h2><pre class="code">'+esc(ts)+'</pre></div><div class="card"><h2>cURL</h2><pre class="code">'+esc(curl)+'</pre></div></div><div class="notice">Generic template only; verify the selected provider actual authentication requirements before use.</div>';
+   var curl=noauth?"curl "+JSON.stringify(url):bearer?"curl -H \\"Authorization: Bearer $API_KEY\\" "+JSON.stringify(url):key?"curl -H \\"X-API-Key: $API_KEY\\" "+JSON.stringify(url):"curl "+JSON.stringify(url);
+   $("#coder").innerHTML='<div class="grid"><div class="card"><h2>Python</h2><pre class="code">'+esc(py)+'</pre></div><div class="card"><h2>Node.js JavaScript</h2><pre class="code">'+esc(js)+'</pre></div><div class="card"><h2>TypeScript</h2><pre class="code">'+esc(ts)+'</pre></div><div class="card"><h2>cURL</h2><pre class="code">'+esc(curl)+'</pre></div></div><div class="notice">Provider: '+esc(p.name||"not selected")+' · Catalog authentication: '+esc(p.authentication||"Not publicly stated")+'. Endpoint and authentication should be confirmed against the provider documentation.</div>';
  };
-}
-
-async function boot() {
+}async function boot() {
   try {
     const page = document.body.dataset.page;
     if (page === "finder") return await finder();
