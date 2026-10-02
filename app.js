@@ -1,4 +1,4 @@
-const DATA_VERSION = "20261002-01";
+const DATA_VERSION = "20261002-02";
 const INDEX_URL = new URL("data/catalog-index.json?v=" + DATA_VERSION, document.baseURI).href;
 const PROFILE_URL = new URL("data/provider_profiles.json?v=" + DATA_VERSION, document.baseURI).href;
 const CHANGE_URL = new URL("data/change_log.json?v=" + DATA_VERSION, document.baseURI).href;
@@ -809,7 +809,7 @@ async function collectionsPage(){
  var a=await loadApis(),list=JSON.parse(localStorage.getItem("freeApiFavorites")||"[]");
  shell('<section class="hero"><h1>⭐ My API Collections</h1><p>Save providers locally without creating an account.</p></section><div class="card tool"><select id="fav" class="select">'+providerOptions(a)+'</select><input id="col" class="input" value="My APIs"><button id="savefav" class="btn">Save provider</button></div><div id="favr"></div>');
  function render(){if(!list.length){$("#favr").innerHTML='<div class="card">No saved providers yet.</div>';return;}$("#favr").innerHTML=list.map(function(x,i){return '<div class="card"><h2>'+esc(x.collection)+'</h2><p><a href="api.html?provider='+encodeURIComponent(x.name)+'">'+esc(x.name)+'</a> <button class="btn secondary" data-i="'+i+'">Remove</button></p></div>';}).join("");document.querySelectorAll("[data-i]").forEach(function(b){b.onclick=function(){list.splice(Number(b.dataset.i),1);localStorage.setItem("freeApiFavorites",JSON.stringify(list));render();};});}
- $("#savefav").onclick=function(){if(!$("#fav").value)return;list.push({name:$("#fav").value,collection:$("#col").value||"My APIs"});localStorage.setItem("freeApiFavorites",JSON.stringify(list));render();};render();
+ $("#savefav").onclick=function(){var name=$("#fav").value,collection=($("#col").value||"My APIs").trim();if(!name)return;if(list.some(x=>x.name===name&&x.collection===collection)){render();return;}list.push({name,collection});localStorage.setItem("freeApiFavorites",JSON.stringify(list));render();};render();
 }
 async function playgroundPage(){
  var a=await loadApis();
