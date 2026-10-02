@@ -1,0 +1,60 @@
+{
+  "name": "Algolia Search",
+  "category": "Dev Tools / Infra",
+  "description": "Cataloged API provider.",
+  "free_tier": {
+    "has_free_tier": true,
+    "type": "free-forever",
+    "details": "Official Free plan: 10,000 search requests/month, 50,000 records, 5,000 recommendation requests/month and 5,000 crawls/month; no credit card required.",
+    "amount": "10K search req/mo; 50K records; 5K recommendation req/mo; 5K crawls/mo",
+    "expiry": "Free plan; ongoing"
+  },
+  "signup_requires_account": true,
+  "requires_credit_card": false,
+  "signup_url": "https://www.algolia.com/users/sign_up",
+  "pricing_url": "https://www.algolia.com/pricing/",
+  "verification_urls": [
+    "https://www.algolia.com/pricing/",
+    "https://www.algolia.com/doc/guides/security/api-keys/",
+    "https://www.algolia.com/doc/rest-api/search/",
+    "https://www.algolia.com/developers/sdks/"
+  ],
+  "last_verified": "2026-09-26",
+  "verified_by": "official-source-research-2026-09-26",
+  "status": "active",
+  "tier_verification_url": "https://www.algolia.com/pricing/",
+  "tier_verification_status": "official-primary-source",
+  "uses": [
+    "API/resource management",
+    "deployment/infrastructure control",
+    "data/storage operations where supported",
+    "authentication/integrations",
+    "monitoring/automation"
+  ],
+  "research_sources": [
+    "https://www.algolia.com/pricing/free-plan",
+    "https://www.algolia.com/pricing"
+  ],
+  "documentation_url": "https://www.algolia.com/users/sign_up",
+  "endpoint_url": null,
+  "region": null,
+  "data_region": null,
+  "regions": [],
+  "authentication": "Not publicly stated",
+  "protocols": [
+    "HTTPS"
+  ],
+  "sdk_languages": [],
+  "commercial_use": "Not publicly stated; check provider terms.",
+  "self_hostable": "Not publicly stated",
+  "webhooks": "Not publicly stated",
+  "rate_limit": "Not publicly stated",
+  "free_tier_reset": "Not publicly stated",
+  "verification_status": "source-identified-not-fully-resolved",
+  "verification_sources": {},
+  "key_url_type": "provider-page",
+  "provenance": {
+    "primary_source": "official-source-research-2026-09-26",
+    "provider_url": "https://www.algolia.com/users/sign_up"
+  }
+}

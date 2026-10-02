@@ -1,0 +1,54 @@
+{
+  "name": "Have I Been Pwned API",
+  "category": "Security / Threat Intel",
+  "description": "Cataloged API provider.",
+  "free_tier": {
+    "has_free_tier": true,
+    "type": "keyless-password-api",
+    "details": "Pwned Passwords API is free and requires no authentication; authenticated breach/domain APIs require a subscription key.",
+    "amount": "Pwned Passwords is free; other API features depend on subscription tier",
+    "expiry": "Not publicly stated"
+  },
+  "signup_requires_account": true,
+  "requires_credit_card": null,
+  "signup_url": "https://haveibeenpwned.com/API/Key",
+  "pricing_url": "https://haveibeenpwned.com/API/v3",
+  "verification_urls": [
+    "https://haveibeenpwned.com/API/Key",
+    "https://haveibeenpwned.com/API/v3"
+  ],
+  "last_verified": "2026-09-25",
+  "verified_by": "manual-official-source-review",
+  "status": "active",
+  "tier_verification_url": "https://haveibeenpwned.com/API/v3",
+  "tier_verification_status": "manually-reviewed",
+  "uses": [
+    "IP/domain/URL reputation",
+    "threat intelligence",
+    "host/service analysis",
+    "breach/malware lookups where offered",
+    "security research data"
+  ],
+  "documentation_url": "https://haveibeenpwned.com/API/Key",
+  "endpoint_url": null,
+  "region": null,
+  "data_region": null,
+  "regions": [],
+  "authentication": "Not publicly stated",
+  "protocols": [
+    "HTTPS"
+  ],
+  "sdk_languages": [],
+  "commercial_use": "Not publicly stated; check provider terms.",
+  "self_hostable": "Not publicly stated",
+  "webhooks": "Not publicly stated",
+  "rate_limit": "Not publicly stated",
+  "free_tier_reset": "Not publicly stated",
+  "verification_status": "source-identified-not-fully-resolved",
+  "verification_sources": {},
+  "key_url_type": "provider-page",
+  "provenance": {
+    "primary_source": "manual-official-source-review",
+    "provider_url": "https://haveibeenpwned.com/API/Key"
+  }
+}

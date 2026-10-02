@@ -1,0 +1,60 @@
+{
+  "name": "Brave Search API",
+  "category": "Search & Web Intelligence",
+  "description": "Candidate API provider added in the September 2026 expansion. Current free-tier details require provider-side verification.",
+  "free_tier": {
+    "has_free_tier": true,
+    "type": "monthly-credit",
+    "details": "$5 free API credits per month; Brave's current plan information says access to the credit without prepaid spend requires a credit card.",
+    "amount": "$5 free credits/month per plan",
+    "expiry": "Monthly renewal"
+  },
+  "signup_requires_account": true,
+  "requires_credit_card": true,
+  "signup_url": "https://api.search.brave.com/app/keys",
+  "pricing_url": "https://api-dashboard.search.brave.com/app/plans",
+  "verification_urls": [
+    "https://api-dashboard.search.brave.com/app/plans",
+    "https://api-dashboard.search.brave.com/documentation"
+  ],
+  "last_verified": "2026-09-26",
+  "verified_by": "official-source-review",
+  "status": "candidate",
+  "tier_verification_url": "https://api-dashboard.search.brave.com/app/plans",
+  "tier_verification_status": "official-primary-source",
+  "uses": [
+    "web search"
+  ],
+  "research_status": "official-source-reviewed",
+  "research_sources": [
+    "https://brave.com/search/api/",
+    "https://api-dashboard.search.brave.com/documentation/resources/help-feedback"
+  ],
+  "documentation_url": "https://api-dashboard.search.brave.com/documentation",
+  "rate_limit": "Plan-specific; current limits are exposed by the Brave API dashboard.",
+  "free_tier_reset": "Monthly",
+  "verification_status": "official-primary-source",
+  "provenance": {
+    "primary_source": "official-provider-documentation",
+    "source_checked_at": "2026-09-26"
+  },
+  "verification_sources": {
+    "official": [
+      "https://api-dashboard.search.brave.com/app/plans",
+      "https://api-dashboard.search.brave.com/documentation"
+    ]
+  },
+  "endpoint_url": null,
+  "region": null,
+  "data_region": null,
+  "regions": [],
+  "authentication": "Not publicly stated",
+  "protocols": [
+    "HTTPS"
+  ],
+  "sdk_languages": [],
+  "commercial_use": "Not publicly stated; check provider terms.",
+  "self_hostable": "Not publicly stated",
+  "webhooks": "Not publicly stated",
+  "key_url_type": "api-key-page"
+}

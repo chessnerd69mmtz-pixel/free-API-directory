@@ -1,0 +1,64 @@
+{
+  "name": "Google Gemini API",
+  "category": "AI / LLM",
+  "description": "Gemini API through Google AI Studio.",
+  "free_tier": {
+    "has_free_tier": true,
+    "type": "rate-limited-free",
+    "details": "New accounts begin on the Free Tier with model-specific free-tier rate limits.",
+    "amount": "Model-specific; see official billing page",
+    "expiry": "Not publicly stated"
+  },
+  "signup_requires_account": true,
+  "requires_credit_card": null,
+  "signup_url": "https://aistudio.google.com/app/apikey",
+  "pricing_url": "https://ai.google.dev/gemini-api/docs/pricing",
+  "verification_urls": [
+    "https://ai.google.dev/gemini-api/docs/rate-limits",
+    "https://ai.google.dev/gemini-api/docs/pricing",
+    "https://ai.google.dev/gemini-api/docs/billing"
+  ],
+  "last_verified": "2026-09-26",
+  "verified_by": "official-source-review",
+  "status": "active",
+  "tier_verification_url": "https://ai.google.dev/gemini-api/pricing",
+  "tier_verification_status": "official-primary-source",
+  "uses": [
+    "multimodal generation",
+    "text generation/chat",
+    "image/audio/video understanding",
+    "structured output",
+    "function calling",
+    "embeddings",
+    "long-context applications"
+  ],
+  "documentation_url": "https://ai.google.dev/gemini-api/docs/rate-limits",
+  "rate_limit": "Model- and usage-tier-specific RPM/TPM/RPD; active limits are shown in AI Studio.",
+  "free_tier_reset": "RPD quotas reset at midnight Pacific time.",
+  "verification_status": "official-primary-source",
+  "research_status": "official-source-reviewed",
+  "provenance": {
+    "primary_source": "official-provider-documentation",
+    "source_checked_at": "2026-09-26"
+  },
+  "verification_sources": {
+    "official": [
+      "https://ai.google.dev/gemini-api/docs/rate-limits",
+      "https://ai.google.dev/gemini-api/docs/pricing",
+      "https://ai.google.dev/gemini-api/docs/billing"
+    ]
+  },
+  "endpoint_url": null,
+  "region": null,
+  "data_region": null,
+  "regions": [],
+  "authentication": "Not publicly stated",
+  "protocols": [
+    "HTTPS"
+  ],
+  "sdk_languages": [],
+  "commercial_use": "Free-tier data-use terms differ from paid tiers; review Google's current terms before commercial deployment.",
+  "self_hostable": "Not publicly stated",
+  "webhooks": "Not publicly stated",
+  "key_url_type": "api-key-page"
+}

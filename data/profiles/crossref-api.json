@@ -1,0 +1,55 @@
+{
+  "name": "CrossRef API",
+  "category": "Public / Scientific Data (additional)",
+  "description": "Cataloged API provider.",
+  "free_tier": {
+    "has_free_tier": true,
+    "type": "public-api",
+    "details": "Public REST API is available without signup; polite access uses an email address.",
+    "amount": "Public pool: 5 requests/second; polite pool: 10 requests/second",
+    "expiry": "Not publicly stated"
+  },
+  "signup_requires_account": true,
+  "requires_credit_card": false,
+  "signup_url": "https://www.crossref.org/documentation/retrieve-metadata/rest-api/",
+  "pricing_url": "https://www.crossref.org/documentation/retrieve-metadata/rest-api/access-and-authentication",
+  "verification_urls": [
+    "https://www.crossref.org/documentation/retrieve-metadata/rest-api/",
+    "https://www.crossref.org/documentation/retrieve-metadata/rest-api/access-and-authentication"
+  ],
+  "last_verified": "2026-09-25",
+  "verified_by": "manual-official-source-review",
+  "status": "active",
+  "tier_verification_url": "https://www.crossref.org/documentation/retrieve-metadata/rest-api/access-and-authentication",
+  "tier_verification_status": "manually-reviewed",
+  "uses": [
+    "dataset search",
+    "structured data retrieval",
+    "metadata/records",
+    "historical time series",
+    "research/statistical analysis"
+  ],
+  "rate_limit": "50 req/s",
+  "rate_limit_source": "secondary-directory-crosscheck",
+  "documentation_url": "https://www.crossref.org/documentation/retrieve-metadata/rest-api/",
+  "endpoint_url": null,
+  "region": null,
+  "data_region": null,
+  "regions": [],
+  "authentication": "Not publicly stated",
+  "protocols": [
+    "HTTPS"
+  ],
+  "sdk_languages": [],
+  "commercial_use": "Not publicly stated; check provider terms.",
+  "self_hostable": "Not publicly stated",
+  "webhooks": "Not publicly stated",
+  "free_tier_reset": "Not publicly stated",
+  "verification_status": "source-identified-not-fully-resolved",
+  "verification_sources": {},
+  "key_url_type": "documentation",
+  "provenance": {
+    "primary_source": "manual-official-source-review",
+    "provider_url": "https://www.crossref.org/documentation/retrieve-metadata/rest-api/"
+  }
+}

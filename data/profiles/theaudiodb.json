@@ -1,0 +1,53 @@
+{
+  "name": "TheAudioDB",
+  "category": "Music / Entertainment (additional)",
+  "description": "Cataloged API provider.",
+  "free_tier": {
+    "has_free_tier": null,
+    "type": "unknown",
+    "details": "Not independently verified in the primary catalog.",
+    "amount": "Not publicly stated",
+    "expiry": "Not publicly stated"
+  },
+  "signup_requires_account": true,
+  "requires_credit_card": false,
+  "signup_url": "https://www.theaudiodb.com/api_guide.php",
+  "pricing_url": "https://www.theaudiodb.com/pricing.php",
+  "verification_urls": [
+    "https://www.theaudiodb.com/api_guide.php"
+  ],
+  "last_verified": "2026-09-25",
+  "verified_by": "official-source-verification",
+  "status": "active",
+  "tier_verification_url": "https://www.theaudiodb.com/pricing.php",
+  "tier_verification_status": "manually-verified",
+  "uses": [
+    "media search",
+    "artist/title metadata",
+    "albums/tracks/movies/games depending on provider",
+    "playlists/collections where offered",
+    "ratings/discovery"
+  ],
+  "documentation_url": "https://www.theaudiodb.com/api_guide.php",
+  "endpoint_url": null,
+  "region": null,
+  "data_region": null,
+  "regions": [],
+  "authentication": "Not publicly stated",
+  "protocols": [
+    "HTTPS"
+  ],
+  "sdk_languages": [],
+  "commercial_use": "Not publicly stated; check provider terms.",
+  "self_hostable": "Not publicly stated",
+  "webhooks": "Not publicly stated",
+  "rate_limit": "Not publicly stated",
+  "free_tier_reset": "Not publicly stated",
+  "verification_status": "source-identified-not-fully-resolved",
+  "verification_sources": {},
+  "key_url_type": "provider-page",
+  "provenance": {
+    "primary_source": "official-source-verification",
+    "provider_url": "https://www.theaudiodb.com/api_guide.php"
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "name": "Visual Crossing",
+  "category": "Weather",
+  "description": "Cataloged API provider.",
+  "free_tier": {
+    "has_free_tier": true,
+    "type": "daily-records",
+    "details": "Free Weather API access includes 1,000 weather records per day and no credit card is required.",
+    "amount": "1,000 records/day",
+    "expiry": "Daily"
+  },
+  "signup_requires_account": true,
+  "requires_credit_card": false,
+  "signup_url": "https://www.visualcrossing.com/sign-up",
+  "pricing_url": "https://www.visualcrossing.com/weather-api/",
+  "verification_urls": [
+    "https://www.visualcrossing.com/sign-up",
+    "https://www.visualcrossing.com/weather-api/"
+  ],
+  "last_verified": "2026-09-25",
+  "verified_by": "manual-official-source-review",
+  "status": "active",
+  "tier_verification_url": "https://www.visualcrossing.com/weather-api/",
+  "tier_verification_status": "manually-reviewed",
+  "uses": [
+    "current conditions",
+    "hourly/daily forecasts",
+    "historical weather",
+    "alerts",
+    "location/weather lookup",
+    "environmental data where offered"
+  ],
+  "documentation_url": "https://www.visualcrossing.com/sign-up",
+  "endpoint_url": null,
+  "region": null,
+  "data_region": null,
+  "regions": [],
+  "authentication": "Not publicly stated",
+  "protocols": [
+    "HTTPS"
+  ],
+  "sdk_languages": [],
+  "commercial_use": "Not publicly stated; check provider terms.",
+  "self_hostable": "Not publicly stated",
+  "webhooks": "Not publicly stated",
+  "rate_limit": "Not publicly stated",
+  "free_tier_reset": "Not publicly stated",
+  "verification_status": "source-identified-not-fully-resolved",
+  "verification_sources": {},
+  "key_url_type": "provider-page",
+  "provenance": {
+    "primary_source": "manual-official-source-review",
+    "provider_url": "https://www.visualcrossing.com/sign-up"
+  }
+}

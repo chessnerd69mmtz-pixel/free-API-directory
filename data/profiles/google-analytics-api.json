@@ -1,0 +1,68 @@
+{
+  "name": "Google Analytics API",
+  "category": "Analytics",
+  "description": "Collect, configure and analyze your data to reach the right audience",
+  "free_tier": {
+    "has_free_tier": null,
+    "type": "unknown",
+    "details": "Not independently verified in the primary catalog.",
+    "amount": "Not publicly stated",
+    "expiry": "Not publicly stated"
+  },
+  "signup_requires_account": true,
+  "requires_credit_card": false,
+  "signup_url": "https://developers.google.com/analytics",
+  "pricing_url": "https://marketingplatform.google.com/about/analytics-360/pricing/",
+  "verification_urls": [
+    "https://support.google.com/analytics/answer/10285842",
+    "https://developers.google.com/analytics/devguides/reporting/data/v1/rest/v1beta/properties/runReport",
+    "https://developers.google.com/analytics/devguides/reporting/data/v1",
+    "https://developers.google.com/analytics/devguides/reporting/data/v1/quickstarts"
+  ],
+  "last_verified": "2026-09-25",
+  "verified_by": "manual-official-doc-review",
+  "status": "active",
+  "tier_verification_url": "https://marketingplatform.google.com/about/analytics-360/pricing/",
+  "tier_verification_status": "manually-verified",
+  "uses": [
+    "event tracking",
+    "product/user analytics",
+    "funnels/retention",
+    "segments/cohorts",
+    "reports/data retrieval"
+  ],
+  "authentication": "OAuth",
+  "protocols": [
+    "HTTPS"
+  ],
+  "cors_support": "Unknown",
+  "external_crosscheck": {
+    "public_api_lists": {
+      "source": "https://public-api-lists.github.io/public-api-lists/api/all.json",
+      "name": "Google Analytics",
+      "category": "Business",
+      "auth": "OAuth",
+      "https": true,
+      "cors": "Unknown",
+      "checked_at": "2026-09-26"
+    }
+  },
+  "documentation_url": "https://developers.google.com/analytics",
+  "endpoint_url": null,
+  "region": null,
+  "data_region": null,
+  "regions": [],
+  "sdk_languages": [],
+  "commercial_use": "Not publicly stated; check provider terms.",
+  "self_hostable": "Not publicly stated",
+  "webhooks": "Not publicly stated",
+  "rate_limit": "Not publicly stated",
+  "free_tier_reset": "Not publicly stated",
+  "verification_status": "source-identified-not-fully-resolved",
+  "verification_sources": {},
+  "key_url_type": "provider-page",
+  "provenance": {
+    "primary_source": "manual-official-doc-review",
+    "provider_url": "https://developers.google.com/analytics"
+  }
+}

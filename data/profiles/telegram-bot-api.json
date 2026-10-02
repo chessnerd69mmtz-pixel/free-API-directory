@@ -1,0 +1,65 @@
+{
+  "name": "Telegram Bot API",
+  "category": "Social Media",
+  "description": "Simplified HTTP version of the MTProto API for bots",
+  "free_tier": {
+    "has_free_tier": true,
+    "type": "free-api",
+    "details": "Telegram Bot API is available to bot developers without a paid API subscription; higher broadcast throughput is paid.",
+    "amount": "Free bot messaging subject to rate limits",
+    "expiry": "Not publicly stated"
+  },
+  "signup_requires_account": true,
+  "requires_credit_card": false,
+  "signup_url": "https://core.telegram.org/bots/api",
+  "pricing_url": "https://core.telegram.org/bots/api",
+  "verification_urls": [
+    "https://core.telegram.org/bots/api"
+  ],
+  "last_verified": "2026-09-25",
+  "verified_by": "manual-official-source-review",
+  "status": "active",
+  "tier_verification_url": "https://core.telegram.org/bots/api",
+  "tier_verification_status": "manually-reviewed",
+  "uses": [
+    "account/profile data where permitted",
+    "posts/content",
+    "publishing where permitted",
+    "comments/messages where permitted",
+    "analytics/integrations"
+  ],
+  "authentication": "OAuth",
+  "protocols": [
+    "HTTPS"
+  ],
+  "cors_support": "Unknown",
+  "external_crosscheck": {
+    "public_api_lists": {
+      "source": "https://public-api-lists.github.io/public-api-lists/api/all.json",
+      "name": "Telegram Bot",
+      "category": "Social",
+      "auth": "OAuth",
+      "https": true,
+      "cors": "Unknown",
+      "checked_at": "2026-09-26"
+    }
+  },
+  "documentation_url": "https://core.telegram.org/bots/api",
+  "endpoint_url": null,
+  "region": null,
+  "data_region": null,
+  "regions": [],
+  "sdk_languages": [],
+  "commercial_use": "Not publicly stated; check provider terms.",
+  "self_hostable": "Not publicly stated",
+  "webhooks": "Not publicly stated",
+  "rate_limit": "Not publicly stated",
+  "free_tier_reset": "Not publicly stated",
+  "verification_status": "source-identified-not-fully-resolved",
+  "verification_sources": {},
+  "key_url_type": "provider-page",
+  "provenance": {
+    "primary_source": "manual-official-source-review",
+    "provider_url": "https://core.telegram.org/bots/api"
+  }
+}

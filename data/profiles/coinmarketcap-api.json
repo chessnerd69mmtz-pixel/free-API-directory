@@ -1,0 +1,68 @@
+{
+  "name": "CoinMarketCap API",
+  "category": "Finance / Crypto / Economics",
+  "description": "Cryptocurrencies Prices",
+  "free_tier": {
+    "has_free_tier": null,
+    "type": "unknown",
+    "details": "Not independently verified in the primary catalog.",
+    "amount": "Not publicly stated",
+    "expiry": "Not publicly stated"
+  },
+  "signup_requires_account": true,
+  "requires_credit_card": false,
+  "signup_url": "https://coinmarketcap.com/api/",
+  "pricing_url": "https://coinmarketcap.com/api/pricing",
+  "verification_urls": [
+    "https://coinmarketcap.com/api/documentation/v1/",
+    "https://coinmarketcap.com/api/pricing",
+    "https://coinmarketcap.com/api/documentation/v1/#section/Authentication"
+  ],
+  "last_verified": "2026-09-25",
+  "verified_by": "official-source-verification",
+  "status": "active",
+  "tier_verification_url": "https://coinmarketcap.com/api/pricing",
+  "tier_verification_status": "manually-verified",
+  "uses": [
+    "market/price data",
+    "historical time series",
+    "company/asset metadata",
+    "economic or FX data",
+    "portfolio/account data where offered",
+    "trading/order APIs where offered"
+  ],
+  "authentication": "apiKey",
+  "protocols": [
+    "HTTPS"
+  ],
+  "cors_support": "Unknown",
+  "external_crosscheck": {
+    "public_api_lists": {
+      "source": "https://public-api-lists.github.io/public-api-lists/api/all.json",
+      "name": "CoinMarketCap",
+      "category": "Cryptocurrency",
+      "auth": "apiKey",
+      "https": true,
+      "cors": "Unknown",
+      "checked_at": "2026-09-26"
+    }
+  },
+  "documentation_url": "https://coinmarketcap.com/api/",
+  "endpoint_url": null,
+  "region": null,
+  "data_region": null,
+  "regions": [],
+  "sdk_languages": [],
+  "commercial_use": "Not publicly stated; check provider terms.",
+  "self_hostable": "Not publicly stated",
+  "webhooks": "Not publicly stated",
+  "rate_limit": "Not publicly stated",
+  "free_tier_reset": "Not publicly stated",
+  "verification_status": "source-identified-not-fully-resolved",
+  "verification_sources": {},
+  "key_url_type": "provider-page",
+  "provenance": {
+    "primary_source": "official-source-verification",
+    "provider_url": "https://coinmarketcap.com/api/"
+  }
+}

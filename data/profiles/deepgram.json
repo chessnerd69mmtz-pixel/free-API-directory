@@ -1,0 +1,56 @@
+{
+  "name": "Deepgram",
+  "category": "AI / ML",
+  "description": "Speech-to-text, text-to-speech and audio intelligence APIs.",
+  "free_tier": {
+    "has_free_tier": true,
+    "type": "free-credit",
+    "details": "$200 free credit for every new account; official pricing says the credit is available until used.",
+    "amount": "$200 free credit",
+    "expiry": "Until used"
+  },
+  "signup_requires_account": true,
+  "requires_credit_card": null,
+  "signup_url": "https://console.deepgram.com/signup",
+  "pricing_url": "https://deepgram.com/pricing",
+  "verification_urls": [
+    "https://deepgram.com/pricing"
+  ],
+  "last_verified": "2026-09-26",
+  "verified_by": "official-source-review",
+  "status": "active",
+  "tier_verification_status": "official-primary-source",
+  "authentication": "API key",
+  "protocols": [
+    "HTTPS",
+    "WebSocket"
+  ],
+  "uses": [
+    "speech-to-text",
+    "text-to-speech",
+    "audio intelligence"
+  ],
+  "documentation_url": "https://developers.deepgram.com",
+  "endpoint_url": null,
+  "region": null,
+  "data_region": null,
+  "regions": [],
+  "sdk_languages": [],
+  "commercial_use": "Not publicly stated; check provider terms.",
+  "self_hostable": "Not publicly stated",
+  "webhooks": "Not publicly stated",
+  "rate_limit": "Concurrency limits shown on official pricing page: up to 50 REST STT, 150 WSS STT, 45 REST/WSS TTS, and 10 Audio Intelligence on Pay As You Go.",
+  "free_tier_reset": "No recurring reset; credit is consumed until used.",
+  "verification_status": "source-identified-not-fully-resolved",
+  "verification_sources": {
+    "official": [
+      "https://deepgram.com/pricing"
+    ]
+  },
+  "research_status": "official-source-reviewed",
+  "key_url_type": "signup",
+  "provenance": {
+    "primary_source": "official-source-review",
+    "provider_url": "https://console.deepgram.com/signup"
+  }
+}

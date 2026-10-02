@@ -1,0 +1,55 @@
+{
+  "name": "Mux API",
+  "category": "Video / Streaming",
+  "description": "Cataloged API provider.",
+  "free_tier": {
+    "has_free_tier": true,
+    "type": "free-plan",
+    "details": "Mux has a free plan with monthly delivery minutes and no credit card required to start.",
+    "amount": "100,000 free monthly delivery minutes; up to 10 stored videos on Free",
+    "expiry": "Monthly"
+  },
+  "signup_requires_account": true,
+  "requires_credit_card": false,
+  "signup_url": "https://www.mux.com",
+  "pricing_url": "https://www.mux.com/pricing",
+  "verification_urls": [
+    "https://www.mux.com",
+    "https://www.mux.com/pricing"
+  ],
+  "last_verified": "2026-09-25",
+  "verified_by": "manual-official-source-review",
+  "status": "active",
+  "tier_verification_url": "https://www.mux.com/pricing",
+  "tier_verification_status": "manually-reviewed",
+  "uses": [
+    "video metadata",
+    "upload/management",
+    "playback/streaming",
+    "channels/users",
+    "comments or engagement data",
+    "analytics where offered"
+  ],
+  "documentation_url": "https://www.mux.com",
+  "endpoint_url": null,
+  "region": null,
+  "data_region": null,
+  "regions": [],
+  "authentication": "Not publicly stated",
+  "protocols": [
+    "HTTPS"
+  ],
+  "sdk_languages": [],
+  "commercial_use": "Not publicly stated; check provider terms.",
+  "self_hostable": "Not publicly stated",
+  "webhooks": "Not publicly stated",
+  "rate_limit": "Not publicly stated",
+  "free_tier_reset": "Not publicly stated",
+  "verification_status": "source-identified-not-fully-resolved",
+  "verification_sources": {},
+  "key_url_type": "provider-page",
+  "provenance": {
+    "primary_source": "manual-official-source-review",
+    "provider_url": "https://www.mux.com"
+  }
+}

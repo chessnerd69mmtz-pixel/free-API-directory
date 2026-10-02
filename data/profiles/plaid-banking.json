@@ -1,0 +1,57 @@
+{
+  "name": "Plaid (banking)",
+  "category": "Finance / Crypto / Economics",
+  "description": "Cataloged API provider.",
+  "free_tier": {
+    "has_free_tier": null,
+    "type": "unknown",
+    "details": "Not independently verified in the primary catalog.",
+    "amount": "Not publicly stated",
+    "expiry": "Not publicly stated"
+  },
+  "signup_requires_account": true,
+  "requires_credit_card": null,
+  "signup_url": "https://dashboard.plaid.com/signup",
+  "pricing_url": "https://plaid.com/pricing/",
+  "verification_urls": [
+    "https://plaid.com/",
+    "https://plaid.com/pricing/",
+    "https://plaid.com/docs/api/#authentication",
+    "https://plaid.com/docs/api/"
+  ],
+  "last_verified": "2026-09-25",
+  "verified_by": "official-source-verification",
+  "status": "active",
+  "tier_verification_url": "https://plaid.com/pricing/",
+  "tier_verification_status": "manually-verified",
+  "uses": [
+    "market/price data",
+    "historical time series",
+    "company/asset metadata",
+    "economic or FX data",
+    "portfolio/account data where offered",
+    "trading/order APIs where offered"
+  ],
+  "documentation_url": "https://dashboard.plaid.com/signup",
+  "endpoint_url": null,
+  "region": null,
+  "data_region": null,
+  "regions": [],
+  "authentication": "Not publicly stated",
+  "protocols": [
+    "HTTPS"
+  ],
+  "sdk_languages": [],
+  "commercial_use": "Not publicly stated; check provider terms.",
+  "self_hostable": "Not publicly stated",
+  "webhooks": "Not publicly stated",
+  "rate_limit": "Not publicly stated",
+  "free_tier_reset": "Not publicly stated",
+  "verification_status": "source-identified-not-fully-resolved",
+  "verification_sources": {},
+  "key_url_type": "signup",
+  "provenance": {
+    "primary_source": "official-source-verification",
+    "provider_url": "https://dashboard.plaid.com/signup"
+  }
+}

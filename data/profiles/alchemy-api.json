@@ -1,0 +1,60 @@
+{
+  "name": "Alchemy API",
+  "category": "Blockchain / Web3",
+  "description": "Cataloged API provider.",
+  "free_tier": {
+    "has_free_tier": true,
+    "type": "free-forever",
+    "details": "Official Free tier: 30 million Compute Units/month, 25 requests/second, 5 apps and 5 webhooks.",
+    "amount": "30M CU/month; 25 req/s; 5 apps; 5 webhooks",
+    "expiry": "Free tier; ongoing"
+  },
+  "signup_requires_account": true,
+  "requires_credit_card": false,
+  "signup_url": "https://www.alchemy.com",
+  "pricing_url": "https://www.alchemy.com/pricing",
+  "verification_urls": [
+    "https://www.alchemy.com/pricing",
+    "https://www.alchemy.com/docs/reference/api-keys",
+    "https://www.alchemy.com/docs/reference/api-overview",
+    "https://www.alchemy.com/docs"
+  ],
+  "last_verified": "2026-09-26",
+  "verified_by": "official-source-research-2026-09-26",
+  "status": "active",
+  "tier_verification_url": "https://www.alchemy.com/pricing",
+  "tier_verification_status": "official-primary-source",
+  "uses": [
+    "blockchain RPC/node access",
+    "wallet/transaction data",
+    "token/NFT data",
+    "smart-contract data",
+    "on-chain analytics"
+  ],
+  "research_sources": [
+    "https://www.alchemy.com/pricing",
+    "https://support.alchemy.com/articles/5827006872-what-is-included-in-the-free-tier"
+  ],
+  "documentation_url": "https://www.alchemy.com",
+  "endpoint_url": null,
+  "region": null,
+  "data_region": null,
+  "regions": [],
+  "authentication": "Not publicly stated",
+  "protocols": [
+    "HTTPS"
+  ],
+  "sdk_languages": [],
+  "commercial_use": "Not publicly stated; check provider terms.",
+  "self_hostable": "Not publicly stated",
+  "webhooks": "Not publicly stated",
+  "rate_limit": "Not publicly stated",
+  "free_tier_reset": "Not publicly stated",
+  "verification_status": "source-identified-not-fully-resolved",
+  "verification_sources": {},
+  "key_url_type": "provider-page",
+  "provenance": {
+    "primary_source": "official-source-research-2026-09-26",
+    "provider_url": "https://www.alchemy.com"
+  }
+}

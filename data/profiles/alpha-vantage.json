@@ -1,0 +1,67 @@
+{
+  "name": "Alpha Vantage",
+  "category": "Finance / Market Data",
+  "description": "Stocks, forex, crypto and economic data APIs.",
+  "free_tier": {
+    "has_free_tier": true,
+    "type": "rate-limited-free",
+    "details": "Official support page offers a free API key with lifetime access.",
+    "amount": "25 API requests/minute; unlimited requests for verified open-source or educational projects",
+    "expiry": "Lifetime access stated on official key page"
+  },
+  "signup_requires_account": true,
+  "requires_credit_card": null,
+  "signup_url": "https://www.alphavantage.co/support/#api-key",
+  "pricing_url": "https://www.alphavantage.co/premium/",
+  "verification_urls": [
+    "https://www.alphavantage.co/support/#api-key",
+    "https://www.alphavantage.co/documentation/"
+  ],
+  "last_verified": "2026-09-25",
+  "verified_by": "manual-official-doc-review",
+  "status": "active",
+  "tier_verification_url": "https://www.alphavantage.co/premium/",
+  "tier_verification_status": "manually-verified",
+  "uses": [
+    "stock/forex/crypto data",
+    "historical prices",
+    "technical indicators",
+    "fundamental data",
+    "economic indicators",
+    "market news"
+  ],
+  "authentication": "apiKey",
+  "protocols": [
+    "HTTPS"
+  ],
+  "cors_support": "Unknown",
+  "external_crosscheck": {
+    "public_api_lists": {
+      "source": "https://public-api-lists.github.io/public-api-lists/api/all.json",
+      "name": "Alpha Vantage",
+      "category": "Finance",
+      "auth": "apiKey",
+      "https": true,
+      "cors": "Unknown",
+      "checked_at": "2026-09-26"
+    }
+  },
+  "documentation_url": "https://www.alphavantage.co/support/#api-key",
+  "endpoint_url": null,
+  "region": null,
+  "data_region": null,
+  "regions": [],
+  "sdk_languages": [],
+  "commercial_use": "Not publicly stated; check provider terms.",
+  "self_hostable": "Not publicly stated",
+  "webhooks": "Not publicly stated",
+  "rate_limit": "Not publicly stated",
+  "free_tier_reset": "Not publicly stated",
+  "verification_status": "source-identified-not-fully-resolved",
+  "verification_sources": {},
+  "key_url_type": "provider-page",
+  "provenance": {
+    "primary_source": "manual-official-doc-review",
+    "provider_url": "https://www.alphavantage.co/support/#api-key"
+  }
+}

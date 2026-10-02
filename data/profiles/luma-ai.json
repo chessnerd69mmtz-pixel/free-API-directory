@@ -1,0 +1,52 @@
+{
+  "name": "Luma AI",
+  "category": "AI / Generative Media",
+  "description": "Candidate API provider added in the September 2026 expansion. Current free-tier details require provider-side verification.",
+  "free_tier": {
+    "has_free_tier": false,
+    "type": "usage-based",
+    "details": "Current Luma API pricing describes Build as pay-per-use. Luma's free web-plan credits are separate from API credits.",
+    "amount": "No free API allowance identified; API is pay-per-use",
+    "expiry": "N/A"
+  },
+  "signup_requires_account": true,
+  "requires_credit_card": null,
+  "signup_url": "https://lumalabs.ai/dream-machine/api",
+  "pricing_url": "https://lumalabs.ai/dream-machine/api",
+  "verification_urls": [
+    "https://lumalabs.ai/dream-machine/api",
+    "https://lumalabs.ai/api",
+    "https://lumalabs.ai/learning-hub/dream-machine-credit-system"
+  ],
+  "last_verified": "2026-09-26",
+  "verified_by": "official-source-research",
+  "status": "candidate",
+  "tier_verification_url": "https://lumalabs.ai/api",
+  "tier_verification_status": "official-source-researched",
+  "uses": [
+    "video generation"
+  ],
+  "research_status": "verified-or-resolved-2026-09-26",
+  "documentation_url": "https://lumalabs.ai/dream-machine/api",
+  "endpoint_url": null,
+  "region": null,
+  "data_region": null,
+  "regions": [],
+  "authentication": "Not publicly stated",
+  "protocols": [
+    "HTTPS"
+  ],
+  "sdk_languages": [],
+  "commercial_use": "Not publicly stated; check provider terms.",
+  "self_hostable": "Not publicly stated",
+  "webhooks": "Not publicly stated",
+  "rate_limit": "Not publicly stated",
+  "free_tier_reset": "Not publicly stated",
+  "verification_status": "source-identified-not-fully-resolved",
+  "verification_sources": {},
+  "key_url_type": "provider-page",
+  "provenance": {
+    "primary_source": "official-source-research",
+    "provider_url": "https://lumalabs.ai/dream-machine/api"
+  }
+}

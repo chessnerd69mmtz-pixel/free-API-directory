@@ -1,0 +1,55 @@
+{
+  "name": "OpenAlex",
+  "category": "Scientific Research",
+  "description": "Scholarly metadata and research graph API for works, authors, sources, institutions, topics and funders.",
+  "free_tier": {
+    "has_free_tier": true,
+    "type": "free daily API budget",
+    "details": "Free account provides $1/day of API usage with no payment method required; casual use is also possible without a key at a lower anonymous budget.",
+    "amount": "$1/day free usage with API key",
+    "expiry": "Daily reset at midnight UTC"
+  },
+  "signup_requires_account": true,
+  "requires_credit_card": false,
+  "signup_url": "https://openalex.org/settings/api",
+  "pricing_url": "https://help.openalex.org/access/pricing/",
+  "verification_urls": [
+    "https://help.openalex.org/api/",
+    "https://help.openalex.org/api/authentication/",
+    "https://help.openalex.org/access/pricing/"
+  ],
+  "last_verified": "2026-09-26",
+  "verified_by": "official-source-review",
+  "status": "active",
+  "tier_verification_url": "https://help.openalex.org/api/authentication/",
+  "tier_verification_status": "manually-reviewed",
+  "uses": [
+    "Academic research",
+    "Bibliometrics",
+    "Literature discovery",
+    "Citation analysis",
+    "Open-access research"
+  ],
+  "documentation_url": "https://help.openalex.org/api/",
+  "verification_status": "officially-verified",
+  "authentication": "API key optional for casual use; free API key recommended",
+  "rate_limit": "Daily usage budget; >100 requests/sec limited",
+  "free_tier_reset": "Daily at midnight UTC",
+  "key_url_type": "api-key",
+  "endpoint_url": null,
+  "region": null,
+  "data_region": null,
+  "regions": [],
+  "protocols": [
+    "HTTPS"
+  ],
+  "sdk_languages": [],
+  "commercial_use": "Not publicly stated; check provider terms.",
+  "self_hostable": "Not publicly stated",
+  "webhooks": "Not publicly stated",
+  "verification_sources": {},
+  "provenance": {
+    "primary_source": "official-source-review",
+    "provider_url": "https://openalex.org/settings/api"
+  }
+}

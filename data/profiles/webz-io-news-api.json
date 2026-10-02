@@ -1,0 +1,56 @@
+{
+  "name": "Webz.io News API",
+  "category": "News (additional)",
+  "description": "Cataloged API provider.",
+  "free_tier": {
+    "has_free_tier": null,
+    "type": "unknown",
+    "details": "Not independently verified in the primary catalog.",
+    "amount": "Not publicly stated",
+    "expiry": "Not publicly stated"
+  },
+  "signup_requires_account": true,
+  "requires_credit_card": null,
+  "signup_url": "https://webz.io",
+  "pricing_url": "https://webz.io/pricing/",
+  "verification_urls": [
+    "https://webz.io/products/news-api/",
+    "https://webz.io/pricing/",
+    "https://docs.webz.io/"
+  ],
+  "last_verified": "2026-09-25",
+  "verified_by": "official-source-verification",
+  "status": "active",
+  "tier_verification_url": "https://webz.io/pricing/",
+  "tier_verification_status": "manually-verified",
+  "uses": [
+    "news search",
+    "articles/headlines",
+    "source/topic filtering",
+    "date/language/country filtering",
+    "article metadata",
+    "aggregation"
+  ],
+  "documentation_url": "https://webz.io",
+  "endpoint_url": null,
+  "region": null,
+  "data_region": null,
+  "regions": [],
+  "authentication": "Not publicly stated",
+  "protocols": [
+    "HTTPS"
+  ],
+  "sdk_languages": [],
+  "commercial_use": "Not publicly stated; check provider terms.",
+  "self_hostable": "Not publicly stated",
+  "webhooks": "Not publicly stated",
+  "rate_limit": "Not publicly stated",
+  "free_tier_reset": "Not publicly stated",
+  "verification_status": "source-identified-not-fully-resolved",
+  "verification_sources": {},
+  "key_url_type": "provider-page",
+  "provenance": {
+    "primary_source": "official-source-verification",
+    "provider_url": "https://webz.io"
+  }
+}

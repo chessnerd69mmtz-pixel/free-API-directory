@@ -1,0 +1,62 @@
+{
+  "name": "Mistral AI",
+  "category": "AI / LLM",
+  "description": "Mistral Studio API for language, document, audio and agent workloads.",
+  "free_tier": {
+    "has_free_tier": true,
+    "type": "rate-limited-free",
+    "details": "Mistral Studio Free mode provides limited API access; current catalog records $10/month API credits and no credit card requirement for the free mode.",
+    "amount": "$10/month API credits on the Free plan; verify current applicability",
+    "expiry": "Not publicly stated"
+  },
+  "signup_requires_account": true,
+  "requires_credit_card": false,
+  "signup_url": "https://console.mistral.ai/api-keys",
+  "pricing_url": "https://mistral.ai/technology/#pricing",
+  "verification_urls": [
+    "https://docs.mistral.ai/getting-started/quickstart",
+    "https://mistral.ai/technology/#pricing"
+  ],
+  "last_verified": "2026-09-26",
+  "verified_by": "official-source-review",
+  "status": "active",
+  "tier_verification_url": "https://mistral.ai/technology/#pricing",
+  "tier_verification_status": "official-primary-source",
+  "uses": [
+    "LLM inference",
+    "text generation/chat",
+    "embeddings",
+    "document/OCR processing",
+    "moderation",
+    "agents/tool calling",
+    "speech/audio models where offered"
+  ],
+  "documentation_url": "https://docs.mistral.ai",
+  "verification_status": "official-primary-source",
+  "research_status": "official-source-reviewed",
+  "provenance": {
+    "primary_source": "official-provider-documentation",
+    "source_checked_at": "2026-09-26"
+  },
+  "verification_sources": {
+    "official": [
+      "https://docs.mistral.ai/getting-started/quickstart",
+      "https://mistral.ai/technology/#pricing"
+    ]
+  },
+  "endpoint_url": null,
+  "region": null,
+  "data_region": null,
+  "regions": [],
+  "authentication": "Not publicly stated",
+  "protocols": [
+    "HTTPS"
+  ],
+  "sdk_languages": [],
+  "commercial_use": "Not publicly stated; check provider terms.",
+  "self_hostable": "Not publicly stated",
+  "webhooks": "Not publicly stated",
+  "rate_limit": "Not publicly stated",
+  "free_tier_reset": "Not publicly stated",
+  "key_url_type": "api-key-page"
+}

@@ -1,0 +1,53 @@
+{
+  "name": "Stability AI Platform",
+  "category": "AI / Generative Media",
+  "description": "Candidate API provider added in the September 2026 expansion. Current free-tier details require provider-side verification.",
+  "free_tier": {
+    "has_free_tier": true,
+    "type": "free-credits",
+    "details": "Official Stability AI Developer Platform grants 25 free credits to new accounts; API calls require an API key.",
+    "amount": "25 free API credits",
+    "expiry": "Not stated"
+  },
+  "signup_requires_account": true,
+  "requires_credit_card": null,
+  "signup_url": "https://platform.stability.ai/account/keys",
+  "pricing_url": "https://platform.stability.ai/account/keys",
+  "verification_urls": [
+    "https://platform.stability.ai/account/keys",
+    "https://platform.stability.ai/docs",
+    "https://platform.stability.ai/pricing"
+  ],
+  "last_verified": "2026-09-26",
+  "verified_by": "official-source-research",
+  "status": "candidate",
+  "tier_verification_url": "https://platform.stability.ai/docs",
+  "tier_verification_status": "official-source-researched",
+  "uses": [
+    "image",
+    "video generation"
+  ],
+  "research_status": "verified-or-resolved-2026-09-26",
+  "documentation_url": "https://platform.stability.ai/account/keys",
+  "endpoint_url": null,
+  "region": null,
+  "data_region": null,
+  "regions": [],
+  "authentication": "Not publicly stated",
+  "protocols": [
+    "HTTPS"
+  ],
+  "sdk_languages": [],
+  "commercial_use": "Not publicly stated; check provider terms.",
+  "self_hostable": "Not publicly stated",
+  "webhooks": "Not publicly stated",
+  "rate_limit": "Not publicly stated",
+  "free_tier_reset": "Not publicly stated",
+  "verification_status": "source-identified-not-fully-resolved",
+  "verification_sources": {},
+  "key_url_type": "api-key-page",
+  "provenance": {
+    "primary_source": "official-source-research",
+    "provider_url": "https://platform.stability.ai/account/keys"
+  }
+}

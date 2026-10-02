@@ -1,0 +1,56 @@
+{
+  "name": "Cloudflare Workers AI",
+  "category": "AI / ML",
+  "description": "Serverless AI inference integrated with Cloudflare Workers.",
+  "free_tier": {
+    "has_free_tier": true,
+    "type": "daily-allocation",
+    "details": "10,000 Neurons/day on Workers Free; the same 10,000-Neuron daily allocation is included on Workers Paid before paid overage.",
+    "amount": "10,000 Neurons/day",
+    "expiry": "Daily reset"
+  },
+  "signup_requires_account": true,
+  "requires_credit_card": null,
+  "signup_url": "https://dash.cloudflare.com/",
+  "pricing_url": "https://developers.cloudflare.com/workers-ai/platform/pricing/",
+  "verification_urls": [
+    "https://developers.cloudflare.com/workers-ai/platform/pricing/"
+  ],
+  "last_verified": "2026-09-26",
+  "verified_by": "official-source-review",
+  "status": "active",
+  "tier_verification_status": "official-primary-source",
+  "authentication": "Cloudflare account/token",
+  "protocols": [
+    "HTTPS"
+  ],
+  "uses": [
+    "LLM inference",
+    "embeddings",
+    "speech/audio models",
+    "image generation where offered"
+  ],
+  "documentation_url": "https://developers.cloudflare.com/workers-ai/",
+  "endpoint_url": null,
+  "region": null,
+  "data_region": null,
+  "regions": [],
+  "sdk_languages": [],
+  "commercial_use": "Not publicly stated; check provider terms.",
+  "self_hostable": "Not publicly stated",
+  "webhooks": "Not publicly stated",
+  "rate_limit": "Official documentation and current model/task limits vary by model; free allocation is the primary quota.",
+  "free_tier_reset": "Daily at 00:00 UTC.",
+  "verification_status": "source-identified-not-fully-resolved",
+  "verification_sources": {
+    "official": [
+      "https://developers.cloudflare.com/workers-ai/platform/pricing/"
+    ]
+  },
+  "research_status": "official-source-reviewed",
+  "key_url_type": "provider-page",
+  "provenance": {
+    "primary_source": "official-source-review",
+    "provider_url": "https://dash.cloudflare.com/"
+  }
+}

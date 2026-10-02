@@ -1,0 +1,54 @@
+{
+  "name": "Cohere API",
+  "category": "Student / Education & General",
+  "description": "Student-friendly API from the supplied research table; current access limits and terms are recorded conservatively.",
+  "free_tier": {
+    "has_free_tier": true,
+    "type": "free-trial",
+    "details": "Every account receives a free, rate-limited Trial API key. Official docs state trial keys are limited to 1,000 API calls/month; trial Chat endpoints are generally 20 requests/minute and trial keys are not for production/commercial use.",
+    "amount": "1,000 API calls/month; endpoint-specific trial rate limits",
+    "expiry": "While trial key remains available"
+  },
+  "signup_requires_account": true,
+  "requires_credit_card": null,
+  "signup_url": "https://dashboard.cohere.com/welcome/register",
+  "pricing_url": null,
+  "verification_urls": [
+    "https://dashboard.cohere.com/welcome/register"
+  ],
+  "last_verified": "2026-09-26",
+  "verified_by": "official-source-research-2026-09-26",
+  "status": "catalog-only",
+  "verification_status": "source-checked-table",
+  "authentication": "API key/account or provider-defined",
+  "protocols": [
+    "HTTPS"
+  ],
+  "uses": [
+    "Student projects",
+    "Education",
+    "General API integration"
+  ],
+  "key_url_type": "api-key-or-docs-page",
+  "provenance": {
+    "primary_source": "user-supplied-student-api-table",
+    "provider_url": "https://dashboard.cohere.com/welcome/register"
+  },
+  "commercial_use": "No — trial keys are not permitted for production/commercial use",
+  "tier_verification_status": "official-primary-source",
+  "research_sources": [
+    "https://cohere.com/pricing",
+    "https://docs.cohere.com/v1/docs/rate-limits"
+  ],
+  "documentation_url": "https://dashboard.cohere.com/welcome/register",
+  "endpoint_url": null,
+  "region": null,
+  "data_region": null,
+  "regions": [],
+  "sdk_languages": [],
+  "self_hostable": "Not publicly stated",
+  "webhooks": "Not publicly stated",
+  "rate_limit": "Not publicly stated",
+  "free_tier_reset": "Not publicly stated",
+  "verification_sources": {}
+}

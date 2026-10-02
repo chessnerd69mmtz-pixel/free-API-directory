@@ -1,0 +1,55 @@
+{
+  "name": "SportsDataIO",
+  "category": "Sports (additional)",
+  "description": "Cataloged API provider.",
+  "free_tier": {
+    "has_free_tier": true,
+    "type": "free-trial",
+    "details": "SportsDataIO provides a free trial using scrambled data and a separate free tier in Discovery Lab for last-season data.",
+    "amount": "Free trial and free Discovery Lab tier; exact quota varies by product",
+    "expiry": "Not publicly stated"
+  },
+  "signup_requires_account": true,
+  "requires_credit_card": null,
+  "signup_url": "https://sportsdata.io",
+  "pricing_url": "https://sportsdata.io/developers/apis",
+  "verification_urls": [
+    "https://sportsdata.io",
+    "https://sportsdata.io/developers/apis"
+  ],
+  "last_verified": "2026-09-25",
+  "verified_by": "manual-official-source-review",
+  "status": "active",
+  "tier_verification_url": "https://sportsdata.io/developers/apis",
+  "tier_verification_status": "manually-reviewed",
+  "uses": [
+    "scores/live events",
+    "fixtures/schedules",
+    "teams and players",
+    "standings",
+    "statistics",
+    "league/competition data"
+  ],
+  "documentation_url": "https://sportsdata.io",
+  "endpoint_url": null,
+  "region": null,
+  "data_region": null,
+  "regions": [],
+  "authentication": "Not publicly stated",
+  "protocols": [
+    "HTTPS"
+  ],
+  "sdk_languages": [],
+  "commercial_use": "Not publicly stated; check provider terms.",
+  "self_hostable": "Not publicly stated",
+  "webhooks": "Not publicly stated",
+  "rate_limit": "Not publicly stated",
+  "free_tier_reset": "Not publicly stated",
+  "verification_status": "source-identified-not-fully-resolved",
+  "verification_sources": {},
+  "key_url_type": "provider-page",
+  "provenance": {
+    "primary_source": "manual-official-source-review",
+    "provider_url": "https://sportsdata.io"
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "name": "Airtable API",
+  "category": "Dev Tools / Infra",
+  "description": "Cataloged API provider.",
+  "free_tier": {
+    "has_free_tier": true,
+    "type": "free-forever",
+    "details": "Official Free plan includes 1,000 Web API calls per workspace/month; API rate limit is 5 requests/second per base.",
+    "amount": "1,000 API calls/workspace/month; 5 req/s/base",
+    "expiry": "Free plan; ongoing"
+  },
+  "signup_requires_account": true,
+  "requires_credit_card": null,
+  "signup_url": "https://airtable.com/create/tokens",
+  "pricing_url": "https://www.airtable.com/pricing",
+  "verification_urls": [
+    "https://www.airtable.com/pricing",
+    "https://airtable.com/developers/web/api/authentication",
+    "https://airtable.com/developers/web/api/introduction",
+    "https://airtable.com/developers/web/api/client-libraries"
+  ],
+  "last_verified": "2026-09-26",
+  "verified_by": "official-source-research-2026-09-26",
+  "status": "active",
+  "tier_verification_url": "https://www.airtable.com/pricing",
+  "tier_verification_status": "official-primary-source",
+  "uses": [
+    "API/resource management",
+    "deployment/infrastructure control",
+    "data/storage operations where supported",
+    "authentication/integrations",
+    "monitoring/automation"
+  ],
+  "research_sources": [
+    "https://support.airtable.com/articles/6292134965-getting-started-with-airtable-s-web-api",
+    "https://support.airtable.com/articles/7735693959-managing-api-call-limits-in-airtable"
+  ],
+  "documentation_url": "https://airtable.com/create/tokens",
+  "endpoint_url": null,
+  "region": null,
+  "data_region": null,
+  "regions": [],
+  "authentication": "Not publicly stated",
+  "protocols": [
+    "HTTPS"
+  ],
+  "sdk_languages": [],
+  "commercial_use": "Not publicly stated; check provider terms.",
+  "self_hostable": "Not publicly stated",
+  "webhooks": "Not publicly stated",
+  "rate_limit": "Not publicly stated",
+  "free_tier_reset": "Not publicly stated",
+  "verification_status": "source-identified-not-fully-resolved",
+  "verification_sources": {},
+  "key_url_type": "api-key-page",
+  "provenance": {
+    "primary_source": "official-source-research-2026-09-26",
+    "provider_url": "https://airtable.com/create/tokens"
+  }
+}

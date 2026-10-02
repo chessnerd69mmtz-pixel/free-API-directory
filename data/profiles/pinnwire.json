@@ -1,0 +1,51 @@
+{
+  "name": "PinnWire",
+  "category": "Sports & Fitness",
+  "description": "Real-time Pinnacle odds for 13 sports — live and prematch over REST, WebSocket and SSE drop alerts",
+  "free_tier": {
+    "has_free_tier": null,
+    "type": "community-listed",
+    "details": "Listed by a maintained public API source as a free/public API. Exact provider quota, payment requirements and commercial terms are not independently established here.",
+    "amount": "Not independently stated",
+    "expiry": "Not independently stated"
+  },
+  "signup_requires_account": true,
+  "requires_credit_card": null,
+  "signup_url": "https://pinnwire.com/docs.html",
+  "pricing_url": null,
+  "verification_urls": [
+    "https://pinnwire.com/docs.html"
+  ],
+  "last_verified": "2026-09-26",
+  "verified_by": "maintained-community-source",
+  "status": "upstream-community",
+  "tier_verification_status": "secondary-source-only",
+  "authentication": "apiKey",
+  "protocols": [
+    "HTTPS"
+  ],
+  "cors_support": "No",
+  "uses": [
+    "Real-time Pinnacle odds for 13 sports — live and prematch over REST, WebSocket and SSE drop alerts"
+  ],
+  "provenance": {
+    "primary_source": "maintained community API directory",
+    "source_url": "https://pinnwire.com/docs.html",
+    "source_checked_at": "2026-09-26"
+  },
+  "research_status": "community-listed-needs-primary-verification",
+  "documentation_url": "https://pinnwire.com/docs.html",
+  "endpoint_url": null,
+  "region": null,
+  "data_region": null,
+  "regions": [],
+  "sdk_languages": [],
+  "commercial_use": "Not publicly stated; check provider terms.",
+  "self_hostable": "Not publicly stated",
+  "webhooks": "Not publicly stated",
+  "rate_limit": "Not publicly stated",
+  "free_tier_reset": "Not publicly stated",
+  "verification_status": "community-listed",
+  "verification_sources": {},
+  "key_url_type": "documentation"
+}

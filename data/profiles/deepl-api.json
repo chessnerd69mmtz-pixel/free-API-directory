@@ -1,0 +1,54 @@
+{
+  "name": "DeepL API",
+  "category": "Translation / Language",
+  "description": "Cataloged API provider.",
+  "free_tier": {
+    "has_free_tier": true,
+    "type": "monthly-characters",
+    "details": "DeepL API Free allows up to 500,000 characters per month.",
+    "amount": "500,000 characters/month",
+    "expiry": "Monthly"
+  },
+  "signup_requires_account": true,
+  "requires_credit_card": null,
+  "signup_url": "https://www.deepl.com/en/pro-api",
+  "pricing_url": "https://support.deepl.com/hc/en-us/articles/360020685720-Usage-count-and-billing-in-DeepL-API",
+  "verification_urls": [
+    "https://www.deepl.com/en/pro-api",
+    "https://support.deepl.com/hc/en-us/articles/360020685720-Usage-count-and-billing-in-DeepL-API"
+  ],
+  "last_verified": "2026-09-25",
+  "verified_by": "manual-official-source-review",
+  "status": "active",
+  "tier_verification_url": "https://support.deepl.com/hc/en-us/articles/360020685720-Usage-count-and-billing-in-DeepL-API",
+  "tier_verification_status": "manually-reviewed",
+  "uses": [
+    "text translation",
+    "language detection",
+    "multilingual localization",
+    "document translation where offered",
+    "glossaries/terminology where offered"
+  ],
+  "documentation_url": "https://www.deepl.com/en/pro-api",
+  "endpoint_url": null,
+  "region": null,
+  "data_region": null,
+  "regions": [],
+  "authentication": "Not publicly stated",
+  "protocols": [
+    "HTTPS"
+  ],
+  "sdk_languages": [],
+  "commercial_use": "Not publicly stated; check provider terms.",
+  "self_hostable": "Not publicly stated",
+  "webhooks": "Not publicly stated",
+  "rate_limit": "Not publicly stated",
+  "free_tier_reset": "Not publicly stated",
+  "verification_status": "source-identified-not-fully-resolved",
+  "verification_sources": {},
+  "key_url_type": "provider-page",
+  "provenance": {
+    "primary_source": "manual-official-source-review",
+    "provider_url": "https://www.deepl.com/en/pro-api"
+  }
+}

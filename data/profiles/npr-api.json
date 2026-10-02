@@ -1,0 +1,49 @@
+{
+  "name": "NPR API",
+  "category": "Student / Education & General",
+  "description": "Student-friendly API from the supplied research table; current access limits and terms are recorded conservatively.",
+  "free_tier": {
+    "has_free_tier": null,
+    "type": "source-listed",
+    "details": "Listed as student-friendly/free-access in the supplied table; current quota and payment terms are not inferred.",
+    "amount": "Not publicly stated",
+    "expiry": "Not publicly stated"
+  },
+  "signup_requires_account": true,
+  "requires_credit_card": null,
+  "signup_url": "https://www.npr.org/api/registration.php",
+  "pricing_url": null,
+  "verification_urls": [
+    "https://www.npr.org/api/registration.php"
+  ],
+  "last_verified": "2026-09-26",
+  "verified_by": "official-source-review",
+  "status": "catalog-only",
+  "verification_status": "source-checked-table",
+  "authentication": "API key/account or provider-defined",
+  "protocols": [
+    "HTTPS"
+  ],
+  "uses": [
+    "Student projects",
+    "Education",
+    "General API integration"
+  ],
+  "key_url_type": "api-key-or-docs-page",
+  "provenance": {
+    "primary_source": "user-supplied-student-api-table",
+    "provider_url": "https://www.npr.org/api/registration.php"
+  },
+  "documentation_url": "https://www.npr.org/api/registration.php",
+  "endpoint_url": null,
+  "region": null,
+  "data_region": null,
+  "regions": [],
+  "sdk_languages": [],
+  "commercial_use": "Not publicly stated; check provider terms.",
+  "self_hostable": "Not publicly stated",
+  "webhooks": "Not publicly stated",
+  "rate_limit": "Not publicly stated",
+  "free_tier_reset": "Not publicly stated",
+  "verification_sources": {}
+}

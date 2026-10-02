@@ -1,0 +1,60 @@
+{
+  "name": "AWS (free tier)",
+  "category": "Dev Tools / Infra",
+  "description": "Cataloged API provider.",
+  "free_tier": {
+    "has_free_tier": true,
+    "type": "free-trial",
+    "details": "Current AWS Free Tier: new customers receive $100 in credits and can earn up to another $100; Free account plan lasts up to six months or until credits are exhausted. AWS also lists 30+ always-free services with monthly allowances.",
+    "amount": "Up to $200 credits for new customers; 30+ always-free services",
+    "expiry": "Up to 6 months for Free account plan; some services always free"
+  },
+  "signup_requires_account": true,
+  "requires_credit_card": true,
+  "signup_url": "https://aws.amazon.com/free/",
+  "pricing_url": "https://aws.amazon.com/free/",
+  "verification_urls": [
+    "https://aws.amazon.com/premiumsupport/knowledge-center/what-is-free-tier/",
+    "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_sigv.html",
+    "https://docs.aws.amazon.com/general/latest/gr/signature-version-4.html",
+    "https://aws.amazon.com/developer/tools/"
+  ],
+  "last_verified": "2026-09-26",
+  "verified_by": "official-source-research-2026-09-26",
+  "status": "active",
+  "tier_verification_url": "https://aws.amazon.com/free/",
+  "tier_verification_status": "official-primary-source",
+  "uses": [
+    "API/resource management",
+    "deployment/infrastructure control",
+    "data/storage operations where supported",
+    "authentication/integrations",
+    "monitoring/automation"
+  ],
+  "research_sources": [
+    "https://aws.amazon.com/free/",
+    "https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/free-tier.html"
+  ],
+  "documentation_url": "https://aws.amazon.com/free/",
+  "endpoint_url": null,
+  "region": null,
+  "data_region": null,
+  "regions": [],
+  "authentication": "Not publicly stated",
+  "protocols": [
+    "HTTPS"
+  ],
+  "sdk_languages": [],
+  "commercial_use": "Not publicly stated; check provider terms.",
+  "self_hostable": "Not publicly stated",
+  "webhooks": "Not publicly stated",
+  "rate_limit": "Not publicly stated",
+  "free_tier_reset": "Not publicly stated",
+  "verification_status": "source-identified-not-fully-resolved",
+  "verification_sources": {},
+  "key_url_type": "provider-page",
+  "provenance": {
+    "primary_source": "official-source-research-2026-09-26",
+    "provider_url": "https://aws.amazon.com/free/"
+  }
+}

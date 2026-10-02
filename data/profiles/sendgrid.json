@@ -1,0 +1,56 @@
+{
+  "name": "SendGrid",
+  "category": "Email",
+  "description": "Transactional and marketing email API.",
+  "free_tier": {
+    "has_free_tier": null,
+    "type": "unknown",
+    "details": "API-key management URL verified; current free allowance is not asserted here.",
+    "amount": "Not publicly stated",
+    "expiry": "Not publicly stated"
+  },
+  "signup_requires_account": true,
+  "requires_credit_card": false,
+  "signup_url": "https://app.sendgrid.com/settings/api_keys",
+  "pricing_url": "https://sendgrid.com/en-us/pricing",
+  "verification_urls": [
+    "https://sendgrid.com/en-us/pricing",
+    "https://docs.sendgrid.com/for-developers/sending-email/api-getting-started",
+    "https://docs.sendgrid.com/for-developers/sending-email/quickstart-nodejs"
+  ],
+  "last_verified": "2026-09-25",
+  "verified_by": "manual-official-doc-review",
+  "status": "active",
+  "tier_verification_url": "https://sendgrid.com/en-us/pricing",
+  "tier_verification_status": "manually-verified",
+  "uses": [
+    "transactional email",
+    "marketing email",
+    "templates",
+    "contacts",
+    "delivery analytics",
+    "webhooks"
+  ],
+  "documentation_url": "https://app.sendgrid.com/settings/api_keys",
+  "endpoint_url": null,
+  "region": null,
+  "data_region": null,
+  "regions": [],
+  "authentication": "Not publicly stated",
+  "protocols": [
+    "HTTPS"
+  ],
+  "sdk_languages": [],
+  "commercial_use": "Not publicly stated; check provider terms.",
+  "self_hostable": "Not publicly stated",
+  "webhooks": "Not publicly stated",
+  "rate_limit": "Not publicly stated",
+  "free_tier_reset": "Not publicly stated",
+  "verification_status": "source-identified-not-fully-resolved",
+  "verification_sources": {},
+  "key_url_type": "api-key-page",
+  "provenance": {
+    "primary_source": "manual-official-doc-review",
+    "provider_url": "https://app.sendgrid.com/settings/api_keys"
+  }
+}

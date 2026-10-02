@@ -1,0 +1,69 @@
+{
+  "name": "GitHub API",
+  "category": "Dev Tools / Infra",
+  "description": "Make use of GitHub repositories, code and user info programmatically",
+  "free_tier": {
+    "has_free_tier": null,
+    "type": "unknown",
+    "details": "Not independently verified in the primary catalog.",
+    "amount": "Not publicly stated",
+    "expiry": "Not publicly stated"
+  },
+  "signup_requires_account": true,
+  "requires_credit_card": null,
+  "signup_url": "https://github.com/settings/tokens",
+  "pricing_url": "https://github.com/pricing",
+  "verification_urls": [
+    "https://docs.github.com/en/get-started/learning-about-github/githubs-plans",
+    "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api",
+    "https://docs.github.com/en/rest/using-the-rest-api/about-the-rest-api",
+    "https://github.com/github/rest-api-description"
+  ],
+  "last_verified": "2026-09-25",
+  "verified_by": "manual-official-doc-review",
+  "status": "active",
+  "tier_verification_url": "https://github.com/pricing",
+  "tier_verification_status": "manually-verified",
+  "uses": [
+    "API/resource management",
+    "deployment/infrastructure control",
+    "data/storage operations where supported",
+    "authentication/integrations",
+    "monitoring/automation"
+  ],
+  "authentication": "OAuth",
+  "protocols": [
+    "HTTPS"
+  ],
+  "cors_support": "Yes",
+  "external_crosscheck": {
+    "public_api_lists": {
+      "source": "https://public-api-lists.github.io/public-api-lists/api/all.json",
+      "name": "GitHub",
+      "category": "Development",
+      "auth": "OAuth",
+      "https": true,
+      "cors": "Yes",
+      "checked_at": "2026-09-26"
+    }
+  },
+  "rate_limit": "60 req/hr",
+  "rate_limit_source": "secondary-directory-crosscheck",
+  "documentation_url": "https://github.com/settings/tokens",
+  "endpoint_url": null,
+  "region": null,
+  "data_region": null,
+  "regions": [],
+  "sdk_languages": [],
+  "commercial_use": "Not publicly stated; check provider terms.",
+  "self_hostable": "Not publicly stated",
+  "webhooks": "Not publicly stated",
+  "free_tier_reset": "Not publicly stated",
+  "verification_status": "source-identified-not-fully-resolved",
+  "verification_sources": {},
+  "key_url_type": "api-key-page",
+  "provenance": {
+    "primary_source": "manual-official-doc-review",
+    "provider_url": "https://github.com/settings/tokens"
+  }
+}

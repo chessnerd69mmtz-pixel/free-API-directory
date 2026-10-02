@@ -1,0 +1,63 @@
+{
+  "name": "Anthropic API",
+  "category": "AI / LLM",
+  "description": "Claude API through the Anthropic Console.",
+  "free_tier": {
+    "has_free_tier": null,
+    "type": "unknown",
+    "details": "No free API quota is asserted in the cited API pricing/key documentation.",
+    "amount": "Not publicly stated",
+    "expiry": "Not publicly stated"
+  },
+  "signup_requires_account": true,
+  "requires_credit_card": null,
+  "signup_url": "https://console.anthropic.com/settings/keys",
+  "pricing_url": "https://www.anthropic.com/pricing#api",
+  "verification_urls": [
+    "https://console.anthropic.com/settings/keys",
+    "https://www.anthropic.com/pricing#api",
+    "https://docs.anthropic.com/en/api/getting-started"
+  ],
+  "last_verified": "2026-09-26",
+  "verified_by": "official-source-review",
+  "status": "active",
+  "tier_verification_url": "https://www.anthropic.com/pricing#api",
+  "tier_verification_status": "official-primary-source",
+  "uses": [
+    "LLM text generation",
+    "chat",
+    "long-context reasoning",
+    "vision",
+    "tool use",
+    "structured outputs"
+  ],
+  "documentation_url": "https://docs.anthropic.com/en/api/getting-started",
+  "verification_status": "official-primary-source",
+  "research_status": "official-source-reviewed",
+  "provenance": {
+    "primary_source": "official-provider-documentation",
+    "source_checked_at": "2026-09-26"
+  },
+  "verification_sources": {
+    "official": [
+      "https://console.anthropic.com/settings/keys",
+      "https://www.anthropic.com/pricing#api",
+      "https://docs.anthropic.com/en/api/getting-started"
+    ]
+  },
+  "endpoint_url": null,
+  "region": null,
+  "data_region": null,
+  "regions": [],
+  "authentication": "Not publicly stated",
+  "protocols": [
+    "HTTPS"
+  ],
+  "sdk_languages": [],
+  "commercial_use": "Not publicly stated; check provider terms.",
+  "self_hostable": "Not publicly stated",
+  "webhooks": "Not publicly stated",
+  "rate_limit": "Not publicly stated",
+  "free_tier_reset": "Not publicly stated",
+  "key_url_type": "api-key-page"
+}

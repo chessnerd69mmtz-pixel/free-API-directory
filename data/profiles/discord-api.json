@@ -1,0 +1,65 @@
+{
+  "name": "Discord API",
+  "category": "Social Media",
+  "description": "Make bots for Discord, integrate Discord onto an external platform",
+  "free_tier": {
+    "has_free_tier": null,
+    "type": "unknown",
+    "details": "Not publicly stated in the official source reviewed; no free-tier claim is made.",
+    "amount": "Not publicly stated",
+    "expiry": "Not publicly stated"
+  },
+  "signup_requires_account": true,
+  "requires_credit_card": null,
+  "signup_url": "https://discord.com/developers/docs/intro",
+  "pricing_url": "https://discord.com/developers/docs/intro",
+  "verification_urls": [
+    "https://discord.com/developers/docs/intro"
+  ],
+  "last_verified": "2026-09-25",
+  "verified_by": "manual-official-source-review",
+  "status": "active",
+  "tier_verification_url": "https://discord.com/developers/docs/intro",
+  "tier_verification_status": "manually-reviewed",
+  "uses": [
+    "account/profile data where permitted",
+    "posts/content",
+    "publishing where permitted",
+    "comments/messages where permitted",
+    "analytics/integrations"
+  ],
+  "authentication": "OAuth",
+  "protocols": [
+    "HTTPS"
+  ],
+  "cors_support": "Unknown",
+  "external_crosscheck": {
+    "public_api_lists": {
+      "source": "https://public-api-lists.github.io/public-api-lists/api/all.json",
+      "name": "Discord",
+      "category": "Social",
+      "auth": "OAuth",
+      "https": true,
+      "cors": "Unknown",
+      "checked_at": "2026-09-26"
+    }
+  },
+  "documentation_url": "https://discord.com/developers/docs/intro",
+  "endpoint_url": null,
+  "region": null,
+  "data_region": null,
+  "regions": [],
+  "sdk_languages": [],
+  "commercial_use": "Not publicly stated; check provider terms.",
+  "self_hostable": "Not publicly stated",
+  "webhooks": "Not publicly stated",
+  "rate_limit": "Not publicly stated",
+  "free_tier_reset": "Not publicly stated",
+  "verification_status": "source-identified-not-fully-resolved",
+  "verification_sources": {},
+  "key_url_type": "documentation",
+  "provenance": {
+    "primary_source": "manual-official-source-review",
+    "provider_url": "https://discord.com/developers/docs/intro"
+  }
+}

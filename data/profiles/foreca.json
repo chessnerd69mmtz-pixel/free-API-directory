@@ -1,0 +1,55 @@
+{
+  "name": "Foreca",
+  "category": "Weather (additional)",
+  "description": "Cataloged API provider.",
+  "free_tier": {
+    "has_free_tier": true,
+    "type": "freemium-or-trial",
+    "details": "Foreca offers a free 30-day trial and a Freemium personal-use plan.",
+    "amount": "2,000 requests/day",
+    "expiry": "Trial 30 days; Freemium deactivates after 30 days idle"
+  },
+  "signup_requires_account": true,
+  "requires_credit_card": false,
+  "signup_url": "https://developer.foreca.com",
+  "pricing_url": "https://business.foreca.com/weather-api/pricing",
+  "verification_urls": [
+    "https://developer.foreca.com",
+    "https://business.foreca.com/weather-api/pricing"
+  ],
+  "last_verified": "2026-09-25",
+  "verified_by": "manual-official-source-review",
+  "status": "active",
+  "tier_verification_url": "https://business.foreca.com/weather-api/pricing",
+  "tier_verification_status": "manually-reviewed",
+  "uses": [
+    "current conditions",
+    "hourly/daily forecasts",
+    "historical weather",
+    "alerts",
+    "location/weather lookup",
+    "environmental data where offered"
+  ],
+  "documentation_url": "https://developer.foreca.com",
+  "endpoint_url": null,
+  "region": null,
+  "data_region": null,
+  "regions": [],
+  "authentication": "Not publicly stated",
+  "protocols": [
+    "HTTPS"
+  ],
+  "sdk_languages": [],
+  "commercial_use": "Not publicly stated; check provider terms.",
+  "self_hostable": "Not publicly stated",
+  "webhooks": "Not publicly stated",
+  "rate_limit": "Not publicly stated",
+  "free_tier_reset": "Not publicly stated",
+  "verification_status": "source-identified-not-fully-resolved",
+  "verification_sources": {},
+  "key_url_type": "provider-page",
+  "provenance": {
+    "primary_source": "manual-official-source-review",
+    "provider_url": "https://developer.foreca.com"
+  }
+}

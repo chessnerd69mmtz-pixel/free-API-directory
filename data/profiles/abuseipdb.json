@@ -1,0 +1,67 @@
+{
+  "name": "AbuseIPDB",
+  "category": "Security / Threat Intel",
+  "description": "IP/domain/URL reputation",
+  "free_tier": {
+    "has_free_tier": true,
+    "type": "free-forever",
+    "details": "Individual free plan includes IP checks/reports and blacklist checks.",
+    "amount": "1,000 checks/reports/day; 100 block checks/day",
+    "expiry": "Free forever"
+  },
+  "signup_requires_account": true,
+  "requires_credit_card": false,
+  "signup_url": "https://www.abuseipdb.com/register",
+  "pricing_url": "https://www.abuseipdb.com/pricing",
+  "verification_urls": [
+    "https://www.abuseipdb.com/register",
+    "https://www.abuseipdb.com/pricing"
+  ],
+  "last_verified": "2026-09-25",
+  "verified_by": "manual-official-source-review",
+  "status": "active",
+  "tier_verification_url": "https://www.abuseipdb.com/pricing",
+  "tier_verification_status": "manually-reviewed",
+  "uses": [
+    "IP/domain/URL reputation",
+    "threat intelligence",
+    "host/service analysis",
+    "breach/malware lookups where offered",
+    "security research data"
+  ],
+  "authentication": "apiKey",
+  "protocols": [
+    "HTTPS"
+  ],
+  "cors_support": "Unknown",
+  "external_crosscheck": {
+    "public_api_lists": {
+      "source": "https://public-api-lists.github.io/public-api-lists/api/all.json",
+      "name": "AbuseIPDB",
+      "category": "Anti-Malware",
+      "auth": "apiKey",
+      "https": true,
+      "cors": "Unknown",
+      "checked_at": "2026-09-26"
+    }
+  },
+  "rate_limit": "Free key",
+  "rate_limit_source": "secondary-directory-crosscheck",
+  "documentation_url": "https://www.abuseipdb.com/register",
+  "endpoint_url": null,
+  "region": null,
+  "data_region": null,
+  "regions": [],
+  "sdk_languages": [],
+  "commercial_use": "Not publicly stated; check provider terms.",
+  "self_hostable": "Not publicly stated",
+  "webhooks": "Not publicly stated",
+  "free_tier_reset": "Not publicly stated",
+  "verification_status": "source-identified-not-fully-resolved",
+  "verification_sources": {},
+  "key_url_type": "signup",
+  "provenance": {
+    "primary_source": "manual-official-source-review",
+    "provider_url": "https://www.abuseipdb.com/register"
+  }
+}

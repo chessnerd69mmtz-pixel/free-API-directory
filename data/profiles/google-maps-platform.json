@@ -1,0 +1,57 @@
+{
+  "name": "Google Maps Platform",
+  "category": "Maps / Geocoding / Location",
+  "description": "Cataloged API provider.",
+  "free_tier": {
+    "has_free_tier": null,
+    "type": "unknown",
+    "details": "Not independently verified in the primary catalog.",
+    "amount": "Not publicly stated",
+    "expiry": "Not publicly stated"
+  },
+  "signup_requires_account": true,
+  "requires_credit_card": true,
+  "signup_url": "https://console.cloud.google.com/google/maps-apis",
+  "pricing_url": "https://developers.google.com/maps/billing-and-pricing/pricing",
+  "verification_urls": [
+    "https://developers.google.com/maps/billing-and-pricing/overview",
+    "https://developers.google.com/maps/api-security-best-practices",
+    "https://developers.google.com/maps/documentation",
+    "https://developers.google.com/maps/web-services/client-libraries"
+  ],
+  "last_verified": "2026-09-25",
+  "verified_by": "official-source-verification",
+  "status": "active",
+  "tier_verification_url": "https://developers.google.com/maps/billing-and-pricing/pricing",
+  "tier_verification_status": "manually-verified",
+  "uses": [
+    "geocoding",
+    "reverse geocoding",
+    "places/location search",
+    "routing and directions",
+    "maps/tiles",
+    "address/location metadata"
+  ],
+  "documentation_url": "https://console.cloud.google.com/google/maps-apis",
+  "endpoint_url": null,
+  "region": null,
+  "data_region": null,
+  "regions": [],
+  "authentication": "Not publicly stated",
+  "protocols": [
+    "HTTPS"
+  ],
+  "sdk_languages": [],
+  "commercial_use": "Not publicly stated; check provider terms.",
+  "self_hostable": "Not publicly stated",
+  "webhooks": "Not publicly stated",
+  "rate_limit": "Not publicly stated",
+  "free_tier_reset": "Not publicly stated",
+  "verification_status": "source-identified-not-fully-resolved",
+  "verification_sources": {},
+  "key_url_type": "provider-page",
+  "provenance": {
+    "primary_source": "official-source-verification",
+    "provider_url": "https://console.cloud.google.com/google/maps-apis"
+  }
+}

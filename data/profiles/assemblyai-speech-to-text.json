@@ -1,0 +1,66 @@
+{
+  "name": "AssemblyAI (speech-to-text)",
+  "category": "AI / ML",
+  "description": "Cataloged API provider.",
+  "free_tier": {
+    "has_free_tier": true,
+    "type": "free-trial",
+    "details": "$50 free API credits for supported speech-to-text/Speech Understanding usage; the cited official FAQ says the free credits do not expire.",
+    "amount": "$50 free API credits",
+    "expiry": "Until credits are used"
+  },
+  "signup_requires_account": true,
+  "requires_credit_card": null,
+  "signup_url": "https://www.assemblyai.com/dashboard/signup",
+  "pricing_url": "https://www.assemblyai.com/pricing",
+  "verification_urls": [
+    "https://www.assemblyai.com/pricing",
+    "https://support.assemblyai.com/articles/5370767329-can-i-sign-up-for-free",
+    "https://www.assemblyai.com/docs/faq/how-to-get-your-api-key"
+  ],
+  "last_verified": "2026-09-26",
+  "verified_by": "official-source-review",
+  "status": "active",
+  "tier_verification_url": "https://www.assemblyai.com/pricing",
+  "tier_verification_status": "official-primary-source",
+  "uses": [
+    "model inference",
+    "text/chat or multimodal AI",
+    "classification/extraction",
+    "embeddings/semantic search where offered",
+    "model deployment/integration"
+  ],
+  "research_sources": [
+    "https://support.assemblyai.com/articles/5370767329-can-i-sign-up-for-free",
+    "https://www.assemblyai.com/pricing/"
+  ],
+  "documentation_url": "https://www.assemblyai.com/docs",
+  "rate_limit": "Not publicly stated in the cited pricing/FAQ pages.",
+  "free_tier_reset": "Credits are consumed until used; no expiry stated by the cited FAQ.",
+  "verification_status": "official-primary-source",
+  "research_status": "official-source-reviewed",
+  "provenance": {
+    "primary_source": "official-provider-documentation",
+    "source_checked_at": "2026-09-26"
+  },
+  "verification_sources": {
+    "official": [
+      "https://www.assemblyai.com/pricing",
+      "https://support.assemblyai.com/articles/5370767329-can-i-sign-up-for-free",
+      "https://www.assemblyai.com/docs/faq/how-to-get-your-api-key"
+    ]
+  },
+  "endpoint_url": null,
+  "region": null,
+  "data_region": null,
+  "regions": [],
+  "authentication": "Not publicly stated",
+  "protocols": [
+    "HTTPS"
+  ],
+  "sdk_languages": [],
+  "commercial_use": "Not publicly stated; check provider terms.",
+  "self_hostable": "Not publicly stated",
+  "webhooks": "Not publicly stated",
+  "key_url_type": "signup"
+}

@@ -1,0 +1,52 @@
+{
+  "name": "DeepInfra",
+  "category": "AI / LLM",
+  "description": "Hosted open-source model inference API.",
+  "free_tier": {
+    "has_free_tier": null,
+    "type": "unknown",
+    "details": "API-key creation is documented; free allowance is not asserted without a current official quota source.",
+    "amount": "Not publicly stated",
+    "expiry": "Not publicly stated"
+  },
+  "signup_requires_account": true,
+  "requires_credit_card": null,
+  "signup_url": "https://deepinfra.com/dash/api_keys",
+  "pricing_url": "https://deepinfra.com/pricing",
+  "verification_urls": [
+    "https://deepinfra.com/",
+    "https://deepinfra.com/pricing",
+    "https://deepinfra.com/docs/advanced/api"
+  ],
+  "last_verified": "2026-09-25",
+  "verified_by": "official-source-verification",
+  "status": "active",
+  "tier_verification_url": "https://deepinfra.com/pricing",
+  "tier_verification_status": "manually-verified",
+  "uses": [
+    "AI / LLM",
+    "Hosted open-source model inference API."
+  ],
+  "documentation_url": "https://deepinfra.com/dash/api_keys",
+  "endpoint_url": null,
+  "region": null,
+  "data_region": null,
+  "regions": [],
+  "authentication": "Not publicly stated",
+  "protocols": [
+    "HTTPS"
+  ],
+  "sdk_languages": [],
+  "commercial_use": "Not publicly stated; check provider terms.",
+  "self_hostable": "Not publicly stated",
+  "webhooks": "Not publicly stated",
+  "rate_limit": "Not publicly stated",
+  "free_tier_reset": "Not publicly stated",
+  "verification_status": "source-identified-not-fully-resolved",
+  "verification_sources": {},
+  "key_url_type": "api-key-page",
+  "provenance": {
+    "primary_source": "official-source-verification",
+    "provider_url": "https://deepinfra.com/dash/api_keys"
+  }
+}

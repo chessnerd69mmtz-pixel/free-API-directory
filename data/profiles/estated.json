@@ -1,0 +1,54 @@
+{
+  "name": "Estated",
+  "category": "Real Estate",
+  "description": "Cataloged API provider.",
+  "free_tier": {
+    "has_free_tier": true,
+    "type": "trial",
+    "details": "Estated offers a free initial API trial.",
+    "amount": "100 API calls",
+    "expiry": "Trial"
+  },
+  "signup_requires_account": true,
+  "requires_credit_card": null,
+  "signup_url": "https://estated.com",
+  "pricing_url": "https://estated.com/pdfs/api-pricing.pdf",
+  "verification_urls": [
+    "https://estated.com",
+    "https://estated.com/pdfs/api-pricing.pdf"
+  ],
+  "last_verified": "2026-09-25",
+  "verified_by": "manual-official-source-review",
+  "status": "active",
+  "tier_verification_url": "https://estated.com/pdfs/api-pricing.pdf",
+  "tier_verification_status": "manually-reviewed",
+  "uses": [
+    "property search",
+    "property records",
+    "ownership/valuation",
+    "listing/market data",
+    "real-estate analytics"
+  ],
+  "documentation_url": "https://estated.com",
+  "endpoint_url": null,
+  "region": null,
+  "data_region": null,
+  "regions": [],
+  "authentication": "Not publicly stated",
+  "protocols": [
+    "HTTPS"
+  ],
+  "sdk_languages": [],
+  "commercial_use": "Not publicly stated; check provider terms.",
+  "self_hostable": "Not publicly stated",
+  "webhooks": "Not publicly stated",
+  "rate_limit": "Not publicly stated",
+  "free_tier_reset": "Not publicly stated",
+  "verification_status": "source-identified-not-fully-resolved",
+  "verification_sources": {},
+  "key_url_type": "provider-page",
+  "provenance": {
+    "primary_source": "manual-official-source-review",
+    "provider_url": "https://estated.com"
+  }
+}

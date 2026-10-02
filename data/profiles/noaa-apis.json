@@ -1,0 +1,52 @@
+{
+  "name": "NOAA APIs",
+  "category": "Science & Climate Data",
+  "description": "Candidate API provider added in the September 2026 expansion. Current free-tier details require provider-side verification.",
+  "free_tier": {
+    "has_free_tier": true,
+    "type": "free-api-key",
+    "details": "NOAA NCEI documentation states its web services are free and require a basic registration/token; CDO documents 5 requests/sec and 10,000/day.",
+    "amount": "Free token; CDO API limit 5 requests/sec and 10,000 requests/day",
+    "expiry": "Ongoing"
+  },
+  "signup_requires_account": true,
+  "requires_credit_card": false,
+  "signup_url": "https://www.ncei.noaa.gov/support/access-data-service-api-user-documentation",
+  "pricing_url": "https://www.ncei.noaa.gov/support/access-data-service-api-user-documentation",
+  "verification_urls": [
+    "https://www.ncei.noaa.gov/support/access-data-service-api-user-documentation",
+    "https://www.ncei.noaa.gov/cdo-web/faq",
+    "https://www.ncei.noaa.gov/cdo-web/webservices/v2"
+  ],
+  "last_verified": "2026-09-26",
+  "verified_by": "official-source-research",
+  "status": "candidate",
+  "tier_verification_url": "https://www.ncei.noaa.gov/cdo-web/faq",
+  "tier_verification_status": "official-source-researched",
+  "uses": [
+    "climate data"
+  ],
+  "research_status": "verified-or-resolved-2026-09-26",
+  "documentation_url": "https://www.ncei.noaa.gov/support/access-data-service-api-user-documentation",
+  "endpoint_url": null,
+  "region": null,
+  "data_region": null,
+  "regions": [],
+  "authentication": "Not publicly stated",
+  "protocols": [
+    "HTTPS"
+  ],
+  "sdk_languages": [],
+  "commercial_use": "Not publicly stated; check provider terms.",
+  "self_hostable": "Not publicly stated",
+  "webhooks": "Not publicly stated",
+  "rate_limit": "Not publicly stated",
+  "free_tier_reset": "Not publicly stated",
+  "verification_status": "source-identified-not-fully-resolved",
+  "verification_sources": {},
+  "key_url_type": "documentation",
+  "provenance": {
+    "primary_source": "official-source-research",
+    "provider_url": "https://www.ncei.noaa.gov/support/access-data-service-api-user-documentation"
+  }
+}

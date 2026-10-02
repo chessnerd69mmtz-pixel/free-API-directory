@@ -1,0 +1,60 @@
+{
+  "name": "Alpaca (trading)",
+  "category": "Finance / Crypto (additional)",
+  "description": "Cataloged API provider.",
+  "free_tier": {
+    "has_free_tier": true,
+    "type": "free-forever",
+    "details": "Official Basic market-data plan is free for Paper and Live trading accounts. Equity real-time coverage is IEX-only; historical API calls are limited to 200/min on Basic.",
+    "amount": "Free Basic plan; 200 historical API calls/min; 30 websocket symbols",
+    "expiry": "Ongoing"
+  },
+  "signup_requires_account": true,
+  "requires_credit_card": false,
+  "signup_url": "https://alpaca.markets",
+  "pricing_url": "https://alpaca.markets/pricing",
+  "verification_urls": [
+    "https://docs.alpaca.markets/",
+    "https://docs.alpaca.markets/docs/paper-trading",
+    "https://docs.alpaca.markets/docs/authentication",
+    "https://docs.alpaca.markets/docs/streaming-market-data"
+  ],
+  "last_verified": "2026-09-26",
+  "verified_by": "official-source-research-2026-09-26",
+  "status": "active",
+  "tier_verification_url": "https://alpaca.markets/pricing",
+  "tier_verification_status": "official-primary-source",
+  "uses": [
+    "market/price data",
+    "historical time series",
+    "company/asset metadata",
+    "economic or FX data",
+    "portfolio/account data where offered",
+    "trading/order APIs where offered"
+  ],
+  "research_sources": [
+    "https://docs.alpaca.markets/us/v1.1/docs/about-market-data-api"
+  ],
+  "documentation_url": "https://alpaca.markets",
+  "endpoint_url": null,
+  "region": null,
+  "data_region": null,
+  "regions": [],
+  "authentication": "Not publicly stated",
+  "protocols": [
+    "HTTPS"
+  ],
+  "sdk_languages": [],
+  "commercial_use": "Not publicly stated; check provider terms.",
+  "self_hostable": "Not publicly stated",
+  "webhooks": "Not publicly stated",
+  "rate_limit": "Not publicly stated",
+  "free_tier_reset": "Not publicly stated",
+  "verification_status": "source-identified-not-fully-resolved",
+  "verification_sources": {},
+  "key_url_type": "provider-page",
+  "provenance": {
+    "primary_source": "official-source-research-2026-09-26",
+    "provider_url": "https://alpaca.markets"
+  }
+}

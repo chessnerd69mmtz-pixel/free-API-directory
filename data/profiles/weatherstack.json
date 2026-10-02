@@ -1,0 +1,67 @@
+{
+  "name": "Weatherstack",
+  "category": "Weather (additional)",
+  "description": "Humidity & Air & Pressure API",
+  "free_tier": {
+    "has_free_tier": true,
+    "type": "free-forever",
+    "details": "Free plan provides real-time weather for non-commercial use.",
+    "amount": "100 calls/month",
+    "expiry": "Monthly"
+  },
+  "signup_requires_account": true,
+  "requires_credit_card": null,
+  "signup_url": "https://weatherstack.com",
+  "pricing_url": "https://weatherstack.com/pricing",
+  "verification_urls": [
+    "https://weatherstack.com",
+    "https://weatherstack.com/pricing"
+  ],
+  "last_verified": "2026-09-25",
+  "verified_by": "manual-official-source-review",
+  "status": "active",
+  "tier_verification_url": "https://weatherstack.com/pricing",
+  "tier_verification_status": "manually-reviewed",
+  "uses": [
+    "current conditions",
+    "hourly/daily forecasts",
+    "historical weather",
+    "alerts",
+    "location/weather lookup",
+    "environmental data where offered"
+  ],
+  "authentication": "apiKey",
+  "protocols": [
+    "HTTPS"
+  ],
+  "cors_support": "Unknown",
+  "external_crosscheck": {
+    "public_api_lists": {
+      "source": "https://public-api-lists.github.io/public-api-lists/api/all.json",
+      "name": "WeatherStack",
+      "category": "Environment",
+      "auth": "apiKey",
+      "https": true,
+      "cors": "Unknown",
+      "checked_at": "2026-09-26"
+    }
+  },
+  "documentation_url": "https://weatherstack.com",
+  "endpoint_url": null,
+  "region": null,
+  "data_region": null,
+  "regions": [],
+  "sdk_languages": [],
+  "commercial_use": "Not publicly stated; check provider terms.",
+  "self_hostable": "Not publicly stated",
+  "webhooks": "Not publicly stated",
+  "rate_limit": "Not publicly stated",
+  "free_tier_reset": "Not publicly stated",
+  "verification_status": "source-identified-not-fully-resolved",
+  "verification_sources": {},
+  "key_url_type": "provider-page",
+  "provenance": {
+    "primary_source": "manual-official-source-review",
+    "provider_url": "https://weatherstack.com"
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "name": "Cloudflare API",
+  "category": "Dev Tools / Infra",
+  "description": "Cataloged API provider.",
+  "free_tier": {
+    "has_free_tier": null,
+    "type": "unknown",
+    "details": "Not independently verified in the primary catalog.",
+    "amount": "Not publicly stated",
+    "expiry": "Not publicly stated"
+  },
+  "signup_requires_account": true,
+  "requires_credit_card": false,
+  "signup_url": "https://dash.cloudflare.com/profile/api-tokens",
+  "pricing_url": "https://www.cloudflare.com/plans/",
+  "verification_urls": [
+    "https://www.cloudflare.com/plans/free/",
+    "https://developers.cloudflare.com/fundamentals/api/get-started/create-token/",
+    "https://developers.cloudflare.com/api/"
+  ],
+  "last_verified": "2026-09-26",
+  "verified_by": "official-source-research-2026-09-26",
+  "status": "active",
+  "tier_verification_url": "https://www.cloudflare.com/plans/",
+  "tier_verification_status": "official-primary-source",
+  "uses": [
+    "API/resource management",
+    "deployment/infrastructure control",
+    "data/storage operations where supported",
+    "authentication/integrations",
+    "monitoring/automation"
+  ],
+  "rate_limit": "1,200 requests per 5 minutes per user globally; 200 requests/second per IP; GraphQL varies by query cost (max 320/5 min).",
+  "rate_limit_source": "official-cloudflare-documentation",
+  "research_sources": [
+    "https://developers.cloudflare.com/fundamentals/api/reference/limits/"
+  ],
+  "documentation_url": "https://dash.cloudflare.com/profile/api-tokens",
+  "endpoint_url": null,
+  "region": null,
+  "data_region": null,
+  "regions": [],
+  "authentication": "Not publicly stated",
+  "protocols": [
+    "HTTPS"
+  ],
+  "sdk_languages": [],
+  "commercial_use": "Not publicly stated; check provider terms.",
+  "self_hostable": "Not publicly stated",
+  "webhooks": "Not publicly stated",
+  "free_tier_reset": "Not publicly stated",
+  "verification_status": "source-identified-not-fully-resolved",
+  "verification_sources": {},
+  "key_url_type": "provider-page",
+  "provenance": {
+    "primary_source": "official-source-research-2026-09-26",
+    "provider_url": "https://dash.cloudflare.com/profile/api-tokens"
+  }
+}

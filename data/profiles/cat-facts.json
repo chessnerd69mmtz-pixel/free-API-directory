@@ -1,0 +1,54 @@
+{
+  "name": "Cat Facts",
+  "category": "Animals",
+  "description": "Daily cat facts",
+  "free_tier": {
+    "has_free_tier": true,
+    "type": "keyless-public",
+    "details": "Listed by the secondary Public API Lists directory as a public API requiring no authentication. Exact provider quota, commercial terms, and current availability are not independently established in this record.",
+    "amount": "Not publicly stated",
+    "expiry": "Not publicly stated"
+  },
+  "signup_requires_account": false,
+  "requires_credit_card": false,
+  "signup_url": "https://alexwohlbruck.github.io/cat-facts/",
+  "pricing_url": null,
+  "verification_urls": [
+    "https://alexwohlbruck.github.io/cat-facts/"
+  ],
+  "last_verified": "2026-09-26",
+  "verified_by": "secondary-directory-crosscheck",
+  "status": "candidate",
+  "tier_verification_url": "https://alexwohlbruck.github.io/cat-facts/",
+  "tier_verification_status": "secondary-source-only",
+  "authentication": "No",
+  "protocols": [
+    "HTTPS"
+  ],
+  "cors_support": "No",
+  "uses": [
+    "Daily cat facts"
+  ],
+  "research_status": "needs-primary-source-verification",
+  "provenance": {
+    "primary_source": "Public API Lists",
+    "source_url": "https://public-api-lists.github.io/public-api-lists/api/all.json",
+    "source_category": "Animals",
+    "source_checked_at": "2026-09-26"
+  },
+  "rate_limit": "Unlimited",
+  "rate_limit_source": "secondary-free-api-list",
+  "documentation_url": "https://alexwohlbruck.github.io/cat-facts/",
+  "endpoint_url": null,
+  "region": null,
+  "data_region": null,
+  "regions": [],
+  "sdk_languages": [],
+  "commercial_use": "Not publicly stated; check provider terms.",
+  "self_hostable": "Not publicly stated",
+  "webhooks": "Not publicly stated",
+  "free_tier_reset": "Not publicly stated",
+  "verification_status": "source-identified-not-fully-resolved",
+  "verification_sources": {},
+  "key_url_type": "provider-page"
+}

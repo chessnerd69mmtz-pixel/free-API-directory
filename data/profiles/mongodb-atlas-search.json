@@ -1,0 +1,53 @@
+{
+  "name": "MongoDB Atlas Search",
+  "category": "Search & Vector Databases",
+  "description": "Candidate API provider added in the September 2026 expansion. Current free-tier details require provider-side verification.",
+  "free_tier": {
+    "has_free_tier": true,
+    "type": "free-cluster",
+    "details": "Official MongoDB Atlas documentation confirms a permanent Free cluster tier. Search capabilities and dedicated search-node features vary by tier.",
+    "amount": "Atlas Free cluster: 0.5 GB storage, 100 ops/sec; one free cluster per project",
+    "expiry": "Free clusters do not expire"
+  },
+  "signup_requires_account": true,
+  "requires_credit_card": null,
+  "signup_url": "https://account.mongodb.com/account/login",
+  "pricing_url": "https://account.mongodb.com/account/login",
+  "verification_urls": [
+    "https://account.mongodb.com/account/login",
+    "https://www.mongodb.com/docs/atlas/tutorial/deploy-free-tier-cluster/",
+    "https://www.mongodb.com/docs/atlas/reference/free-shared-limitations/"
+  ],
+  "last_verified": "2026-09-26",
+  "verified_by": "official-source-research",
+  "status": "candidate",
+  "tier_verification_url": "https://www.mongodb.com/docs/atlas/tutorial/deploy-free-tier-cluster/",
+  "tier_verification_status": "official-source-researched",
+  "uses": [
+    "document",
+    "search database"
+  ],
+  "research_status": "verified-or-resolved-2026-09-26",
+  "documentation_url": "https://account.mongodb.com/account/login",
+  "endpoint_url": null,
+  "region": null,
+  "data_region": null,
+  "regions": [],
+  "authentication": "Not publicly stated",
+  "protocols": [
+    "HTTPS"
+  ],
+  "sdk_languages": [],
+  "commercial_use": "Not publicly stated; check provider terms.",
+  "self_hostable": "Not publicly stated",
+  "webhooks": "Not publicly stated",
+  "rate_limit": "Not publicly stated",
+  "free_tier_reset": "Not publicly stated",
+  "verification_status": "source-identified-not-fully-resolved",
+  "verification_sources": {},
+  "key_url_type": "provider-page",
+  "provenance": {
+    "primary_source": "official-source-research",
+    "provider_url": "https://account.mongodb.com/account/login"
+  }
+}

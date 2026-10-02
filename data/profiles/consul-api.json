@@ -1,0 +1,50 @@
+{
+  "name": "Consul API",
+  "category": "DevOps & Infrastructure",
+  "description": "Candidate API provider added in the September 2026 expansion. Current free-tier details require provider-side verification.",
+  "free_tier": {
+    "has_free_tier": true,
+    "type": "not-stated",
+    "details": "Current official free-tier allowance was not established from the available source record; this entry is retained as a research candidate rather than treated as verified.",
+    "amount": "Not publicly stated",
+    "expiry": "Not publicly stated"
+  },
+  "signup_requires_account": true,
+  "requires_credit_card": null,
+  "signup_url": "https://developer.hashicorp.com/consul",
+  "pricing_url": "https://developer.hashicorp.com/consul",
+  "verification_urls": [
+    "https://developer.hashicorp.com/consul"
+  ],
+  "last_verified": null,
+  "verified_by": "research-candidate",
+  "status": "candidate",
+  "tier_verification_url": "https://developer.hashicorp.com/consul",
+  "tier_verification_status": "source-identified-not-fully-resolved",
+  "uses": [
+    "service discovery"
+  ],
+  "research_status": "needs-deeper-provider-review",
+  "documentation_url": "https://developer.hashicorp.com/consul",
+  "endpoint_url": null,
+  "region": null,
+  "data_region": null,
+  "regions": [],
+  "authentication": "Not publicly stated",
+  "protocols": [
+    "HTTPS"
+  ],
+  "sdk_languages": [],
+  "commercial_use": "Not publicly stated; check provider terms.",
+  "self_hostable": "Not publicly stated",
+  "webhooks": "Not publicly stated",
+  "rate_limit": "Not publicly stated",
+  "free_tier_reset": "Not publicly stated",
+  "verification_status": "source-identified-not-fully-resolved",
+  "verification_sources": {},
+  "key_url_type": "provider-page",
+  "provenance": {
+    "primary_source": "research-candidate",
+    "provider_url": "https://developer.hashicorp.com/consul"
+  }
+}

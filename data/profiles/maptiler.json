@@ -1,0 +1,57 @@
+{
+  "name": "MapTiler",
+  "category": "Maps / Geocoding",
+  "description": "Cloud maps, geocoding and tile APIs.",
+  "free_tier": {
+    "has_free_tier": null,
+    "type": "unknown",
+    "details": "Key-management page verified; current free allowance is not asserted here.",
+    "amount": "Not publicly stated",
+    "expiry": "Not publicly stated"
+  },
+  "signup_requires_account": true,
+  "requires_credit_card": null,
+  "signup_url": "https://cloud.maptiler.com/account/keys/",
+  "pricing_url": "https://www.maptiler.com/cloud/pricing/",
+  "verification_urls": [
+    "https://www.maptiler.com/cloud/pricing/",
+    "https://docs.maptiler.com/cloud/api/authentication/",
+    "https://docs.maptiler.com/cloud/api/",
+    "https://docs.maptiler.com/"
+  ],
+  "last_verified": "2026-09-25",
+  "verified_by": "manual-official-doc-review",
+  "status": "active",
+  "tier_verification_url": "https://www.maptiler.com/cloud/pricing/",
+  "tier_verification_status": "manually-verified",
+  "uses": [
+    "maps/tiles",
+    "geocoding",
+    "routing",
+    "static maps",
+    "map styling",
+    "geospatial data"
+  ],
+  "documentation_url": "https://cloud.maptiler.com/account/keys/",
+  "endpoint_url": null,
+  "region": null,
+  "data_region": null,
+  "regions": [],
+  "authentication": "Not publicly stated",
+  "protocols": [
+    "HTTPS"
+  ],
+  "sdk_languages": [],
+  "commercial_use": "Not publicly stated; check provider terms.",
+  "self_hostable": "Not publicly stated",
+  "webhooks": "Not publicly stated",
+  "rate_limit": "Not publicly stated",
+  "free_tier_reset": "Not publicly stated",
+  "verification_status": "source-identified-not-fully-resolved",
+  "verification_sources": {},
+  "key_url_type": "api-key-page",
+  "provenance": {
+    "primary_source": "manual-official-doc-review",
+    "provider_url": "https://cloud.maptiler.com/account/keys/"
+  }
+}

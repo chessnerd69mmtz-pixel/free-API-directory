@@ -1,0 +1,67 @@
+{
+  "name": "Riot Games API",
+  "category": "Gaming",
+  "description": "League of Legends Game Information",
+  "free_tier": {
+    "has_free_tier": null,
+    "type": "unknown",
+    "details": "Not independently verified in the primary catalog.",
+    "amount": "Not publicly stated",
+    "expiry": "Not publicly stated"
+  },
+  "signup_requires_account": true,
+  "requires_credit_card": null,
+  "signup_url": "https://developer.riotgames.com",
+  "pricing_url": "https://developer.riotgames.com/policies/general",
+  "verification_urls": [
+    "https://developer.riotgames.com/",
+    "https://developer.riotgames.com/docs/portal",
+    "https://developer.riotgames.com/apis"
+  ],
+  "last_verified": "2026-09-25",
+  "verified_by": "official-source-verification",
+  "status": "active",
+  "tier_verification_url": "https://developer.riotgames.com/policies/general",
+  "tier_verification_status": "manually-verified",
+  "uses": [
+    "game/player data",
+    "profiles/accounts",
+    "matches/events",
+    "statistics",
+    "game metadata"
+  ],
+  "authentication": "apiKey",
+  "protocols": [
+    "HTTPS"
+  ],
+  "cors_support": "Unknown",
+  "external_crosscheck": {
+    "public_api_lists": {
+      "source": "https://public-api-lists.github.io/public-api-lists/api/all.json",
+      "name": "Riot Games",
+      "category": "Games & Comics",
+      "auth": "apiKey",
+      "https": true,
+      "cors": "Unknown",
+      "checked_at": "2026-09-26"
+    }
+  },
+  "documentation_url": "https://developer.riotgames.com",
+  "endpoint_url": null,
+  "region": null,
+  "data_region": null,
+  "regions": [],
+  "sdk_languages": [],
+  "commercial_use": "Not publicly stated; check provider terms.",
+  "self_hostable": "Not publicly stated",
+  "webhooks": "Not publicly stated",
+  "rate_limit": "Not publicly stated",
+  "free_tier_reset": "Not publicly stated",
+  "verification_status": "source-identified-not-fully-resolved",
+  "verification_sources": {},
+  "key_url_type": "provider-page",
+  "provenance": {
+    "primary_source": "official-source-verification",
+    "provider_url": "https://developer.riotgames.com"
+  }
+}

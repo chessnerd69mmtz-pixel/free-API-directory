@@ -1,0 +1,68 @@
+{
+  "name": "Mailgun",
+  "category": "Email / SMS / Communication",
+  "description": "Email Service",
+  "free_tier": {
+    "has_free_tier": null,
+    "type": "unknown",
+    "details": "Not independently verified in the primary catalog.",
+    "amount": "Not publicly stated",
+    "expiry": "Not publicly stated"
+  },
+  "signup_requires_account": true,
+  "requires_credit_card": null,
+  "signup_url": "https://signup.mailgun.com/new/signup",
+  "pricing_url": "https://www.mailgun.com/pricing/",
+  "verification_urls": [
+    "https://www.mailgun.com/pricing/",
+    "https://documentation.mailgun.com/docs/mailgun/api-reference/authentication/",
+    "https://documentation.mailgun.com/docs/mailgun/api-reference/"
+  ],
+  "last_verified": "2026-09-25",
+  "verified_by": "manual-official-doc-review",
+  "status": "active",
+  "tier_verification_url": "https://www.mailgun.com/pricing/",
+  "tier_verification_status": "manually-verified",
+  "uses": [
+    "transactional email",
+    "SMS/MMS",
+    "voice/messaging where offered",
+    "templates and sender management",
+    "delivery tracking",
+    "webhooks/automation"
+  ],
+  "authentication": "apiKey",
+  "protocols": [
+    "HTTPS"
+  ],
+  "cors_support": "Unknown",
+  "external_crosscheck": {
+    "public_api_lists": {
+      "source": "https://public-api-lists.github.io/public-api-lists/api/all.json",
+      "name": "mailgun",
+      "category": "Business",
+      "auth": "apiKey",
+      "https": true,
+      "cors": "Unknown",
+      "checked_at": "2026-09-26"
+    }
+  },
+  "documentation_url": "https://signup.mailgun.com/new/signup",
+  "endpoint_url": null,
+  "region": null,
+  "data_region": null,
+  "regions": [],
+  "sdk_languages": [],
+  "commercial_use": "Not publicly stated; check provider terms.",
+  "self_hostable": "Not publicly stated",
+  "webhooks": "Not publicly stated",
+  "rate_limit": "Not publicly stated",
+  "free_tier_reset": "Not publicly stated",
+  "verification_status": "source-identified-not-fully-resolved",
+  "verification_sources": {},
+  "key_url_type": "signup",
+  "provenance": {
+    "primary_source": "manual-official-doc-review",
+    "provider_url": "https://signup.mailgun.com/new/signup"
+  }
+}

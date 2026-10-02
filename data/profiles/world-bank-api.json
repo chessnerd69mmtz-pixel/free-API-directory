@@ -1,0 +1,67 @@
+{
+  "name": "World Bank API",
+  "category": "Finance / Crypto / Economics",
+  "description": "World Data",
+  "free_tier": {
+    "has_free_tier": null,
+    "type": "unknown",
+    "details": "Not independently verified in the primary catalog.",
+    "amount": "Not publicly stated",
+    "expiry": "Not publicly stated"
+  },
+  "signup_requires_account": true,
+  "requires_credit_card": false,
+  "signup_url": "https://datahelpdesk.worldbank.org/knowledgebase/articles/889392",
+  "pricing_url": "https://data.worldbank.org/summary-terms-of-use",
+  "verification_urls": [
+    "https://data.worldbank.org/",
+    "https://datahelpdesk.worldbank.org/knowledgebase/articles/889386-developer-information-overview",
+    "https://datahelpdesk.worldbank.org/knowledgebase/articles/898581-api-basic-call-structures"
+  ],
+  "last_verified": "2026-09-25",
+  "verified_by": "official-source-verification",
+  "status": "active",
+  "tier_verification_url": "https://data.worldbank.org/summary-terms-of-use",
+  "tier_verification_status": "manually-verified",
+  "uses": [
+    "market/price data",
+    "historical time series",
+    "company/asset metadata",
+    "economic or FX data",
+    "portfolio/account data where offered",
+    "trading/order APIs where offered"
+  ],
+  "authentication": "No",
+  "protocols": [],
+  "cors_support": "Unknown",
+  "external_crosscheck": {
+    "public_api_lists": {
+      "source": "https://public-api-lists.github.io/public-api-lists/api/all.json",
+      "name": "World Bank",
+      "category": "Science & Math",
+      "auth": "No",
+      "https": false,
+      "cors": "Unknown",
+      "checked_at": "2026-09-26"
+    }
+  },
+  "rate_limit": "Unlimited",
+  "rate_limit_source": "secondary-directory-crosscheck",
+  "documentation_url": "https://datahelpdesk.worldbank.org/knowledgebase/articles/889392",
+  "endpoint_url": null,
+  "region": null,
+  "data_region": null,
+  "regions": [],
+  "sdk_languages": [],
+  "commercial_use": "Not publicly stated; check provider terms.",
+  "self_hostable": "Not publicly stated",
+  "webhooks": "Not publicly stated",
+  "free_tier_reset": "Not publicly stated",
+  "verification_status": "source-identified-not-fully-resolved",
+  "verification_sources": {},
+  "key_url_type": "provider-page",
+  "provenance": {
+    "primary_source": "official-source-verification",
+    "provider_url": "https://datahelpdesk.worldbank.org/knowledgebase/articles/889392"
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "name": "Federal Register API",
+  "category": "Government & Civic Data",
+  "description": "Candidate API provider added in the September 2026 expansion. Current free-tier details require provider-side verification.",
+  "free_tier": {
+    "has_free_tier": true,
+    "type": "not-stated",
+    "details": "Current official free-tier allowance was not established from the available source record; this entry is retained as a research candidate rather than treated as verified.",
+    "amount": "Not publicly stated",
+    "expiry": "Not publicly stated"
+  },
+  "signup_requires_account": true,
+  "requires_credit_card": null,
+  "signup_url": "https://www.federalregister.gov/developers/documentation/api/v1",
+  "pricing_url": "https://www.federalregister.gov/developers/documentation/api/v1",
+  "verification_urls": [
+    "https://www.federalregister.gov/developers/documentation/api/v1"
+  ],
+  "last_verified": null,
+  "verified_by": "research-candidate",
+  "status": "candidate",
+  "tier_verification_url": "https://www.federalregister.gov/developers/documentation/api/v1",
+  "tier_verification_status": "source-identified-not-fully-resolved",
+  "uses": [
+    "US regulations"
+  ],
+  "research_status": "needs-deeper-provider-review",
+  "authentication": "No",
+  "protocols": [
+    "HTTPS"
+  ],
+  "cors_support": "Unknown",
+  "external_crosscheck": {
+    "public_api_lists": {
+      "source": "https://public-api-lists.github.io/public-api-lists/api/all.json",
+      "name": "Federal Register",
+      "category": "Government",
+      "auth": "No",
+      "https": true,
+      "cors": "Unknown",
+      "checked_at": "2026-09-26"
+    }
+  },
+  "documentation_url": "https://www.federalregister.gov/developers/documentation/api/v1",
+  "endpoint_url": null,
+  "region": null,
+  "data_region": null,
+  "regions": [],
+  "sdk_languages": [],
+  "commercial_use": "Not publicly stated; check provider terms.",
+  "self_hostable": "Not publicly stated",
+  "webhooks": "Not publicly stated",
+  "rate_limit": "Not publicly stated",
+  "free_tier_reset": "Not publicly stated",
+  "verification_status": "source-identified-not-fully-resolved",
+  "verification_sources": {},
+  "key_url_type": "signup",
+  "provenance": {
+    "primary_source": "research-candidate",
+    "provider_url": "https://www.federalregister.gov/developers/documentation/api/v1"
+  }
+}

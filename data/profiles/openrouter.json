@@ -1,0 +1,62 @@
+{
+  "name": "OpenRouter",
+  "category": "AI / LLM",
+  "description": "Unified API gateway for many model providers, including a free plan and free models.",
+  "free_tier": {
+    "has_free_tier": true,
+    "type": "free-models",
+    "details": "Free plan exposes free models; current catalog records 25+ free models and 50 requests/day for the Free plan.",
+    "amount": "25+ free models; 50 requests/day on the Free plan",
+    "expiry": "Not publicly stated"
+  },
+  "signup_requires_account": true,
+  "requires_credit_card": false,
+  "signup_url": "https://openrouter.ai/settings/keys",
+  "pricing_url": "https://openrouter.ai/pricing",
+  "verification_urls": [
+    "https://openrouter.ai/pricing",
+    "https://openrouter.ai/docs"
+  ],
+  "last_verified": "2026-09-26",
+  "verified_by": "official-source-review",
+  "status": "active",
+  "tier_verification_url": "https://openrouter.ai/pricing",
+  "tier_verification_status": "official-primary-source",
+  "uses": [
+    "multi-provider LLM routing",
+    "text generation/chat",
+    "model selection/fallbacks",
+    "streaming",
+    "structured outputs",
+    "tool calling",
+    "access to free and paid models"
+  ],
+  "documentation_url": "https://openrouter.ai/docs",
+  "verification_status": "official-primary-source",
+  "research_status": "official-source-reviewed",
+  "provenance": {
+    "primary_source": "official-provider-documentation",
+    "source_checked_at": "2026-09-26"
+  },
+  "verification_sources": {
+    "official": [
+      "https://openrouter.ai/pricing",
+      "https://openrouter.ai/docs"
+    ]
+  },
+  "endpoint_url": null,
+  "region": null,
+  "data_region": null,
+  "regions": [],
+  "authentication": "Not publicly stated",
+  "protocols": [
+    "HTTPS"
+  ],
+  "sdk_languages": [],
+  "commercial_use": "Not publicly stated; check provider terms.",
+  "self_hostable": "Not publicly stated",
+  "webhooks": "Not publicly stated",
+  "rate_limit": "Not publicly stated",
+  "free_tier_reset": "Not publicly stated",
+  "key_url_type": "api-key-page"
+}

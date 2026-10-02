@@ -1,0 +1,51 @@
+{
+  "name": "Disqus",
+  "category": "Social",
+  "description": "Communicate with Disqus data",
+  "free_tier": {
+    "has_free_tier": null,
+    "type": "community-listed",
+    "details": "Listed by a maintained public API source as a free/public API. Exact provider quota, payment requirements and commercial terms are not independently established here.",
+    "amount": "Not independently stated",
+    "expiry": "Not independently stated"
+  },
+  "signup_requires_account": true,
+  "requires_credit_card": null,
+  "signup_url": "https://disqus.com/api/docs/auth/",
+  "pricing_url": null,
+  "verification_urls": [
+    "https://disqus.com/api/docs/auth/"
+  ],
+  "last_verified": "2026-09-26",
+  "verified_by": "maintained-community-source",
+  "status": "upstream-community",
+  "tier_verification_status": "secondary-source-only",
+  "authentication": "OAuth",
+  "protocols": [
+    "HTTPS"
+  ],
+  "cors_support": "Unknown",
+  "uses": [
+    "Communicate with Disqus data"
+  ],
+  "provenance": {
+    "primary_source": "maintained community API directory",
+    "source_url": "https://disqus.com/api/docs/auth/",
+    "source_checked_at": "2026-09-26"
+  },
+  "research_status": "community-listed-needs-primary-verification",
+  "documentation_url": "https://disqus.com/api/docs/auth/",
+  "endpoint_url": null,
+  "region": null,
+  "data_region": null,
+  "regions": [],
+  "sdk_languages": [],
+  "commercial_use": "Not publicly stated; check provider terms.",
+  "self_hostable": "Not publicly stated",
+  "webhooks": "Not publicly stated",
+  "rate_limit": "Not publicly stated",
+  "free_tier_reset": "Not publicly stated",
+  "verification_status": "community-listed",
+  "verification_sources": {},
+  "key_url_type": "documentation"
+}

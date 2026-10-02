@@ -1,0 +1,58 @@
+{
+  "name": "OpenAI API",
+  "category": "AI / LLM",
+  "description": "OpenAI developer API.",
+  "free_tier": {
+    "has_free_tier": null,
+    "type": "unknown",
+    "details": "API-key creation is verified; no free API quota is asserted here.",
+    "amount": "Not publicly stated",
+    "expiry": "Not publicly stated"
+  },
+  "signup_requires_account": true,
+  "requires_credit_card": null,
+  "signup_url": "https://platform.openai.com/api-keys",
+  "pricing_url": "https://openai.com/api/pricing/",
+  "verification_urls": [
+    "https://openai.com/api/",
+    "https://help.openai.com/en/articles/8264644-how-can-i-set-up-prepaid-billing",
+    "https://platform.openai.com/docs/api-reference/authentication",
+    "https://platform.openai.com/docs/api-reference/streaming"
+  ],
+  "last_verified": "2026-09-25",
+  "verified_by": "official-source-verification",
+  "status": "active",
+  "tier_verification_url": "https://openai.com/api/pricing/",
+  "tier_verification_status": "manually-verified",
+  "uses": [
+    "text generation/chat",
+    "vision and multimodal processing",
+    "embeddings",
+    "image generation",
+    "speech-to-text/text-to-speech",
+    "moderation",
+    "tool/function calling"
+  ],
+  "documentation_url": "https://platform.openai.com/api-keys",
+  "endpoint_url": null,
+  "region": null,
+  "data_region": null,
+  "regions": [],
+  "authentication": "Not publicly stated",
+  "protocols": [
+    "HTTPS"
+  ],
+  "sdk_languages": [],
+  "commercial_use": "Not publicly stated; check provider terms.",
+  "self_hostable": "Not publicly stated",
+  "webhooks": "Not publicly stated",
+  "rate_limit": "Not publicly stated",
+  "free_tier_reset": "Not publicly stated",
+  "verification_status": "source-identified-not-fully-resolved",
+  "verification_sources": {},
+  "key_url_type": "api-key-page",
+  "provenance": {
+    "primary_source": "official-source-verification",
+    "provider_url": "https://platform.openai.com/api-keys"
+  }
+}
