@@ -806,10 +806,19 @@ async function submitPage(){
  $("#submitgo").onclick=function(){var d={name:$("#sn").value,website:$("#su").value,documentation:$("#sd").value,pricing:$("#sp").value,notes:$("#ss").value,created_at:new Date().toISOString()};if(!d.name||!d.website){$("#submitr").innerHTML='<div class="card notice">Provider name and official website are required.</div>';return;}var list=JSON.parse(localStorage.getItem("freeApiSubmissions")||"[]");list.push(d);localStorage.setItem("freeApiSubmissions",JSON.stringify(list));$("#submitr").innerHTML='<div class="card"><h2>Saved as a local draft</h2><p>This has not been added to the verified catalog.</p></div>';};
 }
 async function collectionsPage(){
- var a=await loadApis(),list=JSON.parse(localStorage.getItem("freeApiFavorites")||"[]");
- shell('<section class="hero"><h1>⭐ My API Collections</h1><p>Save providers locally without creating an account.</p></section><div class="card tool"><select id="fav" class="select">'+providerOptions(a)+'</select><input id="col" class="input" value="My APIs"><button id="savefav" class="btn">Save provider</button></div><div id="favr"></div>');
- function render(){if(!list.length){$("#favr").innerHTML='<div class="card">No saved providers yet.</div>';return;}$("#favr").innerHTML=list.map(function(x,i){return '<div class="card"><h2>'+esc(x.collection)+'</h2><p><a href="api.html?provider='+encodeURIComponent(x.name)+'">'+esc(x.name)+'</a> <button class="btn secondary" data-i="'+i+'">Remove</button></p></div>';}).join("");document.querySelectorAll("[data-i]").forEach(function(b){b.onclick=function(){list.splice(Number(b.dataset.i),1);localStorage.setItem("freeApiFavorites",JSON.stringify(list));render();};});}
- $("#savefav").onclick=function(){var name=$("#fav").value,collection=($("#col").value||"My APIs").trim();if(!name)return;if(list.some(x=>x.name===name&&x.collection===collection)){render();return;}list.push({name,collection});localStorage.setItem("freeApiFavorites",JSON.stringify(list));render();};render();
+ var a=await loadApis(),raw=JSON.parse(localStorage.getItem("freeApiFavorites")||"[]");
+ var seen=new Set(),list=raw.filter(x=>x&&x.name&&x.collection).filter(x=>{var k=x.name+"::"+x.collection;if(seen.has(k))return false;seen.add(k);return true;});
+ function persist(){localStorage.setItem("freeApiFavorites",JSON.stringify(list));}
+ shell('<section class="hero"><h1>⭐ My API Collections</h1><p>Save providers locally without creating an account. Collections stay in this browser.</p></section><div class="card tool"><select id="fav" class="select">'+providerOptions(a)+'</select><input id="col" class="input" value="My APIs"><button id="savefav" class="btn">Save provider</button></div><div id="favr"></div>');
+ function render(){
+   if(!list.length){$("#favr").innerHTML='<div class="card">No saved providers yet.</div>';return;}
+   const groups={}; list.forEach((x,i)=>(groups[x.collection]??=[]).push({...x,i}));
+   $("#favr").innerHTML=Object.entries(groups).map(([collection,items])=>'<div class="card"><div style="display:flex;justify-content:space-between;gap:12px;align-items:center"><h2>'+esc(collection)+'</h2><button class="btn secondary" data-delete-collection="'+esc(collection)+'" type="button">Delete collection</button></div>'+items.map(x=>'<p><a href="api.html?provider='+encodeURIComponent(x.name)+'">'+esc(x.name)+'</a> <button class="btn secondary" data-i="'+x.i+'" type="button">Remove</button></p>').join("")+'</div>').join("");
+   document.querySelectorAll("[data-i]").forEach(b=>b.onclick=function(){list.splice(Number(b.dataset.i),1);persist();render();});
+   document.querySelectorAll("[data-delete-collection]").forEach(b=>b.onclick=function(){var name=b.dataset.deleteCollection;list=list.filter(x=>x.collection!==name);persist();render();});
+ }
+ $("#savefav").onclick=function(){var name=$("#fav").value,collection=($("#col").value||"My APIs").trim();if(!name)return;if(list.some(x=>x.name===name&&x.collection===collection)){render();return;}list.push({name,collection});persist();render();};
+ render();
 }
 async function playgroundPage(){
  var a=await loadApis();
