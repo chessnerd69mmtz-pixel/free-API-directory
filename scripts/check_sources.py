@@ -50,4 +50,14 @@ for row in failures[:100]:
     print(" | ".join(map(str,row)))
 if soft:
     print(f"{len(soft)} HTTP URLs are reachable candidates but should be upgraded to HTTPS when supported.")
-sys.exit(1 if failures else 0)
+# Source health is an informational monitor. Do not fail the maintenance pipeline merely
+# because a provider blocks automated requests; expose hard failures in the workflow summary.
+summary_path = __import__("os").environ.get("GITHUB_STEP_SUMMARY")
+if summary_path:
+    with open(summary_path, "a", encoding="utf-8") as f:
+        f.write("## Provider source health\\n")
+        f.write(f"- Unique URLs checked: {len(seen)}\\n- Hard reachability failures: {len(failures)}\\n- HTTP warnings: {len(soft)}\\n")
+        if failures:
+            f.write("\\n### Hard failures (first 100)\\n\\n")
+            for name,u,last in failures[:100]: f.write(f"- **{name}** — {u} — {last}\\n")
+sys.exit(0)
