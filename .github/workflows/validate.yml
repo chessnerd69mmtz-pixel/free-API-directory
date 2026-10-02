@@ -16,5 +16,9 @@ jobs:
         run: python scripts/validate.py
       - name: Strict provider schema validation
         run: python scripts/validate_provider_schema.py
+      - name: Validate profile metadata
+        run: python scripts/validate_profiles.py
+      - name: Validate generated artifacts are committed
+        run: git diff --exit-code -- data/catalog-index.json data/provider_profiles.json data/profiles
       - name: Validate JavaScript syntax
         run: node --check app.js && node --check vault.js && node --check catalog.js
