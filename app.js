@@ -881,7 +881,7 @@ async function codePage(){
    var py="import os, requests\\n\\nurl = "+JSON.stringify(url)+"\\n"+pyAuth+"\\nresponse = requests.get(url, headers=headers, timeout=30)\\nprint(response.status_code)\\nprint(response.text)";
    var js="const headers = "+(noauth?"{}":bearer?"{ Authorization: \"Bearer \" + process.env.API_KEY }":key?"{ \"YOUR_API_KEY_HEADER\": process.env.API_KEY }":"{}")+";\\nconst response = await fetch("+JSON.stringify(url)+", { headers });\\nconsole.log(response.status, await response.text());";
    var ts=js;
-   var curl=noauth?"curl "+JSON.stringify(url):bearer?"curl -H \\"Authorization: Bearer $API_KEY\\" "+JSON.stringify(url):key?"curl -H \\"X-API-Key: $API_KEY\\" "+JSON.stringify(url):"curl "+JSON.stringify(url);
+   var curl=noauth ? "curl " + JSON.stringify(url) : bearer ? 'curl -H "Authorization: Bearer $API_KEY" ' + JSON.stringify(url) : key ? 'curl -H "X-API-Key: $API_KEY" ' + JSON.stringify(url) : "curl " + JSON.stringify(url);
    $("#coder").innerHTML='<div class="grid"><div class="card"><h2>Python</h2><pre class="code">'+esc(py)+'</pre></div><div class="card"><h2>Node.js JavaScript</h2><pre class="code">'+esc(js)+'</pre></div><div class="card"><h2>TypeScript</h2><pre class="code">'+esc(ts)+'</pre></div><div class="card"><h2>cURL</h2><pre class="code">'+esc(curl)+'</pre></div></div><div class="notice">Provider: '+esc(p.name||"not selected")+' · Catalog authentication: '+esc(p.authentication||"Not publicly stated")+'. Endpoint and authentication should be confirmed against the provider documentation.</div>';
  };
 }async function boot() {
